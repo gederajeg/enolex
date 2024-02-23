@@ -1,8 +1,12 @@
 library(tidyverse)
 
+# get the URL for the Google sheet and load the data (periodically run)
 source("codes/r-code_00-lexdb-source-rawfile.R")
+
+# save into .rds file
 write_rds(x = eno_etym, file = "data/eno_etym.rds")
 
+# load the data
 eno_etym <- read_rds("data/eno_etym.rds")
 
 eno_etym1 <- eno_etym |> 
@@ -85,15 +89,51 @@ eno_etym3 <- eno_etym2 |>
   mutate(Remarks = str_replace_all(Remarks, "\\\\(?=note)", "")) |> 
   mutate(Remarks = str_replace_all(Remarks, "note\\s1887", "note1887")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\bnote\\s+sure\\b", "not sure")) |> 
+  mutate(Remarks = str_replace_all(Remarks, "meaing1894", "meaning1894")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\, meai(?=ng[0-9])", "_meani")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\s+(1894)(meaning)", "\\2\\1")) |> 
+  mutate(Remarks = str_replace_all(Remarks, "^(meaing|meaing|maning)(?=[0-9])", "meaning")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\,\\s+2011\\&2019meaning", "_meaning2011&2019")) |> 
   mutate(Remarks = str_replace_all(Remarks, 
                                    "meaning1855vdS 'outside' meaning1870 'outside, low'", 
-                                   "meaning1855vdS 'outside'_meaning1870 'outside, low'"))
+                                   "meaning1855vdS 'outside'_meaning1870 'outside, low'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Modigliani BI ayo?", "note1894: Bahasa Indonesia \"ayo\"?"),
+         Remarks = replace(Remarks, Remarks == "Mod. 'mengiris kayu'", "note1894: 'mengiris kayu'"),
+         Remarks = str_replace_all(Remarks, "(note)\\&(?=1987)", "\\1")) |> 
+  mutate(Remarks = str_replace_all(Remarks, "(?<=^note2011)\\ː", ":")) |> 
+  mutate(Remarks = str_replace_all(Remarks, "Kähler and 2023 'baby'", "meaning1987K&2023 'baby'")) |> 
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "Kasim loanword\nKähler, Yoder lit. 'frame of thunder'"), "note1987: loanword_note1987K&2011: lit 'frame of thunder'")) |>
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "Kähler lit. 'hair of house'"), "note1987K: lit. 'hair of house'")) |>
+  mutate(Remarks = replace(Remarks, str_detect(Remarks,"^Kähler archaic$"), "note1987K: archaic")) |>
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "^Kähler lit. 'for piercing'$"), "note1987K: lit 'for piercing'")) |>
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "^lit. 'killer', Kähler archaic$"), "note: lit. 'killer'_note1987K: archaic")) |> 
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "^note1864: loanword Buginese, Kähler archaic$"), "note1864: loanword Buginese_note1987K: archaic")) |> 
+  mutate(Remarks = replace(Remarks, str_detect(Remarks, "^Kähler < e-hoo u-uba ‘inside house'$"), "note1987K: from e-hoo u-uba 'inside house'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Kähler cf. water", "meaning1987K 'water'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Kähler loanword", "note1987K: loanword")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Kähler lit. 'for cutting'", "note1987K: lit. 'for cutting'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Kähler lit. 'for pounding'", "note1987K: lit. 'for pounding'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "lit. \"which is to be burned\" (Kähler 1975:VI)", "note1987K: lit. 'which is to be burned' (Kähler 1975:VI)")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "lit. 'that which is to be fished' (Kähler 1975:VI, Kähler 1987:10)", "note1987K: lit. 'that which is to be fished' (Kähler 1975:VI, Kähler 1987:10)")) |> 
+  mutate(Remarks = str_replace(Remarks, "Kähler lit\\. 'for sharpening", "note1987K: lit. 'for sharpening'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. lit. 'not like'", "note1894: lit. 'not like'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. 'sentire/merasa sakit'", "note1894: 'sentire/merasa sakit'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. 'rancore/hati kecil'", "note1894: 'rancore/hati kecil'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. 'speranza/harap'", "note1894: 'speranza/harap'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. also 'mercy'", "note1894: also 'mercy'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. 'basta!'", "note1894: 'basta!'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. 'pacco di tabacco/lempeng'", "note1894: 'pacco di tabacco/lempeng'")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Mod. unclear (he has appassito/burus)", "note1894: unclear (he has 'appassito/burus')")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "nasi, Kähler loanword", "note1987K: loanword")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "Kasim, Yoder loanword", "note1987&2011: loanword")) |> 
+  mutate(Remarks = replace(Remarks, Remarks == "lit. 4+4, Yoder 'lay + ?'", "note: lit. 4+4_note2011: 'lay + ?'"))
+
 eno_etym4 <- eno_etym3 |> 
+  
   ## split the Remarks column by "_" separator
   mutate(Remarks2 = str_split(Remarks, "_")) |> 
+  
+  ## unnest into long table
   unnest_longer(Remarks2, values_to = "Remarks2") |> 
   select(-Remarks) |> 
   distinct()
@@ -113,7 +153,7 @@ eno_etym_long1 <- eno_etym_long |>
   filter(!is.na(words)) |>
   select(-EngganoSourceOriginal) |>
   
-  # to handle Brouwer early 1850s where Daniel change the column name
+  # to handle Brouwer early 1850s where Daniel changed the column name
   mutate(EngganoSource = str_replace(EngganoSource, "early 1850s$", "<1855")) |> 
   
   mutate(words = str_replace_all(words, "(\\n|, )", " ; "),
@@ -196,11 +236,11 @@ remarks_split1 <- remarks_split |>
   mutate(rm4 = if_else(str_detect(rm4, "meaning[0-9_:<A-Za-z]+\\b"), 
                        str_replace_all(rm4, "(meaning[0-9_:<A-Za-z]+\\b)", "<m>\\1</m>"), 
                        rm4),
-         rm4 = if_else(str_detect(rm4, "note[<_:0-9A-Za-z]+\\b"),
+         rm4 = if_else(str_detect(rm4, "note[<_:ː0-9A-Za-z]+\\b"),
                        str_replace_all(rm4, "(note[<_:0-9A-Za-z]+\\b)", "<n>\\1</n>"),
                        rm4),
          rm4 = if_else(str_detect(rm4, "^(?<!\\>)note"),
-                       str_replace_all(rm4, "^(note)(?=\\:)", "<n>\\1</n>"),
+                       str_replace_all(rm4, "^((note)(?=\\:)|(note)(?=\\ː))", "<n>\\1</n>"),
                        rm4),
          tagged = if_else(str_detect(rm4, "^\\<."), TRUE, FALSE))
 rm_tagged <- remarks_split1 |> 
@@ -269,6 +309,7 @@ eno_etym_long_mini1
 eno_etym_long_mini2 <- eno_etym_long_mini1 |> 
   mutate(notes = replace(notes, notes == "literally 10x40+2x40+10", "lit. '10x40+2x40+10'")) |> 
   mutate(notes = str_replace(notes, "^(literal(ly)?( mean(s|ing))?|lit\\.\\smeaning)", "lit.")) |> 
+  mutate(notes = str_replace(notes, "^literally", "lit. ")) |> 
   mutate(notes = str_replace(notes, "(?<=leaf\\sof\\stree)'\\?", "?'")) |> 
   mutate(notes = str_replace(notes, "(?<=^lit\\.\\s)'I'm(?=\\s)", "'I am")) |> 
   mutate(notes = str_replace(notes, "(?<=^lit\\.\\s)(10x[?]x40[+]10)", "'\\1'")) # |> 
@@ -687,9 +728,9 @@ eno_etym_long_mini3 <- eno_etym_long_mini2 |>
                                   str_extract(words, "\\bdjoeba\\[\\-beri\\-berri\\]"),
                                   "\" <def>",
                                   str_replace_all(notes, "(^first word.+second element in first word |but\\scf.+$)", ""),
-                                  "</def> <re>", # <re> element is related entry in TEI lexicographic attribute
+                                  "</def></w> <re><w>", # <re> element is related entry in TEI lexicographic attribute
                                   str_replace(notes, "^first.+(?=but)", ""),
-                                  "</re></w>",
+                                  "</w></re>",
                                   sep = ""),
                             notesnew)) |> 
   mutate(notesnew = if_else(str_detect(notes, "element") &
@@ -951,7 +992,7 @@ eno_etym_long_mini4 <- eno_etym_long_mini3 |>
                               sep = ""
                             ),
                             notesnew)) |> 
-  mutate(notesnew = replace(notesnew, words  %in%  c("naa(ha)fè", "", "èhaĕ"), "")) |> 
+  mutate(notesnew = replace(notesnew, words  %in%  c("naa(ha)fè", "", "èhaĕ"), NA)) |> 
   mutate(notesnew = if_else(str_detect(notes, "first part unclear$"),
                             str_c(
                               "<w element='1'><m>",
@@ -962,23 +1003,175 @@ eno_etym_long_mini4 <- eno_etym_long_mini3 |>
                               str_extract(notes, "unclear$"), "</def></w>", 
                               sep = ""
                             ),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^meaning 'head'"),
+                            str_c(
+                              "<w><m>",
+                              words,
+                              "</m> <def>",
+                              str_extract(notes, "^meaning 'head'"),
+                              "</def> <note>",
+                              str_replace(notes, "^meaning 'head', ", ""),
+                              "</note></w>",
+                              sep = ""
+                            ),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^second word is missing its second part"),
+                            str_c(
+                              "<w><m>",
+                              str_replace(words, "^.+?\\;\\s", ""),
+                              "</m> <note>",
+                              str_replace(notes, "^second word ", ""),
+                              "</note></w>",
+                              sep = ""
+                            ),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^first part perhaps corresponds to") & year_id=="1894", 
+                            str_c("<w><m>", 
+                                  str_replace(words, "(?<=\\])chi$", ""), 
+                                  "</m> ", 
+                                  str_replace_all(notes, "(^first part |(?<=\\bto\\s).+cf.+$)", ""), 
+                                  "<link target='#", str_replace_all(notes, "(^first part perhaps.+to\\s|\\,\\s.+$)", ""), 
+                                  "'>", str_replace_all(notes, "(^first part perhaps.+to\\s|\\,\\s.+$)", ""), "</link> <re><w>", 
+                                  str_replace(notes, "^first part.+(?=\\bcf\\.)", ""), 
+                                  "</w></re>", 
+                                  sep = ""
+                                  ), 
                             notesnew))
+
+eno_etym_long_mini5 <- eno_etym_long_mini4 |> 
+  mutate(notesnew = if_else(notes == "cf. sea",
+                            str_replace(notes, "\\b(sea)\\b", "<re><w>\\1</w></re>"),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(words == "behoba abie obie", 
+                            str_c("<w><m>", 
+                                  str_extract(notes, "^\"behoba\""), 
+                                  "</m> ", 
+                                  str_extract(notes, "perhaps means"), 
+                                  " <def>", 
+                                  str_extract(notes, "'has come'"), 
+                                  "</def></w> ; <w><m>", 
+                                  str_extract(notes, "\"abie obie\""), 
+                                  "</m> means <def>", 
+                                  str_extract(notes, "'fire'"), 
+                                  "</def></w>", 
+                                  sep = ''), 
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes == "compound of 'belly + ?'",
+                            "compound of 'belly + ?' ; <re><w>belly</w></re>",
+                            notesnew)) |> 
+  mutate(notesnew = if_else(words == "kahapudu",
+                            str_replace(notes, "(?<=^obsolete variant of )(.+$)", "<re><w>\\1</w></re>"),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^Kähler also glosses e-poko"),
+                            str_replace(notes, "(?<=also\\sglosses\\s)(e\\-poko)", "<re><w>\\1</w></re>"),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes %in% c("the second word is perhaps a mishearing of first word", 
+                                         "first word means 'high', second word means 'long'",
+                                         "clipping of second part?",
+                                         "clipping of previous word with genitive",
+                                         "clipping of second word, i.e. 'skin of ...'",
+                                         "clipping of second part for 'eye'"),
+                            "PENDING",
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "likely a derivative of ara 'child'"), 
+                            str_replace(notes, 
+                                        "(?<=of\\s)(ara) ('child')", 
+                                        "<re><w>\\1</w> <def>\\2</def></re>"
+                                        ), 
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "likely a derivative of ara 'child'"), 
+                            str_replace(notesnew, 
+                                        "(?<=corresponding to Kähler )([^']+?)\\s(\\'[^']+\\'$)", 
+                                        "<w>\\1</w> <def>\\2</def></re>"
+                                        ), 
+                            notesnew)) |>  
+  mutate(notesnew = if_else(str_detect(notes, "likely a derivative of ara 'child'"), 
+                            str_replace(notesnew, 
+                                        "(?<=corresponding to )([^ ]+?)(?=\\s)", 
+                                        "<re><ref>\\1</ref>"), 
+                            notesnew)) |>
+  mutate(notesnew = if_else(str_detect(notes, "kaiya 'will come'"), 
+                            str_replace(notes, "(Kähler) has (kaiya) ('will come')", 
+                                        "<re><ref>\\1</ref> <w>\\2</w> <def>\\3</def></re>"), 
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "This word only appears in compounds such as 'farmer' and 'sow'"), 
+                            str_replace_all(notes, 
+                                            "\\'\\b(farmer|sow)\\b\\'", 
+                                            "<link target='#\\1'>\\1</link>"), 
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes == "listed under 'give' in the wordlist, but translated as 'fruit' in the examples",
+                            str_replace_all(notes, "\\'\\b(give|fruit)\\b\\'", "<link target='#\\1'>\\1</link>"),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes == "Modigliani says this term is used by the Malay people",
+                            str_replace(notes, "\\bthis term\\b", words),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^inferred from rooster and hen$"),
+                            str_replace_all(notes, "\\b(rooster|hen)\\b", "<link target='#\\1'>\\1</link>"),
+                            notesnew)) |> 
+  mutate(notesnew = if_else(str_detect(notes, "^Yoder form means"),
+                            replace(notes, str_detect(notes, "^Yoder form means"),
+                                    "<w><m>harub</m> <def>means 'your possession'</def></w> and relates to <re><ref>Kähler</ref> <w>hadu</w></re> and <re><ref>contemporary Enggano</ref> <w><m>hear</m> which becomes <m>haru'</m> <def>'my possession'</def></w> and <w><m>harub</m> <def>'your possession'</def></w></re> and possible connection to <re><w>a-nu</w></re>"),
+                            notesnew)) |> 
   
+  # change the notes into NA for "èhaĕ" and "naa(ha)fè" because this is a single word in the different dialect of Enggano for the same year of 1891
+  mutate(notes = replace(notes, words %in% c("èhaĕ", "naa(ha)fè") & year == "1891" & EngganoLanguage == "Enggano Kèfoe", NA))
+
+eno_etym_long_mini6 <- eno_etym_long_mini5 |> 
+  mutate(notesnew = if_else(!is.na(notes) & is.na(notesnew),
+                            notes,
+                            notesnew))
+
+# combine the general note (for a given row [i.e., ID]) without specific year
+eno_etym_long_mini7 <- eno_etym_long_mini6 |> 
+  left_join(rm_tagged |> filter(year_id == "") |> select(id, note_by_id = content))
+
+
+# processing the un-tagged remarks (remarks without year notes)
+rm_untagged1 <- rm_untagged |> 
+  
+  # identify which ID appears twice (due to the earlier splitting of the notes)
+  group_by(id) |> 
+  
+  # combine these multiple IDs into a single note
+  mutate(rm5 = str_c(rm4, collapse = "_;_")) |> 
+  select(id, rm5, tagged) |> 
+  distinct() |> 
+  mutate(rm5 = str_replace(rm5, "^(literally|literal meaning)", "lit."))
+
+# save the untagged note as .csv for further editing before being merged with the database
+# rm_untagged1 |> write_csv2(file = "data/rm_untagged1.csv")
+
+# edit the untagged notes
+rm_untagged2 <- rm_untagged1 |> 
+  mutate(notesnew = rm5,
+         notesnew = str_replace(notesnew, "\\, cf", " ; cf"),
+         notesnew = str_replace(notesnew, "cf\\. van Rosenberg Kepoe Taigoeka 'big island'", "<re><ref>van Rosenberg</ref> <w><m>Kepoe-taïgoeka</m> <def>'big island'</def></w></re>"),
+         notesnew = str_replace(notesnew, "\\sout\\/side$", "outside"),
+         notesnew = str_replace_all(notesnew, "(\\s\\&\\s|\\band\\b)", " , "),
+         notesnew = replace(notesnew, rm5 == "cf. Edwards (2015:68) for split of /o/", "<re><ref>Edwards (2015:68)</ref> <note>for split of /o/</note></re>"),
+         notesnew = replace(notesnew, rm5 == "cf. Edwards (2015:68) for split of /o/, Yoder says this is a loanword", "<re><ref>Edwards (2015:68)</ref> <note>for split of /o/</note></re> <re><ref>Yoder (2011)</ref> <note>says this is a loanword</note></re>"),
+         notesnew = replace(notesnew, rm5 == "cf. ter Keurs (2002)", "<re><ref>ter Keurs (2002)</ref></re>"),
+         notesnew = replace(notesnew, rm5 == "cf. BI jorok", "<re><lang>BI</lang> <def>jorok</def></re>"),
+         notesnew = replace(notesnew, rm5 == "cf. Clercq 1909:359 'bladscheede van Areca Catechu'", "<re><ref>Clercq 1909:359</ref> <def>'bladscheede van Areca Catechu'<def></re>")) |> 
+  rename(note_untagged = notesnew)
+
+eno_etym_long_mini8 <- eno_etym_long_mini7 |> 
+  left_join(rm_untagged2 |> select(id, note_untagged)) |> 
+  rename(note_year = notesnew,
+         note_id = note_by_id,
+         note_etc = note_untagged)
+
 
 # Dummy untuk Pak Cok
-# eno_etym_long_mini4 |> 
+# eno_etym_long_mini5 |> 
 #   left_join(eno_etym_long_proto_df |> distinct()) |> 
 #   select(cognate_id = id, year, words, indonesian = indonesian_gloss, english = english_new, semantic_field, source = EngganoSource, notes = notesnew, matches("^(PAN|PMP|Remark on)")) |> 
 #   write_tsv("data/dummy_for_pak_cok.tsv")
 
-test_df <- eno_etym_long_mini4 |> filter(!is.na(notes)) |> select(id, year_id, words, english_new, n_word, notes, notesnew)
+test_df <- eno_etym_long_mini6 |> filter(!is.na(notes), notes != "PENDING") |> select(id, year_id, words, english_new, n_word, notes, notesnew)
 test_df |> 
   filter(!is.na(notes), is.na(notesnew)) |> 
   select(year_id, words, n_word,notes) |> 
   arrange(year_id) |> 
   print(n=Inf)
-
-test_df |> 
-  filter(!is.na(notes), is.na(notesnew)) |> 
-  arrange(year_id) |> 
-  select(year_id, words, n_word,notes)
