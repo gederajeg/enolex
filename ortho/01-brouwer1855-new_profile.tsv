@@ -1,28 +1,38 @@
 Grapheme	Frequency
+aauw	1
+aé	1
+ou	1
+aw	1
+au	3
+ai	6
 è	1
-é	6
+é	5
 à	2
 dj	6
+eh	6
+ie	2
+oh	18
+oe	42
 y	1
-w	9
-u	5
+w	7
+u	0
 t	5
 s	1
 r	13
 p	20
-o	126
+o	65
 n	21
 m	17
 l	26
 k	75
 j	6
-i	55
-h	40
+i	47
+h	16
 f	21
-e	67
+e	17
 d	14
 b	28
-a	126
+a	113
 ]	11
 [	11
 ?	1
@@ -30,7 +40,3 @@ a	126
 (	1
  	1
 -	46
-eh	
-ie	
-oh	
-oe	
