@@ -1,42 +1,39 @@
-Grapheme	Frequency
-aauw	1
-aé	1
-ou	1
-aw	1
-au	3
-ai	6
-è	1
-é	5
-à	2
-dj	6
-eh	6
-ie	2
-oh	18
-oe	42
-y	1
-w	7
-u	0
-t	5
-s	1
-r	13
-p	20
-o	65
-n	21
-m	17
-l	26
-k	75
-j	6
-i	47
-h	16
-f	21
-e	17
-d	14
-b	28
-a	113
-]	11
-[	11
-?	1
-)	1
-(	1
- 	1
--	46
+Grapheme	Frequency	Commons
+ī	2	ii
+ou	0	o:u
+aw	1	a:u
+au	4	a:o
+ae	1	a:e
+ai	6	a:i
+à	2	a
+è	0	e
+Ou	1	o:u
+]	11	]
+'	46	'
+a	114	a
+b	28	b
+d	14	d
+e	8	e
+E	17	E
+f	21	f
+h	17	h
+i	47	i
+j	6	y
+k	75	k
+l	26	l
+m	17	m
+n	21	n
+o	15	o
+O	64	O
+p	20	p
+r	13	r
+s	1	s
+t	5	t
+u	46	u
+w	8	w
+y	7	y
+(	1	(
+)	1	)
+?	1	?
+[	11	[
+ 	1	//
