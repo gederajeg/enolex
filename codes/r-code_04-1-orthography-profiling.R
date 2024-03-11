@@ -3,6 +3,59 @@ library(qlcData)
 source("codes/r-code_01-lexdb-pre-processing.R")
 source("codes/r-code_02-orthography.R")
 
+read_prof <- function(filepath = NULL) {
+  df <- read.table(filepath,
+                   sep = "\t",
+                   quote = "",
+                   header = TRUE,
+                   fill = TRUE,
+                   colClasses = "character",
+                   comment.char = "")
+  return(df)
+}
+
+phoneme_map <- function(profile_df, phoneme_df) {
+  prof_df <- profile_df |> 
+    mutate(Replacement = str_replace_all(Replacement,
+                                         "ː",
+                                         ":"))
+  phon_df <- phoneme_df |> 
+    select(Replacement = commons,
+           Phoneme = phoneme) |> 
+    distinct()
+  
+  tb1 <- prof_df |> 
+    left_join(phon_df, by = join_by(Replacement)) |> 
+    mutate(across(where(is.character), ~replace_na(., "")))
+  
+  tb1 <- tb1 |> 
+    mutate(Phoneme = if_else(Phoneme == "" & str_detect(Replacement, "^([[:punct:]]|\\s)$"),
+                             Replacement,
+                             Phoneme),
+           Phoneme = if_else(Phoneme == "" & str_detect(Replacement, "^([aiueo])\\1$"),
+                             str_replace_all(Replacement, "^([aiueo])\\1$", "\\1ː"),
+                             Phoneme))
+  return(tb1)
+}
+
+phoneme_tokenise <- function(str, orth_prof) {
+  
+  tb <- qlcData::tokenize(str,
+                          profile = orth_prof,
+                          transliterate = "Phoneme",
+                          ordering = NULL,
+                          normalize = "NFC",
+                          method = "global",
+                          sep.replace = "#")$strings |> 
+    mutate(ortho_id = row_number()) |> 
+    mutate(ipa = str_replace_all(transliterated, "\\s{1}", ""),
+           ipa = str_replace_all(ipa, "\\#", " ")) |> 
+    select(ortho_id, ipa_tokenised = transliterated, ipa)
+  
+  return(tb)
+  
+}
+
 # eno_etym_long_mini9 <- eno_etym_long_mini8 |> 
 #   mutate(words = str_split(words, "\\s\\;\\s")) |> 
 #   unnest_longer(words)
@@ -41,6 +94,19 @@ brw_str <- brw$strings |>
 brouwer <- brouwer |> 
   left_join(brw_str, by = join_by(ortho_id))
 
+### map the phonemic data to the skeleton profile ========
+brw_prof <- read_prof("ortho/_01-brouwer1855_profile-skeleton.tsv")
+brw_prof_phon <- phoneme_map(brw_prof, trx)
+brw_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+# brw_prof_phon <- brw_prof_phon |> 
+#   mutate(Phoneme = if_else(Phoneme == "" & Grapheme == "s",
+#                            "ç",
+#                            Phoneme))
+brw_str_phon <- phoneme_tokenise(brouwer$words, orth_prof = brw_prof_phon)
+#### combined with the main data ====
+brouwer <- brouwer |> 
+  left_join(brw_str_phon, by = join_by(ortho_id))
+
 
 
 # Boewang 1854 ====
@@ -71,6 +137,16 @@ bwg_str <- bwg$strings |>
 ### combine with the main data ====
 boewang <- boewang |> 
   left_join(bwg_str, by = join_by(ortho_id))
+
+### map the phonemic data to the skeleton profile ========
+bwg_prof <- read_prof("ortho/_02-boewang1854_profile-skeleton.tsv")
+bwg_prof_phon <- phoneme_map(bwg_prof, trx)
+bwg_prof_phon |> filter(Phoneme == "")
+bwg_str_phon <- phoneme_tokenise(boewang$words, orth_prof = bwg_prof_phon)
+#### combined with the main data ====
+boewang <- boewang |> 
+  left_join(bwg_str_phon, by = join_by(ortho_id))
+
 
 
 
