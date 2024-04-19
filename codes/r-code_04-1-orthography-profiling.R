@@ -3,6 +3,11 @@ library(qlcData)
 source("codes/r-code_01-lexdb-pre-processing.R")
 source("codes/r-code_02-orthography.R")
 
+# for Pak Cok (18 March 2024)
+eno_etym_long_mini8 |> 
+  mutate(across(where(is.character), ~replace_na(., ""))) |> 
+  write_tsv("data/dummy_for_pak_cok.tsv")
+
 read_prof <- function(filepath = NULL) {
   df <- read.table(filepath,
                    sep = "\t",
@@ -38,15 +43,16 @@ phoneme_map <- function(profile_df, phoneme_df) {
   return(tb1)
 }
 
-phoneme_tokenise <- function(str, orth_prof) {
+phoneme_tokenise <- function(str, orth_prof, rgx = FALSE, ordr = NULL) {
   
   tb <- qlcData::tokenize(str,
                           profile = orth_prof,
                           transliterate = "Phoneme",
-                          ordering = NULL,
+                          ordering = ordr,
                           normalize = "NFC",
                           method = "global",
-                          sep.replace = "#")$strings |> 
+                          sep.replace = "#",
+                          regex = rgx)$strings |> 
     mutate(ortho_id = row_number()) |> 
     mutate(ipa = str_replace_all(transliterated, "\\s{1}", ""),
            ipa = str_replace_all(ipa, "\\#", " ")) |> 
@@ -78,9 +84,10 @@ brw <- qlcData::tokenize(brouwer$words,
                          file.out = "ortho/_01-brouwer1855",
                          method = "global", 
                          transliterate = "Replacement", 
-                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         ordering = "context", # cf. Moran & Cysouw (2018: 112-114)
                          normalize = "NFC", 
-                         sep.replace = "#")
+                         sep.replace = "#",
+                         regex = TRUE)
 
 ### tidying up the segmentised and transliterated table ====
 brw_str <- brw$strings |> 
@@ -102,11 +109,17 @@ brw_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 #   mutate(Phoneme = if_else(Phoneme == "" & Grapheme == "s",
 #                            "ç",
 #                            Phoneme))
-brw_str_phon <- phoneme_tokenise(brouwer$words, orth_prof = brw_prof_phon)
+brw_str_phon <- phoneme_tokenise(brouwer$words, 
+                                 orth_prof = brw_prof_phon, 
+                                 rgx = TRUE,
+                                 ordr = "context")
 #### combined with the main data ====
 brouwer <- brouwer |> 
   left_join(brw_str_phon, by = join_by(ortho_id))
-
+##### save the tokenised and transliterated strings =====
+brouwer |> 
+  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_01-brouwer1855_strings-ipa.tsv")
 
 
 # Boewang 1854 ====
@@ -146,7 +159,10 @@ bwg_str_phon <- phoneme_tokenise(boewang$words, orth_prof = bwg_prof_phon)
 #### combined with the main data ====
 boewang <- boewang |> 
   left_join(bwg_str_phon, by = join_by(ortho_id))
-
+##### save the tokenised and transliterated strings =====
+boewang |> 
+  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_02-boewang1854_strings-ipa.tsv")
 
 
 
@@ -163,9 +179,10 @@ vrosen <- qlcData::tokenize(vrosenberg$words,
                          file.out = "ortho/_03-vRosenberg1855",
                          method = "global", 
                          transliterate = "Replacement", 
-                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         ordering = "context", # cf. Moran & Cysouw (2018: 112-114)
                          normalize = "NFC", 
-                         sep.replace = "#")
+                         sep.replace = "#",
+                         regex = TRUE)
 
 ### tidying up the segmentised and transliterated table ====
 vrosen_str <- vrosen$strings |> 
@@ -179,6 +196,29 @@ vrosen_str <- vrosen$strings |>
 vrosenberg <- vrosenberg |> 
   left_join(vrosen_str, by = join_by(ortho_id))
 
+### map the phonemic data to the skeleton profile ========
+vrosen_prof <- read_prof("ortho/_03-vRosenberg1855_profile-skeleton.tsv")
+vrosen_prof_phon <- phoneme_map(vrosen_prof, trx)
+vrosen_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+vrosen_prof_phon <- vrosen_prof_phon |>
+  mutate(Phoneme = if_else(Phoneme == "" & Replacement %in% c("a'a", "a'o", "a'i"),
+                           str_replace_all(Replacement, "\\'(.)$", "ʔ\\1"),
+                           Phoneme),
+         Phoneme = if_else(Left == "b" & Right == "h",
+                           "ə",
+                           Phoneme),
+         Phoneme = replace(Phoneme, Replacement == "K" & Phoneme == "", "k"))
+vrosen_str_phon <- phoneme_tokenise(vrosenberg$words, 
+                                 orth_prof = vrosen_prof_phon, 
+                                 rgx = TRUE,
+                                 ordr = "context")
+#### combined with the main data ====
+vrosenberg <- vrosenberg |> 
+  left_join(vrosen_str_phon, by = join_by(ortho_id))
+##### save the tokenised and transliterated strings =====
+vrosenberg |> 
+  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_03-vRosenberg1855_strings-ipa.tsv")
 
 
 # Van de Straten & Severijn 1855 ====
@@ -272,3 +312,35 @@ frc_str <- frc$strings |>
 ### combine with the main data ====
 francis <- francis |> 
   left_join(frc_str, by = join_by(ortho_id))
+
+
+
+# Oudemans 1879 ====
+oudemans <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Oudemans 1879") |> 
+  mutate(ortho_id = row_number())
+## create a skeleton profile for "Oudemans 1879" ====
+# qlcData::write.profile(oudemans$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_07-oudemans1879_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+odm <- qlcData::tokenize(oudemans$words, 
+                         profile = "ortho/_07-oudemans1879_profile-skeleton.tsv", 
+                         file.out = "ortho/_07-oudemans1879",
+                         method = "global", 
+                         transliterate = "Replacement", 
+                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC", 
+                         sep.replace = "#",
+                         regex = FALSE)
+
+### tidying up the segmentised and transliterated table ====
+odm_str <- odm$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+oudemans <- oudemans |> 
+  left_join(odm_str, by = join_by(ortho_id))
