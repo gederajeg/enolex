@@ -1,10 +1,10 @@
 library(tidyverse)
 
 # get the URL for the Google sheet and load the data (periodically run)
-source("codes/r-code_00-lexdb-source-rawfile.R")
+# source("codes/r-code_00-lexdb-source-rawfile.R")
 
 # save into .rds file
-write_rds(x = eno_etym, file = "data/eno_etym.rds")
+# write_rds(x = eno_etym, file = "data/eno_etym.rds")
 
 # load the data
 eno_etym <- read_rds("data/eno_etym.rds")
@@ -209,7 +209,9 @@ eno_etym_long_mini <- eno_etym_long1 |>
   left_join(select(year_source_df, -year))
 
 eno_etym_long_proto_df <- eno_etym_long1 |>
-  select(id, words, matches("^P[AM]"), `Etymological source`, `Remark on etymology`) |> 
+  select(id, year, words, indonesian_gloss, english_gloss, EngganoLanguage, 
+         EngganoSource, 
+         matches("^P[AM]"), `Etymological source`, `Remark on etymology`) |> 
   rename(PAN_etymon = `PAN etymon`,
          PAN_gloss = `PAN gloss`,
          PAN_source = `PAN source`,
@@ -1066,12 +1068,24 @@ eno_etym_long_mini5 <- eno_etym_long_mini4 |>
   mutate(notesnew = if_else(str_detect(notes, "^Kähler also glosses e-poko"),
                             str_replace(notes, "(?<=also\\sglosses\\s)(e\\-poko)", "<re><w>\\1</w></re>"),
                             notesnew)) |> 
-  mutate(notesnew = if_else(notes %in% c("the second word is perhaps a mishearing of first word", 
-                                         "first word means 'high', second word means 'long'",
+  mutate(notesnew = if_else(words == "kakènèbaka ; kakèbara", 
+                            str_c('"', 
+                                  str_extract(words, "(?<=\\s\\;\\s).+$"), 
+                                  '" ', 
+                                  str_extract(notes, "is perhaps a mishearing of "), 
+                                  '"', 
+                                  str_extract(words, "^[^ ;]+(?=\\s\\;)"), '"', sep = ""), 
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes %in% c(#"the second word is perhaps a mishearing of first word", 
+                                         #"first word means 'high', second word means 'long'",
                                          "clipping of second part?",
-                                         "clipping of previous word with genitive",
-                                         "clipping of second word, i.e. 'skin of ...'",
-                                         "clipping of second part for 'eye'"),
+                                         "clipping of previous word with genitive"#,
+                                         #"clipping of second word, i.e. 'skin of ...'",
+                                         #"clipping of second part for 'eye'"
+                                         ),
+                            "PENDING",
+                            notesnew)) |> 
+  mutate(notesnew = if_else(notes == "first word means 'high', second word means 'long'" & year == "1895",
                             "PENDING",
                             notesnew)) |> 
   mutate(notesnew = if_else(str_detect(notes, "likely a derivative of ara 'child'"), 
@@ -1124,7 +1138,9 @@ eno_etym_long_mini6 <- eno_etym_long_mini5 |>
 
 # combine the general note (for a given row [i.e., ID]) without specific year
 eno_etym_long_mini7 <- eno_etym_long_mini6 |> 
-  left_join(rm_tagged |> filter(year_id == "") |> select(id, note_by_id = content))
+  left_join(rm_tagged |> 
+              filter(year_id == "") |> 
+              select(id, note_by_id = content))
 
 
 # processing the un-tagged remarks (remarks without year notes)
