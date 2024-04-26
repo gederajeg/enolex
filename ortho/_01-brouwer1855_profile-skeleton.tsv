@@ -18,7 +18,8 @@ Left	Grapheme	Right	Class	Replacement
 	au			aːo
 	ao			aːO
 	ai			aːi
-	\-			'
+^e	\-			'
+	\-			-
 	\ 			 
 	\(			(
 	\)			)
