@@ -1,5 +1,7 @@
 # Workflow for curating the orthography profile.
 
+This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthography profiling so that I won't forget!
+
 -   write a skeleton profile once (using the `write.profile()` function)
 
 -   open the skeleton profile in Libre Office
