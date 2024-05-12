@@ -4,9 +4,9 @@ source("codes/r-code_01-lexdb-pre-processing.R")
 source("codes/r-code_02-orthography.R")
 
 # for Pak Cok (18 March 2024)
-eno_etym_long_mini8 |> 
-  mutate(across(where(is.character), ~replace_na(., ""))) |> 
-  write_tsv("data/dummy_for_pak_cok.tsv")
+# eno_etym_long_mini8 |> 
+#   mutate(across(where(is.character), ~replace_na(., ""))) |> 
+#   write_tsv("data/dummy_for_pak_cok.tsv")
 
 read_prof <- function(filepath = NULL) {
   df <- read.table(filepath,
@@ -122,6 +122,11 @@ brouwer |>
   write_tsv("ortho/_01-brouwer1855_strings-ipa.tsv")
 
 
+
+
+
+
+
 # Boewang 1854 ====
 boewang <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "Boewang 1854") |> 
@@ -163,6 +168,12 @@ boewang <- boewang |>
 boewang |> 
   select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_02-boewang1854_strings-ipa.tsv")
+
+
+
+
+
+
 
 
 
@@ -221,6 +232,12 @@ vrosenberg |>
   write_tsv("ortho/_03-vRosenberg1855_strings-ipa.tsv")
 
 
+
+
+
+
+
+
 # Van de Straten & Severijn 1855 ====
 vdstraten <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "vd Straten & S. 1855") |> 
@@ -249,6 +266,34 @@ vds_str <- vds$strings |>
 ### combine with the main data ====
 vdstraten <- vdstraten |> 
   left_join(vds_str, by = join_by(ortho_id))
+
+### map the phonemic data to the skeleton profile ========
+vdstraten_prof <- read_prof("ortho/_04-vdStraten1855_profile-skeleton.tsv")
+vdstraten_prof_phon <- phoneme_map(vdstraten_prof, trx)
+vdstraten_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+vdstraten_prof_phon <- vdstraten_prof_phon |>
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Grapheme == "nj",
+                           "ɲ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Grapheme == "g",
+                           "k"))
+vdstraten_str_phon <- phoneme_tokenise(vdstraten$words, 
+                                    orth_prof = vdstraten_prof_phon, 
+                                    rgx = FALSE,
+                                    ordr = "context")
+
+#### combined with the main data ====
+vdstraten <- vdstraten |> 
+  left_join(vdstraten_str_phon, by = join_by(ortho_id))
+##### save the tokenised and transliterated strings =====
+vdstraten |> 
+  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_04-vdStraten1855_strings-ipa.tsv")
+
+
+
+
 
 
 
@@ -280,6 +325,15 @@ wlnd_str <- wlnd$strings |>
 ### combine with the main data ====
 walland <- walland |> 
   left_join(wlnd_str, by = join_by(ortho_id))
+
+
+
+
+
+
+
+
+
 
 
 
@@ -315,6 +369,13 @@ francis <- francis |>
 
 
 
+
+
+
+
+
+
+
 # Oudemans 1879 ====
 oudemans <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "Oudemans 1879") |> 
@@ -344,3 +405,98 @@ odm_str <- odm$strings |>
 ### combine with the main data ====
 oudemans <- oudemans |> 
   left_join(odm_str, by = join_by(ortho_id))
+
+
+
+
+
+
+
+
+
+# Helfrich 1888 ====
+helfrich1888 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Helfrich 1888") |> 
+  mutate(ortho_id = row_number())
+## check trema for glottal stop in Helfrich 1888 ====
+helfrich1888 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words)
+## create a skeleton profile for "Helfrich 1888" ====
+# qlcData::write.profile(helfrich1888$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_08-helfrich1888_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+h88 <- qlcData::tokenize(helfrich1888$words, 
+                         profile = "ortho/_08-helfrich1888_profile-skeleton.tsv", 
+                         file.out = "ortho/_08-helfrich1888",
+                         method = "global",
+                         transliterate = "Replacement", 
+                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC", 
+                         sep.replace = "#",
+                         regex = TRUE)
+
+### tidying up the segmentised and transliterated table ====
+h88_str <- h88$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+helfrich1888 <- helfrich1888 |> 
+  left_join(h88_str, by = join_by(ortho_id))
+
+
+
+
+
+
+
+
+
+
+
+# Helfrich & Pieters 1891 ====
+helfrich_pieters1891 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Helfrich & Pieters 1891") |> 
+  mutate(ortho_id = row_number())
+
+## check trema for glottal stop in Helfrich & Pieters 1891 ====
+helfrich_pieters1891 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words)
+### there is only "aï", but not ï preceded by other vowels
+helfrich_pieters1891 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words) |> filter(str_detect(words, stri_trans_nfc("(aï)")))
+helfrich_pieters1891 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words) |> filter(str_detect(words, stri_trans_nfc("([iueo]ï)")))
+
+## create a skeleton profile for "Helfrich & Pieters 1891" ====
+# qlcData::write.profile(helfrich_pieters1891$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_09-helfrich_pieters1891_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+hp1891 <- qlcData::tokenize(helfrich_pieters1891$words, 
+                         profile = "ortho/_09-helfrich_pieters1891_profile-skeleton.tsv", 
+                         file.out = "ortho/_09-helfrich_pieters1891",
+                         method = "global",
+                         transliterate = "Replacement", 
+                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC", 
+                         sep.replace = "#",
+                         regex = TRUE)
+
+### tidying up the segmentised and transliterated table ====
+hp1891_str <- hp1891$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+helfrich_pieters1891 <- helfrich_pieters1891 |> 
+  left_join(hp1891_str, by = join_by(ortho_id))
