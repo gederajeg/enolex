@@ -62,6 +62,12 @@ phoneme_tokenise <- function(str, orth_prof, rgx = FALSE, ordr = NULL) {
   
 }
 
+get_ortho_cols <- function(df) {
+  
+  return(select(df, words, originals, matches("^english"), tokenized, transliterated, commons))
+  
+}
+
 # eno_etym_long_mini9 <- eno_etym_long_mini8 |> 
 #   mutate(words = str_split(words, "\\s\\;\\s")) |> 
 #   unnest_longer(words)
@@ -500,3 +506,46 @@ hp1891_str <- hp1891$strings |>
 ### combine with the main data ====
 helfrich_pieters1891 <- helfrich_pieters1891 |> 
   left_join(hp1891_str, by = join_by(ortho_id))
+
+get_ortho_cols(helfrich_pieters1891)
+
+
+
+
+
+# modigliani 1894 ====
+modi1894 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Modigliani 1894") |> 
+  mutate(ortho_id = row_number(),
+         words = str_replace(words, "ſ", "f"))
+## check trema for glottal stop in Modigliani 1894 ====
+modi1894 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words)
+## create a skeleton profile for "Modigliani 1894" ====
+# qlcData::write.profile(modi1894$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_10-modi1894_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+mod1894 <- qlcData::tokenize(modi1894$words, 
+                         profile = "ortho/_10-modi1894_profile-skeleton.tsv", 
+                         file.out = "ortho/_10-modi1894",
+                         method = "global",
+                         transliterate = "Replacement", 
+                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC", 
+                         sep.replace = "#",
+                         regex = TRUE)
+
+### tidying up the segmentised and transliterated table ====
+mod1894_str <- mod1894$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+modi1894 <- modi1894 |> 
+  left_join(mod1894_str, by = join_by(ortho_id))
+
+get_ortho_cols(modi1894)
