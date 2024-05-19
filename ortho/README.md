@@ -4,9 +4,15 @@ This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthograph
 
 -   write a skeleton profile once (using the `write.profile()` function)
 
+    -   commit the skeleton profile to git for track the changes
+
 -   open the skeleton profile in Libre Office
 
 -   open the Enggano transcription system from Google Spreadsheet (inside the `data` folder in the main `Enggano` Google Drive folder)
+
+    -   filter by the `source` column, then
+
+    -   filter by the `grapheme` column (esp. exclude the \[Blanks\] cell for the grapheme)
 
 -   start working (i.e., check the grapheme and common transcription) by grapheme category (e.g., vowel first, then consonant, then glides, or vice versa)
 
