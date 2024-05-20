@@ -6,6 +6,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	éh	$		e	0
 	eh	[ ]		e	0
 	éh	[ ]		e	0
+^e	\-			'	3
 	oe			u	43
 	oé			u	0
 	ou			oːu	1
@@ -18,7 +19,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	au			aːo	4
 	ao			aːO	1
 	ai			aːi	6
-	\-			'	46
+	\-			-	43
 	\ 			 	7
 	\(			(	1
 	\)			)	1
