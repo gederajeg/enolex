@@ -24,3 +24,23 @@ This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthograph
     -   when the argument `regex = TRUE`, it will capture/detect the regex in these columns: "Left", "Grapheme", "Right" of the profile skeleton file. **IMPORTANT**: we in particular need regex escape character for special character in the "Grapheme" column for the `regex = TRUE` works. Again, see the example in the [skeleton profile of Helfrich 1888](https://github.com/engganolang/enolex/blob/main/ortho/_08-helfrich1888_profile-skeleton.tsv "Helfrich (1888) skeleton profile") (esp. lines no. 19, 20, 22, and 23).
 
 -   tidying up the segmentised and transliterated data
+
+# Notes
+
+## Stokhof (1987) Holle List
+
+- ā is transliterated into long a (which is "aa", in Enggano common transcription). The long a characteristic of ā is indicated on the first page of the Enggano list (Sub-section 1.2.1)
+
+- ê in the database is a typo from the original ĕ in the Enggano list (Notes 51 page 203). That is why ê is transliterated into ė, which is the transliteration for ĕ
+
+- ē is characterised as in the first syllable of Dutch "geven" (cf. Sub-section 1.2.1 on the first page of Enggano list), which in IPA, the "e" part is long (source: https://en.wiktionary.org/wiki/geven); that is why ē is transliterated into ee for long vowels.
+
+- ĕ is the orthography for schwa, hence transliterated into ė (Enggano common transcription for schwa). This is available in the first page of the Enggano list (which represents the second syllable of Dutch "de", and "geven"), and in the Stokhof (1980: 76) orthography table. 
+
+- é is transliterated into E (Enggano common transcription for the sound /ɛ/) because it is characterised as the e in Dutch "pet" (cf. Sub-section 1.2.1 on the first page of Enggano list).
+
+  - Then, è is also transliterated into E because Stokhof (1980: 76, 6.2) characterises è as in Dutch "pet" representing the phonetic symbol [ɛ].
+
+- ō is transliterated as long o (oo for Enggano common transcription) because it is characterised as the o in Dutch "hopen", which is a long vowel (source: https://en.wiktionary.org/wiki/hopen)
+
+- ô in the database is a typo from the original ŏ in the Enggano list (ID 1326 page 199). That is why ô is transliterated into O, which is the transliteration for ŏ that is similar as o. This is illustrated with Dutch "rol", which is phonetically an [ɔ] (source: https://en.wiktionary.org/wiki/rol), and in Enggano common transcription, the sound /ɔ/ is transcribed with O.
