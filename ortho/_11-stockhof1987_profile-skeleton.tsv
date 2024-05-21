@@ -7,6 +7,9 @@ Left	Grapheme	Right	Class	Replacement
 	tj			c
 	dj			j
 	nj			ñ
+	āā			aa
+	aā			aa
+	āa			aa
 	aä			a'a
 	-			-
 	\(k\)			'
@@ -23,20 +26,20 @@ Left	Grapheme	Right	Class	Replacement
 	a			a
 	à			a
 	ä			ä
-	ǎ			ǎ
+	ǎ			ă
 	ă			ă
-	ā			ā
+	ā	[^ā]		aa
 	å			å
 	a͜			a͜
 	b			b
 	c			c
 	d			d
 	e			e
-	é			e
+	é			E
 	è			E
-	ê			ê
+	ê			ė
 	ĕ			ė
-	ē			e
+	ē			ee
 	f			f
 	g			g
 	h			h
@@ -49,9 +52,9 @@ Left	Grapheme	Right	Class	Replacement
 	n			n
 	o			O
 	ò			O
-	ô			ô
-	ŏ			ŏ
-	ō			o
+	ô			O
+	ŏ			O
+	ō			oo
 	p			p
 	r			r
 	s			s
