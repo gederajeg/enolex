@@ -18,6 +18,14 @@ This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthograph
 
 -   determine the ordering of the grapheme profile for the replacement
 
+    - sequence put first
+    
+    - then grapheme with context (left and/or right)
+    
+    - then the rest
+    
+    - in the function, the order is NULL (and regex is TRUE)
+
 -   then, run the `tokenize()` function based on the edited skeleton profile to (i) segmentise and (ii) transliterate the grapheme (incl. the normalisation of the string)
 
     -   the argument `regex = TRUE/FALSE` depends on the orthography profile for each author (cf. Helfrich 1888 for the contextual replacement for the allophone of \h\ into \h\ or \x)
@@ -26,6 +34,14 @@ This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthograph
 -   tidying up the segmentised and transliterated data
 
 # Notes
+
+## Francis (1870)
+
+- The orthography is modelled after Oudemans (1879) because the list from Francis (a British) appears in Oudemans (1879) list.
+
+## Helfrich (1888)
+
+- Uses Helfrich and Pieters (1891) orthography
 
 ## Stokhof (1987) Holle List
 
@@ -44,3 +60,29 @@ This is just my own (Gede Primahadi W. Rajeg) personal note to do the orthograph
 - ō is transliterated as long o (oo for Enggano common transcription) because it is characterised as the o in Dutch "hopen", which is a long vowel (source: https://en.wiktionary.org/wiki/hopen)
 
 - ô in the database is a typo from the original ŏ in the Enggano list (ID 1326 page 199). That is why ô is transliterated into O, which is the transliteration for ŏ that is similar as o. This is illustrated with Dutch "rol", which is phonetically an [ɔ] (source: https://en.wiktionary.org/wiki/rol), and in Enggano common transcription, the sound /ɔ/ is transcribed with O.
+
+## Capell (1982) 
+
+There is an issue with transliterating these characters: 
+
+```
+> cp82$missing
+  Grapheme Frequency Codepoint        UnicodeName
+1         ̲        36    U+0332 COMBINING LOW LINE
+
+
+```
+
+```
+> cp82$missing
+  Grapheme Frequency Codepoint                     UnicodeName
+1        ẽ         2    U+1EBD LATIN SMALL LETTER E WITH TILDE
+```
+
+
+
+What I did was as follows:
+    
+- For the combining low line, I copied from this site: https://unicode-explorer.com/c/0332. So, this character is included as a separate entry in the grapheme and replaced with nothing
+      
+- For the latin small letter e with tilde, I copied from this: [https://graphemica.com/%E1%BA%BD](https://graphemica.com/%E1%BA%BD). So this character is included as a separate entry in the grapheme and replaced with itself
