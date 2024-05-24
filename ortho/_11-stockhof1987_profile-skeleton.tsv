@@ -3,15 +3,20 @@ Left	Grapheme	Right	Class	Replacement
 	oé			u
 	ie			i
 	ié			i
+	nj			ñ
 	sj			š
 	tj			c
 	dj			j
-	nj			ñ
 	āā			aa
 	aā			aa
 	āa			aa
 	aä			a'a
-	-			-
+(ie)	h			x
+(ai)	h			x
+(?<!a)i	h			x
+	ā	[^āa]		aa
+[^āa]	ā			aa
+	\-			-
 	\(k\)			'
 	 			 
 	\(			(
@@ -28,11 +33,10 @@ Left	Grapheme	Right	Class	Replacement
 	ä			ä
 	ǎ			ă
 	ă			ă
-	ā	[^ā]		aa
 	å			å
 	a͜			a͜
 	b			b
-	c			c
+	c			k
 	d			d
 	e			e
 	é			E
