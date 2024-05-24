@@ -19,6 +19,9 @@ Left	Grapheme	Right	Class	Replacement
 	ej			eːi
 	oi			oːi
 	ou			oːu
+(ie)	h			x
+(ai)	h			x
+[^ab]i	h			x
 	\-	[éèi]$		'
 ^.	\-			'
 	\-			-
