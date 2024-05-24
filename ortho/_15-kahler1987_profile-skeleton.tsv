@@ -47,7 +47,7 @@ Left	Grapheme	Right	Class	Replacement
 	d			d
 	e			e
 	é			é
-	è			è
+	è			E
 	ē			ee
 	ẽ			ẽ
 	ẽ́			ẽ́
@@ -87,7 +87,7 @@ Left	Grapheme	Right	Class	Replacement
 	r			r
 	s			s
 	t			t
-	ʧ			ʧ
+	ʧ			c
 	u			u
 	ú			ú
 	ū			uu
