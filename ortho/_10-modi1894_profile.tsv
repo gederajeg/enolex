@@ -1,11 +1,4 @@
 Left	Grapheme	Right	Class	Replacement	Frequency
-	ch	[iíìeéè]		k	111
-	cc	[aàáoòóuúù]		k	8
-	Ch	[iíìeéè]		k	1
-	c	[aàáoòóuúù]		k	279
-	C	[aàáoòóuúù]		k	1
-(ai)	h			x	0
-(?<!a)i	h			x	18
 	gi			c	8
 	tg			c	1
 	gn			ñ	5
@@ -30,20 +23,27 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	ou			oːu	1
 	oú			oːu	0
 	où			oːu	0
-	 			 	224
+	ch	[iíìeéè]		k	111
+	cc	[aàáoòóuúù]		k	8
+	Ch	[iíìeéè]		k	1
+	c	[aàáoòóuúù]		k	277
+	C	[aàáoòóuúù]		k	1
+(ai)	h			x	0
+(?<!a)i	h			x	18
+	 			 	228
 	\(			(	2
 	\)			)	2
 	\.			.	3
-	;			;	34
-	\[			[	17
-	\]			]	17
+	;			;	36
+	\[			[	19
+	\]			]	19
 	²			²	7
-	a			a	743
+	a			a	741
 	á			a	50
 	à			a	10
 	b			b	126
 	c			c	9
-	C			C	0
+	C			k	0
 	d			d	77
 	e			e	304
 	é			e	20

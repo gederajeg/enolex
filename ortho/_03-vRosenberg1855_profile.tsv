@@ -1,7 +1,4 @@
 Left	Grapheme	Right	Class	Replacement	Frequency
-	\-	[éèi]$		'	4
-^.	\-			'	1
-b	i	h		ė	1
 	aoe			aːo	2
 	àoe			aːo	0
 	àoé			aːo	0
@@ -22,12 +19,17 @@ b	i	h		ė	1
 	ej			eːi	7
 	oi			oːi	1
 	ou			oːu	2
+(ie)	h			x	0
+(ai)	h			x	0
+[^ab]i	h			x	1
+	\-	[éèi]$		'	4
+^.	\-			'	1
 	\-			-	17
 	\ 			 	53
 	\;			;	5
 	\[			[	4
 	\]			]	4
-	a			a	209
+	a			a	207
 	á			a	2
 	à			a	2
 	ä			a	0
@@ -38,11 +40,12 @@ b	i	h		ė	1
 	è			E	11
 	f			f	16
 	g			k	19
-	h			h	46
+	h			h	45
+b	i	h		ė	1
 	i			i	75
 	ï			i	0
 	j			y	13
-	k			k	100
+	k			k	99
 	K			K	2
 	l			l	46
 	m			m	39
@@ -51,7 +54,7 @@ b	i	h		ė	1
 	p			p	55
 	r			r	23
 	s			x	1
-	t			t	33
+	t			t	32
 	u			u	0
 	ú			u̇	1
 	v			w	2

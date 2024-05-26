@@ -16,13 +16,16 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	oi			oːi	3
 	aw			aːo	3
 	ai			aːi	20
-	-			'	167
+(ie)	h			x	3
+(ai)	h			x	5
+(?<!a)i	h			x	5
+	\-			'	167
 	 			 	66
-	(			(	3
-	)			)	3
-	;			;	12
-	[			[	10
-	]			]	10
+	\(			(	3
+	\)			)	3
+	\;			;	12
+	\[			[	10
+	\]			]	10
 	a			a	356
 	à			a	1
 	b			b	59
@@ -34,7 +37,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	ê			u̇	2
 	ë			e	2
 	f			f	12
-	h			h	256
+	h			h	243
 	i			i	61
 	j			y	11
 	k			k	229
