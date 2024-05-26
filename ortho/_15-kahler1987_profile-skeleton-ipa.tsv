@@ -46,8 +46,8 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	ẽ̄			ẽẽ	ẽː
 	ẽ͜			ẽ:	ẽ͜
 	ə			u̇	ɨ
-	ə́			u̇́	ɨ̃
-	ə̃			ė̃	ə̃
+	ə́			u̇́	ɨ́
+	ə̃			u̇̃	ə̃
 	h			h	h
 	i			i	i
 	í			í	i
@@ -72,8 +72,8 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	õ			õ	ɔ͂
 	ṍ			ṍ	ɔ̃́
 	o͜			o:	o͜
-	ȭ			õõ	õː
-	õ͜			õ:	õ͜
+	ȭ			õõ	ɔ̃ː
+	õ͜			õ:	ɔ̃͜
 	p			p	p
 	r			r	r
 	s			s	s
