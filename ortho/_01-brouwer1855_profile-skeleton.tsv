@@ -1,23 +1,26 @@
 Left	Grapheme	Right	Class	Replacement
-	oh	$		o
 	oe			u
 	oé			u
 	ou			oːu
 	ie			ii
 	ié			ii
 	dj			j
-	eh	\b		e
-	éh	\b		e
-	eh	$		e
-	éh	$		e
-	eh	[ ]		e
-	éh	[ ]		e
 	ae			aːe
 	aé			aːe
 	aw			aːu
 	au			aːo
 	ao			aːO
 	ai			aːi
+	oh	$		o
+(ie)	h			x
+(ai)	h			x
+(?<!a)i	h			x
+	eh	\b		e
+	éh	\b		e
+	eh	$		e
+	éh	$		e
+	eh	[ ]		e
+	éh	[ ]		e
 ^e	\-			'
 	\-			-
 	\ 			 

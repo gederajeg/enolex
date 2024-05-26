@@ -1,11 +1,4 @@
 Left	Grapheme	Right	Class	Replacement
-	ch	[iíìeéè]		k
-	cc	[aàáoòóuúù]		k
-	Ch	[iíìeéè]		k
-	c	[aàáoòóuúù]		k
-	C	[aàáoòóuúù]		k
-(ai)	h			x
-(?<!a)i	h			x
 	gi			c
 	tg			c
 	gn			ñ
@@ -30,6 +23,13 @@ Left	Grapheme	Right	Class	Replacement
 	ou			oːu
 	oú			oːu
 	où			oːu
+	ch	[iíìeéè]		k
+	cc	[aàáoòóuúù]		k
+	Ch	[iíìeéè]		k
+	c	[aàáoòóuúù]		k
+	C	[aàáoòóuúù]		k
+(ai)	h			x
+(?<!a)i	h			x
 	 			 
 	\(			(
 	\)			)
@@ -43,7 +43,7 @@ Left	Grapheme	Right	Class	Replacement
 	à			a
 	b			b
 	c			c
-	C			C
+	C			k
 	d			d
 	e			e
 	é			e

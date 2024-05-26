@@ -10,20 +10,23 @@ Left	Grapheme	Right	Class	Replacement
 	aè			aːe
 	aé			aːe
 	ai			aːi
-	dj			j
 	tj			c
+	dj			j
 	th			c
 	oh			o
 	oö			o'o
 	aä			a'a
-	-			'
+(ie)	h			x
+(ai)	h			x
+(?<!a)i	h			x
+	\-			'
 	 			 
-	(			(
-	)			)
-	/			/
-	;			;
-	[			[
-	]			]
+	\(			(
+	\)			)
+	\/			/
+	\;			;
+	\[			[
+	\]			]
 	a			a
 	à			a
 	ä			ä

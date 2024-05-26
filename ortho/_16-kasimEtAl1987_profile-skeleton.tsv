@@ -1,20 +1,26 @@
 Left	Grapheme	Right	Class	Replacement
-	ūū			uː
-	aa			aː
-	ēē			ėː
-	uu			uː
-	ii			iː
-	ĒĒ			Eː
-	īī			iː
-	āā			aː
+k	h			ʰ
+d	h			ʰ
+(ie)	h			x
+(ai)	h			x
+(?<!a)i	h			x
+	aw			aːu
+	ūū			uu
+	aa			aa
+	ēē			ėė
+	uu			uu
+	ii			ii
+	ĒĒ			EE
+	īī			ii
+	āā			aa
 	kʰ			kʰ
 	'			'
-	-			-
+	\-			-
 	 			 
-	;			;
-	[			[
-	]			]
-	‘			'
+	\;			;
+	\[			[
+	\]			]
+	\‘			'
 	a			a
 	ā			ā
 	ã			ã
@@ -26,10 +32,6 @@ Left	Grapheme	Right	Class	Replacement
 	ē			ė
 	Ē			ė
 	g			g
-k	h			kʰ
-(ie)	h			x
-(ai)	h			x
-(?<!a)i	h			x
 	h			h
 	ʰ			ʰ
 	i			i
