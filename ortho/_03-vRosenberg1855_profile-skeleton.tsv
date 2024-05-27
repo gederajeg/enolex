@@ -9,6 +9,7 @@ Left	Grapheme	Right	Class	Replacement
 	äo			a'o
 	aï			a'i
 	ai			aːi
+	ie			i
 	dj			j
 	tj			c
 	oe			u
@@ -19,6 +20,7 @@ Left	Grapheme	Right	Class	Replacement
 	ej			eːi
 	oi			oːi
 	ou			oːu
+	ow			oːu
 (ie)	h			x
 (ai)	h			x
 [^ab]i	h			x

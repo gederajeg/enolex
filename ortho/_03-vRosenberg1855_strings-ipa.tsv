@@ -16,7 +16,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 257	1855	v. Rosenberg 1855	19	1855vR	bakka	bakka	b a k k a	bakka	b a k k a
 275	1855	v. Rosenberg 1855	20	1855vR	kahaä	kaha'a	k a h a'a	kahaʔa	k a h aʔa
 289	1855	v. Rosenberg 1855	21	1855vR	barèé	barEe	b a r E e	barɛe	b a r ɛ e
-314	1855	v. Rosenberg 1855	24	1855vR	edie-édie	edie-edie	e d i e - e d i e	edie-edie	e d i e - e d i e
+314	1855	v. Rosenberg 1855	24	1855vR	edie-édie	edi-edi	e d i - e d i	edi-edi	e d i - e d i
 321	1855	v. Rosenberg 1855	25	1855vR	lèwo lewo djewé	lEwo lewo jewe	l E w o # l e w o # j e w e	lɛwo lewo d͡ʒewe	l ɛ w o # l e w o # d͡ʒ e w e
 333	1855	v. Rosenberg 1855	26	1855vR	faginono	fakinono	f a k i n o n o	fakinono	f a k i n o n o
 340	1855	v. Rosenberg 1855	27	1855vR	fanoe	fanu	f a n u	fanu	f a n u
@@ -32,10 +32,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 525	1855	v. Rosenberg 1855	47	1855vR	koedei	kude:i	k u d e:i	kudɛi	k u d ɛi
 566	1855	v. Rosenberg 1855	50	1855vR	léwo léwo	lewo lewo	l e w o # l e w o	lewo lewo	l e w o # l e w o
 597	1855	v. Rosenberg 1855	52	1855vR	gaheho	kaheho	k a h e h o	kaheho	k a h e h o
-636	1855	v. Rosenberg 1855	58	1855vR	howi howi	howi howi	h o w i # h o w i	howi howi	h o w i # h o w i
+636	1855	v. Rosenberg 1855	58	1855vR	howi howi	ho:ui ho:ui	h o:u i # h o:u i	hɔui hɔui	h ɔu i # h ɔu i
 671	1855	v. Rosenberg 1855	62	1855vR	peparè-e-tjé	peparE-e-ce	p e p a r E - e - c e	peparɛ-e-t͡ʃe	p e p a r ɛ - e - t͡ʃ e
 682	1855	v. Rosenberg 1855	63	1855vR	paganan	pakanan	p a k a n a n	pakanan	p a k a n a n
-691	1855	v. Rosenberg 1855	64	1855vR	[pàg]ehlie	[pak]ehlie	[ p a k ] e h l i e	[pak]ehlie	[ p a k ] e h l i e
+691	1855	v. Rosenberg 1855	64	1855vR	[pàg]ehlie	[pak]ehli	[ p a k ] e h l i	[pak]ehli	[ p a k ] e h l i
 702	1855	v. Rosenberg 1855	65	1855vR	bakoe bakoe	baku baku	b a k u # b a k u	baku baku	b a k u # b a k u
 707	1855	v. Rosenberg 1855	66	1855vR	fanakoe	fanaku	f a n a k u	fanaku	f a n a k u
 713	1855	v. Rosenberg 1855	67	1855vR	patoedje-è	patuje'E	p a t u j e ' E	patud͡ʒeʔɛ	p a t u d͡ʒ e ʔ ɛ
@@ -54,21 +54,21 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1134	1855	v. Rosenberg 1855	179	1855vR	oela koea	ula kua	u l a # k u a	ula kua	u l a # k u a
 1593	1855	v. Rosenberg 1855	312	1855vR	gerfifi	kerfifi	k e r f i f i	kerfifi	k e r f i f i
 1661	1855	v. Rosenberg 1855	338	1855vR	habaha-pipimei	habaha-pipime:i	h a b a h a - p i p i m e:i	habaha-pipimɛi	h a b a h a - p i p i m ɛi
-1692	1855	v. Rosenberg 1855	351	1855vR	obie	obie	o b i e	obie	o b i e
+1692	1855	v. Rosenberg 1855	351	1855vR	obie	obi	o b i	obi	o b i
 1777	1855	v. Rosenberg 1855	379	1855vR	koko	koko	k o k o	koko	k o k o
 1837	1855	v. Rosenberg 1855	396	1855vR	tawauwa	tawa:owa	t a w a:o w a	tawaowa	t a w ao w a
 1855	1855	v. Rosenberg 1855	404	1855vR	kahij-tjewe	kahiy-cewe	k a h i y - c e w e	kahij-t͡ʃewe	k a h i j - t͡ʃ e w e
 1911	1855	v. Rosenberg 1855	425	1855vR	okioki	okioki	o k i o k i	okioki	o k i o k i
 1919	1855	v. Rosenberg 1855	428	1855vR	avo	awo	a w o	awo	a w o
 1978	1855	v. Rosenberg 1855	451	1855vR	tawaweij	tawawe:iy	t a w a w e:i y	tawawɛij	t a w a w ɛi j
-2025	1855	v. Rosenberg 1855	466	1855vR	poeroe howi-howi	puru howi-howi	p u r u # h o w i - h o w i	puru howi-howi	p u r u # h o w i - h o w i
+2025	1855	v. Rosenberg 1855	466	1855vR	poeroe howi-howi	puru ho:ui-ho:ui	p u r u # h o:u i - h o:u i	puru hɔui-hɔui	p u r u # h ɔu i - h ɔu i
 2076	1855	v. Rosenberg 1855	485	1855vR	talikoko [ilopo]	talikoko [ilopo]	t a l i k o k o # [ i l o p o ]	talikoko [ilopo]	t a l i k o k o # [ i l o p o ]
 2144	1855	v. Rosenberg 1855	508	1855vR	kawahké	kawahke	k a w a h k e	kawahke	k a w a h k e
 2160	1855	v. Rosenberg 1855	515	1855vR	gewello wello	kewello wello	k e w e l l o # w e l l o	kewello wello	k e w e l l o # w e l l o
 2212	1855	v. Rosenberg 1855	534	1855vR	mokomehema	mokomehema	m o k o m e h e m a	mokomehema	m o k o m e h e m a
 2223	1855	v. Rosenberg 1855	536	1855vR	koelemak	kulemak	k u l e m a k	kulemak	k u l e m a k
 2232	1855	v. Rosenberg 1855	542	1855vR	ilopo	ilopo	i l o p o	ilopo	i l o p o
-2288	1855	v. Rosenberg 1855	560	1855vR	parowa	parowa	p a r o w a	parowa	p a r o w a
+2288	1855	v. Rosenberg 1855	560	1855vR	parowa	paro:ua	p a r o:u a	parɔua	p a r ɔu a
 2293	1855	v. Rosenberg 1855	562	1855vR	paoea-oea	pa:oa-ua	p a:o a - u a	paoa-ua	p ao a - u a
 2401	1855	v. Rosenberg 1855	615	1855vR	tawejo wejo ; wéo wéo	tawe:io we:io ; weo weo	t a w e:i o # w e:i o # ; # w e o # w e o	tawɛio wɛio ; weo weo	t a w ɛi o # w ɛi o # ; # w e o # w e o
 2506	1855	v. Rosenberg 1855	654	1855vR	tehopo	tehopo	t e h o p o	tehopo	t e h o p o
@@ -103,10 +103,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4300	1855	v. Rosenberg 1855	1321	1855vR	nokobagoedana	nokobakudana	n o k o b a k u d a n a	nokobakudana	n o k o b a k u d a n a
 4370	1855	v. Rosenberg 1855	1352	1855vR	ferdji	ferji	f e r j i	ferd͡ʒi	f e r d͡ʒ i
 4545	1855	v. Rosenberg 1855	1427	1855vR	kanoea	kanua	k a n u a	kanua	k a n u a
-4627	1855	v. Rosenberg 1855	1446	1855vR	hawie	hawie	h a w i e	hawie	h a w i e
+4627	1855	v. Rosenberg 1855	1446	1855vR	hawie	hawi	h a w i	hawi	h a w i
 4733	1855	v. Rosenberg 1855	1479	1855vR	panenema	panenema	p a n e n e m a	panenema	p a n e n e m a
 4818	1855	v. Rosenberg 1855	1503	1855vR	tikodo [ilopo]	tikodo [ilopo]	t i k o d o # [ i l o p o ]	tikodo [ilopo]	t i k o d o # [ i l o p o ]
-5000	1855	v. Rosenberg 1855	1581	1855vR	oetjie	ucie	u c i e	ut͡ʃie	u t͡ʃ i e
+5000	1855	v. Rosenberg 1855	1581	1855vR	oetjie	uci	u c i	ut͡ʃi	u t͡ʃ i
 5042	1855	v. Rosenberg 1855	1596	1855vR	kaka	kaka	k a k a	kaka	k a k a
 5117	1855	v. Rosenberg 1855	1629	1855vR	hawi hawi	hawi hawi	h a w i # h a w i	hawi hawi	h a w i # h a w i
 5351	1855	v. Rosenberg 1855	1725	1855vR	eirapakanare	e:irapakanare	e:i r a p a k a n a r e	ɛirapakanare	ɛi r a p a k a n a r e
