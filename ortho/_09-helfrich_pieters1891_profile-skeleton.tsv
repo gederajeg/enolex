@@ -6,16 +6,17 @@ Left	Grapheme	Right	Class	Replacement
 	dj			j
 	nj			ñ
 	ng	$		ŋ
+	ng			ng
 	ie			i
 	ao			aːo
 	èi			eːi
 	oi			oːi
 	aau			aːu
-	aï			aːu̇
 (ie)	h			x
 (ai)	h			x
 (?<!a)i	h			x
 [aiueo]	ö			'o
+[aiueo]	ï			'i
 [^aiueo]	ö			u̇
 	\-			-
 	 			 
@@ -34,11 +35,9 @@ Left	Grapheme	Right	Class	Replacement
 	ě			ė
 	ĕ			ė
 	f			f
-n	g			g
 [^n]	g			k
 	h			h
 	i			i
-	ï			u̇
 [^d]	j			y
 	k			k
 	l			l

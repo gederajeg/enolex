@@ -5,13 +5,14 @@ Left	Grapheme	Right	Class	Replacement
 	ao			aːo
 	aè			aːe
 	ai			aːi
-	aï			aːu̇
 	tj			c
 	dj			j
 	nj			ñ
 	oe			u
 	ie			i
 	k²			'
+[aiueo]	ï			'i
+[^aiueo]	ï			ï
 (ie)	h			x
 (ai)	h			x
 (?<!a)i	h			x
@@ -34,10 +35,9 @@ Left	Grapheme	Right	Class	Replacement
 	g			k
 	h			h
 	i			i
-	ï			ï
 	j			j
 	k			k
-	K			K
+	K			k
 	l			l
 	m			m
 	n			n
