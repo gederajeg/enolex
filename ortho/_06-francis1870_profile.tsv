@@ -24,12 +24,12 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 (ai)	h			x	0
 (?<!a)i	h			x	2
 	\-			'	2
-	 			 	138
+	 			 	140
 	\!			!	1
 	\(			(	2
 	\)			)	2
 	\/			/	2
-	\;			;	5
+	\;			;	6
 	\?			?	2
 	\[			[	4
 	\]			]	4
