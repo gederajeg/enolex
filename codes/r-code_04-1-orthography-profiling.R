@@ -64,7 +64,7 @@ phoneme_tokenise <- function(str, orth_prof, rgx = FALSE, ordr = NULL) {
 
 get_ortho_cols <- function(df) {
   
-  return(select(df, words, originals, matches("^english"), tokenized, transliterated, commons, matches("^ipa$")))
+  return(select(df, entry_id, year, EngganoSource, id, year_id, words, originals, matches("^english"), tokenized, transliterated, commons, matches("^ipa$")))
   
 }
 
@@ -72,6 +72,7 @@ get_ortho_cols <- function(df) {
 #   mutate(words = str_split(words, "\\s\\;\\s")) |> 
 #   unnest_longer(words)
 
+# 0. Check the source ====
 eno_etym_long_mini8 |> 
   count(year, EngganoLanguage, EngganoSource) |> 
   arrange(year) |> 
@@ -101,7 +102,14 @@ eno_etym_long_mini8 <- eno_etym_long_mini8 |>
                          words)) |>
   mutate(words = if_else(EngganoSource == "Capell 1982",
                          str_replace_all(words, stri_trans_nfc("u̲"), stri_trans_nfc("u̠")),
+                         words)) |> 
+  mutate(words = if_else(EngganoSource == "Modigliani 1894",
+                         words = str_replace_all(words, "ſ", "f"),
                          words))
+
+
+
+
 
 # Brouwer < 1855 ====
 brouwer <- eno_etym_long_mini8 |> 
@@ -154,8 +162,10 @@ brouwer <- brouwer |>
 get_ortho_cols(brouwer)
 ##### save the tokenised and transliterated strings =====
 brouwer |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_01-brouwer1855_strings-ipa.tsv")
+
+
 
 
 
@@ -203,14 +213,14 @@ boewang <- boewang |>
 get_ortho_cols(boewang)
 ##### save the tokenised and transliterated strings =====
 boewang |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_02-boewang1854_strings-ipa.tsv")
 
-get_ortho_cols(boewang)
 
 
 
-# Van Rosenberg 1855 ====
+
+# von Rosenberg 1855 ====
 vrosenberg <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "v. Rosenberg 1855") |> 
   mutate(ortho_id = row_number())
@@ -267,11 +277,8 @@ vrosenberg <- vrosenberg |>
 get_ortho_cols(vrosenberg)
 ##### save the tokenised and transliterated strings =====
 vrosenberg |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_03-vRosenberg1855_strings-ipa.tsv")
-
-
-
 
 
 
@@ -331,7 +338,7 @@ vdstraten <- vdstraten |>
 get_ortho_cols(vdstraten)
 ##### save the tokenised and transliterated strings =====
 vdstraten |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_04-vdStraten1855_strings-ipa.tsv")
 
 
@@ -401,10 +408,8 @@ get_ortho_cols(walland)
 
 ##### save the tokenised and transliterated strings =====
 walland |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_05-walland1864_strings-ipa.tsv")
-
-
 
 
 
@@ -442,7 +447,6 @@ francis <- francis |>
 
 get_ortho_cols(francis)
 
-
 ### map the phonemic data to the skeleton profile ========
 francis_prof <- read_prof("ortho/_06-francis1870_profile-skeleton.tsv")
 francis_prof_phon <- phoneme_map(francis_prof, trx)
@@ -471,8 +475,76 @@ get_ortho_cols(francis)
 
 ##### save the tokenised and transliterated strings =====
 francis |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_06-francis1870_strings-ipa.tsv")
+
+
+
+
+# von Rosenberg 1878 ====
+vrosen1878 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "v. Rosenberg 1878") |> 
+  mutate(ortho_id = row_number())
+## create a skeleton profile for "von Rosenberg 1878" ====
+# qlcData::write.profile(vrosen1878$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_03-1-vRosenberg1878_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+vros1878 <- qlcData::tokenize(vrosen1878$words, 
+                         profile = "ortho/_03-1-vRosenberg1878_profile-skeleton.tsv", 
+                         file.out = "ortho/_03-1-vRosenberg1878",
+                         method = "global", 
+                         transliterate = "Replacement", 
+                         ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC", 
+                         sep.replace = "#",
+                         regex = TRUE)
+
+### tidying up the segmentised and transliterated table ====
+vros1878_str <- vros1878$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+vrosen1878 <- vrosen1878 |> 
+  left_join(vros1878_str, by = join_by(ortho_id))
+
+get_ortho_cols(vrosen1878)
+
+### map the phonemic data to the skeleton profile ========
+vrosen1878_prof <- read_prof("ortho/_03-1-vRosenberg1878_profile-skeleton.tsv")
+vrosen1878_prof_phon <- phoneme_map(vrosen1878_prof, trx)
+vrosen1878_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+vrosen1878_prof_phon <- vrosen1878_prof_phon |>
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "'a",
+                           "ʔa")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "a'",
+                           "aʔ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "z",
+                           "ʒ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "s",
+                           "s"))
+vrosen1878_str_phon <- phoneme_tokenise(vrosen1878$words, 
+                                    orth_prof = vrosen1878_prof_phon, 
+                                    rgx = TRUE,
+                                    ordr = NULL)
+vrosen1878_prof_phon |> filter(Phoneme == "")
+
+#### combined with the main data ====
+vrosen1878 <- vrosen1878 |> 
+  left_join(vrosen1878_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+get_ortho_cols(vrosen1878)
+##### save the tokenised and transliterated strings =====
+vrosen1878 |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_03-1-vRosenberg1878_strings-ipa.tsv")
 
 
 
@@ -510,7 +582,6 @@ oudemans <- oudemans |>
 
 get_ortho_cols(oudemans)
 
-
 ### map the phonemic data to the skeleton profile ========
 oudemans_prof <- read_prof("ortho/_07-oudemans1879_profile-skeleton.tsv")
 oudemans_prof_phon <- phoneme_map(oudemans_prof, trx)
@@ -538,9 +609,8 @@ get_ortho_cols(oudemans)
 
 ##### save the tokenised and transliterated strings =====
 oudemans |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_07-oudemans1879_strings-ipa.tsv")
-
 
 
 
@@ -582,9 +652,42 @@ helfrich1888 <- helfrich1888 |>
 
 get_ortho_cols(helfrich1888)
 
+### map the phonemic data to the skeleton profile ========
+helfrich1888_prof <- read_prof("ortho/_08-helfrich1888_profile-skeleton.tsv")
+helfrich1888_prof_phon <- phoneme_map(helfrich1888_prof, trx)
+helfrich1888_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ñ",
+                           "ɲ"))
+helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ė",
+                           "ə"))
+helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "'i",
+                           "ʔi"))
+helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement %in% c("K"),
+                           "k"))
+helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement %in% c("s"),
+                           "s"))
+helfrich1888_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+helfrich1888_str_phon <- phoneme_tokenise(helfrich1888$words, 
+                                      orth_prof = helfrich1888_prof_phon, 
+                                      rgx = TRUE,
+                                      ordr = NULL)
 
+#### combined with the main data ====
+helfrich1888 <- helfrich1888 |> 
+  left_join(helfrich1888_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
 
+get_ortho_cols(helfrich1888)
 
+##### save the tokenised and transliterated strings =====
+helfrich1888 |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_08-helfrich1888_strings-ipa.tsv")
 
 
 
@@ -646,14 +749,14 @@ helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |>
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ė",
                            "ə"))
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ŋ",
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Grapheme == "ng",
                            "ŋ"))
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ñ",
                            "ɲ"))
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ï",
-                           "u̇"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "'i",
+                           "ʔi"))
 helfrich_pieters_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 helfrich_pieters_str_phon <- phoneme_tokenise(helfrich_pieters1891$words, 
                                       orth_prof = helfrich_pieters_prof_phon, 
@@ -669,17 +772,17 @@ get_ortho_cols(helfrich_pieters1891)
 
 ##### save the tokenised and transliterated strings =====
 helfrich_pieters1891 |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_09-helfrich_pieters1891_strings-ipa.tsv")
 
 
 
 
-# modigliani 1894 ====
+
+# Modigliani 1894 ====
 modi1894 <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "Modigliani 1894") |> 
-  mutate(ortho_id = row_number(),
-         words = str_replace(words, "ſ", "f"))
+  mutate(ortho_id = row_number())
 ## check trema for glottal stop in Modigliani 1894 ====
 modi1894 |> 
   filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
@@ -712,7 +815,6 @@ modi1894 <- modi1894 |>
 
 get_ortho_cols(modi1894)
 
-
 ### map the phonemic data to the skeleton profile ========
 modi1894_prof <- read_prof("ortho/_10-modi1894_profile-skeleton.tsv")
 modi1894_prof_phon <- phoneme_map(modi1894_prof, trx)
@@ -741,11 +843,8 @@ get_ortho_cols(modi1894)
 
 ##### save the tokenised and transliterated strings =====
 modi1894 |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_10-modi1894_strings-ipa.tsv")
-
-
-
 
 
 
@@ -839,14 +938,8 @@ get_ortho_cols(hollelist)
 
 ##### save the tokenised and transliterated strings =====
 hollelist |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_11-stockhof1987_strings-ipa.tsv")
-
-
-
-
-
-
 
 
 
@@ -862,7 +955,7 @@ helfrich1916 |>
   select(words)
 ## create a skeleton profile for "Helfrich 1916" ====
 # qlcData::write.profile(helfrich1916$words, normalize = "NFC", editing = TRUE, info = FALSE,
-#                        file.out = "ortho/_12-helfrich1916_profile-skeleton.tsv")
+#                        file.out = "ortho/_12-helfrich1916_profile-skeleton-update.tsv") # the -update suffix is added to manage new update when Daniel added new words so that it does not delete the older one!
 ### segmentise and transliterate after editing the skeleton profile ====
 h1916 <- qlcData::tokenize(helfrich1916$words, 
                          profile = "ortho/_12-helfrich1916_profile-skeleton.tsv", 
@@ -888,6 +981,41 @@ helfrich1916 <- helfrich1916 |>
 
 get_ortho_cols(helfrich1916)
 
+### map the phonemic data to the skeleton profile ========
+helfrich1916_prof <- read_prof("ortho/_12-helfrich1916_profile-skeleton.tsv")
+helfrich1916_prof_phon <- phoneme_map(helfrich1916_prof, trx)
+helfrich1916_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+
+# special case for Helfrich (1916), I saved out the profile of the phoneme to be manually edited (below is the code to save it first before manual editing)
+# helfrich1916_prof_phon |> write_tsv("ortho/_12-helfrich1916_profile-skeleton-ipa-update.tsv") # the -update suffix is added to manage new update when Daniel added new words so that it does not delete the older one!
+
+# load the hand-edited IPA transliteration profile of Helfrich (1916)
+helfrich1916_prof_phon <- read.table(file = "ortho/_12-helfrich1916_profile-skeleton-ipa.tsv", 
+                                   sep = "\t", header = TRUE, quote = "",
+                                   encoding = "UTF-8") |> 
+  as_tibble()
+
+helfrich1916_prof_phon <- helfrich1916_prof_phon |>
+  mutate(across(all_of(colnames(helfrich1916_prof_phon)), 
+                ~replace(., is.na(.), "")))
+
+helfrich1916_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+helfrich1916_str_phon <- phoneme_tokenise(helfrich1916$words, 
+                                        orth_prof = helfrich1916_prof_phon, 
+                                        rgx = TRUE,
+                                        ordr = NULL)
+helfrich1916_str_phon |> as_tibble()
+#### combined with the main data ====
+helfrich1916 <- helfrich1916 |> 
+  left_join(helfrich1916_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+
+get_ortho_cols(helfrich1916)
+
+##### save the tokenised and transliterated strings =====
+helfrich1916 |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_12-helfrich1916_strings-ipa.tsv")
 
 
 
@@ -929,7 +1057,6 @@ amran1979 <- amran1979 |>
 
 get_ortho_cols(amran1979)
 
-
 ### map the phonemic data to the skeleton profile ========
 amran1979_prof <- read_prof("ortho/_13-amran1979_profile-skeleton.tsv")
 amran1979_prof_phon <- phoneme_map(amran1979_prof, trx)
@@ -955,17 +1082,8 @@ get_ortho_cols(amran1979)
 
 ##### save the tokenised and transliterated strings =====
 amran1979 |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_13-amran1979_strings-ipa.tsv")
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1063,8 +1181,9 @@ get_ortho_cols(capell1982)
 
 ##### save the tokenised and transliterated strings =====
 capell1982 |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_14-capell1982_strings-ipa.tsv")
+
 
 
 
@@ -1079,7 +1198,7 @@ kahler1987 |>
   select(words)
 ## create a skeleton profile for "Kahler 1987" ====
 # qlcData::write.profile(kahler1987$words, normalize = "NFC", editing = TRUE, info = FALSE,
-#                        file.out = "ortho/_15-kahler1987_profile-skeleton.tsv")
+#                        file.out = "ortho/_15-kahler1987_profile-skeleton-update.tsv") # when Daniel has updated the Kahler words
 ### segmentise and transliterate after editing the skeleton profile ====
 k87 <- qlcData::tokenize(kahler1987$words, 
                           profile = "ortho/_15-kahler1987_profile-skeleton.tsv", 
@@ -1109,7 +1228,6 @@ kahler1987 <- kahler1987 |>
 
 get_ortho_cols(kahler1987)
 
-
 ### map the phonemic data to the skeleton profile ========
 kahler1987_prof <- read_prof("ortho/_15-kahler1987_profile-skeleton.tsv")
 kahler1987_prof_phon <- phoneme_map(kahler1987_prof, trx)
@@ -1122,8 +1240,8 @@ kahler1987_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phon
 # 
 # kahler1987_prof_phon |> filter(Phoneme == "")
 
-# # special case for Kähler, I saved out the profile of the phoneme to be manually edited (below is the code to save it)
-# # kahler1987_prof_phon |> write_tsv("ortho/_15-kahler1987_profile-skeleton-ipa.tsv")
+# special case for Kähler, I saved out the profile of the phoneme to be manually edited (below is the code to save it first before manual editing)
+# kahler1987_prof_phon |> write_tsv("ortho/_15-kahler1987_profile-skeleton-ipa.tsv")
 
 # load the hand-edited IPA transliteration profile of Kahler (1987)
 kahler1987_prof_phon <- read.table(file = "ortho/_15-kahler1987_profile-skeleton-ipa.tsv", 
@@ -1139,7 +1257,7 @@ kahler1987_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phon
 kahler1987_str_phon <- phoneme_tokenise(kahler1987$words, 
                                        orth_prof = kahler1987_prof_phon, 
                                        rgx = TRUE,
-                                       ordr = NULL)
+                                       ordr = c("context", "size"))
 kahler1987_str_phon |> as_tibble()
 #### combined with the main data ====
 kahler1987a <- kahler1987 |> 
@@ -1150,5 +1268,222 @@ get_ortho_cols(kahler1987a)
 
 ##### save the tokenised and transliterated strings =====
 kahler1987a |> 
-  select(words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_15-kahler1987_strings-ipa.tsv")
+
+
+
+
+
+# Kasim et al. 1987 =====
+kasimEtAl1987 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Kasim et al. 1987") |> 
+  mutate(ortho_id = row_number())
+## check trema for glottal stop in Kasim et al. 1987 ====
+kasimEtAl1987 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words)
+# create a skeleton profile for "Kasim et al. 1987" ====
+# qlcData::write.profile(kasimEtAl1987$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_16-kasimEtAl1987_profile-skeleton.tsv")
+
+## check identical vowel sequences in Kasim et al. 1987 ====
+# kasimEtAl1987 |> 
+#   filter(str_detect(words, stri_trans_nfc("(.)\\1"))) |> 
+#   pull(words) |> 
+#   str_extract_all(stri_trans_nfc("(.)\\1")) |> 
+#   unique() |> 
+#   unlist() |> 
+#   write_lines("ortho/_16-kasimEtAl1987_doubled-vowel.txt")
+
+### segmentise and transliterate after editing the skeleton profile ====
+ksm87 <- qlcData::tokenize(kasimEtAl1987$words, 
+                         profile = "ortho/_16-kasimEtAl1987_profile-skeleton.tsv", 
+                         file.out = "ortho/_16-kasimEtAl1987",
+                         method = "global",
+                         transliterate = "Replacement", 
+                         ordering = c("context", "size"), # cf. Moran & Cysouw (2018: 112-114)
+                         normalize = "NFC",
+                         sep.replace = "#",
+                         regex = TRUE)
+ksm87$errors
+ksm87$strings |> filter(str_detect(originals, stri_trans_nfc("o̠")))
+ksm87$strings |> filter(str_detect(originals, stri_trans_nfc("ẽ̠")))
+ksm87$missing
+
+### tidying up the segmentised and transliterated table ====
+ksm87_str <- ksm87$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+kasimEtAl1987 <- kasimEtAl1987 |> 
+  left_join(ksm87_str, by = join_by(ortho_id))
+
+get_ortho_cols(kasimEtAl1987)
+
+### map the phonemic data to the skeleton profile ========
+kasimEtAl_prof <- read_prof("ortho/_16-kasimEtAl1987_profile-skeleton.tsv")
+kasimEtAl_prof_phon <- phoneme_map(kasimEtAl_prof, trx)
+kasimEtAl_prof_phon |> as_tibble() |> print(n=Inf)
+kasimEtAl_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+kasimEtAl_prof_phon <- kasimEtAl_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("ʰ"),
+                           "ʰ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("kʰ"),
+                           "kʰ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ėė",
+                           "əː")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("EE"),
+                           "ɛː")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("ã:"),
+                           "ã͜")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ė",
+                           "ə")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "g",
+                           "g")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ng",
+                           "ŋ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "s",
+                           "s"))
+kasimEtAl_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+ksm87_str_phon <- phoneme_tokenise(kasimEtAl1987$words, 
+                                      orth_prof = kasimEtAl_prof_phon, 
+                                      rgx = TRUE,
+                                      ordr = c("context", "size"))
+
+#### combined with the main data ====
+kasimEtAl1987 <- kasimEtAl1987 |> 
+  left_join(ksm87_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+
+get_ortho_cols(kasimEtAl1987)
+
+##### save the tokenised and transliterated strings =====
+kasimEtAl1987 |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_16-kasimEtAl1987_strings-ipa.tsv")
+
+
+
+
+
+# Yoder (2011) =====
+yoder2011 <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Yoder 2011") |> 
+  mutate(ortho_id = row_number())
+## check trema for glottal stop in Yoder 2011 ====
+yoder2011 |> 
+  filter(str_detect(words, stringi::stri_trans_nfc("(.[äïëöü]|[äïëöü].)"))) |>
+  select(words)
+# create a skeleton profile for "Yoder 2011" ====
+# qlcData::write.profile(yoder2011$words, normalize = "NFC", editing = TRUE, info = FALSE,
+#                        file.out = "ortho/_17-yoder2011_profile-skeleton.tsv")
+
+## check vowel sequences in Yoder 2011 ====
+# yoder2011 |>
+#   filter(str_detect(words, stri_trans_nfc("([aiueoãĩũẽõɨɨ̯][aiueoãĩũẽõɨɨ̯])"))) |>
+#   pull(words) |>
+#   str_extract_all(stri_trans_nfc("([aiueoãĩũẽõɨɨ̯][aiueoãĩũẽõɨɨ̯])")) |> 
+#   unlist() |>
+#   unique() |>
+#   sort() |>
+#   write_lines("ortho/_17-yoder2011_doubled-vowel.txt")
+
+### segmentise and transliterate after editing the skeleton profile ====
+yod2011 <- qlcData::tokenize(yoder2011$words, 
+                             profile = "ortho/_17-yoder2011_profile-skeleton.tsv", 
+                             file.out = "ortho/_17-yoder2011",
+                             method = "global",
+                             transliterate = "Replacement", 
+                             ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                             normalize = "NFC",
+                             sep.replace = "#",
+                             regex = TRUE)
+yod2011$errors
+yod2011$strings |> filter(str_detect(originals, stri_trans_nfc("o̠")))
+yod2011$strings |> filter(str_detect(originals, stri_trans_nfc("ẽ̠")))
+yod2011$missing
+
+### tidying up the segmentised and transliterated table ====
+yod2011_str <- yod2011$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+yoder2011 <- yoder2011 |> 
+  left_join(yod2011_str, by = join_by(ortho_id))
+
+get_ortho_cols(yoder2011)
+
+### map the phonemic data to the skeleton profile ========
+yoder_prof <- read_prof("ortho/_17-yoder2011_profile-skeleton.tsv")
+yoder_prof_phon <- phoneme_map(yoder_prof, trx)
+yoder_prof_phon |> as_tibble() |> print(n=Inf)
+yoder_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+yoder_prof_phon <- yoder_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ã:ĩ",
+                           "ãĩ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ã:ũ",
+                           "ãũ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ã:u̇̃",
+                           "ã:ɨ̃")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "õ:ĩ",
+                           "ɔ̃ĩ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("̃"),
+                           "̃")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("ẽ"),
+                           "ɛ̃")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ė",
+                           "ə")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == "ė̃",
+                           "ə̃")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("u̯̇"),
+                           "ɨ")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("s"),
+                           "s")) |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Phoneme == "" & Replacement == stri_trans_nfc("̯"),
+                           ""))
+yoder_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+yod2011_str_phon <- phoneme_tokenise(yoder2011$words, 
+                                   orth_prof = yoder_prof_phon, 
+                                   rgx = TRUE,
+                                   ordr = NULL)
+
+#### combined with the main data ====
+yoder2011 <- yoder2011 |> 
+  left_join(yod2011_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+
+get_ortho_cols(yoder2011)
+
+##### save the tokenised and transliterated strings =====
+yoder2011 |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_17-yoder2011_strings-ipa.tsv")
