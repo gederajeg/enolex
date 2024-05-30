@@ -47,7 +47,8 @@ paste0(cognateset_url_base, "29851")
 proto_distinct <- eno_etym_long_proto_df |> 
   filter(if_any(matches("_etymon"), ~!is.na(.))) |> 
   select(id, matches("^(PAN|PMP|Etymological)")) |> 
-  distinct()
+  distinct() |> 
+  mutate(across(where(is.character), ~replace_na(., "")))
 
 proto_distinct |> 
   filter(if_any(matches("etymon"), ~grepl("təlu", ., perl = TRUE)))
@@ -105,11 +106,22 @@ CognateTable <- rcldf::as.cldf.wide(acd, "CognateTable")
 FormTable <- rcldf::as.cldf.wide(acd, "FormTable")
 CognateSetTable <- rcldf::as.cldf.wide(acd, "CognatesetTable")
 
+form_tb <- acd$tables$FormTable
+language_tb <- acd$tables$LanguageTable
+param_tb <- acd$tables$ParameterTable
+cognate_tb <- acd$tables$CognateTable
+cogset_tb <- acd$tables$CognatesetTable
+contrib_tb <- acd$tables$ContributionTable
+protoform_tb <- acd$tables$protoforms.csv
+loan_tb <- acd$tables$loansets.csv
+borrowing_tb <- acd$tables$BorrowingTable
+
 # get the distinct values of the etymology table
 proto_distinct <- eno_etym_long_proto_df |> 
   filter(if_any(matches("_etymon"), ~!is.na(.))) |> 
   select(id, matches("^(PAN|PMP|Etymological)")) |> 
   distinct() |> 
+  mutate(across(where(is.character), ~replace_na(., ""))) |> 
   mutate(PAN_url = PAN_etymon,
          PMP_url = PMP_etymon)
 
@@ -130,7 +142,21 @@ get_id_cognateset <- function(tb, rgx) {
 }
 
 get_url <- function(cols, rgx, url_base, url_part) {
-  str_replace_all(cols, rgx, str_c("[\\1](", url_base, url_part, ")", sep = ""))
+  str_replace_all(cols, rgx, str_c('<a href="', url_base, url_part, '" target="_blank">\\1</a>', sep = ""))
+}
+
+gloss_rgx <- "guts"
+get_form_from_gloss <- function(gloss_rgx) {
+  tb <- param_tb |> 
+    filter(str_detect(Name, gloss_rgx))
+  param_rgx <- tb |> 
+    pull(ID) |> 
+    (\(x) paste(x, collapse = "|"))() |> 
+    (\(x) paste("(", x, ")", sep = ""))()
+  form_tb |> 
+    filter(str_detect(ID, param_rgx)) |> 
+    select(ID, Language_ID, Value, Form, is_proto)
+  
 }
 
 # acd_form <- "telu"
@@ -154,8 +180,8 @@ pan_url_create <- function(acd_form) {
 
 get_pan_url <- function(cols, enolex_form, pan_url = NULL) {
   
-  rgx_to_replace <- paste0("(\\b\\\\*?", enolex_form, "\\b)")
-  rgx_replacement <- paste0("[\\1](", pan_url, ")")
+  rgx_to_replace <- paste("(\\b\\\\*?", enolex_form, "\\b)", sep = "")
+  rgx_replacement <- paste('<a href="', pan_url, '" target="_blank">\\1</a>', sep = "")
   formsurl <- str_replace_all(cols, rgx_to_replace, rgx_replacement)
   return(formsurl)
   
@@ -176,20 +202,20 @@ pmp_url_create <- function(acd_form) {
   pmp_url <- paste(cognateset_url_base, proform$Cognateset_ID, "#s-", proform$ID, sep = "")
   return(pmp_url)
   
-}
+} # this function can be used to create url of the sub-proto-form (for example, the form "C<in>aqi" (https://acd.clld.org/cognatesets/25881#s-2006) is a PAN-labelled reconstruction of sub-proto-form of the main/super proto form "*Caqi" (https://acd.clld.org/cognatesets/25881))
 
 proto_distinct1 <- proto_distinct |> 
   mutate(PAN_url = get_url(PAN_url, 
                            "(\\b\\\\*ma\\-RuqaNay\\b)", 
                            cognateset_url_base, 
                            get_id_cognateset(CognateTable, '^\\*RuqaNay$')),
-         PMP_url = str_replace_all(PMP_url, "(\\b\\\\*maRuqanay\\b)", "[\\1](https://acd.clld.org/cognatesets/28052#s-4939)"),
-         PMP_url = str_replace_all(PMP_url, "(\\b\\\\*baRani\\b)", "[\\1](https://acd.clld.org/cognatesets/25144#s-657)")) |> 
+         PMP_url = str_replace_all(PMP_url, "(\\b\\\\*maRuqanay\\b)", '<a href="https://acd.clld.org/cognatesets/28052#s-4939" target="_blank">\\1</a>'),
+         PMP_url = str_replace_all(PMP_url, "(\\b\\\\*baRani\\b)", '<a href="https://acd.clld.org/cognatesets/25144#s-657" target="_blank">\\1</a>')) |> 
   mutate(PAN_url = get_url(PAN_url, 
                            "(\\b\\\\*Sika\\b)", 
                            cognateset_url_base, 
                            get_id_cognateset(CognateTable, '^\\*Sika-$')),
-         PMP_url = str_replace_all(PMP_url, "(\\\\*?\\(i\\)ka\\b)", "[\\1](https://acd.clld.org/cognatesets/26451#s-11621)")) |> 
+         PMP_url = str_replace_all(PMP_url, "(\\\\*?\\(i\\)ka\\b)", '<a href="https://acd.clld.org/cognatesets/26451#s-11621" target="_blank">\\1</a>')) |> 
   mutate(across(matches("url"), ~get_url(., 
                                          "(\\b\\\\*?lima\\b)", 
                                          cognateset_url_base, 
@@ -198,7 +224,7 @@ proto_distinct1 <- proto_distinct |>
                            "(\\b\\\\*Səpat\\b)", 
                            cognateset_url_base, 
                            get_id_cognateset(CognateTable, '^\\*Sepat$'))) |> 
-  mutate(PMP_url = replace(PMP_url, PMP_url == "*kapət", "*[kapət](https://acd.clld.org/cognatesets/30436)")) |> 
+  mutate(PMP_url = replace(PMP_url, PMP_url == "*kapət", '*<a href="https://acd.clld.org/cognatesets/30436" target="_blank">kapət</a>')) |> 
   mutate(across(matches("url"), ~get_url(.,
                                          "(\\b\\\\*qaqay\\b)",
                                          cognateset_url_base,
@@ -212,20 +238,60 @@ proto_distinct1 <- proto_distinct |>
   mutate(PAN_url = get_pan_url(PAN_url, "duSa", pan_url_create("duSa")),
          PMP_url = get_pan_url(PMP_url, "duha", pmp_url_create("duha"))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "amax", pan_url_create("amax")),
-         PMP_url = get_pan_url(PMP_url, stri_trans_nfc("ama\\s\\/\\s\\*ama\\-ŋ"), pmp_url_create(stri_trans_nfc("amá\\-ŋ"))))
+         PMP_url = get_pan_url(PMP_url, stri_trans_nfc("ama\\s\\/\\s\\*ama\\-ŋ"), pmp_url_create(stri_trans_nfc("amá\\-ŋ")))) |> 
+  mutate(PAN_url = get_pan_url(PAN_url, "Rumaq", pan_url_create("Rumaq")),
+         PMP_url = get_pan_url(PMP_url, "Rumaq", pmp_url_create("Rumaq"))) |> 
+  mutate(across(matches("url"), ~get_pan_url(., stri_trans_nfc("təlu"), pan_url_create("telu")))) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, stri_trans_nfc("əpat"), pmp_url_create("epat"))) |> 
+  mutate(PAN_url = get_pan_url(PAN_url, "C\\<in\\>aqi", pmp_url_create("C\\<in\\>aqi")),
+         PMP_url = get_pan_url(PMP_url, "t\\<in\\>aqi", pmp_url_create("t\\<in\\>aqi")))
+  
 
 
-## Checking
+## Checking (run all of these)
+proto_distinct1 |> 
+  select(id, matches("url|gloss")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", TRUE)))
+proto_distinct1 |> 
+  select(id, matches("url|gloss")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", TRUE))) |> 
+  filter(if_any(matches("url"), ~str_detect(., "\\+")))
+proto_distinct1 |> 
+  select(id, matches("etymon|url|gloss")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", TRUE))) |> 
+  filter(if_any(matches("url"), ~str_detect(., "\\<")))
+proto_distinct1 |> 
+  select(id, matches("etymon|url|gloss")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", TRUE))) |> 
+  filter(if_any(matches("url"), ~str_detect(., "\\(")))
 proto_distinct1 |> 
   select(id, matches("etymon|url")) |> 
-  filter(if_any(matches("url"), ~str_detect(., "https", TRUE)))
+  filter(if_any(matches("url"), ~str_detect(., "WMP|POC", FALSE)))
+proto_distinct1 |> 
+  select(id, matches("etymon|url")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", TRUE))) |> 
+  filter(if_any(matches("url"), ~str_detect(., "[^\\<\\+\\>]+")))
+proto_distinct1 |> 
+  select(id, matches("etymon|url")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", FALSE)))
 ### PMP
 proto_distinct1 |> 
   select(id, matches("etymon|url")) |> 
   filter(if_any(matches("url"), ~str_detect(., "https", FALSE))) |> 
-  select(matches("PMP_url"))
+  select(matches("PMP_(url|etymon)"))
+#### testing with reactable
+proto_distinct1 |> 
+  # select(id, matches("etymon|url")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", FALSE))) -> x
+library(reactable)
+eno_etym_long_mini8 |> 
+  filter(id  %in% x$id) |> left_join(x) |> 
+  mutate(across(matches("url"), ~str_replace_all(., "\\<in\\>", "&lt;in&gt;"))) |>
+  reactable(filterable = TRUE,
+            columns = list(PMP_url = colDef(html = TRUE),
+                           PAN_url = colDef(html = TRUE)))
 ### PAN
 proto_distinct1 |> 
   select(id, matches("etymon|url")) |> 
   filter(if_any(matches("url"), ~str_detect(., "https", FALSE))) |> 
-  select(matches("PAN_url"))
+  select(matches("PAN_(url|etymon)"))
