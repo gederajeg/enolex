@@ -1,7 +1,14 @@
 library(tidyverse)
 
-# get the URL for the Google sheet and load the data (periodically run)
+# get the URL for the Google sheet and load the data (periodically run codes in line 4, 7-11, and 14)
 # source("codes/r-code_00-lexdb-source-rawfile.R")
+
+# save into .txt file to track using git
+# eno_etym0 <- eno_etym
+# colnames(eno_etym0) <- str_replace_all(colnames(eno_etym0), "\\\n", " ") |>
+#   str_replace_all("\\s\\(", "__") |>
+#   str_replace_all("\\)$", "")
+# write_tsv(x = eno_etym0, file = "../enolex-raw-to-track/enolex-db-orig.tsv")
 
 # save into .rds file
 # write_rds(x = eno_etym, file = "data/eno_etym.rds")
@@ -84,6 +91,8 @@ eno_etym2$id <- 1:nrow(eno_etym2)
 
 # Editing the content/typo of the remarks
 eno_etym3 <- eno_etym2 |> 
+  mutate(Remarks = if_else(str_detect(Remarks, "'brother'_unmarried_cf"), str_replace(Remarks, "('brother')_(unmarried)(_cf)", "\\1_note: \\2\\3"), Remarks)) |> 
+  mutate(Remarks = str_replace_all(Remarks, "', meaning1979", "_meaning1979")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\, (?=note[0-9])", "_")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\n(?=note)", "")) |> 
   mutate(Remarks = str_replace_all(Remarks, "\\\\(?=note)", "")) |> 
@@ -144,10 +153,14 @@ eno_etym_long <- eno_etym4 |>
                names_to = "EngganoSourceOriginal",
                values_to = "words")
 eno_etym_long <- eno_etym_long |> 
-  separate(EngganoSourceOriginal,
-           into = c("EngganoLanguage", "EngganoSource"),
-           sep = "__",
-           remove = FALSE)
+  # separate(EngganoSourceOriginal,
+  #          into = c("EngganoLanguage", "EngganoSource"),
+  #          sep = "__",
+  #          remove = FALSE)
+  separate_wider_delim(cols = EngganoSourceOriginal,
+                       delim = "__",
+                       names = c("EngganoLanguage", "EngganoSource"),
+                       cols_remove = FALSE)
 
 eno_etym_long1 <- eno_etym_long |>
   filter(!is.na(words)) |>
@@ -169,9 +182,9 @@ eno_etym_long1 <- eno_etym_long |>
          year = if_else(str_detect(EngganoSource, " ms\\."),
                         "ms.",
                         year),
-         year = factor(year, levels = c("1854", "<1855", "1855", "1864", "1870", 
+         year = factor(year, levels = c("1854", "<1855", "1855", "1864", "1870", "1878", 
                                         "1879", "1888", "1891", "1894", "1895", 
-                                        "1916", "1982", "ms.", "1987", "2011", 
+                                        "1916", "1979", "1982", "ms.", "1987", "2011", 
                                         "2019", "2023"))) |>
   select(year, words, indonesian_gloss, english_gloss, semantic_field, 
          EngganoLanguage, EngganoSource, Remarks2, id, everything()) |>
@@ -187,20 +200,22 @@ year_source_df <- tribble(~EngganoSource, ~year_id, ~year,
                           "Aron 2019", "2019", "2019",
                           "Helfrich 1888", "1888", "1888",
                           "Walland 1864", "1864", "1864",
+                          "Amran et al. 1979", "1979", "1979",
                           "Capell 1982", "1982", "1982",
                           "Kasim et al. 1987", "1987", "1987",
                           "Nothofer 1986 ms.", "ms.", "ms.",
                           "Zakaria et al. 2023", "2023", "2023",
                           "v. Rosenberg 1855", "1855vR", "1855",
+                          "v. Rosenberg 1878", "1878", "1878",
                           "Brouwer <1855", "<1855", "<1855",
                           "vd Straten & S. 1855", "1855vdS", "1855",
                           "Francis 1870", "1870", "1870",
                           "Helfrich 1916", "1916", "1916",
                           "Boewang 1854", "1854", "1854") |> 
   mutate(year = factor(year, 
-                       levels = c("1854", "<1855", "1855", "1864", "1870", 
+                       levels = c("1854", "<1855", "1855", "1864", "1870", "1878",
                                   "1879", "1888", "1891", "1894", "1895", 
-                                  "1916", "1982", "ms.", "1987", "2011", 
+                                  "1916", "1979", "1982", "ms.", "1987", "2011", 
                                   "2019", "2023"))) |> 
   arrange(year)
 
@@ -263,12 +278,7 @@ rm_tagged <- remarks_split1 |>
                            str_replace_all(content, "(^'|'$)", ""),
                            content)) |> 
   mutate(year = replace(year, year %in% c("1895K", "1897K"), "1987K"),
-         year = replace(year, year %in% c("1855"), "1855vR"),
-         year = replace(year, 
-                        content == "earth, country, soil" &
-                          year == "1987" & 
-                          id == 601,
-                        "1987K")) |> 
+         year = replace(year, year %in% c("1855"), "1855vR")) |> 
   rename(year_id = year)
 
 rm_tagged
@@ -312,6 +322,7 @@ eno_etym_long_mini2 <- eno_etym_long_mini1 |>
   mutate(notes = replace(notes, notes == "literally 10x40+2x40+10", "lit. '10x40+2x40+10'")) |> 
   mutate(notes = str_replace(notes, "^(literal(ly)?( mean(s|ing))?|lit\\.\\smeaning)", "lit.")) |> 
   mutate(notes = str_replace(notes, "^literally", "lit. ")) |> 
+  mutate(notes = str_replace(notes, "\\blit\\.\\:", "lit. ")) |> 
   mutate(notes = str_replace(notes, "(?<=leaf\\sof\\stree)'\\?", "?'")) |> 
   mutate(notes = str_replace(notes, "(?<=^lit\\.\\s)'I'm(?=\\s)", "'I am")) |> 
   mutate(notes = str_replace(notes, "(?<=^lit\\.\\s)(10x[?]x40[+]10)", "'\\1'")) # |> 
@@ -1162,6 +1173,7 @@ rm_untagged1 <- rm_untagged |>
 rm_untagged2 <- rm_untagged1 |> 
   mutate(notesnew = rm5,
          notesnew = str_replace(notesnew, "\\, cf", " ; cf"),
+         notesnew = str_replace_all(notesnew, "_(\\;)_", " \\1 "),
          notesnew = str_replace(notesnew, "cf\\. van Rosenberg Kepoe Taigoeka 'big island'", "<re><ref>van Rosenberg</ref> <w><m>Kepoe-taïgoeka</m> <def>'big island'</def></w></re>"),
          notesnew = str_replace(notesnew, "\\sout\\/side$", "outside"),
          notesnew = str_replace_all(notesnew, "(\\s\\&\\s|\\band\\b)", " , "),
@@ -1175,9 +1187,9 @@ rm_untagged2 <- rm_untagged1 |>
 eno_etym_long_mini8 <- eno_etym_long_mini7 |> 
   left_join(rm_untagged2 |> select(id, note_untagged)) |> 
   rename(note_year = notesnew,
-         note_id = note_by_id,
-         note_etc = note_untagged)
-
+         note_id = note_by_id, # note_id column is for general note applying for the whole row (hence note_by_id)
+         note_etc = note_untagged) |> 
+  mutate(entry_id = row_number()) # add entry_id for unique ID of rows in the whole table
 
 # Dummy untuk Pak Cok
 # eno_etym_long_mini5 |> 
