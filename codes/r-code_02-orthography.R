@@ -127,7 +127,14 @@ vowels <- read_rds("data/vowels.rds") |>
          phoneme = replace(phoneme, grapheme == "ə̃", "ə̃"),
          phoneme = replace(phoneme, grapheme == "ė̃", "ə̃")) |> 
   rename(commons = `Common transcription for all texts`) |> 
-  mutate(cats = "vowel")
+  mutate(cats = "vowel") |> 
+  # fix ä for V Rosenberg
+  mutate(phoneme = replace(phoneme, source == "v. Rosenberg 1855" & 
+                             grapheme %in% c(stringi::stri_trans_nfc("ä")),
+                           "a"),
+         commons = replace(commons, source == "v. Rosenberg 1855" & 
+                             grapheme %in% c(stringi::stri_trans_nfc("ä")),
+                           "a"))
 
 # Helfrich's (1916) `oö` in common orthography becomes "o'o"
 
@@ -283,6 +290,14 @@ trx <- trx1 |>
                           "d' originally transcribed as simply \"d\", but changed on later pass to differentiate from d",
                           remark))
 
+# googledrive::drive_create(name = "Enggano_Transcription_LongFormat",
+#                           path = "https://drive.google.com/drive/u/0/folders/1vtNiXO6DSKzDcgK-Uh_cbQvnKxtiaOIr",
+#                           type = "spreadsheet")
+# Created Drive file:
+#   • Enggano_Transcription_LongFormat <id: 14dqSBmov1j5mlIhpbKp53BIh8iNVvFgJjWNi8ZcOgo8>
+#   With MIME type:
+#   • application/vnd.google-apps.spreadsheet
+# googlesheets4::sheet_write(trx, ss = "14dqSBmov1j5mlIhpbKp53BIh8iNVvFgJjWNi8ZcOgo8", sheet = "Sheet1")
 
 # turn multybites character into a single one (esp. for those with diacritics)
 stringi::stri_trans_nfc("Kã́hlēr")
