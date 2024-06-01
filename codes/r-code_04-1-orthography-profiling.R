@@ -104,7 +104,7 @@ eno_etym_long_mini8 <- eno_etym_long_mini8 |>
                          str_replace_all(words, stri_trans_nfc("u̲"), stri_trans_nfc("u̠")),
                          words)) |> 
   mutate(words = if_else(EngganoSource == "Modigliani 1894",
-                         words = str_replace_all(words, "ſ", "f"),
+                         str_replace_all(words, "ſ", "f"),
                          words))
 
 
@@ -1487,3 +1487,57 @@ get_ortho_cols(yoder2011)
 yoder2011 |> 
   select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_17-yoder2011_strings-ipa.tsv")
+
+
+# Aron 2019 =====
+aron <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Aron 2019") |> 
+  mutate(ortho_id = row_number())
+# qlcData::write.profile(aron$words, normalize = "NFC", editing = TRUE, info = FALSE,
+                       # file.out = "ortho/_18-aron2019_profile-skeleton.tsv")
+
+### map the phonemic data to the skeleton profile ========
+aron_prof <- read_prof("ortho/_18-aron2019_profile-skeleton.tsv")
+aron_prof_phon <- phoneme_map(aron_prof, trx)
+aron_prof_phon |> as_tibble() |> print(n=Inf)
+aron_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+aron_prof_phon <- aron_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Replacement == stri_trans_nfc("ẽ"),
+                           "ẽ"),
+         Phoneme = replace(Phoneme,
+                           Replacement == stri_trans_nfc("ẽ̇"),
+                           "ə̃"),
+         Phoneme = replace(Phoneme,
+                           Replacement == stri_trans_nfc("ė̃"),
+                           "ə̃"),
+         Phoneme = replace(Phoneme,
+                           Replacement == "I",
+                           "i"),
+         Phoneme = replace(Phoneme,
+                           Replacement == "v",
+                           "v"),
+         Phoneme = replace(Phoneme, Replacement == "̃", "̃"),
+         Phoneme = replace(Phoneme, Replacement == "̇", "̇"))
+aron_prof_phon |> filter(Phoneme == "")
+
+# aron2019 <- qlcData::tokenize(aron$words, 
+#                               profile = aron_prof_phon, 
+#                               method = "global",
+#                               transliterate = "Phoneme", 
+#                               ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+#                               normalize = "NFC",
+#                               sep.replace = "#",
+#                               regex = TRUE)
+
+aron2019_str_phon <- phoneme_tokenise(aron$words, 
+                                     orth_prof = aron_prof_phon, 
+                                     rgx = TRUE,
+                                     ordr = NULL)
+
+#### combined with the main data ====
+aron <- aron |> 
+  left_join(aron2019_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+
+get_ortho_cols(aron)
