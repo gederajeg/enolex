@@ -1189,7 +1189,125 @@ eno_etym_long_mini8 <- eno_etym_long_mini7 |>
   rename(note_year = notesnew,
          note_id = note_by_id, # note_id column is for general note applying for the whole row (hence note_by_id)
          note_etc = note_untagged) |> 
-  mutate(entry_id = row_number()) # add entry_id for unique ID of rows in the whole table
+  mutate(entry_id = row_number()) |>  # add entry_id for unique ID of rows in the whole table
+  
+  # Fixing anomaly in Capell (1982)
+  mutate(english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "ai ; kabebai" &
+                                 english_new == "ear",
+                               "come"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "baka" &
+                                 english_new == "fat (n.)",
+                               "eye"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "fufuri" &
+                                 english_new == "fire",
+                               "tailbone"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "hela" &
+                                 english_new == "fly",
+                               "flesh"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "qapo" &
+                                 english_new == "head",
+                               "finger"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "ulu ; udu" &
+                                 english_new == "hear",
+                               "head"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "\\(ki\\)dehoi") &
+                                 english_new == "hot",
+                               "hear"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "^kaidəhaudə$") &
+                                 english_new == "house",
+                               "hot"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, stri_trans_nfc("pūnũ")) &
+                                 english_new == "lie down",
+                               "leaf"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, stri_trans_nfc("hũhũ")) &
+                                 english_new == "man",
+                               "owl"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "mani" &
+                                 english_new == "many",
+                               "man/male"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "koh(oi)" &
+                                 english_new == "mouth",
+                               "mountain"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "^kaa") &
+                                 english_new == "name",
+                               "mouth"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "\\bkakak\\b") &
+                                 english_new == "way",
+                               "person"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "niə" &
+                                 english_new == "throat",
+                               "name"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "okahaqe" &
+                                 english_new == "new",
+                               "throat"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == stri_trans_nfc("nōninə") &
+                                 english_new == "night",
+                               "correct"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == stri_trans_nfc("põõ") &
+                                 english_new == "not",
+                               "night"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "fanu" &
+                                 english_new == "one",
+                               "nose"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "kaik" &
+                                 english_new == "red",
+                               "one"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 words == "uli" &
+                                 english_new == "sit",
+                               "skin"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "\\beheku\\b") &
+                                 english_new == "sleep",
+                               "sit"),
+         english_new = replace(english_new,
+                               EngganoSource == "Capell 1982" &
+                                 str_detect(words, "\\balouhu\\b") &
+                                 english_new == "small",
+                               "sky"))
+
 
 # Dummy untuk Pak Cok
 # eno_etym_long_mini5 |> 
