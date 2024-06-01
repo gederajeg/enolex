@@ -346,7 +346,8 @@ proto_distinct1 <- proto_distinct |>
   mutate(across(matches("url"), ~get_pan_url(., "i", pan_url_create("i₂")))) |> 
   mutate(PMP_url = get_pan_url(PMP_url, "taqi", pmp_url_create("taqi")),
          PAN_url = get_pan_url(PAN_url, "Caqi", pan_url_create("Caqi"))) |> 
-  mutate(PAN_url = get_pan_url(PAN_url, "pijax", pan_url_create("pijax"))) |> # PMP 'pija' is not available in ACD
+  mutate(PAN_url = get_pan_url(PAN_url, "pijax", pan_url_create("pijax")),
+         PMP_url = get_pan_url(PMP_url, "pija", pan_url_create("pijax"))) |> # PMP 'pija' is not available in ACD thus linked to the overall PAN *pijax
   mutate(PAN_url = get_pan_url(PAN_url, "buNuq", pan_url_create("buNuq₂")),
          PMP_url = get_pan_url(PMP_url, "bunuq", pmp_url_create("bunuq₂"))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "kaSu", pan_url_create("kaSu")),
@@ -376,7 +377,7 @@ proto_distinct1 <- proto_distinct |>
   mutate(PAN_url = get_pan_url(PAN_url, "quSeNap", pan_url_create("quSeNap")),
          PMP_url = get_pan_url(PMP_url, "ənap", pan_url_create("enap"))) |> 
   mutate(PMP_url = get_pan_url(PMP_url, "haRezan", pan_url_create("haRezan"))) |> 
-  mutate(PAN_url = get_pan_url(PAN_url, "\\-nu", pan_url_create("\\-nu[\U2081]")),
+  mutate(PAN_url = get_pan_url(PAN_url, "-nu", pan_url_create("-nu[\U2081]")),
          PMP_url = get_pan_url(PMP_url, "a\\-nu", pmp_url_create("a\\-nu"))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "RabuC", pan_url_create("RabuC")),
          PMP_url = get_pan_url(PMP_url, "Rabut", pmp_url_create("Rabut"))) |> 
@@ -385,7 +386,40 @@ proto_distinct1 <- proto_distinct |>
          PMP_url = get_pan_url(PMP_url, "pagəl", pan_url_create("pagel")),
          PMP_url = get_pan_url(PMP_url, "umpu", pan_url_create("umpu")),
          PMP_url = get_pan_url(PMP_url, "bətəŋ", pan_url_create("beteŋ\U2082")),
-         PMP_url = get_pan_url(PMP_url, "timbul", pan_url_create("timbul")))
+         PMP_url = get_pan_url(PMP_url, "timbul", pan_url_create("timbul")),
+         PMP_url = get_pan_url(PMP_url, "dutdut", pan_url_create("dutdut")),
+         PMP_url = get_pan_url(PMP_url, "zutzut", pan_url_create("zutzut")),
+         PMP_url = get_pan_url(PMP_url, "duniq", pan_url_create("duniq")),
+         PMP_url = get_pan_url(PMP_url, "suluq", pan_url_create("suluq")),
+         PMP_url = get_pan_url(PMP_url, "kua", pan_url_create("kua\U2082")),
+         PMP_url = get_pan_url(PMP_url, "rəbuŋ", pan_url_create("rebuŋ")),
+         PMP_url = get_pan_url(PMP_url, "butaq", pan_url_create("butaq\U2082")),
+         PMP_url = get_pan_url(PMP_url, "huab", pan_url_create("huab\U2081")),
+         PMP_url = get_pan_url(PMP_url, "buluŋ", pan_url_create("buluŋ\U2082")),
+         PMP_url = get_pan_url(PMP_url, "baRəqaŋ", pan_url_create("baReqaŋ"))) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, "bəRŋi", pan_url_create("beRŋi")),
+         PMP_url = get_pan_url(PMP_url, "quzuŋ", pan_url_create("quzuŋ")),
+         PMP_url = get_pan_url(PMP_url, "paqit", pmp_url_create("paqit\U2082")),
+         PMP_url = get_pan_url(PMP_url, "si ida", pmp_url_create("si ida")),
+         PMP_url = get_pan_url(PMP_url, "ma\\-kapal", pmp_url_create("ma\\-kapal")[str_detect(pmp_url_create("ma\\-kapal"), "26671")])) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, "busbus", pan_url_create("busbus"))) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, "taŋan", pan_url_create("taŋan")[1]),
+         PMP_url = get_pan_url(PMP_url, "tələn", pan_url_create("telen")),
+         PMP_url = get_pan_url(PMP_url, "suja", pan_url_create("suja")),
+         PMP_url = get_pan_url(PMP_url, "tirtir", pan_url_create("tirtir\U2081"))) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, "banua", pan_url_create("banua")),
+         PMP_url = get_pan_url(PMP_url, "gəlaŋ", pan_url_create("gelaŋ")),
+         PMP_url = get_pan_url(PMP_url, "qabatiR", pan_url_create("qabatiR")),
+         PMP_url = get_pan_url(PMP_url, "siuk", pan_url_create("siuk")),
+         PMP_url = get_pan_url(PMP_url, "sihul", pan_url_create("sihul")),
+         PMP_url = get_pan_url(PMP_url, "nabuq", pan_url_create("nabuq")),
+         PMP_url = get_pan_url(PMP_url, "dabuq", pan_url_create("dabuq")),
+         PMP_url = get_pan_url(PMP_url, "labuq\U2081", pan_url_create("labuq\U2081"))) |> 
+  mutate(PAN_url = get_pan_url(PAN_url, "nia", pmp_url_create("ni\\-ia")),
+         PMP_url = get_pan_url(PMP_url, "n\\-ia", pmp_url_create("ni\\-ia")),
+         PAN_url = str_replace_all(PAN_url, "(?<=^\\*)(\\-nu)$", str_c('<a href="', pan_url_create("\\-nu\U2081"), '" target="_blank">\\1</a>', sep = "")),
+         PMP_url = str_replace_all(PMP_url, "(?<=^\\*)(\\=mu)$", str_c('<a href="', pan_url_create("\\-mu"), '" target="_blank">\\1</a>', sep = "")),
+         PMP_url = str_replace_all(PMP_url, "(?<=^\\*)(\\=ku)$", str_c('<a href="', pan_url_create("\\-ku"), '" target="_blank">\\1</a>', sep = "")))
 
 ### note for myself
 ### if Daniel provided a PAN reconstruction form and this form is not available in the main/super proto-form table (CognateTable),
