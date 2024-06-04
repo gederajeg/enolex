@@ -239,7 +239,7 @@ proto_distinct1 <- proto_distinct |>
   mutate(across(matches("url"), ~str_replace_all(., "(?<=\\*)(\\(i\\)sa\\b)", str_c('<a href="', pan_url_create("isa₁"), '" target="_blank">\\1</a>', sep = "")))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "k\\<aN\\>uSkuS", pmp_url_create("k\\<aN\\>uSkuS")),
          PMP_url = get_pan_url(PMP_url, "k\\<an\\>uhkuh", pmp_url_create("k\\<an\\>uhkuh"))) |> 
-  mutate(PAN_url = get_pan_url(PAN_url, "a\\(R\\)i", pan_url_create("aRi"))) |> 
+  mutate(PAN_url = if_else(str_detect(PAN_url, "^\\*a\\(R\\)i$"), get_pan_url(PAN_url, "a\\(R\\)i", pan_url_create("aRi")), PAN_url)) |> 
   mutate(across(matches("url"), ~str_replace_all(., "(\\(a[Nn]ak i\\) qaRta)", str_c('<a href="', pmp_url_create("anak i qaRta"), '" target="_blank">\\1</a>', sep = "")))) |> 
   mutate(across(matches("url"), ~str_replace_all(., stri_trans_nfc("(\\(b\\)əli|\\(b\\/w\\)əli)"), '<a href="https://acd.clld.org/cognatesets/25306#s-909" target="_blank">\\1</a>'))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "kawil", pan_url_create("kawil₁")),
@@ -259,8 +259,8 @@ proto_distinct1 <- proto_distinct |>
          PMP_url = str_replace_all(PMP_url, "(?<=\\*)(huaji)\\(\\-n\\/(ŋ)\\)", "\\1 / \\1-\\2"),
          PMP_url = get_pan_url(PMP_url, "huaji", pmp_url_create("huaji")),
          PMP_url = get_pan_url(PMP_url, "huaji\\-ŋ", pmp_url_create("huaji\\-ŋ"))) |> 
-  mutate(PAN_url = get_pan_url(PAN_url, "aNak", pan_url_create("aNak")),
-         PMP_url = get_pan_url(PMP_url, "anak", pmp_url_create("anak")),
+  mutate(PAN_url = if_else(str_detect(PAN_etymon, "^\\*a[Nn]ak$"), get_pan_url(PAN_url, "aNak", pan_url_create("aNak")), PAN_url),
+         PMP_url = if_else(str_detect(PMP_etymon, "^\\*anak$"), get_pan_url(PMP_url, "anak", pmp_url_create("anak")), PMP_url),
          PMP_url = get_pan_url(PMP_url, "qalejaw", pan_url_create("qalejaw"))) |> 
   mutate(PMP_url = get_pan_url(PMP_url, "tiup", pan_url_create("tiup")),
          PAN_url = get_pan_url(PAN_url, "Caliŋa", pan_url_create("Caliŋa")),
@@ -343,7 +343,6 @@ proto_distinct1 <- proto_distinct |>
   mutate(across(matches("url"), ~get_pan_url(., "baRəq", pan_url_create("baReq")))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "buRuk", pan_url_create("buRuk")),
          PMP_url = get_pan_url(PMP_url, "buRuk", pmp_url_create("ma\\-buRuk"))) |> 
-  mutate(across(matches("url"), ~get_pan_url(., "i", pan_url_create("i₂")))) |> 
   mutate(PMP_url = get_pan_url(PMP_url, "taqi", pmp_url_create("taqi")),
          PAN_url = get_pan_url(PAN_url, "Caqi", pan_url_create("Caqi"))) |> 
   mutate(PAN_url = get_pan_url(PAN_url, "pijax", pan_url_create("pijax")),
@@ -419,7 +418,10 @@ proto_distinct1 <- proto_distinct |>
          PMP_url = get_pan_url(PMP_url, "n\\-ia", pmp_url_create("ni\\-ia")),
          PAN_url = str_replace_all(PAN_url, "(?<=^\\*)(\\-nu)$", str_c('<a href="', pan_url_create("\\-nu\U2081"), '" target="_blank">\\1</a>', sep = "")),
          PMP_url = str_replace_all(PMP_url, "(?<=^\\*)(\\=mu)$", str_c('<a href="', pan_url_create("\\-mu"), '" target="_blank">\\1</a>', sep = "")),
-         PMP_url = str_replace_all(PMP_url, "(?<=^\\*)(\\=ku)$", str_c('<a href="', pan_url_create("\\-ku"), '" target="_blank">\\1</a>', sep = "")))
+         PMP_url = str_replace_all(PMP_url, "(?<=^\\*)(\\=ku)$", str_c('<a href="', pan_url_create("\\-ku"), '" target="_blank">\\1</a>', sep = ""))) |> 
+  mutate(PMP_url = get_pan_url(PMP_url, "gələŋ", pan_url_create("gelaŋ"))) |> 
+  mutate(PAN_url = if_else(PAN_etymon == "*i", get_pan_url(PAN_url, "i", pan_url_create("i\U2082")), PAN_url)) |> 
+  mutate(PMP_url = if_else(PMP_etymon == "*i", get_pan_url(PMP_url, "i", pan_url_create("i\U2082")), PMP_url))
 
 ### note for myself
 ### if Daniel provided a PAN reconstruction form and this form is not available in the main/super proto-form table (CognateTable),
@@ -427,15 +429,28 @@ proto_distinct1 <- proto_distinct |>
 ### the example is reconstruction for 'we' (PAN k-ita that appears not in the main/super proto-form page but as sub-proto-form [https://acd.clld.org/cognatesets/26557#s-11768])
 
 
+## save the output
+write_rds(proto_distinct1, "data/proto_distinct1.rds")
+
+
 ## Checking (run all of these)
 proto_distinct1 |> filter(if_any(matches("url"), ~str_detect(., 'sets\\/"')))
 proto_distinct1 |> filter(if_any(matches("url"), ~str_detect(., 'sets\\/\\#s\\-"')))
+
+# get any observation with ...url column that has no link
 proto_distinct1 |> 
   select(id, matches("url|gloss|PAN_source|PMP_source")) |> 
   filter(if_any(matches("url"), ~str_detect(., "https", negate = TRUE)))
 proto_distinct1 |> 
   select(id, matches("url|gloss|PAN_source|PMP_source")) |> 
+  filter(if_any(matches("url"), ~str_detect(., "https", negate = TRUE))) |> 
+  count(PAN_url)
+
+# get all observarion with ...url columns that both have no link
+proto_distinct1 |> 
+  select(id, matches("url|gloss|PAN_source|PMP_source")) |> 
   filter(if_all(matches("url"), ~str_detect(., "https", negate = TRUE)))
+
 proto_distinct1 |> 
   select(id, matches("url|gloss")) |> 
   filter(if_any(matches("url"), ~str_detect(., "https", negate = TRUE))) |> 
@@ -506,13 +521,13 @@ proto_distinct1 |>
 
 
 #### testing with reactable
-proto_distinct1 |> 
-  # select(id, matches("etymon|url")) |> 
-  filter(if_any(matches("url"), ~str_detect(., "https", negate = FALSE))) -> x
-library(reactable)
-eno_etym_long_mini8 |> 
-  filter(id  %in% x$id) |> left_join(x) |> 
-  mutate(across(matches("url"), ~str_replace_all(., "\\<in\\>", "&lt;in&gt;"))) |>
-  reactable(filterable = TRUE,
-            columns = list(PMP_url = colDef(html = TRUE),
-                           PAN_url = colDef(html = TRUE)))
+# proto_distinct1 |> 
+#   # select(id, matches("etymon|url")) |> 
+#   filter(if_any(matches("url"), ~str_detect(., "https", negate = FALSE))) -> x
+# library(reactable)
+# eno_etym_long_mini8 |> 
+#   filter(id  %in% x$id) |> left_join(x) |> 
+#   mutate(across(matches("url"), ~str_replace_all(., "\\<in\\>", "&lt;in&gt;"))) |>
+#   reactable(filterable = TRUE,
+#             columns = list(PMP_url = colDef(html = TRUE),
+#                            PAN_url = colDef(html = TRUE)))
