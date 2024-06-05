@@ -132,88 +132,27 @@ aunt	129	1272	AUNT	2
 aunt/uncle	130			4
 awaken	131	3174	WAKE UP (SOMEONE)	2
 axe	132	677	AXE	2
-#<<<				
-back (a.)	133	2910	BACK (DIRECTION)	4
 back (a.)	133	2323	BACK (PART)	4
-back (a.)	133	1686	BEHIND	4
-back (a.)	133	1291	BACK	4
-back (a.)	133	1482	SHOULDER	4
-back (a.)	133	2911	BACKWARD	4
-#>>>				
 back (n.)	134	1291	BACK	1
 bad	135	1292	BAD	2
 bait	136	2013	BAIT	2
 bald	137	1125	BALD	2
 bamboo	138	1927	BAMBOO	2
-bamboo sprout	139		???	
-#<<<				
+bamboo sprout	139			
 banana	140	868	BANANA	2
-banana	140	399	PLANTAIN	2
-#>>>				
-banana leaves (dead)	141		???	
+banana leaves (dead)	141			
 bark (n.)	142	1204	BARK	1
-#<<<				
-bark (v.)	143	1204	BARK	3
 bark (v.)	143	1206	BARKING	3
-#>>>				
 basket	144	1539	BASKET	2
 bat	145	1793	BAT	2
 bath(room)	146	138	BATHE	4
 bathe	147	138	BATHE	2
 bay	148	663	BAY	2
 be careful	149	2758	CAREFUL	4
-#<<<				
-be hit	150	353	STRIKE	4
-be hit	150	3309	STRIKE (SOMETHING)	4
-be hit	150	111	DRUMMING	4
-be hit	150	2133	STRIKE OR BEAT	4
-be hit	150	1665	BEAT	4
-be hit	150	3307	HIT (A TARGET)	4
-be hit	150	1433	HIT	4
-#>>>				
-be likeable	151		???	
-#<<<				
-be/there is	152	150	WORRY	4
-be/there is	152	3191	BROKEN (SHATTERED)	4
-be/there is	152	3068	COOL DOWN	4
-be/there is	152	987	REMAIN	4
-be/there is	152	847	THIRSTY	4
-be/there is	152	1292	BAD	4
-be/there is	152	2152	THERE IS OR THERE ARE	4
-be/there is	152	1533	BE HUNGRY	4
-be/there is	152	3620	SLEEPY	4
-be/there is	152	1419	FEAR (BE AFRAID)	4
-be/there is	152	972	BE ABLE	4
-be/there is	152	1123	PREGNANT	4
-be/there is	152	1463	DRUNK	4
-be/there is	152	2341	CLOUDY	4
-be/there is	152	792	BOIL (OF LIQUID)	4
-be/there is	152	48	BE SILENT	4
-be/there is	152	1996	GET TIRED	4
-be/there is	152	2340	SUNNY	4
-be/there is	152	1460	IN	4
+be hit	150			4
+be likeable	151			
 be/there is	152	1579	BE	4
-be/there is	152	180	CALL BY NAME	4
-be/there is	152	2209	BECOME EXTINGUISHED	4
-be/there is	152	2324	GET WET	4
-be/there is	152	2216	BECOME NUMB	4
-be/there is	152	2758	CAREFUL	4
-be/there is	152	2327	BECOME SICK	4
-be/there is	152	1653	BLIND	4
-be/there is	152	178	RIPE	4
-be/there is	152	487	SHY	4
-be/there is	152	1990	BECOME	4
-be/there is	152	3703	STICKY	4
-be/there is	152	1757	TIRED	4
-be/there is	152	2223	BE ANGRY	4
-be/there is	152	996	DEAF	4
-be/there is	152	1881	ENOUGH	4
-be/there is	152	2102	BURN	4
-#>>>				
-#<<<				
-beach	153	113	SHORE	2
 beach	153	3460	BEACH	2
-#>>>				
 bear	154	1820	BEAR	2
 beard	155	678	BEARD	2
 beard (long)	156	678	BEARD	4
@@ -225,70 +164,42 @@ bedroom	161	2505	BEDROOM	2
 bee	162	665	BEE	2
 beetle	163	2242	BEETLE	2
 before	164	1882	BEFORE	2
-#<<<				
-before (earlier)	165	1882	BEFORE	4
-before (earlier)	165	2915	AT FIRST	4
-before (earlier)	165	1883	IN FRONT OF	4
-#>>>				
-#<<<				
-before (long time)	166	1882	BEFORE	4
-before (long time)	166	2915	AT FIRST	4
-before (long time)	166	1883	IN FRONT OF	4
-#>>>				
-#<<<				
-begin (v.)	167	3447	BEGIN OR START	3
+before (earlier)	165	373	LONG AGO	4
+before (long time)	166	373	LONG AGO	4
 begin (v.)	167	1806	BEGIN	3
-#>>>				
-behave	168		???	
+behave	168			
 behind	169	1686	BEHIND	2
 believe	170	1890	BELIEVE	2
-#<<<				
-below	171	721	LOW	2
 below	171	1485	BELOW OR UNDER	2
-#>>>				
 belt	172	772	BELT	2
-Bengkulu	173		???	
-betel leaf (Piper betle)	174		???	
-better	175		???	
-beware	176		???	
-beyond Enggano	177		???	
+Bengkulu	173			
+betel leaf (Piper betle)	174			
+better	175			
+beware	176	2758	CAREFUL	
+beyond Enggano	177			
 big	178	1202	BIG	2
-big toe	179		???	
+big toe	179	1389	TOE	
 bird	180	937	BIRD	2
-bird-catching net	181		???	
-#<<<				
-birth	182	1195	GIVE BIRTH	2
+bird-catching net	181	2653	NET (FOR CATCHING)	
 birth	182	2805	BIRTH (ACCOUCHEMENT)	2
-#>>>				
 bite	183	1403	BITE	2
 bitter	184	887	BITTER	2
 black	185	163	BLACK	2
-black pepper	186		???	
+black pepper	186	1385	PEPPER	
 blanket	187	806	BLANKET	2
-blessing	188		???	
+blessing	188	391	BLESS	
 blind	189	1653	BLIND	2
 blood	190	946	BLOOD	2
-#<<<				
-blow	191	175	BLOW (OF WIND)	2
 blow	191	176	BLOW (WITH MOUTH)	2
-#>>>				
 blunt	192	379	BLUNT	2
 board (n.)	193	1227	BOARD	3
-boat decoration (with leaves)	194		???	
+boat decoration (with leaves)	194	917	ORNAMENT	
 body	195	1480	BODY	2
 body hair	196	189	HAIR (BODY)	2
-#<<<				
 boil (intr.)	197	792	BOIL (OF LIQUID)	4
-boil (intr.)	197	793	BOIL (OF SKIN)	4
-boil (intr.)	197	2492	BOIL (SOMETHING)	4
-boil (intr.)	197	2493	BOIL	4
-boil (intr.)	197	1100	COOK (SOMETHING)	4
-boil (intr.)	197	51	SORE	4
-boil (intr.)	197	1809	PIMPLE	4
-#>>>				
 boil (n.)	198	793	BOIL (OF SKIN)	3
 boil (tr.)	199	2492	BOIL (SOMETHING)	2
-bolster	200		???	
+bolster	200			
 bone	201	1394	BONE	2
 border	202	2546	BORDER	2
 bore a hole	203	1501	BORE	2
