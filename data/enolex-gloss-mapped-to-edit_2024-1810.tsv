@@ -205,105 +205,53 @@ border	202	2546	BORDER	2
 bore a hole	203	1501	BORE	2
 borrow	204	1823	BORROW	2
 bow (n.)	205	994	BOW	1
-bow down	206		???	
+bow down	206	2761	BEND (ONESELF)	
 bracelet	207	1754	BRACELET	2
 brain	208	1583	BRAIN	2
-#<<<				
-branch	209	1531	BRANCH	2
 branch	209	3223	BRANCH OR TWIG	2
-#>>>				
 brave	210	3	BRAVE	2
-#<<<				
-break	211	2558	BREAK (CLEAVE)	2
 break	211	680	BREAK (DESTROY OR GET DESTROYED)	2
-break	211	3020	BREAK (BREAKING)	2
-#>>>				
-#<<<				
-break (intr.)	212	459	SNAP (OF STICK)	4
-break (intr.)	212	681	DESTROY	4
-break (intr.)	212	1520	CRUSH	4
 break (intr.)	212	3020	BREAK (BREAKING)	4
-break (intr.)	212	2558	BREAK (CLEAVE)	4
-break (intr.)	212	680	BREAK (DESTROY OR GET DESTROYED)	4
-break (intr.)	212	460	BREAK (OF ROPE)	4
-#>>>				
-break off (intr.)	213		???	
-break off (tr.)	214		???	
-break rules	215		???	
-#<<<				
+break off (intr.)	213	588	BROKEN	
+break off (tr.)	214	681	DESTROY	
+break rules	215	3813	DISOBEDIENT	
 breast	216	1402	BREAST	2
-breast	216	1592	CHEST	2
-#>>>				
 breast milk	217	3912	BREAST MILK	4
 breastbone	218	2810	BREASTBONE	2
 breastfeed	219	2472	SUCKLE (BREASTFEED, NURSE)	4
 breath	220	870	BREATH	2
 breathe	221	1407	BREATHE	2
-brew	222		???	
+brew	222			
 bridge	223	1011	BRIDGE	2
 bright	224	679	BRIGHT	2
 bring	225	692	BRING	2
 bring up (child)	226	2134	RAISE (BRING UP)	4
-#<<<				
-broken	227	3191	BROKEN (SHATTERED)	2
 broken	227	588	BROKEN	2
-broken	227	3190	BROKEN (NOT WORKING)	2
-#>>>				
-#<<<				
-broken (separated)	228	3190	BROKEN (NOT WORKING)	4
 broken (separated)	228	3191	BROKEN (SHATTERED)	4
-broken (separated)	228	588	BROKEN	4
-broken (separated)	228	1292	BAD	4
-#>>>				
 broom	229	245	BROOM	2
-#<<<				
 brother	230	1262	BROTHER	2
-brother	230	559	BROTHER (OF MAN)	2
-#>>>				
 bubble up (hot water)	231	792	BOIL (OF LIQUID)	4
-#<<<				
 bud	232	1684	BUD	2
-bud	232	2076	SPROUT (VERB)	2
-#>>>				
 bullet	233	1114	BULLET	2
-bumblebee	234		???	
-bump into	235		???	
-bun (hair)	236		???	
+bumblebee	234			
+bump into	235			
+bun (hair)	236			
 bundle	237	2943	BUNDLE	2
 burn (intr.)	238	1428	BURNING	2
 burn (tr.)	239	141	BURN (SOMETHING)	2
 bury	240	1719	BURY	2
-#<<<				
-bush	241	201	FARM	2
 bush	241	1683	BUSH	2
-#>>>				
-#<<<				
-but	242	506	MAIZE	2
 but	242	3843	BUT	2
-#>>>				
 butterfly	243	1791	BUTTERFLY	2
 buttocks	244	834	BUTTOCKS	2
-buttress root	245		???	
-by (near)	246	2751	BY (PASSIVE MARKER)	4
+buttress root	245			
+by (near)	246	1942	NEAR	
 cage	247	3283	CAGE	2
 cake	248	2408	CAKE	2
-#<<<				
 calf	249	1989	CALF	2
-calf	249	498	CALF OF LEG	2
-#>>>				
-#<<<				
-call	250	2246	BELL	2
 call	250	1084	CALL	2
-call	250	2944	CALL (APPEAL)	2
-#>>>				
-#<<<				
-calm	251	3458	SILENCE	2
 calm	251	258	CALM	2
-#>>>				
-#<<<				
 can	252	972	BE ABLE	2
-can	252	1051	CAN	2
-#>>>				
 canal (small)	253	2002	DITCH	4
 cannon	254	3202	CANNON	2
 care for spouse of deceased	255		???	
