@@ -477,13 +477,13 @@ dusk	474	2297	DUSK	2
 dust	475	2	DUST	2
 dwarf	476			
 eagle	477	1905	EAGLE	2
-earlier	478		???	
+earlier	478	1882	BEFORE	
 early evening	479	1629	EVENING	4
 earring	480	770	EARRING	2
 earth, soil	481	1228	EARTH (SOIL)	2
 earthquake	482	6	EARTHQUAKE	2
 earthworm	483	2350	EARTHWORM	2
-ease off	484		???	
+ease off	484	2864	DECREASE	
 east	485	1877	EAST	2
 easy	486	686	EASY	2
 edge	487	863	EDGE	2
@@ -495,187 +495,118 @@ eighteen	492	1713	EIGHTEEN	2
 eighty	493	1722	EIGHTY	2
 elbow	494	981	ELBOW	2
 eleven	495	1706	ELEVEN	2
-embark (ship)	496		???	
-embarrassed	497		???	
-emerge in water	498		???	
+embark (ship)	496	1752	LEAVE	
+embarrassed	497	3805	SHY OR ASHAMED	
+emerge in water	498	1076	EMERGE (APPEAR)	
 empty	499	1624	EMPTY	2
 enclosure	500	1690	FENCE	4
 end (v.)	501	1766	FINISH	3
-ending	502		???	
+ending	502	743	END (OF TIME)	
 enemy	503	1358	ENEMY	2
-Enggano Island	504		???	
-Enggano person	505		???	
+Enggano Island	504	622	ISLAND	
+Enggano person	505	1549	TRIBE	
 enough	506	1881	ENOUGH	2
 enter	507	749	ENTER	2
 equal	508	1570	EQUAL	2
-#<<<				
 equal (v.)	509	1570	EQUAL	4
-equal (v.)	509	200	SAME	4
-#>>>				
-erect (house)	510		???	
+erect (house)	510	1840	BUILD	
 erupt	511	3112	ERUPT	2
-#<<<				
 escape	512	1615	ESCAPE	2
-escape	512	2142	RUN AWAY	2
-#>>>				
 estuary	513	2286	ESTUARY	2
-#<<<				
 even (number)	514	1633	FLAT	4
-even (number)	514	98	ALL	4
-#>>>				
 evening	515	1629	EVENING	2
 evening star	516	3341	EVENING STAR	2
-every now and then	517		???	
+every now and then	517	1544	SOMETIMES	
 everywhere	518	2999	EVERYWHERE	2
 evil	519	45	EVIL	2
-exaggerate	520		???	
+exaggerate	520			
 examine	521	1819	LOOK	4
-example	522		???	
+example	522			
 exchange	523	2509	EXCHANGE	2
 exist	524	1579	BE	2
 expensive	525	1426	EXPENSIVE	2
-extend	526		???	
+extend	526	3700	LENGTHEN	
 extinguish (fire)	527	127	EXTINGUISH	4
-eye abscess	528		???	
+eye abscess	528	793	BOIL (OF SKIN)	
 eyebrow	529	1173	EYEBROW	2
 eyelashes	530	1540	EYELASH	2
 eyelid	531	17	EYELID	2
-eyelid dermatitis	532		???	
+eyelid dermatitis	532	1986	DISEASE	
 face	533	1560	FACE	2
-face down	534		???	
-face outwards	535		???	
-#<<<				
+face down	534			
+face outwards	535			
 fall	536	1280	FALL	2
-fall	536	2894	TUMBLE (FALL DOWN)	2
-fall	536	1276	AUTUMN	2
-#>>>				
-fall out (teeth)	537		???	
+fall out (teeth)	537	2894	TUMBLE (FALL DOWN)	
 family	538	194	FAMILY	2
-#<<<				
-family (plants)	539	302	CLAN	4
 family (plants)	539	194	FAMILY	4
-#>>>				
 far	540	1406	FAR	2
 farmer	541	979	FARMER	2
 fart (n.)	542	1159	FART	4
 fasten	543	1094	FASTEN	2
-#<<<				
-fat (a.)	544	1282	FAT (FROM ANIMALS)	4
 fat (a.)	544	1279	FAT (OBESE)	4
-fat (a.)	544	2551	ORGANIC FAT OR OIL	4
-fat (a.)	544	2449	FAT (OF MEAT AND FOOD)	4
-fat (a.)	544	2719	FAT (OILY)	4
-fat (a.)	544	323	FAT (ORGANIC SUBSTANCE)	4
-fat (a.)	544	2555	OIL (FROM PLANTS)	4
-fat (a.)	544	1244	THICK	4
-fat (a.)	544	3436	FAT MEAT	4
-fat (a.)	544	2095	FAT (FOR NOURISHMENT)	4
-#>>>				
-#<<<				
-fat (n.)	545	1282	FAT (FROM ANIMALS)	1
-fat (n.)	545	323	FAT (ORGANIC SUBSTANCE)	1
-#>>>				
+fat (n.)	545	2449	FAT (OF MEAT AND FOOD)	1
 fear (v.)	546	1419	FEAR (BE AFRAID)	1
 feather	547	1201	FEATHER	2
 feces	548	675	FAECES (EXCREMENT)	2
-#<<<				
-feel	549	2521	FEELING (HAPTIC SENSE)	2
 feel	549	1079	FEEL	2
-feel	549	2559	FEEL (TACTUALLY)	2
-#>>>				
 feel sick	550	1847	SICK	4
-#<<<				
-feel/sense	551	1079	FEEL	4
 feel/sense	551	2521	FEELING (HAPTIC SENSE)	4
-feel/sense	551	2950	MEANING	4
-feel/sense	551	1892	TOUCH	4
-feel/sense	551	2572	SENSE (PERCEIVE BY SENSES)	4
-feel/sense	551	2712	GET DIZZY	4
-feel/sense	551	2559	FEEL (TACTUALLY)	4
-#>>>				
-#<<<				
-feeling	552	2521	FEELING (HAPTIC SENSE)	2
 feeling	552	2573	FEELING (EMOTION)	2
-#>>>				
 fell (high-stemmed trees)	553	355	CUT DOWN	4
 fell (low-stemmed trees)	554	355	CUT DOWN	4
 fence	555	1690	FENCE	2
-#<<<				
 fence (small)	556	1690	FENCE	4
-fence (small)	556	3403	HORSE BARN	4
-fence (small)	556	3400	COWSHED	4
-#>>>				
 fern	557	3802	FERN	2
 fever	558	1534	FEVER	2
-#<<<				
 few	559	1242	FEW	2
-few	559	3451	FEW PIECES	2
-#>>>				
 fiber	560	1161	THREAD	4
 fiber (leaf)	561	1161	THREAD	4
-#<<<				
 field	562	212	FIELD	2
-field	562	140	PADDY FIELD	2
-#>>>				
-#<<<				
-fierce	563	1396	SHARP	4
-fierce	563	419	SEVERE	4
 fierce	563	2230	UNTAMED OR WILD	4
-#>>>				
 fight (n.)	564	3880	FIGHT (COMBAT)	3
 fight (v.)	565	1423	FIGHT	1
-fight against	566		???	
-fighting cock	567		???	
+fight against	566	3880	FIGHT (COMBAT)	
+fighting cock	567	1511	ROOSTER	
 file (tool)	568	3407	FILE (TOOL)	2
 fill	569	2006	FILL	2
 filth	570	25	DIRT	2
-finally	571		???	
+finally	571	1529	LAST (FINAL)	
 find	572	719	FIND	2
-#<<<				
-fine (a.)	573	218	FINE (PENALTY)	4
-fine (a.)	573	2308	THIN	4
-fine (a.)	573	2157	FINE OR THIN	4
-#>>>				
+fine (a.)	573	1234	SMOOTH	4
 fine (penalty)	574	218	FINE (PENALTY)	2
-finger bowl	575		???	
-finger coral	576		???	
+finger bowl	575	2053	SMALL BOWL	
+finger coral	576	3179	CORAL ROCK	
 fingernail	577	1258	FINGERNAIL	2
-finished	578		???	
+finished	578	1766	FINISH	
 fireplace	579	185	FIREPLACE	2
 firewood	580	10	FIREWOOD	2
-#<<<				
-first	581	1882	BEFORE	2
 first	581	728	FIRST	2
-#>>>				
-firstborn	582		???	
+firstborn	582			
 fish (v.)	583	2638	FISHING	1
 fishbone	584	3799	FISHBONE	2
 fishhook	585	1074	FISHHOOK	2
 fishing net	586	388	FISHNET	2
-fishing rod	587		???	
+fishing rod	587	1071	HOOK	
 fist	588	1473	FIST	2
 five hundred	589	3516	FIVE HUNDRED	2
-fixed	590		???	
+fixed	590			
 flag (n.)	591	2623	FLAG	3
 flame	592	889	FLAME	2
-flannell	593		???	
+flannell	593	1616	CLOTH	
 flat (a.)	594	1633	FLAT	4
-flat land	595		???	
+flat land	595	626	LAND	
 flavour	596	2190	TASTE	2
 flea	597	232	FLEA	2
-#<<<				
-flesh	598	2259	FLESH	2
 flesh	598	2615	FLESH OR MEAT	2
-#>>>				
 flirt	599	494	FLIRT	2
 float	600	1574	FLOAT	2
 flood	601	613	HIGH TIDE	2
 floor	602	1632	FLOOR	2
-floor beam	603		???	
+floor beam	603			
 flour	604	1594	FLOUR	2
 flow	605	2003	FLOW	2
 flower	606	239	FLOWER	2
-flu	607		???	
+flu	607	102	COMMON COLD (DISEASE)	
 flute	608	777	FLUTE	2
 fly (n.)	609	1504	FLY (INSECT)	1
 fly (v.)	610	1441	FLY (MOVE THROUGH AIR)	1
@@ -684,134 +615,89 @@ fold	612	1470	FOLD	2
 follow	613	1085	FOLLOW	2
 food	614	256	FOOD	2
 footstep	615	318	FOOTPRINT	2
-for nothing	616		???	
-forbidden	617		???	
+for nothing	616	1765	IN VAIN	
+forbidden	617			
 forehead	618	123	FOREHEAD	2
 foreign	619	109	FOREIGN	2
-foreigner	620		???	
+foreigner	620	1782	GUEST	
 forest	621	420	FOREST	2
 forge	622	288	FORGE	2
 forget	623	1523	FORGET	2
-#<<<				
-form (n.)	624	2401	PICTURE	4
 form (n.)	624	3747	SHAPE	4
-#>>>				
 former	625	3004	FORMER	2
-fortification	626		???	
+fortification	626	1938	FORTRESS	
 forty	627	1716	FORTY	2
 four hundred	628	3515	FOUR HUNDRED	2
 fourteen	629	2451	FOURTEEN	2
-fragrance	630		???	
+fragrance	630	376	FRAGRANT	
 fragrant	631	376	FRAGRANT	2
 free	632	2316	FREE	2
 friend	633	1325	FRIEND	2
-frizzy (hair)	634		???	
-#<<<				
-frog (Rana macrodon)	635	3245	FROG (SMALL)	4
+frizzy (hair)	634			
 frog (Rana macrodon)	635	503	FROG	4
-#>>>				
 from	636	693	FROM	2
-from above	637		???	
-from below	638		???	
-from inside	639		???	
-from where?	640		???	
-frothy	641		???	
+from above	637	693	FROM	
+from below	638	693	FROM	
+from inside	639	693	FROM	
+from where?	640	693	FROM	
+frothy	641	1768	FOAM	
 fruit	642	1507	FRUIT	2
 fruits	643	1507	FRUIT	4
 fuck	644	549	COPULATE	4
-#<<<				
-full (filled)	645	106	SATIATED	4
 full (filled)	645	1429	FULL	4
-#>>>				
-#<<<				
 full (sated)	646	106	SATIATED	4
-full (sated)	646	1429	FULL	4
-#>>>				
-funeral ceremony	647		???	
-funeral meal	648		???	
-#<<<				
+funeral ceremony	647	3336	FUNERAL	
+funeral meal	648	256	FOOD	
 fur	649	580	FUR	2
-fur	649	325	FELT	2
-#>>>				
-gable	650		???	
-galangal	651		???	
+gable	650	2100	THATCH OR ROOF	
+galangal	651			
 gape	652	1028	YAWN	2
-gappy	653		???	
+gappy	653	2948	GAP (DISTANCE)	
 garden	654	586	GARDEN	2
-#<<<				
 garden (half old)	655	586	GARDEN	4
-garden (half old)	655	201	FARM	4
-#>>>				
 gather	656	7	GATHER	2
 genitalia (female)	657	198	GENITALIA	4
 genitalia (male)	658	198	GENITALIA	4
 get	659	694	GET	2
 get sick	660	2327	BECOME SICK	4
-#<<<				
 get up (from sleep)	661	1602	WAKE UP	4
-get up (from sleep)	661	1512	RISE (ONESELF)	4
-get up (from sleep)	661	3350	GET UP FROM BED	4
-#>>>				
-#<<<				
 ghost	662	1175	GHOST	2
-ghost	662	53	SPIRIT	2
-#>>>				
-giant clam (Tridacna gigas)	663		???	
-giant taro (Alocasia macrorrhizos	664		???	
+giant clam (Tridacna gigas)	663	2829	MUSSELS	
+giant taro (Alocasia macrorrhizos	664	351	TARO	
 gift	665	2982	GIFT	2
 gill	666	1916	GILL	2
 ginger	667	2500	GINGER	2
 girl	668	1646	GIRL	2
-#<<<				
 give	669	1447	GIVE	2
-give	669	196	DONATE	2
-#>>>				
 give birth	670	1195	GIVE BIRTH	2
 give up	671	1696	SURRENDER	2
 gloomy	672	1552	GLOOMY	2
 gnat	673	1509	MOSQUITO	2
-Gnetum gnemon	674		???	
+Gnetum gnemon	674			
 go	675	695	GO	2
-go astray	676		???	
+go astray	676	423	GET LOST	
 go away	677	1752	LEAVE	2
 go away!	678	1752	LEAVE	4
-go first	679		???	
+go first	679	43	LEAD (GUIDE)	
 go home	680	142	RETURN HOME	4
 go hunting	681	1435	HUNT	4
-go octopus hunting	682		???	
-go slowly	683		???	
-go to bed	684		???	
-go to sleep (of limb)	685		???	
-go to the side	686		???	
-go together	687		???	
-go upriver	688		???	
-#<<<				
-go! (imperative)	689	1107	GO OUT	4
-go! (imperative)	689	142	RETURN HOME	4
-go! (imperative)	689	581	COME BACK	4
-go! (imperative)	689	1443	WALK	4
+go octopus hunting	682	1435	HUNT	
+go slowly	683	2165	SLOWLY	
+go to bed	684	1585	SLEEP	
+go to sleep (of limb)	685	2216	BECOME NUMB	
+go to the side	686			
+go together	687	695	GO	
+go upriver	688	705	GO UP (ASCEND)	
 go! (imperative)	689	695	GO	4
-go! (imperative)	689	749	ENTER	4
-#>>>				
-#<<<				
-God	690	3231	DEITY	2
 God	690	1944	GOD	2
-#>>>				
 gold	691	1369	GOLD	2
 good	692	1035	GOOD	2
 goodbye	693	3554	GOODBYE	4
-#<<<				
 goods/thing	694	738	THING	4
-goods/thing	694	1410	KNOW (SOMETHING)	4
-goods/thing	694	3406	MERCHANDISE	4
-#>>>				
-gouge	695		???	
+gouge	695	1735	TEAR (SHRED)	
 grab	696	855	SEIZE	2
 grain	697	605	GRAIN	2
-#<<<				
-grandchild	698	1618	GRANDSON	2
 grandchild	698	1617	GRANDCHILD	2
-#>>>				
 grandparent	699	305	GRANDPARENTS	2
 grasp	700	2021	GRASP	2
 grass	701	606	GRASS	2
@@ -819,205 +705,122 @@ grasshopper	702	607	GRASSHOPPER	2
 grave	703	1773	GRAVE	2
 graveyard	704	3284	GRAVEYARD	2
 graze	705	3058	GRAZE	2
-great-grandchild	706		???	
-great-grandparent	707		???	
+great-grandchild	706			
+great-grandparent	707			
 greedy	708	2018	GREEDY	2
-#<<<				
 green	709	1425	GREEN	2
-green	709	2382	BLUE OR GREEN	2
-#>>>				
 greet	710	3552	GREET	2
-grey hair	711		???	
+grey hair	711	2648	HAIR (HEAD)	
 grind	712	1033	GRIND	2
 grinding stone	713	2459	GRINDSTONE	2
-grope	714		???	
-#<<<				
-grow (intr.)	715	3461	GROW PLANTS	4
-grow (intr.)	715	552	GROW UP	4
-grow (intr.)	715	1486	PLANT (SOMETHING)	4
+grope	714			
 grow (intr.)	715	479	GROW	4
-#>>>				
-grudge	716		???	
-grunt	717		???	
+grudge	716	887	BITTER	
+grunt	717			
 guard	718	1940	GUARD	2
 guard (v.)	719	1940	GUARD	3
 guest	720	1782	GUEST	2
 gums	721	139	GUMS	2
 hack	722	3889	CUT OR HACK	4
-#<<<				
 half	723	816	HALF	2
-half	723	3836	HALF (HALF OF)	2
-#>>>				
-#<<<				
-hammer	724	3306	NAIL	2
-hammer	724	3115	HAMMER (SOMETHING)	2
 hammer	724	1481	HAMMER	2
-#>>>				
 hammock	725	2019	HAMMOCK	2
-handicapped	726		???	
+handicapped	726			
 handkerchief	727	1020	HANDKERCHIEF	2
 handle	728	1254	HANDLE	2
-#<<<				
-hang (intr.)	729	357	HANG UP	4
 hang (intr.)	729	2884	HANG	4
-#>>>				
 happy	730	1495	HAPPY	2
-#<<<				
-hard (firm)	731	772	BELT	4
 hard (firm)	731	1884	HARD	4
-hard (firm)	731	584	DIFFICULT	4
-#>>>				
-#<<<				
-harvest	732	1827	HARVEST CROPS	2
-harvest	732	3541	HARVEST OR HARVEST SEASON	2
-harvest	732	3327	AUTUMN OR HARVEST SEASON	2
 harvest	732	611	HARVEST	2
-#>>>				
 hat	733	771	HAT	2
-#<<<				
-hatch	734	2075	BROOD (VERB)	2
 hatch	734	3116	HATCH (OUT)	2
-#>>>				
 hate (n.)	735	3749	HATE (LOATHING)	3
 hate (v.)	736	1607	HATE	1
 have	737	773	HAVE	2
-have a child	738		???	
-have a meeting	739		???	
+have a child	738	1195	GIVE BIRTH	
+have a meeting	739	3070	HOLD A MEETING	
 have diarrhea	740	2714	HAVE DIARRHEA	4
-have miscarriage	741		???	
-have trouble	742		???	
-#<<<				
-he (deceased)	743	169	IT	4
-he (deceased)	743	262	HE OR SHE OR IT	4
-he (deceased)	743	2642	HE OR SHE	4
+have miscarriage	741			
+have trouble	742	2425	PROBLEM	
 he (deceased)	743	1211	HE	4
-he (deceased)	743	1834	SHE	4
-#>>>				
-head scarf	744		???	
+head scarf	744	3066	SCARF OR TURBAN	
 headache	745	3625	HEADACHE	2
 headgear	746	2130	HEADGEAR	2
 headman	747	301	CHIEFTAIN	2
 headwaters	748	2672	HEADWATERS	2
 healthy	749	1364	HEALTHY	2
-#<<<				
 hear	750	1408	HEAR	2
-hear	750	1247	EAR	2
-#>>>				
 heart	751	1223	HEART	2
-heat of sun	752		???	
+heat of sun	752	612	HEAT	
 heavy (rain)	753	1210	HEAVY	4
 heel	754	980	HEEL	2
-heir	755		???	
-heirlooms	756		???	
+heir	755	3664	INHERIT	
+heirlooms	756	2982	GIFT	
 help (n.)	757	3467	HELP (ASSISTANCE)	3
 help (v.)	758	1897	HELP	3
-#<<<				
 hen	759	1514	HEN	2
-hen	759	1318	CHICKEN	2
-#>>>				
 here	760	136	HERE	2
-heritage	761		???	
+heritage	761			
 heron	762	758	HERON	2
-hey!	763		???	
-#<<<				
-hide	764	602	HIDE (CONCEAL)	2
-hide	764	3326	LEATHER OR HIDE	2
-hide	764	2485	HIDE (ONESELF)	2
+hey!	763			
 hide	764	2486	HIDE	2
-#>>>				
-#<<<				
 hide (intr.)	765	2486	HIDE	4
-hide (intr.)	765	2614	SKIN (ANIMAL)	4
-hide (intr.)	765	2127	BARK OR SKIN	4
-hide (intr.)	765	763	SKIN	4
-hide (intr.)	765	3326	LEATHER OR HIDE	4
-hide (intr.)	765	629	LEATHER	4
-hide (intr.)	765	602	HIDE (CONCEAL)	4
-hide (intr.)	765	2485	HIDE (ONESELF)	4
-#>>>				
 hide (tr.)	766	602	HIDE (CONCEAL)	2
-#<<<				
 high	767	2790	HIGH OR TALL	2
-high	767	3347	HIGH OR UP	2
-high	767	1265	HIGH	2
-#>>>				
 high tide	768	613	HIGH TIDE	2
 high tide (extreme)	769	613	HIGH TIDE	4
 his/her	770	2092	HIS OR HER	2
 hiss (snakes)	771	3685	HISS	4
-history	772		???	
-#<<<				
+history	772			
 hit	773	1433	HIT	2
-hit	773	3309	STRIKE (SOMETHING)	2
-hit	773	353	STRIKE	2
-#>>>				
 hoe	774	284	HOE	2
-#<<<				
-hoe (v.)	775	1541	CULTIVATE	4
-hoe (v.)	775	284	HOE	4
-#>>>				
+hoe (v.)	775	1921	PLOUGH	4
 hole	776	1667	HOLE	2
-holed	777		???	
-holy place	778		???	
-home of the deceased	779		???	
-hood	780		???	
+holed	777			
+holy place	778			
+home of the deceased	779	2406	HOME	
+hood	780			
 hope (n.)	781	3211	HOPE (FAITH)	3
 horizon (at sea)	782	2287	HORIZON	4
-#<<<				
-horn (triton shell used as instrument)	783	2136	BRASS INSTRUMENT (HORN OR TRUMPET)	4
-horn (triton shell used as instrument)	783	1393	HORN (ANATOMY)	4
-horn (triton shell used as instrument)	783	939	HORN (INSTRUMENT)	4
 horn (triton shell used as instrument)	783	775	TRUMPET	4
-#>>>				
 horse	784	615	HORSE	2
-#<<<				
-hot	785	2272	HOT OR WARM	2
 hot	785	1286	HOT	2
-#>>>				
-how long ago?	786		???	
-#<<<				
+how long ago?	786	2338	HOW LONG	
 how many?	787	822	HOW MANY	2
-how many?	787	3450	HOW MANY PIECES	2
-#>>>				
 how?	788	1239	HOW	2
 hug (n.)	789	928	EMBRACE	4
 hug (v.)	790	928	EMBRACE	3
 human being	791	683	PERSON	2
 hungry	792	1533	BE HUNGRY	2
 hunt	793	1435	HUNT	2
-hunt with dog	794		???	
-#<<<				
-hurt	795	2411	HURT (SOMEBODY)	2
-hurt	795	1129	PAINFUL	2
-hurt	795	1783	PAIN	2
+hunt with dog	794	1435	HUNT	
 hurt	795	2561	HURT (SENSE PAIN)	2
-#>>>				
 husband	796	1200	HUSBAND	2
 husk	797	2501	RICE HUSK	2
 hut	798	1678	HUT	2
-hut for smoking coconut	799		???	
+hut for smoking coconut	799	1678	HUT	
 if	800	1459	IF	2
 illness	801	1986	DISEASE	2
 in	802	1460	IN	2
 in front	803	1883	IN FRONT OF	2
-in the evening	804		???	
-in-law	805		???	
+in the evening	804	1629	EVENING	
+in-law	805			
 increase	806	1041	INCREASE	2
 index finger	807	577	FOREFINGER	2
-index toe	808		???	
-Indian almond (Terminalia catappa)	809		???	
-infected wound	810		???	
-inflate (intr.)	811		???	
+index toe	808	1389	TOE	
+Indian almond (Terminalia catappa)	809	3815	ALMOND	
+infected wound	810	1109	WOUND	
+inflate (intr.)	811	1041	INCREASE	
 inherit	812	3664	INHERIT	2
-inject	813		???	
-inlet	814		???	
+inject	813	246	THRUST	
+inlet	814	608	GULF	
 inside	815	1606	INSIDE	2
-inside the house	816		???	
-install	817		???	
+inside the house	816	1606	INSIDE	
+install	817			
 instead	818	1652	INSTEAD	2
-instrument for octopus hunting	819		???	
-instrument for peeling coconut	820		???	
-instrument for shaving coconut	821		???	
+instrument for octopus hunting	819	1361	TOOL	
+instrument for peeling coconut	820	1361	TOOL	
+instrument for shaving coconut	821	1361	TOOL	
 intent	822		???	
 intestines	823	1991	INTESTINES	2
 intimidate	824		???	
@@ -2516,10 +2319,7 @@ wood-boring beetle	1781		???
 word	1782	1599	WORD	2
 work (n.)	1783	984	WORK (LABOUR)	1
 work (v.)	1784	1086	WORK (ACTIVITY)	3
-#<<<				
-worm	1785	2350	EARTHWORM	2
 worm	1785	1219	WORM	2
-#>>>				
 worn out	1786		???	
 worshipping of ghosts	1787		???	
 worshipping of ghosts in case of illness	1788		???	
@@ -2537,22 +2337,11 @@ year	1799	1226	YEAR	2
 yesterday	1800	1174	YESTERDAY	2
 you all	1801	1213	YOU	2
 you can go	1802		???	
-#<<<				
 young	1803	1207	YOUNG	2
-young	1803	2512	CHICK	2
-young	1803	564	YOUNG (OF MAN)	2
-#>>>				
 young girl (address)	1804	1646	GIRL	4
 young man	1805	76	YOUNG MAN	2
-young of an animal	1806		???	
+young of an animal	1806	1207	YOUNG	
 younger sibling	1807	427	YOUNGER SIBLING	2
 younger sibling (deceased)	1808	427	YOUNGER SIBLING	4
-#<<<				
-your (pl.)	1809	732	YOUR (SINGULAR)	4
 your (pl.)	1809	2274	YOUR (PLURAL)	4
-#>>>				
-#<<<				
 your (sg.)	1810	732	YOUR (SINGULAR)	4
-your (sg.)	1810	2274	YOUR (PLURAL)	4
-#>>>				
-#	1291/1810	71%		
