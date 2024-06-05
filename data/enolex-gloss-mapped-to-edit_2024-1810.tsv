@@ -1,13 +1,7 @@
 GLOSS	NUMBER	CONCEPTICON_ID	CONCEPTICON_GLOSS	SIMILARITY
 woman/female	1	2105	FEMALE PERSON	2
-#<<<				
-man/male	2	2106	MALE PERSON	2
-man/male	2	1553	MALE	2
-#>>>				
-#<<<				
+man/male	2	2261	MALE (OF PERSON)	2
 two	3	1498	TWO	2
-two	3	1384	SECOND	2
-#>>>				
 fifty	4	1717	FIFTY	2
 hand	5	1277	HAND	2
 foot, leg	6	2098	FOOT OR LEG	2
@@ -25,41 +19,21 @@ four	17	1500	FOUR	2
 one	18	1493	ONE	2
 eye	19	1248	EYE	2
 sun	20	1343	SUN	2
-#<<<				
-you (sg.)	21	1215	THOU	2
 you (sg.)	21	1213	YOU	2
-#>>>				
 wind	22	960	WIND	2
 he/she	23	2642	HE OR SHE	2
-walk along the beach	24		???	
-#<<<				
-rain	25	658	RAIN (PRECIPITATION)	2
+walk along the beach	24	2979	WALK (MANNER)	
 rain	25	2108	RAINING OR RAIN	2
-rain	25	1253	RAIN (RAINING)	2
-#>>>				
 eat	26	1336	EAT	2
 nose	27	1221	NOSE	2
-#<<<				
-child	28	1801	CHILD (DESCENDANT)	2
 child	28	2099	CHILD	2
-child	28	1304	CHILD (YOUNG HUMAN)	2
-#>>>				
 daughter	29	1357	DAUGHTER	2
 son	30	1620	SON	2
-#<<<				
 stand	31	1442	STAND	2
-stand	31	570	STAND UP	2
-#>>>				
-#<<<				
-drink	32	731	BEVERAGE	2
 drink	32	1401	DRINK	2
-#>>>				
 die	33	1494	DIE	2
 mother	34	1216	MOTHER	2
-#<<<				
 walk	35	1443	WALK	2
-walk	35	2979	WALK (MANNER)	2
-#>>>				
 twenty	36	1710	TWENTY	2
 fish (n.)	37	227	FISH	1
 red	38	156	RED	2
@@ -68,33 +42,18 @@ light (not heavy)	40	1052	LIGHT (WEIGHT)	2
 not	41	1240	NOT	2
 yellow	42	1424	YELLOW	2
 blue	43	837	BLUE	2
-#<<<				
-itch	44	3855	ITCH (CAUSE ITCHING OR FEEL ITCHY)	2
 itch	44	3856	ITCH OR ITCHY OR ITCHING	2
-itch	44	148	ITCH	2
-#>>>				
 live (v.)	45	1422	BE ALIVE	1
 belly	46	1251	BELLY	2
 white	47	1335	WHITE	2
-#<<<				
 thunder	48	1150	THUNDER	2
 thunder	48	2378	THUNDER (VERB)	2
-#>>>				
-#<<<				
-water	49	3078	IRRIGATE	2
-water	49	2516	WATER BUFFALO	2
 water	49	948	WATER	2
-#>>>				
 boat	50	1844	BOAT	2
 finger	51	1303	FINGER	2
 sweet	52	717	SWEET	2
 moon	53	1313	MOON	2
-#<<<				
-old	54	2112	OLD (AGED)	2
-old	54	2113	OLD (USED)	2
 old	54	1229	OLD	2
-old	54	406	OLD MAN	2
-#>>>				
 laugh	55	1355	LAUGH	2
 heavy	56	1210	HEAVY	2
 fire	57	221	FIRE	2
@@ -104,133 +63,74 @@ steal	60	713	STEAL	2
 do/make	61	2575	DO OR MAKE	2
 speak	62	1623	SPEAK	2
 buy	63	1869	BUY	2
-#<<<				
-stone	64	668	ROCK	2
-stone	64	1762	STONE (OF FRUIT)	2
 stone	64	857	STONE	2
-#>>>				
-#<<<				
 sleep	65	1585	SLEEP	2
-sleep	65	2972	SLEEP (STATE)	2
-#>>>				
 kill	66	1417	KILL	2
 star	67	1430	STAR	2
 see	68	1409	SEE	2
-#<<<				
-hair	69	2648	HAIR (HEAD)	2
-hair	69	2678	HAIR OR FUR	2
-hair	69	2381	FEATHER OR FUR OR HAIR	2
 hair	69	1040	HAIR	2
-#>>>				
 snake	70	730	SNAKE	2
 person	71	683	PERSON	2
 ten	72	1515	TEN	2
 fifteen	73	1709	FIFTEEN	2
 I	74	1209	I	2
 house	75	1252	HOUSE	2
-#<<<				
 head	76	1256	HEAD	2
-head	76	2992	TIP (OF OBJECT)	2
-#>>>				
-#<<<				
-above	77	1265	HIGH	2
 above	77	1741	ABOVE	2
-#>>>				
-#<<<				
 abscess	78	793	BOIL (OF SKIN)	4
-abscess	78	51	SORE	4
-#>>>				
 abundant	79	712	RICH	4
-accident	80		???	
+accident	80			
 across	81	2670	ACROSS	2
-adopt a child	82		???	
+adopt a child	82			
 adze	83	290	ADZE	2
-#<<<				
 afraid	84	1419	FEAR (BE AFRAID)	2
-afraid	84	3033	SCARED	2
-#>>>				
 after	85	1685	AFTER	2
-afterlife	86		???	
+afterlife	86			
 afternoon	87	1807	AFTERNOON	2
 again	88	204	AGAIN	2
-agile	89		???	
+agile	89			
 air	90	27	AIR	2
 all	91	98	ALL	2
-#<<<				
-allow	92	1003	PERMIT	2
 allow	92	3238	ALLOW	2
-#>>>				
-ally	93		???	
-almost	94		???	
-almost faint	95		???	
-almost invisible	96		???	
+ally	93			
+almost	94			
+almost faint	95	3616	FAINT (PASS OUT)	
+almost invisible	96			
 already	97	2576	ALREADY	2
 always	98	1676	ALWAYS	2
 ambush	99	65	AMBUSH	2
 ancestor	100	1669	ANCESTORS	2
 anchor (n.)	101	1870	ANCHOR	3
 anchor (v.)	102	1870	ANCHOR	4
-anchored	103		???	
+anchored	103			
 and	104	1577	AND	2
-#<<<				
 angry	105	1826	ANGRY	2
-angry	105	2223	BE ANGRY	2
-#>>>				
 ankle	106	803	ANKLE	2
 annoy	107	2892	MAKE ANGRY (ANNOY)	2
 answer (n.)	108	1275	ANSWER	4
 answer (v.)	109	1275	ANSWER	1
 ant	110	587	ANT	2
-areca palm	111		???	
+areca palm	111			
 argue	112	3302	QUARREL (VERB)	2
 arm	113	1673	ARM	2
-arm bone	114		???	
+arm bone	114	1394	BONE	
 armpit	115	1886	ARMPIT	2
 around	116	1443	WALK	4
 arrange	117	1568	ARRANGE	2
-arrived	118		???	
+arrived	118	1387	ARRIVE	
 arrow	119	977	ARROW	2
-as for ...	120		???	
+as for ...	120			
 ascend	121	705	GO UP (ASCEND)	2
 ash	122	646	ASH	2
-#<<<				
 ask	123	1309	ASK (INQUIRE)	2
-ask	123	1828	ASK (REQUEST)	2
-#>>>				
 ask for	124	1828	ASK (REQUEST)	2
 astonished	125	1572	SURPRISED	2
-astrigent	126		???	
-attic	127		???	
+astrigent	126			
+attic	127			
 auger	128	3423	DRILL	4
-#<<<				
 aunt	129	1272	AUNT	2
-aunt	129	3042	MATERNAL AUNT (MOTHER'S OLDER SISTER)	2
-#>>>				
-#<<<				
-aunt/uncle	130	2691	PATERNAL AUNT (FATHER'S SISTER)	4
-aunt/uncle	130	2170	PATERNAL AUNT (WIFE OF FATHER'S OLDER BROTHER)	4
-aunt/uncle	130	2171	PATERNAL AUNT (WIFE OF FATHER'S YOUNGER BROTHER)	4
-aunt/uncle	130	2175	PATERNAL AUNT	4
-aunt/uncle	130	3042	MATERNAL AUNT (MOTHER'S OLDER SISTER)	4
-aunt/uncle	130	2172	MATERNAL AUNT (WIFE OF MOTHER'S BROTHER)	4
-aunt/uncle	130	2176	MATERNAL AUNT	4
-aunt/uncle	130	1985	PATERNAL UNCLE (FATHER'S BROTHER)	4
-aunt/uncle	130	2690	UNCLE (HUSBAND OF FATHER'S SISTER)	4
-aunt/uncle	130	2173	PATERNAL UNCLE (FATHER'S OLDER BROTHER)	4
-aunt/uncle	130	2387	UNCLE OR FATHER-IN-LAW	4
-aunt/uncle	130	1327	UNCLE	4
-aunt/uncle	130	2174	PATERNAL UNCLE (FATHER'S YOUNGER BROTHER)	4
-aunt/uncle	130	2694	MATERNAL UNCLE (HUSBAND OF ONE'S MATERNAL AUNT)	4
-aunt/uncle	130	2383	AUNT OR MOTHER-IN-LAW	4
-aunt/uncle	130	2682	AUNT OR UNCLE	4
-aunt/uncle	130	1272	AUNT	4
-aunt/uncle	130	2692	MATERNAL UNCLE (MOTHER'S BROTHER)	4
-aunt/uncle	130	3220	MATERNAL UNCLE	4
-#>>>				
-#<<<				
-awaken	131	825	AWAKE	2
+aunt/uncle	130			4
 awaken	131	3174	WAKE UP (SOMEONE)	2
-#>>>				
 axe	132	677	AXE	2
 #<<<				
 back (a.)	133	2910	BACK (DIRECTION)	4
@@ -2916,4 +2816,4 @@ your (pl.)	1809	2274	YOUR (PLURAL)	4
 your (sg.)	1810	732	YOUR (SINGULAR)	4
 your (sg.)	1810	2274	YOUR (PLURAL)	4
 #>>>				
-#	1291/1810	71%	
+#	1291/1810	71%		
