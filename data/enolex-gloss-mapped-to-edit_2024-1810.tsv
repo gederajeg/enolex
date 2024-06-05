@@ -254,199 +254,121 @@ calm	251	258	CALM	2
 can	252	972	BE ABLE	2
 canal (small)	253	2002	DITCH	4
 cannon	254	3202	CANNON	2
-care for spouse of deceased	255		???	
-carrion	256		???	
+care for spouse of deceased	255			
+carrion	256	767	CORPSE	
 carry on back	257	465	CARRY ON BACK	2
-carry on hip	258		???	
-carry on shoulders with a carrying pole	259		???	
+carry on hip	258	1448	HOLD	
+carry on shoulders with a carrying pole	259	3438	CARRY (WITH POLE ON SHOULDER)	
 carve	260	228	CARVE	2
-#<<<				
 cassava/yam/tuber	261	925	CASSAVA	4
-cassava/yam/tuber	261	410	YAM	4
-cassava/yam/tuber	261	670	ROOT	4
-cassava/yam/tuber	261	2617	BULB	4
-#>>>				
-#<<<				
 cassava/yam/tuber (Manihot utilissima)	262	925	CASSAVA	4
-cassava/yam/tuber (Manihot utilissima)	262	410	YAM	4
-cassava/yam/tuber (Manihot utilissima)	262	670	ROOT	4
-cassava/yam/tuber (Manihot utilissima)	262	2617	BULB	4
-#>>>				
-cast rope	263		???	
-casting net	264		???	
-castrated	265		???	
-#<<<				
-cat	266	3825	MALE CAT	2
+cast rope	263			
+casting net	264			
+castrated	265	29	GELD	
 cat	266	1208	CAT	2
-#>>>				
-#<<<				
 catch	267	702	CATCH	2
-catch	267	3320	SNARE (TRAP)	2
-#>>>				
-#<<<				
-catch (water)	268	702	CATCH	4
-catch (water)	268	1170	TRAP (CATCH)	4
-catch (water)	268	855	SEIZE	4
-catch (water)	268	3320	SNARE (TRAP)	4
-catch (water)	268	2102	BURN	4
-#>>>				
+catch (water)	268	697	CONTAIN	
 caterpillar	269	2247	CATERPILLAR	2
-cause of disease	270		???	
-ceiling beam	271		???	
+cause of disease	270			
+ceiling beam	271	2100	THATCH OR ROOF	
 centipede	272	1974	CENTIPEDE	2
 certain	273	509	CERTAIN	2
-chalk	274		???	
-#<<<				
-change	275	1264	CHANGE	2
-change	275	2857	CHANGE (BECOME DIFFERENT)	2
-#>>>				
+chalk	274	2540	LIME (MATERIAL)	
+change	275	2856	CHANGE (SOMETHING)	
 chaotic	276	1083	MESS	4
 charcoal	277	1188	CHARCOAL	2
-#<<<				
-chase (away)	278	1047	PURSUE	4
-chase (away)	278	1435	HUNT	4
-#>>>				
+chase (away)	278	30	DISPEL	4
 cheap	279	1887	CHEAP	2
 cheek	280	1730	CHEEK	2
 chew	281	321	CHEW	2
-#<<<				
 chicken	282	1318	CHICKEN	2
-chicken	282	2512	CHICK	2
-#>>>				
 chili	283	919	CHILI PEPPER	2
 chin	284	1510	CHIN	2
 Chinese	285	3373	HAN CHINESE	2
-chirp	286		???	
+chirp	286			
 chisel (n.)	287	1979	CHISEL	1
 choose	288	1750	CHOOSE	2
-#<<<				
-chop (up)	289	2149	CHOP (INTO PIECES)	4
 chop (up)	289	155	CHOP	4
-chop (up)	289	3151	CUT (WITH AXE)	4
-chop (up)	289	553	HEW	4
-chop (up)	289	355	CUT DOWN	4
-#>>>				
 cigarette	290	969	CIGARETTE	2
-cigarette paper	291		???	
-citrus	292		???	
+cigarette paper	291			
+citrus	292			
 civet	293	3157	CIVET	2
-clan head	294		???	
+clan head	294	301	CHIEFTAIN	
 clay	295	1399	CLAY	2
-#<<<				
-clean (a.)	296	2235	CLEAN (SOMETHING)	4
 clean (a.)	296	704	CLEAN	4
-#>>>				
-clean burned wood	297		???	
-#<<<				
-clear	298	989	CLEAR	2
+clean burned wood	297			
 clear	298	3710	CLEAR (TO SEE)	2
-#>>>				
 clearing (in forest)	299	2284	CLEARING	4
 clever	300	1310	CLEVER	2
 cliff	301	992	CLIFF	2
 climb	302	1102	CLIMB	2
-climb up tree	303		???	
+climb up tree	303	1102	CLIMB	
 clitoris	304	3257	CLITORIS	2
-clobber	305		???	
+clobber	305	354	POUND	
 clock	306	1323	CLOCK	2
-#<<<				
 close (v.)	307	1046	SHUT	3
-close (v.)	307	3547	CLOSE (MOUTH)	3
-close (v.)	307	2063	CLOSE (EYES)	3
-#>>>				
-close eyes	308		???	
+close eyes	308	2063	CLOSE (EYES)	
 closed	309	589	CLOSED	2
 cloth	310	1616	CLOTH	2
-#<<<				
 clothes (general)	311	1895	CLOTHES	4
-clothes (general)	311	1453	WASH	4
-#>>>				
-#<<<				
 clothes (lower)	312	1895	CLOTHES	4
-clothes (lower)	312	1453	WASH	4
-#>>>				
-#<<<				
 clothes (upper or lower)	313	1895	CLOTHES	4
-clothes (upper or lower)	313	1453	WASH	4
-#>>>				
 clothes (upper)	314	1895	CLOTHES	2
-#<<<				
 cloud	315	1489	CLOUD	2
-cloud	315	448	STORM CLOUDS	2
-#>>>				
 cloudy	316	2341	CLOUDY	2
 clove	317	2000	CLOVE	2
 coast	318	1525	COAST	2
-coccyx	319		???	
+coccyx	319			
 cockroach	320	1575	COCKROACH	2
 coconut	321	970	COCONUT	2
 coconut (young)	322	970	COCONUT	4
-coconut milk	323		???	
-coconut seed	324		???	
-coconut shell	325		???	
+coconut milk	323			
+coconut seed	324			
+coconut shell	325			
 coconut tree	326	147	COCONUT TREE	2
-coconut water	327		???	
+coconut water	327			
 cold (a.)	328	1287	COLD	2
 cold (n.)	329	2932	COLD (CHILL)	1
-collapse	330		???	
+collapse	330	1280	FALL	
 colourful	331	2997	COLORFUL	2
 comb (n.)	332	1475	COMB	1
-#<<<				
 comb (v.)	333	2070	COMB (VERB)	1
-comb (v.)	333	1475	COMB	1
-#>>>				
 come	334	1446	COME	2
 come here!	335	3555	COME HERE	2
 come out	336	1107	GO OUT	2
-commit adultery	337		???	
-completely	338		???	
-concerning	339		???	
+commit adultery	337	902	ADULTERY	
+completely	338			
+concerning	339			
 conduct (n.)	340	3111	CONDUCT	4
 confess	341	2022	ADMIT	4
 confused	342	3858	CONFUSED	2
-connected	343		???	
+connected	343			
 content	344	3967	CONTENT	2
-#<<<				
 cook	345	1100	COOK (SOMETHING)	2
-cook	345	2315	COOK (PERSON)	2
-#>>>				
-cooking banana	346		???	
+cooking banana	346	868	BANANA	
 cool down	347	3068	COOL DOWN	4
 copper	348	1825	COPPER	2
 copulate	349	549	COPULATE	2
 coral	350	3179	CORAL ROCK	2
-coral bridge	351		???	
-coral reef	352		???	
-core family	353		???	
+coral bridge	351	1011	BRIDGE	
+coral reef	352	660	REEF	
+core family	353	194	FAMILY	
 corner	354	192	CORNER	2
 corpse	355	767	CORPSE	2
 correct	356	1725	CORRECT (RIGHT)	2
 cotton	357	1850	COTTON	2
-#<<<				
-cough	358	879	COUGH	2
 cough	358	3913	COUGH (ACT OF COUGHING)	2
-#>>>				
-#<<<				
 count	359	1420	COUNT	2
-count	359	2945	COUNT (QUANTITY)	2
-#>>>				
-#<<<				
 cousin	360	1643	COUSIN	2
-cousin	360	3823	FEMALE COUSIN	2
-cousin	360	3822	MALE COUSIN	2
-#>>>				
 cover (v.)	361	761	COVER	1
-#<<<				
 cow	362	1007	COW	2
-cow	362	3044	BOVINE	2
-#>>>				
 crab (beach)	363	2348	CRAB	4
 crab (land)	364	2348	CRAB	4
 crab (saltwater)	365	2348	CRAB	4
 crab (shore)	366	2348	CRAB	4
 crack open	367	3080	SPLIT OPEN	4
-cramp	368		???	
-cramped	369		???	
+cramp	368			
+cramped	369	1414	SQUEEZE	
 crawl	370	96	CRAWL	2
 crazy	371	1899	MAD	2
 cricket	372	2354	CRICKET	2
@@ -455,26 +377,23 @@ crocodile	374	1857	CROCODILE	2
 crooked	375	297	CROOKED	2
 crop (bird)	376	611	HARVEST	4
 cross (v.)	377	574	TRANSIT	1
-crowbar (wooden)	378		???	
+crowbar (wooden)	378	1361	TOOL	
 crowded	379	2517	CROWDED	2
 crush	380	1520	CRUSH	2
 cry (weep)	381	1839	CRY	2
-cultivate a field	382		???	
-culture hero	383		???	
+cultivate a field	382	1541	CULTIVATE	
+culture hero	383			
 cup	384	476	CUP	2
 cup (porcelain)	385	476	CUP	4
-cured	386		???	
+cured	386	1978	RECOVER	
 current (n.)	387	2935	CURRENT (STREAM)	3
-currently	388		???	
+currently	388	1376	NOW	
 curse (v.)	389	8	CURSE	1
-#<<<				
 cut	390	1432	CUT	2
-cut	390	2156	CUT (WITH KNIFE)	2
-#>>>				
 cut down	391	355	CUT DOWN	2
-cut down grass	392		???	
-cut off	393		???	
-cut twigs	394		???	
+cut down grass	392	355	CUT DOWN	
+cut off	393	1437	SPLIT	
+cut twigs	394	1432	CUT	
 dance (n.)	395	3472	DANCE (MOVEMENT)	1
 dance (v.)	396	1879	DANCE	1
 dare	397	1779	DARE	2
@@ -482,120 +401,81 @@ dark	398	706	DARK	2
 date (v.)	399	3801	DATE (FRUIT)	4
 daughter-in-law	400	1057	DAUGHTER-IN-LAW	2
 dawn	401	729	DAWN	2
-#<<<				
 day	402	1260	DAY (24 HOURS)	2
-day	402	1225	DAY (NOT NIGHT)	2
-#>>>				
 day after tomorrow	403	1179	DAY AFTER TOMORROW	2
 day before yesterday	404	1180	DAY BEFORE YESTERDAY	2
-daydream	405		???	
-#<<<				
+daydream	405			
 daylight	406	1225	DAY (NOT NIGHT)	2
-daylight	406	630	LIGHT (RADIATION)	2
-#>>>				
-#<<<				
-deaf	407	458	DEAF PERSON	2
 deaf	407	996	DEAF	2
-#>>>				
 death	408	910	DEATH	2
 debt	409	1914	DEBT	2
 deceive	410	3230	DECEIVE	2
 deep	411	1593	DEEP	2
-deep blue	412		???	
-deep sea	413		???	
-#<<<				
+deep blue	412		BLUE	
+deep sea	413	1474	SEA	
 deer	414	1936	DEER	2
-deer	414	3826	ROE DEER	2
-#>>>				
 defend	415	1330	DEFEND	2
-delete	416		???	
-deliberately	417		???	
-delimited	418		???	
-deliver message	419		???	
+delete	416			
+deliberately	417	1162	INTENTION	
+delimited	418			
+deliver message	419	1127	SEND	
 demon	420	1973	DEMON	2
 dense (forest)	421	2239	DENSE	4
 deny	422	755	DENY	2
 depart	423	1752	LEAVE	2
-departure	424		???	
+departure	424			
 descend	425	2014	GO DOWN (DESCEND)	2
-deserted	426		???	
-destroyed	427		???	
-#<<<				
+deserted	426			
+destroyed	427	680	BREAK (DESTROY OR GET DESTROYED)	
 devil	428	3917	DEVIL	2
-devil	428	1973	DEMON	2
-#>>>				
 dew	429	1977	DEW	2
 diarrhea	430	1177	DIARRHEA	2
-dibber	431		???	
-dibble	432		???	
-difference	433		???	
+dibber	431			
+dibble	432	3155	DIBBLE STICK	
+difference	433			
 difficult	434	584	DIFFICULT	2
 dig	435	1418	DIG	2
-dig a hole	436		???	
-dig out a hole	437		???	
+dig a hole	436	1418	DIG	
+dig out a hole	437	1418	DIG	
 diligent	438	2077	DILIGENT	2
-Dillenia tree	439		???	
+Dillenia tree	439	906	TREE	
 dim (a.)	440	706	DARK	4
-dingy	441		???	
+dingy	441	1230	DIRTY	
 direction	442	3427	DIRECTION	2
 dirty	443	1230	DIRTY	2
 disgusting	444	2507	DISGUSTING	2
-dislike	445		???	
+dislike	445	1607	HATE	
 district	446	1300	COUNTRY	4
 dive	447	119	DIVE	2
-divided (math)	448		???	
-#<<<				
+divided (math)	448	1119	DIVIDE	
 divorce	449	1134	DIVORCE	2
-divorce	449	3672	DIVORCE (SEPARATE)	2
-#>>>				
-divorced	450		???	
+divorced	450	3672	DIVORCE (SEPARATE)	
 dizzy	451	2712	GET DIZZY	4
 dog	452	2009	DOG	2
-don't know	453		???	
-don't you!	454		???	
+don't know	453			
+don't you!	454	2660	DO NOT DO IT	
 door	455	1567	DOOR	2
-door jamb	456		???	
+door jamb	456	80	DOORPOST	
 double (v.)	457	1546	TWICE	4
-#<<<				
-doubt	458	3536	DOUBT (SOMETHING)	2
 doubt	458	1308	DOUBT	2
-#>>>				
-downstream	459		???	
+downstream	459			
 dowry	460	3168	DOWRY	2
 draw water	461	1911	DRAW (WATER)	2
 dream (n.)	462	2374	DREAM	1
 dream (v.)	463	1920	DREAM (SOMETHING)	1
-#<<<				
-drip	464	2253	DRIP (EMIT LIQUID)	2
 drip	464	808	DRIP (FALL IN GLOBULES)	2
-drip	464	3748	DROP (OF A LIQUID)	2
-#>>>				
 drizzle	465	1016	DRIZZLE	2
-#<<<				
-drop	466	750	DROP	2
-drop	466	2087	DROP (CLASSIFIER)	2
-drop	466	3748	DROP (OF A LIQUID)	2
 drop	466	2866	DROP (SOMETHING)	2
-#>>>				
 drunk	467	1463	DRUNK	2
 dry (a.)	468	1398	DRY	2
-#<<<				
 dry (v.)	469	1786	DRY UP	3
-dry (v.)	469	1398	DRY	3
-dry (v.)	469	3364	DRY IN SUN	3
-dry (v.)	469	2015	MAKE DRY	3
-#>>>				
-dry over fire	470		???	
+dry over fire	470	1786	DRY UP	
 dry season	471	452	DRY SEASON	2
-#<<<				
 dull	472	905	BORING	2
-dull	472	379	BLUNT	2
-dull	472	1518	STUPID	2
-#>>>				
-dun	473		???	
+dun	473	1828	ASK (REQUEST)	
 dusk	474	2297	DUSK	2
 dust	475	2	DUST	2
-dwarf	476		???	
+dwarf	476			
 eagle	477	1905	EAGLE	2
 earlier	478		???	
 early evening	479	1629	EVENING	4
