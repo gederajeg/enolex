@@ -19,3 +19,6 @@ cd concepticon-data
 
 # run the concept mapping
 concepticon map_concepts C:/Users/GRajeg/OneDrive\ -\ Nexus365/Documents/Research/enolex-2023-05-23/data/enolex-gloss-to-map_2024-1810.tsv --output C:/Users/GRajeg/OneDrive\ -\ Nexus365/Documents/Research/enolex-2023-05-23/data/enolex-gloss-mapped-to-edit_2024-1810.tsv
+
+# go back to EnoLEX directory
+cd "C:/Users/GRajeg/OneDrive - Nexus365/Documents/Research/enolex-2023-05-23"
