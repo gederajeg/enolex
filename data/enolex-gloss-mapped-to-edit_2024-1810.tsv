@@ -47,7 +47,6 @@ live (v.)	45	1422	BE ALIVE	1
 belly	46	1251	BELLY	2
 white	47	1335	WHITE	2
 thunder	48	1150	THUNDER	2
-thunder	48	2378	THUNDER (VERB)	2
 water	49	948	WATER	2
 boat	50	1844	BOAT	2
 finger	51	1303	FINGER	2
@@ -821,58 +820,46 @@ instead	818	1652	INSTEAD	2
 instrument for octopus hunting	819	1361	TOOL	
 instrument for peeling coconut	820	1361	TOOL	
 instrument for shaving coconut	821	1361	TOOL	
-intent	822		???	
+intent	822	1162	INTENTION	
 intestines	823	1991	INTESTINES	2
-intimidate	824		???	
-Intsia bijuga	825		???	
-#<<<				
+intimidate	824	252	FRIGHTEN	
+Intsia bijuga	825			
 iron	826	621	IRON	2
-iron	826	3118	IRON (CLOTHES)	2
-#>>>				
-#<<<				
-iron (rusty)	827	31	PAN	4
-iron (rusty)	827	3118	IRON (CLOTHES)	4
-iron (rusty)	827	3324	IRON OR METAL	4
 iron (rusty)	827	621	IRON	4
-iron (rusty)	827	2657	LADLE	4
-#>>>				
 island	828	622	ISLAND	2
 jackfruit	829	2655	JACKFRUIT	2
 jackfruit (Artocarpus integrifolia)	830	2655	JACKFRUIT	4
-Jakarta	831		???	
-Japanese	832		???	
+Jakarta	831			
+Japanese	832			
 jaw	833	798	JAW	2
 jealous(y)	834	2821	JEALOUS	4
 Jew's harp	835	3319	JEW’S HARP	2
 join	836	1743	JOIN	2
-#<<<				
 judge	837	1818	ADJUDICATE	2
-judge	837	861	JUDGE	2
-#>>>				
 jump	838	1829	JUMP	2
-k.o. aquatic animal	839		???	
-k.o. bamboo	840		???	
-k.o. bird	841		???	
-k.o. cake	842		???	
-k.o. caterpillar	843		???	
-k.o. fabric	844		???	
-k.o. fish	845		???	
-k.o. fruit tree	846		???	
-k.o. grass	847		???	
-k.o. grasshopper	848		???	
-k.o. kitchen utensil	849		???	
-k.o. leech	850		???	
-k.o. red bird	851		???	
-k.o. sap	852		???	
-k.o. sea mollusk	853		???	
-k.o. sea shell	854		???	
-k.o. sea snail	855		???	
-k.o. snail	856		???	
-k.o. snake fruit	857		???	
-k.o. tree	858		???	
-k.o. tree (fragrant)	859		???	
+k.o. aquatic animal	839	619	ANIMAL	
+k.o. bamboo	840	1927	BAMBOO	
+k.o. bird	841	937	BIRD	
+k.o. cake	842	2408	CAKE	
+k.o. caterpillar	843	2247	CATERPILLAR	
+k.o. fabric	844	1616	CLOTH	
+k.o. fish	845	227	FISH	
+k.o. fruit tree	846	906	TREE	
+k.o. grass	847	606	GRASS	
+k.o. grasshopper	848	607	GRASSHOPPER	
+k.o. kitchen utensil	849	1361	TOOL	
+k.o. leech	850	2273	LEECH	
+k.o. red bird	851	937	BIRD	
+k.o. sap	852	345	SAP	
+k.o. sea mollusk	853	2785	BIVALVIA (MUSSELS OR OYSTERS)	
+k.o. sea shell	854	598	SHELL	
+k.o. sea snail	855	1543	SNAIL	
+k.o. snail	856	1543	SNAIL	
+k.o. snake fruit	857	1507	FRUIT	
+k.o. tree	858	906	TREE	
+k.o. tree (fragrant)	859	906	TREE	
 kapok tree (Ceiba pentandra)	860	2499	KAPOK TREE	4
-keep from	861		???	
+keep from	861	2762	BLOCK (THE WAY)	
 kettle	862	854	KETTLE	2
 key	863	1472	KEY	2
 kick	864	1135	KICK	2
@@ -888,7 +875,7 @@ know	872	2248	KNOW (SOMEBODY)	2
 know	872	1410	KNOW (SOMETHING)	2
 know	872	3626	KNOW	2
 #>>>				
-kuat	873		???	
+kuat	873	785	STRONG	
 kunai grass (Imperata cylindrica)	874		???	
 #<<<				
 ladle (bamboo)	875	2649	COCONUT SHELL LADLE	4
