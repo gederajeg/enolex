@@ -182,7 +182,7 @@ eno_etym_long1 <- eno_etym_long |>
          year = if_else(str_detect(EngganoSource, " ms\\."),
                         "ms.",
                         year),
-         year = factor(year, levels = c("1854", "<1855", "1855", "1864", "1870", "1878", 
+         year = factor(year, levels = c("<1855", "1854", "1855", "1864", "1870", "1878", 
                                         "1879", "1888", "1891", "1894", "1895", 
                                         "1916", "1979", "1982", "ms.", "1987", "2011", 
                                         "2019", "2023"))) |>
@@ -213,7 +213,7 @@ year_source_df <- tribble(~EngganoSource, ~year_id, ~year,
                           "Helfrich 1916", "1916", "1916",
                           "Boewang 1854", "1854", "1854") |> 
   mutate(year = factor(year, 
-                       levels = c("1854", "<1855", "1855", "1864", "1870", "1878",
+                       levels = c("<1855", "1854", "1855", "1864", "1870", "1878",
                                   "1879", "1888", "1891", "1894", "1895", 
                                   "1916", "1979", "1982", "ms.", "1987", "2011", 
                                   "2019", "2023"))) |> 
@@ -1180,7 +1180,7 @@ rm_untagged2 <- rm_untagged1 |>
          notesnew = replace(notesnew, rm5 == "cf. Edwards (2015:68) for split of /o/", "<re><ref>Edwards (2015:68)</ref> <note>for split of /o/</note></re>"),
          notesnew = replace(notesnew, rm5 == "cf. Edwards (2015:68) for split of /o/, Yoder says this is a loanword", "<re><ref>Edwards (2015:68)</ref> <note>for split of /o/</note></re> <re><ref>Yoder (2011)</ref> <note>says this is a loanword</note></re>"),
          notesnew = replace(notesnew, rm5 == "cf. ter Keurs (2002)", "<re><ref>ter Keurs (2002)</ref></re>"),
-         notesnew = replace(notesnew, rm5 == "cf. BI jorok", "<re><lang>BI</lang> <def>jorok</def></re>"),
+         notesnew = replace(notesnew, rm5 == "cf. BI jorok", "<re><lang>BI</lang> <def>'jorok'</def></re>"),
          notesnew = replace(notesnew, rm5 == "cf. Clercq 1909:359 'bladscheede van Areca Catechu'", "<re><ref>Clercq 1909:359</ref> <def>'bladscheede van Areca Catechu'<def></re>")) |> 
   rename(note_untagged = notesnew)
 
@@ -1188,8 +1188,12 @@ eno_etym_long_mini8 <- eno_etym_long_mini7 |>
   left_join(rm_untagged2 |> select(id, note_untagged)) |> 
   rename(note_year = notesnew,
          note_id = note_by_id, # note_id column is for general note applying for the whole row (hence note_by_id)
-         note_etc = note_untagged) |> 
-  mutate(entry_id = row_number()) |>  # add entry_id for unique ID of rows in the whole table
+         note_etc = note_untagged) |>
+  mutate(note_year = str_replace_all(note_year, "<re><w>cf. by</w></re>", "<re>cf. <link target='#by'>by</link></re>"),
+         note_year = str_replace_all(note_year, "<re><w>but cf. boat</w></re>", "but <re>cf. <link target='#boat'>boat</link></re>"),
+         note_year = str_replace_all(note_year, "cf\\. dog", "<re>cf. <link target='#dog'>dog</link></re>"),
+         note_year = str_replace_all(note_year, "\\bcf\\. <re><w>sea</w></re>", "<re>cf. <link target='#sea'>sea</link></re>")) |> 
+  mutate(entry_id = row_number()) |>  # add entry_id for unique ID of rows in the whole table 
   
   # Fixing anomaly in Capell (1982)
   mutate(english_new = replace(english_new,
@@ -1234,12 +1238,12 @@ eno_etym_long_mini8 <- eno_etym_long_mini7 |>
                                "hot"),
          english_new = replace(english_new,
                                EngganoSource == "Capell 1982" &
-                                 str_detect(words, stri_trans_nfc("pūnũ")) &
+                                 str_detect(words, stringi::stri_trans_nfc("pūnũ")) &
                                  english_new == "lie down",
                                "leaf"),
          english_new = replace(english_new,
                                EngganoSource == "Capell 1982" &
-                                 str_detect(words, stri_trans_nfc("hũhũ")) &
+                                 str_detect(words, stringi::stri_trans_nfc("hũhũ")) &
                                  english_new == "man",
                                "owl"),
          english_new = replace(english_new,
@@ -1274,12 +1278,12 @@ eno_etym_long_mini8 <- eno_etym_long_mini7 |>
                                "throat"),
          english_new = replace(english_new,
                                EngganoSource == "Capell 1982" &
-                                 words == stri_trans_nfc("nōninə") &
+                                 words == stringi::stri_trans_nfc("nōninə") &
                                  english_new == "night",
                                "correct"),
          english_new = replace(english_new,
                                EngganoSource == "Capell 1982" &
-                                 words == stri_trans_nfc("põõ") &
+                                 words == stringi::stri_trans_nfc("põõ") &
                                  english_new == "not",
                                "night"),
          english_new = replace(english_new,
