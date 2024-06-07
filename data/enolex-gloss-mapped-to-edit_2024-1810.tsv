@@ -269,7 +269,7 @@ catch	267	702	CATCH	2
 catch (water)	268	697	CONTAIN	
 caterpillar	269	2247	CATERPILLAR	2
 cause of disease	270			
-ceiling beam	271	2100	THATCH OR ROOF	
+ceiling beam	271	1132	BEAM	
 centipede	272	1974	CENTIPEDE	2
 certain	273	509	CERTAIN	2
 chalk	274	2540	LIME (MATERIAL)	
@@ -601,7 +601,7 @@ flirt	599	494	FLIRT	2
 float	600	1574	FLOAT	2
 flood	601	613	HIGH TIDE	2
 floor	602	1632	FLOOR	2
-floor beam	603			
+floor beam	603	1132	BEAM	
 flour	604	1594	FLOUR	2
 flow	605	2003	FLOW	2
 flower	606	239	FLOWER	2
@@ -870,748 +870,478 @@ knee	868	1371	KNEE	2
 knife	869	1352	KNIFE	2
 knit	870	2905	KNIT	2
 knot	871	760	KNOT	2
-#<<<				
-know	872	2248	KNOW (SOMEBODY)	2
-know	872	1410	KNOW (SOMETHING)	2
 know	872	3626	KNOW	2
-#>>>				
 kuat	873	785	STRONG	
-kunai grass (Imperata cylindrica)	874		???	
-#<<<				
-ladle (bamboo)	875	2649	COCONUT SHELL LADLE	4
-ladle (bamboo)	875	2788	LADLE (WATER)	4
+kunai grass (Imperata cylindrica)	874	606	GRASS	
 ladle (bamboo)	875	2657	LADLE	4
-#>>>				
 lake	876	624	LAKE	2
 lame	877	320	LAME	2
-#<<<				
-lamp	878	2131	TORCH OR LAMP	2
 lamp	878	625	LAMP	2
-#>>>				
-#<<<				
 land	879	626	LAND	2
-land	879	166	MAINLAND	2
-#>>>				
-land as salary	880		???	
+land as salary	880	1122	WAGES	
 landscape	881	2342	LANDSCAPE	2
 lap	882	3263	LAP	2
 last	883	1529	LAST (FINAL)	2
 later	884	477	LATE	2
-layer	885		???	
+layer	885			
 lazy	886	1564	LAZY	2
-#<<<				
-leaf	887	2250	LEAF (LEAFLIKE OBJECT)	2
 leaf	887	628	LEAF	2
-#>>>				
-leaf sheath of betelnut	888		???	
+leaf sheath of betelnut	888	628	LEAF	
 leak (boat)	889	2253	DRIP (EMIT LIQUID)	4
 leak (house)	890	2253	DRIP (EMIT LIQUID)	4
-#<<<				
 lean	891	3619	LEAN	2
-lean	891	2219	LEAN (MEAT)	2
-#>>>				
 leave (tr.)	892	1752	LEAVE	2
-leave for (a place)	893		???	
-#<<<				
-leech	894	949	WATER LEECH	2
+leave for (a place)	893	1752	LEAVE	
 leech	894	2273	LEECH	2
-#>>>				
 left side	895	244	LEFT	2
 lend	896	582	LEND	2
 length	897	2537	LENGTH	2
-#<<<				
 let	898	2896	CAUSE TO (LET)	2
-let	898	3238	ALLOW	2
-#>>>				
-let off	899		???	
-let's	900		???	
-let's go	901		???	
+let off	899			
+let's	900			
+let's go	901			
 letter	902	1612	LETTER	2
-lever	903		???	
+lever	903			
 liana	904	2388	LIANA	2
-#<<<				
 lid (for pot)	905	2319	LID (COVER, CAP)	4
-lid (for pot)	905	761	COVER	4
-#>>>				
 lie (n.)	906	2826	LIE (FALSEHOOD)	3
 lie down	907	215	LIE DOWN	2
-lie on stomach	908		???	
-lie prone	909		???	
-lie supine	910		???	
+lie on stomach	908	215	LIE DOWN	
+lie prone	909	215	LIE DOWN	
+lie supine	910	215	LIE DOWN	
 life	911	210	LIFE	2
-#<<<				
-lift up	912	371	PICK UP	4
-lift up	912	700	CARRY	4
-#>>>				
+lift up	912	501	LIFT	4
 light (n.)	913	630	LIGHT (RADIATION)	1
-#<<<				
 like (prep.)	914	1558	SIMILAR	4
-like (prep.)	914	1784	WANT	4
-like (prep.)	914	1117	LIKE	4
-#>>>				
-like that	915		???	
+like that	915	1558	SIMILAR	
 like this	916	1558	SIMILAR	2
 limb (tree)	917	1531	BRANCH	4
-limestone	918		???	
-Limnocharis flava	919		???	
-line up (intr.)	920		???	
+limestone	918	668	ROCK	
+Limnocharis flava	919			
+line up (intr.)	920			
 lips	921	478	LIP	2
-little toe	922		???	
+little toe	922	1389	TOE	
 liver	923	1224	LIVER	2
 livestock	924	631	LIVESTOCK	2
-livestock of deceased person	925		???	
+livestock of deceased person	925	631	LIVESTOCK	
 lizard	926	632	LIZARD	2
 load (n.)	927	1679	LOAD	3
-local people	928		???	
-locative preposition	929		???	
+local people	928	789	PEOPLE	
+locative preposition	929	1461	AT	
 loincloth	930	1965	LOINCLOTH	2
 long (distance)	931	1203	LONG	2
-#<<<				
-long (time)	932	2143	LONG OR TALL	4
-long (time)	932	1203	LONG	4
-long (time)	932	1352	KNIFE	4
-long (time)	932	2085	STICK (CLASSIFIER)	4
 long (time)	932	418	FOR A LONG TIME	4
-long (time)	932	3473	LONG (FOR SOMETHING)	4
-#>>>				
-#<<<				
-look (appear)	933	1819	LOOK	4
-look (appear)	933	1017	APPEARANCE	4
-#>>>				
+look (appear)	933	1521	SEEM	4
 Lord	934	3153	LORD	2
-#<<<				
 lose	935	3072	MISPLACE	2
-lose	935	1660	LOSE	2
-#>>>				
 lost	936	3667	LOST	2
-#<<<				
 louse	937	1392	LOUSE	2
-louse	937	310	HEAD LOUSE	2
-#>>>				
 love (n.)	938	3834	LOVE (AFFECTION)	3
 love (v.)	939	923	LOVE	1
-love song	940		???	
-#<<<				
+love song	940	1096	SONG	
 low	941	721	LOW	2
-low	941	3348	LOW (POSITION OR HEIGHT)	2
-low	941	2191	LOW (HEIGHT)	2
-#>>>				
 low tide	942	1026	LOW TIDE	2
-lower jaw	943		???	
+lower jaw	943	798	JAW	
 lung	944	688	LUNG	2
-lurk	945		???	
+lurk	945			
 machete	946	2680	MACHETE	2
-made of what?	947		???	
-maid	948		???	
-main post (in house)	949		???	
-maintenance	950		???	
-make a loss	951		???	
-make fence around	952		???	
-make fire	953		???	
-making an impression	954		???	
-Malay person	955		???	
-#<<<				
-man	956	683	PERSON	2
-man	956	1554	MAN	2
+made of what?	947	3268	QUESTION	
+maid	948	255	SERVANT	
+main post (in house)	949	281	POST	
+maintenance	950	1997	PRESERVE	
+make a loss	951			
+make fence around	952	1010	BOUNDARY	
+make fire	953	737	LIGHT (IGNITE)	
+making an impression	954	1863	AMAZING	
+Malay person	955	789	PEOPLE	
 man	956	2106	MALE PERSON	2
-#>>>				
 mango	957	2398	MANGO	2
 mangrove	958	350	MANGROVE	2
-#<<<				
-many/much	959	1198	MANY	4
-many/much	959	3452	MUCH	4
-many/much	959	822	HOW MANY	4
-many/much	959	1852	OFTEN	4
-many/much	959	2650	ALL OR MANY	4
-many/much	959	3453	MANY PIECES	4
-#>>>				
+many/much	959	538	MULTITUDE	4
 marriage	960	2432	MARRIAGE	2
-#<<<				
 marriage (of a man)	961	2432	MARRIAGE	4
-marriage (of a man)	961	1259	WEDDING	4
-marriage (of a man)	961	3182	MARRIAGE OR WEDDING	4
-#>>>				
-#<<<				
 marriage (of a woman)	962	2432	MARRIAGE	4
-marriage (of a woman)	962	1259	WEDDING	4
-marriage (of a woman)	962	3182	MARRIAGE OR WEDDING	4
-#>>>				
-marriage agreement	963		???	
+marriage agreement	963	3644	AGREEMENT	
 marrow	964	1835	MARROW	2
 marry	965	203	MARRY	2
 marry (a man)	966	2163	MARRY (AS WOMAN)	2
 marry (a woman)	967	2164	MARRY (AS MAN)	2
 massage (v.)	968	3119	MASSAGE (SOMEBODY)	3
 mast	969	184	MAST	2
-mastwood (Calophyllum tree)	970		???	
+mastwood (Calophyllum tree)	970	906	TREE	
 mat	971	195	MAT	2
-maybe	972		???	
+maybe	972	2278	PERHAPS	
 meaning	973	2950	MEANING	2
 measles	974	3389	MEASLES	2
-#<<<				
 measure (n.)	975	2845	SIZE (OF OBJECT)	4
-measure (n.)	975	1506	MEASURE	4
-measure (n.)	975	2082	KNIFE (CLASSIFIER)	4
-#>>>				
 measure (v.)	976	1506	MEASURE	3
 medicine	977	1372	MEDICINE	2
 medicine man	978	394	SHAMAN (FOLK HEALER)	2
 meet	979	1831	MEET	2
-meeting	980		???	
+meeting	980	3070	HOLD A MEETING	
 menstruation	981	766	MENSTRUATION	2
-mention	982		???	
+mention	982	1458	SAY	
 merchant	983	1082	MERCHANT	2
-merely	984		???	
+merely	984	1580	ONLY	
 message (n.)	985	2961	MESSAGE	3
-miaow	986		???	
+miaow	986			
 middle	987	1093	MIDDLE	2
 middle finger	988	3387	MIDDLE FINGER	2
-middle toe	989		???	
+middle toe	989	1389	TOE	
 midwife	990	3859	MIDWIFE	2
-millipede	991		???	
-minus	992		???	
+millipede	991			
+minus	992			
 mirror	993	1171	MIRROR	2
-miscarriage	994		???	
-#<<<				
-miss (v.)	995	2329	LACK (NOT HAVE)	3
-miss (v.)	995	161	MISS (A TARGET)	3
+miscarriage	994			
 miss (v.)	995	2328	MISS (SOMEBODY)	3
-#>>>				
 mistaken	996	1390	WRONG	4
-mister	997		???	
-mixed	998		???	
-mock	999	117	IMITATE	4
+mister	997	2106	MALE PERSON	
+mixed	998	2017	MIX	
+mock	999	2760	MAKE A JOKE	4
 molar	1000	1049	MOLAR TOOTH	2
-#<<<				
 mold	1001	289	MOLD	2
-mold	1001	3251	MOLD (GET ROTTEN)	2
-#>>>				
 money	1002	1559	MONEY	2
 monitor lizard	1003	3017	MONITOR LIZARD	2
-monsoon	1004		???	
+monsoon	1004	453	RAINY SEASON	
 month	1005	1370	MONTH	2
-moon eclipse	1006		???	
+moon eclipse	1006	2285	ECLIPSE	
 more	1007	1992	MORE	2
 morning	1008	1339	MORNING	2
-#<<<				
-mortar	1009	1731	MORTAR BINDER	2
 mortar	1009	224	MORTAR	2
-#>>>				
 mosquito	1010	1509	MOSQUITO	2
-mosquito bite	1011		???	
-mottled	1012		???	
+mosquito bite	1011	1403	BITE	
+mottled	1012			
 mountain	1013	639	MOUNTAIN	2
 move (intr.)	1014	2874	MOVE (ONESELF)	2
-#<<<				
 move (on, away)	1015	695	GO	4
-move (on, away)	1015	2873	MOVE (AFFECT EMOTIONALLY)	4
-move (on, away)	1015	2874	MOVE (ONESELF)	4
-move (on, away)	1015	765	MOVE	4
-#>>>				
-move house	1016		???	
-move upper body back and forth	1017		???	
+move house	1016	2874	MOVE (ONESELF)	
+move upper body back and forth	1017			
 mud	1018	640	MUD	2
 muddy	1019	537	TURBID	4
 mug	1020	1530	BOWL	2
 mumble	1021	128	MUMBLE	2
-municipality	1022		???	
+municipality	1022	3609	TOWN OR VILLAGE	
 mustache	1023	1165	MOUSTACHE	2
-#<<<				
 mute	1024	2320	MUTE PERSON	2
-mute	1024	1666	MUTE	2
-#>>>				
-mutual help between individuals	1025		???	
-mutual help between many people	1026		???	
+mutual help between individuals	1025	3468	KINDNESS	
+mutual help between many people	1026	3468	KINDNESS	
 my	1027	2090	MY	2
 nail (tool)	1028	502	NAIL (TOOL)	2
 naked	1029	590	NAKED	2
-#<<<				
-name	1030	180	CALL BY NAME	2
 name	1030	1405	NAME	2
-#>>>				
 nape	1031	1347	NAPE (OF NECK)	2
 narrow	1032	1267	NARROW	2
-naughty	1033		???	
-nauseous	1034		???	
+naughty	1033	3813	DISOBEDIENT	
+nauseous	1034	1847	SICK	
 navel	1035	1838	NAVEL	2
 near	1036	1942	NEAR	2
 neck	1037	1333	NECK	2
-neck ring	1038		???	
+neck ring	1038	1961	NECKLACE	
 necklace	1039	1961	NECKLACE	2
 needle	1040	1382	NEEDLE (FOR SEWING)	2
-needle for nets	1041		???	
-negligent	1042		???	
+needle for nets	1041	1382	NEEDLE (FOR SEWING)	
+negligent	1042			
 nephew/niece	1043	3890	NEPHEW OR NIECE	2
-#<<<				
-nest	1044	3549	BIRD NEST	2
 nest	1044	539	NEST	2
-#>>>				
-#<<<				
-net	1045	2653	NET (FOR CATCHING)	2
 net	1045	2963	NET	2
-#>>>				
 new	1046	1231	NEW	2
-new residence	1047		???	
-newborn child	1048		???	
-newcomer	1049		???	
-nickname	1050		???	
+new residence	1047	2406	HOME	
+newborn child	1048	2099	CHILD	
+newcomer	1049	2908	GUEST OR STRANGER	
+nickname	1050	3835	BE CALLED BY NAME	
 night	1051	1233	NIGHT	2
 nine hundred	1052	3520	NINE HUNDRED	2
 nineteen	1053	1714	NINETEEN	2
 ninety	1054	1724	NINETY	2
-nipa palm	1055		???	
+nipa palm	1055	1181	PALM TREE	
 nit	1056	267	NIT	2
 no	1057	1269	NO	2
-nod	1058		???	
+nod	1058			
 noisy	1059	3883	NOISY	2
-noni	1060		???	
+noni	1060	751	SHRUB	
 noon	1061	12	MIDDAY	2
-not arrive	1062		???	
-not be	1063		???	
-not enough	1064		???	
-not yet	1065		???	
-notch	1066		???	
-notched	1067		???	
-nourish	1068		???	
+not arrive	1062	1240	NOT	
+not be	1063	1240	NOT	
+not enough	1064	2329	LACK (NOT HAVE)	
+not yet	1065	1240	NOT	
+notch	1066			
+notched	1067			
+nourish	1068	1997	PRESERVE	
 now	1069	1376	NOW	2
-#<<<				
 oar	1070	3137	OAR	2
-oar	1070	108	RUDDER	2
-#>>>				
 obey	1071	1635	OBEY	2
-occiput	1072		???	
-offer	1073		???	
+occiput	1072	1347	NAPE (OF NECK)	
+offer	1073	1309	ASK (INQUIRE)	
 often	1074	1852	OFTEN	2
-#<<<				
 oil	1075	2556	OIL (HYDROPHOBIC LIQUID)	2
-oil	1075	1484	OIL (ORGANIC SUBSTANCE)	2
-#>>>				
-oil lamp	1076		???	
-#<<<				
+oil lamp	1076	2556	OIL (HYDROPHOBIC LIQUID)	
 old man	1077	406	OLD MAN	2
-old man	1077	1229	OLD	2
-#>>>				
 old woman	1078	907	OLD WOMAN	2
 older sibling	1079	405	OLDER SIBLING	2
-on that side	1080		???	
-on this side	1081		???	
-#<<<				
+on that side	1080	682	SIDE	
+on this side	1081	682	SIDE	
 once	1082	374	ONE TIME	2
-once	1082	2914	ONCE (IN THE PAST)	2
-#>>>				
-Oncosperma tigillarium	1083		???	
-one thousand five hundred	1084		???	
-one thousand four hundred	1085		???	
-one thousand one hundred	1086		???	
-one thousand six hundred	1087		???	
-one thousand three hundred	1088		???	
+Oncosperma tigillarium	1083			
+one thousand five hundred	1084			
+one thousand four hundred	1085			
+one thousand one hundred	1086			
+one thousand six hundred	1087			
+one thousand three hundred	1088			
 one thousand two hundred	1089	3791	ONE THOUSAND TWO HUNDRED	2
-one-eyed	1090		???	
+one-eyed	1090			
 only	1091	1580	ONLY	2
-ooze out	1092		???	
-#<<<				
-open (a.)	1093	1633	FLAT	4
-open (a.)	1093	1108	UNCOVER	4
-open (a.)	1093	3234	OPEN (EYES)	4
-open (a.)	1093	3437	OPEN (MOUTH)	4
+ooze out	1092	2253	DRIP (EMIT LIQUID)	
 open (a.)	1093	3235	OPEN (STATE)	4
-open (a.)	1093	1156	OPEN	4
-#>>>				
 open (v.)	1094	1156	OPEN	1
-opponent	1095		???	
+opponent	1095	1358	ENEMY	
 opposite	1096	885	OPPOSITE	2
-#<<<				
-order (n.)	1097	1998	COMMAND	4
-order (n.)	1097	1362	STREET	4
 order (n.)	1097	1128	ORDER	4
-#>>>				
-#<<<				
-order (v.)	1098	1998	COMMAND	3
 order (v.)	1098	1128	ORDER	3
-#>>>				
 orphan	1099	1149	ORPHAN	2
 other	1100	197	OTHER	2
 our (excl.)	1101	780	OUR	4
 our (incl.)	1102	780	OUR	4
 ours (incl.)	1103	780	OUR	4
-#<<<				
-out (fire)	1104	3459	PUT IN ORDER	4
-out (fire)	1104	1107	GO OUT	4
-out (fire)	1104	762	OUTSIDE	4
-#>>>				
+out (fire)	1104	2209	BECOME EXTINGUISHED	
 outrigger	1105	416	OUTRIGGER	2
 outside	1106	762	OUTSIDE	2
 over	1107	1741	ABOVE	2
 over there	1108	3411	OVER THERE	2
-oversized (clothes)	1109		???	
+oversized (clothes)	1109	1202	BIG	
 owl	1110	735	OWL	2
-Padang	1111		???	
+Padang	1111	2547	CITY	
 paddle (n.)	1112	234	PADDLE	1
 paddle (v.)	1113	3668	PADDLE (MOVEMENT)	3
-pain in teeth	1114		???	
+pain in teeth	1114	1783	PAIN	
 painful	1115	1129	PAINFUL	2
-painful part	1116		???	
+painful part	1116	1783	PAIN	
 pair (n.)	1117	1888	PAIR	3
 palate	1118	540	PALATE	2
-#<<<				
-pale	1119	1295	STICK	4
-pale	1119	1125	BALD	4
-#>>>				
+pale	1119			4
 palm (of hand)	1120	1183	PALM OF HAND	2
-palm leaf	1121		???	
+palm leaf	1121	628	LEAF	
 palm tree	1122	1181	PALM TREE	2
 pandanus	1123	469	PANDANUS	2
 papaya	1124	2445	PAPAYA	2
 paper	1125	648	PAPER	2
 parakeet	1126	886	PARAKEET	2
-paralyzed	1127		???	
+paralyzed	1127	1986	DISEASE	
 parrot (green)	1128	882	PARROT	4
 part	1129	779	PART	2
 pass (time)	1130	1951	PASS	2
 pass by	1131	558	PASS BY	2
 patch (v.)	1132	3550	PATCH	1
 path	1133	2252	PATH	2
-#<<<				
 patient	1134	3884	PATIENT	2
-patient	1134	3375	PATIENT (SICK PERSON)	2
-#>>>				
 pay	1135	718	PAY	2
 peace	1136	1338	PEACE	2
 peck	1137	3684	PECK	2
-pectoral fin	1138		???	
-pedal	1139		???	
-#<<<				
-peel (n.)	1140	275	PEEL	4
-peel (n.)	1140	3660	SHELL (SOMETHING)	4
+pectoral fin	1138	213	FIN	
+pedal	1139			
 peel (n.)	1140	2373	SKIN (OF FRUIT)	4
-#>>>				
-peeled	1141		???	
+peeled	1141	275	PEEL	
 pencil	1142	2578	PENCIL	2
 penis	1143	1222	PENIS	2
-perimeter	1144		???	
+perimeter	1144	863	EDGE	
 pester	1145	2869	BOTHER (HARASS)	4
 pestle	1146	225	PESTLE	2
-Phoebe	1147		???	
+Phoebe	1147	906	TREE	
 pick up	1148	371	PICK UP	2
-pick up one by one	1149		???	
-#<<<				
+pick up one by one	1149	371	PICK UP	
 picture	1150	2401	PICTURE	2
-picture	1150	3303	PICTURE (PAINTING)	2
-#>>>				
 pierce	1151	398	PIERCE	2
-pierce in ears	1152		???	
-#<<<				
+pierce in ears	1152	398	PIERCE	
 pig	1153	1337	PIG	2
-pig	1153	2564	PIGLET	2
-#>>>				
-pig-catching net	1154		???	
+pig-catching net	1154	2653	NET (FOR CATCHING)	
 pigsty	1155	3369	PIGSTY	4
 pike	1156	2967	PIKE (FISH)	2
-#<<<				
 pile (n.)	1157	2984	HEAP	4
-pile (n.)	1157	1576	PILE UP	4
-#>>>				
 pillow	1158	1044	PILLOW	2
 pimple	1159	1809	PIMPLE	2
 pincers	1160	2812	CRAB CLAW	4
 pinch	1161	378	PINCH	2
-pinched	1162		???	
+pinched	1162	378	PINCH	
 pineapple	1163	2440	PINEAPPLE	2
-pinkie	1164		???	
-pins and needles	1165		???	
+pinkie	1164	2774	LITTLE FINGER	
+pins and needles	1165			
 pity (v.)	1166	1141	PITY	4
 placenta	1167	3388	PLACENTA	2
 plain	1168	652	PLAIN	2
-#<<<				
-plait	1169	3295	BRAID (VERB)	2
 plait	1169	1729	PLAIT OR BRAID OR WEAVE	2
-plait	1169	333	PLAIT	2
-plait	1169	3296	WEAVE (BASKET)	2
-#>>>				
-Planchonia valida	1170		???	
-#<<<				
-plane (a.)	1171	3408	PLANE (TOOL)	4
-plane (a.)	1171	1597	AIRPLANE	4
-plane (a.)	1171	2980	AREA	4
-#>>>				
-plank bed	1172		???	
+Planchonia valida	1170	653	PLANT (VEGETATION)	
+plane (a.)	1171	1633	FLAT	
+plank bed	1172	1663	BED	
 plant (n.)	1173	653	PLANT (VEGETATION)	3
 plant (v.)	1174	1486	PLANT (SOMETHING)	3
 plate	1175	480	PLATE	2
-#<<<				
 plate (wooden)	1176	480	PLATE	4
-plate (wooden)	1176	481	DISH	4
-#>>>				
 play	1177	1413	PLAY	2
-#<<<				
-please (v.)	1178	24	PRAY	4
-please (v.)	1178	1271	DELIGHT	4
-#>>>				
-plug (n.)	1179		???	
+please (v.)	1178	1828	ASK (REQUEST)	
+plug (n.)	1179	1361	TOOL	
 plunge	1180	119	DIVE	4
-plus	1181		???	
+plus	1181			
 point (v.)	1182	2669	POINT (WITH FINGER)	3
 pointed	1183	372	POINTED	2
 pole	1184	281	POST	2
-#<<<				
-pole (on sampan)	1185	3432	SHOULDER POLE	4
 pole (on sampan)	1185	281	POST	4
-pole (on sampan)	1185	1295	STICK	4
-#>>>				
 poor (poverty)	1186	1674	POOR	4
-population	1187		???	
+population	1187	789	PEOPLE	
 porch	1188	3269	PORCH	2
-possessed (by the devil)	1189		???	
-possession	1190		???	
+possessed (by the devil)	1189			
+possession	1190	3860	POSSESSIONS	
 pot	1191	1462	POT	2
-#<<<				
-pot (earthen)	1192	3653	COOKING POT	4
-pot (earthen)	1192	2056	WOK	4
-pot (earthen)	1192	1462	POT	4
-pot (earthen)	1192	3765	STORING POT	4
-pot (earthen)	1192	854	KETTLE	4
-#>>>				
+pot (earthen)	1192	2055	CLAY POT	4
 pound (rice)	1193	3768	POUND (FOOD)	2
 pound (v.)	1194	354	POUND	1
 power	1195	2526	POWER	2
 pray	1196	24	PRAY	2
-#<<<				
 pregnant	1197	1123	PREGNANT	2
-pregnant	1197	3827	PREGNANT (OF ANIMALS)	2
-#>>>				
 press	1198	1913	PRESS	2
 price	1199	657	PRICE	2
 prison	1200	1281	PRISON	2
-progress (v.)	1201		???	
+progress (v.)	1201	2912	FORWARD	
 promise (v.)	1202	1675	PROMISE	3
-promontory	1203		???	
+promontory	1203	1662	CAPE	
 protect	1204	2900	PROTECT	2
-protected	1205		???	
-prow of boat	1206		???	
-Pterospermum	1207		???	
+protected	1205	2900	PROTECT	
+prow of boat	1206			
+Pterospermum	1207	653	PLANT (VEGETATION)	
 pubic hair	1208	36	PUBIC HAIR	2
 pull	1209	1455	PULL	2
 pull out (grass)	1210	2325	PULL OUT	4
-pull the trigger	1211		???	
+pull the trigger	1211	1455	PULL	
 pulse	1212	3267	PULSE	2
 pumpkin	1213	864	PUMPKIN	2
-punch	1214		???	
+punch	1214	2133	STRIKE OR BEAT	
 punishment	1215	390	PUNISHMENT	2
 pus	1216	1808	PUS	2
 push	1217	1452	PUSH	2
-#<<<				
-put	1218	3832	PUT (IN A SITTING POSITION)	2
-put	1218	3833	PUT (IN A STANDING POSITION)	2
-put	1218	2071	LAY (VERB)	2
 put	1218	998	PUT	2
-#>>>				
 put down	1219	998	PUT	2
 python	1220	1563	PYTHON	2
-quarter	1221		???	
+quarter	1221			
 quick	1222	1631	FAST	2
 quiet	1223	1314	QUIET	2
 raft (river vehicle)	1224	1664	RAFT	4
 rafter	1225	829	RAFTER	2
 rainbow	1226	1733	RAINBOW	2
-rambutan	1227		???	
-rarely	1228		???	
-rash	1229		???	
-#<<<				
+rambutan	1227	1507	FRUIT	
+rarely	1228	1544	SOMETIMES	
+rash	1229			
 rat	1230	1490	RAT	2
-rat	1230	1491	MOUSE	2
-rat	1230	2139	MUROID (MOUSE OR RAT)	2
-#>>>				
 rattan	1231	2497	RATTAN	2
 rattan (Calamus manan)	1232	2497	RATTAN	4
 rattan (Calamus penicillatus)	1233	2497	RATTAN	4
 rattan (Calamus scipionum)	1234	2497	RATTAN	4
 rattan (Daemonorops angustifolia)	1235	2497	RATTAN	4
 rattan (thin)	1236	2497	RATTAN	4
-rattan basket	1237		???	
-rattan bowl	1238		???	
-rattan hat	1239		???	
+rattan basket	1237	1539	BASKET	
+rattan bowl	1238	1530	BOWL	
+rattan hat	1239	771	HAT	
 raw	1240	1959	RAW	2
-ray (fish)	1241		???	
-ray (light)	1242		???	
+ray (fish)	1241	227	FISH	
+ray (light)	1242	630	LIGHT (RADIATION)	
 ready	1243	790	READY	2
-#<<<				
 really	1244	1657	TRUE	4
-really	1244	509	CERTAIN	4
-#>>>				
-#<<<				
 receive	1245	694	GET	2
-receive	1245	7	GATHER	2
-#>>>				
-recovered	1246		???	
-red acacia (Vachellia seyal)	1247		???	
+recovered	1246	1978	RECOVER	
+red acacia (Vachellia seyal)	1247	906	TREE	
 reed	1248	659	REED	2
 regret	1249	1875	REGRET	2
 reject	1250	49	REFUSE	4
-relapse (illness)	1251		???	
+relapse (illness)	1251	1986	DISEASE	
 remember	1252	707	REMEMBER	2
-remodel	1253		???	
-remove weeds	1254		???	
+remodel	1253			
+remove weeds	1254	3548	PULL UP WEEDS	
 repair	1255	2243	REPAIR	2
 repeat	1256	880	REPEAT	2
-repel	1257		???	
+repel	1257	30	DISPEL	
 residence	1258	2406	HOME	4
-restless	1259		???	
+restless	1259	3975	NERVOUS	
 retreat	1260	421	RETREAT	2
-#<<<				
-return	1261	85	GIVE BACK	2
 return	1261	581	COME BACK	2
-#>>>				
 revenge	1262	495	REVENGE	2
-rheumatics	1263		???	
-rhinoceros beetle	1264		???	
+rheumatics	1263	1986	DISEASE	
+rhinoceros beetle	1264	2242	BEETLE	
 rib	1265	801	RIB	2
 rice (cooked)	1266	1191	COOKED RICE	2
-#<<<				
-rice (hulled)	1267	3390	WILD RICE	4
-rice (hulled)	1267	1486	PLANT (SOMETHING)	4
-rice (hulled)	1267	2026	RICE PLANT	4
 rice (hulled)	1267	3289	UNCOOKED RICE	4
-rice (hulled)	1267	926	RICE	4
-rice (hulled)	1267	2749	UNHUSKED RICE	4
-rice (hulled)	1267	2750	GLUTINOUS RICE	4
-rice (hulled)	1267	1191	COOKED RICE	4
-#>>>				
-rice barn	1268		???	
+rice barn	1268	3025	BARN OR SHED	
 rice field (dry)	1269	140	PADDY FIELD	4
 rice field (wet)	1270	140	PADDY FIELD	4
-rice kettle	1271		???	
+rice kettle	1271	854	KETTLE	
 rich	1272	712	RICH	2
-#<<<				
-rifle/gun	1273	3203	CANNON OR GUN	4
 rifle/gun	1273	1566	GUN	4
-rifle/gun	1273	3202	CANNON	4
-rifle/gun	1273	3881	PISTOL	4
-#>>>				
 right away	1274	1963	IMMEDIATELY	4
 right side	1275	1019	RIGHT	2
 rim	1276	863	EDGE	4
-#<<<				
 ring	1277	1374	RING	2
-ring	1277	2875	RING (MAKE SOUND)	2
-#>>>				
-ring finger	1278		???	
-ring toe	1279		???	
+ring finger	1278	1303	FINGER	
+ring toe	1279	1389	TOE	
 ripe	1280	178	RIPE	2
-ripe banana	1281		???	
-ritual feast	1282		???	
-#<<<				
+ripe banana	1281	868	BANANA	
+ritual feast	1282	131	FESTIVAL	
 river	1283	666	RIVER	2
-river	1283	3311	FLOWING BODY OF WATER	2
-#>>>				
-river bend	1284		???	
-#<<<				
+river bend	1284	1698	CURVED	
 road	1285	667	ROAD	2
-road	1285	2457	PATH OR ROAD	2
-#>>>				
-#<<<				
 roast (v.)	1286	1962	ROAST (SOMETHING)	3
-roast (v.)	1286	2146	ROAST OR FRY	3
-#>>>				
-roast chicken (v.)	1287		???	
+roast chicken (v.)	1287	1962	ROAST (SOMETHING)	
 rob	1288	2073	ROB (VERB)	2
-rocky shore	1289		???	
+rocky shore	1289	3465	SHORE OF SEA	
 roll (v.)	1290	827	ROLL	3
 roof	1291	769	ROOF	2
-#<<<				
-roof (palm)	1292	769	ROOF	4
 roof (palm)	1292	2100	THATCH OR ROOF	4
-#>>>				
-#<<<				
-roof (rattan)	1293	769	ROOF	4
 roof (rattan)	1293	2100	THATCH OR ROOF	4
-#>>>				
-roof beam	1294		???	
-roof shingle	1295		???	
+roof beam	1294	1132	BEAM	
+roof shingle	1295	279	THATCH	
 rooster	1296	1511	ROOSTER	2
 root	1297	670	ROOT	2
 rope	1298	1218	ROPE	2
-rose apple	1299		???	
+rose apple	1299	1320	APPLE	
 rotten	1300	1728	ROTTEN	2
 rough	1301	1923	ROUGH	2
-#<<<				
-round	1302	1395	ROUND	2
 round	1302	2303	SPHERICAL (ROUND IN THREE DIMENSIONS)	2
-#>>>				
-#<<<				
-row (n.)	1303	1362	STREET	4
 row (n.)	1303	1048	LINE	4
-row (n.)	1303	1849	ROW	4
-#>>>				
 row (v.)	1304	1849	ROW	3
-rowboat	1305		???	
-rowing bench	1306		???	
+rowboat	1305	1844	BOAT	
+rowing bench	1306	2584	BENCH	
 rub	1307	1449	RUB	2
 rude	1308	1412	RUDE	2
-#<<<				
-ruined	1309	1728	ROTTEN	4
-ruined	1309	1292	BAD	4
-#>>>				
+ruined	1309	680	BREAK (DESTROY OR GET DESTROYED)	4
 run	1310	1519	RUN	2
 rust	1311	3064	RUST	2
-saber	1312		???	
+saber	1312	1535	SWORD	
 sack	1313	2990	SACK	2
-sacred place	1314		???	
+sacred place	1314	3335	SACRED GROVE	
 sago	1315	2270	SAGO	2
-sagu palm	1316		???	
+sagu palm	1316	2372	SAGO PALM	
 sail (n.)	1317	786	SAILCLOTH	1
 sail (v.)	1318	787	SAIL	3
 saliva	1319	1503	SALIVA	2
 salt	1320	1274	SALT	2
-saltwater	1321		???	
+saltwater	1321	948	WATER	
 salty	1322	1091	SALTY	2
 same	1323	200	SAME	2
-#<<<				
 sand	1324	671	SAND	2
-sand	1324	3460	BEACH	2
-#>>>				
-sandbank	1325		???	
+sandbank	1325			
 sap	1326	345	SAP	2
-#<<<				
 sarong	1327	2413	SARONG	2
-sarong	1327	1965	LOINCLOTH	2
-#>>>				
-#<<<				
-satisfied	1328	1429	FULL	4
 satisfied	1328	1495	HAPPY	4
-#>>>				
 save	1329	2008	RESCUE	2
-#<<<				
-saw (tool)	1330	3543	SAW (SOMETHING)	4
 saw (tool)	1330	1948	SAW	4
-saw (tool)	1330	1819	LOOK	4
-#>>>				
-#<<<				
-say	1331	1623	SPEAK	2
 say	1331	1458	SAY	2
-#>>>				
 scabies	1332	3172	SCABIES	2
-#<<<				
 scale (for weighing)	1333	2783	SCALES (MEASURE INSTRUMENT)	4
-scale (for weighing)	1333	266	SCALE	4
-#>>>				
-#<<<				
-scale (of fish/snake)	1334	730	SNAKE	4
 scale (of fish/snake)	1334	266	SCALE	4
-scale (of fish/snake)	1334	2783	SCALES (MEASURE INSTRUMENT)	4
-#>>>				
 scare	1335	252	FRIGHTEN	2
-scary	1336		???	
-Schizostachyum brachycladum	1337		???	
+scary	1336	528	DREADFUL	
+Schizostachyum brachycladum	1337	1927	BAMBOO	
 scissors	1338	356	SHEARS	2
-scorched	1339		???	
+scorched	1339	1428	BURNING	
 scorpion	1340	1538	SCORPION	2
 scrape	1341	1767	SCRAPE	2
 scratch	1342	1436	SCRATCH	2
-#<<<				
-scythe (v.)	1343	20	SCYTHE	4
-scythe (v.)	1343	2132	SICKLE OR SCYTHE	4
-scythe (v.)	1343	341	SICKLE	4
-#>>>				
+scythe (v.)	1343	1432	CUT	4
 sea	1344	1474	SEA	2
 sea cucumber	1345		???	
 sea form	1346		???	
