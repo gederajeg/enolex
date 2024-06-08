@@ -1343,9 +1343,9 @@ scrape	1341	1767	SCRAPE	2
 scratch	1342	1436	SCRATCH	2
 scythe (v.)	1343	1432	CUT	4
 sea	1344	1474	SEA	2
-sea cucumber	1345		???	
-sea form	1346		???	
-sea hibiscus (Hibiscus tiliaceus)	1347		???	
+sea cucumber	1345			
+sea form	1346	1768	FOAM	
+sea hibiscus (Hibiscus tiliaceus)	1347	239	FLOWER	
 seagull	1348	950	SEAGULL	2
 seat	1349	1476	CHAIR	2
 second	1350	1384	SECOND	2
@@ -1353,152 +1353,106 @@ seed	1351	714	SEED	2
 seek	1352	1468	LOOK FOR	2
 sell	1353	1571	SELL	2
 send	1354	1127	SEND	2
-send away	1355		???	
+send away	1355	1127	SEND	
 sermon	1356	3167	SERMON	2
-#<<<				
-set (sun, moon)	1357	1313	MOON	4
-set (sun, moon)	1357	998	PUT	4
-set (sun, moon)	1357	2463	MOON OR MONTH	4
-set (sun, moon)	1357	2075	BROOD (VERB)	4
 set (sun, moon)	1357	160	SET (HEAVENLY BODIES)	4
-set (sun, moon)	1357	2014	GO DOWN (DESCEND)	4
-#>>>				
-set fire (for cooking)	1358		???	
-set of teeth	1359		???	
+set fire (for cooking)	1358	737	LIGHT (IGNITE)	
+set of teeth	1359	1380	TOOTH	
 seven hundred	1360	3518	SEVEN HUNDRED	2
 seventeen	1361	2453	SEVENTEEN	2
 seventy	1362	1721	SEVENTY	2
 sew	1363	1457	SEW	2
 shadow	1364	1388	SHADE	2
-#<<<				
 shake (intr.)	1365	1909	SHAKE	4
-shake (intr.)	1365	2017	MIX	4
-#>>>				
 shake (tr.)	1366	1909	SHAKE	2
 shallow	1367	193	SHALLOW	2
-shampoo	1368		???	
+shampoo	1368	788	SOAP	
 shark	1369	1110	SHARK	2
 sharp	1370	1396	SHARP	2
 sharpen	1371	251	SHARPEN (SOMETHING)	2
-shattered	1372		???	
+shattered	1372	680	BREAK (DESTROY OR GET DESTROYED)	
 shave	1373	231	SHAVE	2
 shave (beard)	1374	231	SHAVE	2
-shavings	1375		???	
+shavings	1375	151	RAZOR	
 shield	1376	1064	SHIELD	2
 shin	1377	186	SHIN	2
-shine on	1378		???	
-shipwreck (v.)	1379		???	
+shine on	1378	708	SHINE	
+shipwreck (v.)	1379	838	REMAINS	
 shirt	1380	1622	SHIRT	2
 shit (v.)	1381	676	SHIT (DEFECATE)	3
 shiver (from fever)	1382	52	SHIVER	4
-shock (v.)	1383		???	
-#<<<				
+shock (v.)	1383	1572	SURPRISED	
 shoot	1384	1172	SHOOT	2
-shoot	1384	1684	BUD	2
-shoot	1384	3358	SPROUT (SHOOT)	2
-#>>>				
-#<<<				
-shore	1385	113	SHORE	2
 shore	1385	3465	SHORE OF SEA	2
-shore	1385	3464	SHORE OF LAKE	2
-#>>>				
 short	1386	1645	SHORT	2
 short (time)	1387	3312	SHORT (TIME)	2
 shoulder	1388	1482	SHOULDER	2
 shoulderblade	1389	172	SHOULDERBLADE	2
 shout	1390	715	SHOUT	2
-#<<<				
 show	1391	1039	SHOW	2
-show	1391	1868	VISIBLE	2
-#>>>				
-#<<<				
-shrimp	1392	238	PRAWNS	2
 shrimp	1392	2349	SHRIMP	2
-#>>>				
 shrink	1393	54	SHRINK	2
-shut in (a.)	1394		???	
-shut up!	1395		???	
+shut in (a.)	1394	589	CLOSED	
+shut up!	1395	1314	QUIET	
 shy	1396	487	SHY	2
 sibling	1397	1640	SIBLING	2
-#<<<				
 sick	1398	1847	SICK	2
-sick	1398	2327	BECOME SICK	2
-#>>>				
-side root	1399		???	
-sideways	1400		???	
-sigh	1401		???	
+side root	1399	670	ROOT	
+sideways	1400			
+sigh	1401			
 sign (n.)	1402	1720	SIGN	3
 silk	1403	1641	SILK	2
-silly	1404		???	
+silly	1404			
 silver	1405	759	SILVER	2
 sing	1406	1261	SING	2
-sing a love song	1407		???	
-single	1408		???	
-#<<<				
+sing a love song	1407	1261	SING	
+single	1408			
 sink	1409	1088	SINK (DESCEND)	2
-sink	1409	915	SINK (BASIN)	2
-#>>>				
 sister	1410	1263	SISTER	2
-#<<<				
 sit	1411	1416	SIT	2
-sit	1411	1649	SIT DOWN	2
-#>>>				
-sit cross-legged	1412		???	
-sitting room	1413		???	
+sit cross-legged	1412	1416	SIT	
+sitting room	1413	1450	ROOM	
 six hundred	1414	3517	SIX HUNDRED	2
 sixteen	1415	2454	SIXTEEN	2
 sixty	1416	1718	SIXTY	2
-skein	1417		???	
+skein	1417	760	KNOT	
 skeleton	1418	2668	SKELETON	2
-skew	1419		???	
-skewed	1420		???	
-#<<<				
+skew	1419	3075	SLANTED	
+skewed	1420	3075	SLANTED	
 skin	1421	763	SKIN	2
-skin	1421	291	PULL OFF (SKIN)	2
-skin	1421	2614	SKIN (ANIMAL)	2
-skin	1421	2613	SKIN (HUMAN)	2
-#>>>				
 skinny	1422	1400	THIN (SLIM)	2
 skull	1423	1605	SKULL	2
 sky	1424	1732	SKY	2
 slack	1425	2506	LOOSE	2
 slanting	1426	3075	SLANTED	2
 slap	1427	3160	SLAP	2
-slap in face (n.)	1428		???	
-slash (v.)	1429	201	FARM	4
+slap in face (n.)	1428	3160	SLAP	
+slash (v.)	1429	2156	CUT (WITH KNIFE)	4
 slaughter	1430	1796	SLAUGHTER	2
 slave	1431	812	SLAVE	2
 sleepy	1432	3620	SLEEPY	2
-slide off	1433		???	
+slide off	1433	1324	SLIP	
 slim	1434	1400	THIN (SLIM)	2
 slippery	1435	3702	SLIPPERY	2
 slow	1436	701	SLOW	2
-slurp	1437		???	
+slurp	1437	1401	DRINK	
 small	1438	1246	SMALL	2
 smallpox	1439	1054	SMALLPOX	2
 smart	1440	2530	SMART	2
-#<<<				
-smell	1441	1586	SMELL (PERCEIVE)	2
 smell	1441	1587	SMELL (STINK)	2
-smell	1441	2124	SMELL	2
-smell	1441	3704	ODOR (SMELL)	2
-#>>>				
 smile	1442	1451	SMILE	2
 smoke (n.)	1443	778	SMOKE (EXHAUST)	1
-#<<<				
-smoke (v.)	1444	1689	SMOKE (INHALE)	3
 smoke (v.)	1444	2859	SMOKE (EMIT SMOKE)	3
-#>>>				
 snail	1445	1543	SNAIL	2
 snake (river)	1446	730	SNAKE	4
 snake (small)	1447	730	SNAKE	4
-snake bite	1448		???	
-snarl	1449		???	
+snake bite	1448	1403	BITE	
+snarl	1449			
 snatch (v.)	1450	855	SEIZE	4
 sneeze	1451	1621	SNEEZE	2
 sniff	1452	375	SNIFF	2
 snot	1453	208	NASAL MUCUS (SNOT)	2
-so that	1454		???	
+so that	1454			
 soak	1455	2069	SOAK (VERB)	2
 soft	1456	1856	SOFT	2
 sole (of foot)	1457	2666	SOLE (FOOT)	2
@@ -1507,174 +1461,94 @@ some	1459	1241	SOME	2
 sometimes	1460	1544	SOMETIMES	2
 son-in-law	1461	1056	SON-IN-LAW	2
 soon	1462	703	SOON	2
-#<<<				
 sore	1463	3708	FEELING SORE	2
-sore	1463	51	SORE	2
-#>>>				
-#<<<				
-sound	1464	2879	SOUND (OF INSTRUMENT OR VOICE)	2
 sound	1464	1811	SOUND OR NOISE	2
-#>>>				
-#<<<				
 sour	1465	1906	SOUR	2
-sour	1465	1923	ROUGH	2
-#>>>				
-#<<<				
 sow (v.)	1466	748	SOW SEEDS	3
-sow (v.)	1466	1486	PLANT (SOMETHING)	3
-#>>>				
 space under house	1467	2632	AREA UNDER HOUSE	2
 spacious	1468	2531	BROAD	4
 spear (n.)	1469	945	SPEAR	1
-#<<<				
 spear/lance	1470	945	SPEAR	4
-spear/lance	1470	841	FISHING SPEAR	4
-spear/lance	1470	473	SPEAR (SOMEBODY)	4
-#>>>				
-speck	1471		???	
+speck	1471	519	SPOT	
 speech	1472	1115	SPEECH	2
-spell (n.)/exorcism	1473		???	
+spell (n.)/exorcism	1473			
 sperm	1474	1505	SPERM	2
-spices	1475		???	
+spices	1475			
 spider	1476	843	SPIDER	2
-spilled	1477		???	
+spilled	1477	3130	SPILL (SOMETHING)	
 spin (thread)	1478	121	SPIN	4
 spine (backbone)	1479	805	SPINE	4
-spirit of earthquake	1480		???	
-spirit of the beach	1481		???	
-spirit of the village	1482		???	
-spirit of the water	1483		???	
+spirit of earthquake	1480	53	SPIRIT	
+spirit of the beach	1481	53	SPIRIT	
+spirit of the village	1482	53	SPIRIT	
+spirit of the water	1483	53	SPIRIT	
 spit	1484	1440	SPIT	2
 splash	1485	365	SPLASH	2
 split	1486	1437	SPLIT	2
-spotted (face)	1487		???	
-spout (v.)	1488		???	
+spotted (face)	1487	530	FRECKLE	
+spout (v.)	1488	2858	STREAM (FLOW CONTINUOUSLY)	
 spread out	1489	38	SPREAD OUT	2
-#<<<				
-spring	1490	1537	SPRINGTIME	2
 spring	1490	849	SPRING (OF WATER)	2
-#>>>				
-#<<<				
 sprout	1491	3358	SPROUT (SHOOT)	2
-sprout	1491	2076	SPROUT (VERB)	2
-#>>>				
-#<<<				
-square (a.)	1492	850	SQUARE	4
 square (a.)	1492	2757	ANGULAR (SQUAREFORMED)	4
-#>>>				
-#<<<				
 square (yard)	1493	850	SQUARE	4
-square (yard)	1493	2757	ANGULAR (SQUAREFORMED)	4
-#>>>				
 squat	1494	296	CROUCH	2
 squeeze	1495	1414	SQUEEZE	2
-squint	1496		???	
-squirt	1497		???	
-#<<<				
-stab	1498	3189	STAB TO DEATH	2
+squint	1496	87	SQUINT-EYED	
+squirt	1497	2858	STREAM (FLOW CONTINUOUSLY)	
 stab	1498	1434	STAB	2
-#>>>				
-stacked	1499		???	
-#<<<				
-stain (n.)	1500	3064	RUST	4
-stain (n.)	1500	530	FRECKLE	4
+stacked	1499	1576	PILE UP	
 stain (n.)	1500	519	SPOT	4
-#>>>				
-#<<<				
-stairs	1501	34	STAIRS	2
-stairs	1501	1464	LADDER	2
-#>>>				
+stairs	1501	2689	LADDER OR STAIRS	2
 stalk	1502	2628	PLANT STEM	2
-#<<<				
 stalk (of fruit)	1503	2628	PLANT STEM	4
-stalk (of fruit)	1503	2726	STALK (CLASSIFIER)	4
-#>>>				
 stammer	1504	1866	STUTTER	4
 stand up	1505	570	STAND UP	2
-starve	1506		???	
+starve	1506	1533	BE HUNGRY	
 stay	1507	987	REMAIN	2
-#<<<				
-steam	1508	2067	STEAM (VERB)	2
 steam	1508	1193	STEAM	2
-#>>>				
-steamboat	1509		???	
-steering wheel	1510		???	
+steamboat	1509	1844	BOAT	
+steering wheel	1510			
 stem	1511	2628	PLANT STEM	2
 stench	1512	3704	ODOR (SMELL)	4
 step (n.)	1513	1158	STEP	1
 step on	1514	575	TREAD	2
-#<<<				
-step- (family)	1515	1158	STEP	4
-step- (family)	1515	2065	STEP (VERB)	4
-#>>>				
+step- (family)	1515			4
 stick (n.)	1516	1295	STICK	1
 stick (v.)	1517	254	STICKING	3
-stick out tongue	1518		???	
+stick out tongue	1518	1452	PUSH	
 sticky	1519	3703	STICKY	2
-stiff	1520		???	
+stiff	1520			
 still (adv.)	1521	2919	STILL (CONTINUING)	4
-#<<<				
-stink	1522	42	STINKING	2
 stink	1522	1587	SMELL (STINK)	2
-#>>>				
 stir	1523	696	STIR	2
-#<<<				
-stomach	1524	1251	BELLY	2
 stomach	1524	819	STOMACH	2
-#>>>				
-stomach ache	1525		???	
-stomp	1526		???	
-stop by	1527		???	
-#<<<				
-store (v.)	1528	746	SHOP	4
+stomach ache	1525	1815	ACHE	
+stomp	1526	575	TREAD	
+stop by	1527	1377	VISIT	
 store (v.)	1528	3655	STORE UP	4
-store (v.)	1528	752	STORE	4
-#>>>				
 storm	1529	858	STORM	2
-straddle	1530		???	
+straddle	1530			
 straight	1531	1404	STRAIGHT	2
-straight through	1532		???	
+straight through	1532	97	THROUGH	
 strait	1533	1661	STRAIT	2
 stretch out	1534	214	STRETCH	4
-#<<<				
 strew	1535	572	STREW	4
-strew	1535	38	SPREAD OUT	4
-#>>>				
-#<<<				
 strike (of lightning)	1536	353	STRIKE	4
-strike (of lightning)	1536	2396	KNOCK	4
-strike (of lightning)	1536	288	FORGE	4
-strike (of lightning)	1536	1665	BEAT	4
-strike (of lightning)	1536	3308	STRIKE (SOMEONE)	4
-strike (of lightning)	1536	3309	STRIKE (SOMETHING)	4
-strike (of lightning)	1536	2133	STRIKE OR BEAT	4
-#>>>				
-#<<<				
-string (of coconut)	1537	362	STRING	4
-string (of coconut)	1537	1218	ROPE	4
 string (of coconut)	1537	2724	CHAIN (CLASSIFIER)	4
-#>>>				
 strong	1538	785	STRONG	2
-#<<<				
-strong (well-built)	1539	3001	POWERFUL	4
-strong (well-built)	1539	2718	STRONG (OF DRINK)	4
-strong (well-built)	1539	510	STRONG EFFECT	4
 strong (well-built)	1539	785	STRONG	4
-strong (well-built)	1539	1884	HARD	4
-strong (well-built)	1539	3188	MIGHTY OR POWERFUL OR STRONG	4
-strong (well-built)	1539	1945	IDOL	4
-#>>>				
 stump	1540	241	TREE STUMP	2
 stupid	1541	1518	STUPID	2
 suck	1542	1421	SUCK	2
 suck at breast	1543	2472	SUCKLE (BREASTFEED, NURSE)	4
-suffocate	1544		???	
+suffocate	1544	1494	DIE	
 sugar palm (Arenga pinnata)	1545	3029	SUGAR PALM	4
 sugarcane	1546	146	SUGAR CANE	2
 sulphur	1547	3386	SULPHUR	2
-sundry	1548		???	
-sunken	1549		???	
-sunken (eyes)	1550		???	
+sundry	1548			
+sunken	1549	1088	SINK (DESCEND)	
+sunken (eyes)	1550	1088	SINK (DESCEND)	
 surf	1551	3132	SURF	2
 surprised	1552	1572	SURPRISED	2
 swallow (v.)	1553	897	SWALLOW	1
@@ -1684,143 +1558,82 @@ sweat (n.)	1556	125	SWEAT (SUBSTANCE)	3
 sweep (up)	1557	230	SWEEP	4
 swell	1558	1573	SWELL	2
 swim	1559	1439	SWIM	2
-swimming wood at cast net	1560		???	
+swimming wood at cast net	1560	1803	WOOD	
 swollen	1561	1573	SWELL	2
 sword	1562	1535	SWORD	2
 table	1563	1775	TABLE	2
-taboo	1564		???	
+taboo	1564			
 tail	1565	1220	TAIL	2
-tailbone	1566		???	
+tailbone	1566	1394	BONE	
 take	1567	1749	TAKE	2
-take on one's lap	1568		???	
-#<<<				
+take on one's lap	1568	1444	TURN AROUND	
 talk	1569	2708	TALK	2
-talk	1569	2933	CONVERSATION	2
-#>>>				
-talk in sleep	1570		???	
+talk in sleep	1570			
 tame	1571	2838	TAME	2
-taproot	1572		???	
+taproot	1572	670	ROOT	
 taro	1573	351	TARO	2
 teach	1574	709	TEACH	2
 tear (n.)	1575	1651	TEAR (OF EYE)	3
 tear (v.)	1576	1735	TEAR (SHRED)	1
 tell lies	1577	601	LIE (MISLEAD)	4
-#<<<				
-temple (body part)	1578	911	TEMPLE	4
 temple (body part)	1578	1604	TEMPLES	4
-temple (body part)	1578	1349	CHURCH	4
-#>>>				
 ten thousand	1579	2078	TEN THOUSAND	2
 tendon	1580	1137	TENDON	2
 tense	1581	3053	TIGHT	2
 termite	1582	883	TERMITE	2
-testimony	1583		???	
+testimony	1583			
 that	1584	78	THAT	2
-that's enough!	1585		???	
+that's enough!	1585	1881	ENOUGH	
 thatch	1586	279	THATCH	2
 their	1587	2400	THEIR	2
 then (past)	1588	2921	THEN	4
 there	1589	1937	THERE	2
 there is not	1590	2329	LACK (NOT HAVE)	2
 they	1591	817	THEY	2
-#<<<				
 thick	1592	1244	THICK	2
-thick	1592	2239	DENSE	2
-thick	1592	2151	COARSE	2
-#>>>				
 thief	1593	1160	THIEF	2
 thigh	1594	471	UPPER LEG (THIGH)	2
-#<<<				
-thin	1595	2308	THIN	2
 thin	1595	2249	THIN (OF SHAPE OF OBJECT)	2
-thin	1595	2219	LEAN (MEAT)	2
-thin	1595	1400	THIN (SLIM)	2
-thin	1595	2305	THIN (OF HAIR AND THREAD)	2
-thin	1595	2157	FINE OR THIN	2
-thin	1595	2306	THIN (OF LEAF AND CLOTH)	2
-#>>>				
 thing	1596	738	THING	2
-thingumajig	1597		???	
-#<<<				
-think	1598	1415	THINK (REFLECT)	2
+thingumajig	1597			
 think	1598	2271	THINK	2
-#>>>				
-#<<<				
 thirst(y)	1599	848	THIRST	4
-thirst(y)	1599	3474	BE THIRSTY	4
-#>>>				
 thirteen	1600	1708	THIRTEEN	2
 thirty	1601	1715	THIRTY	2
 thirty-one	1602	3480	THIRTY ONE	2
 this	1603	1214	THIS	2
-thistle (tool)	1604		???	
+thistle (tool)	1604	1328	SCISSORS	
 thorn	1605	124	THORN	2
-thorny bamboo (Bambusa bambos)	1606		???	
+thorny bamboo (Bambusa bambos)	1606	1927	BAMBOO	
 thou	1607	1215	THOU	2
 thought	1608	2975	THOUGHT	2
 thousand	1609	1843	THOUSAND	2
 thread	1610	1161	THREAD	2
 three hundred	1611	3513	THREE HUNDRED	2
-thresh (rice) with feet	1612		???	
+thresh (rice) with feet	1612	285	THRESH	
 throat	1613	1346	THROAT	2
 throw	1614	1456	THROW	2
 throw away	1615	3696	THROW AWAY	2
 throw down	1616	2866	DROP (SOMETHING)	4
-throw stones	1617		???	
+throw stones	1617	1456	THROW	
 thumb	1618	1781	THUMB	2
-thunderstone	1619		???	
+thunderstone	1619	857	STONE	
 tickle	1620	3647	TICKLE (SOMEBODY)	2
 ticklish	1621	3856	ITCH OR ITCHY OR ITCHING	4
-#<<<				
 tie up	1622	1094	FASTEN	2
-tie up	1622	1917	TIE	2
-tie up	1622	2891	TIE UP (TETHER)	2
-#>>>				
 tight	1623	3053	TIGHT	2
-#<<<				
 till (new field)	1624	3273	TILL	4
-till (new field)	1624	1882	BEFORE	4
-till (new field)	1624	1541	CULTIVATE	4
-till (new field)	1624	1921	PLOUGH	4
-#>>>				
-#<<<				
-tin (can)	1625	358	TINPLATE	4
-tin (can)	1625	3765	STORING POT	4
-tin (can)	1625	1582	TIN (CAN)	4
-tin (can)	1625	893	TIN (METAL)	4
-tin (can)	1625	3217	TIN OR TINPLATE	4
 tin (can)	1625	1051	CAN	4
-#>>>				
 tired	1626	1757	TIRED	2
 to	1627	2754	TOWARDS	2
-#<<<				
-to me	1628	1209	I	4
-to me	1628	2301	ME	4
-#>>>				
-#<<<				
-to you (sg.)	1629	2304	THEE (OBLIQUE CASE OF YOU)	4
-to you (sg.)	1629	3292	THOU (HONORIFIC)	4
-to you (sg.)	1629	1215	THOU	4
-to you (sg.)	1629	2844	YOU (FORMAL ADDRESS)	4
-to you (sg.)	1629	3293	YOU (HONORIFIC)	4
-to you (sg.)	1629	2312	YOU (OBLIQUE CASE OF YOU)	4
-to you (sg.)	1629	2111	YOU TWO	4
-to you (sg.)	1629	1213	YOU	4
-to you (sg.)	1629	1209	I	4
-#>>>				
+to me	1628	2754	TOWARDS	4
+to you (sg.)	1629	2754	TOWARDS	4
 toad	1630	894	TOAD	2
-tobacco pack	1631		???	
+tobacco pack	1631	974	TOBACCO	
 today	1632	1283	TODAY	2
 toe	1633	1389	TOE	2
-#<<<				
 toe (big)	1634	1389	TOE	4
-toe (big)	1634	1896	FINGERNAIL OR TOENAIL	4
-toe (big)	1634	2120	FINGER OR TOE	4
-#>>>				
-#<<<				
 toenail	1635	2662	TOENAIL	2
-toenail	1635	1896	FINGERNAIL OR TOENAIL	2
-#>>>				
 together	1636	2482	TOGETHER	2
 toilet (outdoor)	1637	219	TOILET	4
 tomorrow	1638	1329	TOMORROW	2
@@ -1828,232 +1641,166 @@ tongue	1639	1205	TONGUE	2
 tools	1640	1361	TOOL	2
 tooth	1641	1380	TOOTH	2
 torch	1642	1919	TORCH	2
-torn	1643		???	
+torn	1643	680	BREAK (DESTROY OR GET DESTROYED)	
 tortoise	1644	895	TORTOISE	2
-#<<<				
 touch	1645	1892	TOUCH	2
-touch	1645	2521	FEELING (HAPTIC SENSE)	2
-#>>>				
 towel	1646	1021	TOWEL	2
-#<<<				
-trade (v.)	1647	898	TRADE	3
 trade (v.)	1647	2135	TRADE OR BARTER	3
-#>>>				
 trap (n.)	1648	1075	TRAP (PITFALL)	1
 trash	1649	909	GARBAGE	2
-trash bin	1650		???	
-treasurer	1651		???	
+trash bin	1650	2052	BUCKET	
+treasurer	1651			
 tree	1652	906	TREE	2
 trellis	1653	2610	TRELLIS (ARCHITECTURE)	2
 tremble	1654	52	SHIVER	2
 tribe	1655	1549	TRIBE	2
 trousers	1656	809	TROUSERS	2
 try	1657	1812	TRY	2
-tumult	1658		???	
+tumult	1658	1811	NOISE	
 turbid	1659	537	TURBID	2
 turmeric	1660	2842	TURMERIC	2
 turmeric (Curcuma domestica)	1661	2842	TURMERIC	4
-#<<<				
-turn	1662	1444	TURN AROUND	2
-turn	1662	1445	TURN (SOMETHING)	2
 turn	1662	1588	TURN	2
-#>>>				
-#<<<				
 turtle	1663	112	TURTLE	2
-turtle	1663	3949	RED-FOOTED TORTOISE	2
-turtle	1663	895	TORTOISE	2
-#>>>				
 twelve	1664	1707	TWELVE	2
 twenty-five	1665	1738	TWENTY FIVE	2
 twenty-one	1666	1734	TWENTY ONE	2
 twice	1667	1546	TWICE	2
-#<<<				
-twist (v.)	1668	3236	TWIST (TOGETHER)	3
 twist (v.)	1668	430	TWIST	3
-twist (v.)	1668	3199	TWIST (AROUND)	3
-#>>>				
 two hundred	1669	2676	TWO HUNDRED	2
-two-pronged gig	1670		???	
+two-pronged gig	1670	945	SPEAR	
 ugly	1671	1548	UGLY	2
 ulcer	1672	1189	ULCER	2
 umbilical cord	1673	2663	UMBILICAL CORD	2
 umbrella	1674	3105	UMBRELLA	2
 uncle	1675	1327	UNCLE	2
 uncover	1676	1108	UNCOVER	2
-#<<<				
 under	1677	1485	BELOW OR UNDER	2
-under	1677	415	CARRY UNDER ARM	2
-#>>>				
-underarm	1678		???	
+underarm	1678	446	LOWER ARM	
 understand	1679	1536	UNDERSTAND	2
 undo	1680	352	UNTIE	4
-unfold	1681		???	
-unhappiness	1682		???	
-unknown islands	1683		???	
-unrelated	1684		???	
+unfold	1681	38	SPREAD OUT	
+unhappiness	1682	3854	SADNESS	
+unknown islands	1683	622	ISLAND	
+unrelated	1684	791	STRANGER	
 until	1685	2753	UNTIL	2
 up to	1686	2753	UNTIL	4
-uprooted	1687		???	
-upside-down	1688		???	
+uprooted	1687	1735	TEAR (SHRED)	
+upside-down	1688			
 urinate	1689	592	PISS	2
-urinate on	1690		???	
+urinate on	1690	592	PISS	
 urine	1691	1142	URINE	2
 use (n.)	1692	2072	USE (VERB)	4
 use (v.)	1693	2072	USE (VERB)	3
-used up	1694		???	
-useful	1695		???	
-usefulness	1696		???	
-uterus	1697		???	
+used up	1694			
+useful	1695			
+usefulness	1696			
+uterus	1697	804	WOMB	
 vagina	1698	1836	VAGINA	2
 valley	1699	921	VALLEY	2
 vehicle	1700	2549	VEHICLE	2
 veil	1701	1151	VEIL	2
-#<<<				
-vein (of palm leaf)	1702	1925	ARTERY	4
 vein (of palm leaf)	1702	525	BLOOD VESSEL	4
-vein (of palm leaf)	1702	1924	VEIN	4
-#>>>				
-veins	1703	1924	VEIN	2
+veins	1703	525	BLOOD VESSEL	2
 very	1704	1311	VERY	2
 village	1705	930	VILLAGE	2
 virgin	1706	2298	VIRGIN	2
 visible	1707	1868	VISIBLE	2
 voice	1708	1363	VOICE	2
-voluntary donation	1709		???	
+voluntary donation	1709	2982	GIFT	
 vomit	1710	1278	VOMIT	2
 vomit (n.)	1711	1278	VOMIT	4
 waist	1712	1681	WAIST	2
-waist band	1713		???	
-waist band made from metal	1714		???	
+waist band	1713	772	BELT	
+waist band made from metal	1714	772	BELT	
 wait	1715	1590	WAIT (FOR)	2
 wake up	1716	1602	WAKE UP	2
-#<<<				
-walk/travel	1717	3665	TRAVEL	4
-walk/travel	1717	2393	JOURNEY	4
-walk/travel	1717	2739	WALK (CLASSIFIER)	4
-walk/travel	1717	2979	WALK (MANNER)	4
-walk/travel	1717	2890	WALK (TAKE A WALK)	4
 walk/travel	1717	1443	WALK	4
-walk/travel	1717	2450	FOOT OR WALK	4
-walk/travel	1717	695	GO	4
-walk/travel	1717	3666	WANDER	4
-#>>>				
-#<<<				
-wall	1718	933	WALL (OF HOUSE)	2
 wall	1718	3830	WALL	2
-#>>>				
 want	1719	1784	WANT	2
 war	1720	935	WAR	2
-#<<<				
 warm	1721	1232	WARM	2
-warm	1721	2272	HOT OR WARM	2
-#>>>				
-#<<<				
 wash	1722	1453	WASH	2
-wash	1722	3371	WASH (ONESELF)	2
-#>>>				
-washing bucket	1723		???	
-#<<<				
+washing bucket	1723	2052	BUCKET	
 water (v.)	1724	3078	IRRIGATE	3
-water (v.)	1724	1487	POUR	3
-water (v.)	1724	2907	ROT	3
-#>>>				
-water spinach	1725		???	
-#<<<				
+water spinach	1725	975	SPINACH	
 wave	1726	978	WAVE	2
-wave	1726	3544	WAVE (VERB)	2
-#>>>				
 we excl.	1727	1130	WE (EXCLUSIVE)	2
 we incl.	1728	1131	WE (INCLUSIVE)	2
-we two incl.	1729		???	
-#<<<				
-wear (clothes)	1730	3428	WEAR (ON HEAD)	4
-wear (clothes)	1730	976	WEAR	4
+we two incl.	1729	1131	WE (INCLUSIVE)	
 wear (clothes)	1730	158	PUT ON	4
-#>>>				
 weave	1731	133	WEAVE	2
 wedding	1732	1259	WEDDING	2
-wedge	1733		???	
-welcome (v.)	1734		???	
+wedge	1733			
+welcome (v.)	1734			
 well (n.)	1735	954	WELL	1
 west	1736	1817	WEST	2
 wet	1737	1726	WET	2
-what for?	1738		???	
+what for?	1738	3268	QUESTION	
 what?	1739	1236	WHAT	2
-what's that?	1740		???	
-what's the name?	1741		???	
-whatever!	1742		???	
+what's that?	1740	3268	QUESTION	
+what's the name?	1741	3268	QUESTION	
+whatever!	1742			
 when? (future)	1743	1238	WHEN	4
 where?	1744	1237	WHERE	2
 which?	1745	727	WHICH	2
-whirl (v.)	1746		???	
-#<<<				
+whirl (v.)	1746			
 whistle	1747	1025	WHISTLE	2
-whistle	1747	3107	WHISTLE (INSTRUMENT)	2
-#>>>				
-white person	1748		???	
-whittle	1749		???	
+white person	1748	2839	WHITE MAN	
+whittle	1749			
 who?	1750	1235	WHO	2
 why?	1751	1270	WHY	2
-#<<<				
-wide	1752	2531	BROAD	2
 wide	1752	1243	WIDE	2
-wide	1752	1244	THICK	2
-#>>>				
 widow	1753	1756	WIDOW	2
-widow marrying another man	1754		???	
-widow marrying her brother-in-law	1755		???	
+widow marrying another man	1754	1756	WIDOW	
+widow marrying her brother-in-law	1755	1756	WIDOW	
 widower	1756	1981	WIDOWER	2
-widower marrying again	1757		???	
+widower marrying again	1757	1981	WIDOWER	
 wife	1758	1199	WIFE	2
 wild	1759	2230	UNTAMED OR WILD	2
-wild pigeon (Chalcophaps indica indica)	1760		???	
-wild sugarcane (Saccharum spontaneum)	1761		???	
+wild pigeon (Chalcophaps indica indica)	1760	1853	DOVE	
+wild sugarcane (Saccharum spontaneum)	1761	146	SUGAR CANE	
 window	1762	1375	WINDOW	2
 wing	1763	1257	WING	2
 wink (n.)	1764	1655	BLINK	4
-winner	1765		???	
+winner	1765			
 winnow	1766	2462	WINNOWING	2
 winnowing basket	1767	2051	DUSTPAN	2
 wipe	1768	1454	WIPE	2
 with	1769	1340	WITH	2
 withdraw	1770	3654	TAKE OUT	4
 wither	1771	2907	ROT	2
-withered	1772		???	
-within three days	1773		???	
+withered	1772	2907	ROT	
+within three days	1773	892	ROT	
 witness	1774	1144	WITNESS	2
-#<<<				
 woman (high rank in tradition)	1775	962	WOMAN	4
-woman (high rank in tradition)	1775	3661	RICH PERSON	4
-woman (high rank in tradition)	1775	2105	FEMALE PERSON	4
-#>>>				
-woman in childbirth	1776		???	
+woman in childbirth	1776	1195	GIVE BIRTH	
 womb	1777	804	WOMB	2
-wonder (v.)	1778		???	
+wonder (v.)	1778	1415	THINK (REFLECT)	
 wood	1779	1803	WOOD	2
-wood worm	1780		???	
-wood-boring beetle	1781		???	
+wood worm	1780	1219	WORM	
+wood-boring beetle	1781	2242	BEETLE	
 word	1782	1599	WORD	2
 work (n.)	1783	984	WORK (LABOUR)	1
 work (v.)	1784	1086	WORK (ACTIVITY)	3
 worm	1785	1219	WORM	2
-worn out	1786		???	
-worshipping of ghosts	1787		???	
-worshipping of ghosts in case of illness	1788		???	
+worn out	1786	2113	OLD (USED)	
+worshipping of ghosts	1787	257	WORSHIP	
+worshipping of ghosts in case of illness	1788	257	WORSHIP	
 wound (n.)	1789	1109	WOUND	1
-wounded	1790		???	
+wounded	1790	1109	WOUND	
 wrap (n.)	1791	1113	WRAP	4
-wrecked	1792		???	
-wriggle	1793		???	
+wrecked	1792			
+wriggle	1793			
 wrinkled	1794	380	WRINKLED	2
 write	1795	1672	WRITE	2
 wrong	1796	1390	WRONG	2
 yawn	1797	1028	YAWN	2
-yaws (frambesia)	1798		???	
+yaws (frambesia)	1798	1986	DISEASE	
 year	1799	1226	YEAR	2
 yesterday	1800	1174	YESTERDAY	2
 you all	1801	1213	YOU	2
-you can go	1802		???	
+you can go	1802	695	GO	
 young	1803	1207	YOUNG	2
 young girl (address)	1804	1646	GIRL	4
 young man	1805	76	YOUNG MAN	2
