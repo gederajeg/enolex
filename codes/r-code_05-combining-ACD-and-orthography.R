@@ -2,7 +2,7 @@ library(tidyverse)
 source("codes/r-code_01-lexdb-pre-processing.R")
 source("codes/r-code_02-orthography.R")
 source("codes/r-code_03-ACD.R")
-source("codes/r-code_04-1-orthography-profiling.R")
+# source("codes/r-code_04-1-orthography-profiling.R") Only run this when there is update on the orthography!
 
 # load the etymology table
 proto_distinct1 <- read_rds("data/proto_distinct1.rds")
@@ -166,14 +166,23 @@ concepts_gloss <- enolex6 |>
 #   write_tsv(paste("data/enolex-gloss-to-map_2024-", nrow(concepts_gloss), ".tsv", sep = ""))
 
 concepticon_url <- "https://concepticon.clld.org/parameters/"
+
+# the reason why we read the raw original data from Concepticon in the code line below is to get the data for Concepticon Semantic Field based on matching the Concepticon ID!
+concepsem <- read_tsv("https://raw.githubusercontent.com/concepticon/concepticon-data/master/concepticondata/concepticon.tsv")
 concepts_gloss_edit <- read_tsv("data/enolex-gloss-mapped-to-edit_2024-1810.tsv")
-# For June 6 2024 version
+# For June 2024 version
 concepts_mapped <- concepts_gloss_edit |> 
-  filter(NUMBER %in% 1:822) |> 
+  # filter(NUMBER %in% 1:1263) |> 
   mutate(Concepticon = if_else(!is.na(CONCEPTICON_ID), 
                                paste(concepticon_url, CONCEPTICON_ID, sep = ""),
                                NA)) |> 
-  select(English = GLOSS, `Concepticon gloss` = CONCEPTICON_GLOSS, Concepticon)
+  select(English = GLOSS, `Concepticon gloss` = CONCEPTICON_GLOSS, Concepticon, CONCEPTICON_ID)
+# Get the Concepticon's Semantic Field via the CONCEPTICON_ID
+concepts_mapped <- concepts_mapped |> 
+  left_join(concepsem |> 
+              rename(CONCEPTICON_ID = ID) |> 
+              select(CONCEPTICON_ID, SEMANTICFIELD)) |> 
+  select(English, `Concepticon gloss`, SEMANTICFIELD, Concepticon)
 
 # joined with the main EnoLEX database
 
@@ -181,7 +190,12 @@ enolex7 <- enolex6 |>
   left_join(concepts_mapped) |> 
   group_by(`Cognate ID`) |> 
   mutate(`Number of Cognates` = n_distinct(`Given as`)) |> 
-  ungroup()
+  ungroup() |> 
+  mutate(English = if_else(English == "kuat", "strong", English),
+         Indonesian = if_else(Indonesian == "strong", "kuat", Indonesian),
+         English = if_else(English == "sea form", "sea foam", English)) |> 
+  select(-`Semantic field`) |> 
+  rename(`Semantic field` = SEMANTICFIELD)
 
-enolex7 |> 
-  write_tsv("data/dummy_for_pak_cok_20240606.tsv")
+# enolex7 |> 
+#   write_tsv("data/dummy_for_pak_cok_20240608.tsv")
