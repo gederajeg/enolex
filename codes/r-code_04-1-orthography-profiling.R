@@ -1489,12 +1489,41 @@ yoder2011 |>
   write_tsv("ortho/_17-yoder2011_strings-ipa.tsv")
 
 
+
+
+
 # Aron 2019 =====
 aron <- eno_etym_long_mini8 |> 
   filter(EngganoSource == "Aron 2019") |> 
   mutate(ortho_id = row_number())
 # qlcData::write.profile(aron$words, normalize = "NFC", editing = TRUE, info = FALSE,
                        # file.out = "ortho/_18-aron2019_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+arn2019 <- qlcData::tokenize(aron$words, 
+                             profile = "ortho/_18-aron2019_profile-skeleton.tsv", 
+                             file.out = "ortho/_18-aron2019",
+                             method = "global",
+                             transliterate = "Replacement", 
+                             ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                             normalize = "NFC",
+                             sep.replace = "#",
+                             regex = TRUE)
+arn2019$errors
+arn2019$strings |> filter(str_detect(originals, stri_trans_nfc("o̠")))
+arn2019$strings |> filter(str_detect(originals, stri_trans_nfc("ẽ̠")))
+arn2019$missing
+
+### tidying up the segmentised and transliterated table ====
+arn2019_str <- arn2019$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+aron <- aron |> 
+  left_join(arn2019_str, by = join_by(ortho_id))
 
 ### map the phonemic data to the skeleton profile ========
 aron_prof <- read_prof("ortho/_18-aron2019_profile-skeleton.tsv")
@@ -1506,7 +1535,7 @@ aron_prof_phon <- aron_prof_phon |>
                            Replacement == stri_trans_nfc("ẽ"),
                            "ẽ"),
          Phoneme = replace(Phoneme,
-                           Replacement == stri_trans_nfc("ẽ̇"),
+                           Grapheme == stri_trans_nfc("ẽ̇"),
                            "ə̃"),
          Phoneme = replace(Phoneme,
                            Replacement == stri_trans_nfc("ė̃"),
@@ -1541,3 +1570,96 @@ aron <- aron |>
   mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
 
 get_ortho_cols(aron)
+
+##### save the tokenised and transliterated strings =====
+aron |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_18-aron2019_strings-ipa.tsv")
+
+
+
+
+
+# Zakaria et al. 2023 =====
+zakaria <- eno_etym_long_mini8 |> 
+  filter(EngganoSource == "Zakaria et al. 2023") |> 
+  mutate(ortho_id = row_number())
+# qlcData::write.profile(zakaria$words, normalize = "NFC", editing = TRUE, info = FALSE, 
+#                        file.out = "ortho/_19-zakaria2023_profile-skeleton.tsv")
+### segmentise and transliterate after editing the skeleton profile ====
+zkr2023 <- qlcData::tokenize(zakaria$words, 
+                             profile = "ortho/_19-zakaria2023_profile-skeleton.tsv", 
+                             file.out = "ortho/_19-zakaria2023",
+                             method = "global",
+                             transliterate = "Replacement", 
+                             ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+                             normalize = "NFC",
+                             sep.replace = "#",
+                             regex = TRUE)
+zkr2023$errors
+zkr2023$strings |> filter(str_detect(originals, stri_trans_nfc("o̠")))
+zkr2023$strings |> filter(str_detect(originals, stri_trans_nfc("ẽ̠")))
+zkr2023$missing
+
+### tidying up the segmentised and transliterated table ====
+zkr2023_str <- zkr2023$strings |> 
+  as_tibble() |> 
+  mutate(ortho_id = row_number()) |> 
+  mutate(commons = str_replace_all(transliterated, "\\s{1}", ""),
+         commons = str_replace_all(commons, "\\#", " ")) |> 
+  select(ortho_id, everything())
+
+### combine with the main data ====
+zakaria <- zakaria |> 
+  left_join(zkr2023_str, by = join_by(ortho_id))
+
+### map the phonemic data to the skeleton profile ========
+zakaria_prof <- read_prof("ortho/_19-zakaria2023_profile-skeleton.tsv")
+zakaria_prof_phon <- phoneme_map(zakaria_prof, trx)
+zakaria_prof_phon |> as_tibble() |> print(n=Inf)
+zakaria_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
+zakaria_prof_phon <- zakaria_prof_phon |> 
+  mutate(Phoneme = replace(Phoneme,
+                           Replacement == stri_trans_nfc("ẽ"),
+                           "ẽ"),
+         Phoneme = replace(Phoneme,
+                           Grapheme == stri_trans_nfc("ẽ̇"),
+                           "ə̃"),
+         Phoneme = replace(Phoneme,
+                           Replacement == stri_trans_nfc("ė̃"),
+                           "ə̃"),
+         Phoneme = replace(Phoneme,
+                           Replacement == "I",
+                           "i"),
+         Phoneme = replace(Phoneme,
+                           Replacement == "v",
+                           "v"),
+         Phoneme = replace(Phoneme, Replacement == "̃", "̃"),
+         Phoneme = replace(Phoneme, Replacement == "̇", "̇"))
+zakaria_prof_phon |> filter(Phoneme == "")
+
+# aron2019 <- qlcData::tokenize(zakaria$words, 
+#                               profile = zakaria_prof_phon, 
+#                               method = "global",
+#                               transliterate = "Phoneme", 
+#                               ordering = NULL, # cf. Moran & Cysouw (2018: 112-114)
+#                               normalize = "NFC",
+#                               sep.replace = "#",
+#                               regex = TRUE)
+
+zakaria_str_phon <- phoneme_tokenise(zakaria$words, 
+                                      orth_prof = zakaria_prof_phon, 
+                                      rgx = TRUE,
+                                      ordr = NULL)
+
+#### combined with the main data ====
+zakaria <- zakaria |> 
+  left_join(zakaria_str_phon, by = join_by(ortho_id)) |> 
+  mutate(across(matches("^(commons|transliterated)$"), ~str_replace_all(., "ː", ":")))
+
+get_ortho_cols(zakaria)
+
+##### save the tokenised and transliterated strings =====
+zakaria |> 
+  select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
+  write_tsv("ortho/_19-zakaria2023_strings-ipa.tsv")
