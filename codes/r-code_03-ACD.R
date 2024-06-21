@@ -1,32 +1,32 @@
 # remotes::install_github("SimonGreenhill/rcldf", dependencies = TRUE)
 # library(rcldf)
-library(tidyverse)
-library(common)
+# library(tidyverse)
+# library(common)
 
-source("codes/r-code_01-lexdb-pre-processing.R")
-source("codes/r-code_02-orthography.R")
+# source("codes/r-code_01-lexdb-pre-processing.R")
+# source("codes/r-code_02-orthography.R")
 
 # acd <- rcldf::cldf("C:/Users/GRajeg/OneDrive - Nexus365/Documents/cldf/acd/cldf/cldf-metadata.json")
 # acd <- rcldf::cldf("/Users/Primahadi/Documents/cldf_project/lexibank-acd-e39c642/cldf/cldf-metadata.json")
 # write_rds(acd, "data/acd.rds")
 
-acd <- read_rds("data/acd.rds")
-
-summary(acd)
-names(acd$tables)
-acd$tables$protoforms.csv
-acd$tables$FormTable
-acd$tables$CognatesetTable
-
-form_tb <- acd$tables$FormTable
-language_tb <- acd$tables$LanguageTable
-param_tb <- acd$tables$ParameterTable
-cognate_tb <- acd$tables$CognateTable
-cogset_tb <- acd$tables$CognatesetTable
-contrib_tb <- acd$tables$ContributionTable
-protoform_tb <- acd$tables$protoforms.csv
-loan_tb <- acd$tables$loansets.csv
-borrowing_tb <- acd$tables$BorrowingTable
+# acd <- read_rds("data/acd.rds")
+# 
+# summary(acd)
+# names(acd$tables)
+# acd$tables$protoforms.csv
+# acd$tables$FormTable
+# acd$tables$CognatesetTable
+# 
+# form_tb <- acd$tables$FormTable
+# language_tb <- acd$tables$LanguageTable
+# param_tb <- acd$tables$ParameterTable
+# cognate_tb <- acd$tables$CognateTable
+# cogset_tb <- acd$tables$CognatesetTable
+# contrib_tb <- acd$tables$ContributionTable
+# protoform_tb <- acd$tables$protoforms.csv
+# loan_tb <- acd$tables$loansets.csv
+# borrowing_tb <- acd$tables$BorrowingTable
 
 # Keys between form_tb and cognate_tb is ID (in form_tb) and Form_ID (in cognate_tb)
 # Keys between cogset_tb and cognate_tb is ID (cogset_tb) and Cognateset_ID (cognate_tb)
@@ -38,20 +38,20 @@ borrowing_tb <- acd$tables$BorrowingTable
 ## cogset_tb |> filter(str_detect(Form, "^\\*abut"))
 ## Then, pull the relevant ID in the cogset_tb to be combined with the ACD clld version URL
 
-cognateset_url_base <- "https://acd.clld.org/cognatesets/"
-paste0(cognateset_url_base, "25576")
-paste0(cognateset_url_base, "29851")
+# cognateset_url_base <- "https://acd.clld.org/cognatesets/"
+# paste0(cognateset_url_base, "25576")
+# paste0(cognateset_url_base, "29851")
 
 
 # get the distinct values of the etymology table
-proto_distinct <- eno_etym_long_proto_df |> 
-  filter(if_any(matches("_etymon"), ~!is.na(.))) |> 
-  select(id, matches("^(PAN|PMP|Etymological)")) |> 
-  distinct() |> 
-  mutate(across(where(is.character), ~replace_na(., "")))
+# proto_distinct <- eno_etym_long_proto_df |> 
+#   filter(if_any(matches("_etymon"), ~!is.na(.))) |> 
+#   select(id, matches("^(PAN|PMP|Etymological)")) |> 
+#   distinct() |> 
+#   mutate(across(where(is.character), ~replace_na(., "")))
 
-proto_distinct |> 
-  filter(if_any(matches("etymon"), ~grepl("təlu", ., perl = TRUE)))
+# proto_distinct |> 
+  # filter(if_any(matches("etymon"), ~grepl("təlu", ., perl = TRUE)))
 
 # proto_pan <- proto_distinct |> 
 #   select(id, PAN_etymon, PAN_gloss, PAN_source, Etymological_source)
@@ -62,29 +62,29 @@ proto_distinct |>
 ## before this, create wide table using rcldf::as.cldf.wide(acd, "FormTable")
 
 
-CognateTable <- rcldf::as.cldf.wide(acd, "CognateTable")
-FormTable <- rcldf::as.cldf.wide(acd, "FormTable")
-CognateSetTable <- rcldf::as.cldf.wide(acd, "CognatesetTable")
-CognateTable |> 
-  colnames() |> 
-  (\(x) str_subset(x, "^Form"))()
-
-get_cognateset <- function(tb, rgx) {
-  tb1 <- tb |> 
-    filter(if_any(matches("^Form\\."), ~str_detect(., rgx)))
-  return(tb1)
-}
-
-get_subproto <- function(tb, rgx, is_proto = NULL) {
-  tb1 <- tb |> 
-    filter(if_any(matches("(^Form|^Value)"), ~str_detect(., rgx)))
-  if (is_proto == TRUE) {
-    tb2 <- filter(tb1, if_any(matches("(^is_proto$|^is_proto\\.FormTable$)"), function(x) x == TRUE))
-    return(tb2)
-  } else {
-    return(tb1)
-  }
-}
+# CognateTable <- rcldf::as.cldf.wide(acd, "CognateTable")
+# FormTable <- rcldf::as.cldf.wide(acd, "FormTable")
+# CognateSetTable <- rcldf::as.cldf.wide(acd, "CognatesetTable")
+# CognateTable |> 
+#   colnames() |> 
+#   (\(x) str_subset(x, "^Form"))()
+# 
+# get_cognateset <- function(tb, rgx) {
+#   tb1 <- tb |> 
+#     filter(if_any(matches("^Form\\."), ~str_detect(., rgx)))
+#   return(tb1)
+# }
+# 
+# get_subproto <- function(tb, rgx, is_proto = NULL) {
+#   tb1 <- tb |> 
+#     filter(if_any(matches("(^Form|^Value)"), ~str_detect(., rgx)))
+#   if (is_proto == TRUE) {
+#     tb2 <- filter(tb1, if_any(matches("(^is_proto$|^is_proto\\.FormTable$)"), function(x) x == TRUE))
+#     return(tb2)
+#   } else {
+#     return(tb1)
+#   }
+# }
 
 # CognateTable |> 
 #   get_cognateset("RuqaNay")
