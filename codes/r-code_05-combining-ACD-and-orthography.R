@@ -195,7 +195,28 @@ enolex7 <- enolex6 |>
          Indonesian = if_else(Indonesian == "strong", "kuat", Indonesian),
          English = if_else(English == "sea form", "sea foam", English)) |> 
   select(-`Semantic field`) |> 
-  rename(`Semantic field` = SEMANTICFIELD)
+  rename(`Semantic field` = SEMANTICFIELD) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "first word.+register\\, second"), 
+                                        str_replace(`Note for each year`, "(register)\\,\\s(second)", "\\1 ; \\2"), 
+                                        `Note for each year`),
+         `Note for each year` = if_else(str_detect(`Note for each year`, "^apparently first word"),
+                                        str_replace(`Note for each year`, "first word", paste('"', str_extract(`Given as`, "^[^ ]+?(?=\\s;)"), '" is', sep = "")),
+                                        `Note for each year`),
+         `Note for each year` = if_else(str_detect(`Note for each year`, "^apparently .+second\\sword\\shigh\\sregister"),
+                                        str_replace(`Note for each year`, "second word", paste('"', str_extract(`Given as`, "(?<=\\;\\s).+$"), '" is', sep = "")),
+                                        `Note for each year`),
+         `Note for each year` = if_else(str_detect(`Note for each year`, stringi::stri_trans_nfc("cáua")),
+                                        str_replace_all(`Note for each year`, stringi::stri_trans_nfc("(cáua|caúa)"), "\\1 (KI- form)"),
+                                        `Note for each year`),
+         `Note for each year` = if_else(str_detect(`Note for each year`, "abaua\\s+means\\s+'good'"),
+                                        str_replace(`Note for each year`, "abaua", "abaua (BU- form)"),
+                                        `Note for each year`),
+         `Note for each year` = if_else(str_detect(`Note for each year`, "\\s\\;\\sfirst word is the ki\\-form.+"),
+                                        str_replace(`Note for each year`, "\\s\\;\\sfirst word is the ki\\-form.+", ""),
+                                        `Note for each year`))
 
-# enolex7 |> 
-#   write_tsv("data/dummy_for_pak_cok_20240608.tsv")
+enolex7 |> 
+  write_rds("data/dummy_for_pak_cok_20240621.rds")
+
+enolex7 |>
+  write_tsv("data/dummy_for_pak_cok_20240621.tsv")
