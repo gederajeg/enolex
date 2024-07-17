@@ -11,11 +11,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 164	1879	Oudemans 1879	12	1879	afa é afa	afa e afa	a f a # e # a f a	afa e afa	a f a # e # a f a
 178	1879	Oudemans 1879	13	1879	aliebe é afa	alibe e afa	a l i b e # e # a f a	alibe e afa	a l i b e # e # a f a
 185	1879	Oudemans 1879	14	1879	alieba takka	aliba takka	a l i b a # t a k k a	aliba takka	a l i b a # t a k k a
-198	1879	Oudemans 1879	15	1879	émāha	emaaha	e m aa h a	emaːha	e m aː h a
+198	1879	Oudemans 1879	15	1879	émāha	emaaha	e m a a h a	emaːha	e m aː h a
 211	1879	Oudemans 1879	16	1879	amama	amama	a m a m a	amama	a m a m a
 227	1879	Oudemans 1879	17	1879	afa	afa	a f a	afa	a f a
 244	1879	Oudemans 1879	18	1879	kahaie	kahai	k a h a i	kahai	k a h a i
-262	1879	Oudemans 1879	19	1879	ébāka	ebaaka	e b aa k a	ebaːka	e b aː k a
+262	1879	Oudemans 1879	19	1879	ébāka	ebaaka	e b a a k a	ebaːka	e b aː k a
 280	1879	Oudemans 1879	20	1879	kaha	kaha	k a h a	kaha	k a h a
 302	1879	Oudemans 1879	22	1879	ekiejoe	ekiyu	e k i y u	ekiju	e k i j u
 345	1879	Oudemans 1879	27	1879	éfano	efanO	e f a n O	efanɔ	e f a n ɔ
@@ -26,7 +26,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 429	1879	Oudemans 1879	36	1879	kahaie takka	kahai takka	k a h a i # t a k k a	kahai takka	k a h a i # t a k k a
 469	1879	Oudemans 1879	40	1879	kaliha	kalixa	k a l i x a	kaliça	k a l i ç a
 492	1879	Oudemans 1879	42	1879	kèwa	kEwa	k E w a	kɛwa	k ɛ w a
-529	1879	Oudemans 1879	47	1879	kiedāi	kidaai	k i d aa i	kidaːi	k i d aː i
+529	1879	Oudemans 1879	47	1879	kiedāi	kidaai	k i d a a i	kidaːi	k i d aː i
 571	1879	Oudemans 1879	50	1879	ebbo	ebbO	e b b O	ebbɔ	e b b ɔ
 587	1879	Oudemans 1879	51	1879	elohoa	eloOa	e l o O a	eloɔa	e l o ɔ a
 601	1879	Oudemans 1879	52	1879	mieno [afo]	minO [afO]	m i n O # [ a f O ]	minɔ [afɔ]	m i n ɔ # [ a f ɔ ]
@@ -46,7 +46,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1287	1879	Oudemans 1879	231	1879	a-ieje	a'iye	a ' i y e	aʔije	a ʔ i j e
 1308	1879	Oudemans 1879	235	1879	eke-èfe	eke'Efe	e k e ' E f e	ekeʔɛfe	e k e ʔ ɛ f e
 1407	1879	Oudemans 1879	256	1879	karaha	karaha	k a r a h a	karaha	k a r a h a
-1456	1879	Oudemans 1879	271	1879	epiëko ; epiéko	epi'ekO ; epiekO	e p i'e k O # ; # e p i e k O	epiʔekɔ ; epiekɔ	e p iʔe k ɔ # ; # e p i e k ɔ
+1456	1879	Oudemans 1879	271	1879	epiëko ; epiéko	epi'ekO ; epiekO	e p i ' e k O # ; # e p i e k O	epiʔekɔ ; epiekɔ	e p i ʔ e k ɔ # ; # e p i e k ɔ
 1520	1879	Oudemans 1879	292	1879	é koko	e kOkO	e # k O k O	e kɔkɔ	e # k ɔ k ɔ
 1781	1879	Oudemans 1879	379	1879	eokeiko	eOke:ikO	e O k e:i k O	eɔkɛikɔ	e ɔ k ɛi k ɔ
 1786	1879	Oudemans 1879	380	1879	famoa	famOa	f a m O a	famɔa	f a m ɔ a
@@ -57,7 +57,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2186	1879	Oudemans 1879	523	1879	kaha kakie	kaha kaki	k a h a # k a k i	kaha kaki	k a h a # k a k i
 2241	1879	Oudemans 1879	544	1879	lakieho	lakixO	l a k i x O	lakiçɔ	l a k i ç ɔ
 2405	1879	Oudemans 1879	615	1879	ebéo	ebeO	e b e O	ebeɔ	e b e ɔ
-2421	1879	Oudemans 1879	617	1879	e afiē	e afiee	e # a f i ee	e afieː	e # a f i eː
+2421	1879	Oudemans 1879	617	1879	e afiē	e afiee	e # a f i e e	e afieː	e # a f i eː
 2434	1879	Oudemans 1879	621	1879	karoebe	karube	k a r u b e	karube	k a r u b e
 2548	1879	Oudemans 1879	662	1879	meno	menO	m e n O	menɔ	m e n ɔ
 2576	1879	Oudemans 1879	672	1879	afa takka	afa takka	a f a # t a k k a	afa takka	a f a # t a k k a
@@ -67,13 +67,13 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3103	1879	Oudemans 1879	876	1879	adoewa takka	aduwa takka	a d u w a # t a k k a	aduwa takka	a d u w a # t a k k a
 3113	1879	Oudemans 1879	878	1879	kahaie kadodoka	kahai kadOdOka	k a h a i # k a d O d O k a	kahai kadɔdɔka	k a h a i # k a d ɔ d ɔ k a
 3185	1879	Oudemans 1879	900	1879	hobelélé	hObelele	h O b e l e l e	hɔbelele	h ɔ b e l e l e
-3354	1879	Oudemans 1879	966	1879	kaoewe	ka'uwe	k a'u w e	kaʔuwe	k aʔu w e
-3388	1879	Oudemans 1879	973	1879	koöfijoe	ko'ofiyu	k o'o f i y u	koʔofiju	k oʔo f i j u
+3354	1879	Oudemans 1879	966	1879	kaoewe	ka'uwe	k a ' u w e	kaʔuwe	k a ʔ u w e
+3388	1879	Oudemans 1879	973	1879	koöfijoe	ko'ofiyu	k o ' o f i y u	koʔofiju	k o ʔ o f i j u
 3400	1879	Oudemans 1879	975	1879	oefoenai	ufuna:i	u f u n a:i	ufunai	u f u n ai
 3543	1879	Oudemans 1879	1035	1879	kieja	kiya	k i y a	kija	k i j a
 3615	1879	Oudemans 1879	1060	1879	eokeiko ehoeda	eOke:ikO ehuda	e O k e:i k O # e h u d a	eɔkɛikɔ ehuda	e ɔ k ɛi k ɔ # e h u d a
 3656	1879	Oudemans 1879	1075	1879	ietjébé	icebe	i c e b e	it͡ʃebe	i t͡ʃ e b e
-3659	1879	Oudemans 1879	1076	1879	kaoedoe doewe	ka'udu duwe	k a'u d u # d u w e	kaʔudu duwe	k aʔu d u # d u w e
+3659	1879	Oudemans 1879	1076	1879	kaoedoe doewe	ka'udu duwe	k a ' u d u # d u w e	kaʔudu duwe	k a ʔ u d u # d u w e
 3764	1879	Oudemans 1879	1116	1879	éaba	eaba	e a b a	eaba	e a b a
 3829	1879	Oudemans 1879	1136	1879	ejara-afo	eyara'afO	e y a r a ' a f O	ejaraʔafɔ	e j a r a ʔ a f ɔ
 3856	1879	Oudemans 1879	1148	1879	kèfo	kEfO	k E f O	kɛfɔ	k ɛ f ɔ
@@ -87,11 +87,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4548	1879	Oudemans 1879	1427	1879	ekanoa	ekanOa	e k a n O a	ekanɔa	e k a n ɔ a
 4591	1879	Oudemans 1879	1438	1879	naina	na:ina	n a:i n a	naina	n ai n a
 4611	1879	Oudemans 1879	1442	1879	ekohé	ekoe	e k o e	ekoe	e k o e
-4631	1879	Oudemans 1879	1447	1879	ékā	ekaa	e k aa	ekaː	e k aː
+4631	1879	Oudemans 1879	1447	1879	ékā	ekaa	e k a a	ekaː	e k aː
 4718	1879	Oudemans 1879	1474	1879	noekie foho	nuki foO	n u k i # f o O	nuki foɔ	n u k i # f o ɔ
 4833	1879	Oudemans 1879	1508	1879	afa takka é kahafoeloe	afa takka e kahafulu	a f a # t a k k a # e # k a h a f u l u	afa takka e kahafulu	a f a # t a k k a # e # k a h a f u l u
 4853	1879	Oudemans 1879	1516	1879	paroheije	paroe:iye	p a r o e:i y e	paroɛije	p a r o ɛi j e
-4914	1879	Oudemans 1879	1538	1879	éā	eaa	e aa	eaː	e aː
+4914	1879	Oudemans 1879	1538	1879	éā	eaa	e a a	eaː	e aː
 4920	1879	Oudemans 1879	1540	1879	ekafoe	ekafu	e k a f u	ekafu	e k a f u
 4922	1879	Oudemans 1879	1541	1879	kaniejahé	kaniyahe	k a n i y a h e	kanijahe	k a n i j a h e
 4924	1879	Oudemans 1879	1542	1879	à-à	a'a	a ' a	aʔa	a ʔ a
@@ -112,9 +112,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6198	1879	Oudemans 1879	2021	1879	noekie	nuki	n u k i	nuki	n u k i
 6306	1879	Oudemans 1879	2067	1879	ekajo	ekayO	e k a y O	ekajɔ	e k a j ɔ
 6415	1879	Oudemans 1879	2117	1879	kaèno	ka:enO	k a:e n O	kaɛnɔ	k aɛ n ɔ
-6422	1879	Oudemans 1879	2121	1879	éfé odā	efe Odaa	e f e # O d aa	efe ɔdaː	e f e # ɔ d aː
+6422	1879	Oudemans 1879	2121	1879	éfé odā	efe Odaa	e f e # O d a a	efe ɔdaː	e f e # ɔ d aː
 6452	1879	Oudemans 1879	2129	1879	kahara [koewo]	kahara [kuwO]	k a h a r a # [ k u w O ]	kahara [kuwɔ]	k a h a r a # [ k u w ɔ ]
-6637	1879	Oudemans 1879	2203	1879	kaäke	ka'ake	k a'a k e	kke	k k e
+6637	1879	Oudemans 1879	2203	1879	kaäke	ka'ake	k a ' a k e	kaʔake	k a ʔ a k e
 6793	1879	Oudemans 1879	2254	1879	épara	epara	e p a r a	epara	e p a r a
 6830	1879	Oudemans 1879	2262	1879	kahafoeloe é akoloe	kahafulu e akOlu	k a h a f u l u # e # a k O l u	kahafulu e akɔlu	k a h a f u l u # e # a k ɔ l u
 6838	1879	Oudemans 1879	2264	1879	kahaie takka é kahafoeloe	kahai takka e kahafulu	k a h a i # t a k k a # e # k a h a f u l u	kahai takka e kahafulu	k a h a i # t a k k a # e # k a h a f u l u

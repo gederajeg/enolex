@@ -15,8 +15,8 @@ Left	Grapheme	Right	Class	Replacement
 (ie)	h			x
 (ai)	h			x
 (?<!a)i	h			x
-[aiueo]	ö			'o
-[aiueo]	ï			'i
+[aiueo]	ö			' o
+[aiueo]	ï			' i
 [^aiueo]	ö			u̇
 	\-			-
 	 			 

@@ -1,18 +1,18 @@
 entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_tokenised
 17	<1855	Brouwer <1855	2	<1855	amama	amama	a m a m a	amama	a m a m a
-35	<1855	Brouwer <1855	3	<1855	adoewa	aduwa	a d u w a	aduwa	a d u w a
+34	<1855	Brouwer <1855	3	<1855	adoewa	aduwa	a d u w a	aduwa	a d u w a
 61	<1855	Brouwer <1855	5	<1855	poe-à-foh	pu-a-fo	p u - a - f o	pu-a-fo	p u - a - f o
 75	<1855	Brouwer <1855	6	<1855	e-ai	E'a:i	E ' a:i	ɛʔai	ɛ ʔ ai
-89	<1855	Brouwer <1855	7	<1855	koeloe	kulu	k u l u	kulu	k u l u
+88	<1855	Brouwer <1855	7	<1855	koeloe	kulu	k u l u	kulu	k u l u
 105	<1855	Brouwer <1855	8	<1855	mona	mOna	m O n a	mɔna	m ɔ n a
-109	<1855	Brouwer <1855	9	<1855	akekena	akEkEna	a k E k E n a	akɛkɛna	a k ɛ k ɛ n a
-125	<1855	Brouwer <1855	10	<1855	liba	liba	l i b a	liba	l i b a
-143	<1855	Brouwer <1855	11	<1855	alina-adoewa	alina-aduwa	a l i n a - a d u w a	alina-aduwa	a l i n a - a d u w a
-158	<1855	Brouwer <1855	12	<1855	apas-afah	apax-afah	a p a x - a f a h	apaç-afah	a p a ç - a f a h
+108	<1855	Brouwer <1855	9	<1855	akekena	akEkEna	a k E k E n a	akɛkɛna	a k ɛ k ɛ n a
+124	<1855	Brouwer <1855	10	<1855	liba	liba	l i b a	liba	l i b a
+142	<1855	Brouwer <1855	11	<1855	alina-adoewa	alina-aduwa	a l i n a - a d u w a	alina-aduwa	a l i n a - a d u w a
+157	<1855	Brouwer <1855	12	<1855	apas-afah	apax-afah	a p a x - a f a h	apaç-afah	a p a ç - a f a h
 172	<1855	Brouwer <1855	13	<1855	alima-afah	alima-afah	a l i m a - a f a h	alima-afah	a l i m a - a f a h
-206	<1855	Brouwer <1855	16	<1855	amama	amama	a m a m a	amama	a m a m a
-221	<1855	Brouwer <1855	17	<1855	afa	afa	a f a	afa	a f a
-238	<1855	Brouwer <1855	18	<1855	hai	ha:i	h a:i	hai	h ai
+205	<1855	Brouwer <1855	16	<1855	amama	amama	a m a m a	amama	a m a m a
+220	<1855	Brouwer <1855	17	<1855	afa	afa	a f a	afa	a f a
+237	<1855	Brouwer <1855	18	<1855	hai	ha:i	h a:i	hai	h ai
 256	<1855	Brouwer <1855	19	<1855	baka	baka	b a k a	baka	b a k a
 274	<1855	Brouwer <1855	20	<1855	kahaa	kahaa	k a h a a	kahaa	k a h a a
 297	<1855	Brouwer <1855	22	<1855	kioe	kiu	k i u	kiu	k i u
@@ -72,7 +72,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4413	<1855	Brouwer <1855	1371	<1855	moko[-dobo]	mOkO[-dObO]	m O k O [ - d O b O ]	mɔkɔ[-dɔbɔ]	m ɔ k ɔ [ - d ɔ b ɔ ]
 4515	<1855	Brouwer <1855	1409	<1855	koero-bakka	kurO-bakka	k u r O - b a k k a	kurɔ-bakka	k u r ɔ - b a k k a
 4565	<1855	Brouwer <1855	1432	<1855	nika-nika(?)	nika-nika(?)	n i k a - n i k a ( ? )	nika-nika(?)	n i k a - n i k a ( ? )
-4579	<1855	Brouwer <1855	1436	<1855	kiea	kiia	k ii a	kiːa	k iː a
+4579	<1855	Brouwer <1855	1436	<1855	kiea	kiia	k i i a	kiːa	k iː a
 4607	<1855	Brouwer <1855	1442	<1855	kakoa	kakOa	k a k O a	kakɔa	k a k ɔ a
 4628	<1855	Brouwer <1855	1447	<1855	kaha	kaha	k a h a	kaha	k a h a
 4744	<1855	Brouwer <1855	1480	<1855	foe-à-noh	fu-a-no	f u - a - n o	fu-a-no	f u - a - n o
@@ -103,5 +103,5 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7022	<1855	Brouwer <1855	2323	<1855	nini	nini	n i n i	nini	n i n i
 7063	<1855	Brouwer <1855	2341	<1855	koa[-pidjoe]	kOa[-piju]	k O a [ - p i j u ]	kɔa[-pid͡ʒu]	k ɔ a [ - p i d͡ʒ u ]
 7105	<1855	Brouwer <1855	2358	<1855	okoha	OkOha	O k O h a	ɔkɔha	ɔ k ɔ h a
-7164	<1855	Brouwer <1855	2382	<1855	kiema	kiima	k ii m a	kiːma	k iː m a
+7164	<1855	Brouwer <1855	2382	<1855	kiema	kiima	k i i m a	kiːma	k iː m a
 7629	<1855	Brouwer <1855	2547	<1855	adoedoe ; [johé-]adoedoe	adudu ; [yOhe-]adudu	a d u d u # ; # [ y O h e - ] a d u d u	adudu ; [jɔhe-]adudu	a d u d u # ; # [ j ɔ h e - ] a d u d u

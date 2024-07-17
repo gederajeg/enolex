@@ -23,31 +23,38 @@ phoneme_map <- function(profile_df, phoneme_df) {
   prof_df <- profile_df |> 
     mutate(Replacement = str_replace_all(Replacement,
                                          "ː",
-                                         ":"))
+                                         ":"),
+           Replacement2 = if_else(str_detect(Replacement, "([^ ]\\s|\\s[^ ])"), 
+                                  str_replace_all(Replacement, " ", ""), 
+                                  Replacement))
   phon_df <- phoneme_df |> 
-    select(Replacement = commons,
+    #select(Replacement = commons,
+    select(Replacement2 = commons,
            Phoneme = phoneme) |> 
     distinct()
   
   tb1 <- prof_df |> 
-    left_join(phon_df, by = join_by(Replacement)) |> 
+    left_join(phon_df, 
+              by = join_by(Replacement2)) |> 
     mutate(across(where(is.character), ~replace_na(., "")))
   
   tb1 <- tb1 |> 
-    mutate(Phoneme = if_else(Phoneme == "" & str_detect(Replacement, "^([[:punct:]]|\\s)$"),
-                             Replacement,
+    mutate(Phoneme = if_else(Phoneme == "" & str_detect(Replacement2, "^([[:punct:]]|\\s)$"),
+                             Replacement2,
                              Phoneme),
-           Phoneme = if_else(Phoneme == "" & str_detect(Replacement, "^([aiueo])\\1$"),
-                             str_replace_all(Replacement, "^([aiueo])\\1$", "\\1ː"),
-                             Phoneme))
+           Phoneme = if_else(Phoneme == "" & str_detect(Replacement2, "^([aiueo])\\1$"),
+                             str_replace_all(Replacement2, "^([aiueo])\\1$", "\\1ː"),
+                             Phoneme)) |> 
+    select(-Replacement2)
   return(tb1)
 }
 
-phoneme_tokenise <- function(str, orth_prof, rgx = FALSE, ordr = NULL) {
+phoneme_tokenise <- function(str, orth_prof, rgx = FALSE, ordr = NULL, ipa_out = NULL) {
   
   tb <- qlcData::tokenize(str,
                           profile = orth_prof,
                           transliterate = "Phoneme",
+                          file.out = ipa_out,
                           ordering = ordr,
                           normalize = "NFC",
                           method = "global",
@@ -154,7 +161,8 @@ brw_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 brw_str_phon <- phoneme_tokenise(brouwer$words, 
                                  orth_prof = brw_prof_phon, 
                                  rgx = TRUE,
-                                 ordr = NULL)
+                                 ordr = NULL,
+                                 ipa_out = "ortho/_01-brouwer1855_ipa")
 #### combined with the main data ====
 brouwer <- brouwer |> 
   left_join(brw_str_phon, by = join_by(ortho_id)) |> 
@@ -204,7 +212,8 @@ get_ortho_cols(boewang)
 bwg_prof <- read_prof("ortho/_02-boewang1854_profile-skeleton.tsv")
 bwg_prof_phon <- phoneme_map(bwg_prof, trx)
 bwg_prof_phon |> filter(Phoneme == "")
-bwg_str_phon <- phoneme_tokenise(boewang$words, orth_prof = bwg_prof_phon)
+bwg_str_phon <- phoneme_tokenise(boewang$words, orth_prof = bwg_prof_phon,
+                                 ipa_out = "ortho/_02-boewang1854_ipa")
 #### combined with the main data ====
 boewang <- boewang |> 
   left_join(bwg_str_phon, by = join_by(ortho_id)) |> 
@@ -257,8 +266,8 @@ vrosen_prof <- read_prof("ortho/_03-vRosenberg1855_profile-skeleton.tsv")
 vrosen_prof_phon <- phoneme_map(vrosen_prof, trx)
 vrosen_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 vrosen_prof_phon <- vrosen_prof_phon |>
-  mutate(Phoneme = if_else(Phoneme == "" & Replacement %in% c("a'a", "a'o", "a'i"),
-                           str_replace_all(Replacement, "\\'(.)$", "ʔ\\1"),
+  mutate(Phoneme = if_else(Phoneme == "" & Replacement %in% c("a'a", "a'o", "a ' i", "a ' a", "a ' o", "a ' i"),
+                           str_replace_all(Replacement, "\\'", "ʔ"),
                            Phoneme),
          Phoneme = if_else(Left == "b" & Right == "h",
                            "ə",
@@ -267,7 +276,8 @@ vrosen_prof_phon <- vrosen_prof_phon |>
 vrosen_str_phon <- phoneme_tokenise(vrosenberg$words, 
                                  orth_prof = vrosen_prof_phon, 
                                  rgx = TRUE,
-                                 ordr = NULL)
+                                 ordr = NULL,
+                                 ipa_out = "ortho/_03-vRosenberg1855_ipa")
 vrosen_prof_phon |> filter(Phoneme == "")
 
 #### combined with the main data ====
@@ -329,7 +339,8 @@ vdstraten_prof_phon <- vdstraten_prof_phon |>
 vdstraten_str_phon <- phoneme_tokenise(vdstraten$words, 
                                     orth_prof = vdstraten_prof_phon, 
                                     rgx = FALSE,
-                                    ordr = NULL)
+                                    ordr = NULL,
+                                    ipa_out = "ortho/_04-vdStraten1855_ipa")
 
 #### combined with the main data ====
 vdstraten <- vdstraten |> 
@@ -395,9 +406,10 @@ walland_prof_phon <- walland_prof_phon |>
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Grapheme == "v",
                            "w"))
 walland_str_phon <- phoneme_tokenise(walland$words, 
-                                       orth_prof = walland_prof_phon, 
-                                       rgx = TRUE,
-                                       ordr = NULL)
+                                     orth_prof = walland_prof_phon, 
+                                     rgx = TRUE,
+                                     ordr = NULL,
+                                     ipa_out = "ortho/_05-walland1864_ipa")
 
 #### combined with the main data ====
 walland <- walland |> 
@@ -456,15 +468,16 @@ francis_prof_phon <- francis_prof_phon |>
                            Phoneme == "" & Grapheme == "nj",
                            "ɲ"))
 francis_prof_phon <- francis_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "o'o",
-                           "oʔo"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement  %in%  c("o'o", "o ' o"),
+                           "o ʔ o"))
 francis_prof_phon <- francis_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a'a",
-                           "aʔa"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement %in%  c("a'a", "a ' a"),
+                           "a ʔ a"))
 francis_str_phon <- phoneme_tokenise(francis$words, 
                                      orth_prof = francis_prof_phon, 
                                      rgx = TRUE,
-                                     ordr = NULL)
+                                     ordr = NULL,
+                                     ipa_out = "ortho/_06-francis1870_ipa")
 
 #### combined with the main data ====
 francis <- francis |> 
@@ -519,22 +532,23 @@ vrosen1878_prof_phon <- phoneme_map(vrosen1878_prof, trx)
 vrosen1878_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 vrosen1878_prof_phon <- vrosen1878_prof_phon |>
   mutate(Phoneme = replace(Phoneme,
-                           Phoneme == "" & Replacement == "'a",
-                           "ʔa")) |> 
+                           Phoneme == "" & Replacement == "' a",
+                           "ʔ a")) |> 
   mutate(Phoneme = replace(Phoneme,
-                           Phoneme == "" & Replacement == "a'",
-                           "aʔ")) |> 
+                           Phoneme == "" & Replacement == "a '",
+                           "a ʔ")) |> 
   mutate(Phoneme = replace(Phoneme,
                            Phoneme == "" & Replacement == "z",
                            "ʒ")) |> 
   mutate(Phoneme = replace(Phoneme,
                            Phoneme == "" & Replacement == "s",
                            "s"))
+vrosen1878_prof_phon |> filter(Phoneme == "")
 vrosen1878_str_phon <- phoneme_tokenise(vrosen1878$words, 
                                     orth_prof = vrosen1878_prof_phon, 
                                     rgx = TRUE,
-                                    ordr = NULL)
-vrosen1878_prof_phon |> filter(Phoneme == "")
+                                    ordr = NULL,
+                                    ipa_out = "ortho/_03-1-vRosenberg1878_ipa")
 
 #### combined with the main data ====
 vrosen1878 <- vrosen1878 |> 
@@ -587,18 +601,27 @@ oudemans_prof <- read_prof("ortho/_07-oudemans1879_profile-skeleton.tsv")
 oudemans_prof_phon <- phoneme_map(oudemans_prof, trx)
 oudemans_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 oudemans_prof_phon <- oudemans_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "o'o",
-                           "oʔo"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "o ' o",
+                           "o ʔ o"))
 oudemans_prof_phon <- oudemans_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a'u",
-                           "aʔu"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a ' u",
+                           "a ʔ u")) |> 
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a ' a",
+                           "a ʔ a"))
 oudemans_prof_phon <- oudemans_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "i'e",
-                           "iʔe"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "i ' e",
+                           "i ʔ e"))
 oudemans_str_phon <- phoneme_tokenise(oudemans$words, 
                                      orth_prof = oudemans_prof_phon, 
                                      rgx = TRUE,
-                                     ordr = NULL)
+                                     ordr = NULL,
+                                     ipa_out = "ortho/_07-oudemans1879_ipa")
+
+oudemans_prof_phon |> filter(Phoneme == "")
+# Left Grapheme Right Class Replacement Phoneme
+# 1             ä                       ä        
+# 2             ë                       ë        # these graphemes have zero tokens in the words individually
+# 3             ö                       ö 
 
 #### combined with the main data ====
 oudemans <- oudemans |> 
@@ -663,8 +686,8 @@ helfrich1888_prof_phon <- helfrich1888_prof_phon |>
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ė",
                            "ə"))
 helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "'i",
-                           "ʔi"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "' i",
+                           "ʔ i"))
 helfrich1888_prof_phon <- helfrich1888_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement %in% c("K"),
                            "k"))
@@ -675,7 +698,8 @@ helfrich1888_prof_phon |> filter(Phoneme == "") # check grapheme that has not Ph
 helfrich1888_str_phon <- phoneme_tokenise(helfrich1888$words, 
                                       orth_prof = helfrich1888_prof_phon, 
                                       rgx = TRUE,
-                                      ordr = NULL)
+                                      ordr = NULL,
+                                      ipa_out = "ortho/_08-helfrich1888_ipa")
 
 #### combined with the main data ====
 helfrich1888 <- helfrich1888 |> 
@@ -743,8 +767,8 @@ helfrich_pieters_prof <- read_prof("ortho/_09-helfrich_pieters1891_profile-skele
 helfrich_pieters_prof_phon <- phoneme_map(helfrich_pieters_prof, trx)
 helfrich_pieters_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "'o",
-                           "ʔo"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "' o",
+                           "ʔ o"))
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ė",
                            "ə"))
@@ -755,13 +779,14 @@ helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |>
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "ñ",
                            "ɲ"))
 helfrich_pieters_prof_phon <- helfrich_pieters_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "'i",
-                           "ʔi"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "' i",
+                           "ʔ i"))
 helfrich_pieters_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 helfrich_pieters_str_phon <- phoneme_tokenise(helfrich_pieters1891$words, 
                                       orth_prof = helfrich_pieters_prof_phon, 
                                       rgx = TRUE,
-                                      ordr = NULL)
+                                      ordr = NULL,
+                                      ipa_out = "ortho/_09-helfrich_pieters1891_ipa")
 
 #### combined with the main data ====
 helfrich_pieters1891 <- helfrich_pieters1891 |> 
@@ -830,9 +855,10 @@ modi1894_prof_phon <- modi1894_prof_phon |>
                            "k"))
 modi1894_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 modi1894_str_phon <- phoneme_tokenise(modi1894$words, 
-                                              orth_prof = modi1894_prof_phon, 
-                                              rgx = TRUE,
-                                              ordr = NULL)
+                                      orth_prof = modi1894_prof_phon, 
+                                      rgx = TRUE,
+                                      ordr = NULL,
+                                      ipa_out = "ortho/_10-modi1894_ipa")
 
 #### combined with the main data ====
 modi1894 <- modi1894 |> 
@@ -894,17 +920,17 @@ hollelist_prof <- read_prof("ortho/_11-stockhof1987_profile-skeleton.tsv")
 hollelist_prof_phon <- phoneme_map(hollelist_prof, trx)
 hollelist_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 hollelist_prof_phon <- hollelist_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a'a",
-                           "aʔa"))
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "a ' a",
+                           "a ʔ a"))
 hollelist_prof_phon <- hollelist_prof_phon |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "OO",
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "O O",
                            "ɔː"))
 hollelist_prof_phon <- hollelist_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement  %in%  c("ă", "ă"),
                            "ᾰ"))
 hollelist_prof_phon <- hollelist_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement  %in%  c("ä", "ä"),
-                           "ʔa"))
+                           "ʔ a"))
 hollelist_prof_phon <- hollelist_prof_phon |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "å",
                            "å"))
@@ -927,7 +953,8 @@ hollelist_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phone
 hollelist_str_phon <- phoneme_tokenise(hollelist$words, 
                                       orth_prof = hollelist_prof_phon, 
                                       rgx = TRUE,
-                                      ordr = NULL)
+                                      ordr = NULL,
+                                      ipa_out = "ortho/_11-stockhof1987_ipa")
 
 #### combined with the main data ====
 hollelist <- hollelist |> 
@@ -1003,7 +1030,8 @@ helfrich1916_prof_phon |> filter(Phoneme == "") # check grapheme that has not Ph
 helfrich1916_str_phon <- phoneme_tokenise(helfrich1916$words, 
                                         orth_prof = helfrich1916_prof_phon, 
                                         rgx = TRUE,
-                                        ordr = NULL)
+                                        ordr = NULL,
+                                        ipa_out = "ortho/_12-helfrich1916_ipa")
 helfrich1916_str_phon |> as_tibble()
 #### combined with the main data ====
 helfrich1916 <- helfrich1916 |> 
@@ -1071,7 +1099,8 @@ amran1979_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phone
 amran1979_str_phon <- phoneme_tokenise(amran1979$words, 
                                        orth_prof = amran1979_prof_phon, 
                                        rgx = TRUE,
-                                       ordr = NULL)
+                                       ordr = NULL,
+                                       ipa_out = "ortho/_13-amran1979_ipa")
 
 #### combined with the main data ====
 amran1979 <- amran1979 |> 
@@ -1162,15 +1191,16 @@ capell_prof_phon <- capell_prof_phon |>
                            "õ")) |> 
   mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == stri_trans_nfc("̲u"),
                            "u")) |> 
-  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "OO", "ɔː"),
-         Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "õõ", "ɔ̃ː"),
+  mutate(Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "O O", "ɔː"),
+         Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "õ õ", "ɔ̃ː"),
          Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "õ", "ɔ̃"),
          Phoneme = replace(Phoneme, Phoneme == "" & Replacement == "í", "i"))
 capell_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 capell_str_phon <- phoneme_tokenise(capell1982$words, 
-                                      orth_prof = capell_prof_phon, 
-                                      rgx = FALSE,
-                                      ordr = NULL)
+                                    orth_prof = capell_prof_phon, 
+                                    rgx = FALSE,
+                                    ordr = NULL,
+                                    ipa_out = "ortho/_14-capell1982_ipa")
 
 #### combined with the main data ====
 capell1982 <- capell1982 |> 
@@ -1257,7 +1287,8 @@ kahler1987_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phon
 kahler1987_str_phon <- phoneme_tokenise(kahler1987$words, 
                                        orth_prof = kahler1987_prof_phon, 
                                        rgx = TRUE,
-                                       ordr = c("context", "size"))
+                                       ordr = c("context", "size"),
+                                       ipa_out = "ortho/_15-kahler1987_ipa")
 kahler1987_str_phon |> as_tibble()
 #### combined with the main data ====
 kahler1987a <- kahler1987 |> 
@@ -1338,10 +1369,10 @@ kasimEtAl_prof_phon <- kasimEtAl_prof_phon |>
                            Phoneme == "" & Replacement == stri_trans_nfc("kʰ"),
                            "kʰ")) |> 
   mutate(Phoneme = replace(Phoneme,
-                           Phoneme == "" & Replacement == "ėė",
+                           Phoneme == "" & Replacement == "ė ė",
                            "əː")) |> 
   mutate(Phoneme = replace(Phoneme,
-                           Phoneme == "" & Replacement == stri_trans_nfc("EE"),
+                           Phoneme == "" & Replacement == stri_trans_nfc("E E"),
                            "ɛː")) |> 
   mutate(Phoneme = replace(Phoneme,
                            Phoneme == "" & Replacement == stri_trans_nfc("ã:"),
@@ -1360,9 +1391,10 @@ kasimEtAl_prof_phon <- kasimEtAl_prof_phon |>
                            "s"))
 kasimEtAl_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 ksm87_str_phon <- phoneme_tokenise(kasimEtAl1987$words, 
-                                      orth_prof = kasimEtAl_prof_phon, 
-                                      rgx = TRUE,
-                                      ordr = c("context", "size"))
+                                   orth_prof = kasimEtAl_prof_phon, 
+                                   rgx = TRUE,
+                                   ordr = c("context", "size"),
+                                   ipa_out = "ortho/_16-kasimEtAl1987_ipa")
 
 #### combined with the main data ====
 kasimEtAl1987 <- kasimEtAl1987 |> 
@@ -1474,7 +1506,8 @@ yoder_prof_phon |> filter(Phoneme == "") # check grapheme that has not Phoneme
 yod2011_str_phon <- phoneme_tokenise(yoder2011$words, 
                                    orth_prof = yoder_prof_phon, 
                                    rgx = TRUE,
-                                   ordr = NULL)
+                                   ordr = NULL,
+                                   ipa_out = "ortho/_17-yoder2011_ipa")
 
 #### combined with the main data ====
 yoder2011 <- yoder2011 |> 
@@ -1562,7 +1595,8 @@ aron_prof_phon |> filter(Phoneme == "")
 aron2019_str_phon <- phoneme_tokenise(aron$words, 
                                      orth_prof = aron_prof_phon, 
                                      rgx = TRUE,
-                                     ordr = NULL)
+                                     ordr = NULL,
+                                     ipa_out = "ortho/_18-aron2019_ipa")
 
 #### combined with the main data ====
 aron <- aron |> 
@@ -1648,9 +1682,10 @@ zakaria_prof_phon |> filter(Phoneme == "")
 #                               regex = TRUE)
 
 zakaria_str_phon <- phoneme_tokenise(zakaria$words, 
-                                      orth_prof = zakaria_prof_phon, 
-                                      rgx = TRUE,
-                                      ordr = NULL)
+                                     orth_prof = zakaria_prof_phon, 
+                                     rgx = TRUE,
+                                     ordr = NULL,
+                                     ipa_out = "ortho/_19-zakaria2023_ipa")
 
 #### combined with the main data ====
 zakaria <- zakaria |> 

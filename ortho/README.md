@@ -113,6 +113,10 @@ What I did was as follows:
 
 ## Kasim et al. (1987)
 
-- It is not included in Enggano Transcription System yet.
+-   It is not included in Enggano Transcription System yet.
 
-- The basic guidelines (in Indonesian) are available in Kasim et al. (1987: 22)
+-   The basic guidelines (in Indonesian) are available in Kasim et al. (1987: 22)
+
+# Note for combining the orthography and ACD
+
+-   we need to run script processing the db (01), the ACD (03), and the orthography (04) to get the updated entry ID that may change from the db (01). It is because the orthography and ACD includes information about entry ID for re-matching.

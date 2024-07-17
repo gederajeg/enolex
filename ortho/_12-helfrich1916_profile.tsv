@@ -1,32 +1,32 @@
 Left	Grapheme	Right	Class	Replacement	Frequency
 	\-			-	2
-	oeoe			u'u	0
+	oeoe			u ' u	0
 	nj			ñ	0
 	tj			c	0
 	dj			j	0
-	ää			a'a	0
-	qä			'a	0
-	\(q\)ä			(') a	0
+[aiueo]	ä			' a	6
+[aiueo]\(	ä			' a	2
+[aiueo]\)	ä			' a	0
+[aiueo]	ö			' o	0
+[aiueo]\(	ö			' o	0
+[aiueo]\)	ö			' o	0
+[^aiueo()]	ö			u̇	0
+[^aiueo]\(	ö			u̇	0
+[^aiueo]\)	ö			u̇	0
+	ää			a ' a	0
+	qä			' a	0
+	\(q\)ä			( ' ) a	0
 	ié			i	0
 	iè			i	0
 	oe			u	26
 	oè			u	0
-	öä			o'a	0
-	ïï			i'i	0
-	öö			o'o	0
-	ä\(ä\)			a ('a)	0
+	öä			o ' a	0
+	ïï			i ' i	0
+	öö			o ' o	0
+	ä\(ä\)			a ( ' a)	0
 (ie)	h			x	2
 (ai)	h			x	0
 (?<!a)i	h			x	0
-[aiueo]	ä			'a	6
-[aiueo]\(	ä			'a	2
-[aiueo]\)	ä			'a	0
-[aiueo]	ö			'o	0
-[aiueo]\(	ö			'o	0
-[aiueo]\)	ö			'o	0
-[^aiueo()]	ö			u̇	0
-[^aiueo]\(	ö			u̇	0
-[^aiueo]\)	ö			u̇	0
 	 			 	22
 	\(			(	20
 	\)			)	20
@@ -36,6 +36,8 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	\[			[	1
 	\]			]	1
 	a			a	53
+	á			á	0
+	à			a	0
 	ā			ā	1
 	ã			ã	2
 	b			b	11
@@ -45,6 +47,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	ĕ			ė	6
 	ě			ė	0
 	f			f	5
+	g			g	0
 	h			h	18
 	i			i	24
 	ĩ			ĩ	1

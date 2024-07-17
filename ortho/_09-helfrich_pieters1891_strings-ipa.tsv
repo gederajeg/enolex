@@ -30,8 +30,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 246	1891	Helfrich & Pieters 1891	18	1891	kaik	kaik	k a i k	kaik	k a i k
 263	1891	Helfrich & Pieters 1891	19	1891	èbakĕ	Ebakė	E b a k ė	ɛbakə	ɛ b a k ə
 264	1891	Helfrich & Pieters 1891	19	1891	èbaka	Ebaka	E b a k a	ɛbaka	ɛ b a k a
-281	1891	Helfrich & Pieters 1891	20	1891	èbakĕkahaök	Ebakėkaha'ok	E b a k ė k a h a 'o k	ɛbakəkahaʔok	ɛ b a k ə k a h a ʔo k
-282	1891	Helfrich & Pieters 1891	20	1891	èbakakahaök	Ebakakaha'ok	E b a k a k a h a 'o k	ɛbakakahaʔok	ɛ b a k a k a h a ʔo k
+281	1891	Helfrich & Pieters 1891	20	1891	èbakĕkahaök	Ebakėkaha'ok	E b a k ė k a h a ' o k	ɛbakəkahaʔok	ɛ b a k ə k a h a ʔ o k
+282	1891	Helfrich & Pieters 1891	20	1891	èbakakahaök	Ebakakaha'ok	E b a k a k a h a ' o k	ɛbakakahaʔok	ɛ b a k a k a h a ʔ o k
 291	1891	Helfrich & Pieters 1891	21	1891	ĕĕ	ėė	ė ė	əə	ə ə
 292	1891	Helfrich & Pieters 1891	21	1891	ĕĕ	ėė	ė ė	əə	ə ə
 303	1891	Helfrich & Pieters 1891	22	1891	èkijoe	Ekiyu	E k i y u	ɛkiju	ɛ k i j u
@@ -44,8 +44,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 393	1891	Helfrich & Pieters 1891	32	1891	idjo	ijo	i j o	id͡ʒo	i d͡ʒ o
 406	1891	Helfrich & Pieters 1891	33	1891	kaa(ĕ)	kaa(ė)	k a a ( ė )	kaa(ə)	k a a ( ə )
 407	1891	Helfrich & Pieters 1891	33	1891	kaa(ĕ)	kaa(ė)	k a a ( ė )	kaa(ə)	k a a ( ə )
-430	1891	Helfrich & Pieters 1891	36	1891	kaïk taka	ka'ik taka	k a 'i k # t a k a	kaʔik taka	k a ʔi k # t a k a
-431	1891	Helfrich & Pieters 1891	36	1891	kaïk taka	ka'ik taka	k a 'i k # t a k a	kaʔik taka	k a ʔi k # t a k a
+430	1891	Helfrich & Pieters 1891	36	1891	kaïk taka	ka'ik taka	k a ' i k # t a k a	kaʔik taka	k a ʔ i k # t a k a
+431	1891	Helfrich & Pieters 1891	36	1891	kaïk taka	ka'ik taka	k a ' i k # t a k a	kaʔik taka	k a ʔ i k # t a k a
 454	1891	Helfrich & Pieters 1891	39	1891	kaikokok²	kaikoko'	k a i k o k o '	kaikokoʔ	k a i k o k o ʔ
 455	1891	Helfrich & Pieters 1891	39	1891	kaikokok²	kaikoko'	k a i k o k o '	kaikokoʔ	k a i k o k o ʔ
 471	1891	Helfrich & Pieters 1891	40	1891	kaliehĕ	kalixė	k a l i x ė	kaliçə	k a l i ç ə
@@ -376,10 +376,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1871	1891	Helfrich & Pieters 1891	409	1891	konini	konini	k o n i n i	konini	k o n i n i
 1881	1891	Helfrich & Pieters 1891	414	1891	kaoe	kau	k a u	kau	k a u
 1882	1891	Helfrich & Pieters 1891	414	1891	kaoe	kau	k a u	kau	k a u
-1884	1891	Helfrich & Pieters 1891	415	1891	kaiölĕ	kai'olė	k a i 'o l ė	kaiʔolə	k a i ʔo l ə
-1885	1891	Helfrich & Pieters 1891	415	1891	kaiölĕ	kai'olė	k a i 'o l ė	kaiʔolə	k a i ʔo l ə
-1887	1891	Helfrich & Pieters 1891	416	1891	koeölĕ	ku'olė	k u 'o l ė	kuʔolə	k u ʔo l ə
-1888	1891	Helfrich & Pieters 1891	416	1891	koeölĕ	ku'olė	k u 'o l ė	kuʔolə	k u ʔo l ə
+1884	1891	Helfrich & Pieters 1891	415	1891	kaiölĕ	kai'olė	k a i ' o l ė	kaiʔolə	k a i ʔ o l ə
+1885	1891	Helfrich & Pieters 1891	415	1891	kaiölĕ	kai'olė	k a i ' o l ė	kaiʔolə	k a i ʔ o l ə
+1887	1891	Helfrich & Pieters 1891	416	1891	koeölĕ	ku'olė	k u ' o l ė	kuʔolə	k u ʔ o l ə
+1888	1891	Helfrich & Pieters 1891	416	1891	koeölĕ	ku'olė	k u ' o l ė	kuʔolə	k u ʔ o l ə
 1896	1891	Helfrich & Pieters 1891	421	1891	kaédaho	kaedaho	k a e d a h o	kaedaho	k a e d a h o
 1897	1891	Helfrich & Pieters 1891	421	1891	kaédaho	kaedaho	k a e d a h o	kaedaho	k a e d a h o
 1904	1891	Helfrich & Pieters 1891	423	1891	kafoto	kafoto	k a f o t o	kafoto	k a f o t o
@@ -466,8 +466,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2217	1891	Helfrich & Pieters 1891	535	1891	kĕpöpö	kėpu̇pu̇	k ė p u̇ p u̇	kəpɨpɨ	k ə p ɨ p ɨ
 2229	1891	Helfrich & Pieters 1891	541	1891	boedajak²	budaya'	b u d a y a '	budajaʔ	b u d a j a ʔ
 2230	1891	Helfrich & Pieters 1891	541	1891	boedajak²	budaya'	b u d a y a '	budajaʔ	b u d a j a ʔ
-2236	1891	Helfrich & Pieters 1891	543	1891	kohak² ; kahaök²	koha' ; kaha'o'	k o h a ' # ; # k a h a 'o '	kohaʔ ; kahaʔoʔ	k o h a ʔ # ; # k a h a ʔo ʔ
-2237	1891	Helfrich & Pieters 1891	543	1891	kohak² ; kahaök²	koha' ; kaha'o'	k o h a ' # ; # k a h a 'o '	kohaʔ ; kahaʔoʔ	k o h a ʔ # ; # k a h a ʔo ʔ
+2236	1891	Helfrich & Pieters 1891	543	1891	kohak² ; kahaök²	koha' ; kaha'o'	k o h a ' # ; # k a h a ' o '	kohaʔ ; kahaʔoʔ	k o h a ʔ # ; # k a h a ʔ o ʔ
+2237	1891	Helfrich & Pieters 1891	543	1891	kohak² ; kahaök²	koha' ; kaha'o'	k o h a ' # ; # k a h a ' o '	kohaʔ ; kahaʔoʔ	k o h a ʔ # ; # k a h a ʔ o ʔ
 2247	1891	Helfrich & Pieters 1891	546	1891	laikahadiĕ	laikahadiė	l a i k a h a d i ė	laikahadiə	l a i k a h a d i ə
 2248	1891	Helfrich & Pieters 1891	546	1891	raikahadia	raikahadia	r a i k a h a d i a	raikahadia	r a i k a h a d i a
 2257	1891	Helfrich & Pieters 1891	550	1891	hömanika	hu̇manika	h u̇ m a n i k a	hɨmanika	h ɨ m a n i k a
@@ -480,8 +480,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2274	1891	Helfrich & Pieters 1891	554	1891	fanènèhak²	fanEnEha'	f a n E n E h a '	fanɛnɛhaʔ	f a n ɛ n ɛ h a ʔ
 2279	1891	Helfrich & Pieters 1891	557	1891	ènoek² ; ènok²	Enu' ; Eno'	E n u ' # ; # E n o '	ɛnuʔ ; ɛnoʔ	ɛ n u ʔ # ; # ɛ n o ʔ
 2280	1891	Helfrich & Pieters 1891	557	1891	ènoek² ; ènok²	Enu' ; Eno'	E n u ' # ; # E n o '	ɛnuʔ ; ɛnoʔ	ɛ n u ʔ # ; # ɛ n o ʔ
-2297	1891	Helfrich & Pieters 1891	564	1891	èdiöboediĕ	Edi'obudiė	E d i 'o b u d i ė	ɛdiʔobudiə	ɛ d i ʔo b u d i ə
-2298	1891	Helfrich & Pieters 1891	564	1891	èdiöboediĕ	Edi'obudiė	E d i 'o b u d i ė	ɛdiʔobudiə	ɛ d i ʔo b u d i ə
+2297	1891	Helfrich & Pieters 1891	564	1891	èdiöboediĕ	Edi'obudiė	E d i ' o b u d i ė	ɛdiʔobudiə	ɛ d i ʔ o b u d i ə
+2298	1891	Helfrich & Pieters 1891	564	1891	èdiöboediĕ	Edi'obudiė	E d i ' o b u d i ė	ɛdiʔobudiə	ɛ d i ʔ o b u d i ə
 2304	1891	Helfrich & Pieters 1891	569	1891	kidorofok²	kidorofo'	k i d o r o f o '	kidorofoʔ	k i d o r o f o ʔ
 2305	1891	Helfrich & Pieters 1891	569	1891	kidorofok²	kidorofo'	k i d o r o f o '	kidorofoʔ	k i d o r o f o ʔ
 2306	1891	Helfrich & Pieters 1891	570	1891	keikoek²wĕ	keiku'wė	k e i k u ' w ė	keikuʔwə	k e i k u ʔ w ə
@@ -568,8 +568,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2578	1891	Helfrich & Pieters 1891	672	1891	afataka	afataka	a f a t a k a	afataka	a f a t a k a
 2580	1891	Helfrich & Pieters 1891	673	1891	èfoek²oeafĕ	Efu'uafė	E f u ' u a f ė	ɛfuʔuafə	ɛ f u ʔ u a f ə
 2581	1891	Helfrich & Pieters 1891	673	1891	èpoek²oeapo	Epu'uapo	E p u ' u a p o	ɛpuʔuapo	ɛ p u ʔ u a p o
-2590	1891	Helfrich & Pieters 1891	675	1891	kifa hoekjo kaïk	kifa hukyo ka'ik	k i f a # h u k y o # k a 'i k	kifa hukjo kaʔik	k i f a # h u k j o # k a ʔi k
-2591	1891	Helfrich & Pieters 1891	675	1891	kifa hoekjo kaïk	kifa hukyo ka'ik	k i f a # h u k y o # k a 'i k	kifa hukjo kaʔik	k i f a # h u k j o # k a ʔi k
+2590	1891	Helfrich & Pieters 1891	675	1891	kifa hoekjo kaïk	kifa hukyo ka'ik	k i f a # h u k y o # k a ' i k	kifa hukjo kaʔik	k i f a # h u k j o # k a ʔ i k
+2591	1891	Helfrich & Pieters 1891	675	1891	kifa hoekjo kaïk	kifa hukyo ka'ik	k i f a # h u k y o # k a ' i k	kifa hukjo kaʔik	k i f a # h u k j o # k a ʔ i k
 2595	1891	Helfrich & Pieters 1891	677	1891	kaniak²	kania'	k a n i a '	kaniaʔ	k a n i a ʔ
 2596	1891	Helfrich & Pieters 1891	677	1891	kaniak²	kania'	k a n i a '	kaniaʔ	k a n i a ʔ
 2599	1891	Helfrich & Pieters 1891	680	1891	hokèorak²	hokEora'	h o k E o r a '	hokɛoraʔ	h o k ɛ o r a ʔ
@@ -1011,8 +1011,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4275	1891	Helfrich & Pieters 1891	1309	1891	kèma	kEma	k E m a	kɛma	k ɛ m a
 4289	1891	Helfrich & Pieters 1891	1315	1891	noohok²	nooho'	n o o h o '	noohoʔ	n o o h o ʔ
 4290	1891	Helfrich & Pieters 1891	1315	1891	noohok²	nooho'	n o o h o '	noohoʔ	n o o h o ʔ
-4306	1891	Helfrich & Pieters 1891	1325	1891	boeödĕ	bu'odė	b u 'o d ė	buʔodə	b u ʔo d ə
-4307	1891	Helfrich & Pieters 1891	1325	1891	boeödĕ	bu'odė	b u 'o d ė	buʔodə	b u ʔo d ə
+4306	1891	Helfrich & Pieters 1891	1325	1891	boeödĕ	bu'odė	b u ' o d ė	buʔodə	b u ʔ o d ə
+4307	1891	Helfrich & Pieters 1891	1325	1891	boeödĕ	bu'odė	b u ' o d ė	buʔodə	b u ʔ o d ə
 4313	1891	Helfrich & Pieters 1891	1328	1891	kakara	kakara	k a k a r a	kakara	k a k a r a
 4314	1891	Helfrich & Pieters 1891	1328	1891	kakara	kakara	k a k a r a	kakara	k a k a r a
 4315	1891	Helfrich & Pieters 1891	1329	1891	kikèorak²	kikEora'	k i k E o r a '	kikɛoraʔ	k i k ɛ o r a ʔ
@@ -1023,8 +1023,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4338	1891	Helfrich & Pieters 1891	1337	1891	abaoè [kidaik²joe]	aba:oE [kidai'yu]	a b a:o E # [ k i d a i ' y u ]	abaoɛ [kidaiʔju]	a b ao ɛ # [ k i d a i ʔ j u ]
 4342	1891	Helfrich & Pieters 1891	1339	1891	èhèlo	EhElo	E h E l o	ɛhɛlo	ɛ h ɛ l o
 4343	1891	Helfrich & Pieters 1891	1339	1891	èhèboe	EhEbu	E h E b u	ɛhɛbu	ɛ h ɛ b u
-4347	1891	Helfrich & Pieters 1891	1340	1891	kakoeök	kaku'ok	k a k u 'o k	kakuʔok	k a k u ʔo k
-4348	1891	Helfrich & Pieters 1891	1340	1891	kakoeök	kaku'ok	k a k u 'o k	kakuʔok	k a k u ʔo k
+4347	1891	Helfrich & Pieters 1891	1340	1891	kakoeök	kaku'ok	k a k u ' o k	kakuʔok	k a k u ʔ o k
+4348	1891	Helfrich & Pieters 1891	1340	1891	kakoeök	kaku'ok	k a k u ' o k	kakuʔok	k a k u ʔ o k
 4354	1891	Helfrich & Pieters 1891	1342	1891	kababahak²	kababaha'	k a b a b a h a '	kababahaʔ	k a b a b a h a ʔ
 4355	1891	Helfrich & Pieters 1891	1342	1891	kababahak²	kababaha'	k a b a b a h a '	kababahaʔ	k a b a b a h a ʔ
 4364	1891	Helfrich & Pieters 1891	1349	1891	ööboi	u̇u̇bo:i	u̇ u̇ b o:i	ɨɨbɔi	ɨ ɨ b ɔi
@@ -1153,10 +1153,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4783	1891	Helfrich & Pieters 1891	1493	1891	noonninĕ	noonninė	n o o n n i n ė	noonninə	n o o n n i n ə
 4805	1891	Helfrich & Pieters 1891	1502	1891	koahjĕ	koahyė	k o a h y ė	koahjə	k o a h j ə
 4806	1891	Helfrich & Pieters 1891	1502	1891	koahjĕ	koahyė	k o a h y ė	koahjə	k o a h j ə
-4820	1891	Helfrich & Pieters 1891	1504	1891	(i)baïkaïk	(i)ba'ika'ik	( i ) b a 'i k a 'i k	(i)baʔikaʔik	( i ) b a ʔi k a ʔi k
-4821	1891	Helfrich & Pieters 1891	1504	1891	(i)baïkaïk	(i)ba'ika'ik	( i ) b a 'i k a 'i k	(i)baʔikaʔik	( i ) b a ʔi k a ʔi k
-4829	1891	Helfrich & Pieters 1891	1507	1891	kifa hoekjo baïkaik	kifa hukyo ba'ikaik	k i f a # h u k y o # b a 'i k a i k	kifa hukjo baʔikaik	k i f a # h u k j o # b a ʔi k a i k
-4830	1891	Helfrich & Pieters 1891	1507	1891	kifa hoekjo baïkaik	kifa hukyo ba'ikaik	k i f a # h u k y o # b a 'i k a i k	kifa hukjo baʔikaik	k i f a # h u k j o # b a ʔi k a i k
+4820	1891	Helfrich & Pieters 1891	1504	1891	(i)baïkaïk	(i)ba'ika'ik	( i ) b a ' i k a ' i k	(i)baʔikaʔik	( i ) b a ʔ i k a ʔ i k
+4821	1891	Helfrich & Pieters 1891	1504	1891	(i)baïkaïk	(i)ba'ika'ik	( i ) b a ' i k a ' i k	(i)baʔikaʔik	( i ) b a ʔ i k a ʔ i k
+4829	1891	Helfrich & Pieters 1891	1507	1891	kifa hoekjo baïkaik	kifa hukyo ba'ikaik	k i f a # h u k y o # b a ' i k a i k	kifa hukjo baʔikaik	k i f a # h u k j o # b a ʔ i k a i k
+4830	1891	Helfrich & Pieters 1891	1507	1891	kifa hoekjo baïkaik	kifa hukyo ba'ikaik	k i f a # h u k y o # b a ' i k a i k	kifa hukjo baʔikaik	k i f a # h u k j o # b a ʔ i k a i k
 4834	1891	Helfrich & Pieters 1891	1508	1891	afa takajo kifahoek	afa takayo kifahuk	a f a # t a k a y o # k i f a h u k	afa takajo kifahuk	a f a # t a k a j o # k i f a h u k
 4835	1891	Helfrich & Pieters 1891	1508	1891	afa takajo kifahoek	afa takayo kifahuk	a f a # t a k a y o # k i f a h u k	afa takajo kifahuk	a f a # t a k a j o # k i f a h u k
 4847	1891	Helfrich & Pieters 1891	1514	1891	kifahauwĕ	kifahauwė	k i f a h a u w ė	kifahauwə	k i f a h a u w ə
@@ -1564,8 +1564,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6164	1891	Helfrich & Pieters 1891	2010	1891	oewoho	uwoho	u w o h o	uwoho	u w o h o
 6178	1891	Helfrich & Pieters 1891	2016	1891	kanènonèno	kanEnonEno	k a n E n o n E n o	kanɛnonɛno	k a n ɛ n o n ɛ n o
 6179	1891	Helfrich & Pieters 1891	2016	1891	kanènonèno	kanEnonEno	k a n E n o n E n o	kanɛnonɛno	k a n ɛ n o n ɛ n o
-6184	1891	Helfrich & Pieters 1891	2017	1891	fanihiöfi	fanixi'ofi	f a n i x i 'o f i	faniçiʔofi	f a n i ç i ʔo f i
-6185	1891	Helfrich & Pieters 1891	2017	1891	fanihiöfi	fanixi'ofi	f a n i x i 'o f i	faniçiʔofi	f a n i ç i ʔo f i
+6184	1891	Helfrich & Pieters 1891	2017	1891	fanihiöfi	fanixi'ofi	f a n i x i ' o f i	faniçiʔofi	f a n i ç i ʔ o f i
+6185	1891	Helfrich & Pieters 1891	2017	1891	fanihiöfi	fanixi'ofi	f a n i x i ' o f i	faniçiʔofi	f a n i ç i ʔ o f i
 6188	1891	Helfrich & Pieters 1891	2018	1891	farihöfie	farixu̇fi	f a r i x u̇ f i	fariçɨfi	f a r i ç ɨ f i
 6189	1891	Helfrich & Pieters 1891	2018	1891	parihöfie	parixu̇fi	p a r i x u̇ f i	pariçɨfi	p a r i ç ɨ f i
 6190	1891	Helfrich & Pieters 1891	2019	1891	koforie	kofori	k o f o r i	kofori	k o f o r i
@@ -1779,7 +1779,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6832	1891	Helfrich & Pieters 1891	2263	1891	kifa hoekjo akoloe	kifa hukyo akolu	k i f a # h u k y o # a k o l u	kifa hukjo akolu	k i f a # h u k j o # a k o l u
 6833	1891	Helfrich & Pieters 1891	2263	1891	kifa hoekjo akoloe	kifa hukyo akolu	k i f a # h u k y o # a k o l u	kifa hukjo akolu	k i f a # h u k j o # a k o l u
 6839	1891	Helfrich & Pieters 1891	2264	1891	kaik taka kifahoek	kaik taka kifahuk	k a i k # t a k a # k i f a h u k	kaik taka kifahuk	k a i k # t a k a # k i f a h u k
-6842	1891	Helfrich & Pieters 1891	2265	1891	kaik taka kifahoekjo kaïk	kaik taka kifahukyo ka'ik	k a i k # t a k a # k i f a h u k y o # k a 'i k	kaik taka kifahukjo kaʔik	k a i k # t a k a # k i f a h u k j o # k a ʔi k
+6842	1891	Helfrich & Pieters 1891	2265	1891	kaik taka kifahoekjo kaïk	kaik taka kifahukyo ka'ik	k a i k # t a k a # k i f a h u k y o # k a ' i k	kaik taka kifahukjo kaʔik	k a i k # t a k a # k i f a h u k j o # k a ʔ i k
 6843	1891	Helfrich & Pieters 1891	2266	1891	aii	aii	a i i	aii	a i i
 6844	1891	Helfrich & Pieters 1891	2266	1891	aii	aii	a i i	aii	a i i
 6853	1891	Helfrich & Pieters 1891	2267	1891	itèk	itEk	i t E k	itɛk	i t ɛ k
@@ -1854,7 +1854,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7099	1891	Helfrich & Pieters 1891	2354	1891	èfaino	Efaino	E f a i n o	ɛfaino	ɛ f a i n o
 7114	1891	Helfrich & Pieters 1891	2361	1891	kifa hoekjo adoewĕ	kifa hukyo aduwė	k i f a # h u k y o # a d u w ė	kifa hukjo aduwə	k i f a # h u k j o # a d u w ə
 7115	1891	Helfrich & Pieters 1891	2361	1891	kifa hoekjo adoewĕ	kifa hukyo aduwė	k i f a # h u k y o # a d u w ė	kifa hukjo aduwə	k i f a # h u k j o # a d u w ə
-7118	1891	Helfrich & Pieters 1891	2363	1891	kaïk takajo kaïk	ka'ik takayo ka'ik	k a 'i k # t a k a y o # k a 'i k	kaʔik takajo kaʔik	k a ʔi k # t a k a j o # k a ʔi k
+7118	1891	Helfrich & Pieters 1891	2363	1891	kaïk takajo kaïk	ka'ik takayo ka'ik	k a ' i k # t a k a y o # k a ' i k	kaʔik takajo kaʔik	k a ʔ i k # t a k a j o # k a ʔ i k
 7120	1891	Helfrich & Pieters 1891	2364	1891	anohinoewĕ	anohinuwė	a n o h i n u w ė	anohinuwə	a n o h i n u w ə
 7121	1891	Helfrich & Pieters 1891	2364	1891	anohinoewĕ	anohinuwė	a n o h i n u w ė	anohinuwə	a n o h i n u w ə
 7123	1891	Helfrich & Pieters 1891	2365	1891	ijabadiediekie	iyabadidiki	i y a b a d i d i k i	ijabadidiki	i j a b a d i d i k i

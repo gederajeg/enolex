@@ -13,8 +13,8 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	\[			[	2
 	\]			]	2
 	a			a	115
-a	ä			'a	1
-	ä	e$		a'	1
+a	ä			' a	1
+	ä	e$		a '	1
 	b			b	18
 	d			d	15
 	e			e	18

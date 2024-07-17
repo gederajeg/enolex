@@ -12,18 +12,18 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 350	1979	Amran et al. 1979	27	1979	pan	pan	p a n	pan	p a n
 365	1979	Amran et al. 1979	28	1979	ear	ear	e a r	ear	e a r
 396	1979	Amran et al. 1979	32	1979	eahid ; ahaitu	eahid ; ahaitu	e a h i d # ; # a h a i t u	eahid ; ahaitu	e a h i d # ; # a h a i t u
-410	1979	Amran et al. 1979	33	1979	baa	baa	b aa	baː	b aː
+410	1979	Amran et al. 1979	33	1979	baa	baa	b a a	baː	b aː
 458	1979	Amran et al. 1979	39	1979	kaikoko	kaikoko	k a i k o k o	kaikoko	k a i k o k o
 475	1979	Amran et al. 1979	40	1979	karih	karih	k a r i h	karih	k a r i h
 497	1979	Amran et al. 1979	42	1979	kea	kea	k e a	kea	k e a
 535	1979	Amran et al. 1979	47	1979	kiteike	kiteike	k i t e i k e	kiteike	k i t e i k e
 551	1979	Amran et al. 1979	48	1979	kaudaihi	kaudaihi	k a u d a i h i	kaudaihi	k a u d a i h i
 576	1979	Amran et al. 1979	50	1979	be	be	b e	be	b e
-646	1979	Amran et al. 1979	58	1979	eeubi	eeubi	ee u b i	eːubi	eː u b i
-706	1979	Amran et al. 1979	65	1979	eapakaau	eapakaau	e a p a k aa u	eapakaːu	e a p a k aː u
+646	1979	Amran et al. 1979	58	1979	eeubi	eeubi	e e u b i	eːubi	eː u b i
+706	1979	Amran et al. 1979	65	1979	eapakaau	eapakaau	e a p a k a a u	eapakaːu	e a p a k aː u
 733	1979	Amran et al. 1979	70	1979	purduyur	purduyur	p u r d u y u r	purdujur	p u r d u j u r
 752	1979	Amran et al. 1979	72	1979	ekake	ekake	e k a k e	ekake	e k a k e
-785	1979	Amran et al. 1979	75	1979	u ; iyeeh	u ; iyeeh	u # ; # i y ee h	u ; ijeːh	u # ; # i j eː h
+785	1979	Amran et al. 1979	75	1979	u ; iyeeh	u ; iyeeh	u # ; # i y e e h	u ; ijeːh	u # ; # i j eː h
 805	1979	Amran et al. 1979	76	1979	yuba ; yub	yuba ; yub	y u b a # ; # y u b	juba ; jub	j u b a # ; # j u b
 821	1979	Amran et al. 1979	77	1979	hyur	hyur	h y u r	hjur	h j u r
 879	1979	Amran et al. 1979	98	1979	kiar	kiar	k i a r	kiar	k i a r
@@ -36,9 +36,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1136	1979	Amran et al. 1979	179	1979	eyukki ; eyudiku	eyukki ; eyudiku	e y u k k i # ; # e y u d i k u	ejukki ; ejudiku	e j u k k i # ; # e j u d i k u
 1220	1979	Amran et al. 1979	207	1979	hobidi'	hobidi'	h o b i d i '	hobidiʔ	h o b i d i ʔ
 1295	1979	Amran et al. 1979	232	1979	amuh	amuh	a m u h	amuh	a m u h
-1313	1979	Amran et al. 1979	235	1979	ekeep	ekeep	e k ee p	ekeːp	e k eː p
+1313	1979	Amran et al. 1979	235	1979	ekeep	ekeep	e k e e p	ekeːp	e k eː p
 1328	1979	Amran et al. 1979	238	1979	ha	ha	h a	ha	h a
-1352	1979	Amran et al. 1979	242	1979	kaakehe	kaakehe	k aa k e h e	kaːkehe	k aː k e h e
+1352	1979	Amran et al. 1979	242	1979	kaakehe	kaakehe	k a a k e h e	kaːkehe	k aː k e h e
 1381	1979	Amran et al. 1979	249	1979	kiake	kiake	k i a k e	kiake	k i a k e
 1418	1979	Amran et al. 1979	258	1979	purdu	purdu	p u r d u	purdu	p u r d u
 1440	1979	Amran et al. 1979	265	1979	eya	eya	e y a	eja	e j a
@@ -55,26 +55,26 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2167	1979	Amran et al. 1979	515	1979	kedo	kedo	k e d o	kedo	k e d o
 2202	1979	Amran et al. 1979	527	1979	kirdihiyuka	kirdihiyuka	k i r d i h i y u k a	kirdihijuka	k i r d i h i j u k a
 2206	1979	Amran et al. 1979	530	1979	kabukad'i	kabukad'i	k a b u k a d ' i	kabukadʔi	k a b u k a d ʔ i
-2228	1979	Amran et al. 1979	540	1979	huna waraaw	huna waraaw	h u n a # w a r aa w	huna waraːw	h u n a # w a r aː w
+2228	1979	Amran et al. 1979	540	1979	huna waraaw	huna waraaw	h u n a # w a r a a w	huna waraːw	h u n a # w a r aː w
 2253	1979	Amran et al. 1979	547	1979	daikkahede	daikkahede	d a i k k a h e d e	daikkahede	d a i k k a h e d e
 2260	1979	Amran et al. 1979	550	1979	kanika	kanika	k a n i k a	kanika	k a n i k a
 2329	1979	Amran et al. 1979	584	1979	ekue yakitaha do'ora	ekue yakitaha do'ora	e k u e # y a k i t a h a # d o ' o r a	ekue jakitaha doʔora	e k u e # j a k i t a h a # d o ʔ o r a
 2351	1979	Amran et al. 1979	593	1979	yahoma'e	yahoma'e	y a h o m a ' e	jahomaʔe	j a h o m a ʔ e
 2365	1979	Amran et al. 1979	599	1979	nehe	nehe	n e h e	nehe	n e h e
-2380	1979	Amran et al. 1979	607	1979	maau	maau	m aa u	maːu	m aː u
+2380	1979	Amran et al. 1979	607	1979	maau	maau	m a a u	maːu	m aː u
 2411	1979	Amran et al. 1979	615	1979	ebea ; eapi	ebea ; eapi	e b e a # ; # e a p i	ebea ; eapi	e b e a # ; # e a p i
 2447	1979	Amran et al. 1979	627	1979	wa pa yoy	wa pa yoy	w a # p a # y o y	wa pa joj	w a # p a # j o j
-2470	1979	Amran et al. 1979	637	1979	kaakih	kaakih	k aa k i h	kaːkih	k aː k i h
+2470	1979	Amran et al. 1979	637	1979	kaakih	kaakih	k a a k i h	kaːkih	k aː k i h
 2514	1979	Amran et al. 1979	654	1979	eadopo ; dapo	eadopo ; dapo	e a d o p o # ; # d a p o	eadopo ; dapo	e a d o p o # ; # d a p o
 2553	1979	Amran et al. 1979	662	1979	eono	eono	e o n o	eono	e o n o
-2752	1979	Amran et al. 1979	744	1979	kaau	kaau	k aa u	kaːu	k aː u
+2752	1979	Amran et al. 1979	744	1979	kaau	kaau	k a a u	kaːu	k aː u
 2770	1979	Amran et al. 1979	748	1979	purdu	purdu	p u r d u	purdu	p u r d u
 2792	1979	Amran et al. 1979	754	1979	yahipku kamuh	yahipku kamuh	y a h i p k u # k a m u h	jahipku kamuh	j a h i p k u # k a m u h
 2794	1979	Amran et al. 1979	755	1979	yahadih	yahadih	y a h a d i h	jahadih	j a h a d i h
 2877	1979	Amran et al. 1979	786	1979	kenan	kenan	k e n a n	kenan	k e n a n
 2911	1979	Amran et al. 1979	800	1979	eai	eai	e a i	eai	e a i
 2970	1979	Amran et al. 1979	828	1979	her	her	h e r	her	h e r
-3022	1979	Amran et al. 1979	846	1979	keepe	keepe	k ee p e	keːpe	k eː p e
+3022	1979	Amran et al. 1979	846	1979	keepe	keepe	k e e p e	keːpe	k eː p e
 3178	1979	Amran et al. 1979	899	1979	kipame	kipame	k i p a m e	kipame	k i p a m e
 3216	1979	Amran et al. 1979	912	1979	paruru	paruru	p a r u r u	paruru	p a r u r u
 3279	1979	Amran et al. 1979	934	1979	pe	pe	p e	pe	p e
@@ -99,7 +99,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3971	1979	Amran et al. 1979	1199	1979	apuha	apuha	a p u h a	apuha	a p u h a
 3999	1979	Amran et al. 1979	1212	1979	pakahdre	pakahdre	p a k a h d r e	pakahdre	p a k a h d r e
 4008	1979	Amran et al. 1979	1213	1979	poru	poru	p o r u	poru	p o r u
-4031	1979	Amran et al. 1979	1220	1979	puuke	puuke	p uu k e	puːke	p uː k e
+4031	1979	Amran et al. 1979	1220	1979	puuke	puuke	p u u k e	puːke	p uː k e
 4057	1979	Amran et al. 1979	1227	1979	paka'wa	paka'wa	p a k a ' w a	pakaʔwa	p a k a ʔ w a
 4137	1979	Amran et al. 1979	1257	1979	e'pururui ; purudu	e'pururui ; purudu	e ' p u r u r u i # ; # p u r u d u	eʔpururui ; purudu	e ʔ p u r u r u i # ; # p u r u d u
 4182	1979	Amran et al. 1979	1272	1979	ai ; inou	ai ; inou	a i # ; # i n o u	ai ; inou	a i # ; # i n o u
@@ -107,7 +107,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4278	1979	Amran et al. 1979	1309	1979	ekeme	ekeme	e k e m e	ekeme	e k e m e
 4322	1979	Amran et al. 1979	1330	1979	ehiuk	ehiuk	e h i u k	ehiuk	e h i u k
 4399	1979	Amran et al. 1979	1364	1979	yarupar	yarupar	y a r u p a r	jarupar	j a r u p a r
-4401	1979	Amran et al. 1979	1366	1979	paabuki	paabuki	p aa b u k i	paːbuki	p aː b u k i
+4401	1979	Amran et al. 1979	1366	1979	paabuki	paabuki	p a a b u k i	paːbuki	p aː b u k i
 4420	1979	Amran et al. 1979	1371	1979	meke	meke	m e k e	meke	m e k e
 4485	1979	Amran et al. 1979	1395	1979	panao	panao	p a n a o	panao	p a n a o
 4553	1979	Amran et al. 1979	1427	1979	ekaneai	ekaneai	e k a n e a i	ekaneai	e k a n e a i
@@ -137,16 +137,16 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5734	1979	Amran et al. 1979	1869	1979	edora	edora	e d o r a	edora	e d o r a
 5806	1979	Amran et al. 1979	1894	1979	yariye'eui	yariye'eui	y a r i y e ' e u i	jarijeʔeui	j a r i j e ʔ e u i
 5835	1979	Amran et al. 1979	1903	1979	pea	pea	p e a	pea	p e a
-5849	1979	Amran et al. 1979	1907	1979	ekeeh ; e keuh	ekeeh ; e keuh	e k ee h # ; # e # k e u h	ekeːh ; e keuh	e k eː h # ; # e # k e u h
+5849	1979	Amran et al. 1979	1907	1979	ekeeh ; e keuh	ekeeh ; e keuh	e k e e h # ; # e # k e u h	ekeːh ; e keuh	e k eː h # ; # e # k e u h
 6074	1979	Amran et al. 1979	1981	1979	kiheku	kiheku	k i h e k u	kiheku	k i h e k u
 6080	1979	Amran et al. 1979	1983	1979	yu'uyohob	yu'uyohob	y u ' u y o h o b	juʔujohob	j u ʔ u j o h o b
 6109	1979	Amran et al. 1979	1992	1979	eyuk	eyuk	e y u k	ejuk	e j u k
 6167	1979	Amran et al. 1979	2010	1979	weh	weh	w e h	weh	w e h
 6203	1979	Amran et al. 1979	2021	1979	nuik	nuik	n u i k	nuik	n u i k
 6228	1979	Amran et al. 1979	2029	1979	ekanoa	ekanoa	e k a n o a	ekanoa	e k a n o a
-6276	1979	Amran et al. 1979	2051	1979	daro waraaw	daro waraaw	d a r o # w a r aa w	daro waraːw	d a r o # w a r aː w
+6276	1979	Amran et al. 1979	2051	1979	daro waraaw	daro waraaw	d a r o # w a r a a w	daro waraːw	d a r o # w a r aː w
 6426	1979	Amran et al. 1979	2121	1979	eapedua	eapedua	e a p e d u a	eapedua	e a p e d u a
-6430	1979	Amran et al. 1979	2122	1979	koomimi	koomimi	k oo m i m i	koːmimi	k oː m i m i
+6430	1979	Amran et al. 1979	2122	1979	koomimi	koomimi	k o o m i m i	koːmimi	k oː m i m i
 6464	1979	Amran et al. 1979	2134	1979	kirdi'iri'e	kirdi'iri'e	k i r d i ' i r i ' e	kirdiʔiriʔe	k i r d i ʔ i r i ʔ e
 6505	1979	Amran et al. 1979	2149	1979	eia	eia	e i a	eia	e i a
 6544	1979	Amran et al. 1979	2162	1979	ekatera	ekatera	e k a t e r a	ekatera	e k a t e r a
@@ -156,7 +156,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6847	1979	Amran et al. 1979	2266	1979	e' ; e'i	e' ; e'i	e ' # ; # e ' i	eʔ ; eʔi	e ʔ # ; # e ʔ i
 6995	1979	Amran et al. 1979	2319	1979	naoman	naoman	n a o m a n	naoman	n a o m a n
 7005	1979	Amran et al. 1979	2320	1979	diobu	diobu	d i o b u	diobu	d i o b u
-7016	1979	Amran et al. 1979	2322	1979	kaab	kaab	k aa b	kaːb	k aː b
+7016	1979	Amran et al. 1979	2322	1979	kaab	kaab	k a a b	kaːb	k aː b
 7061	1979	Amran et al. 1979	2339	1979	orai	orai	o r a i	orai	o r a i
 7062	1979	Amran et al. 1979	2340	1979	kahuei	kahuei	k a h u e i	kahuei	k a h u e i
 7067	1979	Amran et al. 1979	2341	1979	ehe	ehe	e h e	ehe	e h e

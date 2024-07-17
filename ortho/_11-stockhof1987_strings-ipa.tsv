@@ -1,5 +1,5 @@
 entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_tokenised
-9	1895	Stockhof 1987	1	1895	èhōda	Ehooda	E h oo d a	ɛhoːda	ɛ h oː d a
+9	1895	Stockhof 1987	1	1895	èhōda	Ehooda	E h o o d a	ɛhoːda	ɛ h oː d a
 26	1895	Stockhof 1987	2	1895	èmanī	Emani	E m a n i	ɛmani	ɛ m a n i
 46	1895	Stockhof 1987	3	1895	adoewa ; adoewĕ	aduwa ; aduwė	a d u w a # ; # a d u w ė	aduwa ; aduwə	a d u w a # ; # a d u w ə
 59	1895	Stockhof 1987	4	1895	adoewĕ takajo kifahoek	aduwė takayO kifahuk	a d u w ė # t a k a y O # k i f a h u k	aduwə takajɔ kifahuk	a d u w ə # t a k a j ɔ # k i f a h u k
@@ -9,7 +9,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 120	1895	Stockhof 1987	9	1895	(k)akinĕ ; aki	'akinė ; aki	' a k i n ė # ; # a k i	ʔakinə ; aki	ʔ a k i n ə # ; # a k i
 136	1895	Stockhof 1987	10	1895	aliba	aliba	a l i b a	aliba	a l i b a
 153	1895	Stockhof 1987	11	1895	ariba adoewĕ	ariba aduwė	a r i b a # a d u w ė	ariba aduwə	a r i b a # a d u w ə
-168	1895	Stockhof 1987	12	1895	afai-īafā	afai-iafaa	a f a i - i a f aa	afai-iafaː	a f a i - i a f aː
+168	1895	Stockhof 1987	12	1895	afai-īafā	afai-iafaa	a f a i - i a f a a	afai-iafaː	a f a i - i a f aː
 189	1895	Stockhof 1987	14	1895	alibĕ taka	alibė taka	a l i b ė # t a k a	alibə taka	a l i b ə # t a k a
 202	1895	Stockhof 1987	15	1895	èămah	Eămah	E ă m a h	ɛᾰmah	ɛ ᾰ m a h
 215	1895	Stockhof 1987	16	1895	ama(na)	ama(na)	a m a ( n a )	ama(na)	a m a ( n a )
@@ -23,18 +23,18 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 326	1895	Stockhof 1987	25	1895	èbo	EbO	E b O	ɛbɔ	ɛ b ɔ
 349	1895	Stockhof 1987	27	1895	èfanoe ; èpanoe	Efanu ; Epanu	E f a n u # ; # E p a n u	ɛfanu ; ɛpanu	ɛ f a n u # ; # ɛ p a n u
 364	1895	Stockhof 1987	28	1895	èara	Eara	E a r a	ɛara	ɛ a r a
-375	1895	Stockhof 1987	29	1895	èara hōda	Eara hooda	E a r a # h oo d a	ɛara hoːda	ɛ a r a # h oː d a
+375	1895	Stockhof 1987	29	1895	èara hōda	Eara hooda	E a r a # h o o d a	ɛara hoːda	ɛ a r a # h oː d a
 381	1895	Stockhof 1987	30	1895	èara manie	Eara mani	E a r a # m a n i	ɛara mani	ɛ a r a # m a n i
 395	1895	Stockhof 1987	32	1895	iedjo	ijO	i j O	id͡ʒɔ	i d͡ʒ ɔ
-409	1895	Stockhof 1987	33	1895	baaĕ ; kāĕ ; kaaĕ	baaė ; kaaė ; kaaė	b a a ė # ; # k aa ė # ; # k a a ė	baaə ; kaːə ; kaaə	b a a ə # ; # k aː ə # ; # k a a ə
+409	1895	Stockhof 1987	33	1895	baaĕ ; kāĕ ; kaaĕ	baaė ; kaaė ; kaaė	b a a ė # ; # k a a ė # ; # k a a ė	baaə ; kaːə ; kaaə	b a a ə # ; # k aː ə # ; # k a a ə
 433	1895	Stockhof 1987	36	1895	kaik taka	kaik taka	k a i k # t a k a	kaik taka	k a i k # t a k a
 457	1895	Stockhof 1987	39	1895	kaiekŏkŏ(k)	kaikOkO'	k a i k O k O '	kaikɔkɔʔ	k a i k ɔ k ɔ ʔ
-474	1895	Stockhof 1987	40	1895	kariehā ; kaliehĕ ; kariehĕ ; karieha	karixaa ; kalixė ; karixė ; karixa	k a r i x aa # ; # k a l i x ė # ; # k a r i x ė # ; # k a r i x a	kariçaː ; kaliçə ; kariçə ; kariça	k a r i ç aː # ; # k a l i ç ə # ; # k a r i ç ə # ; # k a r i ç a
-488	1895	Stockhof 1987	41	1895	kāhao	kaahaO	k aa h a O	kaːhaɔ	k aː h a ɔ
+474	1895	Stockhof 1987	40	1895	kariehā ; kaliehĕ ; kariehĕ ; karieha	karixaa ; kalixė ; karixė ; karixa	k a r i x a a # ; # k a l i x ė # ; # k a r i x ė # ; # k a r i x a	kariçaː ; kaliçə ; kariçə ; kariça	k a r i ç aː # ; # k a l i ç ə # ; # k a r i ç ə # ; # k a r i ç a
+488	1895	Stockhof 1987	41	1895	kāhao	kaahaO	k a a h a O	kaːhaɔ	k aː h a ɔ
 496	1895	Stockhof 1987	42	1895	kèo	kEO	k E O	kɛɔ	k ɛ ɔ
-521	1895	Stockhof 1987	46	1895	kŏŏda	kOOda	k OO d a	kɔːda	k ɔː d a
+521	1895	Stockhof 1987	46	1895	kŏŏda	kOOda	k O O d a	kɔːda	k ɔː d a
 534	1895	Stockhof 1987	47	1895	èkiedai	Ekidai	E k i d a i	ɛkidai	ɛ k i d a i
-550	1895	Stockhof 1987	48	1895	kaŏrārie ; kaoerejĕ	kaOraari ; kaureyė	k a O r aa r i # ; # k a u r e y ė	kaɔraːri ; kaurejə	k a ɔ r aː r i # ; # k a u r e j ə
+550	1895	Stockhof 1987	48	1895	kaŏrārie ; kaoerejĕ	kaOraari ; kaureyė	k a O r a a r i # ; # k a u r e y ė	kaɔraːri ; kaurejə	k a ɔ r aː r i # ; # k a u r e j ə
 562	1895	Stockhof 1987	49	1895	èalahoe	Ealahu	E a l a h u	ɛalahu	ɛ a l a h u
 575	1895	Stockhof 1987	50	1895	èbŏ	EbO	E b O	ɛbɔ	ɛ b ɔ
 605	1895	Stockhof 1987	52	1895	minoe apŏ	minu apO	m i n u # a p O	minu apɔ	m i n u # a p ɔ
@@ -44,21 +44,21 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 657	1895	Stockhof 1987	59	1895	ŏk	Ok	O k	ɔk	ɔ k
 678	1895	Stockhof 1987	62	1895	părīk [kaoewĕ]	părik [kauwė]	p ă r i k # [ k a u w ė ]	pᾰrik [kauwə]	p ᾰ r i k # [ k a u w ə ]
 689	1895	Stockhof 1987	63	1895	bahèdji	bahEji	b a h E j i	bahɛd͡ʒi	b a h ɛ d͡ʒ i
-697	1895	Stockhof 1987	64	1895	[oeaba]ōdie	[uaba]oodi	[ u a b a ] oo d i	[uaba]oːdi	[ u a b a ] oː d i
+697	1895	Stockhof 1987	64	1895	[oeaba]ōdie	[uaba]oodi	[ u a b a ] o o d i	[uaba]oːdi	[ u a b a ] oː d i
 732	1895	Stockhof 1987	70	1895	poeroeroe (èoeloe) ; foeroeroe	pururu (Eulu) ; fururu	p u r u r u # ( E u l u ) # ; # f u r u r u	pururu (ɛulu) ; fururu	p u r u r u # ( ɛ u l u ) # ; # f u r u r u
-751	1895	Stockhof 1987	72	1895	èhāhā(k)	Ehaahaa'	E h aa h aa '	ɛhaːhaːʔ	ɛ h aː h aː ʔ
-767	1895	Stockhof 1987	73	1895	kāāfoeroe	kaafuru	k aa f u r u	kaːfuru	k aː f u r u
-784	1895	Stockhof 1987	75	1895	oewā	uwaa	u w aa	uwaː	u w aː
+751	1895	Stockhof 1987	72	1895	èhāhā(k)	Ehaahaa'	E h a a h a a '	ɛhaːhaːʔ	ɛ h aː h aː ʔ
+767	1895	Stockhof 1987	73	1895	kāāfoeroe	kaafuru	k a a f u r u	kaːfuru	k aː f u r u
+784	1895	Stockhof 1987	75	1895	oewā	uwaa	u w a a	uwaː	u w aː
 803	1895	Stockhof 1987	76	1895	èoba ; èobĕ ; èoeba ; èoebadiê	EOba ; EObė ; Euba ; Eubadiė	E O b a # ; # E O b ė # ; # E u b a # ; # E u b a d i ė	ɛɔba ; ɛɔbə ; ɛuba ; ɛubadiə	ɛ ɔ b a # ; # ɛ ɔ b ə # ; # ɛ u b a # ; # ɛ u b a d i ə
 820	1895	Stockhof 1987	77	1895	èoeloe ; èoedoe	Eulu ; Eudu	E u l u # ; # E u d u	ɛulu ; ɛudu	ɛ u l u # ; # ɛ u d u
 832	1895	Stockhof 1987	78	1895	itèbè ; dèbè	itEbE ; dEbE	i t E b E # ; # d E b E	itɛbɛ ; dɛbɛ	i t ɛ b ɛ # ; # d ɛ b ɛ
-861	1895	Stockhof 1987	90	1895	kèkiĕ abŏdō	kEkiė abOdoo	k E k i ė # a b O d oo	kɛkiə abɔdoː	k ɛ k i ə # a b ɔ d oː
-862	1895	Stockhof 1987	91	1895	kodanŏŏ	kOdanOO	k O d a n OO	kɔdanɔː	k ɔ d a n ɔː
-863	1895	Stockhof 1987	92	1895	kodāpākāhā	kOdaapaakaahaa	k O d aa p aa k aa h aa	kɔdaːpaːkaːhaː	k ɔ d aː p aː k aː h aː
+861	1895	Stockhof 1987	90	1895	kèkiĕ abŏdō	kEkiė abOdoo	k E k i ė # a b O d o o	kɛkiə abɔdoː	k ɛ k i ə # a b ɔ d oː
+862	1895	Stockhof 1987	91	1895	kodanŏŏ	kOdanOO	k O d a n O O	kɔdanɔː	k ɔ d a n ɔː
+863	1895	Stockhof 1987	92	1895	kodāpākāhā	kOdaapaakaahaa	k O d a a p a a k a a h a a	kɔdaːpaːkaːhaː	k ɔ d aː p aː k aː h aː
 878	1895	Stockhof 1987	98	1895	kidjĕrŏ	kijėrO	k i j ė r O	kid͡ʒərɔ	k i d͡ʒ ə r ɔ
 886	1895	Stockhof 1987	99	1895	fakidja	fakija	f a k i j a	fakid͡ʒa	f a k i d͡ʒ a
 887	1895	Stockhof 1987	100	1895	haèloedă(k)	haEludă'	h a E l u d ă '	haɛludᾰʔ	h a ɛ l u d ᾰ ʔ
-890	1895	Stockhof 1987	102	1895	ijabakoewā	iyabakuwaa	i y a b a k u w aa	ijabakuwaː	i j a b a k u w aː
+890	1895	Stockhof 1987	102	1895	ijabakoewā	iyabakuwaa	i y a b a k u w a a	ijabakuwaː	i j a b a k u w aː
 894	1895	Stockhof 1987	103	1895	panĕha	panėha	p a n ė h a	panəha	p a n ə h a
 908	1895	Stockhof 1987	108	1895	aboeha	abuha	a b u h a	abuha	a b u h a
 921	1895	Stockhof 1987	112	1895	na(k) poewanahalè	na' puwanahalE	n a ' # p u w a n a h a l E	naʔ puwanahalɛ	n a ʔ # p u w a n a h a l ɛ
@@ -71,8 +71,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 969	1895	Stockhof 1987	131	1895	èkihŏ	EkixO	E k i x O	ɛkiçɔ	ɛ k i ç ɔ
 976	1895	Stockhof 1987	133	1895	èoefĕ	Eufė	E u f ė	ɛufə	ɛ u f ə
 978	1895	Stockhof 1987	134	1895	mŏnŏ èoepĕ (ènŏnŏ?)	mOnO Eupė (EnOnO?)	m O n O # E u p ė # ( E n O n O ? )	mɔnɔ ɛupə (ɛnɔnɔ?)	m ɔ n ɔ # ɛ u p ə # ( ɛ n ɔ n ɔ ? )
-986	1895	Stockhof 1987	137	1895	pārāhāoedie	paaraahaaudi	p aa r aa h aa u d i	paːraːhaːudi	p aː r aː h aː u d i
-991	1895	Stockhof 1987	139	1895	alŏfāa ; arŏpāā	alOfaa ; arOpaa	a l O f aa # ; # a r O p aa	alɔfaː ; arɔpaː	a l ɔ f aː # ; # a r ɔ p aː
+986	1895	Stockhof 1987	137	1895	pārāhāoedie	paaraahaaudi	p a a r a a h a a u d i	paːraːhaːudi	p aː r aː h aː u d i
+991	1895	Stockhof 1987	139	1895	alŏfāa ; arŏpāā	alOfaa ; arOpaa	a l O f a a # ; # a r O p a a	alɔfaː ; arɔpaː	a l ɔ f aː # ; # a r ɔ p aː
 997	1895	Stockhof 1987	140	1895	fakè èhèa ; pakèèhèa	fakE EhEa ; pakEEhEa	f a k E # E h E a # ; # p a k E E h E a	fakɛ ɛhɛa ; pakɛɛhɛa	f a k ɛ # ɛ h ɛ a # ; # p a k ɛ ɛ h ɛ a
 1002	1895	Stockhof 1987	142	1895	hoăko(k) wa(k)	hOăkO' wa'	h O ă k O ' # w a '	hɔᾰkɔʔ waʔ	h ɔ ᾰ k ɔ ʔ # w a ʔ
 1007	1895	Stockhof 1987	143	1895	kababa	kababa	k a b a b a	kababa	k a b a b a
@@ -82,12 +82,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1042	1895	Stockhof 1987	152	1895	noenoehoei	nunuhui	n u n u h u i	nunuhui	n u n u h u i
 1046	1895	Stockhof 1987	153	1895	aboepèiejok	abupEiyOk	a b u p E i y O k	abupɛijɔk	a b u p ɛ i j ɔ k
 1051	1895	Stockhof 1987	154	1895	aharie ; aboepèiejok	ahari ; abupEiyOk	a h a r i # ; # a b u p E i y O k	ahari ; abupɛijɔk	a h a r i # ; # a b u p ɛ i j ɔ k
-1054	1895	Stockhof 1987	156	1895	kāākikieĕ	kaakikiė	k aa k i k i ė	kaːkikiə	k aː k i k i ə
+1054	1895	Stockhof 1987	156	1895	kāākikieĕ	kaakikiė	k a a k i k i ė	kaːkikiə	k aː k i k i ə
 1055	1895	Stockhof 1987	157	1895	èoko ĕ	EOkO ė	E O k O # ė	ɛɔkɔ ə	ɛ ɔ k ɔ # ə
 1065	1895	Stockhof 1987	160	1895	kahaoewĕ	kahauwė	k a h a u w ė	kahauwə	k a h a u w ə
 1076	1895	Stockhof 1987	163	1895	èkèh	EkEh	E k E h	ɛkɛh	ɛ k ɛ h
 1083	1895	Stockhof 1987	165	1895	hahapaoe	hahapau	h a h a p a u	hahapau	h a h a p a u
-1085	1895	Stockhof 1987	166	1895	èkahāe	Ekahaae	E k a h aa e	ɛkahaːe	ɛ k a h aː e
+1085	1895	Stockhof 1987	166	1895	èkahāe	Ekahaae	E k a h a a e	ɛkahaːe	ɛ k a h aː e
 1092	1895	Stockhof 1987	168	1895	èieboe	Eibu	E i b u	ɛibu	ɛ i b u
 1113	1895	Stockhof 1987	173	1895	abèha	abEha	a b E h a	abɛha	a b ɛ h a
 1122	1895	Stockhof 1987	175	1895	kahamoemoe	kahamumu	k a h a m u m u	kahamumu	k a h a m u m u
@@ -99,11 +99,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1157	1895	Stockhof 1987	186	1895	abaikĕ	abaikė	a b a i k ė	abaikə	a b a i k ə
 1162	1895	Stockhof 1987	187	1895	kabakīdjŏ	kabakijO	k a b a k i j O	kabakid͡ʒɔ	k a b a k i d͡ʒ ɔ
 1165	1895	Stockhof 1987	188	1895	èhèkoewĕ	EhEkuwė	E h E k u w ė	ɛhɛkuwə	ɛ h ɛ k u w ə
-1167	1895	Stockhof 1987	190	1895	kiā hoeŏ	kiaa huO	k i aa # h u O	kiaː huɔ	k i aː # h u ɔ
-1181	1895	Stockhof 1987	194	1895	ihiā	ixiaa	i x i aa	içiaː	i ç i aː
+1167	1895	Stockhof 1987	190	1895	kiā hoeŏ	kiaa huO	k i a a # h u O	kiaː huɔ	k i aː # h u ɔ
+1181	1895	Stockhof 1987	194	1895	ihiā	ixiaa	i x i a a	içiaː	i ç i aː
 1183	1895	Stockhof 1987	195	1895	ehadieĕ	ehadiė	e h a d i ė	ehadiə	e h a d i ə
 1185	1895	Stockhof 1987	196	1895	ejokie	eyOki	e y O k i	ejɔki	e j ɔ k i
-1197	1895	Stockhof 1987	198	1895	fārŏrīfŏ ; parorīpŏ ; parŏrīpŏ ; pārŏrīpŏ	faarOrifO ; parOripO ; parOripO ; paarOripO	f aa r O r i f O # ; # p a r O r i p O # ; # p a r O r i p O # ; # p aa r O r i p O	faːrɔrifɔ ; parɔripɔ ; parɔripɔ ; paːrɔripɔ	f aː r ɔ r i f ɔ # ; # p a r ɔ r i p ɔ # ; # p a r ɔ r i p ɔ # ; # p aː r ɔ r i p ɔ
+1197	1895	Stockhof 1987	198	1895	fārŏrīfŏ ; parorīpŏ ; parŏrīpŏ ; pārŏrīpŏ	faarOrifO ; parOripO ; parOripO ; paarOripO	f a a r O r i f O # ; # p a r O r i p O # ; # p a r O r i p O # ; # p a a r O r i p O	faːrɔrifɔ ; parɔripɔ ; parɔripɔ ; paːrɔripɔ	f aː r ɔ r i f ɔ # ; # p a r ɔ r i p ɔ # ; # p a r ɔ r i p ɔ # ; # p aː r ɔ r i p ɔ
 1213	1895	Stockhof 1987	205	1895	èoewĕhoă	EuwėhOă	E u w ė h O ă	ɛuwəhɔᾰ	ɛ u w ə h ɔ ᾰ
 1226	1895	Stockhof 1987	210	1895	oeakanroe	uakanru	u a k a n r u	uakanru	u a k a n r u
 1229	1895	Stockhof 1987	211	1895	baoeloe ; aoeloe	baulu ; aulu	b a u l u # ; # a u l u	baulu ; aulu	b a u l u # ; # a u l u
@@ -118,42 +118,42 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1302	1895	Stockhof 1987	233	1895	kakoeka	kakuka	k a k u k a	kakuka	k a k u k a
 1312	1895	Stockhof 1987	235	1895	kèèfa ; kèèfè	kEEfa ; kEEfE	k E E f a # ; # k E E f E	kɛɛfa ; kɛɛfɛ	k ɛ ɛ f a # ; # k ɛ ɛ f ɛ
 1339	1895	Stockhof 1987	240	1895	kaarahĕai	kaarahėai	k a a r a h ė a i	kaarahəai	k a a r a h ə a i
-1351	1895	Stockhof 1987	242	1895	kaākŏhŏ	kaakOhO	k aa k O h O	kaːkɔhɔ	k aː k ɔ h ɔ
+1351	1895	Stockhof 1987	242	1895	kaākŏhŏ	kaakOhO	k a a k O h O	kaːkɔhɔ	k aː k ɔ h ɔ
 1361	1895	Stockhof 1987	243	1895	kahièhiè	kahiEhiE	k a h i E h i E	kahiɛhiɛ	k a h i ɛ h i ɛ
 1364	1895	Stockhof 1987	244	1895	kŏrŏ-kŏrŏ	kOrO-kOrO	k O r O - k O r O	kɔrɔ-kɔrɔ	k ɔ r ɔ - k ɔ r ɔ
 1375	1895	Stockhof 1987	248	1895	kakènèbaka ; kakèbara	kakEnEbaka ; kakEbara	k a k E n E b a k a # ; # k a k E b a r a	kakɛnɛbaka ; kakɛbara	k a k ɛ n ɛ b a k a # ; # k a k ɛ b a r a
 1380	1895	Stockhof 1987	249	1895	kijakki	kiyakki	k i y a k k i	kijakki	k i j a k k i
 1399	1895	Stockhof 1987	252	1895	kahaoe(k)	kahau'	k a h a u '	kahauʔ	k a h a u ʔ
-1408	1895	Stockhof 1987	256	1895	kǎrāhā	kăraahaa	k ă r aa h aa	kᾰraːhaː	k ᾰ r aː h aː
+1408	1895	Stockhof 1987	256	1895	kǎrāhā	kăraahaa	k ă r a a h a a	kᾰraːhaː	k ᾰ r aː h aː
 1414	1895	Stockhof 1987	257	1895	koedŏdŏkŏ	kudOdOkO	k u d O d O k O	kudɔdɔkɔ	k u d ɔ d ɔ k ɔ
 1421	1895	Stockhof 1987	260	1895	kĕlèpè	kėlEpE	k ė l E p E	kəlɛpɛ	k ə l ɛ p ɛ
 1433	1895	Stockhof 1987	264	1895	fahoeroe ; pakoeroe	fahuru ; pakuru	f a h u r u # ; # p a k u r u	fahuru ; pakuru	f a h u r u # ; # p a k u r u
-1438	1895	Stockhof 1987	265	1895	èā	Eaa	E aa	ɛaː	ɛ aː
+1438	1895	Stockhof 1987	265	1895	èā	Eaa	E a a	ɛaː	ɛ aː
 1448	1895	Stockhof 1987	266	1895	panaŏ	panaO	p a n a O	panaɔ	p a n a ɔ
 1454	1895	Stockhof 1987	269	1895	fèfèja(k)ĕ	fEfEya'ė	f E f E y a ' ė	fɛfɛjaʔə	f ɛ f ɛ j a ʔ ə
 1455	1895	Stockhof 1987	270	1895	èèhandie	EEhandi	E E h a n d i	ɛɛhandi	ɛ ɛ h a n d i
 1458	1895	Stockhof 1987	271	1895	èpiko(k)	EpikO'	E p i k O '	ɛpikɔʔ	ɛ p i k ɔ ʔ
 1473	1895	Stockhof 1987	276	1895	èko(k)	EkO'	E k O '	ɛkɔʔ	ɛ k ɔ ʔ
 1476	1895	Stockhof 1987	277	1895	èafodiĕ	EafOdiė	E a f O d i ė	ɛafɔdiə	ɛ a f ɔ d i ə
-1491	1895	Stockhof 1987	283	1895	kikĕrā	kikėraa	k i k ė r aa	kikəraː	k i k ə r aː
-1495	1895	Stockhof 1987	284	1895	[oea ka bai]koā	[ua ka bai]kOaa	[ u a # k a # b a i ] k O aa	[ua ka bai]kɔaː	[ u a # k a # b a i ] k ɔ aː
+1491	1895	Stockhof 1987	283	1895	kikĕrā	kikėraa	k i k ė r a a	kikəraː	k i k ə r aː
+1495	1895	Stockhof 1987	284	1895	[oea ka bai]koā	[ua ka bai]kOaa	[ u a # k a # b a i ] k O a a	[ua ka bai]kɔaː	[ u a # k a # b a i ] k ɔ aː
 1515	1895	Stockhof 1987	290	1895	kihèkok	kixEkOk	k i x E k O k	kiçɛkɔk	k i ç ɛ k ɔ k
 1524	1895	Stockhof 1987	292	1895	èkŏkŏ(k)	EkOkO'	E k O k O '	ɛkɔkɔʔ	ɛ k ɔ k ɔ ʔ
 1532	1895	Stockhof 1987	294	1895	bèkŏkŏ(k)	bEkOkO'	b E k O k O '	bɛkɔkɔʔ	b ɛ k ɔ k ɔ ʔ
-1536	1895	Stockhof 1987	296	1895	pākŏkŏ(k)	paakOkO'	p aa k O k O '	paːkɔkɔʔ	p aː k ɔ k ɔ ʔ
+1536	1895	Stockhof 1987	296	1895	pākŏkŏ(k)	paakOkO'	p a a k O k O '	paːkɔkɔʔ	p aː k ɔ k ɔ ʔ
 1542	1895	Stockhof 1987	297	1895	ahŏpŏ(k)	ahOpO'	a h O p O '	ahɔpɔʔ	a h ɔ p ɔ ʔ
 1561	1895	Stockhof 1987	301	1895	janieka	yanika	y a n i k a	janika	j a n i k a
 1569	1895	Stockhof 1987	302	1895	amĕna(k)	amėna'	a m ė n a '	amənaʔ	a m ə n a ʔ
 1575	1895	Stockhof 1987	305	1895	kihanĕ	kixanė	k i x a n ė	kiçanə	k i ç a n ə
-1592	1895	Stockhof 1987	311	1895	èara fŏŏkie	Eara fOOki	E a r a # f OO k i	ɛara fɔːki	ɛ a r a # f ɔː k i
+1592	1895	Stockhof 1987	311	1895	èara fŏŏkie	Eara fOOki	E a r a # f O O k i	ɛara fɔːki	ɛ a r a # f ɔː k i
 1602	1895	Stockhof 1987	317	1895	kidoeroeka	kiduruka	k i d u r u k a	kiduruka	k i d u r u k a
 1608	1895	Stockhof 1987	318	1895	kakiho(k) ; kahihŏ ; kihŏ [èjobie]	kakixO' ; kahixO ; kixO [EyObi]	k a k i x O ' # ; # k a h i x O # ; # k i x O # [ E y O b i ]	kakiçɔʔ ; kahiçɔ ; kiçɔ [ɛjɔbi]	k a k i ç ɔ ʔ # ; # k a h i ç ɔ # ; # k i ç ɔ # [ ɛ j ɔ b i ]
 1610	1895	Stockhof 1987	319	1895	karahoe	karahu	k a r a h u	karahu	k a r a h u
 1613	1895	Stockhof 1987	321	1895	oehaibi	uhaibi	u h a i b i	uhaibi	u h a i b i
-1615	1895	Stockhof 1987	322	1895	fahabōha(k)	fahabooha'	f a h a b oo h a '	fahaboːhaʔ	f a h a b oː h a ʔ
+1615	1895	Stockhof 1987	322	1895	fahabōha(k)	fahabooha'	f a h a b o o h a '	fahaboːhaʔ	f a h a b oː h a ʔ
 1621	1895	Stockhof 1987	324	1895	kakau	kakau	k a k a u	kakau	k a k a u
 1624	1895	Stockhof 1987	325	1895	èoboewĕ	EObuwė	E O b u w ė	ɛɔbuwə	ɛ ɔ b u w ə
-1633	1895	Stockhof 1987	328	1895	èfŏŏfa ; èpŏŏpa	EfOOfa ; EpOOpa	E f OO f a # ; # E p OO p a	ɛfɔːfa ; ɛpɔːpa	ɛ f ɔː f a # ; # ɛ p ɔː p a
+1633	1895	Stockhof 1987	328	1895	èfŏŏfa ; èpŏŏpa	EfOOfa ; EpOOpa	E f O O f a # ; # E p O O p a	ɛfɔːfa ; ɛpɔːpa	ɛ f ɔː f a # ; # ɛ p ɔː p a
 1638	1895	Stockhof 1987	329	1895	èhokai ; hŏkai	EhOkai ; hOkai	E h O k a i # ; # h O k a i	ɛhɔkai ; hɔkai	ɛ h ɔ k a i # ; # h ɔ k a i
 1646	1895	Stockhof 1987	333	1895	kadifakoe	kadifaku	k a d i f a k u	kadifaku	k a d i f a k u
 1647	1895	Stockhof 1987	334	1895	parihoja(k)	parixOya'	p a r i x O y a '	pariçɔjaʔ	p a r i ç ɔ j a ʔ
@@ -161,17 +161,17 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1657	1895	Stockhof 1987	336	1895	aharie	ahari	a h a r i	ahari	a h a r i
 1664	1895	Stockhof 1987	338	1895	kīfoehaj	kifuhay	k i f u h a y	kifuhaj	k i f u h a j
 1671	1895	Stockhof 1987	339	1895	anoaha(k)	anOaha'	a n O a h a '	anɔahaʔ	a n ɔ a h a ʔ
-1677	1895	Stockhof 1987	344	1895	pŏŏkie	pOOki	p OO k i	pɔːki	p ɔː k i
-1681	1895	Stockhof 1987	347	1895	oefā	ufaa	u f aa	ufaː	u f aː
+1677	1895	Stockhof 1987	344	1895	pŏŏkie	pOOki	p O O k i	pɔːki	p ɔː k i
+1681	1895	Stockhof 1987	347	1895	oefā	ufaa	u f a a	ufaː	u f aː
 1683	1895	Stockhof 1987	348	1895	kiŏfaj	kiOfay	k i O f a y	kiɔfaj	k i ɔ f a j
 1687	1895	Stockhof 1987	349	1895	kolè [amie amie] ; kolè [poeha]	kOlE [ami ami] ; kOlE [puha]	k O l E # [ a m i # a m i ] # ; # k O l E # [ p u h a ]	kɔlɛ [ami ami] ; kɔlɛ [puha]	k ɔ l ɛ # [ a m i # a m i ] # ; # k ɔ l ɛ # [ p u h a ]
 1699	1895	Stockhof 1987	353	1895	ebae	ebae	e b a e	ebae	e b a e
 1705	1895	Stockhof 1987	354	1895	kikoha(k)	kikOha'	k i k O h a '	kikɔhaʔ	k i k ɔ h a ʔ
 1720	1895	Stockhof 1987	359	1895	mèo	mEO	m E O	mɛɔ	m ɛ ɔ
 1735	1895	Stockhof 1987	366	1895	pohanoema	pOhanuma	p O h a n u m a	pɔhanuma	p ɔ h a n u m a
-1743	1895	Stockhof 1987	369	1895	wakipoehaiā	wakipuhaiaa	w a k i p u h a i aa	wakipuhaiaː	w a k i p u h a i aː
+1743	1895	Stockhof 1987	369	1895	wakipoehaiā	wakipuhaiaa	w a k i p u h a i a a	wakipuhaiaː	w a k i p u h a i aː
 1760	1895	Stockhof 1987	375	1895	noki èodie	nOki EOdi	n O k i # E O d i	nɔki ɛɔdi	n ɔ k i # ɛ ɔ d i
-1767	1895	Stockhof 1987	376	1895	èfāfā ; epāpā	Efaafaa ; epaapaa	E f aa f aa # ; # e p aa p aa	ɛfaːfaː ; epaːpaː	ɛ f aː f aː # ; # e p aː p aː
+1767	1895	Stockhof 1987	376	1895	èfāfā ; epāpā	Efaafaa ; epaapaa	E f a a f a a # ; # e p a a p a a	ɛfaːfaː ; epaːpaː	ɛ f aː f aː # ; # e p aː p aː
 1784	1895	Stockhof 1987	379	1895	èkŏkŏ	EkOkO	E k O k O	ɛkɔkɔ	ɛ k ɔ k ɔ
 1795	1895	Stockhof 1987	381	1895	kidjie-kidjie	kiji-kiji	k i j i - k i j i	kid͡ʒi-kid͡ʒi	k i d͡ʒ i - k i d͡ʒ i
 1804	1895	Stockhof 1987	383	1895	èki(k)	Eki'	E k i '	ɛkiʔ	ɛ k i ʔ
@@ -190,7 +190,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1941	1895	Stockhof 1987	433	1895	èŏrŏjĕ aero èpo(k)	EOrOyė aerO EpO'	E O r O y ė # a e r O # E p O '	ɛɔrɔjə aerɔ ɛpɔʔ	ɛ ɔ r ɔ j ə # a e r ɔ # ɛ p ɔ ʔ
 1948	1895	Stockhof 1987	437	1895	karahadirĕ èpo(k)	karahadirė EpO'	k a r a h a d i r ė # E p O '	karahadirə ɛpɔʔ	k a r a h a d i r ə # ɛ p ɔ ʔ
 1956	1895	Stockhof 1987	440	1895	èèho	EEhO	E E h O	ɛɛhɔ	ɛ ɛ h ɔ
-1962	1895	Stockhof 1987	441	1895	kaäfoeā	ka'afuaa	k a'a f u aa	kaʔafuaː	k aʔa f u aː
+1962	1895	Stockhof 1987	441	1895	kaäfoeā	ka'afuaa	k a ' a f u a a	kaʔafuaː	k a ʔ a f u aː
 1967	1895	Stockhof 1987	443	1895	ĕkihŏ	ėkixO	ė k i x O	əkiçɔ	ə k i ç ɔ
 1968	1895	Stockhof 1987	444	1895	ènèĕ	EnEė	E n E ė	ɛnɛə	ɛ n ɛ ə
 1974	1895	Stockhof 1987	447	1895	faikiki	faikiki	f a i k i k i	faikiki	f a i k i k i
@@ -198,13 +198,13 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1976	1895	Stockhof 1987	449	1895	kīkī	kiki	k i k i	kiki	k i k i
 1995	1895	Stockhof 1987	456	1895	kokonĕ ; kokona	kOkOnė ; kOkOna	k O k O n ė # ; # k O k O n a	kɔkɔnə ; kɔkɔna	k ɔ k ɔ n ə # ; # k ɔ k ɔ n a
 1997	1895	Stockhof 1987	457	1895	paè	paE	p a E	paɛ	p a ɛ
-2006	1895	Stockhof 1987	461	1895	kiakahārie	kiakahaari	k i a k a h aa r i	kiakahaːri	k i a k a h aː r i
+2006	1895	Stockhof 1987	461	1895	kiakahārie	kiakahaari	k i a k a h a a r i	kiakahaːri	k i a k a h aː r i
 2019	1895	Stockhof 1987	465	1895	pahaboehă ; paboehă	pahabuhă ; pabuhă	p a h a b u h ă # ; # p a b u h ă	pahabuhᾰ ; pabuhᾰ	p a h a b u h ᾰ # ; # p a b u h ᾰ
 2026	1895	Stockhof 1987	466	1895	poeĕda(k)	puėda'	p u ė d a '	puədaʔ	p u ə d a ʔ
 2038	1895	Stockhof 1987	471	1895	kalèlèak ; kalèlèha	kalElEak ; kalElEha	k a l E l E a k # ; # k a l E l E h a	kalɛlɛak ; kalɛlɛha	k a l ɛ l ɛ a k # ; # k a l ɛ l ɛ h a
 2053	1895	Stockhof 1987	478	1895	pakaŏ	pakaO	p a k a O	pakaɔ	p a k a ɔ
-2055	1895	Stockhof 1987	479	1895	èēja	Eeeya	E ee y a	ɛeːja	ɛ eː j a
-2056	1895	Stockhof 1987	480	1895	kōāka oewe	kooaaka uwe	k oo aa k a # u w e	koːaːka uwe	k oː aː k a # u w e
+2055	1895	Stockhof 1987	479	1895	èēja	Eeeya	E e e y a	ɛeːja	ɛ eː j a
+2056	1895	Stockhof 1987	480	1895	kōāka oewe	kooaaka uwe	k o o a a k a # u w e	koːaːka uwe	k oː aː k a # u w e
 2062	1895	Stockhof 1987	483	1895	kabakè	kabakE	k a b a k E	kabakɛ	k a b a k ɛ
 2068	1895	Stockhof 1987	484	1895	(a)koina(k) ; koinak	(a)kOina' ; kOinak	( a ) k O i n a ' # ; # k O i n a k	(a)kɔinaʔ ; kɔinak	( a ) k ɔ i n a ʔ # ; # k ɔ i n a k
 2078	1895	Stockhof 1987	486	1895	koeŏdŏ	kuOdO	k u O d O	kuɔdɔ	k u ɔ d ɔ
@@ -219,7 +219,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2166	1895	Stockhof 1987	515	1895	bèlo	bElO	b E l O	bɛlɔ	b ɛ l ɔ
 2180	1895	Stockhof 1987	519	1895	èkainŏ(k)	EkainO'	E k a i n O '	ɛkainɔʔ	ɛ k a i n ɔ ʔ
 2183	1895	Stockhof 1987	521	1895	hŏbaoeĕ	hObauė	h O b a u ė	hɔbauə	h ɔ b a u ə
-2184	1895	Stockhof 1987	522	1895	hokŏrŏŏ	hOkOrOO	h O k O r OO	hɔkɔrɔː	h ɔ k ɔ r ɔː
+2184	1895	Stockhof 1987	522	1895	hokŏrŏŏ	hOkOrOO	h O k O r O O	hɔkɔrɔː	h ɔ k ɔ r ɔː
 2196	1895	Stockhof 1987	526	1895	kahankĕ	kahankė	k a h a n k ė	kahankə	k a h a n k ə
 2204	1895	Stockhof 1987	529	1895	èkoena	Ekuna	E k u n a	ɛkuna	ɛ k u n a
 2209	1895	Stockhof 1987	532	1895	èoekoek	Eukuk	E u k u k	ɛukuk	ɛ u k u k
@@ -241,7 +241,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2312	1895	Stockhof 1987	574	1895	ĕwak	ėwak	ė w a k	əwak	ə w a k
 2327	1895	Stockhof 1987	582	1895	ĕjoe	ėyu	ė y u	əju	ə j u
 2330	1895	Stockhof 1987	585	1895	eŏkŏk	eOkOk	e O k O k	eɔkɔk	e ɔ k ɔ k
-2331	1895	Stockhof 1987	586	1895	kīdāhăk	kidaahăk	k i d aa h ă k	kidaːhᾰk	k i d aː h ᾰ k
+2331	1895	Stockhof 1987	586	1895	kīdāhăk	kidaahăk	k i d a a h ă k	kidaːhᾰk	k i d aː h ᾰ k
 2334	1895	Stockhof 1987	588	1895	[hŏ]panènèĕ	[hO]panEnEė	[ h O ] p a n E n E ė	[hɔ]panɛnɛə	[ h ɔ ] p a n ɛ n ɛ ə
 2343	1895	Stockhof 1987	592	1895	mainŏk	mainOk	m a i n O k	mainɔk	m a i n ɔ k
 2350	1895	Stockhof 1987	593	1895	homainŏk	hOmainOk	h O m a i n O k	hɔmainɔk	h ɔ m a i n ɔ k
@@ -251,12 +251,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2425	1895	Stockhof 1987	618	1895	oemahaoe	umahau	u m a h a u	umahau	u m a h a u
 2430	1895	Stockhof 1987	620	1895	ijara(k) ; èara [no(k)a]	iyara' ; Eara [nO'a]	i y a r a ' # ; # E a r a # [ n O ' a ]	ijaraʔ ; ɛara [nɔʔa]	i j a r a ʔ # ; # ɛ a r a # [ n ɔ ʔ a ]
 2438	1895	Stockhof 1987	621	1895	èkarobă	EkarObă	E k a r O b ă	ɛkarɔbᾰ	ɛ k a r ɔ b ᾰ
-2453	1895	Stockhof 1987	630	1895	māāniha	maanixa	m aa n i x a	maːniça	m aː n i ç a
-2469	1895	Stockhof 1987	637	1895	kaäkihi	ka'akixi	k a'a k i x i	kaʔakiçi	k aʔa k i ç i
+2453	1895	Stockhof 1987	630	1895	māāniha	maanixa	m a a n i x a	maːniça	m aː n i ç a
+2469	1895	Stockhof 1987	637	1895	kaäkihi	ka'akixi	k a ' a k i x i	kaʔakiçi	k a ʔ a k i ç i
 2476	1895	Stockhof 1987	638	1895	makiha(k)	makixa'	m a k i x a '	makiçaʔ	m a k i ç a ʔ
 2483	1895	Stockhof 1987	641	1895	ènoha	EnOha	E n O h a	ɛnɔha	ɛ n ɔ h a
 2484	1895	Stockhof 1987	642	1895	kahaoe(k)	kahau'	k a h a u '	kahauʔ	k a h a u ʔ
-2486	1895	Stockhof 1987	643	1895	abaoea ija ŏnijāk	abaua iya Oniyaak	a b a u a # i y a # O n i y aa k	abaua ija ɔnijaːk	a b a u a # i j a # ɔ n i j aː k
+2486	1895	Stockhof 1987	643	1895	abaoea ija ŏnijāk	abaua iya Oniyaak	a b a u a # i y a # O n i y a a k	abaua ija ɔnijaːk	a b a u a # i j a # ɔ n i j aː k
 2491	1895	Stockhof 1987	646	1895	nioekienio(k)	niukiniO'	n i u k i n i O '	niukiniɔʔ	n i u k i n i ɔ ʔ
 2492	1895	Stockhof 1987	647	1895	poeroehoei	puruhui	p u r u h u i	puruhui	p u r u h u i
 2495	1895	Stockhof 1987	649	1895	nèè	nEE	n E E	nɛɛ	n ɛ ɛ
@@ -273,15 +273,15 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2602	1895	Stockhof 1987	680	1895	hokeora(k) ahèlĕ	hOkeOra' ahElė	h O k e O r a ' # a h E l ė	hɔkeɔraʔ ahɛlə	h ɔ k e ɔ r a ʔ # a h ɛ l ə
 2603	1895	Stockhof 1987	681	1895	karahèlă	karahElă	k a r a h E l ă	karahɛlᾰ	k a r a h ɛ l ᾰ
 2604	1895	Stockhof 1987	682	1895	piefie	pifi	p i f i	pifi	p i f i
-2605	1895	Stockhof 1987	683	1895	hōda hōda	hooda hooda	h oo d a # h oo d a	hoːda hoːda	h oː d a # h oː d a
+2605	1895	Stockhof 1987	683	1895	hōda hōda	hooda hooda	h o o d a # h o o d a	hoːda hoːda	h oː d a # h oː d a
 2609	1895	Stockhof 1987	685	1895	kapaleàbŏ	kapaleabO	k a p a l e a b O	kapaleabɔ	k a p a l e a b ɔ
 2638	1895	Stockhof 1987	697	1895	kifèora(k) ; kipèora(k)	kifEOra' ; kipEOra'	k i f E O r a ' # ; # k i p E O r a '	kifɛɔraʔ ; kipɛɔraʔ	k i f ɛ ɔ r a ʔ # ; # k i p ɛ ɔ r a ʔ
 2646	1895	Stockhof 1987	701	1895	ahae	ahae	a h a e	ahae	a h a e
-2652	1895	Stockhof 1987	707	1895	èfāā [mahiĕ]	Efaa [mahiė]	E f aa # [ m a h i ė ]	ɛfaː [mahiə]	ɛ f aː # [ m a h i ə ]
+2652	1895	Stockhof 1987	707	1895	èfāā [mahiĕ]	Efaa [mahiė]	E f a a # [ m a h i ė ]	ɛfaː [mahiə]	ɛ f aː # [ m a h i ə ]
 2654	1895	Stockhof 1987	708	1895	mŏkŏkŏ	mOkOkO	m O k O k O	mɔkɔkɔ	m ɔ k ɔ k ɔ
-2659	1895	Stockhof 1987	710	1895	kiŏhā	kiOhaa	k i O h aa	kiɔhaː	k i ɔ h aː
+2659	1895	Stockhof 1987	710	1895	kiŏhā	kiOhaa	k i O h a a	kiɔhaː	k i ɔ h aː
 2663	1895	Stockhof 1987	711	1895	èieboe	Eibu	E i b u	ɛibu	ɛ i b u
-2676	1895	Stockhof 1987	715	1895	kahĕdiak ; baēdiăk ; [dŏboe]kabandiăk	kahėdiak ; baeediăk ; [dObu]kabandiăk	k a h ė d i a k # ; # b a ee d i ă k # ; # [ d O b u ] k a b a n d i ă k	kahədiak ; baeːdiᾰk ; [dɔbu]kabandiᾰk	k a h ə d i a k # ; # b a eː d i ᾰ k # ; # [ d ɔ b u ] k a b a n d i ᾰ k
+2676	1895	Stockhof 1987	715	1895	kahĕdiak ; baēdiăk ; [dŏboe]kabandiăk	kahėdiak ; baeediăk ; [dObu]kabandiăk	k a h ė d i a k # ; # b a e e d i ă k # ; # [ d O b u ] k a b a n d i ă k	kahədiak ; baeːdiᾰk ; [dɔbu]kabandiᾰk	k a h ə d i a k # ; # b a eː d i ᾰ k # ; # [ d ɔ b u ] k a b a n d i ᾰ k
 2685	1895	Stockhof 1987	718	1895	moko èarie ; moko èodie	mOkO Eari ; mOkO EOdi	m O k O # E a r i # ; # m O k O # E O d i	mɔkɔ ɛari ; mɔkɔ ɛɔdi	m ɔ k ɔ # ɛ a r i # ; # m ɔ k ɔ # ɛ ɔ d i
 2689	1895	Stockhof 1987	720	1895	poeroe èjobie	puru EyObi	p u r u # E y O b i	puru ɛjɔbi	p u r u # ɛ j ɔ b i
 2693	1895	Stockhof 1987	722	1895	koepènobaka	kupEnObaka	k u p E n O b a k a	kupɛnɔbaka	k u p ɛ n ɔ b a k a
@@ -305,10 +305,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2838	1895	Stockhof 1987	771	1895	kifahoekjo alibĕ adoewĕ	kifahukyO alibė aduwė	k i f a h u k y O # a l i b ė # a d u w ė	kifahukjɔ alibə aduwə	k i f a h u k j ɔ # a l i b ə # a d u w ə
 2844	1895	Stockhof 1987	772	1895	pafoeroe	pafuru	p a f u r u	pafuru	p a f u r u
 2849	1895	Stockhof 1987	775	1895	èoekaikŏ	EukaikO	E u k a i k O	ɛukaikɔ	ɛ u k a i k ɔ
-2862	1895	Stockhof 1987	781	1895	[oewa]bālā	[uwa]baalaa	[ u w a ] b aa l aa	[uwa]baːlaː	[ u w a ] b aː l aː
+2862	1895	Stockhof 1987	781	1895	[oewa]bālā	[uwa]baalaa	[ u w a ] b a a l a a	[uwa]baːlaː	[ u w a ] b aː l aː
 2869	1895	Stockhof 1987	783	1895	èhouka ; èhoukè	EhOuka ; EhOukE	E h O u k a # ; # E h O u k E	ɛhɔuka ; ɛhɔukɛ	ɛ h ɔ u k a # ; # ɛ h ɔ u k ɛ
 2876	1895	Stockhof 1987	786	1895	kanoeoenoe ; kaunoeoenoe	kanuunu ; kaunuunu	k a n u u n u # ; # k a u n u u n u	kanuunu ; kaunuunu	k a n u u n u # ; # k a u n u u n u
-2883	1895	Stockhof 1987	787	1895	kauāpŏ ; kau-apŏ	kauaapO ; kau-apO	k a u aa p O # ; # k a u - a p O	kauaːpɔ ; kau-apɔ	k a u aː p ɔ # ; # k a u - a p ɔ
+2883	1895	Stockhof 1987	787	1895	kauāpŏ ; kau-apŏ	kauaapO ; kau-apO	k a u a a p O # ; # k a u - a p O	kauaːpɔ ; kau-apɔ	k a u aː p ɔ # ; # k a u - a p ɔ
 2886	1895	Stockhof 1987	788	1895	aboehŏ	abuhO	a b u h O	abuhɔ	a b u h ɔ
 2889	1895	Stockhof 1987	789	1895	eapoeha	eapuha	e a p u h a	eapuha	e a p u h a
 2890	1895	Stockhof 1987	790	1895	èafauje	Eafauye	E a f a u y e	ɛafauje	ɛ a f a u j e
@@ -322,13 +322,13 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2901	1895	Stockhof 1987	798	1895	nè(k)è	nE'E	n E ' E	nɛʔɛ	n ɛ ʔ ɛ
 2910	1895	Stockhof 1987	800	1895	eàjo	eayO	e a y O	eajɔ	e a j ɔ
 2935	1895	Stockhof 1987	814	1895	aribĕ	aribė	a r i b ė	aribə	a r i b ə
-2942	1895	Stockhof 1987	816	1895	koinŏnā	kOinOnaa	k O i n O n aa	kɔinɔnaː	k ɔ i n ɔ n aː
+2942	1895	Stockhof 1987	816	1895	koinŏnā	kOinOnaa	k O i n O n a a	kɔinɔnaː	k ɔ i n ɔ n aː
 2943	1895	Stockhof 1987	817	1895	fakaafie	fakaafi	f a k a a f i	fakaafi	f a k a a f i
 2944	1895	Stockhof 1987	818	1895	pamiere	pamire	p a m i r e	pamire	p a m i r e
 2950	1895	Stockhof 1987	821	1895	pakoewok	pakuwOk	p a k u w O k	pakuwɔk	p a k u w ɔ k
 2955	1895	Stockhof 1987	823	1895	kadarao	kadaraO	k a d a r a O	kadaraɔ	k a d a r a ɔ
 2960	1895	Stockhof 1987	824	1895	ènafa	Enafa	E n a f a	ɛnafa	ɛ n a f a
-2962	1895	Stockhof 1987	825	1895	kiedarāk	kidaraak	k i d a r aa k	kidaraːk	k i d a r aː k
+2962	1895	Stockhof 1987	825	1895	kiedarāk	kidaraak	k i d a r a a k	kidaraːk	k i d a r aː k
 2965	1895	Stockhof 1987	827	1895	èhikoe bèo	Ehiku bEO	E h i k u # b E O	ɛhiku bɛɔ	ɛ h i k u # b ɛ ɔ
 2969	1895	Stockhof 1987	828	1895	(è)hèla	(E)hEla	( E ) h E l a	(ɛ)hɛla	( ɛ ) h ɛ l a
 2988	1895	Stockhof 1987	833	1895	èdŏdie	EdOdi	E d O d i	ɛdɔdi	ɛ d ɔ d i
@@ -337,9 +337,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3006	1895	Stockhof 1987	840	1895	kafèfo	kafEfO	k a f E f O	kafɛfɔ	k a f ɛ f ɔ
 3008	1895	Stockhof 1987	842	1895	èhijoe	Ehiyu	E h i y u	ɛhiju	ɛ h i j u
 3012	1895	Stockhof 1987	843	1895	eòemŏ	eOemO	e O e m O	eɔemɔ	e ɔ e m ɔ
-3039	1895	Stockhof 1987	850	1895	[èkaka] kabājĕoi	[Ekaka] kabaayėOi	[ E k a k a ] # k a b aa y ė O i	[ɛkaka] kabaːjəɔi	[ ɛ k a k a ] # k a b aː j ə ɔ i
+3039	1895	Stockhof 1987	850	1895	[èkaka] kabājĕoi	[Ekaka] kabaayėOi	[ E k a k a ] # k a b a a y ė O i	[ɛkaka] kabaːjəɔi	[ ɛ k a k a ] # k a b aː j ə ɔ i
 3040	1895	Stockhof 1987	851	1895	èmèhè(k)	EmEhE'	E m E h E '	ɛmɛhɛʔ	ɛ m ɛ h ɛ ʔ
-3056	1895	Stockhof 1987	860	1895	hiārā nŏā	hiaaraa nOaa	h i aa r aa # n O aa	hiaːraː nɔaː	h i aː r aː # n ɔ aː
+3056	1895	Stockhof 1987	860	1895	hiārā nŏā	hiaaraa nOaa	h i a a r a a # n O a a	hiaːraː nɔaː	h i aː r aː # n ɔ aː
 3062	1895	Stockhof 1987	862	1895	pakèho	pakEhO	p a k E h O	pakɛhɔ	p a k ɛ h ɔ
 3068	1895	Stockhof 1987	863	1895	èkoe(k)	Eku'	E k u '	ɛkuʔ	ɛ k u ʔ
 3078	1895	Stockhof 1987	867	1895	èŏkoewĕ	EOkuwė	E O k u w ė	ɛɔkuwə	ɛ ɔ k u w ə
@@ -360,44 +360,44 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3259	1895	Stockhof 1987	928	1895	kiaki-fèoeĕ	kiaki-fEuė	k i a k i - f E u ė	kiaki-fɛuə	k i a k i - f ɛ u ə
 3266	1895	Stockhof 1987	931	1895	amiemie	amimi	a m i m i	amimi	a m i m i
 3268	1895	Stockhof 1987	932	1895	nŏwèk	nOwEk	n O w E k	nɔwɛk	n ɔ w ɛ k
-3278	1895	Stockhof 1987	934	1895	[wāhā]boepè	[waahaa]bupE	[ w aa h aa ] b u p E	[waːhaː]bupɛ	[ w aː h aː ] b u p ɛ
+3278	1895	Stockhof 1987	934	1895	[wāhā]boepè	[waahaa]bupE	[ w a a h a a ] b u p E	[waːhaː]bupɛ	[ w aː h aː ] b u p ɛ
 3287	1895	Stockhof 1987	937	1895	kiŏmahoe ; moemahoe	kiOmahu ; mumahu	k i O m a h u # ; # m u m a h u	kiɔmahu ; mumahu	k i ɔ m a h u # ; # m u m a h u
-3358	1895	Stockhof 1987	966	1895	kaoewe ; kaoewa ; kāoewa ; kāoewŏ	kauwe ; kauwa ; kaauwa ; kaauwO	k a u w e # ; # k a u w a # ; # k aa u w a # ; # k aa u w O	kauwe ; kauwa ; kaːuwa ; kaːuwɔ	k a u w e # ; # k a u w a # ; # k aː u w a # ; # k aː u w ɔ
+3358	1895	Stockhof 1987	966	1895	kaoewe ; kaoewa ; kāoewa ; kāoewŏ	kauwe ; kauwa ; kaauwa ; kaauwO	k a u w e # ; # k a u w a # ; # k a a u w a # ; # k a a u w O	kauwe ; kauwa ; kaːuwa ; kaːuwɔ	k a u w e # ; # k a u w a # ; # k aː u w a # ; # k aː u w ɔ
 3367	1895	Stockhof 1987	967	1895	koina	kOina	k O i n a	kɔina	k ɔ i n a
 3377	1895	Stockhof 1987	969	1895	dŏboe[kabandiăk]	dObu[kabandiăk]	d O b u [ k a b a n d i ă k ]	dɔbu[kabandiᾰk]	d ɔ b u [ k a b a n d i ᾰ k ]
 3391	1895	Stockhof 1987	973	1895	na afoeaa(k)	na afuaa'	n a # a f u a a '	na afuaaʔ	n a # a f u a a ʔ
 3403	1895	Stockhof 1987	975	1895	oefoenai	ufunai	u f u n a i	ufunai	u f u n a i
 3405	1895	Stockhof 1987	976	1895	na(k) poenana	na' punana	n a ' # p u n a n a	naʔ punana	n a ʔ # p u n a n a
 3409	1895	Stockhof 1987	977	1895	dŏdŏ	dOdO	d O d O	dɔdɔ	d ɔ d ɔ
-3417	1895	Stockhof 1987	978	1895	ŏwahŏdā	OwahOdaa	O w a h O d aa	ɔwahɔdaː	ɔ w a h ɔ d aː
-3424	1895	Stockhof 1987	979	1895	akŏmā	akOmaa	a k O m aa	akɔmaː	a k ɔ m aː
-3425	1895	Stockhof 1987	980	1895	ijahŏmā	iyahOmaa	i y a h O m aa	ijahɔmaː	i j a h ɔ m aː
+3417	1895	Stockhof 1987	978	1895	ŏwahŏdā	OwahOdaa	O w a h O d a a	ɔwahɔdaː	ɔ w a h ɔ d aː
+3424	1895	Stockhof 1987	979	1895	akŏmā	akOmaa	a k O m a a	akɔmaː	a k ɔ m aː
+3425	1895	Stockhof 1987	980	1895	ijahŏmā	iyahOmaa	i y a h O m a a	ijahɔmaː	i j a h ɔ m aː
 3427	1895	Stockhof 1987	981	1895	èkiafŏ	EkiafO	E k i a f O	ɛkiafɔ	ɛ k i a f ɔ
 3434	1895	Stockhof 1987	983	1895	èamaha	Eamaha	E a m a h a	ɛamaha	ɛ a m a h a
 3448	1895	Stockhof 1987	991	1895	kakīnīfĕ	kakinifė	k a k i n i f ė	kakinifə	k a k i n i f ə
 3456	1895	Stockhof 1987	994	1895	bakèkèk	bakEkEk	b a k E k E k	bakɛkɛk	b a k ɛ k ɛ k
-3457	1895	Stockhof 1987	995	1895	èēja(k)	Eeeya'	E ee y a '	ɛeːjaʔ	ɛ eː j a ʔ
+3457	1895	Stockhof 1987	995	1895	èēja(k)	Eeeya'	E e e y a '	ɛeːjaʔ	ɛ eː j a ʔ
 3458	1895	Stockhof 1987	996	1895	pakakak	pakakak	p a k a k a k	pakakak	p a k a k a k
 3467	1895	Stockhof 1987	1001	1895	kikèŏfa	kikEOfa	k i k E O f a	kikɛɔfa	k i k ɛ ɔ f a
 3468	1895	Stockhof 1987	1002	1895	kèaba baoeŏ	kEaba bauO	k E a b a # b a u O	kɛaba bauɔ	k ɛ a b a # b a u ɔ
 3471	1895	Stockhof 1987	1003	1895	ŏmŏ(kie)	OmO(ki)	O m O ( k i )	ɔmɔ(ki)	ɔ m ɔ ( k i )
-3475	1895	Stockhof 1987	1005	1895	kĕmoekā(k)	kėmukaa'	k ė m u k aa '	kəmukaːʔ	k ə m u k aː ʔ
-3483	1895	Stockhof 1987	1007	1895	ijahŏmā	iyahOmaa	i y a h O m aa	ijahɔmaː	i j a h ɔ m aː
+3475	1895	Stockhof 1987	1005	1895	kĕmoekā(k)	kėmukaa'	k ė m u k a a '	kəmukaːʔ	k ə m u k aː ʔ
+3483	1895	Stockhof 1987	1007	1895	ijahŏmā	iyahOmaa	i y a h O m a a	ijahɔmaː	i j a h ɔ m aː
 3487	1895	Stockhof 1987	1008	1895	kidahô	kidahO	k i d a h O	kidahɔ	k i d a h ɔ
 3488	1895	Stockhof 1987	1009	1895	kahakoudĕ	kahakOudė	k a h a k O u d ė	kahakɔudə	k a h a k ɔ u d ə
 3510	1895	Stockhof 1987	1017	1895	èo(k)	EO'	E O '	ɛɔʔ	ɛ ɔ ʔ
 3513	1895	Stockhof 1987	1018	1895	kajojo	kayOyO	k a y O y O	kajɔjɔ	k a j ɔ j ɔ
-3519	1895	Stockhof 1987	1022	1895	māājòk	maayOk	m aa y O k	maːjɔk	m aː j ɔ k
+3519	1895	Stockhof 1987	1022	1895	māājòk	maayOk	m a a y O k	maːjɔk	m aː j ɔ k
 3527	1895	Stockhof 1987	1027	1895	mèhèbahoe(k)	mEhEbahu'	m E h E b a h u '	mɛhɛbahuʔ	m ɛ h ɛ b a h u ʔ
 3547	1895	Stockhof 1987	1035	1895	kija	kiya	k i y a	kija	k i j a
 3562	1895	Stockhof 1987	1041	1895	kapoehŏ èoeloe	kapuhO Eulu	k a p u h O # E u l u	kapuhɔ ɛulu	k a p u h ɔ # ɛ u l u
 3575	1895	Stockhof 1987	1047	1895	kidĕhoi	kidėhOi	k i d ė h O i	kidəhɔi	k i d ə h ɔ i
-3583	1895	Stockhof 1987	1048	1895	èbākoe	Ebaaku	E b aa k u	ɛbaːku	ɛ b aː k u
+3583	1895	Stockhof 1987	1048	1895	èbākoe	Ebaaku	E b a a k u	ɛbaːku	ɛ b aː k u
 3597	1895	Stockhof 1987	1053	1895	èijŏ	EiyO	E i y O	ɛijɔ	ɛ i j ɔ
 3620	1895	Stockhof 1987	1061	1895	itèk	itEk	i t E k	itɛk	i t ɛ k
 3626	1895	Stockhof 1987	1062	1895	arè(k) ; adè(k)	arE' ; adE'	a r E ' # ; # a d E '	arɛʔ ; adɛʔ	a r ɛ ʔ # ; # a d ɛ ʔ
 3629	1895	Stockhof 1987	1065	1895	èa kanapoeĕ	Ea kanapuė	E a # k a n a p u ė	ɛa kanapuə	ɛ a # k a n a p u ə
-3630	1895	Stockhof 1987	1066	1895	akōma(k)	akooma'	a k oo m a '	akoːmaʔ	a k oː m a ʔ
+3630	1895	Stockhof 1987	1066	1895	akōma(k)	akooma'	a k o o m a '	akoːmaʔ	a k oː m a ʔ
 3633	1895	Stockhof 1987	1068	1895	karohajĕ	karOhayė	k a r O h a y ė	karɔhajə	k a r ɔ h a j ə
 3634	1895	Stockhof 1987	1069	1895	pakè èbŏ	pakE EbO	p a k E # E b O	pakɛ ɛbɔ	p a k ɛ # ɛ b ɔ
 3635	1895	Stockhof 1987	1070	1895	pienoekak	pinukak	p i n u k a k	pinukak	p i n u k a k
@@ -418,7 +418,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3707	1895	Stockhof 1987	1097	1895	kamioe	kamiu	k a m i u	kamiu	k a m i u
 3717	1895	Stockhof 1987	1099	1895	kohorijo	kOhOriyO	k O h O r i y O	kɔhɔrijɔ	k ɔ h ɔ r i j ɔ
 3728	1895	Stockhof 1987	1104	1895	apiha ; afika	apixa ; afika	a p i x a # ; # a f i k a	apiça ; afika	a p i ç a # ; # a f i k a
-3735	1895	Stockhof 1987	1106	1895	èŏdā	EOdaa	E O d aa	ɛɔdaː	ɛ ɔ d aː
+3735	1895	Stockhof 1987	1106	1895	èŏdā	EOdaa	E O d a a	ɛɔdaː	ɛ ɔ d aː
 3740	1895	Stockhof 1987	1107	1895	kinŏnŏ	kinOnO	k i n O n O	kinɔnɔ	k i n ɔ n ɔ
 3759	1895	Stockhof 1987	1115	1895	kŏnjŏk	kOñOk	k O ñ O k	kɔɲɔk	k ɔ ɲ ɔ k
 3766	1895	Stockhof 1987	1116	1895	èabanjŏk	EabañOk	E a b a ñ O k	ɛabaɲɔk	ɛ a b a ɲ ɔ k
@@ -435,11 +435,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3887	1895	Stockhof 1987	1160	1895	pakamaè	pakamaE	p a k a m a E	pakamaɛ	p a k a m a ɛ
 3895	1895	Stockhof 1987	1161	1895	kèfoe	kEfu	k E f u	kɛfu	k ɛ f u
 3904	1895	Stockhof 1987	1164	1895	èhŏboe	EhObu	E h O b u	ɛhɔbu	ɛ h ɔ b u
-3915	1895	Stockhof 1987	1169	1895	èaaniā	Eaaniaa	E a a n i aa	ɛaaniaː	ɛ a a n i aː
+3915	1895	Stockhof 1987	1169	1895	èaaniā	Eaaniaa	E a a n i a a	ɛaaniaː	ɛ a a n i aː
 3920	1895	Stockhof 1987	1172	1895	kiàkoebai	kiakubai	k i a k u b a i	kiakubai	k i a k u b a i
-3941	1895	Stockhof 1987	1185	1895	èiefoe [akŏmā]	Eifu [akOmaa]	E i f u # [ a k O m aa ]	ɛifu [akɔmaː]	ɛ i f u # [ a k ɔ m aː ]
+3941	1895	Stockhof 1987	1185	1895	èiefoe [akŏmā]	Eifu [akOmaa]	E i f u # [ a k O m a a ]	ɛifu [akɔmaː]	ɛ i f u # [ a k ɔ m aː ]
 3979	1895	Stockhof 1987	1204	1895	dadă oeloe	dadă ulu	d a d ă # u l u	dadᾰ ulu	d a d ᾰ # u l u
-3998	1895	Stockhof 1987	1212	1895	patăhālè	patăhaalE	p a t ă h aa l E	patᾰhaːlɛ	p a t ᾰ h aː l ɛ
+3998	1895	Stockhof 1987	1212	1895	patăhālè	patăhaalE	p a t ă h a a l E	patᾰhaːlɛ	p a t ᾰ h aː l ɛ
 4007	1895	Stockhof 1987	1213	1895	poeroe	puru	p u r u	puru	p u r u
 4030	1895	Stockhof 1987	1220	1895	èpoe	Epu	E p u	ɛpu	ɛ p u
 4048	1895	Stockhof 1987	1223	1895	pakamai	pakamai	p a k a m a i	pakamai	p a k a m a i
@@ -448,7 +448,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4065	1895	Stockhof 1987	1228	1895	akida(k)	akida'	a k i d a '	akidaʔ	a k i d a ʔ
 4066	1895	Stockhof 1987	1229	1895	kidak	kidak	k i d a k	kidak	k i d a k
 4067	1895	Stockhof 1987	1230	1895	kidĕhaoe	kidėhau	k i d ė h a u	kidəhau	k i d ə h a u
-4068	1895	Stockhof 1987	1231	1895	oewa āpoe hāja(k)	uwa aapu haaya'	u w a # aa p u # h aa y a '	uwa aːpu haːjaʔ	u w a # aː p u # h aː j a ʔ
+4068	1895	Stockhof 1987	1231	1895	oewa āpoe hāja(k)	uwa aapu haaya'	u w a # a a p u # h a a y a '	uwa aːpu haːjaʔ	u w a # aː p u # h aː j a ʔ
 4069	1895	Stockhof 1987	1232	1895	oewakaki	uwakaki	u w a k a k i	uwakaki	u w a k a k i
 4073	1895	Stockhof 1987	1233	1895	kakoeka	kakuka	k a k u k a	kakuka	k a k u k a
 4077	1895	Stockhof 1987	1234	1895	kahioe	kahiu	k a h i u	kahiu	k a h i u
@@ -466,7 +466,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4145	1895	Stockhof 1987	1258	1895	kihoedŏ	kixudO	k i x u d O	kiçudɔ	k i ç u d ɔ
 4169	1895	Stockhof 1987	1270	1895	èèfè ; èèpè	EEfE ; EEpE	E E f E # ; # E E p E	ɛɛfɛ ; ɛɛpɛ	ɛ ɛ f ɛ # ; # ɛ ɛ p ɛ
 4181	1895	Stockhof 1987	1272	1895	aījŏnoe(k)oe	aiyOnu'u	a i y O n u ' u	aijɔnuʔu	a i j ɔ n u ʔ u
-4197	1895	Stockhof 1987	1278	1895	pānānahoe	paanaanahu	p aa n aa n a h u	paːnaːnahu	p aː n aː n a h u
+4197	1895	Stockhof 1987	1278	1895	pānānahoe	paanaanahu	p a a n a a n a h u	paːnaːnahu	p aː n aː n a h u
 4208	1895	Stockhof 1987	1286	1895	wakahadŏ	wakahadO	w a k a h a d O	wakahadɔ	w a k a h a d ɔ
 4214	1895	Stockhof 1987	1290	1895	bakie ŏfŏ	baki OfO	b a k i # O f O	baki ɔfɔ	b a k i # ɔ f ɔ
 4216	1895	Stockhof 1987	1291	1895	bararau	bararau	b a r a r a u	bararau	b a r a r a u
@@ -478,14 +478,14 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4288	1895	Stockhof 1987	1314	1895	kahoewe(k)	kahuwe'	k a h u w e '	kahuweʔ	k a h u w e ʔ
 4296	1895	Stockhof 1987	1318	1895	èafie	Eafi	E a f i	ɛafi	ɛ a f i
 4298	1895	Stockhof 1987	1319	1895	èaai	Eaai	E a a i	ɛaai	ɛ a a i
-4303	1895	Stockhof 1987	1323	1895	afŏŏkie	afOOki	a f OO k i	afɔːki	a f ɔː k i
-4308	1895	Stockhof 1987	1325	1895	dĕbŏdŏ ; boe ōdĕ	dėbOdO ; bu oodė	d ė b O d O # ; # b u # oo d ė	dəbɔdɔ ; bu oːdə	d ə b ɔ d ɔ # ; # b u # oː d ə
+4303	1895	Stockhof 1987	1323	1895	afŏŏkie	afOOki	a f O O k i	afɔːki	a f ɔː k i
+4308	1895	Stockhof 1987	1325	1895	dĕbŏdŏ ; boe ōdĕ	dėbOdO ; bu oodė	d ė b O d O # ; # b u # o o d ė	dəbɔdɔ ; bu oːdə	d ə b ɔ d ɔ # ; # b u # oː d ə
 4321	1895	Stockhof 1987	1330	1895	èhikoe	Ehiku	E h i k u	ɛhiku	ɛ h i k u
 4330	1895	Stockhof 1987	1333	1895	eàboedŏdŏ	eabudOdO	e a b u d O d O	eabudɔdɔ	e a b u d ɔ d ɔ
 4336	1895	Stockhof 1987	1336	1895	kidai(k)joe	kidai'yu	k i d a i ' y u	kidaiʔju	k i d a i ʔ j u
 4339	1895	Stockhof 1987	1337	1895	abaoè	abaOE	a b a O E	abaɔɛ	a b a ɔ ɛ
 4344	1895	Stockhof 1987	1339	1895	èhèboe	EhEbu	E h E b u	ɛhɛbu	ɛ h ɛ b u
-4349	1895	Stockhof 1987	1340	1895	kakoeōk	kakuook	k a k u oo k	kakuoːk	k a k u oː k
+4349	1895	Stockhof 1987	1340	1895	kakoeōk	kakuook	k a k u o o k	kakuoːk	k a k u oː k
 4356	1895	Stockhof 1987	1342	1895	kababaha(k)	kababaha'	k a b a b a h a '	kababahaʔ	k a b a b a h a ʔ
 4363	1895	Stockhof 1987	1348	1895	bŏbŏ	bObO	b O b O	bɔbɔ	b ɔ b ɔ
 4366	1895	Stockhof 1987	1350	1895	(oe)pamŏ	(u)pamO	( u ) p a m O	(u)pamɔ	( u ) p a m ɔ
@@ -495,23 +495,23 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4395	1895	Stockhof 1987	1361	1895	koenă(k)	kună'	k u n ă '	kunᾰʔ	k u n ᾰ ʔ
 4400	1895	Stockhof 1987	1365	1895	papărie èjobie	papări EyObi	p a p ă r i # E y O b i	papᾰri ɛjɔbi	p a p ᾰ r i # ɛ j ɔ b i
 4408	1895	Stockhof 1987	1369	1895	èŏkiŏ	EOkiO	E O k i O	ɛɔkiɔ	ɛ ɔ k i ɔ
-4419	1895	Stockhof 1987	1371	1895	mŏkŏ ; mŏkŏ [èfōka]	mOkO ; mOkO [Efooka]	m O k O # ; # m O k O # [ E f oo k a ]	mɔkɔ ; mɔkɔ [ɛfoːka]	m ɔ k ɔ # ; # m ɔ k ɔ # [ ɛ f oː k a ]
-4433	1895	Stockhof 1987	1375	1895	ānāoe	aanaau	aa n aa u	aːnaːu	aː n aː u
+4419	1895	Stockhof 1987	1371	1895	mŏkŏ ; mŏkŏ [èfōka]	mOkO ; mOkO [Efooka]	m O k O # ; # m O k O # [ E f o o k a ]	mɔkɔ ; mɔkɔ [ɛfoːka]	m ɔ k ɔ # ; # m ɔ k ɔ # [ ɛ f oː k a ]
+4433	1895	Stockhof 1987	1375	1895	ānāoe	aanaau	a a n a a u	aːnaːu	aː n aː u
 4448	1895	Stockhof 1987	1382	1895	pakoehè	pakuhE	p a k u h E	pakuhɛ	p a k u h ɛ
 4456	1895	Stockhof 1987	1384	1895	lapĕ(k)	lapė'	l a p ė '	lapəʔ	l a p ə ʔ
-4459	1895	Stockhof 1987	1385	1895	oemāhaoe	umaahau	u m aa h a u	umaːhau	u m aː h a u
+4459	1895	Stockhof 1987	1385	1895	oemāhaoe	umaahau	u m a a h a u	umaːhau	u m aː h a u
 4467	1895	Stockhof 1987	1390	1895	kabakau	kabakau	k a b a k a u	kabakau	k a b a k a u
 4468	1895	Stockhof 1987	1391	1895	èŏkŏĕ	EOkOė	E O k O ė	ɛɔkɔə	ɛ ɔ k ɔ ə
 4473	1895	Stockhof 1987	1392	1895	habèlĕk	habElėk	h a b E l ė k	habɛlək	h a b ɛ l ə k
 4477	1895	Stockhof 1987	1393	1895	koahaijĕ	kOahaiyė	k O a h a i y ė	kɔahaijə	k ɔ a h a i j ə
-4484	1895	Stockhof 1987	1395	1895	pānāoe	paanaau	p aa n aa u	paːnaːu	p aː n aː u
+4484	1895	Stockhof 1987	1395	1895	pānāoe	paanaau	p a a n a a u	paːnaːu	p aː n aː u
 4495	1895	Stockhof 1987	1398	1895	waka	waka	w a k a	waka	w a k a
 4496	1895	Stockhof 1987	1399	1895	koedŏdok	kudOdOk	k u d O d O k	kudɔdɔk	k u d ɔ d ɔ k
 4501	1895	Stockhof 1987	1402	1895	ejau	eyau	e y a u	ejau	e j a u
 4511	1895	Stockhof 1987	1406	1895	kŏhaiĕ	kOhaiė	k O h a i ė	kɔhaiə	k ɔ h a i ə
 4542	1895	Stockhof 1987	1424	1895	lahiejŏ	lahiyO	l a h i y O	lahijɔ	l a h i j ɔ
 4543	1895	Stockhof 1987	1425	1895	dakŏha	dakOha	d a k O h a	dakɔha	d a k ɔ h a
-4544	1895	Stockhof 1987	1426	1895	kaho kanoehā(k)	kahO kanuhaa'	k a h O # k a n u h aa '	kahɔ kanuhaːʔ	k a h ɔ # k a n u h aː ʔ
+4544	1895	Stockhof 1987	1426	1895	kaho kanoehā(k)	kahO kanuhaa'	k a h O # k a n u h a a '	kahɔ kanuhaːʔ	k a h ɔ # k a n u h aː ʔ
 4552	1895	Stockhof 1987	1427	1895	ekanooe	ekanOu	e k a n O u	ekanɔu	e k a n ɔ u
 4560	1895	Stockhof 1987	1429	1895	apoj lŏfŏ	apOy lOfO	a p O y # l O f O	apɔj lɔfɔ	a p ɔ j # l ɔ f ɔ
 4563	1895	Stockhof 1987	1430	1895	hiakikĕ	hiakikė	h i a k i k ė	hiakikə	h i a k i k ə
@@ -523,21 +523,21 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4595	1895	Stockhof 1987	1438	1895	naè(na)	naE(na)	n a E ( n a )	naɛ(na)	n a ɛ ( n a )
 4599	1895	Stockhof 1987	1439	1895	ĕmak	ėmak	ė m a k	əmak	ə m a k
 4616	1895	Stockhof 1987	1442	1895	èkŏhŏ ; èkŏhoi	EkOhO ; EkOhOi	E k O h O # ; # E k O h O i	ɛkɔhɔ ; ɛkɔhɔi	ɛ k ɔ h ɔ # ; # ɛ k ɔ h ɔ i
-4626	1895	Stockhof 1987	1445	1895	karahāhŏ	karahaahO	k a r a h aa h O	karahaːhɔ	k a r a h aː h ɔ
-4635	1895	Stockhof 1987	1447	1895	èkāā	Ekaa	E k aa	ɛkaː	ɛ k aː
+4626	1895	Stockhof 1987	1445	1895	karahāhŏ	karahaahO	k a r a h a a h O	karahaːhɔ	k a r a h aː h ɔ
+4635	1895	Stockhof 1987	1447	1895	èkāā	Ekaa	E k a a	ɛkaː	ɛ k aː
 4666	1895	Stockhof 1987	1458	1895	ahabèlo ; balelo	ahabElO ; balelO	a h a b E l O # ; # b a l e l O	ahabɛlɔ ; balelɔ	a h a b ɛ l ɔ # ; # b a l e l ɔ
 4673	1895	Stockhof 1987	1462	1895	kifalai èbeo ; kipĕrai èdio	kifalai EbeO ; kipėrai EdiO	k i f a l a i # E b e O # ; # k i p ė r a i # E d i O	kifalai ɛbeɔ ; kipərai ɛdiɔ	k i f a l a i # ɛ b e ɔ # ; # k i p ə r a i # ɛ d i ɔ
 4681	1895	Stockhof 1987	1466	1895	èai	Eai	E a i	ɛai	ɛ a i
-4698	1895	Stockhof 1987	1471	1895	nioennā tīō	niunnaa tioo	n i u n n aa # t i oo	niunnaː tioː	n i u n n aː # t i oː
+4698	1895	Stockhof 1987	1471	1895	nioennā tīō	niunnaa tioo	n i u n n a a # t i o o	niunnaː tioː	n i u n n aː # t i oː
 4710	1895	Stockhof 1987	1472	1895	èokahaĕ	EOkahaė	E O k a h a ė	ɛɔkahaə	ɛ ɔ k a h a ə
 4713	1895	Stockhof 1987	1473	1895	kikoeoekă	kikuukă	k i k u u k ă	kikuukᾰ	k i k u u k ᾰ
 4721	1895	Stockhof 1987	1475	1895	kimoemoehĕ	kimumuhė	k i m u m u h ė	kimumuhə	k i m u m u h ə
 4729	1895	Stockhof 1987	1478	1895	èfoekĕ ; èpoekŏ	Efukė ; EpukO	E f u k ė # ; # E p u k O	ɛfukə ; ɛpukɔ	ɛ f u k ə # ; # ɛ p u k ɔ
 4738	1895	Stockhof 1987	1479	1895	fanèna ; panè	fanEna ; panE	f a n E n a # ; # p a n E	fanɛna ; panɛ	f a n ɛ n a # ; # p a n ɛ
 4773	1895	Stockhof 1987	1489	1895	èlahŏ	ElahO	E l a h O	ɛlahɔ	ɛ l a h ɔ
-4778	1895	Stockhof 1987	1491	1895	èfōdiĕ ; èoefĕdieĕ	Efoodiė ; Eufėdiė	E f oo d i ė # ; # E u f ė d i ė	ɛfoːdiə ; ɛufədiə	ɛ f oː d i ə # ; # ɛ u f ə d i ə
+4778	1895	Stockhof 1987	1491	1895	èfōdiĕ ; èoefĕdieĕ	Efoodiė ; Eufėdiė	E f o o d i ė # ; # E u f ė d i ė	ɛfoːdiə ; ɛufədiə	ɛ f oː d i ə # ; # ɛ u f ə d i ə
 4784	1895	Stockhof 1987	1493	1895	nŏoninĕ	nOOninė	n O O n i n ė	nɔɔninə	n ɔ ɔ n i n ə
-4786	1895	Stockhof 1987	1494	1895	pōbōdā	pooboodaa	p oo b oo d aa	poːboːdaː	p oː b oː d aː
+4786	1895	Stockhof 1987	1494	1895	pōbōdā	pooboodaa	p o o b o o d a a	poːboːdaː	p oː b oː d aː
 4797	1895	Stockhof 1987	1500	1895	kapapo ĕ	kapapO ė	k a p a p O # ė	kapapɔ ə	k a p a p ɔ # ə
 4799	1895	Stockhof 1987	1501	1895	kafŏ	kafO	k a f O	kafɔ	k a f ɔ
 4808	1895	Stockhof 1987	1502	1895	koahjĕ	kOahyė	k O a h y ė	kɔahjə	k ɔ a h j ə
@@ -548,21 +548,21 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4846	1895	Stockhof 1987	1513	1895	kaoewa(k)	kauwa'	k a u w a '	kauwaʔ	k a u w a ʔ
 4851	1895	Stockhof 1987	1515	1895	èŏroe	EOru	E O r u	ɛɔru	ɛ ɔ r u
 4868	1895	Stockhof 1987	1522	1895	kaoefè(k)	kaufE'	k a u f E '	kaufɛʔ	k a u f ɛ ʔ
-4871	1895	Stockhof 1987	1523	1895	māāfè	maafE	m aa f E	maːfɛ	m aː f ɛ
-4882	1895	Stockhof 1987	1527	1895	nŏŏ	nOO	n OO	nɔː	n ɔː
+4871	1895	Stockhof 1987	1523	1895	māāfè	maafE	m a a f E	maːfɛ	m aː f ɛ
+4882	1895	Stockhof 1987	1527	1895	nŏŏ	nOO	n O O	nɔː	n ɔː
 4887	1895	Stockhof 1987	1528	1895	èŏdjie	EOji	E O j i	ɛɔd͡ʒi	ɛ ɔ d͡ʒ i
 4894	1895	Stockhof 1987	1531	1895	koekèdia(k)	kukEdia'	k u k E d i a '	kukɛdiaʔ	k u k ɛ d i a ʔ
 4903	1895	Stockhof 1987	1534	1895	eajaha(k) jobi	eayaha' yObi	e a y a h a ' # y O b i	eajahaʔ jɔbi	e a j a h a ʔ # j ɔ b i
-4905	1895	Stockhof 1987	1536	1895	koeōdĕ	kuoodė	k u oo d ė	kuoːdə	k u oː d ə
+4905	1895	Stockhof 1987	1536	1895	koeōdĕ	kuoodė	k u o o d ė	kuoːdə	k u oː d ə
 4911	1895	Stockhof 1987	1537	1895	kafoe	kafu	k a f u	kafu	k a f u
 4917	1895	Stockhof 1987	1538	1895	èaak	Eaak	E a a k	ɛaak	ɛ a a k
 4918	1895	Stockhof 1987	1539	1895	kifienè	kifinE	k i f i n E	kifinɛ	k i f i n ɛ
-4927	1895	Stockhof 1987	1542	1895	èāāk	Eaak	E aa k	ɛaːk	ɛ aː k
+4927	1895	Stockhof 1987	1542	1895	èāāk	Eaak	E a a k	ɛaːk	ɛ aː k
 4932	1895	Stockhof 1987	1545	1895	kahanoeĕ	kahanuė	k a h a n u ė	kahanuə	k a h a n u ə
 4943	1895	Stockhof 1987	1554	1895	nŏ(k)a	nO'a	n O ' a	nɔʔa	n ɔ ʔ a
 4948	1895	Stockhof 1987	1557	1895	koie	kOi	k O i	kɔi	k ɔ i
 4954	1895	Stockhof 1987	1560	1895	poekai	pukai	p u k a i	pukai	p u k a i
-4964	1895	Stockhof 1987	1564	1895	[oewa] bakŏhāda	[uwa] bakOhaada	[ u w a ] # b a k O h aa d a	[uwa] bakɔhaːda	[ u w a ] # b a k ɔ h aː d a
+4964	1895	Stockhof 1987	1564	1895	[oewa] bakŏhāda	[uwa] bakOhaada	[ u w a ] # b a k O h a a d a	[uwa] bakɔhaːda	[ u w a ] # b a k ɔ h aː d a
 4985	1895	Stockhof 1987	1573	1895	kahaĕ	kahaė	k a h a ė	kahaə	k a h a ə
 5007	1895	Stockhof 1987	1581	1895	èŏdjie ; èhaŏdjie	EOji ; EhaOji	E O j i # ; # E h a O j i	ɛɔd͡ʒi ; ɛhaɔd͡ʒi	ɛ ɔ d͡ʒ i # ; # ɛ h a ɔ d͡ʒ i
 5010	1895	Stockhof 1987	1582	1895	èoi	EOi	E O i	ɛɔi	ɛ ɔ i
@@ -571,7 +571,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5027	1895	Stockhof 1987	1590	1895	hèoafĕ ; hèoapo	hEOafė ; hEOapO	h E O a f ė # ; # h E O a p O	hɛɔafə ; hɛɔapɔ	h ɛ ɔ a f ə # ; # h ɛ ɔ a p ɔ
 5031	1895	Stockhof 1987	1593	1895	inima	inima	i n i m a	inima	i n i m a
 5044	1895	Stockhof 1987	1597	1895	kiŏnŏk	kiOnOk	k i O n O k	kiɔnɔk	k i ɔ n ɔ k
-5047	1895	Stockhof 1987	1598	1895	èāhā	Eaahaa	E aa h aa	ɛaːhaː	ɛ aː h aː
+5047	1895	Stockhof 1987	1598	1895	èāhā	Eaahaa	E a a h a a	ɛaːhaː	ɛ aː h aː
 5056	1895	Stockhof 1987	1603	1895	èèkŏwĕ	EEkOwė	E E k O w ė	ɛɛkɔwə	ɛ ɛ k ɔ w ə
 5063	1895	Stockhof 1987	1605	1895	[oeahaub]oepèĕ	[uahaub]upEė	[ u a h a u b ] u p E ė	[uahaub]upɛə	[ u a h a u b ] u p ɛ ə
 5067	1895	Stockhof 1987	1607	1895	kekŏrŏ ĕ	kekOrO ė	k e k O r O # ė	kekɔrɔ ə	k e k ɔ r ɔ # ə
@@ -586,10 +586,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5147	1895	Stockhof 1987	1638	1895	pakoenoejĕ	pakunuyė	p a k u n u y ė	pakunujə	p a k u n u j ə
 5167	1895	Stockhof 1987	1647	1895	naèapo nokie	naEapO nOki	n a E a p O # n O k i	naɛapɔ nɔki	n a ɛ a p ɔ # n ɔ k i
 5171	1895	Stockhof 1987	1649	1895	kifafakoe(k)	kifafaku'	k i f a f a k u '	kifafakuʔ	k i f a f a k u ʔ
-5177	1895	Stockhof 1987	1652	1895	kiedarāk	kidaraak	k i d a r aa k	kidaraːk	k i d a r aː k
+5177	1895	Stockhof 1987	1652	1895	kiedarāk	kidaraak	k i d a r a a k	kidaraːk	k i d a r aː k
 5178	1895	Stockhof 1987	1653	1895	paioeka	paiuka	p a i u k a	paiuka	p a i u k a
 5184	1895	Stockhof 1987	1656	1895	èko ĕma	EkO ėma	E k O # ė m a	ɛkɔ əma	ɛ k ɔ # ə m a
-5198	1895	Stockhof 1987	1660	1895	ōnèkĕ	oonEkė	oo n E k ė	oːnɛkə	oː n ɛ k ə
+5198	1895	Stockhof 1987	1660	1895	ōnèkĕ	oonEkė	o o n E k ė	oːnɛkə	oː n ɛ k ə
 5225	1895	Stockhof 1987	1672	1895	fidjaja	fijaya	f i j a y a	fid͡ʒaja	f i d͡ʒ a j a
 5227	1895	Stockhof 1987	1674	1895	èpieĕ	Epiė	E p i ė	ɛpiə	ɛ p i ə
 5233	1895	Stockhof 1987	1678	1895	rarieĕ	rariė	r a r i ė	rariə	r a r i ə
@@ -599,15 +599,15 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5333	1895	Stockhof 1987	1720	1895	nŏ(k)afa	nO'afa	n O ' a f a	nɔʔafa	n ɔ ʔ a f a
 5354	1895	Stockhof 1987	1726	1895	kajenŏnŏ ; ijanŏnŏ	kayenOnO ; iyanOnO	k a y e n O n O # ; # i y a n O n O	kajenɔnɔ ; ijanɔnɔ	k a j e n ɔ n ɔ # ; # i j a n ɔ n ɔ
 5364	1895	Stockhof 1987	1731	1895	kalinaha(k)	kalinaha'	k a l i n a h a '	kalinahaʔ	k a l i n a h a ʔ
-5366	1895	Stockhof 1987	1732	1895	poeāri poeāri	puaari puaari	p u aa r i # p u aa r i	puaːri puaːri	p u aː r i # p u aː r i
+5366	1895	Stockhof 1987	1732	1895	poeāri poeāri	puaari puaari	p u a a r i # p u a a r i	puaːri puaːri	p u aː r i # p u aː r i
 5370	1895	Stockhof 1987	1733	1895	èdoedie	Edudi	E d u d i	ɛdudi	ɛ d u d i
-5377	1895	Stockhof 1987	1736	1895	piŏnā	piOnaa	p i O n aa	piɔnaː	p i ɔ n aː
-5381	1895	Stockhof 1987	1737	1895	èhoewā	Ehuwaa	E h u w aa	ɛhuwaː	ɛ h u w aː
-5384	1895	Stockhof 1987	1738	1895	kĕwānoe	kėwaanu	k ė w aa n u	kəwaːnu	k ə w aː n u
+5377	1895	Stockhof 1987	1736	1895	piŏnā	piOnaa	p i O n a a	piɔnaː	p i ɔ n aː
+5381	1895	Stockhof 1987	1737	1895	èhoewā	Ehuwaa	E h u w a a	ɛhuwaː	ɛ h u w aː
+5384	1895	Stockhof 1987	1738	1895	kĕwānoe	kėwaanu	k ė w a a n u	kəwaːnu	k ə w aː n u
 5386	1895	Stockhof 1987	1739	1895	èpèhĕja	EpEhėya	E p E h ė y a	ɛpɛhəja	ɛ p ɛ h ə j a
 5395	1895	Stockhof 1987	1743	1895	èhiehie	Ehixi	E h i x i	ɛhiçi	ɛ h i ç i
 5420	1895	Stockhof 1987	1750	1895	kibaka ; hiebaka	kibaka ; hibaka	k i b a k a # ; # h i b a k a	kibaka ; hibaka	k i b a k a # ; # h i b a k a
-5440	1895	Stockhof 1987	1758	1895	kabŏ èlā	kabO Elaa	k a b O # E l aa	kabɔ ɛlaː	k a b ɔ # ɛ l aː
+5440	1895	Stockhof 1987	1758	1895	kabŏ èlā	kabO Elaa	k a b O # E l a a	kabɔ ɛlaː	k a b ɔ # ɛ l aː
 5458	1895	Stockhof 1987	1765	1895	bakida(k)	bakida'	b a k i d a '	bakidaʔ	b a k i d a ʔ
 5461	1895	Stockhof 1987	1766	1895	pakanoea(k)	pakanua'	p a k a n u a '	pakanuaʔ	p a k a n u a ʔ
 5483	1895	Stockhof 1987	1779	1895	kifahondie	kifahOndi	k i f a h O n d i	kifahɔndi	k i f a h ɔ n d i
@@ -618,8 +618,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5508	1895	Stockhof 1987	1789	1895	pahoemè	pahumE	p a h u m E	pahumɛ	p a h u m ɛ
 5511	1895	Stockhof 1987	1790	1895	koedŏdŏ	kudOdO	k u d O d O	kudɔdɔ	k u d ɔ d ɔ
 5521	1895	Stockhof 1987	1793	1895	èloeba ; edoeba	Eluba ; eduba	E l u b a # ; # e d u b a	ɛluba ; eduba	ɛ l u b a # ; # e d u b a
-5532	1895	Stockhof 1987	1797	1895	kariha oewapŏ ; karihā	karixa uwapO ; karixaa	k a r i x a # u w a p O # ; # k a r i x aa	kariça uwapɔ ; kariçaː	k a r i ç a # u w a p ɔ # ; # k a r i ç aː
-5541	1895	Stockhof 1987	1800	1895	[hŏ]boehā(k) ; [hŏ]boha(k)	[hO]buhaa' ; [hO]bOha'	[ h O ] b u h aa ' # ; # [ h O ] b O h a '	[hɔ]buhaːʔ ; [hɔ]bɔhaʔ	[ h ɔ ] b u h aː ʔ # ; # [ h ɔ ] b ɔ h a ʔ
+5532	1895	Stockhof 1987	1797	1895	kariha oewapŏ ; karihā	karixa uwapO ; karixaa	k a r i x a # u w a p O # ; # k a r i x a a	kariça uwapɔ ; kariçaː	k a r i ç a # u w a p ɔ # ; # k a r i ç aː
+5541	1895	Stockhof 1987	1800	1895	[hŏ]boehā(k) ; [hŏ]boha(k)	[hO]buhaa' ; [hO]bOha'	[ h O ] b u h a a ' # ; # [ h O ] b O h a '	[hɔ]buhaːʔ ; [hɔ]bɔhaʔ	[ h ɔ ] b u h aː ʔ # ; # [ h ɔ ] b ɔ h a ʔ
 5571	1895	Stockhof 1987	1806	1895	aka fidja	aka fija	a k a # f i j a	aka fid͡ʒa	a k a # f i d͡ʒ a
 5577	1895	Stockhof 1987	1808	1895	èèkŏwĕ	EEkOwė	E E k O w ė	ɛɛkɔwə	ɛ ɛ k ɔ w ə
 5588	1895	Stockhof 1987	1810	1895	kè	kE	k E	kɛ	k ɛ
@@ -633,9 +633,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5619	1895	Stockhof 1987	1823	1895	koh-koh	kOh-kOh	k O h - k O h	kɔh-kɔh	k ɔ h - k ɔ h
 5626	1895	Stockhof 1987	1825	1895	èba	Eba	E b a	ɛba	ɛ b a
 5631	1895	Stockhof 1987	1826	1895	pokok akar	pOkOk akar	p O k O k # a k a r	pɔkɔk akar	p ɔ k ɔ k # a k a r
-5634	1895	Stockhof 1987	1827	1895	èpāha	Epaaha	E p aa h a	ɛpaːha	ɛ p aː h a
+5634	1895	Stockhof 1987	1827	1895	èpāha	Epaaha	E p a a h a	ɛpaːha	ɛ p aː h a
 5640	1895	Stockhof 1987	1829	1895	èko(k)ia	EkO'ia	E k O ' i a	ɛkɔʔia	ɛ k ɔ ʔ i a
-5644	1895	Stockhof 1987	1831	1895	kadīkakālie	kadikakaali	k a d i k a k aa l i	kadikakaːli	k a d i k a k aː l i
+5644	1895	Stockhof 1987	1831	1895	kadīkakālie	kadikakaali	k a d i k a k a a l i	kadikakaːli	k a d i k a k aː l i
 5654	1895	Stockhof 1987	1833	1895	èŏkŏ(k) ; ŏkia [èpiko(k)]	EOkO' ; Okia [EpikO']	E O k O ' # ; # O k i a # [ E p i k O ' ]	ɛɔkɔʔ ; ɔkia [ɛpikɔʔ]	ɛ ɔ k ɔ ʔ # ; # ɔ k i a # [ ɛ p i k ɔ ʔ ]
 5667	1895	Stockhof 1987	1837	1895	kaboeĕboeĕ	kabuėbuė	k a b u ė b u ė	kabuəbuə	k a b u ə b u ə
 5677	1895	Stockhof 1987	1840	1895	bakaŏedjie	bakaOeji	b a k a O e j i	bakaɔed͡ʒi	b a k a ɔ e d͡ʒ i
@@ -650,11 +650,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5714	1895	Stockhof 1987	1862	1895	èitŏfĕ	EitOfė	E i t O f ė	ɛitɔfə	ɛ i t ɔ f ə
 5715	1895	Stockhof 1987	1863	1895	sajoer	sayur	s a y u r	sajur	s a j u r
 5726	1895	Stockhof 1987	1867	1895	kaoewè oewè	kauwE uwE	k a u w E # u w E	kauwɛ uwɛ	k a u w ɛ # u w ɛ
-5733	1895	Stockhof 1987	1869	1895	ĕrŏōrai	ėrOoorai	ė r O oo r a i	ərɔoːrai	ə r ɔ oː r a i
+5733	1895	Stockhof 1987	1869	1895	ĕrŏōrai	ėrOoorai	ė r O o o r a i	ərɔoːrai	ə r ɔ oː r a i
 5742	1895	Stockhof 1987	1870	1895	haoehaoe	hauhau	h a u h a u	hauhau	h a u h a u
 5746	1895	Stockhof 1987	1871	1895	èoehoe	Euhu	E u h u	ɛuhu	ɛ u h u
 5748	1895	Stockhof 1987	1872	1895	èjahèla	EyahEla	E y a h E l a	ɛjahɛla	ɛ j a h ɛ l a
-5749	1895	Stockhof 1987	1873	1895	èbo kārăha(k) diĕ	EbO kaarăha' diė	E b O # k aa r ă h a ' # d i ė	ɛbɔ kaːrᾰhaʔ diə	ɛ b ɔ # k aː r ᾰ h a ʔ # d i ə
+5749	1895	Stockhof 1987	1873	1895	èbo kārăha(k) diĕ	EbO kaarăha' diė	E b O # k a a r ă h a ' # d i ė	ɛbɔ kaːrᾰhaʔ diə	ɛ b ɔ # k aː r ᾰ h a ʔ # d i ə
 5753	1895	Stockhof 1987	1874	1895	èfīdjoe (èpīdjoe)	Efiju (Epiju)	E f i j u # ( E p i j u )	ɛfid͡ʒu (ɛpid͡ʒu)	ɛ f i d͡ʒ u # ( ɛ p i d͡ʒ u )
 5754	1895	Stockhof 1987	1875	1895	èbèdiĕ	EbEdiė	E b E d i ė	ɛbɛdiə	ɛ b ɛ d i ə
 5755	1895	Stockhof 1987	1876	1895	kainèk	kainEk	k a i n E k	kainɛk	k a i n ɛ k
@@ -674,17 +674,17 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5911	1895	Stockhof 1987	1926	1895	kafèfè	kafEfE	k a f E f E	kafɛfɛ	k a f ɛ f ɛ
 5923	1895	Stockhof 1987	1930	1895	èădŏ	EădO	E ă d O	ɛᾰdɔ	ɛ ᾰ d ɔ
 5932	1895	Stockhof 1987	1932	1895	kafikĕ	kafikė	k a f i k ė	kafikə	k a f i k ə
-5942	1895	Stockhof 1987	1936	1895	kīāā	kiaa	k i aa	kiaː	k i aː
+5942	1895	Stockhof 1987	1936	1895	kīāā	kiaa	k i a a	kiaː	k i aː
 5953	1895	Stockhof 1987	1942	1895	amaika	amaika	a m a i k a	amaika	a m a i k a
 5956	1895	Stockhof 1987	1943	1895	apiok	apiOk	a p i O k	apiɔk	a p i ɔ k
-5962	1895	Stockhof 1987	1946	1895	afŏŏkie	afOOki	a f OO k i	afɔːki	a f ɔː k i
+5962	1895	Stockhof 1987	1946	1895	afŏŏkie	afOOki	a f O O k i	afɔːki	a f ɔː k i
 5969	1895	Stockhof 1987	1948	1895	èfè	EfE	E f E	ɛfɛ	ɛ f ɛ
 5973	1895	Stockhof 1987	1949	1895	kanefoe ; kanèfoe	kanefu ; kanEfu	k a n e f u # ; # k a n E f u	kanefu ; kanɛfu	k a n e f u # ; # k a n ɛ f u
 5977	1895	Stockhof 1987	1950	1895	kakoeĕ	kakuė	k a k u ė	kakuə	k a k u ə
 5981	1895	Stockhof 1987	1951	1895	keàbabŏdŏ	keababOdO	k e a b a b O d O	keababɔdɔ	k e a b a b ɔ d ɔ
 5988	1895	Stockhof 1987	1953	1895	kèkĕ	kEkė	k E k ė	kɛkə	k ɛ k ə
 5995	1895	Stockhof 1987	1955	1895	èfaŏ(k) wa(k)	EfaO' wa'	E f a O ' # w a '	ɛfaɔʔ waʔ	ɛ f a ɔ ʔ # w a ʔ
-6003	1895	Stockhof 1987	1960	1895	paèkā	paEkaa	p a E k aa	paɛkaː	p a ɛ k aː
+6003	1895	Stockhof 1987	1960	1895	paèkā	paEkaa	p a E k a a	paɛkaː	p a ɛ k aː
 6025	1895	Stockhof 1987	1967	1895	kafoehĕ ; kapoehŏ	kafuhė ; kapuhO	k a f u h ė # ; # k a p u h O	kafuhə ; kapuhɔ	k a f u h ə # ; # k a p u h ɔ
 6031	1895	Stockhof 1987	1968	1895	eàfŏdi ĕ	eafOdi ė	e a f O d i # ė	eafɔdi ə	e a f ɔ d i # ə
 6034	1895	Stockhof 1987	1970	1895	kipŏdŏ	kipOdO	k i p O d O	kipɔdɔ	k i p ɔ d ɔ
@@ -700,18 +700,18 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6121	1895	Stockhof 1987	1995	1895	kima(k)	kima'	k i m a '	kimaʔ	k i m a ʔ
 6123	1895	Stockhof 1987	1996	1895	èaoeloe	Eaulu	E a u l u	ɛaulu	ɛ a u l u
 6129	1895	Stockhof 1987	1997	1895	èalahoe	Ealahu	E a l a h u	ɛalahu	ɛ a l a h u
-6141	1895	Stockhof 1987	2001	1895	pākārah	paakaarah	p aa k aa r a h	paːkaːrah	p aː k aː r a h
+6141	1895	Stockhof 1987	2001	1895	pākārah	paakaarah	p a a k a a r a h	paːkaːrah	p aː k aː r a h
 6155	1895	Stockhof 1987	2008	1895	pidjaja	pijaya	p i j a y a	pid͡ʒaja	p i d͡ʒ a j a
 6166	1895	Stockhof 1987	2010	1895	oewŏhŏ	uwOhO	u w O h O	uwɔhɔ	u w ɔ h ɔ
 6177	1895	Stockhof 1987	2015	1895	kahèkanie	kahEkani	k a h E k a n i	kahɛkani	k a h ɛ k a n i
-6187	1895	Stockhof 1987	2017	1895	fanihiōfi	fanixioofi	f a n i x i oo f i	faniçioːfi	f a n i ç i oː f i
+6187	1895	Stockhof 1987	2017	1895	fanihiōfi	fanixioofi	f a n i x i o o f i	faniçioːfi	f a n i ç i oː f i
 6202	1895	Stockhof 1987	2021	1895	nŏkie ; noekinoe(k)	nOki ; nukinu'	n O k i # ; # n u k i n u '	nɔki ; nukinuʔ	n ɔ k i # ; # n u k i n u ʔ
 6210	1895	Stockhof 1987	2022	1895	kimoemoehĕ	kimumuhė	k i m u m u h ė	kimumuhə	k i m u m u h ə
 6211	1895	Stockhof 1987	2023	1895	nanaoeni	nanauni	n a n a u n i	nanauni	n a n a u n i
 6222	1895	Stockhof 1987	2027	1895	èo(k)oi	EO'Oi	E O ' O i	ɛɔʔɔi	ɛ ɔ ʔ ɔ i
 6234	1895	Stockhof 1987	2030	1895	ŏkŏ	OkO	O k O	ɔkɔ	ɔ k ɔ
-6241	1895	Stockhof 1987	2034	1895	èanōà	Eanooa	E a n oo a	ɛanoːa	ɛ a n oː a
-6252	1895	Stockhof 1987	2038	1895	èāfākoe ; éāpākoe	Eaafaaku ; Eaapaaku	E aa f aa k u # ; # E aa p aa k u	ɛaːfaːku ; ɛaːpaːku	ɛ aː f aː k u # ; # ɛ aː p aː k u
+6241	1895	Stockhof 1987	2034	1895	èanōà	Eanooa	E a n o o a	ɛanoːa	ɛ a n oː a
+6252	1895	Stockhof 1987	2038	1895	èāfākoe ; éāpākoe	Eaafaaku ; Eaapaaku	E a a f a a k u # ; # E a a p a a k u	ɛaːfaːku ; ɛaːpaːku	ɛ aː f aː k u # ; # ɛ aː p aː k u
 6267	1895	Stockhof 1987	2045	1895	hèŏwaj	hEOway	h E O w a y	hɛɔwaj	h ɛ ɔ w a j
 6271	1895	Stockhof 1987	2048	1895	èfīkahaj	Efikahay	E f i k a h a y	ɛfikahaj	ɛ f i k a h a j
 6275	1895	Stockhof 1987	2051	1895	èdadoe èara	Edadu Eara	E d a d u # E a r a	ɛdadu ɛara	ɛ d a d u # ɛ a r a
@@ -720,13 +720,13 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6290	1895	Stockhof 1987	2058	1895	kafai	kafai	k a f a i	kafai	k a f a i
 6292	1895	Stockhof 1987	2060	1895	èbaka kahaŏ(k)	Ebaka kahaO'	E b a k a # k a h a O '	ɛbaka kahaɔʔ	ɛ b a k a # k a h a ɔ ʔ
 6293	1895	Stockhof 1987	2061	1895	èofoeè	EOfuE	E O f u E	ɛɔfuɛ	ɛ ɔ f u ɛ
-6294	1895	Stockhof 1987	2062	1895	ekŏnŏnŏhā	ekOnOnOhaa	e k O n O n O h aa	ekɔnɔnɔhaː	e k ɔ n ɔ n ɔ h aː
+6294	1895	Stockhof 1987	2062	1895	ekŏnŏnŏhā	ekOnOnOhaa	e k O n O n O h a a	ekɔnɔnɔhaː	e k ɔ n ɔ n ɔ h aː
 6295	1895	Stockhof 1987	2063	1895	kidjoearŏjĕ	kijuarOyė	k i j u a r O y ė	kid͡ʒuarɔjə	k i d͡ʒ u a r ɔ j ə
 6301	1895	Stockhof 1987	2065	1895	èbohè	EbOhE	E b O h E	ɛbɔhɛ	ɛ b ɔ h ɛ
 6308	1895	Stockhof 1987	2067	1895	èkaoijŏ	EkaOiyO	E k a O i y O	ɛkaɔijɔ	ɛ k a ɔ i j ɔ
 6311	1895	Stockhof 1987	2068	1895	koewabŏ	kuwabO	k u w a b O	kuwabɔ	k u w a b ɔ
 6326	1895	Stockhof 1987	2077	1895	poekĕha	pukėha	p u k ė h a	pukəha	p u k ə h a
-6336	1895	Stockhof 1987	2082	1895	pakākāriē(k)	pakaakaariee'	p a k aa k aa r i ee '	pakaːkaːrieːʔ	p a k aː k aː r i eː ʔ
+6336	1895	Stockhof 1987	2082	1895	pakākāriē(k)	pakaakaariee'	p a k a a k a a r i e e '	pakaːkaːrieːʔ	p a k aː k aː r i eː ʔ
 6343	1895	Stockhof 1987	2088	1895	ahītŏ(k)	ahitO'	a h i t O '	ahitɔʔ	a h i t ɔ ʔ
 6366	1895	Stockhof 1987	2097	1895	èbakĕbo	EbakėbO	E b a k ė b O	ɛbakəbɔ	ɛ b a k ə b ɔ
 6369	1895	Stockhof 1987	2099	1895	kakĕlèha	kakėlEha	k a k ė l E h a	kakəlɛha	k a k ə l ɛ h a
@@ -748,10 +748,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6503	1895	Stockhof 1987	2149	1895	èèja(k)	EEya'	E E y a '	ɛɛjaʔ	ɛ ɛ j a ʔ
 6516	1895	Stockhof 1987	2150	1895	igigja?	igigya?	i g i g y a ?	igigja?	i g i g j a ?
 6523	1895	Stockhof 1987	2153	1895	lakŏha(k)	lakOha'	l a k O h a '	lakɔhaʔ	l a k ɔ h a ʔ
-6534	1895	Stockhof 1987	2157	1895	kājŏ	kaayO	k aa y O	kaːjɔ	k aː j ɔ
+6534	1895	Stockhof 1987	2157	1895	kājŏ	kaayO	k a a y O	kaːjɔ	k aː j ɔ
 6539	1895	Stockhof 1987	2158	1895	manèko	manEkO	m a n E k O	manɛkɔ	m a n ɛ k ɔ
 6540	1895	Stockhof 1987	2159	1895	èbaka oewè	Ebaka uwE	E b a k a # u w E	ɛbaka uwɛ	ɛ b a k a # u w ɛ
-6541	1895	Stockhof 1987	2160	1895	panāoewè kèfoe	panaauwE kEfu	p a n aa u w E # k E f u	panaːuwɛ kɛfu	p a n aː u w ɛ # k ɛ f u
+6541	1895	Stockhof 1987	2160	1895	panāoewè kèfoe	panaauwE kEfu	p a n a a u w E # k E f u	panaːuwɛ kɛfu	p a n aː u w ɛ # k ɛ f u
 6551	1895	Stockhof 1987	2165	1895	èo(k)o(k)	EO'O'	E O ' O '	ɛɔʔɔʔ	ɛ ɔ ʔ ɔ ʔ
 6566	1895	Stockhof 1987	2171	1895	kipara èbahoe	kipara Ebahu	k i p a r a # E b a h u	kipara ɛbahu	k i p a r a # ɛ b a h u
 6574	1895	Stockhof 1987	2174	1895	kaporiĕ	kapOriė	k a p O r i ė	kapɔriə	k a p ɔ r i ə
@@ -762,7 +762,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6606	1895	Stockhof 1987	2189	1895	kahanakiĕ	kahanakiė	k a h a n a k i ė	kahanakiə	k a h a n a k i ə
 6613	1895	Stockhof 1987	2192	1895	kŏdŏ(k)	kOdO'	k O d O '	kɔdɔʔ	k ɔ d ɔ ʔ
 6624	1895	Stockhof 1987	2197	1895	èoemo(k)	EumO'	E u m O '	ɛumɔʔ	ɛ u m ɔ ʔ
-6640	1895	Stockhof 1987	2203	1895	māākŏ	maakO	m aa k O	maːkɔ	m aː k ɔ
+6640	1895	Stockhof 1987	2203	1895	māākŏ	maakO	m a a k O	maːkɔ	m aː k ɔ
 6665	1895	Stockhof 1987	2210	1895	èahawĕ	Eahawė	E a h a w ė	ɛahawə	ɛ a h a w ə
 6670	1895	Stockhof 1987	2212	1895	èaidiă	Eaidiă	E a i d i ă	ɛaidiᾰ	ɛ a i d i ᾰ
 6676	1895	Stockhof 1987	2213	1895	poeri(k)	puri'	p u r i '	puriʔ	p u r i ʔ
@@ -781,23 +781,23 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6745	1895	Stockhof 1987	2240	1895	èkèo(k)	EkEO'	E k E O '	ɛkɛɔʔ	ɛ k ɛ ɔ ʔ
 6747	1895	Stockhof 1987	2242	1895	èaioe	Eaiu	E a i u	ɛaiu	ɛ a i u
 6754	1895	Stockhof 1987	2244	1895	djidja	jija	j i j a	d͡ʒid͡ʒa	d͡ʒ i d͡ʒ a
-6762	1895	Stockhof 1987	2245	1895	èjà(k)ā	Eya'aa	E y a ' aa	ɛjaʔaː	ɛ j a ʔ aː
+6762	1895	Stockhof 1987	2245	1895	èjà(k)ā	Eya'aa	E y a ' a a	ɛjaʔaː	ɛ j a ʔ aː
 6769	1895	Stockhof 1987	2247	1895	kĕabak ; kieaba(k)	kėabak ; kiaba'	k ė a b a k # ; # k i a b a '	kəabak ; kiabaʔ	k ə a b a k # ; # k i a b a ʔ
 6780	1895	Stockhof 1987	2251	1895	èafa(k)	Eafa'	E a f a '	ɛafaʔ	ɛ a f a ʔ
 6788	1895	Stockhof 1987	2252	1895	kiĕ	kiė	k i ė	kiə	k i ə
 6797	1895	Stockhof 1987	2254	1895	èăpara	Eăpara	E ă p a r a	ɛᾰpara	ɛ ᾰ p a r a
 6803	1895	Stockhof 1987	2255	1895	kanànè	kananE	k a n a n E	kananɛ	k a n a n ɛ
-6813	1895	Stockhof 1987	2258	1895	pōhōja(k)	poohooya'	p oo h oo y a '	poːhoːjaʔ	p oː h oː j a ʔ
+6813	1895	Stockhof 1987	2258	1895	pōhōja(k)	poohooya'	p o o h o o y a '	poːhoːjaʔ	p oː h oː j a ʔ
 6823	1895	Stockhof 1987	2260	1895	kihoeĕ	kixuė	k i x u ė	kiçuə	k i ç u ə
 6834	1895	Stockhof 1987	2263	1895	kifahoekjo akoloe	kifahukyO akOlu	k i f a h u k y O # a k O l u	kifahukjɔ akɔlu	k i f a h u k j ɔ # a k ɔ l u
 6841	1895	Stockhof 1987	2264	1895	kaik takajo kifahoek	kaik takayO kifahuk	k a i k # t a k a y O # k i f a h u k	kaik takajɔ kifahuk	k a i k # t a k a j ɔ # k i f a h u k
 6846	1895	Stockhof 1987	2266	1895	èhĕ	Ehė	E h ė	ɛhə	ɛ h ə
 6855	1895	Stockhof 1987	2267	1895	itèk	itEk	i t E k	itɛk	i t ɛ k
-6864	1895	Stockhof 1987	2274	1895	ŏŏ	OO	OO	ɔː	ɔː
+6864	1895	Stockhof 1987	2274	1895	ŏŏ	OO	O O	ɔː	ɔː
 6866	1895	Stockhof 1987	2275	1895	ĕĕ	ėė	ė ė	əə	ə ə
 6879	1895	Stockhof 1987	2277	1895	kifahoek taka	kifahuk taka	k i f a h u k # t a k a	kifahuk taka	k i f a h u k # t a k a
 6891	1895	Stockhof 1987	2281	1895	abako(k) ; kŏ(k)ŏ(k)	abakO' ; kO'O'	a b a k O ' # ; # k O ' O '	abakɔʔ ; kɔʔɔʔ	a b a k ɔ ʔ # ; # k ɔ ʔ ɔ ʔ
-6892	1895	Stockhof 1987	2282	1895	bariedāha	baridaaha	b a r i d aa h a	baridaːha	b a r i d aː h a
+6892	1895	Stockhof 1987	2282	1895	bariedāha	baridaaha	b a r i d a a h a	baridaːha	b a r i d aː h a
 6893	1895	Stockhof 1987	2283	1895	kadŏkŏ	kadOkO	k a d O k O	kadɔkɔ	k a d ɔ k ɔ
 6897	1895	Stockhof 1987	2284	1895	ehanoe(k)	ehanu'	e h a n u '	ehanuʔ	e h a n u ʔ
 6927	1895	Stockhof 1987	2291	1895	naè apo	naE apO	n a E # a p O	naɛ apɔ	n a ɛ # a p ɔ
@@ -813,8 +813,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7035	1895	Stockhof 1987	2328	1895	èoenoe oenoe	Eunu unu	E u n u # u n u	ɛunu unu	ɛ u n u # u n u
 7050	1895	Stockhof 1987	2332	1895	pakèlie ; fahèriè	pakEli ; fahEriE	p a k E l i # ; # f a h E r i E	pakɛli ; fahɛriɛ	p a k ɛ l i # ; # f a h ɛ r i ɛ
 7071	1895	Stockhof 1987	2342	1895	èpoehĕ	Epuhė	E p u h ė	ɛpuhə	ɛ p u h ə
-7072	1895	Stockhof 1987	2343	1895	kāràdi ĕ	kaaradi ė	k aa r a d i # ė	kaːradi ə	k aː r a d i # ə
-7085	1895	Stockhof 1987	2349	1895	karāuwā	karaauwaa	k a r aa u w aa	karaːuwaː	k a r aː u w aː
+7072	1895	Stockhof 1987	2343	1895	kāràdi ĕ	kaaradi ė	k a a r a d i # ė	kaːradi ə	k aː r a d i # ə
+7085	1895	Stockhof 1987	2349	1895	karāuwā	karaauwaa	k a r a a u w a a	karaːuwaː	k a r aː u w aː
 7100	1895	Stockhof 1987	2354	1895	èfainŏ	EfainO	E f a i n O	ɛfainɔ	ɛ f a i n ɔ
 7101	1895	Stockhof 1987	2355	1895	kinŏnŏ	kinOnO	k i n O n O	kinɔnɔ	k i n ɔ n ɔ
 7109	1895	Stockhof 1987	2359	1895	kabieĕ	kabiė	k a b i ė	kabiə	k a b i ə
@@ -822,23 +822,23 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7117	1895	Stockhof 1987	2362	1895	kaik takajo alibĕ	kaik takayO alibė	k a i k # t a k a y O # a l i b ė	kaik takajɔ alibə	k a i k # t a k a j ɔ # a l i b ə
 7119	1895	Stockhof 1987	2363	1895	kaik takajo kaik	kaik takayO kaik	k a i k # t a k a y O # k a i k	kaik takajɔ kaik	k a i k # t a k a j ɔ # k a i k
 7122	1895	Stockhof 1987	2364	1895	adoewĕ kanoeĕ	aduwė kanuė	a d u w ė # k a n u ė	aduwə kanuə	a d u w ə # k a n u ə
-7139	1895	Stockhof 1987	2368	1895	kiŏhā	kiOhaa	k i O h aa	kiɔhaː	k i ɔ h aː
+7139	1895	Stockhof 1987	2368	1895	kiŏhā	kiOhaa	k i O h a a	kiɔhaː	k i ɔ h aː
 7153	1895	Stockhof 1987	2374	1895	koie	kOi	k O i	kɔi	k ɔ i
 7155	1895	Stockhof 1987	2375	1895	poekai	pukai	p u k a i	pukai	p u k a i
 7163	1895	Stockhof 1987	2381	1895	aoena(k) èbahaoe	auna' Ebahau	a u n a ' # E b a h a u	aunaʔ ɛbahau	a u n a ʔ # ɛ b a h a u
-7170	1895	Stockhof 1987	2383	1895	kèābāoewā āno(k)	kEaabaauwaa aanO'	k E aa b aa u w aa # aa n O '	kɛaːbaːuwaː aːnɔʔ	k ɛ aː b aː u w aː # aː n ɔ ʔ
+7170	1895	Stockhof 1987	2383	1895	kèābāoewā āno(k)	kEaabaauwaa aanO'	k E a a b a a u w a a # a a n O '	kɛaːbaːuwaː aːnɔʔ	k ɛ aː b aː u w aː # aː n ɔ ʔ
 7173	1895	Stockhof 1987	2385	1895	hŏako(k)	hOakO'	h O a k O '	hɔakɔʔ	h ɔ a k ɔ ʔ
 7179	1895	Stockhof 1987	2388	1895	hamaiko ; kamaiko ; wamaiko	hamaikO ; kamaikO ; wamaikO	h a m a i k O # ; # k a m a i k O # ; # w a m a i k O	hamaikɔ ; kamaikɔ ; wamaikɔ	h a m a i k ɔ # ; # k a m a i k ɔ # ; # w a m a i k ɔ
 7182	1895	Stockhof 1987	2389	1895	abakiŏbè	abakiObE	a b a k i O b E	abakiɔbɛ	a b a k i ɔ b ɛ
 7190	1895	Stockhof 1987	2392	1895	è(i)ko	E(i)kO	E ( i ) k O	ɛ(i)kɔ	ɛ ( i ) k ɔ
 7205	1895	Stockhof 1987	2399	1895	eè	eE	e E	eɛ	e ɛ
-7207	1895	Stockhof 1987	2400	1895	èŏŏbŏ	EOObO	E OO b O	ɛɔːbɔ	ɛ ɔː b ɔ
+7207	1895	Stockhof 1987	2400	1895	èŏŏbŏ	EOObO	E O O b O	ɛɔːbɔ	ɛ ɔː b ɔ
 7223	1895	Stockhof 1987	2406	1895	kaoedara	kaudara	k a u d a r a	kaudara	k a u d a r a
 7232	1895	Stockhof 1987	2407	1895	foinana(k) ; po(k)inamok	fOinana' ; pO'inamOk	f O i n a n a ' # ; # p O ' i n a m O k	fɔinanaʔ ; pɔʔinamɔk	f ɔ i n a n a ʔ # ; # p ɔ ʔ i n a m ɔ k
 7239	1895	Stockhof 1987	2409	1895	èdjie	Eji	E j i	ɛd͡ʒi	ɛ d͡ʒ i
 7254	1895	Stockhof 1987	2416	1895	ènŏmŏnŏmŏ	EnOmOnOmO	E n O m O n O m O	ɛnɔmɔnɔmɔ	ɛ n ɔ m ɔ n ɔ m ɔ
 7255	1895	Stockhof 1987	2417	1895	èmi(k)ie	Emi'i	E m i ' i	ɛmiʔi	ɛ m i ʔ i
-7267	1895	Stockhof 1987	2421	1895	[bakŏkoĕ] kafoekakō	[bakOkOė] kafukakoo	[ b a k O k O ė ] # k a f u k a k oo	[bakɔkɔə] kafukakoː	[ b a k ɔ k ɔ ə ] # k a f u k a k oː
+7267	1895	Stockhof 1987	2421	1895	[bakŏkoĕ] kafoekakō	[bakOkOė] kafukakoo	[ b a k O k O ė ] # k a f u k a k o o	[bakɔkɔə] kafukakoː	[ b a k ɔ k ɔ ə ] # k a f u k a k oː
 7284	1895	Stockhof 1987	2425	1895	kàhafie ; kahapie ; mahapie	kahafi ; kahapi ; mahapi	k a h a f i # ; # k a h a p i # ; # m a h a p i	kahafi ; kahapi ; mahapi	k a h a f i # ; # k a h a p i # ; # m a h a p i
 7290	1895	Stockhof 1987	2427	1895	fabŏrīkī ; pabŏrikī	fabOriki ; pabOriki	f a b O r i k i # ; # p a b O r i k i	fabɔriki ; pabɔriki	f a b ɔ r i k i # ; # p a b ɔ r i k i
 7291	1895	Stockhof 1987	2428	1895	wakoeabŏ	wakuabO	w a k u a b O	wakuabɔ	w a k u a b ɔ
@@ -848,14 +848,14 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7356	1895	Stockhof 1987	2450	1895	kamoko	kamOkO	k a m O k O	kamɔkɔ	k a m ɔ k ɔ
 7360	1895	Stockhof 1987	2451	1895	kidebo	kidebO	k i d e b O	kidebɔ	k i d e b ɔ
 7368	1895	Stockhof 1987	2453	1895	èijah	Eiyah	E i y a h	ɛijah	ɛ i j a h
-7384	1895	Stockhof 1987	2457	1895	nakoeānā	nakuaanaa	n a k u aa n aa	nakuaːnaː	n a k u aː n aː
-7389	1895	Stockhof 1987	2458	1895	nāāfè	naafE	n aa f E	naːfɛ	n aː f ɛ
-7394	1895	Stockhof 1987	2459	1895	ijāha	iyaaha	i y aa h a	ijaːha	i j aː h a
+7384	1895	Stockhof 1987	2457	1895	nakoeānā	nakuaanaa	n a k u a a n a a	nakuaːnaː	n a k u aː n aː
+7389	1895	Stockhof 1987	2458	1895	nāāfè	naafE	n a a f E	naːfɛ	n aː f ɛ
+7394	1895	Stockhof 1987	2459	1895	ijāha	iyaaha	i y a a h a	ijaːha	i j aː h a
 7402	1895	Stockhof 1987	2461	1895	tiŏ	tiO	t i O	tiɔ	t i ɔ
-7407	1895	Stockhof 1987	2465	1895	kahieābie	kahiaabi	k a h i aa b i	kahiaːbi	k a h i aː b i
-7416	1895	Stockhof 1987	2468	1895	(hŏ)hā	(hO)haa	( h O ) h aa	(hɔ)haː	( h ɔ ) h aː
+7407	1895	Stockhof 1987	2465	1895	kahieābie	kahiaabi	k a h i a a b i	kahiaːbi	k a h i aː b i
+7416	1895	Stockhof 1987	2468	1895	(hŏ)hā	(hO)haa	( h O ) h a a	(hɔ)haː	( h ɔ ) h aː
 7434	1895	Stockhof 1987	2471	1895	aijĕfoho ; aijĕpoho	aiyėfOhO ; aiyėpOhO	a i y ė f O h O # ; # a i y ė p O h O	aijəfɔhɔ ; aijəpɔhɔ	a i j ə f ɔ h ɔ # ; # a i j ə p ɔ h ɔ
-7438	1895	Stockhof 1987	2472	1895	kidīdēhŏ(k)	kidideehO'	k i d i d ee h O '	kidideːhɔʔ	k i d i d eː h ɔ ʔ
+7438	1895	Stockhof 1987	2472	1895	kidīdēhŏ(k)	kidideehO'	k i d i d e e h O '	kidideːhɔʔ	k i d i d eː h ɔ ʔ
 7454	1895	Stockhof 1987	2478	1895	lahè boewă(k)	lahE buwă'	l a h E # b u w ă '	lahɛ buwᾰʔ	l a h ɛ # b u w ᾰ ʔ
 7473	1895	Stockhof 1987	2483	1895	kifŏ kifŏ	kifO kifO	k i f O # k i f O	kifɔ kifɔ	k i f ɔ # k i f ɔ
 7475	1895	Stockhof 1987	2484	1895	kahŏmè	kahOmE	k a h O m E	kahɔmɛ	k a h ɔ m ɛ
@@ -864,22 +864,22 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7527	1895	Stockhof 1987	2508	1895	èkoewĕ	Ekuwė	E k u w ė	ɛkuwə	ɛ k u w ə
 7542	1895	Stockhof 1987	2512	1895	kehafariek ; kahapariek	kehafarik ; kahaparik	k e h a f a r i k # ; # k a h a p a r i k	kehafarik ; kahaparik	k e h a f a r i k # ; # k a h a p a r i k
 7548	1895	Stockhof 1987	2515	1895	èhŏdŏ(k)	EhOdO'	E h O d O '	ɛhɔdɔʔ	ɛ h ɔ d ɔ ʔ
-7555	1895	Stockhof 1987	2520	1895	iabahoekā	iabahukaa	i a b a h u k aa	iabahukaː	i a b a h u k aː
+7555	1895	Stockhof 1987	2520	1895	iabahoekā	iabahukaa	i a b a h u k a a	iabahukaː	i a b a h u k aː
 7557	1895	Stockhof 1987	2521	1895	ingè	ingE	i n g E	ingɛ	i n g ɛ
-7559	1895	Stockhof 1987	2522	1895	kadihoekā	kadixukaa	k a d i x u k aa	kadiçukaː	k a d i ç u k aː
-7560	1895	Stockhof 1987	2523	1895	kīīdōka	kiidooka	k i i d oo k a	kiidoːka	k i i d oː k a
+7559	1895	Stockhof 1987	2522	1895	kadihoekā	kadixukaa	k a d i x u k a a	kadiçukaː	k a d i ç u k aː
+7560	1895	Stockhof 1987	2523	1895	kīīdōka	kiidooka	k i i d o o k a	kiidoːka	k i i d oː k a
 7565	1895	Stockhof 1987	2526	1895	kikèĕ	kikEė	k i k E ė	kikɛə	k i k ɛ ə
 7570	1895	Stockhof 1987	2529	1895	baridaha	baridaha	b a r i d a h a	baridaha	b a r i d a h a
-7575	1895	Stockhof 1987	2531	1895	èfāwāfŏ	EfaawaafO	E f aa w aa f O	ɛfaːwaːfɔ	ɛ f aː w aː f ɔ
+7575	1895	Stockhof 1987	2531	1895	èfāwāfŏ	EfaawaafO	E f a a w a a f O	ɛfaːwaːfɔ	ɛ f aː w aː f ɔ
 7580	1895	Stockhof 1987	2532	1895	èla akowĕ	Ela akOwė	E l a # a k O w ė	ɛla akɔwə	ɛ l a # a k ɔ w ə
 7587	1895	Stockhof 1987	2534	1895	kakidahaiĕ	kakidahaiė	k a k i d a h a i ė	kakidahaiə	k a k i d a h a i ə
 7597	1895	Stockhof 1987	2537	1895	bahaibĕ	bahaibė	b a h a i b ė	bahaibə	b a h a i b ə
-7607	1895	Stockhof 1987	2539	1895	ŏŏ	OO	OO	ɔː	ɔː
+7607	1895	Stockhof 1987	2539	1895	ŏŏ	OO	O O	ɔː	ɔː
 7625	1895	Stockhof 1987	2544	1895	kamoeninŏ ; kamoenīno	kamuninO ; kamuninO	k a m u n i n O # ; # k a m u n i n O	kamuninɔ ; kamuninɔ	k a m u n i n ɔ # ; # k a m u n i n ɔ
 7626	1895	Stockhof 1987	2545	1895	manŏniejŏ	manOniyO	m a n O n i y O	manɔnijɔ	m a n ɔ n i j ɔ
 7635	1895	Stockhof 1987	2548	1895	pananamie	pananami	p a n a n a m i	pananami	p a n a n a m i
 7637	1895	Stockhof 1987	2549	1895	ehaw	ehaw	e h a w	ehaw	e h a w
 7638	1895	Stockhof 1987	2550	1895	èara bèo	Eara bEO	E a r a # b E O	ɛara bɛɔ	ɛ a r a # b ɛ ɔ
 7642	1895	Stockhof 1987	2551	1895	èhai(k)	Ehai'	E h a i '	ɛhaiʔ	ɛ h a i ʔ
-7645	1895	Stockhof 1987	2552	1895	āāoe(k)	aau'	aa u '	aːuʔ	aː u ʔ
+7645	1895	Stockhof 1987	2552	1895	āāoe(k)	aau'	a a u '	aːuʔ	aː u ʔ
 7650	1895	Stockhof 1987	2555	1895	èaiboe	Eaibu	E a i b u	ɛaibu	ɛ a i b u

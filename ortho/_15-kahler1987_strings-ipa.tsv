@@ -7,8 +7,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 100	1987	Kähler 1987	7	1987K	ʔakodu ; ʔakoru	'akodu ; 'akoru	' a k o d u # ; # ' a k o r u	ʔakodu ; ʔakoru	ʔ a k o d u # ; # ʔ a k o r u
 121	1987	Kähler 1987	9	1987K	ʔãkĩãkĩnã	'ãkĩãkĩnã	' ã k ĩ ã k ĩ n ã	ʔãkĩãkĩnã	ʔ ã k ĩ ã k ĩ n ã
 137	1987	Kähler 1987	10	1987K	ʔadiba	'adiba	' a d i b a	ʔadiba	ʔ a d i b a
-154	1987	Kähler 1987	11	1987K	ʔadiba hī ʔadua	'adiba hii 'adua	' a d i b a # h ii # ' a d u a	ʔadiba hiː ʔadua	ʔ a d i b a # h iː # ʔ a d u a
-169	1987	Kähler 1987	12	1987K	ʔáopa hī ʔáopa	'áopa hii 'áopa	' á o p a # h ii # ' á o p a	ʔáopa hiː ʔáopa	ʔ á o p a # h iː # ʔ á o p a
+154	1987	Kähler 1987	11	1987K	ʔadiba hī ʔadua	'adiba hii 'adua	' a d i b a # h i i # ' a d u a	ʔadiba hiː ʔadua	ʔ a d i b a # h iː # ʔ a d u a
+169	1987	Kähler 1987	12	1987K	ʔáopa hī ʔáopa	'áopa hii 'áopa	' á o p a # h i i # ' á o p a	ʔáopa hiː ʔáopa	ʔ á o p a # h iː # ʔ á o p a
 190	1987	Kähler 1987	14	1987K	ʔadiba ekaka	'adiba ekaka	' a d i b a # e k a k a	ʔadiba ekaka	ʔ a d i b a # e k a k a
 204	1987	Kähler 1987	15	1987K	ẽ-ãmãhã	ẽ-ãmãhã	ẽ - ã m ã h ã	ẽ-ãmãhã	ẽ - ã m ã h ã
 218	1987	Kähler 1987	16	1987K	ãmã	ãmã	ã m ã	ãmã	ã m ã
@@ -33,7 +33,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 512	1987	Kähler 1987	45	1987K	kixĩãmã	kixĩãmã	k i x ĩ ã m ã	kiçĩãmã	k i ç ĩ ã m ã
 522	1987	Kähler 1987	46	1987K	kəda	ku̇da	k u̇ d a	kɨda	k ɨ d a
 537	1987	Kähler 1987	47	1987K	ekitai ; ekidai ; ekidei ; ekitei	ekitai ; ekidai ; ekidei ; ekitei	e k i t a i # ; # e k i d a i # ; # e k i d e i # ; # e k i t e i	ekitai ; ekidai ; ekidei ; ekitei	e k i t a i # ; # e k i d a i # ; # e k i d e i # ; # e k i t e i
-578	1987	Kähler 1987	50	1987K	ebō	eboo	e b oo	eboː	e b oː
+578	1987	Kähler 1987	50	1987K	ebō	eboo	e b o o	eboː	e b oː
 593	1987	Kähler 1987	51	1987K	edohoao ; edohəao ; etohəao ; etohoao ; ebodoá͜ua	edohoao ; edohu̇ao ; etohu̇ao ; etohoao ; ebodoá:ua	e d o h o a o # ; # e d o h u̇ a o # ; # e t o h u̇ a o # ; # e t o h o a o # ; # e b o d o á: u a	edohoao ; edohɨao ; etohɨao ; etohoao ; ebodoá͜ua	e d o h o a o # ; # e d o h ɨ a o # ; # e t o h ɨ a o # ; # e t o h o a o # ; # e b o d o á͜ u a
 618	1987	Kähler 1987	54	1987K	ekãmũnãĩyõ	ekãmũnãĩyõ	e k ã m ũ n ã ĩ y õ	ekãmũnãĩjɔ͂	e k ã m ũ n ã ĩ j ɔ͂
 625	1987	Kähler 1987	56	1987K	ki-ʔoʔoʔoi	ki-'o'o'oi	k i - ' o ' o ' o i	ki-ʔoʔoʔoi	k i - ʔ o ʔ o ʔ o i
@@ -55,28 +55,28 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 847	1987	Kähler 1987	85	1987K	kaʔara	ka'ara	k a ' a r a	kaʔara	k a ʔ a r a
 851	1987	Kähler 1987	86	1987K	epanõmãʔã	epanõmã'ã	e p a n õ m ã ' ã	epanɔ͂mãʔã	e p a n ɔ͂ m ã ʔ ã
 857	1987	Kähler 1987	88	1987K	kahãhõ	kahãhõ	k a h ã h õ	kahãhɔ͂	k a h ã h ɔ͂
-860	1987	Kähler 1987	89	1987K	ahō	ahoo	a h oo	ahoː	a h oː
+860	1987	Kähler 1987	89	1987K	ahō	ahoo	a h o o	ahoː	a h oː
 868	1987	Kähler 1987	94	1987K	kahinũãpẽ	kahinũãpẽ	k a h i n ũ ã p ẽ	kahinũãpẽ	k a h i n ũ ã p ẽ
 881	1987	Kähler 1987	98	1987K	kídera ; kítera	kídera ; kítera	k í d e r a # ; # k í t e r a	kidera ; kitera	k i d e r a # ; # k i t e r a
-895	1987	Kähler 1987	103	1987K	panẽ̄	panẽẽ	p a n ẽẽ	panẽː	p a n ẽː
-902	1987	Kähler 1987	107	1987K	hō	hoo	h oo	hoː	h oː
+895	1987	Kähler 1987	103	1987K	panẽ̄	panẽẽ	p a n ẽ ẽ	panẽː	p a n ẽː
+902	1987	Kähler 1987	107	1987K	hō	hoo	h o o	hoː	h oː
 911	1987	Kähler 1987	108	1987K	abəha	abu̇ha	a b u̇ h a	abɨha	a b ɨ h a
 922	1987	Kähler 1987	112	1987K	enãʔãpũã	enã'ãpũã	e n ã ' ã p ũ ã	enãʔãpũã	e n ã ʔ ã p ũ ã
 923	1987	Kähler 1987	113	1987K	(ʔ)ũpũ	(')ũpũ	( ' ) ũ p ũ	(ʔ)ũpũ	( ʔ ) ũ p ũ
 926	1987	Kähler 1987	114	1987K	eãpãkũ	eãpãkũ	e ã p ã k ũ	eãpãkũ	e ã p ã k ũ
 928	1987	Kähler 1987	116	1987K	kikoa	kikoa	k i k o a	kikoa	k i k o a
-936	1987	Kähler 1987	118	1987K	hī ; he	hii ; he	h ii # ; # h e	hiː ; he	h iː # ; # h e
+936	1987	Kähler 1987	118	1987K	hī ; he	hii ; he	h i i # ; # h e	hiː ; he	h iː # ; # h e
 952	1987	Kähler 1987	125	1987K	ekadixa uae	ekadixa uae	e k a d i x a # u a e	ekadiça uae	e k a d i ç a # u a e
 962	1987	Kähler 1987	128	1987K	edadi ; kadi	edadi ; kadi	e d a d i # ; # k a d i	edadi ; kadi	e d a d i # ; # k a d i
 970	1987	Kähler 1987	131	1987K	ekixo	ekixo	e k i x o	ekiço	e k i ç o
 977	1987	Kähler 1987	133	1987K	eupo	eupo	e u p o	eupo	e u p o
 981	1987	Kähler 1987	135	1987K	pauahaʔa͜[o]	pauaha'a[:o]	p a u a h a ' a [: o ]	pauahaʔa͜[o]	p a u a h a ʔ a͜ [ o ]
 987	1987	Kähler 1987	137	1987K	eparaha͜odi	eparaha:odi	e p a r a h a: o d i	eparaha͜odi	e p a r a h a͜ o d i
-988	1987	Kähler 1987	138	1987K	eʔā uʔapo	e'aa u'apo	e ' aa # u ' a p o	eʔaː uʔapo	e ʔ aː # u ʔ a p o
+988	1987	Kähler 1987	138	1987K	eʔā uʔapo	e'aa u'apo	e ' a a # u ' a p o	eʔaː uʔapo	e ʔ aː # u ʔ a p o
 992	1987	Kähler 1987	139	1987K	eʔaroʔopa ; eʔaropa ; eʔarupa	e'aro'opa ; e'aropa ; e'arupa	e ' a r o ' o p a # ; # e ' a r o p a # ; # e ' a r u p a	eʔaroʔopa ; eʔaropa ; eʔarupa	e ʔ a r o ʔ o p a # ; # e ʔ a r o p a # ; # e ʔ a r u p a
 998	1987	Kähler 1987	140	1987K	kipakẽʔẽ	kipakẽ'ẽ	k i p a k ẽ ' ẽ	kipakẽʔẽ	k i p a k ẽ ʔ ẽ
 1001	1987	Kähler 1987	141	1987K	epahanẽkũ	epahanẽkũ	e p a h a n ẽ k ũ	epahanẽkũ	e p a h a n ẽ k ũ
-1003	1987	Kähler 1987	142	1987K	hо̄ abakəʔa	hoo abaku̇'a	h oo # a b a k u̇ ' a	hoː abakɨʔa	h oː # a b a k ɨ ʔ a
+1003	1987	Kähler 1987	142	1987K	hо̄ abakəʔa	hoo abaku̇'a	h o o # a b a k u̇ ' a	hoː abakɨʔa	h oː # a b a k ɨ ʔ a
 1010	1987	Kähler 1987	144	1987K	eara uipikoʔo͜i	eara uipiko'o:i	e a r a # u i p i k o ' o: i	eara uipikoʔo͜i	e a r a # u i p i k o ʔ o͜ i
 1013	1987	Kähler 1987	145	1987K	ʔũmãhã́ũ	'ũmãhã́ũ	' ũ m ã h ã́ ũ	ʔũmãhã́ũ	ʔ ũ m ã h ã́ ũ
 1014	1987	Kähler 1987	146	1987K	kinãʔã͜uã	kinã'ã:uã	k i n ã ' ã: u ã	kinãʔã͜uã	k i n ã ʔ ã͜ u ã
@@ -119,7 +119,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1217	1987	Kähler 1987	206	1987K	eãmĩã	eãmĩã	e ã m ĩ ã	eãmĩã	e ã m ĩ ã
 1222	1987	Kähler 1987	208	1987K	ebixu	ebixu	e b i x u	ebiçu	e b i ç u
 1230	1987	Kähler 1987	211	1987K	(i)yáudu	(i)yáudu	( i ) y á u d u	(i)jáudu	( i ) j á u d u
-1232	1987	Kähler 1987	212	1987K	halē ; hadē	halee ; hadee	h a l ee # ; # h a d ee	haleː ; hadeː	h a l eː # ; # h a d eː
+1232	1987	Kähler 1987	212	1987K	halē ; hadē	halee ; hadee	h a l e e # ; # h a d e e	haleː ; hadeː	h a l eː # ; # h a d eː
 1236	1987	Kähler 1987	213	1987K	kahinũã	kahinũã	k a h i n ũ ã	kahinũã	k a h i n ũ ã
 1240	1987	Kähler 1987	214	1987K	ka?akəhəa	ka?aku̇hu̇a	k a ? a k u̇ h u̇ a	ka?akɨhɨa	k a ? a k ɨ h ɨ a
 1244	1987	Kähler 1987	215	1987K	kipehe ; kapehei	kipehe ; kapehei	k i p e h e # ; # k a p e h e i	kipehe ; kapehei	k i p e h e # ; # k a p e h e i
@@ -153,25 +153,25 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1419	1987	Kähler 1987	258	1987K	epurudui [ukaraha]	epurudui [ukaraha]	e p u r u d u i # [ u k a r a h a ]	epurudui [ukaraha]	e p u r u d u i # [ u k a r a h a ]
 1423	1987	Kähler 1987	260	1987K	ekarepe	ekarepe	e k a r e p e	ekarepe	e k a r e p e
 1429	1987	Kähler 1987	262	1987K	puʔuda: ; kipuda ; kapuda ; kababuda	pu'uda: ; kipuda ; kapuda ; kababuda	p u ' u d a : # ; # k i p u d a # ; # k a p u d a # ; # k a b a b u d a	puʔuda: ; kipuda ; kapuda ; kababuda	p u ʔ u d a : # ; # k i p u d a # ; # k a p u d a # ; # k a b a b u d a
-1442	1987	Kähler 1987	265	1987K	eʔā [ukaraha]	e'aa [ukaraha]	e ' aa # [ u k a r a h a ]	eʔaː [ukaraha]	e ʔ aː # [ u k a r a h a ]
+1442	1987	Kähler 1987	265	1987K	eʔā [ukaraha]	e'aa [ukaraha]	e ' a a # [ u k a r a h a ]	eʔaː [ukaraha]	e ʔ aː # [ u k a r a h a ]
 1449	1987	Kähler 1987	266	1987K	epanãʔã͜uã	epanã'ã:uã	e p a n ã ' ã: u ã	epanãʔã͜uã	e p a n ã ʔ ã͜ u ã
 1459	1987	Kähler 1987	271	1987K	eipikoʔo͜i	eipiko'o:i	e i p i k o ' o: i	eipikoʔo͜i	e i p i k o ʔ o͜ i
 1466	1987	Kähler 1987	273	1987K	ekarixai uʔapo	ekarixai u'apo	e k a r i x a i # u ' a p o	ekariçai uʔapo	e k a r i ç a i # u ʔ a p o
-1470	1987	Kähler 1987	275	1987K	ekoporiʔío [ūdu] ; ekoropiʔío	ekopori'ío [uudu] ; ekoropi'ío	e k o p o r i ' í o # [ uu d u ] # ; # e k o r o p i ' í o	ekoporiʔio [uːdu] ; ekoropiʔio	e k o p o r i ʔ i o # [ uː d u ] # ; # e k o r o p i ʔ i o
+1470	1987	Kähler 1987	275	1987K	ekoporiʔío [ūdu] ; ekoropiʔío	ekopori'ío [uudu] ; ekoropi'ío	e k o p o r i ' í o # [ u u d u ] # ; # e k o r o p i ' í o	ekoporiʔio [uːdu] ; ekoropiʔio	e k o p o r i ʔ i o # [ uː d u ] # ; # e k o r o p i ʔ i o
 1474	1987	Kähler 1987	276	1987K	ekəʔa	eku̇'a	e k u̇ ' a	ekɨʔa	e k ɨ ʔ a
 1477	1987	Kähler 1987	277	1987K	eʔapo ukuo	e'apo ukuo	e ' a p o # u k u o	eʔapo ukuo	e ʔ a p o # u k u o
 1485	1987	Kähler 1987	282	1987K	kinãnãĩñãʔã	kinãnãĩñã'ã	k i n ã n ã ĩ ñ ã ' ã	kinãnãĩɲãʔã	k i n ã n ã ĩ ɲ ã ʔ ã
 1492	1987	Kähler 1987	283	1987K	kikaraʔa	kikara'a	k i k a r a ' a	kikaraʔa	k i k a r a ʔ a
 1496	1987	Kähler 1987	284	1987K	kikou	kikou	k i k o u	kikou	k i k o u
-1501	1987	Kähler 1987	285	1987K	kikōʔõʔã	kikoo'õ'ã	k i k oo ' õ ' ã	kikoːʔɔ͂ʔã	k i k oː ʔ ɔ͂ ʔ ã
+1501	1987	Kähler 1987	285	1987K	kikōʔõʔã	kikoo'õ'ã	k i k o o ' õ ' ã	kikoːʔɔ͂ʔã	k i k oː ʔ ɔ͂ ʔ ã
 1504	1987	Kähler 1987	286	1987K	kipakəʔa	kipaku̇'a	k i p a k u̇ ' a	kipakɨʔa	k i p a k ɨ ʔ a
 1505	1987	Kähler 1987	287	1987K	kunãʔã	kunã'ã	k u n ã ' ã	kunãʔã	k u n ã ʔ ã
 1508	1987	Kähler 1987	288	1987K	kikopi	kikopi	k i k o p i	kikopi	k i k o p i
 1512	1987	Kähler 1987	289	1987K	kipə́aʔa ; kabupə́aʔa ; ka(haba)bə́aʔa	kipu̇́a'a ; kabupu̇́a'a ; ka(haba)bu̇́a'a	k i p u̇́ a ' a # ; # k a b u p u̇́ a ' a # ; # k a ( h a b a ) b u̇́ a ' a	kipɨ́aʔa ; kabupɨ́aʔa ; ka(haba)bɨ́aʔa	k i p ɨ́ a ʔ a # ; # k a b u p ɨ́ a ʔ a # ; # k a ( h a b a ) b ɨ́ a ʔ a
 1516	1987	Kähler 1987	290	1987K	kixekoʔoáʔa	kixeko'oá'a	k i x e k o ' o á ' a	kiçekoʔoáʔa	k i ç e k o ʔ o á ʔ a
 1527	1987	Kähler 1987	292	1987K	ekoko	ekoko	e k o k o	ekoko	e k o k o
-1533	1987	Kähler 1987	294	1987K	ebē ukoko	ebee ukoko	e b ee # u k o k o	ebeː ukoko	e b eː # u k o k o
-1534	1987	Kähler 1987	295	1987K	eʔā uãmãhã	e'aa uãmãhã	e ' aa # u ã m ã h ã	eʔaː uãmãhã	e ʔ aː # u ã m ã h ã
+1533	1987	Kähler 1987	294	1987K	ebē ukoko	ebee ukoko	e b e e # u k o k o	ebeː ukoko	e b eː # u k o k o
+1534	1987	Kähler 1987	295	1987K	eʔā uãmãhã	e'aa uãmãhã	e ' a a # u ã m ã h ã	eʔaː uãmãhã	e ʔ aː # u ã m ã h ã
 1539	1987	Kähler 1987	296	1987K	kipa(ha)koko	kipa(ha)koko	k i p a ( h a ) k o k o	kipa(ha)koko	k i p a ( h a ) k o k o
 1543	1987	Kähler 1987	297	1987K	eahõpṍʔõ	eahõpṍ'õ	e a h õ p ṍ ' õ	eahɔ͂pɔ̃́ʔɔ͂	e a h ɔ͂ p ɔ̃́ ʔ ɔ͂
 1545	1987	Kähler 1987	298	1987K	kixõpõʔõ ; kiõhõpõʔõ	kixõpõ'õ ; kiõhõpõ'õ	k i x õ p õ ' õ # ; # k i õ h õ p õ ' õ	kiçɔ͂pɔ͂ʔɔ͂ ; kiɔ͂hɔ͂pɔ͂ʔɔ͂	k i ç ɔ͂ p ɔ͂ ʔ ɔ͂ # ; # k i ɔ͂ h ɔ͂ p ɔ͂ ʔ ɔ͂
@@ -193,7 +193,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1635	1987	Kähler 1987	328	1987K	epãʔõpãʔõ ; epõʔõpãõ	epã'õpã'õ ; epõ'õpãõ	e p ã ' õ p ã ' õ # ; # e p õ ' õ p ã õ	epãʔɔ͂pãʔɔ͂ ; epɔ͂ʔɔ͂pãɔ͂	e p ã ʔ ɔ͂ p ã ʔ ɔ͂ # ; # e p ɔ͂ ʔ ɔ͂ p ã ɔ͂
 1639	1987	Kähler 1987	329	1987K	ehokai ; ehõkãĩ	ehokai ; ehõkãĩ	e h o k a i # ; # e h õ k ã ĩ	ehokai ; ehɔ͂kãĩ	e h o k a i # ; # e h ɔ͂ k ã ĩ
 1640	1987	Kähler 1987	330	1987K	ẽnãnĩ	ẽnãnĩ	ẽ n ã n ĩ	ẽnãnĩ	ẽ n ã n ĩ
-1643	1987	Kähler 1987	331	1987K	ʔo ; ʔō ; iʔiō	'o ; 'oo ; i'ioo	' o # ; # ' oo # ; # i ' i oo	ʔo ; ʔoː ; iʔioː	ʔ o # ; # ʔ oː # ; # i ʔ i oː
+1643	1987	Kähler 1987	331	1987K	ʔo ; ʔō ; iʔiō	'o ; 'oo ; i'ioo	' o # ; # ' o o # ; # i ' i o o	ʔo ; ʔoː ; iʔioː	ʔ o # ; # ʔ oː # ; # i ʔ i oː
 1652	1987	Kähler 1987	335	1987K	epĩõpĩõ ; epĩəpĩə	epĩõpĩõ ; epĩu̇pĩu̇	e p ĩ õ p ĩ õ # ; # e p ĩ u̇ p ĩ u̇	epĩɔ͂pĩɔ͂ ; epĩɨpĩɨ	e p ĩ ɔ͂ p ĩ ɔ͂ # ; # e p ĩ ɨ p ĩ ɨ
 1658	1987	Kähler 1987	336	1987K	kahadi	kahadi	k a h a d i	kahadi	k a h a d i
 1665	1987	Kähler 1987	338	1987K	kipəhai ; pohoi	kipu̇hai ; pohoi	k i p u̇ h a i # ; # p o h o i	kipɨhai ; pohoi	k i p ɨ h a i # ; # p o h o i
@@ -202,7 +202,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1682	1987	Kähler 1987	347	1987K	kũpã	kũpã	k ũ p ã	kũpã	k ũ p ã
 1689	1987	Kähler 1987	349	1987K	kole ; kore ; kode	kole ; kore ; kode	k o l e # ; # k o r e # ; # k o d e	kole ; kore ; kode	k o l e # ; # k o r e # ; # k o d e
 1691	1987	Kähler 1987	350	1987K	kamẽhẽnĩ	kamẽhẽnĩ	k a m ẽ h ẽ n ĩ	kamẽhẽnĩ	k a m ẽ h ẽ n ĩ
-1693	1987	Kähler 1987	352	1987K	ekixẽnȭ	ekixẽnõõ	e k i x ẽ n õõ	ekiçẽnɔ̃ː	e k i ç ẽ n ɔ̃ː
+1693	1987	Kähler 1987	352	1987K	ekixẽnȭ	ekixẽnõõ	e k i x ẽ n õ õ	ekiçẽnɔ̃ː	e k i ç ẽ n ɔ̃ː
 1700	1987	Kähler 1987	353	1987K	ebao	ebao	e b a o	ebao	e b a o
 1707	1987	Kähler 1987	354	1987K	ekikoha	ekikoha	e k i k o h a	ekikoha	e k i k o h a
 1710	1987	Kähler 1987	355	1987K	kipa͜iʔio	kipa:i'io	k i p a: i ' i o	kipa͜iʔio	k i p a͜ i ʔ i o
@@ -222,18 +222,18 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1832	1987	Kähler 1987	394	1987K	ekãpũ	ekãpũ	e k ã p ũ	ekãpũ	e k ã p ũ
 1845	1987	Kähler 1987	399	1987K	eʔaduku	e'aduku	e ' a d u k u	eʔaduku	e ʔ a d u k u
 1863	1987	Kähler 1987	405	1987K	kede ; kah(a)ede	kede ; kah(a)ede	k e d e # ; # k a h ( a ) e d e	kede ; kah(a)ede	k e d e # ; # k a h ( a ) e d e
-1874	1987	Kähler 1987	410	1987K	kahaʔũkī́ʔĩ	kaha'ũkíí'ĩ	k a h a ' ũ k íí ' ĩ	kahaʔũkiːʔĩ	k a h a ʔ ũ k iː ʔ ĩ
+1874	1987	Kähler 1987	410	1987K	kahaʔũkī́ʔĩ	kaha'ũkíí'ĩ	k a h a ' ũ k í í ' ĩ	kahaʔũkiːʔĩ	k a h a ʔ ũ k iː ʔ ĩ
 1886	1987	Kähler 1987	415	1987K	ẽ-kãẽnĩ	ẽ-kãẽnĩ	ẽ - k ã ẽ n ĩ	ẽ-kãẽnĩ	ẽ - k ã ẽ n ĩ
 1889	1987	Kähler 1987	416	1987K	e-opouda	e-opouda	e - o p o u d a	e-opouda	e - o p o u d a
 1901	1987	Kähler 1987	421	1987K	e-kai u-dahauhu	e-kai u-dahauhu	e - k a i # u - d a h a u h u	e-kai u-dahauhu	e - k a i # u - d a h a u h u
 1906	1987	Kähler 1987	423	1987K	ka-dipo	ka-dipo	k a - d i p o	ka-dipo	k a - d i p o
 1912	1987	Kähler 1987	425	1987K	eʔoki	e'oki	e ' o k i	eʔoki	e ʔ o k i
-1914	1987	Kähler 1987	426	1987K	eʔā uiʔo	e'aa ui'o	e ' aa # u i ' o	eʔaː uiʔo	e ʔ aː # u i ʔ o
-1930	1987	Kähler 1987	428	1987K	epō	epoo	e p oo	epoː	e p oː
+1914	1987	Kähler 1987	426	1987K	eʔā uiʔo	e'aa ui'o	e ' a a # u i ' o	eʔaː uiʔo	e ʔ aː # u i ʔ o
+1930	1987	Kähler 1987	428	1987K	epō	epoo	e p o o	epoː	e p oː
 1935	1987	Kähler 1987	429	1987K	ẽkãmũʔã	ẽkãmũ'ã	ẽ k ã m ũ ' ã	ẽkãmũʔã	ẽ k ã m ũ ʔ ã
-1936	1987	Kähler 1987	430	1987K	eãhã͜ĩ upō	eãhã:ĩ upoo	e ã h ã: ĩ # u p oo	eãhã͜ĩ upoː	e ã h ã͜ ĩ # u p oː
+1936	1987	Kähler 1987	430	1987K	eãhã͜ĩ upō	eãhã:ĩ upoo	e ã h ã: ĩ # u p o o	eãhã͜ĩ upoː	e ã h ã͜ ĩ # u p oː
 1942	1987	Kähler 1987	433	1987K	eodoya	eodoya	e o d o y a	eodoja	e o d o j a
-1944	1987	Kähler 1987	434	1987K	eʔā upō	e'aa upoo	e ' aa # u p oo	eʔaː upoː	e ʔ aː # u p oː
+1944	1987	Kähler 1987	434	1987K	eʔā upō	e'aa upoo	e ' a a # u p o o	eʔaː upoː	e ʔ aː # u p oː
 1957	1987	Kähler 1987	440	1987K	kãʔã-ʔɨ̃hɨ̃ã	kã'ã-'u̇̃hu̇̃ã	k ã ' ã - ' u̇̃ h u̇̃ ã	kãʔã-ʔɨ̃hɨ̃ã	k ã ʔ ã - ʔ ɨ̃ h ɨ̃ ã
 1986	1987	Kähler 1987	452	1987K	k-ai	k-ai	k - a i	k-ai	k - a i
 1996	1987	Kähler 1987	456	1987K	kikõkõnã ; kakõkõnã	kikõkõnã ; kakõkõnã	k i k õ k õ n ã # ; # k a k õ k õ n ã	kikɔ͂kɔ͂nã ; kakɔ͂kɔ͂nã	k i k ɔ͂ k ɔ͂ n ã # ; # k a k ɔ͂ k ɔ͂ n ã
@@ -256,12 +256,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2168	1987	Kähler 1987	515	1987K	k-edo	k-edo	k - e d o	k-edo	k - e d o
 2197	1987	Kähler 1987	526	1987K	kixəka ; kahanə̃kã ; ka(ba)haeka ; kamãhãnə̃kã	kixu̇ka ; kahanu̇̃kã ; ka(ba)haeka ; kamãhãnu̇̃kã	k i x u̇ k a # ; # k a h a n u̇̃ k ã # ; # k a ( b a ) h a e k a # ; # k a m ã h ã n u̇̃ k ã	kiçɨka ; kahanə̃kã ; ka(ba)haeka ; kamãhãnə̃kã	k i ç ɨ k a # ; # k a h a n ə̃ k ã # ; # k a ( b a ) h a e k a # ; # k a m ã h ã n ə̃ k ã
 2205	1987	Kähler 1987	529	1987K	kũnã	kũnã	k ũ n ã	kũnã	k ũ n ã
-2219	1987	Kähler 1987	535	1987K	kapõpȭ	kapõpõõ	k a p õ p õõ	kapɔ͂pɔ̃ː	k a p ɔ͂ p ɔ̃ː
+2219	1987	Kähler 1987	535	1987K	kapõpȭ	kapõpõõ	k a p õ p õ õ	kapɔ͂pɔ̃ː	k a p ɔ͂ p ɔ̃ː
 2265	1987	Kähler 1987	551	1987K	ki-pehodo	ki-pehodo	k i - p e h o d o	ki-pehodo	k i - p e h o d o
 2286	1987	Kähler 1987	559	1987K	kaʔaparoba	ka'aparoba	k a ' a p a r o b a	kaʔaparoba	k a ʔ a p a r o b a
 2291	1987	Kähler 1987	560	1987K	eparoba	eparoba	e p a r o b a	eparoba	e p a r o b a
 2294	1987	Kähler 1987	562	1987K	pauahaʔa ; pauahaʔa͜o ; paoahaʔa	pauaha'a ; pauaha'a:o ; paoaha'a	p a u a h a ' a # ; # p a u a h a ' a: o # ; # p a o a h a ' a	pauahaʔa ; pauahaʔa͜o ; paoahaʔa	p a u a h a ʔ a # ; # p a u a h a ʔ a͜ o # ; # p a o a h a ʔ a
-2299	1987	Kähler 1987	565	1987K	edahohō	edahohoo	e d a h o h oo	edahohoː	e d a h o h oː
+2299	1987	Kähler 1987	565	1987K	edahohō	edahohoo	e d a h o h o o	edahohoː	e d a h o h oː
 2303	1987	Kähler 1987	568	1987K	eʔabakoko	e'abakoko	e ' a b a k o k o	eʔabakoko	e ʔ a b a k o k o
 2309	1987	Kähler 1987	572	1987K	kipuaka	kipuaka	k i p u a k a	kipuaka	k i p u a k a
 2313	1987	Kähler 1987	575	1987K	eáha͜e	eáha:e	e á h a: e	eáha͜e	e á h a͜ e
@@ -274,7 +274,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2412	1987	Kähler 1987	615	1987K	e-beo	e-beo	e - b e o	e-beo	e - b e o
 2418	1987	Kähler 1987	616	1987K	e-ʔayedi	e-'ayedi	e - ' a y e d i	e-ʔajedi	e - ʔ a j e d i
 2439	1987	Kähler 1987	621	1987K	eakaruba	eakaruba	e a k a r u b a	eakaruba	e a k a r u b a
-2440	1987	Kähler 1987	622	1987K	eʔā uʔakaruba	e'aa u'akaruba	e ' aa # u ' a k a r u b a	eʔaː uʔakaruba	e ʔ aː # u ʔ a k a r u b a
+2440	1987	Kähler 1987	622	1987K	eʔā uʔakaruba	e'aa u'akaruba	e ' a a # u ' a k a r u b a	eʔaː uʔakaruba	e ʔ aː # u ʔ a k a r u b a
 2441	1987	Kähler 1987	623	1987K	kipaʔadua	kipa'adua	k i p a ' a d u a	kipaʔadua	k i p a ʔ a d u a
 2454	1987	Kähler 1987	630	1987K	kãʔã-nĩhãã ; kãʔã-nĩhãĩ	kã'ã-nĩhãã ; kã'ã-nĩhãĩ	k ã ' ã - n ĩ h ã ã # ; # k ã ' ã - n ĩ h ã ĩ	kãʔã-nĩhãã ; kãʔã-nĩhãĩ	k ã ʔ ã - n ĩ h ã ã # ; # k ã ʔ ã - n ĩ h ã ĩ
 2464	1987	Kähler 1987	635	1987K	ki-puʔudaʔa	ki-pu'uda'a	k i - p u ' u d a ' a	ki-puʔudaʔa	k i - p u ʔ u d a ʔ a
@@ -290,14 +290,14 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2542	1987	Kähler 1987	659	1987K	kikoroa	kikoroa	k i k o r o a	kikoroa	k i k o r o a
 2543	1987	Kähler 1987	660	1987K	ẽ-ãkõnãhã	ẽ-ãkõnãhã	ẽ - ã k õ n ã h ã	ẽ-ãkɔ͂nãhã	ẽ - ã k ɔ͂ n ã h ã
 2559	1987	Kähler 1987	663	1987K	e-kaʔa	e-ka'a	e - k a ' a	e-kaʔa	e - k a ʔ a
-2563	1987	Kähler 1987	665	1987K	ekãmã̄	ekãmãã	e k ã m ãã	ekãmãː	e k ã m ãː
+2563	1987	Kähler 1987	665	1987K	ekãmã̄	ekãmãã	e k ã m ã ã	ekãmãː	e k ã m ãː
 2606	1987	Kähler 1987	684	1987K	eaʔabəha	ea'abu̇ha	e a ' a b u̇ h a	eaʔabɨha	e a ʔ a b ɨ h a
 2643	1987	Kähler 1987	699	1987K	eáea	eáea	e á e a	eáea	e á e a
 2647	1987	Kähler 1987	702	1987K	ẽ-pẽkõ	ẽ-pẽkõ	ẽ - p ẽ k õ	ẽ-pẽkɔ͂	ẽ - p ẽ k ɔ͂
 2648	1987	Kähler 1987	703	1987K	epẽkõ ukanə̃ã͜i	epẽkõ ukanu̇̃ã:i	e p ẽ k õ # u k a n u̇̃ ã: i	epẽkɔ͂ ukanə̃ã͜i	e p ẽ k ɔ͂ # u k a n ə̃ ã͜ i
 2649	1987	Kähler 1987	704	1987K	eũʔũnũʔũĩ uʔəkaʔa/uaʔáu	eũ'ũnũ'ũĩ u'u̇ka'a/ua'áu	e ũ ' ũ n ũ ' ũ ĩ # u ' u̇ k a ' a / u a ' á u	eũʔũnũʔũĩ uʔɨkaʔa/uaʔáu	e ũ ʔ ũ n ũ ʔ ũ ĩ # u ʔ ɨ k a ʔ a / u a ʔ á u
 2650	1987	Kähler 1987	705	1987K	eʔaperúa͜u	e'aperúa:u	e ' a p e r ú a: u	eʔaperúa͜u	e ʔ a p e r ú a͜ u
-2651	1987	Kähler 1987	706	1987K	hī ʔō	hii 'oo	h ii # ' oo	hiː ʔoː	h iː # ʔ oː
+2651	1987	Kähler 1987	706	1987K	hī ʔō	hii 'oo	h i i # ' o o	hiː ʔoː	h iː # ʔ oː
 2653	1987	Kähler 1987	707	1987K	obaʔa	oba'a	o b a ' a	obaʔa	o b a ʔ a
 2677	1987	Kähler 1987	715	1987K	kikuhedi ; kipakuhedíaʔa	kikuhedi ; kipakuhedía'a	k i k u h e d i # ; # k i p a k u h e d í a ' a	kikuhedi ; kipakuhediaʔa	k i k u h e d i # ; # k i p a k u h e d i a ʔ a
 2678	1987	Kähler 1987	716	1987K	kikupeʔaʔa	kikupe'a'a	k i k u p e ' a ' a	kikupeʔaʔa	k i k u p e ʔ a ʔ a
@@ -322,19 +322,19 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2887	1987	Kähler 1987	788	1987K	abə́ha	abu̇́ha	a b u̇́ h a	abɨ́ha	a b ɨ́ h a
 2903	1987	Kähler 1987	799	1987K	e-ada e-pehe	e-ada e-pehe	e - a d a # e - p e h e	e-ada e-pehe	e - a d a # e - p e h e
 2912	1987	Kähler 1987	800	1987K	e-ʔa͜iyo	e-'a:iyo	e - ' a: i y o	e-ʔa͜ijo	e - ʔ a͜ i j o
-2923	1987	Kähler 1987	806	1987K	eʔā uʔi͜ayo	e'aa u'i:ayo	e ' aa # u ' i: a y o	eʔaː uʔi͜ajo	e ʔ aː # u ʔ i͜ a j o
+2923	1987	Kähler 1987	806	1987K	eʔā uʔi͜ayo	e'aa u'i:ayo	e ' a a # u ' i: a y o	eʔaː uʔi͜ajo	e ʔ aː # u ʔ i͜ a j o
 2924	1987	Kähler 1987	807	1987K	ẽ-ʔamĩ	ẽ-'amĩ	ẽ - ' a m ĩ	ẽ-ʔamĩ	ẽ - ʔ a m ĩ
 2927	1987	Kähler 1987	809	1987K	ekabuʔa͜iyo	ekabu'a:iyo	e k a b u ' a: i y o	ekabuʔa͜ijo	e k a b u ʔ a͜ i j o
 2932	1987	Kähler 1987	812	1987K	ʔaliba	'aliba	' a l i b a	ʔaliba	ʔ a l i b a
 2933	1987	Kähler 1987	813	1987K	ʔalibe	'alibe	' a l i b e	ʔalibe	ʔ a l i b e
 2936	1987	Kähler 1987	814	1987K	ʔariba	'ariba	' a r i b a	ʔariba	ʔ a r i b a
-2939	1987	Kähler 1987	815	1987K	kaha͜iʔi ekudədəka hī ʔariba ekaka	kaha:i'i ekudu̇du̇ka hii 'ariba ekaka	k a h a: i ' i # e k u d u̇ d u̇ k a # h ii # ' a r i b a # e k a k a	kaha͜iʔi ekudɨdɨka hiː ʔariba ekaka	k a h a͜ i ʔ i # e k u d ɨ d ɨ k a # h iː # ʔ a r i b a # e k a k a
+2939	1987	Kähler 1987	815	1987K	kaha͜iʔi ekudədəka hī ʔariba ekaka	kaha:i'i ekudu̇du̇ka hii 'ariba ekaka	k a h a: i ' i # e k u d u̇ d u̇ k a # h i i # ' a r i b a # e k a k a	kaha͜iʔi ekudɨdɨka hiː ʔariba ekaka	k a h a͜ i ʔ i # e k u d ɨ d ɨ k a # h iː # ʔ a r i b a # e k a k a
 2961	1987	Kähler 1987	824	1987K	ẽnãpã	ẽnãpã	ẽ n ã p ã	ẽnãpã	ẽ n ã p ã
 2972	1987	Kähler 1987	828	1987K	eheda	eheda	e h e d a	eheda	e h e d a
 2994	1987	Kähler 1987	837	1987K	abue	abue	a b u e	abue	a b u e
 2996	1987	Kähler 1987	838	1987K	k(i)abúe	k(i)abúe	k ( i ) a b ú e	k(i)abúe	k ( i ) a b ú e
 3001	1987	Kähler 1987	839	1987K	e-upuyo	e-upuyo	e - u p u y o	e-upujo	e - u p u j o
-3013	1987	Kähler 1987	843	1987K	eū́mõ	eúúmõ	e úú m õ	eúːmɔ͂	e úː m ɔ͂
+3013	1987	Kähler 1987	843	1987K	eū́mõ	eúúmõ	e ú ú m õ	eúːmɔ͂	e úː m ɔ͂
 3018	1987	Kähler 1987	845	1987K	kĩ-hãhãmõ	kĩ-hãhãmõ	k ĩ - h ã h ã m õ	kĩ-hãhãmɔ͂	k ĩ - h ã h ã m ɔ͂
 3023	1987	Kähler 1987	846	1987K	kĩ-ʔẽʔẽpã	kĩ-'ẽ'ẽpã	k ĩ - ' ẽ ' ẽ p ã	kĩ-ʔẽʔẽpã	k ĩ - ʔ ẽ ʔ ẽ p ã
 3051	1987	Kähler 1987	857	1987K	eaha͜ea	eaha:ea	e a h a: e a	eaha͜ea	e a h a͜ e a
@@ -348,7 +348,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3133	1987	Kähler 1987	884	1987K	ʔãnõ	'ãnõ	' ã n õ	ʔãnɔ͂	ʔ ã n ɔ͂
 3137	1987	Kähler 1987	885	1987K	hobeʔa	hobe'a	h o b e ' a	hobeʔa	h o b e ʔ a
 3144	1987	Kähler 1987	887	1987K	epẽʔõ	epẽ'õ	e p ẽ ' õ	epẽʔɔ͂	e p ẽ ʔ ɔ͂
-3150	1987	Kähler 1987	888	1987K	kude iʔiō	kude i'ioo	k u d e # i ' i oo	kude iʔioː	k u d e # i ʔ i oː
+3150	1987	Kähler 1987	888	1987K	kude iʔiō	kude i'ioo	k u d e # i ' i o o	kude iʔioː	k u d e # i ʔ i oː
 3165	1987	Kähler 1987	894	1987K	ẽ-hũã	ẽ-hũã	ẽ - h ũ ã	ẽ-hũã	ẽ - h ũ ã
 3170	1987	Kähler 1987	895	1987K	e-pua	e-pua	e - p u a	e-pua	e - p u a
 3179	1987	Kähler 1987	899	1987K	kĩ-pã́õmõ	kĩ-pã́õmõ	k ĩ - p ã́ õ m õ	kĩ-pã́ɔ͂mɔ͂	k ĩ - p ã́ ɔ͂ m ɔ͂
@@ -356,7 +356,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3210	1987	Kähler 1987	909	1987K	e-pia	e-pia	e - p i a	e-pia	e - p i a
 3215	1987	Kähler 1987	911	1987K	eabúa	eabúa	e a b ú a	eabúa	e a b ú a
 3217	1987	Kähler 1987	912	1987K	padudu ; parudu ; paruru:	padudu ; parudu ; paruru:	p a d u d u # ; # p a r u d u # ; # p a r u r u :	padudu ; parudu ; paruru:	p a d u d u # ; # p a r u d u # ; # p a r u r u :
-3255	1987	Kähler 1987	926	1987K	e-(ʔ)amẽ̄	e-(')amẽẽ	e - ( ' ) a m ẽẽ	e-(ʔ)amẽː	e - ( ʔ ) a m ẽː
+3255	1987	Kähler 1987	926	1987K	e-(ʔ)amẽ̄	e-(')amẽẽ	e - ( ' ) a m ẽ ẽ	e-(ʔ)amẽː	e - ( ʔ ) a m ẽː
 3258	1987	Kähler 1987	927	1987K	ebaba	ebaba	e b a b a	ebaba	e b a b a
 3260	1987	Kähler 1987	929	1987K	e-ãkã	e-ãkã	e - ã k ã	e-ãkã	e - ã k ã
 3267	1987	Kähler 1987	931	1987K	amĩmĩ	amĩmĩ	a m ĩ m ĩ	amĩmĩ	a m ĩ m ĩ
@@ -365,8 +365,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3301	1987	Kähler 1987	941	1987K	e-kadopipi	e-kadopipi	e - k a d o p i p i	e-kadopipi	e - k a d o p i p i
 3307	1987	Kähler 1987	943	1987K	aha	aha	a h a	aha	a h a
 3312	1987	Kähler 1987	944	1987K	k-ahae	k-ahae	k - a h a e	k-ahae	k - a h a e
-3315	1987	Kähler 1987	945	1987K	kā	kaa	k aa	kaː	k aː
-3321	1987	Kähler 1987	947	1987K	kā	kaa	k aa	kaː	k aː
+3315	1987	Kähler 1987	945	1987K	kā	kaa	k a a	kaː	k aː
+3321	1987	Kähler 1987	947	1987K	kā	kaa	k a a	kaː	k aː
 3340	1987	Kähler 1987	959	1987K	kĩpã-pãkõ	kĩpã-pãkõ	k ĩ p ã - p ã k õ	kĩpã-pãkɔ͂	k ĩ p ã - p ã k ɔ͂
 3347	1987	Kähler 1987	963	1987K	aʔa	a'a	a ' a	aʔa	a ʔ a
 3361	1987	Kähler 1987	966	1987K	kaʔuʔua	ka'u'ua	k a ' u ' u a	kaʔuʔua	k a ʔ u ʔ u a
@@ -377,14 +377,14 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3419	1987	Kähler 1987	978	1987K	e-ʔoraha͜uda ; e-ʔoaha͜əda ; e-oaha͜uda	e-'oraha:uda ; e-'oaha:u̇da ; e-oaha:uda	e - ' o r a h a: u d a # ; # e - ' o a h a: u̇ d a # ; # e - o a h a: u d a	e-ʔoraha͜uda ; e-ʔoaha͜ɨda ; e-oaha͜uda	e - ʔ o r a h a͜ u d a # ; # e - ʔ o a h a͜ ɨ d a # ; # e - o a h a͜ u d a
 3450	1987	Kähler 1987	991	1987K	kaʔakinĩpã	ka'akinĩpã	k a ' a k i n ĩ p ã	kaʔakinĩpã	k a ʔ a k i n ĩ p ã
 3472	1987	Kähler 1987	1004	1987K	e-kitabo	e-kitabo	e - k i t a b o	e-kitabo	e - k i t a b o
-3533	1987	Kähler 1987	1029	1987K	[hо̄] baʔara ; kabaʔada ; kaʔaʔada	[hoo] ba'ara ; kaba'ada ; ka'a'ada	[ h oo ] # b a ' a r a # ; # k a b a ' a d a # ; # k a ' a ' a d a	[hoː] baʔara ; kabaʔada ; kaʔaʔada	[ h oː ] # b a ʔ a r a # ; # k a b a ʔ a d a # ; # k a ʔ a ʔ a d a
+3533	1987	Kähler 1987	1029	1987K	[hо̄] baʔara ; kabaʔada ; kaʔaʔada	[hoo] ba'ara ; kaba'ada ; ka'a'ada	[ h o o ] # b a ' a r a # ; # k a b a ' a d a # ; # k a ' a ' a d a	[hoː] baʔara ; kabaʔada ; kaʔaʔada	[ h oː ] # b a ʔ a r a # ; # k a b a ʔ a d a # ; # k a ʔ a ʔ a d a
 3550	1987	Kähler 1987	1035	1987K	kia	kia	k i a	kia	k i a
 3578	1987	Kähler 1987	1047	1987K	ki-tohoi ; ki-doho	ki-tohoi ; ki-doho	k i - t o h o i # ; # k i - d o h o	ki-tohoi ; ki-doho	k i - t o h o i # ; # k i - d o h o
 3585	1987	Kähler 1987	1048	1987K	ebáha͜u	ebáha:u	e b á h a: u	ebáha͜u	e b á h a͜ u
 3598	1987	Kähler 1987	1053	1987K	eʔiyo	e'iyo	e ' i y o	eʔijo	e ʔ i j o
 3621	1987	Kähler 1987	1061	1987K	i-teʔe	i-te'e	i - t e ' e	i-teʔe	i - t e ʔ e
 3628	1987	Kähler 1987	1064	1987K	eʔaʔa udobu	e'a'a udobu	e ' a ' a # u d o b u	eʔaʔa udobu	e ʔ a ʔ a # u d o b u
-3631	1987	Kähler 1987	1067	1987K	ʔā	'aa	' aa	ʔaː	ʔ aː
+3631	1987	Kähler 1987	1067	1987K	ʔā	'aa	' a a	ʔaː	ʔ aː
 3650	1987	Kähler 1987	1074	1987K	kaʔakĩnã ; kaʔakĩnẽ	ka'akĩnã ; ka'akĩnẽ	k a ' a k ĩ n ã # ; # k a ' a k ĩ n ẽ	kaʔakĩnã ; kaʔakĩnẽ	k a ʔ a k ĩ n ã # ; # k a ʔ a k ĩ n ẽ
 3671	1987	Kähler 1987	1080	1987K	-dia	-dia	- d i a	-dia	- d i a
 3679	1987	Kähler 1987	1083	1987K	kabaʔa͜obo	kaba'a:obo	k a b a ' a: o b o	kabaʔa͜obo	k a b a ʔ a͜ o b o
@@ -439,7 +439,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4150	1987	Kähler 1987	1260	1987K	eʔinõnõ	e'inõnõ	e ' i n õ n õ	eʔinɔ͂nɔ͂	e ʔ i n ɔ͂ n ɔ͂
 4162	1987	Kähler 1987	1266	1987K	adeo	adeo	a d e o	adeo	a d e o
 4163	1987	Kähler 1987	1267	1987K	kadeo yai	kadeo yai	k a d e o # y a i	kadeo jai	k a d e o # j a i
-4183	1987	Kähler 1987	1272	1987K	eʔīnũʔũ ; kãʔinũʔũ	e'iinũ'ũ ; kã'inũ'ũ	e ' ii n ũ ' ũ # ; # k ã ' i n ũ ' ũ	eʔiːnũʔũ ; kãʔinũʔũ	e ʔ iː n ũ ʔ ũ # ; # k ã ʔ i n ũ ʔ ũ
+4183	1987	Kähler 1987	1272	1987K	eʔīnũʔũ ; kãʔinũʔũ	e'iinũ'ũ ; kã'inũ'ũ	e ' i i n ũ ' ũ # ; # k ã ' i n ũ ' ũ	eʔiːnũʔũ ; kãʔinũʔũ	e ʔ iː n ũ ʔ ũ # ; # k ã ʔ i n ũ ʔ ũ
 4187	1987	Kähler 1987	1274	1987K	ki-dapu	ki-dapu	k i - d a p u	ki-dapu	k i - d a p u
 4188	1987	Kähler 1987	1275	1987K	ki-nãpũ	ki-nãpũ	k i - n ã p ũ	ki-nãpũ	k i - n ã p ũ
 4194	1987	Kähler 1987	1277	1987K	kaʔa-nãʔã	ka'a-nã'ã	k a ' a - n ã ' ã	kaʔa-nãʔã	k a ʔ a - n ã ʔ ã
@@ -459,12 +459,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4328	1987	Kähler 1987	1331	1987K	ẽ-kãpẽñẽʔã	ẽ-kãpẽñẽ'ã	ẽ - k ã p ẽ ñ ẽ ' ã	ẽ-kãpẽɲẽʔã	ẽ - k ã p ẽ ɲ ẽ ʔ ã
 4329	1987	Kähler 1987	1332	1987K	ẽ-nãẽ	ẽ-nãẽ	ẽ - n ã ẽ	ẽ-nãẽ	ẽ - n ã ẽ
 4351	1987	Kähler 1987	1341	1987K	e-(ʔ)oki ; ẽ-(ʔ)õkĩ ; kã-õkĩ	e-(')oki ; ẽ-(')õkĩ ; kã-õkĩ	e - ( ' ) o k i # ; # ẽ - ( ' ) õ k ĩ # ; # k ã - õ k ĩ	e-(ʔ)oki ; ẽ-(ʔ)ɔ͂kĩ ; kã-ɔ͂kĩ	e - ( ʔ ) o k i # ; # ẽ - ( ʔ ) ɔ͂ k ĩ # ; # k ã - ɔ͂ k ĩ
-4359	1987	Kähler 1987	1344	1987K	eʔā ukĩʔĩ	e'aa ukĩ'ĩ	e ' aa # u k ĩ ' ĩ	eʔaː ukĩʔĩ	e ʔ aː # u k ĩ ʔ ĩ
+4359	1987	Kähler 1987	1344	1987K	eʔā ukĩʔĩ	e'aa ukĩ'ĩ	e ' a a # u k ĩ ' ĩ	eʔaː ukĩʔĩ	e ʔ aː # u k ĩ ʔ ĩ
 4380	1987	Kähler 1987	1352	1987K	epáici ; epéici	epáici ; epéici	e p á i c i # ; # e p é i c i	epáit͡ʃi ; epéit͡ʃi	e p á i t͡ʃ i # ; # e p é i t͡ʃ i
 4385	1987	Kähler 1987	1353	1987K	e-koʔohoi	e-ko'ohoi	e - k o ' o h o i	e-koʔohoi	e - k o ʔ o h o i
 4386	1987	Kähler 1987	1354	1987K	e-pá-iʧi	e-pá-ici	e - p á - i c i	e-pá-it͡ʃi	e - p á - i t͡ʃ i
 4388	1987	Kähler 1987	1355	1987K	adə́ha(pe)	adu̇́ha(pe)	a d u̇́ h a ( p e )	adɨ́ha(pe)	a d ɨ́ h a ( p e )
-4389	1987	Kähler 1987	1356	1987K	adō	adoo	a d oo	adoː	a d oː
+4389	1987	Kähler 1987	1356	1987K	adō	adoo	a d o o	adoː	a d oː
 4402	1987	Kähler 1987	1366	1987K	epaʔabuki	epa'abuki	e p a ' a b u k i	epaʔabuki	e p a ʔ a b u k i
 4421	1987	Kähler 1987	1371	1987K	mõkõ	mõkõ	m õ k õ	mɔ͂kɔ͂	m ɔ͂ k ɔ͂
 4455	1987	Kähler 1987	1383	1987K	eʔíoba	e'íoba	e ' í o b a	eʔioba	e ʔ i o b a
@@ -497,7 +497,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4781	1987	Kähler 1987	1492	1987K	ekabo	ekabo	e k a b o	ekabo	e k a b o
 4787	1987	Kähler 1987	1494	1987K	epoʔituda	epo'ituda	e p o ' i t u d a	epoʔituda	e p o ʔ i t u d a
 4793	1987	Kähler 1987	1498	1987K	ahibio	ahibio	a h i b i o	ahibio	a h i b i o
-4801	1987	Kähler 1987	1501	1987K	ẽpȭ	ẽpõõ	ẽ p õõ	ẽpɔ̃ː	ẽ p ɔ̃ː
+4801	1987	Kähler 1987	1501	1987K	ẽpȭ	ẽpõõ	ẽ p õ õ	ẽpɔ̃ː	ẽ p ɔ̃ː
 4812	1987	Kähler 1987	1502	1987K	kakoʔa͜ixa [edopo] ; koʔa͜ixa	kako'a:ixa [edopo] ; ko'a:ixa	k a k o ' a: i x a # [ e d o p o ] # ; # k o ' a: i x a	kakoʔa͜iça [edopo] ; koʔa͜iça	k a k o ʔ a͜ i ç a # [ e d o p o ] # ; # k o ʔ a͜ i ç a
 4823	1987	Kähler 1987	1504	1987K	aba͜i kaha͜iʔi	aba:i kaha:i'i	a b a: i # k a h a: i ' i	aba͜i kaha͜iʔi	a b a͜ i # k a h a͜ i ʔ i
 4839	1987	Kähler 1987	1509	1987K	ekoʔokoʔo ; ekõʔõ[kõʔõ]	eko'oko'o ; ekõ'õ[kõ'õ]	e k o ' o k o ' o # ; # e k õ ' õ [ k õ ' õ ]	ekoʔokoʔo ; ekɔ͂ʔɔ͂[kɔ͂ʔɔ͂]	e k o ʔ o k o ʔ o # ; # e k ɔ͂ ʔ ɔ͂ [ k ɔ͂ ʔ ɔ͂ ]
@@ -511,7 +511,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4987	1987	Kähler 1987	1575	1987K	i-tebe	i-tebe	i - t e b e	i-tebe	i - t e b e
 4988	1987	Kähler 1987	1576	1987K	y-apaua	y-apaua	y - a p a u a	j-apaua	j - a p a u a
 4989	1987	Kähler 1987	1577	1987K	i-taʔa	i-ta'a	i - t a ' a	i-taʔa	i - t a ʔ a
-4997	1987	Kähler 1987	1579	1987K	euʔuhū́ ; eʔuʔu	eu'uhúú ; e'u'u	e u ' u h úú # ; # e ' u ' u	euʔuhúː ; eʔuʔu	e u ʔ u h úː # ; # e ʔ u ʔ u
+4997	1987	Kähler 1987	1579	1987K	euʔuhū́ ; eʔuʔu	eu'uhúú ; e'u'u	e u ' u h ú ú # ; # e ' u ' u	euʔuhúː ; eʔuʔu	e u ʔ u h úː # ; # e ʔ u ʔ u
 5018	1987	Kähler 1987	1586	1987K	edado	edado	e d a d o	edado	e d a d o
 5022	1987	Kähler 1987	1588	1987K	ekinũˀũkã	ekinũ'ũkã	e k i n ũ ' ũ k ã	ekinũʔũkã	e k i n ũ ʔ ũ k ã
 5033	1987	Kähler 1987	1593	1987K	ẽ-ʔãnĩmãẽ ; ẽ-ʔãnĩmãõ ; ẽ-ʔãnũmãẽ	ẽ-'ãnĩmãẽ ; ẽ-'ãnĩmãõ ; ẽ-'ãnũmãẽ	ẽ - ' ã n ĩ m ã ẽ # ; # ẽ - ' ã n ĩ m ã õ # ; # ẽ - ' ã n ũ m ã ẽ	ẽ-ʔãnĩmãẽ ; ẽ-ʔãnĩmãɔ͂ ; ẽ-ʔãnũmãẽ	ẽ - ʔ ã n ĩ m ã ẽ # ; # ẽ - ʔ ã n ĩ m ã ɔ͂ # ; # ẽ - ʔ ã n ũ m ã ẽ
@@ -534,9 +534,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5283	1987	Kähler 1987	1700	1987K	e-pudu	e-pudu	e - p u d u	e-pudu	e - p u d u
 5286	1987	Kähler 1987	1701	1987K	nə̃kĩ	nu̇̃kĩ	n u̇̃ k ĩ	nə̃kĩ	n ə̃ k ĩ
 5293	1987	Kähler 1987	1703	1987K	ki-duduki	ki-duduki	k i - d u d u k i	ki-duduki	k i - d u d u k i
-5297	1987	Kähler 1987	1706	1987K	ki-kõmõĩñāʔã͜[õ]	ki-kõmõĩñaa'ã[:õ]	k i - k õ m õ ĩ ñ aa ' ã [: õ ]	ki-kɔ͂mɔ͂ĩɲaːʔã͜[ɔ͂]	k i - k ɔ͂ m ɔ͂ ĩ ɲ aː ʔ ã͜ [ ɔ͂ ]
+5297	1987	Kähler 1987	1706	1987K	ki-kõmõĩñāʔã͜[õ]	ki-kõmõĩñaa'ã[:õ]	k i - k õ m õ ĩ ñ a a ' ã [: õ ]	ki-kɔ͂mɔ͂ĩɲaːʔã͜[ɔ͂]	k i - k ɔ͂ m ɔ͂ ĩ ɲ aː ʔ ã͜ [ ɔ͂ ]
 5308	1987	Kähler 1987	1711	1987K	enẽã ; edea	enẽã ; edea	e n ẽ ã # ; # e d e a	enẽã ; edea	e n ẽ ã # ; # e d e a
-5311	1987	Kähler 1987	1712	1987K	ʔē	'ee	' ee	ʔeː	ʔ eː
+5311	1987	Kähler 1987	1712	1987K	ʔē	'ee	' e e	ʔeː	ʔ eː
 5318	1987	Kähler 1987	1715	1987K	kiʔəa ; ʔoáʔa	ki'u̇a ; 'oá'a	k i ' u̇ a # ; # ' o á ' a	kiʔɨa ; ʔoáʔa	k i ʔ ɨ a # ; # ʔ o á ʔ a
 5328	1987	Kähler 1987	1719	1987K	ẽ-ãpũʔũ	ẽ-ãpũ'ũ	ẽ - ã p ũ ' ũ	ẽ-ãpũʔũ	ẽ - ã p ũ ʔ ũ
 5334	1987	Kähler 1987	1721	1987K	kanĩxã	kanĩxã	k a n ĩ x ã	kanĩçã	k a n ĩ ç ã
@@ -563,7 +563,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5453	1987	Kähler 1987	1763	1987K	kipa-pepei	kipa-pepei	k i p a - p e p e i	kipa-pepei	k i p a - p e p e i
 5467	1987	Kähler 1987	1771	1987K	ki-hii	ki-hii	k i - h i i	ki-hii	k i - h i i
 5486	1987	Kähler 1987	1782	1987K	ekṹʔũã ; ekũʔũ	ekṹ'ũã ; ekũ'ũ	e k ṹ ' ũ ã # ; # e k ũ ' ũ	ekṹʔũã ; ekũʔũ	e k ṹ ʔ ũ ã # ; # e k ũ ʔ ũ
-5488	1987	Kähler 1987	1783	1987K	eʔā ūku ; euku	e'aa uuku ; euku	e ' aa # uu k u # ; # e u k u	eʔaː uːku ; euku	e ʔ aː # uː k u # ; # e u k u
+5488	1987	Kähler 1987	1783	1987K	eʔā ūku ; euku	e'aa uuku ; euku	e ' a a # u u k u # ; # e u k u	eʔaː uːku ; euku	e ʔ aː # uː k u # ; # e u k u
 5493	1987	Kähler 1987	1784	1987K	nasi	nasi	n a s i	nasi	n a s i
 5499	1987	Kähler 1987	1785	1987K	eada ukiho	eada ukixo	e a d a # u k i x o	eada ukiço	e a d a # u k i ç o
 5504	1987	Kähler 1987	1787	1987K	e-padii	e-padii	e - p a d i i	e-padii	e - p a d i i
@@ -589,7 +589,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5736	1987	Kähler 1987	1869	1987K	e-doʔodao	e-do'odao	e - d o ' o d a o	e-doʔodao	e - d o ʔ o d a o
 5743	1987	Kähler 1987	1870	1987K	ehahəao	ehahu̇ao	e h a h u̇ a o	ehahɨao	e h a h ɨ a o
 5747	1987	Kähler 1987	1871	1987K	e-hahɨao	e-hahu̇ao	e - h a h u̇ a o	e-hahɨao	e - h a h ɨ a o
-5750	1987	Kähler 1987	1873	1987K	e-bē	e-bee	e - b ee	e-beː	e - b eː
+5750	1987	Kähler 1987	1873	1987K	e-bē	e-bee	e - b e e	e-beː	e - b eː
 5764	1987	Kähler 1987	1880	1987K	ki-ʔua	ki-'ua	k i - ' u a	ki-ʔua	k i - ʔ u a
 5784	1987	Kähler 1987	1884	1987K	e-ẽnã	e-ẽnã	e - ẽ n ã	e-ẽnã	e - ẽ n ã
 5814	1987	Kähler 1987	1895	1987K	e-ʔue	e-'ue	e - ' u e	e-ʔue	e - ʔ u e
@@ -601,7 +601,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5846	1987	Kähler 1987	1906	1987K	ẽ-kõʔõkãʔã	ẽ-kõ'õkã'ã	ẽ - k õ ' õ k ã ' ã	ẽ-kɔ͂ʔɔ͂kãʔã	ẽ - k ɔ͂ ʔ ɔ͂ k ã ʔ ã
 5850	1987	Kähler 1987	1907	1987K	ẽ-kṹãʔãkũ̀ãʔã	ẽ-kṹã'ãkũ̀ã'ã	ẽ - k ṹ ã ' ã k ũ̀ ã ' ã	ẽ-kṹãʔãkũ̀ãʔã	ẽ - k ṹ ã ʔ ã k ũ̀ ã ʔ ã
 5884	1987	Kähler 1987	1916	1987K	paha͜eku	paha:eku	p a h a: e k u	paha͜eku	p a h a͜ e k u
-5887	1987	Kähler 1987	1917	1987K	eʔā ukaʔa	e'aa uka'a	e ' aa # u k a ' a	eʔaː ukaʔa	e ʔ aː # u k a ʔ a
+5887	1987	Kähler 1987	1917	1987K	eʔā ukaʔa	e'aa uka'a	e ' a a # u k a ' a	eʔaː ukaʔa	e ʔ aː # u k a ʔ a
 5924	1987	Kähler 1987	1930	1987K	eʔodo	e'odo	e ' o d o	eʔodo	e ʔ o d o
 5945	1987	Kähler 1987	1938	1987K	kikudu	kikudu	k i k u d u	kikudu	k i k u d u
 5963	1987	Kähler 1987	1946	1987K	uaboʔoki	uabo'oki	u a b o ' o k i	uaboʔoki	u a b o ʔ o k i
@@ -612,11 +612,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6042	1987	Kähler 1987	1975	1987K	kihehebu	kixehebu	k i x e h e b u	kiçehebu	k i ç e h e b u
 6048	1987	Kähler 1987	1976	1987K	eohora	eohora	e o h o r a	eohora	e o h o r a
 6076	1987	Kähler 1987	1981	1987K	kĩ-hẽkũ	kĩ-hẽkũ	k ĩ - h ẽ k ũ	kĩ-hẽkũ	k ĩ - h ẽ k ũ
-6096	1987	Kähler 1987	1989	1987K	eʔā ukabake	e'aa ukabake	e ' aa # u k a b a k e	eʔaː ukabake	e ʔ aː # u k a b a k e
+6096	1987	Kähler 1987	1989	1987K	eʔā ukabake	e'aa ukabake	e ' a a # u k a b a k e	eʔaː ukabake	e ʔ aː # u k a b a k e
 6111	1987	Kähler 1987	1992	1987K	eʔudi ; eʔuki ; eʔuri	e'udi ; e'uki ; e'uri	e ' u d i # ; # e ' u k i # ; # e ' u r i	eʔudi ; eʔuki ; eʔuri	e ʔ u d i # ; # e ʔ u k i # ; # e ʔ u r i
-6125	1987	Kähler 1987	1996	1987K	eʔā ūdu	e'aa uudu	e ' aa # uu d u	eʔaː uːdu	e ʔ aː # uː d u
-6133	1987	Kähler 1987	1997	1987K	eʔā udaha͜uhu	e'aa udaha:uhu	e ' aa # u d a h a: u h u	eʔaː udaha͜uhu	e ʔ aː # u d a h a͜ u h u
-6137	1987	Kähler 1987	1998	1987K	e-ʔā udopo itebe	e-'aa udopo itebe	e - ' aa # u d o p o # i t e b e	e-ʔaː udopo itebe	e - ʔ aː # u d o p o # i t e b e
+6125	1987	Kähler 1987	1996	1987K	eʔā ūdu	e'aa uudu	e ' a a # u u d u	eʔaː uːdu	e ʔ aː # uː d u
+6133	1987	Kähler 1987	1997	1987K	eʔā udaha͜uhu	e'aa udaha:uhu	e ' a a # u d a h a: u h u	eʔaː udaha͜uhu	e ʔ aː # u d a h a͜ u h u
+6137	1987	Kähler 1987	1998	1987K	e-ʔā udopo itebe	e-'aa udopo itebe	e - ' a a # u d o p o # i t e b e	e-ʔaː udopo itebe	e - ʔ aː # u d o p o # i t e b e
 6161	1987	Kähler 1987	2009	1987K	k-ãnũ	k-ãnũ	k - ã n ũ	k-ãnũ	k - ã n ũ
 6168	1987	Kähler 1987	2010	1987K	ki-ʔúoho	ki-'úoho	k i - ' ú o h o	ki-ʔúoho	k i - ʔ ú o h o
 6173	1987	Kähler 1987	2011	1987K	k-ããmĩ	k-ããmĩ	k - ã ã m ĩ	k-ããmĩ	k - ã ã m ĩ
@@ -631,7 +631,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6270	1987	Kähler 1987	2047	1987K	ʔaʔanõ	'a'anõ	' a ' a n õ	ʔaʔanɔ͂	ʔ a ʔ a n ɔ͂
 6289	1987	Kähler 1987	2057	1987K	kãpãĩ	kãpãĩ	k ã p ã ĩ	kãpãĩ	k ã p ã ĩ
 6303	1987	Kähler 1987	2065	1987K	ebohe	ebohe	e b o h e	ebohe	e b o h e
-6337	1987	Kähler 1987	2083	1987K	eʔā ukũkã	e'aa ukũkã	e ' aa # u k ũ k ã	eʔaː ukũkã	e ʔ aː # u k ũ k ã
+6337	1987	Kähler 1987	2083	1987K	eʔā ukũkã	e'aa ukũkã	e ' a a # u k ũ k ã	eʔaː ukũkã	e ʔ aː # u k ũ k ã
 6344	1987	Kähler 1987	2088	1987K	kah-ito	kah-ito	k a h - i t o	kah-ito	k a h - i t o
 6367	1987	Kähler 1987	2097	1987K	e-baka u-boo	e-baka u-boo	e - b a k a # u - b o o	e-baka u-boo	e - b a k a # u - b o o
 6368	1987	Kähler 1987	2098	1987K	e-dihia u-boo	e-dixia u-boo	e - d i x i a # u - b o o	e-diçia u-boo	e - d i ç i a # u - b o o
@@ -667,7 +667,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6671	1987	Kähler 1987	2212	1987K	eiʔo	ei'o	e i ' o	eiʔo	e i ʔ o
 6690	1987	Kähler 1987	2220	1987K	eʔudopo	e'udopo	e ' u d o p o	eʔudopo	e ʔ u d o p o
 6698	1987	Kähler 1987	2221	1987K	epokeʔa	epoke'a	e p o k e ' a	epokeʔa	e p o k e ʔ a
-6710	1987	Kähler 1987	2226	1987K	eʔā uahao	e'aa uahao	e ' aa # u a h a o	eʔaː uahao	e ʔ aː # u a h a o
+6710	1987	Kähler 1987	2226	1987K	eʔā uahao	e'aa uahao	e ' a a # u a h a o	eʔaː uahao	e ʔ aː # u a h a o
 6714	1987	Kähler 1987	2227	1987K	kĩpãʔãũʔũ	kĩpã'ãũ'ũ	k ĩ p ã ' ã ũ ' ũ	kĩpãʔãũʔũ	k ĩ p ã ʔ ã ũ ʔ ũ
 6731	1987	Kähler 1987	2235	1987K	eʔana	e'ana	e ' a n a	eʔana	e ʔ a n a
 6739	1987	Kähler 1987	2236	1987K	éaʔa	éa'a	é a ' a	éaʔa	é a ʔ a
@@ -680,9 +680,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6848	1987	Kähler 1987	2266	1987K	éiʔie	éi'ie	é i ' i e	éiʔie	é i ʔ i e
 6858	1987	Kähler 1987	2269	1987K	e-dudui	e-dudui	e - d u d u i	e-dudui	e - d u d u i
 6860	1987	Kähler 1987	2270	1987K	e-pudadi	e-pudadi	e - p u d a d i	e-pudadi	e - p u d a d i
-6888	1987	Kähler 1987	2279	1987K	kĩpãʔãũʔũ hī ʔariba ekaka	kĩpã'ãũ'ũ hii 'ariba ekaka	k ĩ p ã ' ã ũ ' ũ # h ii # ' a r i b a # e k a k a	kĩpãʔãũʔũ hiː ʔariba ekaka	k ĩ p ã ʔ ã ũ ʔ ũ # h iː # ʔ a r i b a # e k a k a
+6888	1987	Kähler 1987	2279	1987K	kĩpãʔãũʔũ hī ʔariba ekaka	kĩpã'ãũ'ũ hii 'ariba ekaka	k ĩ p ã ' ã ũ ' ũ # h i i # ' a r i b a # e k a k a	kĩpãʔãũʔũ hiː ʔariba ekaka	k ĩ p ã ʔ ã ũ ʔ ũ # h iː # ʔ a r i b a # e k a k a
 6898	1987	Kähler 1987	2284	1987K	ehãnṹ’ũã	ehãnṹ’ũã	e h ã n ṹ ’ ũ ã	ehãnṹ’ũã	e h ã n ṹ ’ ũ ã
-6967	1987	Kähler 1987	2308	1987K	yaha͜e iʔiō	yaha:e i'ioo	y a h a: e # i ' i oo	jaha͜e iʔioː	j a h a͜ e # i ʔ i oː
+6967	1987	Kähler 1987	2308	1987K	yaha͜e iʔiō	yaha:e i'ioo	y a h a: e # i ' i o o	jaha͜e iʔioː	j a h a͜ e # i ʔ i oː
 6988	1987	Kähler 1987	2318	1987K	eda-kaixa	eda-kaixa	e d a - k a i x a	eda-kaiça	e d a - k a i ç a
 7006	1987	Kähler 1987	2320	1987K	e-dio	e-dio	e - d i o	e-dio	e - d i o
 7017	1987	Kähler 1987	2322	1987K	e-kaʔa	e-ka'a	e - k a ' a	e-kaʔa	e - k a ʔ a
@@ -698,11 +698,11 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7083	1987	Kähler 1987	2347	1987K	kãnĩkĩ(nĩkĩ)	kãnĩkĩ(nĩkĩ)	k ã n ĩ k ĩ ( n ĩ k ĩ )	kãnĩkĩ(nĩkĩ)	k ã n ĩ k ĩ ( n ĩ k ĩ )
 7130	1987	Kähler 1987	2366	1987K	kĩpãʔãũʔũ ekaka	kĩpã'ãũ'ũ ekaka	k ĩ p ã ' ã ũ ' ũ # e k a k a	kĩpãʔãũʔũ ekaka	k ĩ p ã ʔ ã ũ ʔ ũ # e k a k a
 7140	1987	Kähler 1987	2368	1987K	kiʔóaha	ki'óaha	k i ' ó a h a	kiʔóaha	k i ʔ ó a h a
-7157	1987	Kähler 1987	2376	1987K	ikitū	ikituu	i k i t uu	ikituː	i k i t uː
+7157	1987	Kähler 1987	2376	1987K	ikitū	ikituu	i k i t u u	ikituː	i k i t uː
 7169	1987	Kähler 1987	2382	1987K	(i)kĩmõ	(i)kĩmõ	( i ) k ĩ m õ	(i)kĩmɔ͂	( i ) k ĩ m ɔ͂
 7191	1987	Kähler 1987	2392	1987K	ẽ-ĩkõ	ẽ-ĩkõ	ẽ - ĩ k õ	ẽ-ĩkɔ͂	ẽ - ĩ k ɔ͂
 7204	1987	Kähler 1987	2398	1987K	epado	epado	e p a d o	epado	e p a d o
-7206	1987	Kähler 1987	2399	1987K	eʔē	e'ee	e ' ee	eʔeː	e ʔ eː
+7206	1987	Kähler 1987	2399	1987K	eʔē	e'ee	e ' e e	eʔeː	e ʔ eː
 7233	1987	Kähler 1987	2407	1987K	epoʔinãmõ	epo'inãmõ	e p o ' i n ã m õ	epoʔinãmɔ͂	e p o ʔ i n ã m ɔ͂
 7244	1987	Kähler 1987	2411	1987K	k-eo	k-eo	k - e o	k-eo	k - e o
 7247	1987	Kähler 1987	2412	1987K	k-ɨʔa	k-u̇'a	k - u̇ ' a	k-ɨʔa	k - ɨ ʔ a
@@ -720,7 +720,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7405	1987	Kähler 1987	2463	1987K	hiu	hiu	h i u	hiu	h i u
 7408	1987	Kähler 1987	2465	1987K	ka-hiabi	ka-hiabi	k a - h i a b i	ka-hiabi	k a - h i a b i
 7418	1987	Kähler 1987	2468	1987K	hãĩ	hãĩ	h ã ĩ	hãĩ	h ã ĩ
-7423	1987	Kähler 1987	2469	1987K	adō ; adə́hape ; iʔadohóha	adoo ; adu̇́hape ; i'adohóha	a d oo # ; # a d u̇́ h a p e # ; # i ' a d o h ó h a	adoː ; adɨ́hape ; iʔadohóha	a d oː # ; # a d ɨ́ h a p e # ; # i ʔ a d o h ó h a
+7423	1987	Kähler 1987	2469	1987K	adō ; adə́hape ; iʔadohóha	adoo ; adu̇́hape ; i'adohóha	a d o o # ; # a d u̇́ h a p e # ; # i ' a d o h ó h a	adoː ; adɨ́hape ; iʔadohóha	a d oː # ; # a d ɨ́ h a p e # ; # i ʔ a d o h ó h a
 7424	1987	Kähler 1987	2470	1987K	be mẽõ ; mẽ mẽõ	be mẽõ ; mẽ mẽõ	b e # m ẽ õ # ; # m ẽ # m ẽ õ	be mẽɔ͂ ; mẽ mẽɔ͂	b e # m ẽ ɔ͂ # ; # m ẽ # m ẽ ɔ͂
 7443	1987	Kähler 1987	2473	1987K	kabuku	kabuku	k a b u k u	kabuku	k a b u k u
 7450	1987	Kähler 1987	2476	1987K	purixo	purixo	p u r i x o	puriço	p u r i ç o
@@ -736,7 +736,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 7556	1987	Kähler 1987	2520	1987K	e-pao	e-pao	e - p a o	e-pao	e - p a o
 7588	1987	Kähler 1987	2534	1987K	kaʔa-kitahayo	ka'a-kitahayo	k a ' a - k i t a h a y o	kaʔa-kitahajo	k a ʔ a - k i t a h a j o
 7610	1987	Kähler 1987	2539	1987K	ʔoʔo	'o'o	' o ' o	ʔoʔo	ʔ o ʔ o
-7614	1987	Kähler 1987	2541	1987K	ariu ; adiu ; aliu ; adū́ ; arū́	ariu ; adiu ; aliu ; adúú ; arúú	a r i u # ; # a d i u # ; # a l i u # ; # a d úú # ; # a r úú	ariu ; adiu ; aliu ; adúː ; arúː	a r i u # ; # a d i u # ; # a l i u # ; # a d úː # ; # a r úː
+7614	1987	Kähler 1987	2541	1987K	ariu ; adiu ; aliu ; adū́ ; arū́	ariu ; adiu ; aliu ; adúú ; arúú	a r i u # ; # a d i u # ; # a l i u # ; # a d ú ú # ; # a r ú ú	ariu ; adiu ; aliu ; adúː ; arúː	a r i u # ; # a d i u # ; # a l i u # ; # a d úː # ; # a r úː
 7632	1987	Kähler 1987	2547	1987K	hadudu	hadudu	h a d u d u	hadudu	h a d u d u
 7636	1987	Kähler 1987	2548	1987K	epənãnãmĩ	epu̇nãnãmĩ	e p u̇ n ã n ã m ĩ	epɨnãnãmĩ	e p ɨ n ã n ã m ĩ
 7644	1987	Kähler 1987	2551	1987K	ẽ́-hẽ͜ĩ ; ãhã͜ĩ ; e-ã́hã͜ĩ ; e-ãhĩ	ẽ́-hẽ:ĩ ; ãhã:ĩ ; e-ã́hã:ĩ ; e-ãhĩ	ẽ́ - h ẽ: ĩ # ; # ã h ã: ĩ # ; # e - ã́ h ã: ĩ # ; # e - ã h ĩ	ẽ́-hẽ͜ĩ ; ãhã͜ĩ ; e-ã́hã͜ĩ ; e-ãhĩ	ẽ́ - h ẽ͜ ĩ # ; # ã h ã͜ ĩ # ; # e - ã́ h ã͜ ĩ # ; # e - ã h ĩ

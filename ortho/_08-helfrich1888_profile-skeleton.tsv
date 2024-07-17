@@ -11,7 +11,7 @@ Left	Grapheme	Right	Class	Replacement
 	oe			u
 	ie			i
 	k²			'
-[aiueo]	ï			'i
+[aiueo]	ï			' i
 [^aiueo]	ï			ï
 (ie)	h			x
 (ai)	h			x

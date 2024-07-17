@@ -14,18 +14,18 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 [\(\)\[\]]	͜				0
 	ṹ́			ṹ	1
 	ã́			ã́	8
-	ã̄			ãã	1
+	ã̄			ã ã	1
 	á͜			áː	3
 	ã͜			ãː	14
 	ẽ́			ẽ́	2
-	ẽ̄			ẽẽ	2
+	ẽ̄			ẽ ẽ	2
 	ẽ͜			ẽː	1
-	ī́			íí	1
+	ī́			í í	1
 	ĩ́			ĩ́	1
 	ṍ			ṍ	3
-	ȭ			õõ	3
+	ȭ			õ õ	3
 	õ͜			õː	1
-	ū́			úú	4
+	ū́			ú ú	4
 	ṹ			ṹ	5
 	ũ̀			ũ̀	1
 	\(			(	39
@@ -36,31 +36,31 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	\]			]	12
 	\<			<	3
 	á			á	22
-	ā			aa	20
+	ā			a a	20
 	ã			ã	291
 	a͜			aː	41
 	é			é	9
 	è			E	1
-	ē			ee	6
+	ē			e e	6
 	ẽ			ẽ	120
 	e͜			eː	2
 	ə́			u̇́	11
 	ə̃			u̇̃	6
 	í			í	13
-	ī			ii	7
+	ī			i i	7
 	ĩ			ĩ	131
 	i͜			iː	1
 	ɨ́			u̇́	1
 	ɨ̃			u̇̃	2
 	ñ			ñ	9
 	ó			ó	6
-	ō			oo	15
+	ō			o o	15
 	õ			õ	125
 	o͜			oː	7
 	ú			ú	18
-	ū			uu	4
+	ū			u u	4
 	ũ			ũ	122
-	о̄			oo	2
+	о̄			o o	2
 	'			'	7
 	-			-	303
 	́			́	0

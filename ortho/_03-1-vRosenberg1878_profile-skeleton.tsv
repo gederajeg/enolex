@@ -13,8 +13,8 @@ Left	Grapheme	Right	Class	Replacement
 	\[			[
 	\]			]
 	a			a
-a	ä			'a
-	ä	e$		a'
+a	ä			' a
+	ä	e$		a '
 	b			b
 	d			d
 	e			e

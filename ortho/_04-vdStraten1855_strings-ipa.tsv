@@ -4,10 +4,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 63	1855	vd Straten & S. 1855	5	1855vdS	poeafa	puafa	p u a f a	puafa	p u a f a
 91	1855	vd Straten & S. 1855	7	1855vdS	koloe	kolu	k o l u	kolu	k o l u
 111	1855	vd Straten & S. 1855	9	1855vdS	akeno	akEno	a k E n o	akɛno	a k ɛ n o
-127	1855	vd Straten & S. 1855	10	1855vdS	lieba	liiba	l ii b a	liːba	l iː b a
-145	1855	vd Straten & S. 1855	11	1855vdS	lieba doea	liiba dua	l ii b a # d u a	liːba dua	l iː b a # d u a
+127	1855	vd Straten & S. 1855	10	1855vdS	lieba	liiba	l i i b a	liːba	l iː b a
+145	1855	vd Straten & S. 1855	11	1855vdS	lieba doea	liiba dua	l i i b a # d u a	liːba dua	l iː b a # d u a
 160	1855	vd Straten & S. 1855	12	1855vdS	afa-afa	afa'afa	a f a ' a f a	afaʔafa	a f a ʔ a f a
-174	1855	vd Straten & S. 1855	13	1855vdS	lieba afa	liiba afa	l ii b a # a f a	liːba afa	l iː b a # a f a
+174	1855	vd Straten & S. 1855	13	1855vdS	lieba afa	liiba afa	l i i b a # a f a	liːba afa	l iː b a # a f a
 223	1855	vd Straten & S. 1855	17	1855vdS	afa	afa	a f a	afa	a f a
 240	1855	vd Straten & S. 1855	18	1855vdS	egaij	Ega:iy	E g a:i y	ɛkaij	ɛ k ai j
 258	1855	vd Straten & S. 1855	19	1855vdS	baka	baka	b a k a	baka	b a k a
@@ -19,10 +19,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 334	1855	vd Straten & S. 1855	26	1855vdS	kakinana	kakinana	k a k i n a n a	kakinana	k a k i n a n a
 341	1855	vd Straten & S. 1855	27	1855vdS	pano	pano	p a n o	pano	p a n o
 382	1855	vd Straten & S. 1855	31	1855vdS	heheloe	hEhElu	h E h E l u	hɛhɛlu	h ɛ h ɛ l u
-388	1855	vd Straten & S. 1855	32	1855vdS	iedjo	iijo	ii j o	iːd͡ʒo	iː d͡ʒ o
+388	1855	vd Straten & S. 1855	32	1855vdS	iedjo	iijo	i i j o	iːd͡ʒo	iː d͡ʒ o
 402	1855	vd Straten & S. 1855	33	1855vdS	ka-a	ka'a	k a ' a	kaʔa	k a ʔ a
 447	1855	vd Straten & S. 1855	38	1855vdS	kaaiwaauw	ka:iwa:o	k a:i w a:o	kaiwao	k ai w ao
-450	1855	vd Straten & S. 1855	39	1855vdS	kakkie akie	kakkii akii	k a k k ii # a k ii	kakkiː akiː	k a k k iː # a k iː
+450	1855	vd Straten & S. 1855	39	1855vdS	kakkie akie	kakkii akii	k a k k i i # a k i i	kakkiː akiː	k a k k iː # a k iː
 482	1855	vd Straten & S. 1855	41	1855vdS	karahaai	karaha:i	k a r a h a:i	karahai	k a r a h ai
 489	1855	vd Straten & S. 1855	42	1855vdS	keba	kEba	k E b a	kɛba	k ɛ b a
 516	1855	vd Straten & S. 1855	46	1855vdS	kodo	kodo	k o d o	kodo	k o d o
@@ -33,12 +33,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 615	1855	vd Straten & S. 1855	54	1855vdS	mona	mona	m o n a	mona	m o n a
 621	1855	vd Straten & S. 1855	56	1855vdS	oeihoho	uihoho	u i h o h o	uihoho	u i h o h o
 626	1855	vd Straten & S. 1855	57	1855vdS	noea	nua	n u a	nua	n u a
-637	1855	vd Straten & S. 1855	58	1855vdS	abie abie	abii abii	a b ii # a b ii	abiː abiː	a b iː # a b iː
+637	1855	vd Straten & S. 1855	58	1855vdS	abie abie	abii abii	a b i i # a b i i	abiː abiː	a b iː # a b iː
 652	1855	vd Straten & S. 1855	59	1855vdS	o	o	o	o	o
 662	1855	vd Straten & S. 1855	61	1855vdS	pabeha	pabEha	p a b E h a	pabɛha	p a b ɛ h a
 672	1855	vd Straten & S. 1855	62	1855vdS	pafrioe	pafriu	p a f r i u	pafriu	p a f r i u
 683	1855	vd Straten & S. 1855	63	1855vdS	pakoena	pakuna	p a k u n a	pakuna	p a k u n a
-692	1855	vd Straten & S. 1855	64	1855vdS	[keb]oelie	[kEb]ulii	[ k E b ] u l ii	[kɛb]uliː	[ k ɛ b ] u l iː
+692	1855	vd Straten & S. 1855	64	1855vdS	[keb]oelie	[kEb]ulii	[ k E b ] u l i i	[kɛb]uliː	[ k ɛ b ] u l iː
 703	1855	vd Straten & S. 1855	65	1855vdS	pakoe pakoe	paku paku	p a k u # p a k u	paku paku	p a k u # p a k u
 708	1855	vd Straten & S. 1855	66	1855vdS	panoeko	panuko	p a n u k o	panuko	p a n u k o
 716	1855	vd Straten & S. 1855	68	1855vdS	apeloea	apElua	a p E l u a	apɛlua	a p ɛ l u a
@@ -49,7 +49,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 775	1855	vd Straten & S. 1855	75	1855vdS	oewa	uwa	u w a	uwa	u w a
 794	1855	vd Straten & S. 1855	76	1855vdS	tjoeba ; djoeba	cuba ; juba	c u b a # ; # j u b a	t͡ʃuba ; d͡ʒuba	t͡ʃ u b a # ; # d͡ʒ u b a
 812	1855	vd Straten & S. 1855	77	1855vdS	oeloe	ulu	u l u	ulu	u l u
-972	1855	vd Straten & S. 1855	132	1855vdS	akie akie	akii akii	a k ii # a k ii	akiː akiː	a k iː # a k iː
+972	1855	vd Straten & S. 1855	132	1855vdS	akie akie	akii akii	a k i i # a k i i	akiː akiː	a k iː # a k iː
 1044	1855	vd Straten & S. 1855	153	1855vdS	behoho pakenaauw	bEhoho pakEna:o	b E h o h o # p a k E n a:o	bɛhoho pakɛnao	b ɛ h o h o # p a k ɛ n ao
 1109	1855	vd Straten & S. 1855	173	1855vdS	abepa	abEpa	a b E p a	abɛpa	a b ɛ p a
 1171	1855	vd Straten & S. 1855	193	1855vdS	kekia	kEkia	k E k i a	kɛkia	k ɛ k i a
@@ -57,17 +57,17 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1335	1855	vd Straten & S. 1855	240	1855vdS	djoha	joha	j o h a	d͡ʒoha	d͡ʒ o h a
 1344	1855	vd Straten & S. 1855	241	1855vdS	keloeloe	kElulu	k E l u l u	kɛlulu	k ɛ l u l u
 1395	1855	vd Straten & S. 1855	251	1855vdS	kokoho ; kako	kokoho ; kako	k o k o h o # ; # k a k o	kokoho ; kako	k o k o h o # ; # k a k o
-1404	1855	vd Straten & S. 1855	254	1855vdS	bidie bidie	bidii bidii	b i d ii # b i d ii	bidiː bidiː	b i d iː # b i d iː
+1404	1855	vd Straten & S. 1855	254	1855vdS	bidie bidie	bidii bidii	b i d i i # b i d i i	bidiː bidiː	b i d iː # b i d iː
 1531	1855	vd Straten & S. 1855	293	1855vdS	berakidoija	bErakido:iya	b E r a k i d o:i y a	bɛrakidɔija	b ɛ r a k i d ɔi j a
-1558	1855	vd Straten & S. 1855	301	1855vdS	nieka nieka	niika niika	n ii k a # n ii k a	niːka niːka	n iː k a # n iː k a
+1558	1855	vd Straten & S. 1855	301	1855vdS	nieka nieka	niika niika	n i i k a # n i i k a	niːka niːka	n iː k a # n iː k a
 1565	1855	vd Straten & S. 1855	302	1855vdS	kemanajai	kEmanaya:i	k E m a n a y a:i	kɛmanajai	k ɛ m a n a j ai
-1585	1855	vd Straten & S. 1855	308	1855vdS	djoha [adoedie]	joha [adudii]	j o h a # [ a d u d ii ]	d͡ʒoha [adudiː]	d͡ʒ o h a # [ a d u d iː ]
-1611	1855	vd Straten & S. 1855	320	1855vdS	behoba abie obie	bEhoba abii obii	b E h o b a # a b ii # o b ii	bɛhoba abiː obiː	b ɛ h o b a # a b iː # o b iː
+1585	1855	vd Straten & S. 1855	308	1855vdS	djoha [adoedie]	joha [adudii]	j o h a # [ a d u d i i ]	d͡ʒoha [adudiː]	d͡ʒ o h a # [ a d u d iː ]
+1611	1855	vd Straten & S. 1855	320	1855vdS	behoba abie obie	bEhoba abii obii	b E h o b a # a b i i # o b i i	bɛhoba abiː obiː	b ɛ h o b a # a b iː # o b iː
 1673	1855	vd Straten & S. 1855	341	1855vdS	nape wakemaina	napE wakEma:ina	n a p E # w a k E m a:i n a	napɛ wakɛmaina	n a p ɛ # w a k ɛ m ai n a
 1695	1855	vd Straten & S. 1855	353	1855vdS	ewa	Ewa	E w a	ɛwa	ɛ w a
 1742	1855	vd Straten & S. 1855	368	1855vdS	oko	oko	o k o	oko	o k o
 1778	1855	vd Straten & S. 1855	379	1855vdS	koko	koko	k o k o	koko	k o k o
-1791	1855	vd Straten & S. 1855	381	1855vdS	kilie kilie	kilii kilii	k i l ii # k i l ii	kiliː kiliː	k i l iː # k i l iː
+1791	1855	vd Straten & S. 1855	381	1855vdS	kilie kilie	kilii kilii	k i l i i # k i l i i	kiliː kiliː	k i l iː # k i l iː
 1838	1855	vd Straten & S. 1855	396	1855vdS	taauw awa	ta:o awa	t a:o # a w a	tao awa	t ao # a w a
 1857	1855	vd Straten & S. 1855	405	1855vdS	belé	bEle	b E l e	bɛle	b ɛ l e
 1920	1855	vd Straten & S. 1855	428	1855vdS	eufo	u̇fo	u̇ f o	ɨfo	ɨ f o
@@ -84,9 +84,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2239	1855	vd Straten & S. 1855	544	1855vdS	tio	tio	t i o	tio	t i o
 2278	1855	vd Straten & S. 1855	557	1855vdS	noeoe	nuu	n u u	nuu	n u u
 2289	1855	vd Straten & S. 1855	560	1855vdS	peroba	pEroba	p E r o b a	pɛroba	p ɛ r o b a
-2381	1855	vd Straten & S. 1855	608	1855vdS	kieno	kiino	k ii n o	kiːno	k iː n o
+2381	1855	vd Straten & S. 1855	608	1855vdS	kieno	kiino	k i i n o	kiːno	k iː n o
 2402	1855	vd Straten & S. 1855	615	1855vdS	beo beo	bEo bEo	b E o # b E o	bɛo bɛo	b ɛ o # b ɛ o
-2457	1855	vd Straten & S. 1855	631	1855vdS	hoearie	huarii	h u a r ii	huariː	h u a r iː
+2457	1855	vd Straten & S. 1855	631	1855vdS	hoearie	huarii	h u a r i i	huariː	h u a r iː
 2507	1855	vd Straten & S. 1855	654	1855vdS	lopo	lopo	l o p o	lopo	l o p o
 2617	1855	vd Straten & S. 1855	690	1855vdS	abaai	aba:i	a b a:i	abai	a b ai
 2721	1855	vd Straten & S. 1855	736	1855vdS	mé-i-mé	me'i'me	m e ' i ' m e	meʔiʔme	m e ʔ i ʔ m e
@@ -97,15 +97,15 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2919	1855	vd Straten & S. 1855	803	1855vdS	penono kiro	pEnono kiro	p E n o n o # k i r o	pɛnono kiro	p ɛ n o n o # k i r o
 3047	1855	vd Straten & S. 1855	856	1855vdS	edjaauw	Eja:o	E j a:o	ɛd͡ʒao	ɛ d͡ʒ ao
 3064	1855	vd Straten & S. 1855	863	1855vdS	koe-oe	ku'u	k u ' u	kuʔu	k u ʔ u
-3092	1855	vd Straten & S. 1855	871	1855vdS	kapieho	kapiiho	k a p ii h o	kapiːho	k a p iː h o
+3092	1855	vd Straten & S. 1855	871	1855vdS	kapieho	kapiiho	k a p i i h o	kapiːho	k a p iː h o
 3128	1855	vd Straten & S. 1855	884	1855vdS	padjo haika	pajo ha:ika	p a j o # h a:i k a	pad͡ʒo haika	p a d͡ʒ o # h ai k a
 3214	1855	vd Straten & S. 1855	910	1855vdS	kwee kwee	kwEE kwEE	k w E E # k w E E	kwɛɛ kwɛɛ	k w ɛ ɛ # k w ɛ ɛ
-3265	1855	vd Straten & S. 1855	931	1855vdS	amiemie	amiimii	a m ii m ii	amiːmiː	a m iː m iː
+3265	1855	vd Straten & S. 1855	931	1855vdS	amiemie	amiimii	a m i i m i i	amiːmiː	a m iː m iː
 3327	1855	vd Straten & S. 1855	952	1855vdS	kana	kana	k a n a	kana	k a n a
 3371	1855	vd Straten & S. 1855	969	1855vdS	[moko] doeboe	[moko] dubu	[ m o k o ] # d u b u	[moko] dubu	[ m o k o ] # d u b u
 3436	1855	vd Straten & S. 1855	984	1855vdS	hano	hano	h a n o	hano	h a n o
 3451	1855	vd Straten & S. 1855	992	1855vdS	jeo	yEo	y E o	jɛo	j ɛ o
-3506	1855	vd Straten & S. 1855	1017	1855vdS	aauw liediea	a:o liidiia	a:o # l ii d ii a	ao liːdiːa	ao # l iː d iː a
+3506	1855	vd Straten & S. 1855	1017	1855vdS	aauw liediea	a:o liidiia	a:o # l i i d i i a	ao liːdiːa	ao # l iː d iː a
 3618	1855	vd Straten & S. 1855	1061	1855vdS	djehe	jEhE	j E h E	d͡ʒɛhɛ	d͡ʒ ɛ h ɛ
 3654	1855	vd Straten & S. 1855	1075	1855vdS	dewé	dEwe	d E w e	dɛwe	d ɛ w e
 3715	1855	vd Straten & S. 1855	1099	1855vdS	kahaauw	kaha:o	k a h a:o	kahao	k a h ao
@@ -116,20 +116,20 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 3955	1855	vd Straten & S. 1855	1190	1855vdS	elaaiho	Ela:iho	E l a:i h o	ɛlaiho	ɛ l ai h o
 4005	1855	vd Straten & S. 1855	1213	1855vdS	poeroe ; paroe[taka]	puru ; paru[taka]	p u r u # ; # p a r u [ t a k a ]	puru ; paru[taka]	p u r u # ; # p a r u [ t a k a ]
 4013	1855	vd Straten & S. 1855	1215	1855vdS	natihale kedoedijahé	natihalE kEdudiyahe	n a t i h a l E # k E d u d i y a h e	natihalɛ kɛdudijahe	n a t i h a l ɛ # k ɛ d u d i j a h e
-4040	1855	vd Straten & S. 1855	1221	1855vdS	tieko tieko	tiiko tiiko	t ii k o # t ii k o	tiːko tiːko	t iː k o # t iː k o
+4040	1855	vd Straten & S. 1855	1221	1855vdS	tieko tieko	tiiko tiiko	t i i k o # t i i k o	tiːko tiːko	t iː k o # t iː k o
 4071	1855	vd Straten & S. 1855	1233	1855vdS	kakoeka	kakuka	k a k u k a	kakuka	k a k u k a
 4127	1855	vd Straten & S. 1855	1256	1855vdS	kalamaina	kalama:ina	k a l a m a:i n a	kalamaina	k a l a m ai n a
 4207	1855	vd Straten & S. 1855	1285	1855vdS	paro paro	paro paro	p a r o # p a r o	paro paro	p a r o # p a r o
 4233	1855	vd Straten & S. 1855	1296	1855vdS	kalikoko	kalikoko	k a l i k o k o	kalikoko	k a l i k o k o
 4304	1855	vd Straten & S. 1855	1324	1855vdS	komai	koma:i	k o m a:i	komai	k o m ai
 4331	1855	vd Straten & S. 1855	1334	1855vdS	poké poké	poke poke	p o k e # p o k e	poke poke	p o k e # p o k e
-4371	1855	vd Straten & S. 1855	1352	1855vdS	padjie	pajii	p a j ii	pad͡ʒiː	p a d͡ʒ iː
+4371	1855	vd Straten & S. 1855	1352	1855vdS	padjie	pajii	p a j i i	pad͡ʒiː	p a d͡ʒ iː
 4414	1855	vd Straten & S. 1855	1371	1855vdS	moko [doeboe]	moko [dubu]	m o k o # [ d u b u ]	moko [dubu]	m o k o # [ d u b u ]
 4436	1855	vd Straten & S. 1855	1377	1855vdS	kapanano	kapanano	k a p a n a n o	kapanano	k a p a n a n o
 4449	1855	vd Straten & S. 1855	1383	1855vdS	aijoba	a:iyoba	a:i y o b a	aijoba	ai j o b a
 4516	1855	vd Straten & S. 1855	1409	1855vdS	koroebaka	korubaka	k o r u b a k a	korubaka	k o r u b a k a
-4566	1855	vd Straten & S. 1855	1432	1855vdS	nieko nieko	niiko niiko	n ii k o # n ii k o	niːko niːko	n iː k o # n iː k o
-4580	1855	vd Straten & S. 1855	1436	1855vdS	kiea	kiia	k ii a	kiːa	k iː a
+4566	1855	vd Straten & S. 1855	1432	1855vdS	nieko nieko	niiko niiko	n i i k o # n i i k o	niːko niːko	n iː k o # n iː k o
+4580	1855	vd Straten & S. 1855	1436	1855vdS	kiea	kiia	k i i a	kiːa	k iː a
 4608	1855	vd Straten & S. 1855	1442	1855vdS	kakko	kakko	k a k k o	kakko	k a k k o
 4629	1855	vd Straten & S. 1855	1447	1855vdS	ko-a	ko'a	k o ' a	koʔa	k o ʔ a
 4734	1855	vd Straten & S. 1855	1479	1855vdS	panonema	panonEma	p a n o n E m a	panonɛma	p a n o n ɛ m a
@@ -137,13 +137,13 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4819	1855	vd Straten & S. 1855	1503	1855vdS	koli[lopo]	koli[lopo]	k o l i [ l o p o ]	koli[lopo]	k o l i [ l o p o ]
 4837	1855	vd Straten & S. 1855	1509	1855vdS	klokko	klokko	k l o k k o	klokko	k l o k k o
 4864	1855	vd Straten & S. 1855	1521	1855vdS	kafinai	kafina:i	k a f i n a:i	kafinai	k a f i n ai
-4886	1855	vd Straten & S. 1855	1528	1855vdS	oedjie oedjie	ujii ujii	u j ii # u j ii	ud͡ʒiː ud͡ʒiː	u d͡ʒ iː # u d͡ʒ iː
+4886	1855	vd Straten & S. 1855	1528	1855vdS	oedjie oedjie	ujii ujii	u j i i # u j i i	ud͡ʒiː ud͡ʒiː	u d͡ʒ iː # u d͡ʒ iː
 4933	1855	vd Straten & S. 1855	1546	1855vdS	eifa	e:ifa	e:i f a	ɛifa	ɛi f a
 4952	1855	vd Straten & S. 1855	1560	1855vdS	boekai	buka:i	b u k a:i	bukai	b u k ai
 4993	1855	vd Straten & S. 1855	1579	1855vdS	hoehoe	huhu	h u h u	huhu	h u h u
-5001	1855	vd Straten & S. 1855	1581	1855vdS	oedjie oedjie	ujii ujii	u j ii # u j ii	ud͡ʒiː ud͡ʒiː	u d͡ʒ iː # u d͡ʒ iː
+5001	1855	vd Straten & S. 1855	1581	1855vdS	oedjie oedjie	ujii ujii	u j i i # u j i i	ud͡ʒiː ud͡ʒiː	u d͡ʒ iː # u d͡ʒ iː
 5043	1855	vd Straten & S. 1855	1596	1855vdS	kakka	kakka	k a k k a	kakka	k a k k a
-5118	1855	vd Straten & S. 1855	1629	1855vdS	abie abie	abii abii	a b ii # a b ii	abiː abiː	a b iː # a b iː
+5118	1855	vd Straten & S. 1855	1629	1855vdS	abie abie	abii abii	a b i i # a b i i	abiː abiː	a b iː # a b iː
 5356	1855	vd Straten & S. 1855	1727	1855vdS	kabehoka	kabEhoka	k a b E h o k a	kabɛhoka	k a b ɛ h o k a
 5408	1855	vd Straten & S. 1855	1746	1855vdS	omé omé	ome ome	o m e # o m e	ome ome	o m e # o m e
 5442	1855	vd Straten & S. 1855	1759	1855vdS	[koe] pidjoe	[ku] piju	[ k u ] # p i j u	[ku] pid͡ʒu	[ k u ] # p i d͡ʒ u
@@ -156,39 +156,39 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5692	1855	vd Straten & S. 1855	1849	1855vdS	kapoepoea	kapupua	k a p u p u a	kapupua	k a p u p u a
 5745	1855	vd Straten & S. 1855	1871	1855vdS	lafo beroba	lafo bEroba	l a f o # b E r o b a	lafo bɛroba	l a f o # b ɛ r o b a
 5855	1855	vd Straten & S. 1855	1908	1855vdS	penoenaai	pEnuna:i	p E n u n a:i	pɛnunai	p ɛ n u n ai
-5864	1855	vd Straten & S. 1855	1911	1855vdS	bolie	bolii	b o l ii	boliː	b o l iː
+5864	1855	vd Straten & S. 1855	1911	1855vdS	bolie	bolii	b o l i i	boliː	b o l iː
 5966	1855	vd Straten & S. 1855	1947	1855vdS	poeroebo	purubo	p u r u b o	purubo	p u r u b o
 5974	1855	vd Straten & S. 1855	1950	1855vdS	kakoeda	kakuda	k a k u d a	kakuda	k a k u d a
-6020	1855	vd Straten & S. 1855	1966	1855vdS	kokafieka	kokafiika	k o k a f ii k a	kokafiːka	k o k a f iː k a
+6020	1855	vd Straten & S. 1855	1966	1855vdS	kokafieka	kokafiika	k o k a f i i k a	kokafiːka	k o k a f iː k a
 6043	1855	vd Straten & S. 1855	1976	1855vdS	hora	hora	h o r a	hora	h o r a
-6063	1855	vd Straten & S. 1855	1980	1855vdS	kaijo kanimie	ka:iyo kanimii	k a:i y o # k a n i m ii	kaijo kanimiː	k ai j o # k a n i m iː
+6063	1855	vd Straten & S. 1855	1980	1855vdS	kaijo kanimie	ka:iyo kanimii	k a:i y o # k a n i m i i	kaijo kanimiː	k ai j o # k a n i m iː
 6066	1855	vd Straten & S. 1855	1981	1855vdS	meheko	mEhEko	m E h E k o	mɛhɛko	m ɛ h ɛ k o
-6195	1855	vd Straten & S. 1855	2021	1855vdS	noekie noekie	nukii nukii	n u k ii # n u k ii	nukiː nukiː	n u k iː # n u k iː
+6195	1855	vd Straten & S. 1855	2021	1855vdS	noekie noekie	nukii nukii	n u k i i # n u k i i	nukiː nukiː	n u k iː # n u k iː
 6216	1855	vd Straten & S. 1855	2026	1855vdS	hanna	hanna	h a n n a	hanna	h a n n a
-6260	1855	vd Straten & S. 1855	2043	1855vdS	kiendjouw omka	kiinjouw omka	k ii n j o u w # o m k a	kiːnd͡ʒouw omka	k iː n d͡ʒ o u w # o m k a
+6260	1855	vd Straten & S. 1855	2043	1855vdS	kiendjouw omka	kiinjouw omka	k i i n j o u w # o m k a	kiːnd͡ʒouw omka	k iː n d͡ʒ o u w # o m k a
 6299	1855	vd Straten & S. 1855	2065	1855vdS	beheeuw	bEha:u̇	b E h a:u̇	bɛhaɨ	b ɛ h aɨ
 6438	1855	vd Straten & S. 1855	2124	1855vdS	bado jamokikia	bado yamokikia	b a d o # y a m o k i k i a	bado jamokikia	b a d o # j a m o k i k i a
 6489	1855	vd Straten & S. 1855	2146	1855vdS	toeka	tuka	t u k a	tuka	t u k a
 6527	1855	vd Straten & S. 1855	2156	1855vdS	kenio	kEnio	k E n i o	kɛnio	k ɛ n i o
-6635	1855	vd Straten & S. 1855	2203	1855vdS	pakiea	pakiia	p a k ii a	pakiːa	p a k iː a
-6693	1855	vd Straten & S. 1855	2221	1855vdS	pokiea	pokiia	p o k ii a	pokiːa	p o k iː a
+6635	1855	vd Straten & S. 1855	2203	1855vdS	pakiea	pakiia	p a k i i a	pakiːa	p a k iː a
+6693	1855	vd Straten & S. 1855	2221	1855vdS	pokiea	pokiia	p o k i i a	pokiːa	p o k iː a
 6760	1855	vd Straten & S. 1855	2245	1855vdS	aai é	a:i e	a:i # e	ai e	ai # e
 6798	1855	vd Straten & S. 1855	2255	1855vdS	kanenenene	kanEnEnEnE	k a n E n E n E n E	kanɛnɛnɛnɛ	k a n ɛ n ɛ n ɛ n ɛ
-6938	1855	vd Straten & S. 1855	2298	1855vdS	pamilie	pamilii	p a m i l ii	pamiliː	p a m i l iː
-6960	1855	vd Straten & S. 1855	2307	1855vdS	kapieaka	kapiiaka	k a p ii a k a	kapiːaka	k a p iː a k a
+6938	1855	vd Straten & S. 1855	2298	1855vdS	pamilie	pamilii	p a m i l i i	pamiliː	p a m i l iː
+6960	1855	vd Straten & S. 1855	2307	1855vdS	kapieaka	kapiiaka	k a p i i a k a	kapiːaka	k a p iː a k a
 6979	1855	vd Straten & S. 1855	2314	1855vdS	akinoijai	akino:iya:i	a k i n o:i y a:i	akinɔijai	a k i n ɔi j ai
 6999	1855	vd Straten & S. 1855	2320	1855vdS	dio	dio	d i o	dio	d i o
-7023	1855	vd Straten & S. 1855	2323	1855vdS	nienie	niinii	n ii n ii	niːniː	n iː n iː
+7023	1855	vd Straten & S. 1855	2323	1855vdS	nienie	niinii	n i i n i i	niːniː	n iː n iː
 7039	1855	vd Straten & S. 1855	2329	1855vdS	kolia	kolia	k o l i a	kolia	k o l i a
-7044	1855	vd Straten & S. 1855	2332	1855vdS	pekelie	pEkElii	p E k E l ii	pɛkɛliː	p ɛ k ɛ l iː
+7044	1855	vd Straten & S. 1855	2332	1855vdS	pekelie	pEkElii	p E k E l i i	pɛkɛliː	p ɛ k ɛ l iː
 7064	1855	vd Straten & S. 1855	2341	1855vdS	koe [pidjoe]	ku [piju]	k u # [ p i j u ]	ku [pid͡ʒu]	k u # [ p i d͡ʒ u ]
-7079	1855	vd Straten & S. 1855	2347	1855vdS	niekie niekie	niikii niikii	n ii k ii # n ii k ii	niːkiː niːkiː	n iː k iː # n iː k iː
+7079	1855	vd Straten & S. 1855	2347	1855vdS	niekie niekie	niikii niikii	n i i k i i # n i i k i i	niːkiː niːkiː	n iː k iː # n iː k iː
 7134	1855	vd Straten & S. 1855	2368	1855vdS	kioha	kioha	k i o h a	kioha	k i o h a
-7166	1855	vd Straten & S. 1855	2382	1855vdS	kiema	kiima	k ii m a	kiːma	k iː m a
+7166	1855	vd Straten & S. 1855	2382	1855vdS	kiema	kiima	k i i m a	kiːma	k iː m a
 7257	1855	vd Straten & S. 1855	2418	1855vdS	nahapai	nahapa:i	n a h a p a:i	nahapai	n a h a p ai
-7279	1855	vd Straten & S. 1855	2425	1855vdS	kapie apienjo ; kopie apeinja ; kofieafie	kapii apiiño ; kopii ape:iña ; kofiiafii	k a p ii # a p ii ñ o # ; # k o p ii # a p e:i ñ a # ; # k o f ii a f ii	kapiː apiːɲo ; kopiː apɛiɲa ; kofiːafiː	k a p iː # a p iː ɲ o # ; # k o p iː # a p ɛi ɲ a # ; # k o f iː a f iː
-7427	1855	vd Straten & S. 1855	2471	1855vdS	aijienjoe	a:iyiiñu	a:i y ii ñ u	aijiːɲu	ai j iː ɲ u
-7546	1855	vd Straten & S. 1855	2514	1855vdS	paporie	paporii	p a p o r ii	paporiː	p a p o r iː
+7279	1855	vd Straten & S. 1855	2425	1855vdS	kapie apienjo ; kopie apeinja ; kofieafie	kapii apiiño ; kopii ape:iña ; kofiiafii	k a p i i # a p i i ñ o # ; # k o p i i # a p e:i ñ a # ; # k o f i i a f i i	kapiː apiːɲo ; kopiː apɛiɲa ; kofiːafiː	k a p iː # a p iː ɲ o # ; # k o p iː # a p ɛi ɲ a # ; # k o f iː a f iː
+7427	1855	vd Straten & S. 1855	2471	1855vdS	aijienjoe	a:iyiiñu	a:i y i i ñ u	aijiːɲu	ai j iː ɲ u
+7546	1855	vd Straten & S. 1855	2514	1855vdS	paporie	paporii	p a p o r i i	paporiː	p a p o r iː
 7589	1855	vd Straten & S. 1855	2535	1855vdS	kakafoelo	kakafulo	k a k a f u l o	kakafulo	k a k a f u l o
 7612	1855	vd Straten & S. 1855	2540	1855vdS	niomo	niomo	n i o m o	niomo	n i o m o
-7631	1855	vd Straten & S. 1855	2547	1855vdS	adoedoe ; [djoha] adoedie	adudu ; [joha] adudii	a d u d u # ; # [ j o h a ] # a d u d ii	adudu ; [d͡ʒoha] adudiː	a d u d u # ; # [ d͡ʒ o h a ] # a d u d iː
+7631	1855	vd Straten & S. 1855	2547	1855vdS	adoedoe ; [djoha] adoedie	adudu ; [joha] adudii	a d u d u # ; # [ j o h a ] # a d u d i i	adudu ; [d͡ʒoha] adudiː	a d u d u # ; # [ d͡ʒ o h a ] # a d u d iː

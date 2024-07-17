@@ -25,11 +25,11 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	²			²	²
 	a			a	a
 	á			á	á
-	ā			aa	aː
+	ā			a a	aː
 	ã			ã	ã
 	ã́			ã́	ã́
 	a͜			a:	a͜
-	ã̄			ãã	ãː
+	ã̄			ã ã	ãː
 	á͜			á:	á͜
 	ã͜			ã:	ã͜
 	b			b	b
@@ -38,12 +38,12 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	e			e	e
 	é			é	é
 	è			E	ɛ
-	ē			ee	eː
+	ē			e e	eː
 	ẽ			ẽ	ẽ
 	ẽ			ẽ	ẽ
 	ẽ́			ẽ́	ẽ́
 	e͜			e:	e͜
-	ẽ̄			ẽẽ	ẽː
+	ẽ̄			ẽ ẽ	ẽː
 	ẽ͜			ẽ:	ẽ͜
 	ə			u̇	ɨ
 	ə́			u̇́	ɨ́
@@ -51,10 +51,10 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	h			h	h
 	i			i	i
 	í			í	i
-	ī			ii	iː
+	ī			i i	iː
 	ĩ			ĩ	ĩ
 	ɨ			u̇	ɨ
-	ī́			íí	iː
+	ī́			í í	iː
 	ĩ́			ĩ́	ĩ́
 	i͜			i:	i͜
 	ɨ́			u̇́	ɨ́
@@ -68,11 +68,11 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	o			o	o
 	о			o	o
 	ó			ó	ó
-	ō			oo	oː
+	ō			o o	oː
 	õ			õ	ɔ͂
 	ṍ			ṍ	ɔ̃́
 	o͜			o:	o͜
-	ȭ			õõ	ɔ̃ː
+	ȭ			õ õ	ɔ̃ː
 	õ͜			õ:	ɔ̃͜
 	p			p	p
 	r			r	r
@@ -81,13 +81,13 @@ Left	Grapheme	Right	Class	Replacement	Phoneme
 	ʧ			c	t͡ʃ
 	u			u	u
 	ú			ú	ú
-	ū			uu	uː
+	ū			u u	uː
 	ũ			ũ	ũ
-	ū́			úú	úː
+	ū́			ú ú	úː
 	ṹ			ṹ	ṹ
 	ũ̀			ũ̀	ũ̀
 	ṹ́			ṹ	ṹ
 	x			x	ç
 	y			y	j
 	ʔ			'	ʔ
-	о̄			oo	oː
+	о̄			o o	oː

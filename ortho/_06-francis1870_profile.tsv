@@ -4,12 +4,12 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	aè			aːe	1
 	aé			aːe	0
 	ae			aːe	2
-	oö			o'o	3
-	aä			a'a	1
+	oö			o ' o	3
+	aä			a ' a	1
 	oe			u	95
 	oh			o	7
 	ou			oːu	2
-	ie			ii	55
+	ie			i i	55
 	ai			aːi	15
 	oi			oːi	2
 	ei			eːi	4
@@ -47,7 +47,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	g			k	1
 	h			h	58
 	i			i	16
-	î			ii	1
+	î			i i	1
 	j			y	22
 	k			k	195
 	l			l	50

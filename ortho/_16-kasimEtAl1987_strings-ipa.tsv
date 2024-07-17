@@ -3,14 +3,14 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 14	1987	Kasim et al. 1987	1	1987	[kakh] iudh	[kakʰ] iudʰ	[ k a k ʰ ] # i u d ʰ	[kakʰ] iudʰ	[ k a k ʰ ] # i u d ʰ
 30	1987	Kasim et al. 1987	2	1987	kakh man	kakʰ man	k a k ʰ # m a n	kakʰ man	k a k ʰ # m a n
 31	1987	Kasim et al. 1987	2	1987	kakh man	kakʰ man	k a k ʰ # m a n	kakʰ man	k a k ʰ # m a n
-49	1987	Kasim et al. 1987	3	1987	arūū	aruu	a r uu	aruː	a r uː
-50	1987	Kasim et al. 1987	3	1987	arūū	aruu	a r uu	aruː	a r uː
+49	1987	Kasim et al. 1987	3	1987	arūū	aruu	a r u u	aruː	a r uː
+50	1987	Kasim et al. 1987	3	1987	arūū	aruu	a r u u	aruː	a r uː
 72	1987	Kasim et al. 1987	5	1987	Eaq	Ea'	E a '	ɛaʔ	ɛ a ʔ
 73	1987	Kasim et al. 1987	5	1987	Eaq	Ea'	E a '	ɛaʔ	ɛ a ʔ
-85	1987	Kasim et al. 1987	6	1987	E'aa	E'aa	E ' aa	ɛʔaː	ɛ ʔ aː
-86	1987	Kasim et al. 1987	6	1987	E'aa	E'aa	E ' aa	ɛʔaː	ɛ ʔ aː
-101	1987	Kasim et al. 1987	7	1987	akēēt	akėėt	a k ėė t	akəːt	a k əː t
-102	1987	Kasim et al. 1987	7	1987	akēēt	akėėt	a k ėė t	akəːt	a k əː t
+85	1987	Kasim et al. 1987	6	1987	E'aa	E'aa	E ' a a	ɛʔaː	ɛ ʔ aː
+86	1987	Kasim et al. 1987	6	1987	E'aa	E'aa	E ' a a	ɛʔaː	ɛ ʔ aː
+101	1987	Kasim et al. 1987	7	1987	akēēt	akėėt	a k ė ė t	akəːt	a k əː t
+102	1987	Kasim et al. 1987	7	1987	akēēt	akėėt	a k ė ė t	akəːt	a k əː t
 138	1987	Kasim et al. 1987	10	1987	arip	arip	a r i p	arip	a r i p
 139	1987	Kasim et al. 1987	10	1987	arip	arip	a r i p	arip	a r i p
 191	1987	Kasim et al. 1987	14	1987	kakakhratus	kakakʰratus	k a k a k ʰ r a t u s	kakakʰratus	k a k a k ʰ r a t u s
@@ -58,8 +58,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 736	1987	Kasim et al. 1987	70	1987	yur	yur	y u r	jur	j u r
 755	1987	Kasim et al. 1987	72	1987	kakh	kakʰ	k a k ʰ	kakʰ	k a k ʰ
 756	1987	Kasim et al. 1987	72	1987	kakh	kakʰ	k a k ʰ	kakʰ	k a k ʰ
-788	1987	Kasim et al. 1987	75	1987	ūū	uu	uu	uː	uː
-789	1987	Kasim et al. 1987	75	1987	ūū	uu	uu	uː	uː
+788	1987	Kasim et al. 1987	75	1987	ūū	uu	u u	uː	uː
+789	1987	Kasim et al. 1987	75	1987	ūū	uu	u u	uː	uː
 824	1987	Kasim et al. 1987	77	1987	Eyu	Eyu	E y u	ɛju	ɛ j u
 825	1987	Kasim et al. 1987	77	1987	Eyurup	Eyurup	E y u r u p	ɛjurup	ɛ j u r u p
 882	1987	Kasim et al. 1987	98	1987	ki	ki	k i	ki	k i
@@ -68,9 +68,9 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 954	1987	Kasim et al. 1987	126	1987	bakEa	bakEa	b a k E a	bakɛa	b a k ɛ a
 1030	1987	Kasim et al. 1987	150	1987	p'ēq	p'ė'	p ' ė '	pʔəʔ	p ʔ ə ʔ
 1031	1987	Kasim et al. 1987	150	1987	pēq	pė'	p ė '	pəʔ	p ə ʔ
-1087	1987	Kasim et al. 1987	166	1987	k'uuq	k'uu'	k ' uu '	kʔuːʔ	k ʔ uː ʔ
-1094	1987	Kasim et al. 1987	168	1987	yiip	yiip	y ii p	jiːp	j iː p
-1095	1987	Kasim et al. 1987	168	1987	yiip	yiip	y ii p	jiːp	j iː p
+1087	1987	Kasim et al. 1987	166	1987	k'uuq	k'uu'	k ' u u '	kʔuːʔ	k ʔ uː ʔ
+1094	1987	Kasim et al. 1987	168	1987	yiip	yiip	y i i p	jiːp	j iː p
+1095	1987	Kasim et al. 1987	168	1987	yiip	yiip	y i i p	jiːp	j iː p
 1207	1987	Kasim et al. 1987	202	1987	diqyēp	di'yėp	d i ' y ė p	diʔjəp	d i ʔ j ə p
 1208	1987	Kasim et al. 1987	202	1987	diqyēp	di'yėp	d i ' y ė p	diʔjəp	d i ʔ j ə p
 1298	1987	Kasim et al. 1987	232	1987	amuh	amuh	a m u h	amuh	a m u h
@@ -95,8 +95,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 1959	1987	Kasim et al. 1987	440	1987	‘i'eh	'i'eh	' i ' e h	ʔiʔeh	ʔ i ʔ e h
 2022	1987	Kasim et al. 1987	465	1987	pahbu	pahbu	p a h b u	pahbu	p a h b u
 2023	1987	Kasim et al. 1987	465	1987	pahbu	pahbu	p a h b u	pahbu	p a h b u
-2070	1987	Kasim et al. 1987	484	1987	ūūnē	uunė	uu n ė	uːnə	uː n ə
-2071	1987	Kasim et al. 1987	484	1987	ūūnē	uunė	uu n ė	uːnə	uː n ə
+2070	1987	Kasim et al. 1987	484	1987	ūūnē	uunė	u u n ė	uːnə	uː n ə
+2071	1987	Kasim et al. 1987	484	1987	ūūnē	uunė	u u n ė	uːnə	uː n ə
 2096	1987	Kasim et al. 1987	489	1987	‘ē'anEm	'ė'anEm	' ė ' a n E m	ʔəʔanɛm	ʔ ə ʔ a n ɛ m
 2097	1987	Kasim et al. 1987	489	1987	‘ē'anEm	'ė'anEm	' ė ' a n E m	ʔəʔanɛm	ʔ ə ʔ a n ɛ m
 2169	1987	Kasim et al. 1987	515	1987	bEbEr	bEbEr	b E b E r	bɛbɛr	b ɛ b ɛ r
@@ -112,8 +112,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2345	1987	Kasim et al. 1987	592	1987	Enam	Enam	E n a m	ɛnam	ɛ n a m
 2374	1987	Kasim et al. 1987	603	1987	yoroq	yoro'	y o r o '	joroʔ	j o r o ʔ
 2375	1987	Kasim et al. 1987	603	1987	yoroq	yoro'	y o r o '	joroʔ	j o r o ʔ
-2413	1987	Kasim et al. 1987	615	1987	bĒĒ	bEE	b EE	bɛː	b ɛː
-2414	1987	Kasim et al. 1987	615	1987	bĒĒ	bEE	b EE	bɛː	b ɛː
+2413	1987	Kasim et al. 1987	615	1987	bĒĒ	bEE	b E E	bɛː	b ɛː
+2414	1987	Kasim et al. 1987	615	1987	bĒĒ	bEE	b E E	bɛː	b ɛː
 2472	1987	Kasim et al. 1987	637	1987	kaqkih	ka'kix	k a ' k i x	kaʔkiç	k a ʔ k i ç
 2473	1987	Kasim et al. 1987	637	1987	kaqkih	ka'kix	k a ' k i x	kaʔkiç	k a ʔ k i ç
 2517	1987	Kasim et al. 1987	654	1987	dowp	dowp	d o w p	dowp	d o w p
@@ -124,10 +124,10 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2556	1987	Kasim et al. 1987	662	1987	no	no	n o	no	n o
 2588	1987	Kasim et al. 1987	674	1987	hakhikah	hakʰikah	h a k ʰ i k a h	hakʰikah	h a k ʰ i k a h
 2589	1987	Kasim et al. 1987	674	1987	hakʰikhah	hakʰikʰah	h a kʰ i k ʰ a h	hakʰikʰah	h a kʰ i k ʰ a h
-2664	1987	Kasim et al. 1987	711	1987	yiip	yiip	y ii p	jiːp	j iː p
-2665	1987	Kasim et al. 1987	711	1987	yiip	yiip	y ii p	jiːp	j iː p
-2705	1987	Kasim et al. 1987	730	1987	uqūūt	u'uut	u ' uu t	uʔuːt	u ʔ uː t
-2706	1987	Kasim et al. 1987	730	1987	uqūūt	u'uut	u ' uu t	uʔuːt	u ʔ uː t
+2664	1987	Kasim et al. 1987	711	1987	yiip	yiip	y i i p	jiːp	j iː p
+2665	1987	Kasim et al. 1987	711	1987	yiip	yiip	y i i p	jiːp	j iː p
+2705	1987	Kasim et al. 1987	730	1987	uqūūt	u'uut	u ' u u t	uʔuːt	u ʔ uː t
+2706	1987	Kasim et al. 1987	730	1987	uqūūt	u'uut	u ' u u t	uʔuːt	u ʔ uː t
 2731	1987	Kasim et al. 1987	737	1987	nini	nini	n i n i	nini	n i n i
 2732	1987	Kasim et al. 1987	737	1987	nini	nini	n i n i	nini	n i n i
 2743	1987	Kasim et al. 1987	742	1987	raq	ra'	r a '	raʔ	r a ʔ
@@ -137,8 +137,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 2761	1987	Kasim et al. 1987	746	1987	paqaq	pa'a'	p a ' a '	paʔaʔ	p a ʔ a ʔ
 2772	1987	Kasim et al. 1987	748	1987	pruru	pruru	p r u r u	pruru	p r u r u
 2773	1987	Kasim et al. 1987	748	1987	pruru	pruru	p r u r u	pruru	p r u r u
-2818	1987	Kasim et al. 1987	764	1987	baqkiis	ba'kiis	b a ' k ii s	baʔkiːs	b a ʔ k iː s
-2819	1987	Kasim et al. 1987	764	1987	baqkiis	ba'kiis	b a ' k ii s	baʔkiːs	b a ʔ k iː s
+2818	1987	Kasim et al. 1987	764	1987	baqkiis	ba'kiis	b a ' k i i s	baʔkiːs	b a ʔ k iː s
+2819	1987	Kasim et al. 1987	764	1987	baqkiis	ba'kiis	b a ' k i i s	baʔkiːs	b a ʔ k iː s
 2913	1987	Kasim et al. 1987	800	1987	yay	yay	y a y	jaj	j a j
 2914	1987	Kasim et al. 1987	800	1987	yay	yay	y a y	jaj	j a j
 2973	1987	Kasim et al. 1987	828	1987	hiēdh	hiėdʰ	h i ė d ʰ	hiədʰ	h i ə d ʰ
@@ -199,8 +199,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 4122	1987	Kasim et al. 1987	1253	1987	kekah	kekah	k e k a h	kekah	k e k a h
 4140	1987	Kasim et al. 1987	1257	1987	pruru	pruru	p r u r u	pruru	p r u r u
 4141	1987	Kasim et al. 1987	1257	1987	pruru	pruru	p r u r u	pruru	p r u r u
-4170	1987	Kasim et al. 1987	1270	1987	‘ĒĒh	'EEh	' EE h	ʔɛːh	ʔ ɛː h
-4171	1987	Kasim et al. 1987	1270	1987	‘ĒĒh	'EEh	' EE h	ʔɛːh	ʔ ɛː h
+4170	1987	Kasim et al. 1987	1270	1987	‘ĒĒh	'EEh	' E E h	ʔɛːh	ʔ ɛː h
+4171	1987	Kasim et al. 1987	1270	1987	‘ĒĒh	'EEh	' E E h	ʔɛːh	ʔ ɛː h
 4282	1987	Kasim et al. 1987	1311	1987	baham	baham	b a h a m	baham	b a h a m
 4301	1987	Kasim et al. 1987	1322	1987	atinuq	atinu'	a t i n u '	atinuʔ	a t i n u ʔ
 4302	1987	Kasim et al. 1987	1322	1987	atinuq	atinu'	a t i n u '	atinuʔ	a t i n u ʔ
@@ -275,16 +275,16 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 5774	1987	Kasim et al. 1987	1881	1987	pana	pana	p a n a	pana	p a n a
 5802	1987	Kasim et al. 1987	1893	1987	hi'on	hi'on	h i ' o n	hiʔon	h i ʔ o n
 5803	1987	Kasim et al. 1987	1893	1987	hi'on	hi'on	h i ' o n	hiʔon	h i ʔ o n
-5815	1987	Kasim et al. 1987	1895	1987	iyūūt	iyuut	i y uu t	ijuːt	i j uː t
-5816	1987	Kasim et al. 1987	1895	1987	iyūūt	iyuut	i y uu t	ijuːt	i j uː t
+5815	1987	Kasim et al. 1987	1895	1987	iyūūt	iyuut	i y u u t	ijuːt	i j uː t
+5816	1987	Kasim et al. 1987	1895	1987	iyūūt	iyuut	i y u u t	ijuːt	i j uː t
 5838	1987	Kasim et al. 1987	1903	1987	pē	pė	p ė	pə	p ə
 5839	1987	Kasim et al. 1987	1903	1987	pē	pė	p ė	pə	p ə
 5851	1987	Kasim et al. 1987	1907	1987	babit	babit	b a b i t	babit	b a b i t
 5852	1987	Kasim et al. 1987	1907	1987	pia	pia	p i a	pia	p i a
 5896	1987	Kasim et al. 1987	1921	1987	yaq	ya'	y a '	jaʔ	j a ʔ
 5897	1987	Kasim et al. 1987	1921	1987	yaq	ya'	y a '	jaʔ	j a ʔ
-5925	1987	Kasim et al. 1987	1930	1987	kaqēēd	ka'ėėd	k a ' ėė d	kaʔəːd	k a ʔ əː d
-5926	1987	Kasim et al. 1987	1930	1987	kaqēēd	ka'ėėd	k a ' ėė d	kaʔəːd	k a ʔ əː d
+5925	1987	Kasim et al. 1987	1930	1987	kaqēēd	ka'ėėd	k a ' ė ė d	kaʔəːd	k a ʔ əː d
+5926	1987	Kasim et al. 1987	1930	1987	kaqēēd	ka'ėėd	k a ' ė ė d	kaʔəːd	k a ʔ əː d
 5943	1987	Kasim et al. 1987	1937	1987	Eaya	Eaya	E a y a	ɛaja	ɛ a j a
 5944	1987	Kasim et al. 1987	1937	1987	Eaya	Eaya	E a y a	ɛaja	ɛ a j a
 6027	1987	Kasim et al. 1987	1967	1987	kapuh	kapuh	k a p u h	kapuh	k a p u h
@@ -298,12 +298,12 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6170	1987	Kasim et al. 1987	2010	1987	wEh	wEh	w E h	wɛh	w ɛ h
 6180	1987	Kasim et al. 1987	2016	1987	kanEno	kanEno	k a n E n o	kanɛno	k a n ɛ n o
 6181	1987	Kasim et al. 1987	2016	1987	kanEno	kanEno	k a n E n o	kanɛno	k a n ɛ n o
-6205	1987	Kasim et al. 1987	2021	1987	īīkh ; nuīīkh	iikʰ ; nuiikʰ	ii k ʰ # ; # n u ii k ʰ	iːkʰ ; nuiːkʰ	iː k ʰ # ; # n u iː k ʰ
-6206	1987	Kasim et al. 1987	2021	1987	īīkh ; nuīīkh	iikʰ ; nuiikʰ	ii k ʰ # ; # n u ii k ʰ	iːkʰ ; nuiːkʰ	iː k ʰ # ; # n u iː k ʰ
+6205	1987	Kasim et al. 1987	2021	1987	īīkh ; nuīīkh	iikʰ ; nuiikʰ	i i k ʰ # ; # n u i i k ʰ	iːkʰ ; nuiːkʰ	iː k ʰ # ; # n u iː k ʰ
+6206	1987	Kasim et al. 1987	2021	1987	īīkh ; nuīīkh	iikʰ ; nuiikʰ	i i k ʰ # ; # n u i i k ʰ	iːkʰ ; nuiːkʰ	iː k ʰ # ; # n u iː k ʰ
 6230	1987	Kasim et al. 1987	2029	1987	kano	kano	k a n o	kano	k a n o
 6231	1987	Kasim et al. 1987	2029	1987	kano	kano	k a n o	kano	k a n o
-6345	1987	Kasim et al. 1987	2088	1987	iith	iith	ii t h	iːth	iː t h
-6346	1987	Kasim et al. 1987	2088	1987	iit	iit	ii t	iːt	iː t
+6345	1987	Kasim et al. 1987	2088	1987	iith	iith	i i t h	iːth	iː t h
+6346	1987	Kasim et al. 1987	2088	1987	iit	iit	i i t	iːt	iː t
 6378	1987	Kasim et al. 1987	2104	1987	pih	pix	p i x	piç	p i ç
 6379	1987	Kasim et al. 1987	2104	1987	pih	pix	p i x	piç	p i ç
 6391	1987	Kasim et al. 1987	2108	1987	haq	ha'	h a '	haʔ	h a ʔ
@@ -330,8 +330,8 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6757	1987	Kasim et al. 1987	2244	1987	idiq	idi'	i d i '	idiʔ	i d i ʔ
 6776	1987	Kasim et al. 1987	2250	1987	h'em'eq	h'em'e'	h ' e m ' e '	hʔemʔeʔ	h ʔ e m ʔ e ʔ
 6777	1987	Kasim et al. 1987	2250	1987	h'em'eq	h'em'e'	h ' e m ' e '	hʔemʔeʔ	h ʔ e m ʔ e ʔ
-6782	1987	Kasim et al. 1987	2251	1987	Ēāāph	ėaaph	ė aa p h	əaːph	ə aː p h
-6783	1987	Kasim et al. 1987	2251	1987	Ēāāph	ėaaph	ė aa p h	əaːph	ə aː p h
+6782	1987	Kasim et al. 1987	2251	1987	Ēāāph	ėaaph	ė a a p h	əaːph	ə aː p h
+6783	1987	Kasim et al. 1987	2251	1987	Ēāāph	ėaaph	ė a a p h	əaːph	ə aː p h
 6804	1987	Kasim et al. 1987	2255	1987	kaqnEn	ka'nEn	k a ' n E n	kaʔnɛn	k a ʔ n ɛ n
 6805	1987	Kasim et al. 1987	2255	1987	kaqnEn	ka'nEn	k a ' n E n	kaʔnɛn	k a ʔ n ɛ n
 6814	1987	Kasim et al. 1987	2258	1987	akitaq	akita'	a k i t a '	akitaʔ	a k i t a ʔ
@@ -350,7 +350,7 @@ entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_t
 6945	1987	Kasim et al. 1987	2299	1987	raq	ra'	r a '	raʔ	r a ʔ
 7007	1987	Kasim et al. 1987	2320	1987	di	di	d i	di	d i
 7008	1987	Kasim et al. 1987	2320	1987	di	di	d i	di	d i
-7018	1987	Kasim et al. 1987	2322	1987	kaaq	kaa'	k aa '	kaːʔ	k aː ʔ
+7018	1987	Kasim et al. 1987	2322	1987	kaaq	kaa'	k a a '	kaːʔ	k aː ʔ
 7019	1987	Kasim et al. 1987	2322	1987	Ekaq	Eka'	E k a '	ɛkaʔ	ɛ k a ʔ
 7301	1987	Kasim et al. 1987	2430	1987	kaqtahawdh	ka'taha:udʰ	k a ' t a h a:u d ʰ	kaʔtahaudʰ	k a ʔ t a h au d ʰ
 7302	1987	Kasim et al. 1987	2430	1987	kaqtahawdh	ka'taha:udʰ	k a ' t a h a:u d ʰ	kaʔtahaudʰ	k a ʔ t a h au d ʰ
