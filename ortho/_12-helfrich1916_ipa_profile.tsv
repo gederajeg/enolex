@@ -1,0 +1,66 @@
+Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
+	\-			-	-	2
+	oeoe			u'u	uʔu	0
+	nj			ñ	ɲ	0
+	tj			c	t͡ʃ	0
+	dj			j	d͡ʒ	0
+[aiueo]	ä			' a	ʔ a	6
+[aiueo]\(	ä			' a	ʔ a	2
+[aiueo]\)	ä			' a	ʔ a	0
+[aiueo]	ö			' o	ʔ o	0
+[aiueo]\(	ö			' o	ʔ o	0
+[aiueo]\)	ö			' o	ʔ o	0
+[^aiueo()]	ö			u̇	ɨ	0
+[^aiueo]\(	ö			u̇	ɨ	0
+[^aiueo]\)	ö			u̇	ɨ	0
+	ää			a ' a	a ʔ a	0
+	qä			' a	ʔ a	0
+	\(q\)ä			( ' ) a	( ʔ ) a	0
+	ié			i	i	0
+	iè			i	i	0
+	oe			u	u	26
+	oè			u	u	0
+	öä			o ' a	o ʔ a	0
+	ïï			i ' i	i ʔ a	0
+	öö			o ' o	o ʔ o	0
+	ä\(ä\)			a ( ' a)	a ( ʔ a)	0
+(ie)	h			x	ç	2
+(ai)	h			x	ç	0
+(?<!a)i	h			x	ç	0
+	 			 	 	22
+	\(			(	(	20
+	\)			)	)	20
+	\/			/	/	1
+	;			;	;	9
+	\?			?	?	1
+	\[			[	[	1
+	\]			]	]	1
+	a			a	a	53
+	á			á	á	0
+	à			a	a	0
+	ā			ā	aː	1
+	ã			ã	ã	2
+	b			b	b	11
+	d			d	d	9
+	e			e	e	19
+	è			E	ɛ	49
+	ĕ			ė	ə	6
+	ě			ė	ə	0
+	f			f	f	5
+	g			g	g	0
+	h			h	h	18
+	i			i	i	24
+	ĩ			ĩ	ĩ	1
+	j			y	j	7
+	k			k	k	35
+	l			l	l	2
+	m			m	m	8
+	n			n	n	10
+	o			o	o	37
+	õ			õ	ɔ͂	1
+	p			p	p	18
+	q			'	ʔ	6
+	r			r	r	5
+	t			t	t	2
+	u			u	u	1
+	w			w	w	7
