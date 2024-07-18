@@ -138,7 +138,7 @@ enolex6 <- enolex5 |>
          `Common transcription` = commons,
          `Common transcription tokenised` = commons_tokenised,
          `IPA phonemic transcription` = ipa,
-         `IPA phonmeic transcription tokenised` = ipa_tokenised,
+         `IPA phonemic transcription tokenised` = ipa_tokenised,
          `Indonesian` = indonesian_gloss,
          `English` = english_gloss,
          `Semantic field` = semantic_field,
@@ -213,10 +213,88 @@ enolex7 <- enolex6 |>
                                         `Note for each year`),
          `Note for each year` = if_else(str_detect(`Note for each year`, "\\s\\;\\sfirst word is the ki\\-form.+"),
                                         str_replace(`Note for each year`, "\\s\\;\\sfirst word is the ki\\-form.+", ""),
-                                        `Note for each year`))
+                                        `Note for each year`)) |> 
+  # check if the Given as contains ";" when the Indonesian also contains ";", if The Indonesian contains ";" and the Given as is not, change the Indonesian ";" into ","
+  mutate(Indonesian = if_else(str_detect(Indonesian, ";") & str_detect(`Given as`, ";", negate = TRUE),
+                              str_replace_all(Indonesian, ";", ","),
+                              Indonesian),
+         Indonesian = replace(Indonesian, Indonesian == "mug , mangkok", "mangkok")) 
+   
 
-enolex7 |> 
-  write_rds("data/dummy_for_pak_cok_20240621.rds")
 
-enolex7 |>
-  write_tsv("data/dummy_for_pak_cok_20240621.tsv")
+enoSemiCol <- enolex7 |> mutate(across(matches("Given|transcription|English|Indonesian|^Note"), ~str_count(., ";"), .names = "{col}_nsemi"))
+# When the `Given as` contains less number of semicolons than the Note for Cognate ID and Note for year, separate_longer_delim() works
+enoSemiCol |> filter(`Given as_nsemi` < `Note for Cognate ID_nsemi`) |>  separate_longer_delim(cols = where(is.character), delim = ";") |> select(`Given as`, `Note for Cognate ID`)
+enoSemiCol |> filter(`Given as_nsemi` < `Note for each year_nsemi`) |>  separate_longer_delim(cols = where(is.character), delim = ";")  |> select(`Given as`, `Note for each year`)
+
+
+enoSemiCol <- enoSemiCol |> 
+  # replace semi colon in Note for Cognate ID when the number of semi colon in Note for Cognate ID is larger than or equal with the Given as
+  mutate(`Note for Cognate ID` = if_else(`Note for Cognate ID_nsemi` > `Given as_nsemi`,
+                                         str_replace_all(`Note for Cognate ID`, ";", ",,"),
+                                         `Note for Cognate ID`)) |> 
+  mutate(`Note for Cognate ID` = if_else(`Note for Cognate ID_nsemi` == `Given as_nsemi` & `Note for Cognate ID_nsemi` > 0 & `Given as_nsemi` > 0,
+                                         str_replace_all(`Note for Cognate ID`, ";", ",,"),
+                                         `Note for Cognate ID`)) |> 
+  mutate(`Note for each year` = if_else(`Note for each year_nsemi` > `Given as_nsemi`,
+                                         str_replace_all(`Note for each year`, ";", ",,"),
+                                         `Note for each year`)) |> 
+  mutate(`PMP English gloss` = str_replace_all(`PMP English gloss`, ";", ",,")) |> 
+  mutate(`Note for each year` = if_else(`Note for each year_nsemi` < `Given as_nsemi` & `Note for each year_nsemi` > 0,
+                                        str_replace_all(`Note for each year`, ";", ",,"),
+                                        `Note for each year`)) |> 
+  mutate(`Common transcription` = if_else(str_detect(`Given as`, ";", TRUE),
+                              str_replace_all(`Common transcription`, " ", "_"),
+                              `Common transcription`),
+         `Common transcription tokenised` = if_else(str_detect(`Given as`, ";", TRUE),
+                                          str_replace_all(`Common transcription tokenised`, "\\#", "_"),
+                                          `Common transcription tokenised`),
+         `IPA phonemic transcription` = if_else(str_detect(`Given as`, ";", TRUE),
+                                          str_replace_all(`IPA phonemic transcription`, " ", "_"),
+                                          `IPA phonemic transcription`),
+         `IPA phonemic transcription tokenised` = if_else(str_detect(`Given as`, ";", TRUE),
+                              str_replace_all(`IPA phonemic transcription tokenised`, "\\#", "_"),
+                              `IPA phonemic transcription tokenised`),
+         `Given as` = if_else(str_detect(`Given as`, ";", TRUE),
+                              str_replace_all(`Given as`, " ", "_"),
+                              `Given as`))
+
+enoSemiCol1 <- enoSemiCol |> 
+  separate_longer_delim(where(is.character), delim = " ; ") |> 
+  mutate(across(matches("tokenised$"), ~str_replace_all(., "(^\\#\\s|\\s\\#$)", ""))) |> 
+  select(!matches("_nsemi")) |> 
+  rename(ID_old = ID,
+         Cognate_ID = `Cognate ID`,
+         Original_Form = `Given as`,
+         Orthography = `Common transcription`,
+         Ortho_Segments = `Common transcription tokenised`,
+         IPA = `IPA phonemic transcription`,
+         IPA_Segments = `IPA phonemic transcription tokenised`,
+         English_Original = `Original English gloss in source`,
+         Doculect = `Doculect info`,
+         Note_for_Year = `Note for each year`,
+         Note_for_Cognate = `Note for Cognate ID`,
+         PAN_Etymon = `PAN etymon`,
+         PAN_English = `PAN English gloss`,
+         PAN_Source = `PAN source`,
+         PMP_Etymon = `PMP etymon`,
+         PMP_English = `PMP English gloss`,
+         PMP_Source = `PMP source`,
+         Etymology_Source = `Etymological sources`,
+         Concepticon_Gloss = `Concepticon gloss`,
+         Semantic_Field = `Semantic field`,
+         Number_of_Cognates = `Number of Cognates`) |> 
+  mutate(ID = row_number()) |> 
+  select(ID, everything()) |> 
+  select(-ID_old)
+
+enolex8 <- enoSemiCol1
+
+enolex8 |> 
+  write_rds("data/dummy_for_pak_cok_20240717.rds")
+
+# enolex7 |>
+#   write_tsv("data/dummy_for_pak_cok_20240621.tsv")
+
+enolex8 |>
+  write_tsv("data/dummy_for_pak_cok_20240717.tsv")
