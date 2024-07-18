@@ -7,6 +7,9 @@ ortho/*missing.tsv
 ortho/*errors.tsv
 ortho/*_strings.tsv
 ortho/*copy-old.tsv
+ortho/*skeleton-old.tsv
+ortho/*doubled*
 *04-orthography-profiling.R
 SIGUL*pressed.pdf
 .pdf
+.xlsx
