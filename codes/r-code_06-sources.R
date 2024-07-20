@@ -1,4 +1,6 @@
 library(tidyverse)
+library(RefManageR)
+library(bib2df)
 
 x1 <- ReadBib("sources.bib")
 cites <- vector(mode = "character", length = length(x1))
@@ -17,6 +19,9 @@ bib2df::bib2df("sources.bib") |>
                        str_c("https://doi.org/", DOI, sep = ""),
                        URL)) |> 
   mutate(CITATION = cites) |> 
+  mutate(URL = if_else(str_detect(URL, "\\s(\\=)\\s"), 
+                       str_replace_all(URL, "\\s(\\=)\\s", "\\1"), 
+                       URL)) |> 
   write_tsv("sources.tsv")
 
 bib2df::bib2df("sources.bib") |> 
@@ -28,4 +33,7 @@ bib2df::bib2df("sources.bib") |>
                        str_c("https://doi.org/", DOI, sep = ""),
                        URL)) |> 
   mutate(CITATION = cites) |> 
+  mutate(URL = if_else(str_detect(URL, "\\s(\\=)\\s"), 
+                       str_replace_all(URL, "\\s(\\=)\\s", "\\1"), 
+                       URL)) |> 
   write_rds("sources.rds")
