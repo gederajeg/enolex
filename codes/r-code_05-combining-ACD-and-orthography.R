@@ -218,7 +218,8 @@ enolex7 <- enolex6 |>
   mutate(Indonesian = if_else(str_detect(Indonesian, ";") & str_detect(`Given as`, ";", negate = TRUE),
                               str_replace_all(Indonesian, ";", ","),
                               Indonesian),
-         Indonesian = replace(Indonesian, Indonesian == "mug , mangkok", "mangkok")) 
+         Indonesian = replace(Indonesian, Indonesian == "mug , mangkok", "mangkok")) |> 
+  mutate(across(matches("(Common trans|phonemic trans|Given as)"), ~str_replace_all(., "^\\<\\s?", "")))
    
 
 
@@ -291,10 +292,10 @@ enoSemiCol1 <- enoSemiCol |>
 enolex8 <- enoSemiCol1
 
 enolex8 |> 
-  write_rds("data/dummy_for_pak_cok_20240717.rds")
+  write_rds("data/dummy_for_pak_cok_20240731.rds")
 
 # enolex7 |>
 #   write_tsv("data/dummy_for_pak_cok_20240621.tsv")
-
+enolex8 |> select(Sources) |> distinct() |> write_tsv("sourcesmini.tsv")
 enolex8 |>
-  write_tsv("data/dummy_for_pak_cok_20240717.tsv")
+  write_tsv("data/dummy_for_pak_cok_20240731.tsv")

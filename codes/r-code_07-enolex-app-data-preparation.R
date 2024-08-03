@@ -33,3 +33,7 @@ enolex <- read_tsv("data/dummy_for_pak_cok_20240731.tsv") |>
   mutate(across(matches("(Etymon|^Note)"), ~str_replace_all(., '""', '"')))
 enolex |>
   write_rds("enolex/enolex.rds")
+
+### Image data =====
+### Run in the terminal git bash without the double quote!
+"cp '../../Enggano-Fieldwork/2nd-fieldwork-2024-02-01/photos/easter-monday_ibadah-padang/IMG_E3668.JPG' enolex/estuary.JPG"
