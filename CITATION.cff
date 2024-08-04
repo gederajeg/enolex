@@ -1,0 +1,73 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  EnoLEX: A Diachronic Lexical Database for the Enggano
+  Language
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Daniel
+    family-names: Krauße
+    affiliation: CNRS-Lattice Paris
+    orcid: 'https://orcid.org/0000-0002-9340-6960'
+  - given-names: Gede Primahadi Wijaya
+    family-names: Rajeg
+    affiliation: University of Oxford & Udayana University
+    orcid: 'https://orcid.org/0000-0002-2047-8621'
+  - given-names: Cokorda
+    family-names: Pramartha
+    affiliation: Udayana University
+    orcid: 'https://orcid.org/0000-0002-2835-3989'
+  - given-names: Erik
+    family-names: Zoebel
+    affiliation: Independent Researcher
+  - family-names: Hemmings
+    given-names: Charlotte
+    affiliation: University of Oxford
+    orcid: 'https://orcid.org/0000-0002-3076-5544'
+  - given-names: I Wayan
+    family-names: Arka
+    affiliation: Australian National University & Udayana University
+    orcid: 'https://orcid.org/0000-0002-2819-6186'
+  - given-names: Mary
+    family-names: Dalrymple
+    affiliation: University of Oxford
+    orcid: 'https://orcid.org/0000-0001-5723-5722'
+identifiers:
+  - type: url
+    value: 'https://github.com/engganolang/enolex'
+    description: Source code for the R Shiny app and dataset
+  - type: url
+    value: 'https://enggano.shinyapps.io/enolex/'
+    description: EnoLEX Shiny app
+repository-code: 'https://github.com/engganolang/enolex'
+url: 'https://enggano.shinyapps.io/enolex/'
+abstract: >-
+  EnoLEX collates lexical data from legacy materials and
+  contemporary fieldwork data about the Enggano language,
+  ranging from simple/short and extensive word lists,
+  anthropological and ethnographic writings, a dictionary, a
+  thesis, and contemporary Enggano data. The materials span
+  over 150 years from the middle of the 19th century up to
+  the present. With expert cognate-judgement, EnoLEX offers
+  historical development of word forms expressing a certain
+  concept/meaning.
+keywords:
+  - Enggano
+  - Barrier Islands language
+  - Indonesian language
+  - Endangered language
+  - Diachronic lexical database
+  - Historical database
+  - Historical lexical database
+  - R programming
+  - Shiny application
+  - Enggano language
+  - Indonesia
+license: CC-BY-NC-4.0
+version: 0.0.1
+date-released: '2024-08-04'
