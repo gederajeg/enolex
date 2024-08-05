@@ -12,10 +12,13 @@ bibs <- read_rds("sources.rds") |>
   filter(BIBTEXKEY != "NothoferMS") |> 
   mutate(YEAR = replace(YEAR, YEAR == "n.d.", "< 1855")) |> 
   mutate(YEAR = factor(YEAR, levels = year_arranged)) |> 
-  arrange(YEAR, AUTHOR)
+  arrange(YEAR, AUTHOR) |> 
+  mutate(Sources = str_replace(Sources, "et al\\. 2023", "et al. 2022")) |> 
+  mutate(Sources = replace(Sources, Sources == "vd Straten & S. 1855", "vd Straaten & Severijn 1855"))
 
 ## Read in the main data
 elx <- read_rds("enolex.rds") |> 
+  mutate(Sources = replace(Sources, Sources == "vd Straten & S. 1855", "vd Straaten & Severijn 1855")) |> 
   mutate(Etymology_Source = str_replace_all(Etymology_Source, "^(Lafeber)(1922)",
                                         "\\1 \\2"),
          Etymology_Source = str_replace_all(Etymology_Source,
@@ -52,6 +55,34 @@ elx <- read_rds("enolex.rds") |>
                                             "(Mahdi )(1988)",
                                             "\\1<a href='https://books.google.co.id/books/about/Morphophonologische_Besonderheiten_und_h.html?id=RWMOAAAAYAAJ&redir_esc=y' target='_blank'>\\2</a>"))
 
+## Dialect by sources
+dialect_info <- elx |> 
+  select(Sources, Doculect) |> 
+  distinct() |> 
+  rename(Dialect_Info = Doculect) |> 
+  mutate(Dialect_Info = replace(Dialect_Info,
+                                Sources %in% c("Zakaria et al. 2022",
+                                               "Aron 2019"),
+                                "Enggano Meok"),
+         Dialect_Info = replace(Dialect_Info,
+                                Dialect_Info == "Enggano",
+                                "Enggano (unspec.)")) |> 
+  group_by(Sources) |> 
+  mutate(Dialect_Info = str_c(Dialect_Info, collapse = " ; ")) |> 
+  ungroup() |> 
+  distinct()
+
+## count the forms by sources
+form_count <- elx |> 
+  select(Sources, Original_Form) |> 
+  group_by(Sources) |> 
+  summarise(Count_of_Original_Form = n_distinct(Original_Form))
+
+### join the count and dialect info with bibs
+bibs <- bibs |> 
+  left_join(form_count) |> 
+  left_join(dialect_info)
+
 ## Prepare the choice for the English concept
 elx_eng <- sort(unique(elx$English), decreasing = FALSE)
 sem_choices_eng <- c("(none)", elx_eng)
@@ -60,7 +91,7 @@ sem_choices_eng <- c("(none)", elx_eng)
 bib_choices <- c("(none)", bibs$Sources)
 
 bibs1 <- select(bibs,
-                -Sources,
+                # -Sources,
                 -BIBTEXKEY,
                 -YEAR,
                 -URL) |> 
@@ -71,7 +102,7 @@ bibs1 <- select(bibs,
                                             "<a href='\\1' target='_blank'>URL</a>"),
                             CITATION)) |> 
   rename(YEAR = YEAR_URL) |> 
-  select(YEAR, CITATION)
+  select(Year = YEAR, Sources, Form_Count = Count_of_Original_Form, Dialect_Info, Citation = CITATION)
 
 english_gloss <- selectizeInput(inputId = "English_Gloss", 
                                 options = list(dropdownParent = "body"),
@@ -116,7 +147,7 @@ cards <- list(
                                       p("EnoLEX collates lexical data from", actionLink("SourcesTabLink", "legacy materials and contemporary fieldwork data"), "about the Enggano language, ranging from simple/short and extensive word lists, anthropological and ethnographic writings, a dictionary, thesis, and contemporary Enggano data. The materials span over 150 years from the middle of the 19th century up to the present. With expert cognate-judgement, EnoLEX offers historical development of word forms expressing a certain concept/meaning."),
                                       
                                       h2("How to get started"),
-                                      p("Users can go to the", actionLink("CognatesTabLink", "Cognates"), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
+                                      p("Users can go to the", actionLink("CognatesTabLink", "Search"), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
                                       
                                       h2("Licensing"),
                                       HTML('<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/"><em>EnoLEX</em></a> edited by <span property="cc:attributionName">Daniel Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zoebel, Charlotte Hemmings, I Wayan Arka, and Mary Dalrymple</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>')
@@ -194,7 +225,7 @@ ui <- page_navbar(
               
             )
   ),
-  nav_panel(title = "Cognates",
+  nav_panel(title = "Search",
             
             layout_columns(
               
@@ -212,7 +243,10 @@ ui <- page_navbar(
             
   ),
   nav_panel(title = "Sources",
-            dataTableOutput("enolex_materials")),
+            div(DT::DTOutput(outputId = "enolex_materials"), 
+                style = "font-size: 96%")
+            # dataTableOutput("enolex_materials")
+            ),
   nav_menu(title = "Links",
            nav_item(link_enolex_github),
            nav_item(link_enggano_web))
@@ -306,8 +340,8 @@ server <- function(input, output, session) {
       
       tb <- elx |> 
         filter(English %in% input$English_Gloss) |> 
-        select(Cognate_ID, Year, Sources, Original_Form, Orthography,
-               IPA) # |> 
+        select(Cognate_ID, Year, Sources, Original_Form, Standardised_Orthography = Orthography,
+               Phonemic_Transcription = IPA) # |> 
         # select(where(~!all(is.na(.))))
       
       for_checking_notes <- elx |>
@@ -394,7 +428,25 @@ server <- function(input, output, session) {
   
   materials_table <- reactive(
     {
-      DT::datatable(bibs1, escape = FALSE, options = list(paging = FALSE))
+      DT::datatable(bibs1,
+                    escape = FALSE,
+                    selection = "single",
+                    # rownames = FALSE,
+                    options = list(paging = FALSE,
+                                   scrollY = "500px",
+                                   scrollX = TRUE,
+                                   # autoWidth = TRUE,
+                                   columnDefs = list(list(className = "dt-center",
+                                                          targets = c(1, 3)),
+                                                     list(width = "50px",
+                                                          targets = "Year"),
+                                                     list(width = "60px",
+                                                          targets = "Form_Count"),
+                                                     list(width = "170px",
+                                                          targets = "Sources"))),
+                    filter = "top",
+                    style = "bootstrap4",
+                    class = list(stripe = FALSE))
     }
   )
   
@@ -418,12 +470,12 @@ server <- function(input, output, session) {
         
         idn_orth <- elx |> 
           filter(English %in% input$English_Gloss) |> 
-          select(Sources, Indonesian, Orthography) |> 
+          select(Sources, Indonesian, Standardised_Orthography = Orthography) |> 
           distinct()
         
         idn_notes <- idn_orth |> 
           group_by(Indonesian, Sources) |> 
-          mutate(forms = str_c("<strong>", Orthography, "</strong>", sep = "")) |> 
+          mutate(forms = str_c("<strong>", Standardised_Orthography = Orthography, "</strong>", sep = "")) |> 
           mutate(forms = str_c(forms, collapse = ", ")) |> 
           group_by(Sources, Indonesian) |> 
           mutate(forms = str_c(forms, " (", Sources, ")", sep = "")) |> 
@@ -540,9 +592,9 @@ server <- function(input, output, session) {
     
   )
   
-  # the following code run the clicking on Cognates hyperlink the main panel/page
+  # the following code run the clicking on Search hyperlink the main panel/page
   observeEvent(input$CognatesTabLink, {
-    updateTabsetPanel(session = session, "tabs", "Cognates")
+    updateTabsetPanel(session = session, "tabs", "Search")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
