@@ -139,7 +139,7 @@ cognate_cards <- list(
                                      open = list(mobile = "always-above"), 
                                      width = 200),
                   div(DT::DTOutput(outputId = "cognatesOut"), 
-                      style = "font-size:90%")
+                      style = "font-size: 96%")
                    ),
     fill = TRUE,
     height = 700),
@@ -225,33 +225,134 @@ server <- function(input, output, session) {
   updateSelectizeInput(session, inputId = "References", choices = bib_choices, server = TRUE)
   
   ### reactive output for COGNATE Table ====
+  notes <- reactive(
+    
+    {
+      
+      if (input$English_Gloss != "(none)") {
+        
+        tb_note <- elx |> 
+          filter(English %in% input$English_Gloss) |> 
+          select(Cognate_ID,
+                 Year,
+                 Sources,
+                 Original_Form,
+                 English_Original,
+                 Note_for_Cognate,
+                 Note_for_Year) |> 
+          # filter(if_any(matches("English_Original|^Note_"), ~!is.na(.))) |> 
+          mutate(across(where(is.character), ~replace_na(., "-"))) |> 
+          mutate(across(matches("^Note_for"), ~str_replace_all(., 
+                                                               "(?<!\\s)'",
+                                                               "’"))) |> 
+          mutate(across(matches("^Note_for"), ~str_replace_all(., 
+                                                               "(?<=\\s)'",
+                                                               "‘"))) |> 
+          mutate(across(matches("^Note_for"), ~str_replace_all(., 
+                                                               "(?<!\\s)\"",
+                                                               "”"))) |> 
+          mutate(across(matches("^Note_for"), ~str_replace_all(., 
+                                                               "(?<=\\s)\"",
+                                                               "“"))) |> 
+          mutate(across(matches("Note_for"), ~str_replace_all(.,
+                                                              "__",
+                                                              " ; "))) |> 
+          mutate(across(matches("Note_for"), ~str_replace_all(.,
+                                                              "\\s{2,}",
+                                                              " "))) |> 
+          mutate(English_Original = if_else(English_Original != "-",
+                                            str_c("<p><strong>Original gloss</strong>: ‘", English_Original, "’</p>", sep = ""),
+                                            str_c("<p><strong>Original gloss</strong>: ", English_Original, "</p>", sep = ""))) |> 
+          mutate(Note_for_Cognate = str_c("<p>Note for <strong>Cognate ID ", Cognate_ID, "</strong>: ", Note_for_Cognate, "</p>", sep = ""),
+                 Note_for_Year = str_c("<p>Note for <strong>", Sources, "</strong>: ", Note_for_Year, "</p>", sep = "")) |> 
+          mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |> 
+          select(notes_all)
+        
+      } else {
+        
+        
+        
+      }
+      
+    }
+    
+  )
+  
+  shinyInput <- function(FUN, len, rows_to_add, id, ...) {
+    
+    inputs <- character(len)
+    
+    for (i in seq_len(len)) {
+      
+      if (i %in% rows_to_add) {
+        
+        inputs[i] <- as.character(FUN(paste0(id, i), ...))
+        
+      } else {
+        
+        next
+        
+      }
+      
+      
+    }
+    
+    inputs
+  }
+  
   english_selected <- reactive(
     
-    { if(input$English_Gloss != "(none)") {
+    { if (input$English_Gloss != "(none)") {
       
       tb <- elx |> 
         filter(English %in% input$English_Gloss) |> 
         select(Cognate_ID, Year, Sources, Original_Form, Orthography,
-               IPA, English_Original) |> 
-        select(where(~!all(is.na(.))))
+               IPA) # |> 
+        # select(where(~!all(is.na(.))))
+      
+      for_checking_notes <- elx |>
+        filter(English %in% input$English_Gloss) |>
+        select(English_Original, Note_for_Year, Note_for_Cognate)
+      
+      for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
+                               any(!is.na(for_checking_notes$Note_for_Year)),
+                               any(!is.na(for_checking_notes$Note_for_Cognate)))
+      
+      rows_to_add <- which(!is.na(for_checking_notes$English_Original) | 
+                             !is.na(for_checking_notes$Note_for_Year) | 
+                             !is.na(for_checking_notes$Note_for_Cognate))
+      
+      if (any(length(rows_to_add) > 0)) {
+        
+        tb <- tb |> 
+          mutate(Details = shinyInput(actionButton, nrow(tb), rows_to_add = rows_to_add, 'button_', label = "More",
+                                      onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})'))
+        
+      }
+      
       
       cog_id_colouring <- unique(tb$Cognate_ID)
       
       DT::datatable(tb,
                     escape = FALSE,
+                    selection = "single",
                     options = list(paging = FALSE,
                                    scrollY = "500px",
                                    scrollX = TRUE,
                                    autoWidth = TRUE,
                                    columnDefs = list(list(className = "dt-center",
-                                                          targets = 1))),
+                                                          targets = c(1, 2)),
+                                                     list(width = "50px",
+                                                          targets = "Cognate_ID"),
+                                                     list(width = "50px",
+                                                          targets = "Year"))),
                     filter = "top",
                     style = "bootstrap4",
                     class = list(stripe = FALSE)) |>
         formatStyle("Cognate_ID",
                     backgroundColor = styleEqual(cog_id_colouring,
                                                  colour_values(factor(cog_id_colouring),
-                                                               palette = "viridis",
+                                                               palette = "rdylbu",
                                                                alpha = 65)))
       
     } else {
@@ -260,9 +361,7 @@ server <- function(input, output, session) {
         filter(English %in% "sadsakdasklaskcmasl") |> 
         DT::datatable()
       
-      
     }
-      
       
     }
   )
@@ -273,6 +372,25 @@ server <- function(input, output, session) {
       english_selected()
     }
   )
+  
+  observeEvent(input$select_button, {
+    
+    rownum <- as.numeric(strsplit(input$select_button, "_")[[1]][2])
+    
+    notes_to_show <- HTML(pull(notes()[rownum, ], notes_all))
+    
+    if (is.null(rownum) || rownum == '') {} else{
+      
+      showModal(modalDialog(
+        notes_to_show,
+        title = paste0("Note(s) for row: ", rownum),
+        size = "m",
+        easyClose = TRUE,
+        footer = NULL
+      ))
+    }
+    
+  })
   
   materials_table <- reactive(
     {
