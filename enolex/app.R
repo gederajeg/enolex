@@ -8,6 +8,8 @@ library(colourvalues)
 year_arranged <- c("< 1855", "1854", "1855", "1864", "1870", "1878", "1879", 
                    "1888", "1891", "1894", "1916", "1979", "1982", "1987", 
                    "2011", "2019", "2022")
+
+## Read in the main data for Sources ====
 bibs <- read_rds("sources.rds") |> 
   filter(BIBTEXKEY != "NothoferMS") |> 
   mutate(YEAR = replace(YEAR, YEAR == "n.d.", "< 1855")) |> 
@@ -16,9 +18,22 @@ bibs <- read_rds("sources.rds") |>
   mutate(Sources = str_replace(Sources, "et al\\. 2023", "et al. 2022")) |> 
   mutate(Sources = replace(Sources, Sources == "vd Straten & S. 1855", "vd Straaten & Severijn 1855"))
 
-## Read in the main data
+## Read in the main data for EnoLEX ====
 elx <- read_rds("enolex.rds") |> 
-  mutate(Sources = replace(Sources, Sources == "vd Straten & S. 1855", "vd Straaten & Severijn 1855")) |> 
+  mutate(Sources = replace(Sources, 
+                           Sources == "vd Straten & S. 1855", 
+                           "vd Straaten & Severijn 1855")
+         ) |> 
+  mutate(Sources = replace(Sources, 
+                           Sources == "Stockhof 1987", 
+                           "Stokhof 1987")
+  ) |> 
+  mutate(Note_for_Year = if_else(str_detect(Note_for_Year, '^[^" ]+?"'),
+                                 str_replace(Note_for_Year,
+                                             '(^[^" ]+?")',
+                                             '"\\1'),
+                                 Note_for_Year)
+         ) |> 
   mutate(Etymology_Source = str_replace_all(Etymology_Source, "^(Lafeber)(1922)",
                                         "\\1 \\2"),
          Etymology_Source = str_replace_all(Etymology_Source,
@@ -55,7 +70,7 @@ elx <- read_rds("enolex.rds") |>
                                             "(Mahdi )(1988)",
                                             "\\1<a href='https://books.google.co.id/books/about/Morphophonologische_Besonderheiten_und_h.html?id=RWMOAAAAYAAJ&redir_esc=y' target='_blank'>\\2</a>"))
 
-## Dialect by sources
+## Dialect by sources ======
 dialect_info <- elx |> 
   select(Sources, Doculect) |> 
   distinct() |> 
@@ -66,28 +81,177 @@ dialect_info <- elx |>
                                 "Enggano Meok"),
          Dialect_Info = replace(Dialect_Info,
                                 Dialect_Info == "Enggano",
-                                "Enggano (unspec.)")) |> 
+                                "?")) |> 
+  mutate(Dialect_Info = replace(Dialect_Info,
+                                Sources %in% c("Helfrich & Pieters 1891") &
+                                  Dialect_Info == "Enggano Kèfoe",
+                                "Southeast"),
+         Dialect_Info = replace(Dialect_Info,
+                                Sources %in% c("Helfrich & Pieters 1891") &
+                                  Dialect_Info == "Enggano Barohia",
+                                "Northwest")) |> 
   group_by(Sources) |> 
   mutate(Dialect_Info = str_c(Dialect_Info, collapse = " ; ")) |> 
   ungroup() |> 
-  distinct()
+  distinct() |> 
+  mutate(Place = "?") |> 
+  mutate(Dialect_Info = replace(Dialect_Info,
+                                Sources == "Brouwer <1855",
+                                "Northwest"),
+         Place = replace(Place,
+                         Sources == "Brouwer <1855",
+                         "Barhau"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "vd Straaten & Severijn 1855",
+                                "Northwest"),
+         Place = replace(Place,
+                         Sources == "vd Straaten & Severijn 1855",
+                         "Karkau"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "v. Rosenberg 1855",
+                                "Northwest or South"),
+         Place = replace(Place,
+                         Sources == "v. Rosenberg 1855",
+                         "Barhau"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Francis 1870",
+                                "Northwest"),
+         Place = replace(Place,
+                         Sources == "Francis 1870",
+                         "Barhau?"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Helfrich 1888",
+                                "South"),
+         Place = replace(Place,
+                         Sources == "Helfrich 1888",
+                         "Kioyo"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Modigliani 1894",
+                                "Southeast?"),
+         Place = replace(Place,
+                         Sources == "Modigliani 1894",
+                         "Kayaapu"),
+         
+         Place = replace(Place,
+                         Sources == "Helfrich & Pieters 1891",
+                         "Pulau Dua ; Karkua"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Stokhof 1987",
+                                "Southeast?"),
+         Place = replace(Place,
+                         Sources == "Stokhof 1987",
+                         "Pulau Dua"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Helfrich 1916",
+                                "Southeast ; Northwest"),
+         Place = replace(Place,
+                         Sources == "Helfrich 1916",
+                         "Pulau Dua ; Karkua"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Kähler 1987",
+                                "South"),
+         Place = replace(Place,
+                         Sources == "Kähler 1987",
+                         "Kioyo"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources == "Kasim et al. 1987",
+                                "West"),
+         Place = replace(Place,
+                         Sources == "Kasim et al. 1987",
+                         "Malakoni ; Banjar Sari"),
+         
+         Dialect_Info = replace(Dialect_Info,
+                                Sources %in% c("Zakaria et al. 2022",
+                                               "Aron 2019",
+                                               "Yoder 2011"),
+                                "West"),
+         Place = replace(Place,
+                         Sources %in% c("Zakaria et al. 2022",
+                                        "Aron 2019",
+                                        "Yoder 2011"),
+                         "Meok"),
+         
+         Dialect_Info = str_replace(Dialect_Info,
+                                    "^Enggano ",
+                                    "")) |> 
+  mutate(Collected = "-",
+         Collected = replace(Collected,
+                             Sources %in% c("Brouwer <1855"),
+                             "ca. 1850"),
+         Collected = replace(Collected,
+                             Sources %in% c("Boewang 1854"),
+                             "1840-1850"),
+         Collected = replace(Collected,
+                             Sources %in% c("vd Straaten & Severijn 1855"),
+                             "1854"),
+         Collected = replace(Collected,
+                             Sources %in% c("v. Rosenberg 1855"),
+                             "1852"),
+         Collected = replace(Collected,
+                             Sources %in% c("Walland 1864"),
+                             "1863"),
+         Collected = replace(Collected,
+                             Sources %in% c("Francis 1870"),
+                             "1865-1870"),
+         Collected = replace(Collected,
+                             Sources %in% c("Helfrich 1888"),
+                             "1885"),
+         Collected = replace(Collected,
+                             Sources %in% c("Helfrich & Pieters 1891"),
+                             "1891"),
+         Collected = replace(Collected,
+                             Sources %in% c("Modigliani 1894"),
+                             "1891"),
+         Collected = replace(Collected,
+                             Sources %in% c("Stokhof 1987"),
+                             "1895"),
+         Collected = replace(Collected,
+                             Sources %in% c("Helfrich 1916"),
+                             "1891"),
+         Collected = replace(Collected,
+                             Sources %in% c("Amran et al. 1979"),
+                             "1978"),
+         Collected = replace(Collected,
+                             Sources %in% c("Kähler 1987"),
+                             "1937-1938"),
+         Collected = replace(Collected,
+                             Sources %in% c("Kasim et al. 1987"),
+                             "1983?"),
+         Collected = replace(Collected,
+                             Sources %in% c("Yoder 2011"),
+                             "2010"),
+         Collected = replace(Collected,
+                             Sources %in% c("Aron 2019"),
+                             "2019"),
+         Collected = replace(Collected,
+                             Sources %in% c("Zakaria et al. 2022"),
+                             "2022"))
 
-## count the forms by sources
+## Count the forms by sources =====
 form_count <- elx |> 
   select(Sources, Original_Form) |> 
   group_by(Sources) |> 
   summarise(Count_of_Original_Form = n_distinct(Original_Form))
 
-### join the count and dialect info with bibs
+### Join the count and dialect info with bibs =====
 bibs <- bibs |> 
   left_join(form_count) |> 
   left_join(dialect_info)
 
-## Prepare the choice for the English concept
+## Prepare the choice for the English concept =====
 elx_eng <- sort(unique(elx$English), decreasing = FALSE)
 sem_choices_eng <- c("(none)", elx_eng)
 
-## Prepare the choice for the Sources
+## Prepare the choice for the Sources =====
 bib_choices <- c("(none)", bibs$Sources)
 
 bibs1 <- select(bibs,
@@ -102,7 +266,7 @@ bibs1 <- select(bibs,
                                             "<a href='\\1' target='_blank'>URL</a>"),
                             CITATION)) |> 
   rename(YEAR = YEAR_URL) |> 
-  select(Year = YEAR, Sources, Form_Count = Count_of_Original_Form, Dialect_Info, Citation = CITATION)
+  select(Collected, Published = YEAR, Sources, Form_Count = Count_of_Original_Form, Dialect = Dialect_Info, Place, Citation = CITATION)
 
 english_gloss <- selectizeInput(inputId = "English_Gloss", 
                                 options = list(dropdownParent = "body"),
@@ -249,7 +413,11 @@ ui <- page_navbar(
             ),
   nav_menu(title = "Links",
            nav_item(link_enolex_github),
-           nav_item(link_enggano_web))
+           nav_item(link_enggano_web)) #,
+  # nav_panel(value = "search_panel",
+  #           textInput("global_search",
+  #                     label = NULL,
+  #                     value = "Search"))
 )
 
 server <- function(input, output, session) {
@@ -374,6 +542,7 @@ server <- function(input, output, session) {
                                    scrollY = "500px",
                                    scrollX = TRUE,
                                    autoWidth = TRUE,
+                                   language = list(searchPlaceholder = "Search"),
                                    columnDefs = list(list(className = "dt-center",
                                                           targets = c(1, 2)),
                                                      list(width = "50px",
@@ -381,6 +550,7 @@ server <- function(input, output, session) {
                                                      list(width = "50px",
                                                           targets = "Year"))),
                     filter = "top",
+                    # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
                     style = "bootstrap4",
                     class = list(stripe = FALSE)) |>
         formatStyle("Cognate_ID",
@@ -435,16 +605,22 @@ server <- function(input, output, session) {
                     options = list(paging = FALSE,
                                    scrollY = "500px",
                                    scrollX = TRUE,
-                                   # autoWidth = TRUE,
+                                   language = list(searchPlaceholder = "Search"),
+                                   autoWidth = TRUE,
                                    columnDefs = list(list(className = "dt-center",
-                                                          targets = c(1, 3)),
+                                                          targets = c(1:4)),
                                                      list(width = "50px",
-                                                          targets = "Year"),
+                                                          targets = c("Published", "Collected")),
                                                      list(width = "60px",
                                                           targets = "Form_Count"),
+                                                     list(width = "140px",
+                                                          targets = "Dialect"),
+                                                     list(width = "140px",
+                                                          targets = "Place"),
                                                      list(width = "170px",
                                                           targets = "Sources"))),
                     filter = "top",
+                    # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
                     style = "bootstrap4",
                     class = list(stripe = FALSE))
     }
