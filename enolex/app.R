@@ -83,6 +83,11 @@ bibs <- bibs |>
   left_join(form_count) |> 
   left_join(dialect_info)
 
+### join dialect info into EnoLEX
+elx <- elx |> 
+  left_join(dialect_info) |> 
+  select(-Doculect)
+
 ## Prepare the choice for the English concept
 elx_eng <- sort(unique(elx$English), decreasing = FALSE)
 sem_choices_eng <- c("(none)", elx_eng)
@@ -504,8 +509,27 @@ server <- function(input, output, session) {
     elx |> 
       filter(if_any(where(is.character), ~str_detect(., str_c("\\b", input$global_search, "\\b", sep = "")))) |> 
       select(where(function(x) any(!is.na(x)))) |> 
-      select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon) |> 
-      datatable(escape = FALSE)
+      select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates) |> 
+      datatable(escape = FALSE,
+                selection = "single",
+                options = list(paging = FALSE,
+                               scrollY = "500px",
+                               scrollX = TRUE,
+                               autoWidth = TRUE,
+                               columnDefs = list(list(className = "dt-center",
+                                                      targets = c(1, 2)),
+                                                 list(width = "50px",
+                                                      targets = "Cognate_ID"),
+                                                 list(width = "50px",
+                                                      targets = "Year"))),
+                filter = "top",
+                style = "bootstrap4",
+                class = list(stripe = FALSE)) # |>
+      # formatStyle("Cognate_ID",
+      #             backgroundColor = styleEqual(cog_id_colouring,
+      #                                          colour_values(factor(cog_id_colouring),
+      #                                                        palette = "rdylbu",
+      #                                                        alpha = 65)))
     
   })
   
