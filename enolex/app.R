@@ -341,12 +341,16 @@ bibs <- selectizeInput(inputId = "References",
 ## MAIN page ====
 cards <- list(
   background_image = 
-    card(card_image("estuary.JPG", border_radius = "none", height = "350px"),
-         card_footer("The estuary towards the Indian Ocean from the Bak Blau lake, Enggano Island",
-                     class = "fs-6; fw-lighter; blockquote-footer; border-0"),
+    card(card_image("estuary.JPG", 
+                    height = "330px",
+                    border_radius = "none"),
+         card_body(fill = FALSE,
+                   p("The estuary towards the Indian Ocean from the Bak Blau lake, Enggano Island",
+                     class = "fw-light text-muted")),
          class = "border-0")
   ,
-  citation = card(class = "border-0",
+  citation = card(#class = "border-0",
+                  # height = "200px",
                   card_body(div(h2("How to cite EnoLEX")),
                             div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zoebel, Charlotte Hemmings, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Available online at", a("https://enggano.shinyapps.io/enolex/", href='https://enggano.shinyapps.io/enolex/', target='_blank')), style="font-size: 0.9em"),
                             div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://enggano.ling-phil.ox.ac.uk/static/papers/EnoLEX%20-%20A%20Diachronic%20Lexical%20Database%20for%20the%20Enggano%20language%20[Preprint].pdf', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
@@ -692,23 +696,24 @@ server <- function(input, output, session) {
     if (input$pattern_matching_options == "regex") {
       
       glb <- elx |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x)))) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+        select(where(function(x) any(!is.na(x))))
+        
       
     } else if (input$pattern_matching_options == "exact_match") {
       
       glb <- elx |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
         filter(if_any(where(is.character), ~str_detect(., fixed(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x)))) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+        select(where(function(x) any(!is.na(x))))
       
     } else if (input$pattern_matching_options == "partial_match") {
       
       glb <- elx |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x)))) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+        select(where(function(x) any(!is.na(x))))
       
     }
     
