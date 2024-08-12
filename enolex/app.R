@@ -247,6 +247,11 @@ bibs <- bibs |>
   left_join(form_count) |> 
   left_join(dialect_info)
 
+### join dialect info into EnoLEX
+elx <- elx |> 
+  left_join(dialect_info) |> 
+  select(-Doculect)
+
 ## Prepare the choice for the English concept =====
 elx_eng <- sort(unique(elx$English), decreasing = FALSE)
 sem_choices_eng <- c("(none)", elx_eng)
@@ -275,6 +280,50 @@ english_gloss <- selectizeInput(inputId = "English_Gloss",
                                 selected = NULL
 )
 
+jscode <- '
+$(function() {
+  var $els = $("[data-proxy-click]");
+  $.each(
+    $els,
+    function(idx, el) {
+      var $el = $(el);
+      var $proxy = $("#" + $el.data("proxyClick"));
+      $el.keydown(function (e) {
+        if (e.keyCode == 13) {
+          $proxy.click();
+        }
+      });
+    }
+  );
+});
+'
+
+js_enter_key <- '
+$(document).on("keyup", function(e) {
+  if((e.keyCode == 13)){
+    Shiny.onInputChange("keyPressed", Math.random());
+  }
+});'
+
+# js_enter_key <- '$(document).keyup(function(event) {
+#     if ($("#site_search").is(":focus") && (event.key == "Enter")) {
+#        $("#goButton").click();
+#     }
+# });'
+
+# js_enter_key <- '
+#   $(document).ready(function() {
+#     $(window).keydown(function(event){
+#       if(event.keyCode == 13) {
+#         event.preventDefault();
+#         return false;
+#       }
+#     });
+#   });
+#   '
+
+# one_search_all <- textInput("searchbar", label = "Search", placeholder = "Type & press Enter")
+
 link_enolex_github <- tags$a(shiny::icon("github"), "GitHub", 
                              href="https://github.com/engganolang/enolex", 
                              target="_blank")
@@ -292,7 +341,7 @@ bibs <- selectizeInput(inputId = "References",
 ## MAIN page ====
 cards <- list(
   background_image = 
-    card(card_image("estuary.JPG", border_radius = "none"),
+    card(card_image("estuary.JPG", border_radius = "none", height = "350px"),
          card_footer("The estuary towards the Indian Ocean from the Bak Blau lake, Enggano Island",
                      class = "fs-6; fw-lighter; blockquote-footer; border-0"),
          class = "border-0")
@@ -311,7 +360,17 @@ cards <- list(
                                       p("EnoLEX collates lexical data from", actionLink("SourcesTabLink", "legacy materials and contemporary fieldwork data"), "about the Enggano language, ranging from simple/short and extensive word lists, anthropological and ethnographic writings, a dictionary, thesis, and contemporary Enggano data. The materials span over 150 years from the middle of the 19th century up to the present. With expert cognate-judgement, EnoLEX offers historical development of word forms expressing a certain concept/meaning."),
                                       
                                       h2("How to get started"),
-                                      p("Users can go to the", actionLink("CognatesTabLink", "Search"), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
+                                      p("The first option is the", actionLink("CognatesTabLink", "Concept Search"), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
+                                      p("The second option is the", actionLink("GlobalSearch", "Global Search"), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
+                                      # tags$input(type = "search", id = "site_search", name = "q", placeholder = "Type and Enter"),
+                                      # tags$script(js_enter_key),
+                                      # tags$script(jscode),
+                                      # textInput(inputId = "site_search", label = "Search", placeholder = "Type and Enter"),
+                                      
+                                      # fluidRow(
+                                      #   column(11, tagAppendAttributes(textInput("site_search", label = " ", width = "60%", placeholder = "Type"),
+                                      #                                  `data-proxy-click` = "btn")),
+                                      #   column(1, div( style = "margin-top: 24px; margin-left: -210px", actionButton("btn", "Search")))),
                                       
                                       h2("Licensing"),
                                       HTML('<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/"><em>EnoLEX</em></a> edited by <span property="cc:attributionName">Daniel Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zoebel, Charlotte Hemmings, I Wayan Arka, and Mary Dalrymple</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>')
@@ -327,10 +386,36 @@ cards <- list(
   #)
 )
 
+## GLOBAL search page ====
+full_db_page <- list(
+  db_table = card(
+    layout_sidebar(
+      sidebar = sidebar(textInput("global_search", label = "Database search", width = 150),
+                        radioButtons(inputId = "pattern_matching_options",
+                                     label = "Search using:",
+                                     choiceNames = list(
+                                       HTML("<a href='https://www.regular-expressions.info/' target='_blank'>Regular Expression</a>"),
+                                       "Exact Match",
+                                       "Partial Match"
+                                     ),
+                                     choiceValues = list(
+                                       "regex",
+                                       "exact_match",
+                                       "partial_match"
+                                     ),
+                                     selected = "exact_match"),
+                        open = list(mobile = "always-above"),
+                        width = 200),
+      div(DT::DTOutput(outputId = "global_search_output"),
+          style = "font-size: 95%")
+    )
+  )
+)
+
 ## COGNATES page ====
 cognate_cards <- list(
   cognate_table = card(
-    layout_sidebar(sidebar = sidebar(english_gloss, 
+    layout_sidebar(sidebar = sidebar(english_gloss,
                                      open = list(mobile = "always-above"), 
                                      width = 200),
                   div(DT::DTOutput(outputId = "cognatesOut"), 
@@ -359,6 +444,7 @@ cognate_cards <- list(
 ui <- page_navbar(
   id = "tabs",
   fillable = TRUE,
+  # footer = "<div>",
   theme = bs_theme(
     version = bslib::version_default(),
     bootswatch = "cosmo",
@@ -376,7 +462,7 @@ ui <- page_navbar(
   nav_panel(title = "Main",
             
             layout_columns(
-              
+            
               cards[["enolex_description"]],
               
               layout_columns(
@@ -389,7 +475,7 @@ ui <- page_navbar(
               
             )
   ),
-  nav_panel(title = "Search",
+  nav_panel(title = "Concept Search",
             
             layout_columns(
               
@@ -406,6 +492,10 @@ ui <- page_navbar(
             )
             
   ),
+  nav_panel(title = "Global Search",
+            layout_columns(
+              full_db_page[["db_table"]]
+            )),
   nav_panel(title = "Sources",
             div(DT::DTOutput(outputId = "enolex_materials"), 
                 style = "font-size: 96%")
@@ -425,6 +515,7 @@ server <- function(input, output, session) {
   updateSelectizeInput(session, inputId = "English_Gloss", choices = sem_choices_eng, server = TRUE)
   
   updateSelectizeInput(session, inputId = "References", choices = bib_choices, server = TRUE)
+  
   
   ### reactive output for COGNATE Table ====
   notes <- reactive(
@@ -596,6 +687,64 @@ server <- function(input, output, session) {
     
   })
   
+  global_search <- reactive({
+    
+    if (input$pattern_matching_options == "regex") {
+      
+      glb <- elx |> 
+        filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
+        select(where(function(x) any(!is.na(x)))) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+      
+    } else if (input$pattern_matching_options == "exact_match") {
+      
+      glb <- elx |> 
+        filter(if_any(where(is.character), ~str_detect(., fixed(input$global_search, ignore_case = FALSE)))) |> 
+        select(where(function(x) any(!is.na(x)))) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+      
+    } else if (input$pattern_matching_options == "partial_match") {
+      
+      glb <- elx |> 
+        filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
+        select(where(function(x) any(!is.na(x)))) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"))
+      
+    }
+    
+    cog_id_colouring <- unique(glb$Cognate_ID)
+    
+    glb |> 
+      rename(Standardised_Orthography = Orthography) |> 
+      select(-ID, -Semantic_Field) |> 
+      datatable(escape = FALSE,
+                selection = "single",
+                options = list(paging = FALSE,
+                               scrollY = "500px",
+                               scrollX = TRUE,
+                               autoWidth = TRUE,
+                               columnDefs = list(list(className = "dt-center",
+                                                      targets = c(1, 2)),
+                                                 list(width = "50px",
+                                                      targets = "Cognate_ID"),
+                                                 list(width = "50px",
+                                                      targets = "Year"))),
+                filter = "top",
+                style = "bootstrap4",
+                class = list(stripe = FALSE)) |> 
+      formatStyle("Cognate_ID",
+                  backgroundColor = styleEqual(cog_id_colouring,
+                                               colour_values(factor(cog_id_colouring),
+                                                             palette = "rdylbu",
+                                                             alpha = 65)))
+    
+  })
+  
+  output$global_search_output <- DT::renderDT({
+    req(nchar(input$global_search) > 0) 
+      global_search()
+  })
+  
   materials_table <- reactive(
     {
       DT::datatable(bibs1,
@@ -651,7 +800,7 @@ server <- function(input, output, session) {
         
         idn_notes <- idn_orth |> 
           group_by(Indonesian, Sources) |> 
-          mutate(forms = str_c("<strong>", Standardised_Orthography = Orthography, "</strong>", sep = "")) |> 
+          mutate(forms = str_c("<strong>", Standardised_Orthography, "</strong>", sep = "")) |> 
           mutate(forms = str_c(forms, collapse = ", ")) |> 
           group_by(Sources, Indonesian) |> 
           mutate(forms = str_c(forms, " (", Sources, ")", sep = "")) |> 
@@ -770,7 +919,11 @@ server <- function(input, output, session) {
   
   # the following code run the clicking on Search hyperlink the main panel/page
   observeEvent(input$CognatesTabLink, {
-    updateTabsetPanel(session = session, "tabs", "Search")
+    updateTabsetPanel(session = session, "tabs", "Concept Search")
+  })
+  
+  observeEvent(input$GlobalSearch, {
+    updateTabsetPanel(session = session, "tabs", "Global Search")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
