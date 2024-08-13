@@ -47,6 +47,9 @@ describing it as follows:
 > In *Proceedings of AsiaLex 2024 (The Asian Association for
 > Lexicography 2024 Hybrid Conference)*. Toyo University, Tokyo: Japan.
 
+EnoLEX is published as a [Shiny](https://shiny.posit.co) web application
+programmed in R by Gede Primahadi Wijaya Rajeg.
+
 ## Overview
 
 EnoLEX collates lexical data from legacy materials and contemporary
