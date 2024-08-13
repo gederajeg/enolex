@@ -459,7 +459,7 @@ ui <- page_navbar(
     secondary = "#E4F0EF",
     "link-hover-color" = "#be0f34",
     "link-color" = "#3277ae"
-    # source from Oxford colour parameters: https://www.ox.ac.uk/public-affairs/style-guide/digital-style-guide
+    # source from Oxford colour parameters: https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/colours
   ),
   # collapsible = TRUE,
   underline = TRUE,
@@ -696,24 +696,57 @@ server <- function(input, output, session) {
     if (input$pattern_matching_options == "regex") {
       
       glb <- elx |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
+        rename(Original_gloss = English_Original,
+               # Concepticon = Concepticon_Gloss,
+               Dialect = Dialect_Info) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x))))
+        select(where(function(x) any(!is.na(x)))) |> 
+        mutate(across(where(is.character), ~gsub(
+          paste(c("\\b(", input$global_search, ")\\b"), collapse = ""),
+          "<span style='background-color:#D4CDF4;'>\\1</span>",
+          .,
+          TRUE,
+          TRUE
+        ))) |> 
+        rename(Concepticon = Concepticon_Gloss)
         
       
     } else if (input$pattern_matching_options == "exact_match") {
       
       glb <- elx |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
-        filter(if_any(where(is.character), ~str_detect(., fixed(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x))))
+        rename(Original_gloss = English_Original,
+               # Concepticon = Concepticon_Gloss,
+               Dialect = Dialect_Info) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
+        filter(if_any(where(is.character), ~str_detect(., regex(str_c("\\b", input$global_search, "\\b", sep = ""), ignore_case = FALSE)))) |> 
+        select(where(function(x) any(!is.na(x)))) |> 
+        mutate(across(where(is.character), ~gsub(
+          paste(c("\\b(", input$global_search, ")\\b"), collapse = ""),
+          "<span style='background-color:#65E5AE;'>\\1</span>",
+          .,
+          TRUE,
+          TRUE
+        ))) |>
+        rename(Concepticon = Concepticon_Gloss)
       
     } else if (input$pattern_matching_options == "partial_match") {
       
       glb <- elx |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments")) |> 
-        filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
-        select(where(function(x) any(!is.na(x))))
+        rename(Original_gloss = English_Original,
+               # Concepticon = Concepticon_Gloss,
+               Dialect = Dialect_Info) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
+        filter(if_any(where(is.character), ~str_detect(string = ., pattern = input$global_search))) |> 
+        select(where(function(x) any(!is.na(x)))) |> 
+        mutate(across(where(is.character), ~gsub(
+          paste(c("(", input$global_search, ")"), collapse = ""),
+          "<span style='background-color:#F7EF66;'>\\1</span>",
+          .,
+          TRUE,
+          TRUE
+        ))) |>
+        rename(Concepticon = Concepticon_Gloss)
       
     }
     
@@ -746,7 +779,7 @@ server <- function(input, output, session) {
   })
   
   output$global_search_output <- DT::renderDT({
-    req(nchar(input$global_search) > 0) 
+    req(input$global_search) 
       global_search()
   })
   
