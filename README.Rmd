@@ -29,6 +29,8 @@ Please cite the EnoLEX online database and the proceedings paper describing it a
 
 > Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024). [EnoLEX: A Diachronic Lexical Database for the Enggano language](https://enggano.ling-phil.ox.ac.uk/static/papers/EnoLEX%20-%20A%20Diachronic%20Lexical%20Database%20for%20the%20Enggano%20language%20[Preprint].pdf). In *Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)*. Toyo University, Tokyo: Japan.
 
+EnoLEX is published as a [Shiny](https://shiny.posit.co) web application programmed in R by Gede Primahadi Wijaya Rajeg.
+
 ## Overview
 
 EnoLEX collates lexical data from legacy materials and contemporary fieldwork data about the Enggano language, ranging from simple/short and extensive word lists, anthropological and ethnographic writings, a dictionary, thesis, and contemporary Enggano data. The materials span over 150 years from the middle of the 19th century up to the present. With expert cognate-judgement, EnoLEX offers historical development of word forms expressing a certain concept/meaning.
