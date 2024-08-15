@@ -1698,3 +1698,4 @@ get_ortho_cols(zakaria)
 zakaria |> 
   select(entry_id, year, EngganoSource, id, year_id, words, commons, commons_tokenised = transliterated, ipa, ipa_tokenised) |> 
   write_tsv("ortho/_19-zakaria2023_strings-ipa.tsv")
+
