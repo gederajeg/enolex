@@ -1,6 +1,6 @@
 library(tidyverse)
 
-# get the URL for the Google sheet and load the data (periodically run codes in line 4, 7-11, and 14)
+# get the URL for the Google sheet and load the data (periodically run codes in line 4, 7-11, and 14 when there is update from the master Google Spreadsheet)
 # source("codes/r-code_00-lexdb-source-rawfile.R")
 
 # save into .txt file to track using git
@@ -356,7 +356,48 @@ eno_etym_long_mini3 <- eno_etym_long_mini2 |>
   mutate(notesnew = if_else(str_detect(notes, "^lit\\.\\s"),
                             notes,
                             notesnew)) |> 
-  mutate(notesnew = if_else(str_detect(notes, "^first word mean.+?\\, second word mean.+?\\, third word mean.+?\\, fourth word mean"),
+  
+  mutate(notesnew = if_else(str_detect(notes, "^first word mean.+?\\, second word mean.+?\\, third word mean.+?\\, fourth word mean.+?\\, fifth word mean"),
+                            str_c(
+                              # first word
+                              '<w><m>',
+                              str_extract(words, "^[^;]+?(?=\\s)"),
+                              '</m> <def>',
+                              str_replace_all(notes, "(^first word |\\,\\ssecond word.+$)", ""),
+                              "</def></w> ; ",
+                              
+                              # second word
+                              '<w><m>',
+                              str_replace(str_extract(words, "^[^;]+?\\s\\;\\s[^;]+?(?=\\s\\;)"), "^.+?\\;\\s", ""),
+                              '</m> <def>',
+                              str_replace_all(notes, "(^first word.+?second word |\\,\\sthird.+$)", ""),
+                              "</def></w> ; ",
+                              
+                              # third word
+                              '<w><m>',
+                              str_replace_all(words, "(^[^;]+? ; [^;]+ ; | ; [^;]+ ; [^;]+$)", ""),
+                              '</m> <def>',
+                              str_replace_all(notes, "(^first word .+third word|\\,\\sfourth word.+$)", ""),
+                              "</def></w> ; ",
+                              
+                              # fourth word
+                              '<w><m>',
+                              str_replace_all(words, "(^[^;]+?\\s\\;\\s[^;]+?\\s\\;\\s[^;]+?\\s\\;\\s|\\s\\;\\s[^;]+$)", ""),
+                              '</m> <def>',
+                              str_replace_all(notes, "(^first word .+fourth word|\\,\\sfifth word.+$)", ""), 
+                              "</def></w> ; ",
+                              
+                              # fifth word
+                              '<w><m>',
+                              str_extract(words, "(?<=\\s\\;\\s)[^;]+?$"),
+                              '</m> <def>',
+                              str_replace(notes, "^first.+fifth word", ""), 
+                              "</def></w>",
+                              
+                              sep = ""),
+                            notesnew)) |> 
+  
+  mutate(notesnew = if_else(str_detect(notes, "^first word mean.+?\\, second word mean.+?\\, third word mean.+?\\, fourth word mean") & n_word == 4,
                             str_c(
                               # first word
                               '<w><m>',
@@ -781,7 +822,7 @@ eno_etym_long_mini3 <- eno_etym_long_mini2 |>
                             notesnew)) |> 
   mutate(notesnew = if_else(year_id == "1888" & 
                               str_detect(notes, "belongs? to Hel"), 
-                            str_c("\"", words, "\"", str_replace(notes, "^This word(?=\\sbelongs?)", ""), sep = ""), 
+                            str_c("\"", words, "\"", str_replace(notes, "^[Tt]his word(?=\\sbelongs?)", ""), sep = ""), 
                             notesnew)) |> 
   mutate(notesnew = if_else(str_detect(notes, "element") & 
                               n_word == 2 &
