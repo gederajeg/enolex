@@ -4,11 +4,12 @@ library(tidyverse)
 
 ## Sources data ====
 sourcesmini <- read_tsv("sourcesmini.tsv") |>
-  rename(BIBTEXKEY = SourcesKey)
+  rename(BIBTEXKEY = SourcesKey) |> 
+  mutate(LexemesCount = prettyNum(LexemesCount, big.mark = ","))
 sourcesdf <- read_tsv("sources.tsv")
 sources_all <- sourcesmini |>
   left_join(sourcesdf) |>
-  select(Sources, BIBTEXKEY, AUTHOR, YEAR, TITLE, URL, CITATION) |>
+  select(Sources, BIBTEXKEY, AUTHOR, YEAR, TITLE, URL, CITATION, LexemesCount) |>
   mutate(across(where(is.character), ~replace_na(., ""))) |>
   mutate(YEAR_URL = if_else(URL == "", YEAR, paste("<a href='", URL, "' target='_blank'>", YEAR, "</a>", sep = "")))
 sources_all |>
@@ -17,7 +18,7 @@ sources_all |>
 ## EnoLEX data ====
 ### This "EnoLEX data" needs to be re-run every time there is an update from "data/dummy...tsv" file
 ### This "EnoLEX data" needs to be run from the root directory (not from inside the `enolex` app directory)
-enolex <- read_tsv("data/dummy_for_pak_cok_20240731.tsv") |>
+enolex <- read_tsv("data/dummy_for_pak_cok_20240903.tsv") |>
   # mutate(across(where(is.character), ~replace_na(., ""))) |>
   left_join(sources_all) |>
   filter(Year != "ms.") |>
@@ -31,9 +32,29 @@ enolex <- read_tsv("data/dummy_for_pak_cok_20240731.tsv") |>
                                      paste("<a href='", Concepticon, "' target='_blank'>", Concepticon_Gloss, "</a>", sep = ""),
                                      Concepticon_Gloss)) |>
   mutate(across(matches("(Etymon|^Note)"), ~str_replace_all(., '""', '"')))
+
 enolex |>
   write_rds("enolex/enolex.rds")
 
+## Count the forms in von Rosenberg (1878), Aron (2019), and Zakaria et al. (2022) ====
+enolex |> 
+  filter(str_detect(Sources, "Rosenberg"), Year == "1878") |> 
+  pull(Original_Form) |> 
+  str_count("([^ ;])+") |> 
+  sum()
+# [1] 79
+enolex |> 
+  filter(str_detect(Sources, "Aron"), Year == "2019") |> 
+  pull(Original_Form) |> str_count("([^ ;])+") |> 
+  sum()
+# [1] 694
+enolex |> 
+  filter(str_detect(Sources, "Zakaria")) |> 
+  pull(Original_Form) |> 
+  str_count("([^ ;])+") |> 
+  sum()
+# [1] 57
+
 ### Image data =====
-### Run in the terminal git bash without the double quote!
-"cp '../../Enggano-Fieldwork/2nd-fieldwork-2024-02-01/photos/easter-monday_ibadah-padang/IMG_E3668.JPG' enolex/estuary.JPG"
+### Run the following line in the terminal git bash without the double quote!
+# "cp '../../Enggano-Fieldwork/2nd-fieldwork-2024-02-01/photos/easter-monday_ibadah-padang/IMG_E3668.JPG' enolex/estuary.JPG"
