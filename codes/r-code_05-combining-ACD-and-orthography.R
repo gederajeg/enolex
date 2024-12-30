@@ -2,7 +2,7 @@ library(tidyverse)
 source("codes/r-code_01-lexdb-pre-processing.R")
 source("codes/r-code_02-orthography.R")
 source("codes/r-code_03-ACD.R")
-# source("codes/r-code_04-1-orthography-profiling.R") Only run this when there is update on the orthography!
+# source("codes/r-code_04-1-orthography-profiling.R") # Only run this when there is update on the orthography and the spreadsheet!
 
 # load the etymology table
 proto_distinct1 <- read_rds("data/proto_distinct1.rds")
@@ -219,50 +219,196 @@ enolex7 <- enolex6 |>
                               str_replace_all(Indonesian, ";", ","),
                               Indonesian),
          Indonesian = replace(Indonesian, Indonesian == "mug , mangkok", "mangkok")) |> 
-  mutate(across(matches("(Common trans|phonemic trans|Given as)"), ~str_replace_all(., "^\\<\\s?", "")))
-   
+  mutate(across(matches("(Common trans|phonemic trans|Given as)"), ~str_replace_all(., "^\\<\\s?", ""))) |> 
+  
+  ## Fixing the order of Notes ====
+  ### Note for each year =====
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "djoeba[-beri-berri] means 'ship' ; joeba means 'village'__[-beri-berri] in \"djoeba[-beri-berri]\" unclear  but cf. boat",
+                                        "djoeba[-beri-berri] means 'ship'__[-beri-berri] in \"djoeba[-beri-berri]\" unclear  but cf. boat ; joeba means 'village'")) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "[kahara] koewo means 'tree' ; ekoewo means 'wood'__[kahara] in \"[kahara] koewo\" unclear",
+                                        "[kahara] koewo means 'tree'__[kahara] in \"[kahara] koewo\" unclear ; ekoewo means 'wood'")) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "[moko-]dobo means 'wood' ; [panoekoe-am]dobo means 'box'__[moko-] in \"[moko-]dobo\" means 'many'__dobo in \"[moko-]dobo\" means 'goods'",
+                                        "[moko-]dobo means 'wood'__[moko-] in \"[moko-]dobo\" means 'many'__dobo in \"[moko-]dobo\" means 'goods' ; [panoekoe-am]dobo means 'box'")) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "léwo léwo  means 'water' ; lèwo lewo [djewé]   means 'rain' ; literal translation of  'water from above'",
+                                        "léwo léwo  means 'water' ; lèwo lewo [djewé]  means 'rain' ,, literal translation of  'water from above'")) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "lit. 'a lot of wood' ; second word means 'red acacia'",
+                                        "lit. 'a lot of wood' ; pidjoe means 'red acacia'")) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`,
+                                                   "third word means 'tailbone'"),
+                                        str_replace_all(`Note for each year`,
+                                                        "\\,\\sthird word means 'tailbone'",
+                                                        ""),
+                                        `Note for each year`)) |> 
+  # fix error in Daniel's spreadsheet
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Given as` == "ebbo" & Year == "1879",
+                                        NA)) |> 
+  mutate(`Note for each year` = if_else(`Note for each year` == "third word means 'brave' and literally means 'not fear'",
+                                        str_c("  ;   ;  ", str_extract(`Given as`, "(?<=;\\s)\\[.+$"), str_replace(`Note for each year`, "^third word ", " "), sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "kahafie and kahapie are taken from a wordlist ; [wa]kafie literally means 'I wish'",
+                                        "kahafie is taken from a wordlist ; kahapie is taken from a wordlist ; [wa]kafie literally means 'I wish'")) |> 
+  mutate(`Note for each year` = if_else(`Note for each year` == "first word means 'water', second word means 'rain' ; literal translation of second word 'water from above'",
+                                        str_c(str_extract(`Given as`, "^[^ ;]+?(?=\\s;)"),
+                                              str_replace_all(`Note for each year`, "(^first word|\\, second word.+$)", ""),
+                                              " ; ",
+                                              str_replace_all(`Given as`, "(^[^ ;]+?\\s\\;\\s|\\s\\;\\s[^;]+$)", ""),
+                                              str_replace_all(`Note for each year`, "(^first word.+?second word| ; literal translation.+$)", ""),
+                                              " ,, ",
+                                              str_extract(`Note for each year`, "literal translation of "),
+                                              str_replace_all(`Given as`, "(^[^ ;]+?\\s\\;\\s|\\s\\;\\s[^;]+$)", ""),
+                                              str_replace_all(`Note for each year`, "^first word.+literal translation of second word", ""),
+                                              " ; ",
+                                              sep = ""),
+                                        `Note for each year`)
+         ) |> 
+  # mutate(across(matches("Given|transcription"), ~str_replace_all(., "(; | \\# ;)", ""))) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "\\[uuaha\\] mena means"),
+                                        str_c(`Note for each year`, " ; ", sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Given as`, "mŏkŏ .èfōka."),
+                                        str_c(" ; ", `Note for each year`, sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Given as`, "^kaptuh.. ; puh.."),
+                                        str_c(`Note for each year`, " ; ", sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "^these forms are somewhat unclear but must belong"),
+                                        # str_replace(`Note for each year`, "^these forms are somewhat unclear but must belong to the same root", "  ;  "),
+                                        str_c("These forms (i.e., ",
+                                              str_replace_all(`Given as`, " ; ", " , "),
+                                              ")",
+                                              str_extract(`Note for each year`, " are somewhat unclear but must belong to the same root"),
+                                              " ; ",
+                                              "These forms (i.e., ",
+                                              str_replace_all(`Given as`, " ; ", " , "),
+                                              ")",
+                                              str_extract(`Note for each year`, " are somewhat unclear but must belong to the same root"),
+                                              " ; ",
+                                              "These forms (i.e., ",
+                                              str_replace_all(`Given as`, " ; ", " , "),
+                                              ")",
+                                              str_extract(`Note for each year`, " are somewhat unclear but must belong to the same root"),
+                                              str_replace_all(`Note for each year`, "^these forms.+root ; ", "__"),
+                                              sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "\"kakèbara\" is perhaps a mishearing of \"kakènèbaka\"",
+                                        " ; \"kakèbara\" is perhaps a mishearing of \"kakènèbaka\"")) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "ki\\-?koh must be a more conservative form"),
+                                        str_c(`Note for each year`, " than ", str_extract(`Given as`, "(?<=\\;\\s)[^;]+$"), " ; ", sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = replace(`Note for each year`,
+                                        `Note for each year` == "ho means 'already'",
+                                        " ; ho means 'already'")) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "maybe meaning 'forest'"),
+                                        str_c(
+                                          str_replace(`Note for each year`, "and .+?(?=unclear)", ""),
+                                          " ; ",
+                                          str_replace(`Note for each year`, "^.+? and ", ""),
+                                          " ; ",
+                                          sep = ""
+                                        ),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "literally means 'head hair'"),
+                                        str_c(`Note for each year`, " ; ", sep = ""),
+                                        `Note for each year`)) |> 
+  mutate(`Note for each year` = if_else(str_detect(`Note for each year`, "missing its second part"),
+                                        str_c(" ; ", `Note for each year`, sep = ""),
+                                        `Note for each year`))
+  
 
 
 enoSemiCol <- enolex7 |> mutate(across(matches("Given|transcription|English|Indonesian|^Note"), ~str_count(., ";"), .names = "{col}_nsemi"))
+
+## Check entries where the note for each year has more semicolons
+enoSemiCol |> 
+  filter(`Note for each year_nsemi`<`Given as_nsemi`) |> 
+  select(`Given as`, `Note for each year`)
+
 # When the `Given as` contains less number of semicolons than the Note for Cognate ID and Note for year, separate_longer_delim() works
 enoSemiCol |> filter(`Given as_nsemi` < `Note for Cognate ID_nsemi`) |>  separate_longer_delim(cols = where(is.character), delim = ";") |> select(`Given as`, `Note for Cognate ID`)
-enoSemiCol |> filter(`Given as_nsemi` < `Note for each year_nsemi`) |>  separate_longer_delim(cols = where(is.character), delim = ";")  |> select(`Given as`, `Note for each year`)
+# enoSemiCol |> filter(`Given as_nsemi` < `Note for each year_nsemi`) |>  separate_longer_delim(cols = where(is.character), delim = ";")  |> select(`Given as`, `Note for each year`)
 
 
-enoSemiCol <- enoSemiCol |> 
+enoSemiCol1 <- enoSemiCol |> 
   # replace semi colon in Note for Cognate ID when the number of semi colon in Note for Cognate ID is larger than or equal with the Given as
   mutate(`Note for Cognate ID` = if_else(`Note for Cognate ID_nsemi` > `Given as_nsemi`,
+                                         
                                          str_replace_all(`Note for Cognate ID`, ";", ",,"),
+                                         
                                          `Note for Cognate ID`)) |> 
+  
+  # filter entries that have non-zero, equal number of semi colons in the Note for Cognate ID and Original form
   mutate(`Note for Cognate ID` = if_else(`Note for Cognate ID_nsemi` == `Given as_nsemi` & `Note for Cognate ID_nsemi` > 0 & `Given as_nsemi` > 0,
+                                         
                                          str_replace_all(`Note for Cognate ID`, ";", ",,"),
+                                         
                                          `Note for Cognate ID`)) |> 
-  mutate(`Note for each year` = if_else(`Note for each year_nsemi` > `Given as_nsemi`,
-                                         str_replace_all(`Note for each year`, ";", ",,"),
-                                         `Note for each year`)) |> 
-  mutate(`PMP English gloss` = str_replace_all(`PMP English gloss`, ";", ",,")) |> 
-  mutate(`Note for each year` = if_else(`Note for each year_nsemi` < `Given as_nsemi` & `Note for each year_nsemi` > 0,
+  
+  mutate(`Note for each year` = if_else(`Note for each year_nsemi` > `Given as_nsemi` & `Given as_nsemi` == 0,
+                                         
                                         str_replace_all(`Note for each year`, ";", ",,"),
+                                        
                                         `Note for each year`)) |> 
+  
+  mutate(`PMP English gloss` = str_replace_all(`PMP English gloss`, ";", ",,")) |> 
+  
+  mutate(`Note for each year` = if_else(`Note for each year_nsemi` < `Given as_nsemi` & `Note for each year_nsemi` > 0,
+                                        
+                                        str_replace_all(`Note for each year`, ";", ",,"),
+                                        
+                                        `Note for each year`)) |> 
+  
+  mutate(`Note for each year` = str_replace_all(`Note for each year`, "__", " -- ")) |> 
+  
+  # These codes handle combination of forms to be delimited with underscore
   mutate(`Common transcription` = if_else(str_detect(`Given as`, ";", TRUE),
-                              str_replace_all(`Common transcription`, " ", "_"),
-                              `Common transcription`),
+                                          
+                                          str_replace_all(`Common transcription`, " ", "_"),
+                                          
+                                          `Common transcription`),
+         
          `Common transcription tokenised` = if_else(str_detect(`Given as`, ";", TRUE),
-                                          str_replace_all(`Common transcription tokenised`, "\\#", "_"),
-                                          `Common transcription tokenised`),
+                                                    
+                                                    str_replace_all(`Common transcription tokenised`, "\\#", "_"),
+                                                    
+                                                    `Common transcription tokenised`),
+         
          `IPA phonemic transcription` = if_else(str_detect(`Given as`, ";", TRUE),
-                                          str_replace_all(`IPA phonemic transcription`, " ", "_"),
-                                          `IPA phonemic transcription`),
+                                                
+                                                str_replace_all(`IPA phonemic transcription`, " ", "_"),
+                                                
+                                                `IPA phonemic transcription`),
+         
          `IPA phonemic transcription tokenised` = if_else(str_detect(`Given as`, ";", TRUE),
-                              str_replace_all(`IPA phonemic transcription tokenised`, "\\#", "_"),
-                              `IPA phonemic transcription tokenised`),
+                                                          
+                                                          str_replace_all(`IPA phonemic transcription tokenised`, "\\#", "_"),
+                                                          
+                                                          `IPA phonemic transcription tokenised`),
+         
          `Given as` = if_else(str_detect(`Given as`, ";", TRUE),
                               str_replace_all(`Given as`, " ", "_"),
                               `Given as`))
 
-enoSemiCol1 <- enoSemiCol |> 
-  separate_longer_delim(where(is.character), delim = " ; ") |> 
-  mutate(across(matches("tokenised$"), ~str_replace_all(., "(^\\#\\s|\\s\\#$)", ""))) |> 
+enoSemiCol1$`Given as`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")] <- str_replace_all(enoSemiCol1$`Given as`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")], "; ", "")
+enoSemiCol1$`Common transcription`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")] <- str_replace_all(enoSemiCol1$`Common transcription`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")], "; ", "")
+enoSemiCol1$`IPA phonemic transcription`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")] <- str_replace_all(enoSemiCol1$`IPA phonemic transcription`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")], "; ", "")
+enoSemiCol1$`Common transcription tokenised`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")] <- str_replace_all(enoSemiCol1$`Common transcription tokenised`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")], "; \\# ", "")
+enoSemiCol1$`IPA phonemic transcription tokenised`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")] <- str_replace_all(enoSemiCol1$`IPA phonemic transcription tokenised`[str_which(enoSemiCol1$`Note for each year`, "5x10x20")], "; \\# ", "")
+
+# This is the code when the splitting happens
+enoSemiCol2 <- enoSemiCol1 |> 
+  
+  separate_longer_delim(where(is.character), delim = " ; ") |> # This is the code when the splitting happens
+  mutate(across(matches("tokenised$"), ~str_replace_all(., "(^\\#\\s|\\s\\#$)", ""))) |> # run this code line IF the cells with multiple forms get split
+  
+  # mutate(across(matches("tokenised$"), ~str_replace_all(., "(\\s\\#\\s)", " "))) |> # this is the code to run when the cells with multiple forms are not split
   select(!matches("_nsemi")) |> 
   rename(ID_old = ID,
          Cognate_ID = `Cognate ID`,
@@ -289,13 +435,38 @@ enoSemiCol1 <- enoSemiCol |>
   select(ID, everything()) |> 
   select(-ID_old)
 
-enolex8 <- enoSemiCol1
+enolex8 <- enoSemiCol2
+# enolex8 <- enolex7 |> 
+#   rename(ID_old = ID,
+#          Cognate_ID = `Cognate ID`,
+#          Original_Form = `Given as`,
+#          Orthography = `Common transcription`,
+#          Ortho_Segments = `Common transcription tokenised`,
+#          IPA = `IPA phonemic transcription`,
+#          IPA_Segments = `IPA phonemic transcription tokenised`,
+#          English_Original = `Original English gloss in source`,
+#          Doculect = `Doculect info`,
+#          Note_for_Year = `Note for each year`,
+#          Note_for_Cognate = `Note for Cognate ID`,
+#          PAN_Etymon = `PAN etymon`,
+#          PAN_English = `PAN English gloss`,
+#          PAN_Source = `PAN source`,
+#          PMP_Etymon = `PMP etymon`,
+#          PMP_English = `PMP English gloss`,
+#          PMP_Source = `PMP source`,
+#          Etymology_Source = `Etymological sources`,
+#          Concepticon_Gloss = `Concepticon gloss`,
+#          Semantic_Field = `Semantic field`,
+#          Number_of_Cognates = `Number of Cognates`) |> 
+#   mutate(ID = row_number()) |> 
+#   select(ID, everything()) |> 
+#   select(-ID_old)
 
 enolex8 |> 
-  write_rds("data/dummy_for_pak_cok_20240731.rds")
+  write_rds("data/dummy_for_pak_cok_20240903.rds")
 
 # enolex7 |>
 #   write_tsv("data/dummy_for_pak_cok_20240621.tsv")
-enolex8 |> select(Sources) |> distinct() |> write_tsv("sourcesmini.tsv")
+# enolex8 |> select(Sources) |> distinct() |> write_tsv("sourcesmini.tsv")
 enolex8 |>
-  write_tsv("data/dummy_for_pak_cok_20240731.tsv")
+  write_tsv("data/dummy_for_pak_cok_20240903.tsv")

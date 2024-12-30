@@ -6,7 +6,7 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	ã́			ã́	ã́	8
 	ã̄			ã ã	ãː	1
 	á͜			á:	á͜	3
-	ã͜			ã:	ã͜	15
+	ã͜			ã:	ã͜	16
 	ẽ́			ẽ́	ẽ́	2
 	ẽ̄			ẽ ẽ	ẽː	2
 	ẽ͜			ẽ:	ẽ͜	1
@@ -27,7 +27,7 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	\<			<	<	3
 	á			á	á	22
 	ā			a a	aː	20
-	ã			ã	ã	290
+	ã			ã	ã	291
 	a͜			a:	a͜	44
 	é			é	é	9
 	è			E	ɛ	1
@@ -39,55 +39,55 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	ə̃			u̇̃	ə̃	6
 	í			í	i	13
 	ī			i i	iː	7
-	ĩ			ĩ	ĩ	131
+	ĩ			ĩ	ĩ	132
 	i͜			i:	i͜	1
 	ɨ́			u̇́	ɨ́	1
 	ɨ̃			u̇̃	ɨ̃	2
 	ñ			ñ	ɲ	9
 	ó			ó	ó	6
-	ō			o o	oː	15
-	õ			õ	ɔ͂	125
-	o͜			o:	o͜	8
+	ō			o o	oː	17
+	õ			õ	ɔ͂	126
+	o͜			o:	o͜	9
 	ú			ú	ú	18
 	ū			u u	uː	4
 	ũ			ũ	ũ	122
 	о̄			o o	oː	2
 	'			'	ʔ	7
-	-			-	-	303
+	-			-	-	300
 	́			́	́	0
 	̀			̀	̀	0
 	̃			̃	̃	0
 	̄			̄		0
-	ˀ			'	ʔ	1
-	 			 	 	334
+	ˀ			'	ʔ	3
+	 			 	 	335
 	:			:	:	3
 	;			;	;	128
 	~			~	~	1
 	’			’	’	1
 	͜			:	͜	0
 	²			²	²	1
-	a			a	a	783
-	b			b	b	133
+	a			a	a	784
+	b			b	b	132
 	c			c	t͡ʃ	3
 	d			d	d	221
-	e			e	e	548
+	e			e	e	546
 	ə			u̇	ɨ	48
-	h			h	h	274
-	i			i	i	396
+	h			h	h	275
+	i			i	i	399
 	ɨ			u̇	ɨ	12
 	j			j	d͡ʒ	1
 	k			k	k	622
 	l			l	l	9
 	m			m	m	59
 	n			n	n	145
-	o			o	o	340
+	o			o	o	335
 	о			o	o	0
-	p			p	p	270
+	p			p	p	271
 	r			r	r	59
-	s			s	s	1
+	s			s	s	0
 	t			t	t	31
 	ʧ			c	t͡ʃ	3
 	u			u	u	289
 	x			x	ç	23
 	y			y	j	18
-	ʔ			'	ʔ	405
+	ʔ			'	ʔ	407

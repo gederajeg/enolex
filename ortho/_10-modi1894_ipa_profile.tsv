@@ -30,22 +30,22 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	C	[aàáoòóuúù]		k	k	1
 (ai)	h			x	ç	0
 (?<!a)i	h			x	ç	18
-	 			 	 	228
+	 			 	 	232
 	\(			(	(	2
 	\)			)	)	2
 	\.			.	.	3
-	;			;	;	36
+	;			;	;	38
 	\[			[	[	19
 	\]			]	]	19
 	²			²		7
 	a			a	a	741
 	á			a	a	50
 	à			a	a	10
-	b			b	b	126
+	b			b	b	125
 	c			c	t͡ʃ	9
 	C			k	k	0
 	d			d	d	77
-	e			e	e	304
+	e			e	e	303
 	é			e	e	20
 	è			E	ɛ	54
 	È			E	ɛ	1
@@ -62,7 +62,7 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	n			n	n	130
 	o			o	o	291
 	ó			o	o	14
-	ò			O	ɔ	70
+	ò			O	ɔ	69
 	p			p	p	207
 	r			r	r	100
 	ſ			f	f	0

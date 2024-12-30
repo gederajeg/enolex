@@ -20,12 +20,12 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 (ai)	h			x	5
 (?<!a)i	h			x	5
 	\-			'	167
-	 			 	66
+	 			 	68
 	\(			(	3
 	\)			)	3
-	\;			;	12
-	\[			[	10
-	\]			]	10
+	\;			;	13
+	\[			[	11
+	\]			]	11
 	a			a	356
 	à			a	1
 	b			b	59
