@@ -1,750 +1,722 @@
 entry_id	year	EngganoSource	id	year_id	words	commons	commons_tokenised	ipa	ipa_tokenised
-15	2011	Yoder 2011	1	2011	hiɨr	hiu̇r	h i u̇ r	hiɨr	h i ɨ r
-32	2011	Yoder 2011	2	2011	man	man	m a n	man	m a n
-51	2011	Yoder 2011	3	2011	ʔaru	'aru	' a r u	ʔaru	ʔ a r u
-60	2011	Yoder 2011	4	2011	ʔaru kak he kĩpãʔãũʔ	'aru kak hE kĩpã'ã:ũ'	' a r u # k a k # h E # k ĩ p ã ' ã:ũ '	ʔaru kak hɛ kĩpãʔãũʔ	ʔ a r u # k a k # h ɛ # k ĩ p ã ʔ ãũ ʔ
-74	2011	Yoder 2011	5	2011	ʔeap	'Eap	' E a p	ʔɛap	ʔ ɛ a p
-87	2011	Yoder 2011	6	2011	ʔea	'Ea	' E a	ʔɛa	ʔ ɛ a
-103	2011	Yoder 2011	7	2011	ʔakɘr	'akėr	' a k ė r	ʔakər	ʔ a k ə r
-122	2011	Yoder 2011	9	2011	ʔakiʔakin	'aki'akin	' a k i ' a k i n	ʔakiʔakin	ʔ a k i ʔ a k i n
-140	2011	Yoder 2011	10	2011	ʔarib	'arib	' a r i b	ʔarib	ʔ a r i b
-155	2011	Yoder 2011	11	2011	ʔarib he ʔaru	'arib hE 'aru	' a r i b # h E # ' a r u	ʔarib hɛ ʔaru	ʔ a r i b # h ɛ # ʔ a r u
-170	2011	Yoder 2011	12	2011	kĩpãʔĩõp	kĩpã'ĩõp	k ĩ p ã ' ĩ õ p	kĩpãʔĩɔ͂p	k ĩ p ã ʔ ĩ ɔ͂ p
-193	2011	Yoder 2011	14	2011	kahaiʔ ratuh	kaha:i' ratuh	k a h a:i ' # r a t u h	kahaiʔ ratuh	k a h ai ʔ # r a t u h
-219	2011	Yoder 2011	16	2011	ʔam	'am	' a m	ʔam	ʔ a m
-235	2011	Yoder 2011	17	2011	ʔaup	'a:up	' a:u p	ʔaup	ʔ au p
-254	2011	Yoder 2011	18	2011	kahaiʔ	kaha:i'	k a h a:i '	kahaiʔ	k a h ai ʔ
-272	2011	Yoder 2011	19	2011	bak	bak	b a k	bak	b a k
-295	2011	Yoder 2011	21	2011	ʔɘʔ	'ė'	' ė '	ʔəʔ	ʔ ə ʔ
-310	2011	Yoder 2011	22	2011	ki	ki	k i	ki	k i
-331	2011	Yoder 2011	25	2011	bɘ	bė	b ė	bə	b ə
-338	2011	Yoder 2011	26	2011	ki-nono	ki-nono	k i - n o n o	ki-nono	k i - n o n o
-355	2011	Yoder 2011	27	2011	pan	pan	p a n	pan	p a n
-385	2011	Yoder 2011	31	2011	ka-beʔ ; ʔa-beʔ	ka-bE' ; 'a-bE'	k a - b E ' # ; # ' a - b E '	ka-bɛʔ ; ʔa-bɛʔ	k a - b ɛ ʔ # ; # ʔ a - b ɛ ʔ
-400	2011	Yoder 2011	32	2011	ʔit	'it	' i t	ʔit	ʔ i t
-415	2011	Yoder 2011	33	2011	ba-ʔa ; ka-ʔa	ba-'a ; ka-'a	b a - ' a # ; # k a - ' a	ba-ʔa ; ka-ʔa	b a - ʔ a # ; # k a - ʔ a
-435	2011	Yoder 2011	36	2011	kahaiʔ kak	kaha:i' kak	k a h a:i ' # k a k	kahaiʔ kak	k a h ai ʔ # k a k
-442	2011	Yoder 2011	37	2011	(ka)pa	(ka)pa	( k a ) p a	(ka)pa	( k a ) p a
-462	2011	Yoder 2011	39	2011	kaʔ-tok	ka'-tok	k a ' - t o k	kaʔ-tok	k a ʔ - t o k
-479	2011	Yoder 2011	40	2011	karix	karix	k a r i x	kariç	k a r i ç
-501	2011	Yoder 2011	42	2011	keʔ	kE'	k E '	kɛʔ	k ɛ ʔ
-513	2011	Yoder 2011	45	2011	ki-hiam	ki-hiam	k i - h i a m	ki-hiam	k i - h i a m
-540	2011	Yoder 2011	47	2011	kita	kita	k i t a	kita	k i t a
-554	2011	Yoder 2011	48	2011	kaʔ-daix	ka'-da:ix	k a ' - d a:i x	kaʔ-daiç	k a ʔ - d ai ç
-563	2011	Yoder 2011	49	2011	dauoh	da:uoh	d a:u o h	dauoh	d au o h
-581	2011	Yoder 2011	50	2011	bɘ ; be	bė ; bE	b ė # ; # b E	bə ; bɛ	b ə # ; # b ɛ
-594	2011	Yoder 2011	51	2011	dohoa	dohoa	d o h o a	dohoa	d o h o a
-612	2011	Yoder 2011	53	2011	ka-mɘn	ka-mėn	k a - m ė n	ka-mən	k a - m ə n
-633	2011	Yoder 2011	57	2011	ka-nɨ	ka-nu̇	k a - n u̇	ka-nɨ	k a - n ɨ
-650	2011	Yoder 2011	58	2011	iɘb	iėb	i ė b	iəb	i ə b
-658	2011	Yoder 2011	59	2011	ʔõ	'õ	' õ	ʔɔ͂	ʔ ɔ͂
-669	2011	Yoder 2011	61	2011	ka-beh ; ʔa-beh	ka-bEh ; 'a-bEh	k a - b E h # ; # ' a - b E h	ka-bɛh ; ʔa-bɛh	k a - b ɛ h # ; # ʔ a - b ɛ h
-680	2011	Yoder 2011	62	2011	pa-riʔ	pa-ri'	p a - r i '	pa-riʔ	p a - r i ʔ
-690	2011	Yoder 2011	63	2011	pa-na	pa-na	p a - n a	pa-na	p a - n a
-699	2011	Yoder 2011	64	2011	ʔɘr ; kir-dɘr ; ba-bɘr ; kir-bɘr	'ėr ; kir-dėr ; ba-bėr ; kir-bėr	' ė r # ; # k i r - d ė r # ; # b a - b ė r # ; # k i r - b ė r	ʔər ; kir-dər ; ba-bər ; kir-bər	ʔ ə r # ; # k i r - d ə r # ; # b a - b ə r # ; # k i r - b ə r
-712	2011	Yoder 2011	66	2011	ba-ʔueh	ba-'uEh	b a - ' u E h	ba-ʔuɛh	b a - ʔ u ɛ h
-737	2011	Yoder 2011	70	2011	pururu	pururu	p u r u r u	pururu	p u r u r u
-757	2011	Yoder 2011	72	2011	kak	kak	k a k	kak	k a k
-790	2011	Yoder 2011	75	2011	ʔu	'u	' u	ʔu	ʔ u
-808	2011	Yoder 2011	76	2011	iub	iub	i u b	iub	i u b
-826	2011	Yoder 2011	77	2011	iur	iur	i u r	iur	i u r
-834	2011	Yoder 2011	78	2011	ʔi-tem	'i-tEm	' i - t E m	ʔi-tɛm	ʔ i - t ɛ m
-838	2011	Yoder 2011	81	2011	ken	kEn	k E n	kɛn	k ɛ n
-858	2011	Yoder 2011	88	2011	kããh	kããh	k ã ã h	kããh	k ã ã h
-884	2011	Yoder 2011	98	2011	kiar	kiar	k i a r	kiar	k i a r
-888	2011	Yoder 2011	101	2011	nahai	naha:i	n a h a:i	nahai	n a h ai
-896	2011	Yoder 2011	104	2011	ki-kãʔũ	ki-kã'ũ	k i - k ã ' ũ	ki-kãʔũ	k i - k ã ʔ ũ
-899	2011	Yoder 2011	106	2011	pahnamik	pahnamik	p a h n a m i k	pahnamik	p a h n a m i k
-903	2011	Yoder 2011	107	2011	ho	ho	h o	ho	h o
-912	2011	Yoder 2011	108	2011	ʔabɨx	'abu̇x	' a b u̇ x	ʔabɨç	ʔ a b ɨ ç
-944	2011	Yoder 2011	122	2011	kiʔaru	ki'aru	k i ' a r u	kiʔaru	k i ʔ a r u
-949	2011	Yoder 2011	123	2011	pahu	pahu	p a h u	pahu	p a h u
-993	2011	Yoder 2011	139	2011	ʔarop	'arop	' a r o p	ʔarop	ʔ a r o p
-1015	2011	Yoder 2011	146	2011	naʔau	na'a:u	n a ' a:u	naʔau	n a ʔ au
-1032	2011	Yoder 2011	150	2011	paix ; pɨ̃ʔ	pa:ix ; pu̇̃'	p a:i x # ; # p u̇ ̃ '	paiç ; pɨ̃ʔ	p ai ç # ; # p ɨ ̃ ʔ
-1089	2011	Yoder 2011	167	2011	kũk	kũk	k ũ k	kũk	k ũ k
-1096	2011	Yoder 2011	169	2011	paʔpɘhɘr	pa'pėhėr	p a ' p ė h ė r	paʔpəhər	p a ʔ p ə h ə r
-1102	2011	Yoder 2011	171	2011	nene	nEnE	n E n E	nɛnɛ	n ɛ n ɛ
-1117	2011	Yoder 2011	173	2011	ʔabeh	'abEh	' a b E h	ʔabɛh	ʔ a b ɛ h
-1129	2011	Yoder 2011	176	2011	ʔit	'it	' i t	ʔit	ʔ i t
-1132	2011	Yoder 2011	178	2011	kapareak	kaparEak	k a p a r E a k	kaparɛak	k a p a r ɛ a k
-1141	2011	Yoder 2011	181	2011	kuaʔ	kua'	k u a '	kuaʔ	k u a ʔ
-1160	2011	Yoder 2011	186	2011	ʔek	'Ek	' E k	ʔɛk	ʔ ɛ k
-1166	2011	Yoder 2011	189	2011	ʔɘmduparauʔ	'ėmdupara:u'	' ė m d u p a r a:u '	ʔəmduparauʔ	ʔ ə m d u p a r au ʔ
-1169	2011	Yoder 2011	191	2011	pah-bɘ	pah-bė	p a h - b ė	pah-bə	p a h - b ə
-1177	2011	Yoder 2011	193	2011	kiki	kiki	k i k i	kiki	k i k i
-1187	2011	Yoder 2011	196	2011	iok	iok	i o k	iok	i o k
-1215	2011	Yoder 2011	205	2011	ioʔhoe	io'hoE	i o ' h o E	ioʔhoɛ	i o ʔ h o ɛ
-1218	2011	Yoder 2011	206	2011	ʔamahai	'amaha:i	' a m a h a:i	ʔamahai	ʔ a m a h ai
-1223	2011	Yoder 2011	208	2011	bix	bix	b i x	biç	b i ç
-1233	2011	Yoder 2011	212	2011	hare	harE	h a r E	harɛ	h a r ɛ
-1237	2011	Yoder 2011	213	2011	kahenu	kahEnu	k a h E n u	kahɛnu	k a h ɛ n u
-1267	2011	Yoder 2011	224	2011	ʔi-top	'i-top	' i - t o p	ʔi-top	ʔ i - t o p
-1272	2011	Yoder 2011	225	2011	kudiʔ	kudi'	k u d i '	kudiʔ	k u d i ʔ
-1275	2011	Yoder 2011	226	2011	bakaʔaur	baka'a:ur	b a k a ' a:u r	bakaʔaur	b a k a ʔ au r
-1284	2011	Yoder 2011	230	2011	ʔanɨʔ	'anu̇'	' a n u̇ '	ʔanɨʔ	ʔ a n ɨ ʔ
-1300	2011	Yoder 2011	232	2011	ʔamuh	'amuh	' a m u h	ʔamuh	ʔ a m u h
-1305	2011	Yoder 2011	234	2011	naua	na:ua	n a:u a	naua	n au a
-1318	2011	Yoder 2011	235	2011	keʔep	kE'Ep	k E ' E p	kɛʔɛp	k ɛ ʔ ɛ p
-1332	2011	Yoder 2011	238	2011	(ki-)hau	(ki-)ha:u	( k i - ) h a:u	(ki-)hau	( k i - ) h au
-1334	2011	Yoder 2011	239	2011	ka-hiken	ka-hikEn	k a - h i k E n	ka-hikɛn	k a - h i k ɛ n
-1341	2011	Yoder 2011	240	2011	kaʔ-dɨhɨ̯ai	ka'-du̇hu̯̇a:i	k a ' - d u̇ h u̇ ̯ a:i	kaʔ-dɨhɨai	k a ʔ - d ɨ h ɨ ai
-1357	2011	Yoder 2011	242	2011	kaʔ-kɘ̃h	ka'-kė̃h	k a ' - k ė ̃ h	kaʔ-kə̃h	k a ʔ - k ə ̃ h
-1385	2011	Yoder 2011	249	2011	kiak	kiak	k i a k	kiak	k i a k
-1393	2011	Yoder 2011	250	2011	ʔa-po	'a-po	' a - p o	ʔa-po	ʔ a - p o
-1410	2011	Yoder 2011	256	2011	karah	karah	k a r a h	karah	k a r a h
-1420	2011	Yoder 2011	259	2011	ka-dit	ka-dit	k a - d i t	ka-dit	k a - d i t
-1424	2011	Yoder 2011	260	2011	ka-rep	ka-rEp	k a - r E p	ka-rɛp	k a - r ɛ p
-1426	2011	Yoder 2011	261	2011	iaʔkeʔei	ia'kE'e:i	i a ' k E ' e:i	iaʔkɛʔɛi	i a ʔ k ɛ ʔ ɛi
-1430	2011	Yoder 2011	262	2011	pur	pur	p u r	pur	p u r
-1432	2011	Yoder 2011	263	2011	ka-rep	ka-rEp	k a - r E p	ka-rɛp	k a - r ɛ p
-1445	2011	Yoder 2011	265	2011	(ʔe)ʔea	('E)'Ea	( ' E ) ' E a	(ʔɛ)ʔɛa	( ʔ ɛ ) ʔ ɛ a
-1451	2011	Yoder 2011	268	2011	ʔohmeʔ	'ohmE'	' o h m E '	ʔohmɛʔ	ʔ o h m ɛ ʔ
-1486	2011	Yoder 2011	282	2011	nanaiaʔ	nana:ia'	n a n a:i a '	nanaiaʔ	n a n ai a ʔ
-1497	2011	Yoder 2011	284	2011	ka-kɘi ; ka-kɘ	ka-kė:i ; ka-kė	k a - k ė:i # ; # k a - k ė	ka-kəi ; ka-kə	k a - k əi # ; # k a - k ə
-1506	2011	Yoder 2011	287	2011	pa-kanaʔ	pa-kana'	p a - k a n a '	pa-kanaʔ	p a - k a n a ʔ
-1513	2011	Yoder 2011	289	2011	kah-ʔapɨaʔ ; ka-puʔ	kah-'apu̇a' ; ka-pu'	k a h - ' a p u̇ a ' # ; # k a - p u '	kah-ʔapɨaʔ ; ka-puʔ	k a h - ʔ a p ɨ a ʔ # ; # k a - p u ʔ
-1528	2011	Yoder 2011	292	2011	kok	kok	k o k	kok	k o k
-1548	2011	Yoder 2011	298	2011	hãpɘ̃ʔ ; kah-pɘʔ	hãpė̃' ; kah-pė'	h ã p ė ̃ ' # ; # k a h - p ė '	hãpə̃ʔ ; kah-pəʔ	h ã p ə ̃ ʔ # ; # k a h - p ə ʔ
-1556	2011	Yoder 2011	300	2011	kome	komE	k o m E	komɛ	k o m ɛ
-1563	2011	Yoder 2011	301	2011	ka-nik	ka-nik	k a - n i k	ka-nik	k a - n i k
-1571	2011	Yoder 2011	302	2011	naʔ	na'	n a '	naʔ	n a ʔ
-1582	2011	Yoder 2011	307	2011	iɨhɨan	iu̇hu̇an	i u̇ h u̇ a n	iɨhɨan	i ɨ h ɨ a n
-1595	2011	Yoder 2011	313	2011	ʔũ	'ũ	' ũ	ʔũ	ʔ ũ
-1605	2011	Yoder 2011	317	2011	duduk	duduk	d u d u k	duduk	d u d u k
-1666	2011	Yoder 2011	338	2011	pɨhɨaʔ	pu̇hu̇a'	p u̇ h u̇ a '	pɨhɨaʔ	p ɨ h ɨ a ʔ
-1674	2011	Yoder 2011	342	2011	ianome	ianomE	i a n o m E	ianomɛ	i a n o m ɛ
-1679	2011	Yoder 2011	345	2011	ki-dadaʔɨɘh	ki-dada'u̇ėh	k i - d a d a ' u̇ ė h	ki-dadaʔɨəh	k i - d a d a ʔ ɨ ə h
-1701	2011	Yoder 2011	353	2011	ba	ba	b a	ba	b a
-1708	2011	Yoder 2011	354	2011	ki-koh ; kɘ	ki-koh ; kė	k i - k o h # ; # k ė	ki-koh ; kə	k i - k o h # ; # k ə
-1711	2011	Yoder 2011	355	2011	ʔa-ioiaʔ	'a-io:ia'	' a - i o:i a '	ʔa-iɔiaʔ	ʔ a - i ɔi a ʔ
-1723	2011	Yoder 2011	359	2011	mea	mEa	m E a	mɛa	m ɛ a
-1738	2011	Yoder 2011	367	2011	kitaha	kitaha	k i t a h a	kitaha	k i t a h a
-1744	2011	Yoder 2011	370	2011	kakeʔep	kakE'Ep	k a k E ' E p	kakɛʔɛp	k a k ɛ ʔ ɛ p
-1758	2011	Yoder 2011	374	2011	ka-karai	ka-kara:i	k a - k a r a:i	ka-karai	k a - k a r ai
-1769	2011	Yoder 2011	376	2011	pap	pap	p a p	pap	p a p
-1773	2011	Yoder 2011	377	2011	mama	mama	m a m a	mama	m a m a
-1775	2011	Yoder 2011	378	2011	ki-mama	ki-mama	k i - m a m a	ki-mama	k i - m a m a
-1797	2011	Yoder 2011	382	2011	dadɘ	dadė	d a d ė	dadə	d a d ə
-1805	2011	Yoder 2011	383	2011	kĩʔ	kĩ'	k ĩ '	kĩʔ	k ĩ ʔ
-1818	2011	Yoder 2011	388	2011	ʔa-kenah	'a-kEnah	' a - k E n a h	ʔa-kɛnah	ʔ a - k ɛ n a h
-1819	2011	Yoder 2011	389	2011	kiʔ-kẽʔ	ki'-kẽ'	k i ' - k ẽ '	kiʔ-kɛ̃ʔ	k i ʔ - k ɛ̃ ʔ
-1821	2011	Yoder 2011	390	2011	nukoʔ	nuko'	n u k o '	nukoʔ	n u k o ʔ
-1823	2011	Yoder 2011	391	2011	porpiʔ	porpi'	p o r p i '	porpiʔ	p o r p i ʔ
-1833	2011	Yoder 2011	394	2011	kãp	kãp	k ã p	kãp	k ã p
-1864	2011	Yoder 2011	405	2011	ʔer	'Er	' E r	ʔɛr	ʔ ɛ r
-1867	2011	Yoder 2011	407	2011	buber	bubEr	b u b E r	bubɛr	b u b ɛ r
-1868	2011	Yoder 2011	408	2011	der	dEr	d E r	dɛr	d ɛ r
-1875	2011	Yoder 2011	411	2011	bak kahaʔ	bak kaha'	b a k # k a h a '	bak kahaʔ	b a k # k a h a ʔ
-1878	2011	Yoder 2011	412	2011	ka	ka	k a	ka	k a
-1880	2011	Yoder 2011	413	2011	ka-bak	ka-bak	k a - b a k	ka-bak	k a - b a k
-1883	2011	Yoder 2011	414	2011	ʔeaka	'Eaka	' E a k a	ʔɛaka	ʔ ɛ a k a
-1907	2011	Yoder 2011	423	2011	ki-mɘmɘi	ki-mėmė:i	k i - m ė m ė:i	ki-məməi	k i - m ə m əi
-1909	2011	Yoder 2011	424	2011	teke	tEkE	t E k E	tɛkɛ	t ɛ k ɛ
-1916	2011	Yoder 2011	427	2011	hẽõk	hẽõk	h ẽ õ k	hɛ̃ɔ͂k	h ɛ̃ ɔ͂ k
-1931	2011	Yoder 2011	428	2011	po	po	p o	po	p o
-1960	2011	Yoder 2011	440	2011	ĩɘ̃h	ĩė̃h	ĩ ė ̃ h	ĩə̃h	ĩ ə ̃ h
-1964	2011	Yoder 2011	441	2011	ka-pɨ	ka-pu̇	k a - p u̇	ka-pɨ	k a - p ɨ
-1979	2011	Yoder 2011	451	2011	ba	ba	b a	ba	b a
-1987	2011	Yoder 2011	452	2011	ka	ka	k a	ka	k a
-1990	2011	Yoder 2011	453	2011	ki-baba	ki-baba	k i - b a b a	ki-baba	k i - b a b a
-1991	2011	Yoder 2011	454	2011	ʔa-ba	'a-ba	' a - b a	ʔa-ba	ʔ a - b a
-2004	2011	Yoder 2011	460	2011	ii	ii	i i	ii	i i
-2024	2011	Yoder 2011	465	2011	ka-bɨx	ka-bu̇x	k a - b u̇ x	ka-bɨç	k a - b ɨ ç
-2057	2011	Yoder 2011	481	2011	kabakeʔ	kabakE'	k a b a k E '	kabakɛʔ	k a b a k ɛ ʔ
-2063	2011	Yoder 2011	483	2011	kakabak	kakabak	k a k a b a k	kakabak	k a k a b a k
-2072	2011	Yoder 2011	484	2011	kun	kun	k u n	kun	k u n
-2085	2011	Yoder 2011	487	2011	kẽʔẽh	kẽ'ẽh	k ẽ ' ẽ h	kɛ̃ʔɛ̃h	k ɛ̃ ʔ ɛ̃ h
-2091	2011	Yoder 2011	488	2011	kũ ; kũãhãʔ	kũ ; kũãhã'	k ũ # ; # k ũ ã h ã '	kũ ; kũãhãʔ	k ũ # ; # k ũ ã h ã ʔ
-2098	2011	Yoder 2011	489	2011	kemahaʔ	kEmaha'	k E m a h a '	kɛmahaʔ	k ɛ m a h a ʔ
-2105	2011	Yoder 2011	493	2011	kapi	kapi	k a p i	kapi	k a p i
-2111	2011	Yoder 2011	494	2011	kiɘhɘr	kiėhėr	k i ė h ė r	kiəhər	k i ə h ə r
-2113	2011	Yoder 2011	495	2011	pẽʔẽ	pẽ'ẽ	p ẽ ' ẽ	pɛ̃ʔɛ̃	p ɛ̃ ʔ ɛ̃
-2115	2011	Yoder 2011	496	2011	kahʔuis	kah'uis	k a h ' u i s	kahʔuis	k a h ʔ u i s
-2117	2011	Yoder 2011	497	2011	ʔekoʔanu	'Eko'anu	' E k o ' a n u	ʔɛkoʔanu	ʔ ɛ k o ʔ a n u
-2124	2011	Yoder 2011	500	2011	ʔar	'ar	' a r	ʔar	ʔ a r
-2129	2011	Yoder 2011	501	2011	karnomeaʔ	karnomEa'	k a r n o m E a '	karnomɛaʔ	k a r n o m ɛ a ʔ
-2171	2011	Yoder 2011	515	2011	(ki-)paido	(ki-)pa:ido	( k i - ) p a:i d o	(ki-)paido	( k i - ) p ai d o
-2173	2011	Yoder 2011	516	2011	ʔũẽ	'ũẽ	' ũ ẽ	ʔũɛ̃	ʔ ũ ɛ̃
-2181	2011	Yoder 2011	520	2011	karaix	kara:ix	k a r a:i x	karaiç	k a r ai ç
-2188	2011	Yoder 2011	523	2011	dɘr	dėr	d ė r	dər	d ə r
-2200	2011	Yoder 2011	526	2011	hɨk	hu̇k	h u̇ k	hɨk	h ɨ k
-2203	2011	Yoder 2011	528	2011	ka-diɨʔ ; ʔa-diɨʔ	ka-diu̇' ; 'a-diu̇'	k a - d i u̇ ' # ; # ' a - d i u̇ '	ka-diɨʔ ; ʔa-diɨʔ	k a - d i ɨ ʔ # ; # ʔ a - d i ɨ ʔ
-2210	2011	Yoder 2011	533	2011	kaʔ-noke	ka'-nokE	k a ' - n o k E	kaʔ-nokɛ	k a ʔ - n o k ɛ
-2221	2011	Yoder 2011	535	2011	ka-pɘ̃pɘ	ka-pė̃pė	k a - p ė ̃ p ė	ka-pə̃pə	k a - p ə ̃ p ə
-2224	2011	Yoder 2011	537	2011	pa-hobeʔ	pa-hobE'	p a - h o b E '	pa-hobɛʔ	p a - h o b ɛ ʔ
-2244	2011	Yoder 2011	545	2011	hapɨʔ	hapu̇'	h a p u̇ '	hapɨʔ	h a p ɨ ʔ
-2250	2011	Yoder 2011	546	2011	daʔikah	da'ikah	d a ' i k a h	daʔikah	d a ʔ i k a h
-2255	2011	Yoder 2011	549	2011	ka-kãʔõ	ka-kã'õ	k a - k ã ' õ	ka-kãʔɔ͂	k a - k ã ʔ ɔ͂
-2266	2011	Yoder 2011	551	2011	ki-pehiɘr	ki-pEhiėr	k i - p E h i ė r	ki-pɛhiər	k i - p ɛ h i ə r
-2268	2011	Yoder 2011	552	2011	iabaʔa	iaba'a	i a b a ' a	iabaʔa	i a b a ʔ a
-2282	2011	Yoder 2011	557	2011	kaʔ-nuʔ	ka'-nu'	k a ' - n u '	kaʔ-nuʔ	k a ʔ - n u ʔ
-2292	2011	Yoder 2011	561	2011	rusa	rusa	r u s a	rusa	r u s a
-2300	2011	Yoder 2011	566	2011	kɨdaʔ	ku̇da'	k u̇ d a '	kɨdaʔ	k ɨ d a ʔ
-2310	2011	Yoder 2011	572	2011	ki-pokah	ki-pokah	k i - p o k a h	ki-pokah	k i - p o k a h
-2317	2011	Yoder 2011	577	2011	ʔa-ʔia	'a-'ia	' a - ' i a	ʔa-ʔia	ʔ a - ʔ i a
-2328	2011	Yoder 2011	583	2011	bibi	bibi	b i b i	bibi	b i b i
-2346	2011	Yoder 2011	592	2011	ʔeno	'Eno	' E n o	ʔɛno	ʔ ɛ n o
-2353	2011	Yoder 2011	595	2011	pɘk	pėk	p ė k	pək	p ə k
-2355	2011	Yoder 2011	596	2011	nomeʔ	nomE'	n o m E '	nomɛʔ	n o m ɛ ʔ
-2360	2011	Yoder 2011	598	2011	ki-didik	ki-didik	k i - d i d i k	ki-didik	k i - d i d i k
-2368	2011	Yoder 2011	601	2011	kaʔ-kaluʔ	ka'-kalu'	k a ' - k a l u '	kaʔ-kaluʔ	k a ʔ - k a l u ʔ
-2378	2011	Yoder 2011	605	2011	kahten	kahtEn	k a h t E n	kahtɛn	k a h t ɛ n
-2385	2011	Yoder 2011	608	2011	ki-nok	ki-nok	k i - n o k	ki-nok	k i - n o k
-2399	2011	Yoder 2011	614	2011	ʔɘm	'ėm	' ė m	ʔəm	ʔ ə m
-2415	2011	Yoder 2011	615	2011	be	bE	b E	bɛ	b ɛ
-2426	2011	Yoder 2011	618	2011	ʔumaha	'umaha	' u m a h a	ʔumaha	ʔ u m a h a
-2427	2011	Yoder 2011	619	2011	maha	maha	m a h a	maha	m a h a
-2431	2011	Yoder 2011	620	2011	iar	iar	i a r	iar	i a r
-2442	2011	Yoder 2011	624	2011	kaʔ-niʔi	ka'-ni'i	k a ' - n i ' i	kaʔ-niʔi	k a ʔ - n i ʔ i
-2448	2011	Yoder 2011	628	2011	ʔɘ	'ė	' ė	ʔə	ʔ ə
-2455	2011	Yoder 2011	630	2011	kaʔ-nihia	ka'-nihia	k a ' - n i h i a	kaʔ-nihia	k a ʔ - n i h i a
-2460	2011	Yoder 2011	633	2011	ka-hik	ka-hik	k a - h i k	ka-hik	k a - h i k
-2462	2011	Yoder 2011	634	2011	kaʔ-bari	ka'-bari	k a ' - b a r i	kaʔ-bari	k a ʔ - b a r i
-2474	2011	Yoder 2011	637	2011	kaʔ-kĩh	ka'-kĩh	k a ' - k ĩ h	kaʔ-kĩh	k a ʔ - k ĩ h
-2478	2011	Yoder 2011	639	2011	ʔãʔkũhũãʔ	'ã'kũhũã'	' ã ' k ũ h ũ ã '	ʔãʔkũhũãʔ	ʔ ã ʔ k ũ h ũ ã ʔ
-2479	2011	Yoder 2011	640	2011	ka-hõk	ka-hõk	k a - h õ k	ka-hɔ͂k	k a - h ɔ͂ k
-2485	2011	Yoder 2011	642	2011	ka-hũ	ka-hũ	k a - h ũ	ka-hũ	k a - h ũ
-2489	2011	Yoder 2011	645	2011	hiur	hiur	h i u r	hiur	h i u r
-2519	2011	Yoder 2011	654	2011	dop	dop	d o p	dop	d o p
-2528	2011	Yoder 2011	656	2011	dix	dix	d i x	diç	d i ç
-2533	2011	Yoder 2011	657	2011	hiɘr	hiėr	h i ė r	hiər	h i ə r
-2557	2011	Yoder 2011	662	2011	no ; ka-no	no ; ka-no	n o # ; # k a - n o	no ; ka-no	n o # ; # k a - n o
-2566	2011	Yoder 2011	668	2011	taru	taru	t a r u	taru	t a r u
-2597	2011	Yoder 2011	678	2011	dɨa	du̇a	d u̇ a	dɨa	d ɨ a
-2598	2011	Yoder 2011	679	2011	ki-dɨa	ki-du̇a	k i - d u̇ a	ki-dɨa	k i - d ɨ a
-2624	2011	Yoder 2011	691	2011	kũʔ	kũ'	k ũ '	kũʔ	k ũ ʔ
-2666	2011	Yoder 2011	711	2011	paʔpɘhɘr	pa'pėhėr	p a ' p ė h ė r	paʔpəhər	p a ʔ p ə h ə r
-2668	2011	Yoder 2011	712	2011	ka-bobohok	ka-bobohok	k a - b o b o h o k	ka-bobohok	k a - b o b o h o k
-2690	2011	Yoder 2011	721	2011	kaʔken	ka'kEn	k a ' k E n	kaʔkɛn	k a ʔ k ɛ n
-2696	2011	Yoder 2011	725	2011	iakoʔoi	iako'o:i	i a k o ' o:i	iakoʔɔi	i a k o ʔ ɔi
-2697	2011	Yoder 2011	726	2011	pɨah	pu̇ah	p u̇ a h	pɨah	p ɨ a h
-2699	2011	Yoder 2011	727	2011	ki-ʔiop	ki-'iop	k i - ' i o p	ki-ʔiop	k i - ʔ i o p
-2701	2011	Yoder 2011	728	2011	kurdi	kurdi	k u r d i	kurdi	k u r d i
-2707	2011	Yoder 2011	730	2011	dap	dap	d a p	dap	d a p
-2728	2011	Yoder 2011	736	2011	mimi	mimi	m i m i	mimi	m i m i
-2739	2011	Yoder 2011	740	2011	kũk	kũk	k ũ k	kũk	k ũ k
-2744	2011	Yoder 2011	742	2011	ʔɨaʔ	'u̇a'	' u̇ a '	ʔɨaʔ	ʔ ɨ a ʔ
-2754	2011	Yoder 2011	744	2011	ka-ʔãũ	ka-'ã:ũ	k a - ' ã:ũ	ka-ʔãũ	k a - ʔ ãũ
-2762	2011	Yoder 2011	746	2011	paʔ	pa'	p a '	paʔ	p a ʔ
-2766	2011	Yoder 2011	747	2011	kããh	kããh	k ã ã h	kããh	k ã ã h
-2779	2011	Yoder 2011	749	2011	ka	ka	k a	ka	k a
-2784	2011	Yoder 2011	752	2011	ʔainɘn	'a:inėn	' a:i n ė n	ʔainən	ʔ ai n ə n
-2787	2011	Yoder 2011	753	2011	painɘn	pa:inėn	p a:i n ė n	painən	p ai n ə n
-2799	2011	Yoder 2011	756	2011	kupar	kupar	k u p a r	kupar	k u p a r
-2801	2011	Yoder 2011	757	2011	ĩũʔpɨ̃ãʔ	ĩũ'pu̇̃ã'	ĩ ũ ' p u̇ ̃ ã '	ĩũʔpɨ̃ãʔ	ĩ ũ ʔ p ɨ ̃ ã ʔ
-2803	2011	Yoder 2011	758	2011	iarkɨaʔaɨ	iarku̇a'a:u̇	i a r k u̇ a ' a:u̇	iarkɨaʔaɨ	i a r k ɨ a ʔ aɨ
-2810	2011	Yoder 2011	761	2011	ʔarɘh	'arėh	' a r ė h	ʔarəh	ʔ a r ə h
-2820	2011	Yoder 2011	764	2011	baʔki	ba'ki	b a ' k i	baʔki	b a ʔ k i
-2845	2011	Yoder 2011	772	2011	pa-pur	pa-pur	p a - p u r	pa-pur	p a - p u r
-2870	2011	Yoder 2011	784	2011	ʔinu	'inu	' i n u	ʔinu	ʔ i n u
-2879	2011	Yoder 2011	786	2011	kunuʔun	kunu'un	k u n u ' u n	kunuʔun	k u n u ʔ u n
-2915	2011	Yoder 2011	800	2011	ʔeai	'Ea:i	' E a:i	ʔɛai	ʔ ɛ ai
-2920	2011	Yoder 2011	804	2011	ka-ham	ka-ham	k a - h a m	ka-ham	k a - h a m
-2922	2011	Yoder 2011	805	2011	maham	maham	m a h a m	maham	m a h a m
-2928	2011	Yoder 2011	810	2011	ʔeam	'Eam	' E a m	ʔɛam	ʔ ɛ a m
-2945	2011	Yoder 2011	819	2011	barera	barEra	b a r E r a	barɛra	b a r ɛ r a
-2956	2011	Yoder 2011	823	2011	ki-nanap	ki-nanap	k i - n a n a p	ki-nanap	k i - n a n a p
-2975	2011	Yoder 2011	828	2011	her	hEr	h E r	hɛr	h ɛ r
-2977	2011	Yoder 2011	829	2011	kah-nene	kah-nEnE	k a h - n E n E	kah-nɛnɛ	k a h - n ɛ n ɛ
-2979	2011	Yoder 2011	830	2011	ko(ʔne)ne	ko('nE)nE	k o ( ' n E ) n E	ko(ʔnɛ)nɛ	k o ( ʔ n ɛ ) n ɛ
-2992	2011	Yoder 2011	836	2011	tãpũ	tãpũ	t ã p ũ	tãpũ	t ã p ũ
-2995	2011	Yoder 2011	837	2011	dɘr	dėr	d ė r	dər	d ə r
-3004	2011	Yoder 2011	839	2011	muo	muo	m u o	muo	m u o
-3007	2011	Yoder 2011	841	2011	ne	nE	n E	nɛ	n ɛ
-3014	2011	Yoder 2011	844	2011	ium	ium	i u m	ium	i u m
-3019	2011	Yoder 2011	845	2011	ka-ham	ka-ham	k a - h a m	ka-ham	k a - h a m
-3034	2011	Yoder 2011	849	2011	kũkũ	kũkũ	k ũ k ũ	kũkũ	k ũ k ũ
-3041	2011	Yoder 2011	851	2011	meh	mEh	m E h	mɛh	m ɛ h
-3045	2011	Yoder 2011	854	2011	noh	noh	n o h	noh	n o h
-3082	2011	Yoder 2011	867	2011	haʔku	ha'ku	h a ' k u	haʔku	h a ʔ k u
-3093	2011	Yoder 2011	872	2011	ka-ʔam	ka-'am	k a - ' a m	ka-ʔam	k a - ʔ a m
-3122	2011	Yoder 2011	882	2011	kaʔ-man	ka'-man	k a ' - m a n	kaʔ-man	k a ʔ - m a n
-3134	2011	Yoder 2011	884	2011	ʔanɘʔ	'anė'	' a n ė '	ʔanəʔ	ʔ a n ə ʔ
-3138	2011	Yoder 2011	885	2011	kaʔnɘm	ka'nėm	k a ' n ė m	kaʔnəm	k a ʔ n ə m
-3145	2011	Yoder 2011	887	2011	pẽʔ	pẽ'	p ẽ '	pɛ̃ʔ	p ɛ̃ ʔ
-3158	2011	Yoder 2011	893	2011	kaʔ-pix	ka'-pix	k a ' - p i x	kaʔ-piç	k a ʔ - p i ç
-3168	2011	Yoder 2011	894	2011	hĩũ	hĩũ	h ĩ ũ	hĩũ	h ĩ ũ
-3171	2011	Yoder 2011	896	2011	ioʔoʔ	io'o'	i o ' o '	ioʔoʔ	i o ʔ o ʔ
-3172	2011	Yoder 2011	897	2011	ioʔoʔ	io'o'	i o ' o '	ioʔoʔ	i o ʔ o ʔ
-3182	2011	Yoder 2011	899	2011	ki-pam	ki-pam	k i - p a m	ki-pam	k i - p a m
-3188	2011	Yoder 2011	900	2011	ka-rer	ka-rEr	k a - r E r	ka-rɛr	k a - r ɛ r
-3195	2011	Yoder 2011	903	2011	ka-rer	ka-rEr	k a - r E r	ka-rɛr	k a - r ɛ r
-3200	2011	Yoder 2011	906	2011	ʔau	'a:u	' a:u	ʔau	ʔ au
-3211	2011	Yoder 2011	909	2011	pi	pi	p i	pi	p i
-3218	2011	Yoder 2011	912	2011	parur	parur	p a r u r	parur	p a r u r
-3227	2011	Yoder 2011	915	2011	ʔe	'E	' E	ʔɛ	ʔ ɛ
-3233	2011	Yoder 2011	917	2011	pu	pu	p u	pu	p u
-3253	2011	Yoder 2011	925	2011	koʔoeʔ	ko'oE'	k o ' o E '	koʔoɛʔ	k o ʔ o ɛ ʔ
-3261	2011	Yoder 2011	930	2011	iaheʔ	iahE'	i a h E '	iahɛʔ	i a h ɛ ʔ
-3274	2011	Yoder 2011	933	2011	pe	pE	p E	pɛ	p ɛ
-3282	2011	Yoder 2011	934	2011	pa-pe	pa-pE	p a - p E	pa-pɛ	p a - p ɛ
-3284	2011	Yoder 2011	935	2011	ki-pe	ki-pE	k i - p E	ki-pɛ	k i - p ɛ
-3285	2011	Yoder 2011	936	2011	ki-pa-pe	ki-pa-pE	k i - p a - p E	ki-pa-pɛ	k i - p a - p ɛ
-3289	2011	Yoder 2011	937	2011	ki-mɘ ; mɘ	ki-mė ; mė	k i - m ė # ; # m ė	ki-mə ; mə	k i - m ə # ; # m ə
-3302	2011	Yoder 2011	942	2011	kõʔĩã	kõ'ĩã	k õ ' ĩ ã	kɔ͂ʔĩã	k ɔ͂ ʔ ĩ ã
-3309	2011	Yoder 2011	943	2011	ʔa-uah	'a-uah	' a - u a h	ʔa-uah	ʔ a - u a h
-3313	2011	Yoder 2011	944	2011	puak	puak	p u a k	puak	p u a k
-3316	2011	Yoder 2011	945	2011	kah	kah	k a h	kah	k a h
-3324	2011	Yoder 2011	950	2011	ka-ruaʔ	ka-rua'	k a - r u a '	ka-ruaʔ	k a - r u a ʔ
-3335	2011	Yoder 2011	955	2011	baʔ-he	ba'-hE	b a ' - h E	baʔ-hɛ	b a ʔ - h ɛ
-3336	2011	Yoder 2011	956	2011	kaʔ-he	ka'-hE	k a ' - h E	kaʔ-hɛ	k a ʔ - h ɛ
-3341	2011	Yoder 2011	960	2011	ʔẽ	'ẽ	' ẽ	ʔɛ̃	ʔ ɛ̃
-3343	2011	Yoder 2011	961	2011	ʔoneaʔ	'onEa'	' o n E a '	ʔonɛaʔ	ʔ o n ɛ a ʔ
-3348	2011	Yoder 2011	964	2011	ʔamak	'amak	' a m a k	ʔamak	ʔ a m a k
-3350	2011	Yoder 2011	965	2011	maix	ma:ix	m a:i x	maiç	m ai ç
-3364	2011	Yoder 2011	966	2011	ka-ʔu	ka-'u	k a - ' u	ka-ʔu	k a - ʔ u
-3369	2011	Yoder 2011	968	2011	kaiteʔ	ka:itE'	k a:i t E '	kaitɛʔ	k ai t ɛ ʔ
-3380	2011	Yoder 2011	969	2011	dɘb	dėb	d ė b	dəb	d ə b
-3397	2011	Yoder 2011	974	2011	ʔũp	'ũp	' ũ p	ʔũp	ʔ ũ p
-3414	2011	Yoder 2011	977	2011	dɘr	dėr	d ė r	dər	d ə r
-3420	2011	Yoder 2011	978	2011	ʔadɘhɘr	'adėhėr	' a d ė h ė r	ʔadəhər	ʔ a d ə h ə r
-3428	2011	Yoder 2011	981	2011	kĩʔĩãp	kĩ'ĩãp	k ĩ ' ĩ ã p	kĩʔĩãp	k ĩ ʔ ĩ ã p
-3432	2011	Yoder 2011	982	2011	kõp	kõp	k õ p	kɔ͂p	k ɔ͂ p
-3437	2011	Yoder 2011	985	2011	ʔa-piah	'a-piah	' a - p i a h	ʔa-piah	ʔ a - p i a h
-3441	2011	Yoder 2011	988	2011	kũʔĩ	kũ'ĩ	k ũ ' ĩ	kũʔĩ	k ũ ʔ ĩ
-3443	2011	Yoder 2011	989	2011	karnomeh	karnomEh	k a r n o m E h	karnomɛh	k a r n o m ɛ h
-3454	2011	Yoder 2011	993	2011	kõʔõĩʔ	kõ'õ:ĩ'	k õ ' õ:ĩ '	kɔ͂ʔɔ̃ĩʔ	k ɔ͂ ʔ ɔ̃ĩ ʔ
-3464	2011	Yoder 2011	999	2011	purik	purik	p u r i k	purik	p u r i k
-3473	2011	Yoder 2011	1004	2011	ʔanɘk	'anėk	' a n ė k	ʔanək	ʔ a n ə k
-3481	2011	Yoder 2011	1006	2011	hɨk	hu̇k	h u̇ k	hɨk	h ɨ k
-3490	2011	Yoder 2011	1011	2011	kemaha	kEmaha	k E m a h a	kɛmaha	k ɛ m a h a
-3492	2011	Yoder 2011	1012	2011	kaʔ-hori	ka'-hori	k a ' - h o r i	kaʔ-hori	k a ʔ - h o r i
-3494	2011	Yoder 2011	1013	2011	karpe	karpE	k a r p E	karpɛ	k a r p ɛ
-3496	2011	Yoder 2011	1014	2011	ĩũʔ	ĩũ'	ĩ ũ '	ĩũʔ	ĩ ũ ʔ
-3511	2011	Yoder 2011	1017	2011	ka-ʔok	ka-'ok	k a - ' o k	ka-ʔok	k a - ʔ o k
-3515	2011	Yoder 2011	1019	2011	ʔeok	'Eok	' E o k	ʔɛok	ʔ ɛ o k
-3521	2011	Yoder 2011	1024	2011	tokoʔ	toko'	t o k o '	tokoʔ	t o k o ʔ
-3523	2011	Yoder 2011	1025	2011	ka-bɨaʔ	ka-bu̇a'	k a - b u̇ a '	ka-bɨaʔ	k a - b ɨ a ʔ
-3534	2011	Yoder 2011	1030	2011	ki-pahnauaʔ	ki-pahna:ua'	k i - p a h n a:u a '	ki-pahnauaʔ	k i - p a h n au a ʔ
-3535	2011	Yoder 2011	1031	2011	ki-bibi	ki-bibi	k i - b i b i	ki-bibi	k i - b i b i
-3536	2011	Yoder 2011	1032	2011	ki-nonon	ki-nonon	k i - n o n o n	ki-nonon	k i - n o n o n
-3539	2011	Yoder 2011	1034	2011	ʔapɘh	'apėh	' a p ė h	ʔapəh	ʔ a p ə h
-3553	2011	Yoder 2011	1035	2011	ki	ki	k i	ki	k i
-3559	2011	Yoder 2011	1039	2011	kõʔ	kõ'	k õ '	kɔ͂ʔ	k ɔ͂ ʔ
-3571	2011	Yoder 2011	1046	2011	ka-ʔuar	ka-'uar	k a - ' u a r	ka-ʔuar	k a - ʔ u a r
-3579	2011	Yoder 2011	1047	2011	dɘhɘ ; pa-dɘhɘ	dėhė ; pa-dėhė	d ė h ė # ; # p a - d ė h ė	dəhə ; pa-dəhə	d ə h ə # ; # p a - d ə h ə
-3587	2011	Yoder 2011	1048	2011	bah ; bahauʔ	bah ; baha:u'	b a h # ; # b a h a:u '	bah ; bahauʔ	b a h # ; # b a h au ʔ
-3589	2011	Yoder 2011	1049	2011	kahaʔ	kaha'	k a h a '	kahaʔ	k a h a ʔ
-3600	2011	Yoder 2011	1054	2011	ʔanoʔon	'ano'on	' a n o ' o n	ʔanoʔon	ʔ a n o ʔ o n
-3624	2011	Yoder 2011	1061	2011	teʔ	tE'	t E '	tɛʔ	t ɛ ʔ
-3627	2011	Yoder 2011	1063	2011	ʔi-ʔĩẽʔ	'i-'ĩẽ'	' i - ' ĩ ẽ '	ʔi-ʔĩɛ̃ʔ	ʔ i - ʔ ĩ ɛ̃ ʔ
-3632	2011	Yoder 2011	1067	2011	ʔɘi	'ė:i	' ė:i	ʔəi	ʔ əi
-3636	2011	Yoder 2011	1070	2011	keʔem	kE'Em	k E ' E m	kɛʔɛm	k ɛ ʔ ɛ m
-3641	2011	Yoder 2011	1071	2011	paki	paki	p a k i	paki	p a k i
-3644	2011	Yoder 2011	1072	2011	pa-keʔem	pa-kE'Em	p a - k E ' E m	pa-kɛʔɛm	p a - k ɛ ʔ ɛ m
-3651	2011	Yoder 2011	1074	2011	kin	kin	k i n	kin	k i n
-3663	2011	Yoder 2011	1078	2011	kikɨhɨr	kiku̇hu̇r	k i k u̇ h u̇ r	kikɨhɨr	k i k ɨ h ɨ r
-3665	2011	Yoder 2011	1079	2011	kaʔruru	ka'ruru	k a ' r u r u	kaʔruru	k a ʔ r u r u
-3682	2011	Yoder 2011	1083	2011	ʔa-bɘ ; ʔa-be	'a-bė ; 'a-bE	' a - b ė # ; # ' a - b E	ʔa-bə ; ʔa-bɛ	ʔ a - b ə # ; # ʔ a - b ɛ
-3695	2011	Yoder 2011	1089	2011	hop	hop	h o p	hop	h o p
-3697	2011	Yoder 2011	1090	2011	kaʔ-hop	ka'-hop	k a ' - h o p	kaʔ-hop	k a ʔ - h o p
-3700	2011	Yoder 2011	1093	2011	iakuru	iakuru	i a k u r u	iakuru	i a k u r u
-3705	2011	Yoder 2011	1096	2011	pau	pa:u	p a:u	pau	p au
-3711	2011	Yoder 2011	1097	2011	kami	kami	k a m i	kami	k a m i
-3713	2011	Yoder 2011	1098	2011	kud	kud	k u d	kud	k u d
-3732	2011	Yoder 2011	1104	2011	ʔapiah	'apiah	' a p i a h	ʔapiah	ʔ a p i a h
-3737	2011	Yoder 2011	1106	2011	ʔarɘ	'arė	' a r ė	ʔarə	ʔ a r ə
-3746	2011	Yoder 2011	1109	2011	pãʔĩõp	pã'ĩõp	p ã ' ĩ õ p	pãʔĩɔ͂p	p ã ʔ ĩ ɔ͂ p
-3761	2011	Yoder 2011	1115	2011	ko	ko	k o	ko	k o
-3770	2011	Yoder 2011	1117	2011	pah-nuaʔ	pah-nua'	p a h - n u a '	pah-nuaʔ	p a h - n u a ʔ
-3781	2011	Yoder 2011	1120	2011	dar	dar	d a r	dar	d a r
-3785	2011	Yoder 2011	1122	2011	ioroi	ioro:i	i o r o:i	iorɔi	i o r ɔi
-3790	2011	Yoder 2011	1123	2011	koheaʔ	kohEa'	k o h E a '	kohɛaʔ	k o h ɛ a ʔ
-3806	2011	Yoder 2011	1129	2011	iatapux	iatapux	i a t a p u x	iatapuç	i a t a p u ç
-3813	2011	Yoder 2011	1130	2011	kiki	kiki	k i k i	kiki	k i k i
-3821	2011	Yoder 2011	1132	2011	pamahaum	pamaha:um	p a m a h a:u m	pamahaum	p a m a h au m
-3836	2011	Yoder 2011	1141	2011	ki-pop	ki-pop	k i - p o p	ki-pop	k i - p o p
-3841	2011	Yoder 2011	1144	2011	tutiʔ	tuti'	t u t i '	tutiʔ	t u t i ʔ
-3853	2011	Yoder 2011	1147	2011	ho	ho	h o	ho	h o
-3857	2011	Yoder 2011	1149	2011	iohom	iohom	i o h o m	iohom	i o h o m
-3860	2011	Yoder 2011	1152	2011	he	hE	h E	hɛ	h ɛ
-3862	2011	Yoder 2011	1153	2011	ioko	ioko	i o k o	ioko	i o k o
-3864	2011	Yoder 2011	1154	2011	ĩĩʔĩ	ĩĩ'ĩ	ĩ ĩ ' ĩ	ĩĩʔĩ	ĩ ĩ ʔ ĩ
-3873	2011	Yoder 2011	1158	2011	kite	kitE	k i t E	kitɛ	k i t ɛ
-3885	2011	Yoder 2011	1159	2011	iaʔa	ia'a	i a ' a	iaʔa	i a ʔ a
-3898	2011	Yoder 2011	1161	2011	kẽp	kẽp	k ẽ p	kɛ̃p	k ɛ̃ p
-3902	2011	Yoder 2011	1163	2011	tabɨdaʔ	tabu̇da'	t a b u̇ d a '	tabɨdaʔ	t a b ɨ d a ʔ
-3905	2011	Yoder 2011	1165	2011	bakaui	baka:ui	b a k a:u i	bakaui	b a k au i
-3907	2011	Yoder 2011	1166	2011	nipon	nipon	n i p o n	nipon	n i p o n
-3926	2011	Yoder 2011	1175	2011	kãhẽ	kãhẽ	k ã h ẽ	kãhɛ̃	k ã h ɛ̃
-3928	2011	Yoder 2011	1176	2011	kĩʔĩɘ̃kĩʔĩɘ	kĩ'ĩė̃kĩ'ĩė	k ĩ ' ĩ ė ̃ k ĩ ' ĩ ė	kĩʔĩə̃kĩʔĩə	k ĩ ʔ ĩ ə ̃ k ĩ ʔ ĩ ə
-3933	2011	Yoder 2011	1180	2011	nepe	nEpE	n E p E	nɛpɛ	n ɛ p ɛ
-3935	2011	Yoder 2011	1181	2011	ʔanɨkɘ	'anu̇kė	' a n u̇ k ė	ʔanɨkə	ʔ a n ɨ k ə
-3938	2011	Yoder 2011	1183	2011	kinu	kinu	k i n u	kinu	k i n u
-3940	2011	Yoder 2011	1184	2011	iɘ	iė	i ė	iə	i ə
-3946	2011	Yoder 2011	1185	2011	ʔẽĩɘ̃p	'ẽ:ĩė̃p	' ẽ:ĩ ė ̃ p	ʔɛ͂i͂ə̃p	ʔ ɛ͂i͂ ə ̃ p
-3951	2011	Yoder 2011	1188	2011	koar	koar	k o a r	koar	k o a r
-3957	2011	Yoder 2011	1191	2011	iɘnɘn	iėnėn	i ė n ė n	iənən	i ə n ə n
-3960	2011	Yoder 2011	1193	2011	ʔame	'amE	' a m E	ʔamɛ	ʔ a m ɛ
-3962	2011	Yoder 2011	1194	2011	kĩkẽʔ	kĩkẽ'	k ĩ k ẽ '	kĩkɛ̃ʔ	k ĩ k ɛ̃ ʔ
-3965	2011	Yoder 2011	1196	2011	ʔẽõ	'ẽõ	' ẽ õ	ʔɛ̃ɔ͂	ʔ ɛ̃ ɔ͂
-3967	2011	Yoder 2011	1197	2011	pĩ	pĩ	p ĩ	pĩ	p ĩ
-3969	2011	Yoder 2011	1198	2011	ʔubiʔ	'ubi'	' u b i '	ʔubiʔ	ʔ u b i ʔ
-3975	2011	Yoder 2011	1202	2011	karaʔai	kara'a:i	k a r a ' a:i	karaʔai	k a r a ʔ ai
-3977	2011	Yoder 2011	1203	2011	kaʔah	ka'ah	k a ' a h	kaʔah	k a ʔ a h
-3983	2011	Yoder 2011	1208	2011	tereʔ	tErE'	t E r E '	tɛrɛʔ	t ɛ r ɛ ʔ
-3985	2011	Yoder 2011	1209	2011	kuti	kuti	k u t i	kuti	k u t i
-3989	2011	Yoder 2011	1210	2011	tepaʔ	tEpa'	t E p a '	tɛpaʔ	t ɛ p a ʔ
-4001	2011	Yoder 2011	1212	2011	kah-re. pa-hahre	kah-rE. pa-hahrE	k a h - r E . # p a - h a h r E	kah-rɛ. pa-hahrɛ	k a h - r ɛ . # p a - h a h r ɛ
-4011	2011	Yoder 2011	1213	2011	pur	pur	p u r	pur	p u r
-4036	2011	Yoder 2011	1220	2011	iurpuʔ	iurpu'	i u r p u '	iurpuʔ	i u r p u ʔ
-4061	2011	Yoder 2011	1227	2011	pa-kõʔõãʔ	pa-kõ'õã'	p a - k õ ' õ ã '	pa-kɔ͂ʔɔ͂ãʔ	p a - k ɔ͂ ʔ ɔ͂ ã ʔ
-4083	2011	Yoder 2011	1237	2011	nanau	nana:u	n a n a:u	nanau	n a n au
-4091	2011	Yoder 2011	1242	2011	napu	napu	n a p u	napu	n a p u
-4096	2011	Yoder 2011	1244	2011	kãʔẽ	kã'ẽ	k ã ' ẽ	kãʔɛ̃	k ã ʔ ɛ̃
-4110	2011	Yoder 2011	1251	2011	naʔan ; nahʔem	na'an ; nah'Em	n a ' a n # ; # n a h ' E m	naʔan ; nahʔɛm	n a ʔ a n # ; # n a h ʔ ɛ m
-4116	2011	Yoder 2011	1252	2011	ʔɨʔkah	'u̇'kah	' u̇ ' k a h	ʔɨʔkah	ʔ ɨ ʔ k a h
-4123	2011	Yoder 2011	1253	2011	kɨʔkah	ku̇'kah	k u̇ ' k a h	kɨʔkah	k ɨ ʔ k a h
-4131	2011	Yoder 2011	1256	2011	kokoiʔea	koko:i'Ea	k o k o:i ' E a	kokɔiʔɛa	k o k ɔi ʔ ɛ a
-4146	2011	Yoder 2011	1259	2011	dix	dix	d i x	diç	d i ç
-4157	2011	Yoder 2011	1263	2011	dahɨd(-aʔ)	dahu̇d(-a')	d a h u̇ d ( - a ' )	dahɨd(-aʔ)	d a h ɨ d ( - a ʔ )
-4160	2011	Yoder 2011	1265	2011	piar	piar	p i a r	piar	p i a r
-4172	2011	Yoder 2011	1270	2011	ʔẽp	'ẽp	' ẽ p	ʔɛ̃p	ʔ ɛ̃ p
-4192	2011	Yoder 2011	1276	2011	ʔareʔ	'arE'	' a r E '	ʔarɛʔ	ʔ a r ɛ ʔ
-4203	2011	Yoder 2011	1283	2011	iumuh	iumuh	i u m u h	iumuh	i u m u h
-4222	2011	Yoder 2011	1292	2011	iɨdaʔ	iu̇da'	i u̇ d a '	iɨdaʔ	i ɨ d a ʔ
-4224	2011	Yoder 2011	1293	2011	kɨr	ku̇r	k u̇ r	kɨr	k ɨ r
-4227	2011	Yoder 2011	1294	2011	kor	kor	k o r	kor	k o r
-4237	2011	Yoder 2011	1296	2011	doab	doab	d o a b	doab	d o a b
-4249	2011	Yoder 2011	1300	2011	naʔah	na'ah	n a ' a h	naʔah	n a ʔ a h
-4253	2011	Yoder 2011	1301	2011	kinaʔah	kina'ah	k i n a ' a h	kinaʔah	k i n a ʔ a h
-4259	2011	Yoder 2011	1304	2011	keier	ke:iEr	k e:i E r	kɛiɛr	k ɛi ɛ r
-4261	2011	Yoder 2011	1305	2011	kiʔnen	ki'nEn	k i ' n E n	kiʔnɛn	k i ʔ n ɛ n
-4263	2011	Yoder 2011	1306	2011	pãʔõpã	pã'õpã	p ã ' õ p ã	pãʔɔ͂pã	p ã ʔ ɔ͂ p ã
-4269	2011	Yoder 2011	1307	2011	ʔakɨrib	'aku̇rib	' a k u̇ r i b	ʔakɨrib	ʔ a k ɨ r i b
-4283	2011	Yoder 2011	1311	2011	bah	bah	b a h	bah	b a h
-4284	2011	Yoder 2011	1312	2011	ʔi-	'i-	' i -	ʔi-	ʔ i -
-4285	2011	Yoder 2011	1313	2011	ʔaraʔiah	'ara'iah	' a r a ' i a h	ʔaraʔiah	ʔ a r a ʔ i a h
-4291	2011	Yoder 2011	1316	2011	maʔau	ma'a:u	m a ' a:u	maʔau	m a ʔ au
-4305	2011	Yoder 2011	1324	2011	ʔamuh nuʔ	'amuh nu'	' a m u h # n u '	ʔamuh nuʔ	ʔ a m u h # n u ʔ
-4309	2011	Yoder 2011	1326	2011	kokon	kokon	k o k o n	kokon	k o k o n
-4311	2011	Yoder 2011	1327	2011	koan	koan	k o a n	koan	k o a n
-4318	2011	Yoder 2011	1329	2011	ki-keor	ki-kEor	k i - k E o r	ki-kɛor	k i - k ɛ o r
-4326	2011	Yoder 2011	1330	2011	hĩũk	hĩũk	h ĩ ũ k	hĩũk	h ĩ ũ k
-4332	2011	Yoder 2011	1335	2011	kokoʔoa	koko'oa	k o k o ' o a	kokoʔoa	k o k o ʔ o a
-4340	2011	Yoder 2011	1338	2011	pah-koʔoa	pah-ko'oa	p a h - k o ' o a	pah-koʔoa	p a h - k o ʔ o a
-4352	2011	Yoder 2011	1341	2011	kaʔɘk	ka'ėk	k a ' ė k	kaʔək	k a ʔ ə k
-4367	2011	Yoder 2011	1351	2011	ʔiʔmɘ ; pa-himɘ	'i'mė ; pa-himė	' i ' m ė # ; # p a - h i m ė	ʔiʔmə ; pa-himə	ʔ i ʔ m ə # ; # p a - h i m ə
-4381	2011	Yoder 2011	1352	2011	pɘix	pė:ix	p ė:i x	pəiç	p əi ç
-4390	2011	Yoder 2011	1357	2011	babu	babu	b a b u	babu	b a b u
-4405	2011	Yoder 2011	1368	2011	hau	ha:u	h a:u	hau	h au
-4409	2011	Yoder 2011	1369	2011	ʔɨki	'u̇ki	' u̇ k i	ʔɨki	ʔ ɨ k i
-4411	2011	Yoder 2011	1370	2011	ʔauaʔ	'a:ua'	' a:u a '	ʔauaʔ	ʔ au a ʔ
-4424	2011	Yoder 2011	1371	2011	mɘk	mėk	m ė k	mək	m ə k
-4444	2011	Yoder 2011	1380	2011	piɘh	piėh	p i ė h	piəh	p i ə h
-4457	2011	Yoder 2011	1384	2011	dapiʔ	dapi'	d a p i '	dapiʔ	d a p i ʔ
-4469	2011	Yoder 2011	1391	2011	kɘ̃	kė̃	k ė ̃	kə̃	k ə ̃
-4474	2011	Yoder 2011	1392	2011	ʔubeʔ	'ubE'	' u b E '	ʔubɛʔ	ʔ u b ɛ ʔ
-4480	2011	Yoder 2011	1394	2011	paʔob	pa'ob	p a ' o b	paʔob	p a ʔ o b
-4487	2011	Yoder 2011	1395	2011	pa-nauaʔ	pa-na:ua'	p a - n a:u a '	pa-nauaʔ	p a - n au a ʔ
-4489	2011	Yoder 2011	1396	2011	pa-nauaʔ	pa-na:ua'	p a - n a:u a '	pa-nauaʔ	p a - n au a ʔ
-4505	2011	Yoder 2011	1403	2011	ĩũʔũ	ĩũ'ũ	ĩ ũ ' ũ	ĩũʔũ	ĩ ũ ʔ ũ
-4530	2011	Yoder 2011	1417	2011	ʔihtɘi	'ihtė:i	' i h t ė:i	ʔihtəi	ʔ i h t əi
-4532	2011	Yoder 2011	1418	2011	pa-hitɘi	pa-hitė:i	p a - h i t ė:i	pa-hitəi	p a - h i t əi
-4536	2011	Yoder 2011	1421	2011	dupi	dupi	d u p i	dupi	d u p i
-4538	2011	Yoder 2011	1422	2011	iuk	iuk	i u k	iuk	i u k
-4557	2011	Yoder 2011	1427	2011	kanɨa	kanu̇a	k a n u̇ a	kanɨa	k a n ɨ a
-4573	2011	Yoder 2011	1433	2011	pahuman	pahuman	p a h u m a n	pahuman	p a h u m a n
-4585	2011	Yoder 2011	1436	2011	kiʔia	ki'ia	k i ' i a	kiʔia	k i ʔ i a
-4602	2011	Yoder 2011	1439	2011	maʔ	ma'	m a '	maʔ	m a ʔ
-4622	2011	Yoder 2011	1442	2011	kɘx	kėx	k ė x	kəç	k ə ç
-4641	2011	Yoder 2011	1447	2011	kaʔ	ka'	k a '	kaʔ	k a ʔ
-4656	2011	Yoder 2011	1454	2011	ʔẽõ	'ẽõ	' ẽ õ	ʔɛ̃ɔ͂	ʔ ɛ̃ ɔ͂
-4660	2011	Yoder 2011	1455	2011	ka-leʔleʔ	ka-lE'lE'	k a - l E ' l E '	ka-lɛʔlɛʔ	k a - l ɛ ʔ l ɛ ʔ
-4662	2011	Yoder 2011	1456	2011	kaʔ-bibik	ka'-bibik	k a ' - b i b i k	kaʔ-bibik	k a ʔ - b i b i k
-4683	2011	Yoder 2011	1466	2011	haruʔ	haru'	h a r u '	haruʔ	h a r u ʔ
-4691	2011	Yoder 2011	1469	2011	tanaia	tana:ia	t a n a:i a	tanaia	t a n ai a
-4704	2011	Yoder 2011	1471	2011	ni	ni	n i	ni	n i
-4716	2011	Yoder 2011	1473	2011	kɨ-ʔɨk	ku̇-'u̇k	k u̇ - ' u̇ k	kɨ-ʔɨk	k ɨ - ʔ ɨ k
-4724	2011	Yoder 2011	1477	2011	paiɘʔoi	pa:iė'o:i	p a:i ė ' o:i	paiəʔɔi	p ai ə ʔ ɔi
-4731	2011	Yoder 2011	1478	2011	puk	puk	p u k	puk	p u k
-4742	2011	Yoder 2011	1479	2011	pane	panE	p a n E	panɛ	p a n ɛ
-4756	2011	Yoder 2011	1483	2011	kĩk	kĩk	k ĩ k	kĩk	k ĩ k
-4765	2011	Yoder 2011	1486	2011	iaru	iaru	i a r u	iaru	i a r u
-4791	2011	Yoder 2011	1496	2011	ka-ʔu	ka-'u	k a - ' u	ka-ʔu	k a - ʔ u
-4795	2011	Yoder 2011	1499	2011	koʔmai	ko'ma:i	k o ' m a:i	koʔmai	k o ʔ m ai
-4815	2011	Yoder 2011	1502	2011	karkoʔoaix	karko'oa:ix	k a r k o ' o a:i x	karkoʔoaiç	k a r k o ʔ o ai ç
-4824	2011	Yoder 2011	1504	2011	kaba kahaiʔ	kaba kaha:i'	k a b a # k a h a:i '	kaba kahaiʔ	k a b a # k a h ai ʔ
-4844	2011	Yoder 2011	1512	2011	keʔpan	kE'pan	k E ' p a n	kɛʔpan	k ɛ ʔ p a n
-4860	2011	Yoder 2011	1519	2011	ki-ʔiai	ki-'ia:i	k i - ' i a:i	ki-ʔiai	k i - ʔ i ai
-4862	2011	Yoder 2011	1520	2011	keam	kEam	k E a m	kɛam	k ɛ a m
-4883	2011	Yoder 2011	1527	2011	nɘʔɘn	nė'ėn	n ė ' ė n	nəʔən	n ə ʔ ə n
-4888	2011	Yoder 2011	1528	2011	iuʔuis	iu'uis	i u ' u i s	iuʔuis	i u ʔ u i s
-4909	2011	Yoder 2011	1536	2011	iaʔdɘb	ia'dėb	i a ' d ė b	iaʔdəb	i a ʔ d ə b
-4949	2011	Yoder 2011	1557	2011	ka-uaua	ka-ua:ua	k a - u a:u a	ka-uaua	k a - u au a
-4951	2011	Yoder 2011	1559	2011	pik	pik	p i k	pik	p i k
-4955	2011	Yoder 2011	1560	2011	puka	puka	p u k a	puka	p u k a
-4966	2011	Yoder 2011	1565	2011	daʔarah	da'arah	d a ' a r a h	daʔarah	d a ʔ a r a h
-4972	2011	Yoder 2011	1566	2011	kahaiʔ mɘh	kaha:i' mėh	k a h a:i ' # m ė h	kahaiʔ məh	k a h ai ʔ # m ə h
-4976	2011	Yoder 2011	1569	2011	haruk	haruk	h a r u k	haruk	h a r u k
-4990	2011	Yoder 2011	1578	2011	ki-didix	ki-didix	k i - d i d i x	ki-didiç	k i - d i d i ç
-4998	2011	Yoder 2011	1580	2011	pɘix	pė:ix	p ė:i x	pəiç	p əi ç
-5008	2011	Yoder 2011	1581	2011	iuʔuis	iu'uis	i u ' u i s	iuʔuis	i u ʔ u i s
-5016	2011	Yoder 2011	1585	2011	ka-pux	ka-pux	k a - p u x	ka-puç	k a - p u ç
-5034	2011	Yoder 2011	1593	2011	ʔanima	'anima	' a n i m a	ʔanima	ʔ a n i m a
-5037	2011	Yoder 2011	1594	2011	kaper	kapEr	k a p E r	kapɛr	k a p ɛ r
-5039	2011	Yoder 2011	1595	2011	parna	parna	p a r n a	parna	p a r n a
-5045	2011	Yoder 2011	1597	2011	kĩ-ʔĩɘ	kĩ-'ĩė	k ĩ - ' ĩ ė	kĩ-ʔĩə	k ĩ - ʔ ĩ ə
-5059	2011	Yoder 2011	1603	2011	ʔeko	'Eko	' E k o	ʔɛko	ʔ ɛ k o
-5068	2011	Yoder 2011	1607	2011	iakoro	iakoro	i a k o r o	iakoro	i a k o r o
-5074	2011	Yoder 2011	1610	2011	ʔi	'i	' i	ʔi	ʔ i
-5079	2011	Yoder 2011	1613	2011	pitoroʔ	pitoro'	p i t o r o '	pitoroʔ	p i t o r o ʔ
-5093	2011	Yoder 2011	1621	2011	pãĩx	pã:ĩx	p ã:ĩ x	pãĩç	p ãĩ ç
-5099	2011	Yoder 2011	1622	2011	dak	dak	d a k	dak	d a k
-5104	2011	Yoder 2011	1624	2011	roro	roro	r o r o	roro	r o r o
-5107	2011	Yoder 2011	1626	2011	kabarar	kabarar	k a b a r a r	kabarar	k a b a r a r
-5133	2011	Yoder 2011	1630	2011	koi	ko:i	k o:i	kɔi	k ɔi
-5150	2011	Yoder 2011	1639	2011	tipiʔ	tipi'	t i p i '	tipiʔ	t i p i ʔ
-5158	2011	Yoder 2011	1644	2011	ki-deok	ki-dEok	k i - d E o k	ki-dɛok	k i - d ɛ o k
-5179	2011	Yoder 2011	1654	2011	naʔinɘ	na'inė	n a ' i n ė	naʔinə	n a ʔ i n ə
-5185	2011	Yoder 2011	1657	2011	kɘʔɘh	kė'ėh	k ė ' ė h	kəʔəh	k ə ʔ ə h
-5190	2011	Yoder 2011	1658	2011	kɘʔ	kė'	k ė '	kəʔ	k ə ʔ
-5195	2011	Yoder 2011	1659	2011	ka-rɘʔ	ka-rė'	k a - r ė '	ka-rəʔ	k a - r ə ʔ
-5203	2011	Yoder 2011	1662	2011	ia-ʔitar	ia-'itar	i a - ' i t a r	ia-ʔitar	i a - ʔ i t a r
-5206	2011	Yoder 2011	1665	2011	iumuh	iumuh	i u m u h	iumuh	i u m u h
-5220	2011	Yoder 2011	1670	2011	iukua	iukua	i u k u a	iukua	i u k u a
-5229	2011	Yoder 2011	1675	2011	koʔma	ko'ma	k o ' m a	koʔma	k o ʔ m a
-5232	2011	Yoder 2011	1677	2011	haru-	haru-	h a r u -	haru-	h a r u -
-5234	2011	Yoder 2011	1678	2011	doioʔ	do:io'	d o:i o '	dɔioʔ	d ɔi o ʔ
-5241	2011	Yoder 2011	1682	2011	kekeʔ	kEkE'	k E k E '	kɛkɛʔ	k ɛ k ɛ ʔ
-5245	2011	Yoder 2011	1683	2011	ʔa-be	'a-bE	' a - b E	ʔa-bɛ	ʔ a - b ɛ
-5250	2011	Yoder 2011	1686	2011	iah-roʔoa	iah-ro'oa	i a h - r o ' o a	iah-roʔoa	i a h - r o ʔ o a
-5252	2011	Yoder 2011	1687	2011	kah-roʔoa	kah-ro'oa	k a h - r o ' o a	kah-roʔoa	k a h - r o ʔ o a
-5264	2011	Yoder 2011	1691	2011	iɘr	iėr	i ė r	iər	i ə r
-5266	2011	Yoder 2011	1692	2011	bui	bui	b u i	bui	b u i
-5268	2011	Yoder 2011	1693	2011	ʔa-ʔiur	'a-'iur	' a - ' i u r	ʔa-ʔiur	ʔ a - ʔ i u r
-5289	2011	Yoder 2011	1701	2011	ʔanɨk	'anu̇k	' a n u̇ k	ʔanɨk	ʔ a n ɨ k
-5291	2011	Yoder 2011	1702	2011	ʔor	'or	' o r	ʔor	ʔ o r
-5302	2011	Yoder 2011	1709	2011	tubuʔ	tubu'	t u b u '	tubuʔ	t u b u ʔ
-5304	2011	Yoder 2011	1710	2011	iahmiʔ ; ʔamiʔ	iahmi' ; 'ami'	i a h m i ' # ; # ' a m i '	iahmiʔ ; ʔamiʔ	i a h m i ʔ # ; # ʔ a m i ʔ
-5319	2011	Yoder 2011	1715	2011	kuʔiaʔ	ku'ia'	k u ' i a '	kuʔiaʔ	k u ʔ i a ʔ
-5331	2011	Yoder 2011	1719	2011	ʔãpũʔ	'ãpũ'	' ã p ũ '	ʔãpũʔ	ʔ ã p ũ ʔ
-5335	2011	Yoder 2011	1721	2011	ka-nih	ka-nih	k a - n i h	ka-nih	k a - n i h
-5339	2011	Yoder 2011	1722	2011	pãʔĩ	pã'ĩ	p ã ' ĩ	pãʔĩ	p ã ʔ ĩ
-5348	2011	Yoder 2011	1724	2011	kã-ʔĩ	kã-'ĩ	k ã - ' ĩ	kã-ʔĩ	k ã - ʔ ĩ
-5355	2011	Yoder 2011	1726	2011	ʔainɘn	'a:inėn	' a:i n ė n	ʔainən	ʔ ai n ə n
-5357	2011	Yoder 2011	1728	2011	pãʔõ	pã'õ	p ã ' õ	pãʔɔ͂	p ã ʔ ɔ͂
-5359	2011	Yoder 2011	1729	2011	rakit	rakit	r a k i t	rakit	r a k i t
-5372	2011	Yoder 2011	1734	2011	namutan	namutan	n a m u t a n	namutan	n a m u t a n
-5388	2011	Yoder 2011	1740	2011	tikus	tikus	t i k u s	tikus	t i k u s
-5397	2011	Yoder 2011	1743	2011	kĩhĩ	kĩhĩ	k ĩ h ĩ	kĩhĩ	k ĩ h ĩ
-5402	2011	Yoder 2011	1744	2011	pɨʔɨaʔ	pu̇'u̇a'	p u̇ ' u̇ a '	pɨʔɨaʔ	p ɨ ʔ ɨ a ʔ
-5459	2011	Yoder 2011	1765	2011	ba-kitaʔ ; ka-kitaʔ ; ia-kitaʔ	ba-kita' ; ka-kita' ; ia-kita'	b a - k i t a ' # ; # k a - k i t a ' # ; # i a - k i t a '	ba-kitaʔ ; ka-kitaʔ ; ia-kitaʔ	b a - k i t a ʔ # ; # k a - k i t a ʔ # ; # i a - k i t a ʔ
-5470	2011	Yoder 2011	1773	2011	bibi	bibi	b i b i	bibi	b i b i
-5494	2011	Yoder 2011	1784	2011	ʔarkix	'arkix	' a r k i x	ʔarkiç	ʔ a r k i ç
-5500	2011	Yoder 2011	1785	2011	ʔarkix	'arkix	' a r k i x	ʔarkiç	ʔ a r k i ç
-5505	2011	Yoder 2011	1787	2011	padi	padi	p a d i	padi	p a d i
-5506	2011	Yoder 2011	1788	2011	tauah	ta:uah	t a:u a h	tauah	t au a h
-5523	2011	Yoder 2011	1793	2011	dab	dab	d a b	dab	d a b
-5533	2011	Yoder 2011	1797	2011	karah ʔeap	karah 'Eap	k a r a h # ' E a p	karah ʔɛap	k a r a h # ʔ ɛ a p
-5555	2011	Yoder 2011	1803	2011	kare	karE	k a r E	karɛ	k a r ɛ
-5564	2011	Yoder 2011	1804	2011	bero	bEro	b E r o	bɛro	b ɛ r o
-5582	2011	Yoder 2011	1808	2011	ʔeko	'Eko	' E k o	ʔɛko	ʔ ɛ k o
-5601	2011	Yoder 2011	1815	2011	purdu	purdu	p u r d u	purdu	p u r d u
-5629	2011	Yoder 2011	1825	2011	ʔẽãp	'ẽãp	' ẽ ã p	ʔɛ̃ãp	ʔ ɛ̃ ã p
-5642	2011	Yoder 2011	1829	2011	iɨʔɨaʔ	iu̇'u̇a'	i u̇ ' u̇ a '	iɨʔɨaʔ	i ɨ ʔ ɨ a ʔ
-5648	2011	Yoder 2011	1831	2011	kadi	kadi	k a d i	kadi	k a d i
-5652	2011	Yoder 2011	1832	2011	bohoi	boho:i	b o h o:i	bohɔi	b o h ɔi
-5656	2011	Yoder 2011	1834	2011	baʔau	ba'a:u	b a ' a:u	baʔau	b a ʔ au
-5660	2011	Yoder 2011	1835	2011	ka-ro	ka-ro	k a - r o	ka-ro	k a - r o
-5662	2011	Yoder 2011	1836	2011	ka-rahrah	ka-rahrah	k a - r a h r a h	ka-rahrah	k a - r a h r a h
-5670	2011	Yoder 2011	1837	2011	kaʔ-bubu	ka'-bubu	k a ' - b u b u	kaʔ-bubu	k a ʔ - b u b u
-5696	2011	Yoder 2011	1849	2011	ki-pu	ki-pu	k i - p u	ki-pu	k i - p u
-5697	2011	Yoder 2011	1850	2011	pu	pu	p u	pu	p u
-5706	2011	Yoder 2011	1857	2011	kõʔkõʔ	kõ'kõ'	k õ ' k õ '	kɔ͂ʔkɔ͂ʔ	k ɔ͂ ʔ k ɔ͂ ʔ
-5719	2011	Yoder 2011	1863	2011	kanam	kanam	k a n a m	kanam	k a n a m
-5739	2011	Yoder 2011	1869	2011	doʔra	do'ra	d o ' r a	doʔra	d o ʔ r a
-5756	2011	Yoder 2011	1876	2011	kanimuʔ	kanimu'	k a n i m u '	kanimuʔ	k a n i m u ʔ
-5767	2011	Yoder 2011	1880	2011	ʔu(-ar) ; ki(r)-ʔu	'u(-ar) ; ki(r)-'u	' u ( - a r ) # ; # k i ( r ) - ' u	ʔu(-ar) ; ki(r)-ʔu	ʔ u ( - a r ) # ; # k i ( r ) - ʔ u
-5775	2011	Yoder 2011	1881	2011	pa-na	pa-na	p a - n a	pa-na	p a - n a
-5795	2011	Yoder 2011	1889	2011	ki-nenen	ki-nEnEn	k i - n E n E n	ki-nɛnɛn	k i - n ɛ n ɛ n
-5804	2011	Yoder 2011	1893	2011	hion	hion	h i o n	hion	h i o n
-5817	2011	Yoder 2011	1895	2011	iu	iu	i u	iu	i u
-5819	2011	Yoder 2011	1896	2011	haʔau	ha'a:u	h a ' a:u	haʔau	h a ʔ au
-5826	2011	Yoder 2011	1900	2011	korea	korEa	k o r E a	korɛa	k o r ɛ a
-5829	2011	Yoder 2011	1901	2011	hẽkũ	hẽkũ	h ẽ k ũ	hɛ̃kũ	h ɛ̃ k ũ
-5840	2011	Yoder 2011	1903	2011	pɨ	pu̇	p u̇	pɨ	p ɨ
-5843	2011	Yoder 2011	1904	2011	pah-pɨ	pah-pu̇	p a h - p u̇	pah-pɨ	p a h - p ɨ
-5853	2011	Yoder 2011	1907	2011	kaʔ-kũãʔ	ka'-kũã'	k a ' - k ũ ã '	kaʔ-kũãʔ	k a ʔ - k ũ ã ʔ
-5869	2011	Yoder 2011	1911	2011	kah-dɨaʔ ; ʔɨdiaʔ	kah-du̇a' ; 'u̇dia'	k a h - d u̇ a ' # ; # ' u̇ d i a '	kah-dɨaʔ ; ʔɨdiaʔ	k a h - d ɨ a ʔ # ; # ʔ ɨ d i a ʔ
-5877	2011	Yoder 2011	1914	2011	kudaʔai	kuda'a:i	k u d a ' a:i	kudaʔai	k u d a ʔ ai
-5898	2011	Yoder 2011	1921	2011	iaiʔ	ia:i'	i a:i '	iaiʔ	i ai ʔ
-5904	2011	Yoder 2011	1924	2011	pɨnaha(i)	pu̇naha(i)	p u̇ n a h a ( i )	pɨnaha(i)	p ɨ n a h a ( i )
-5912	2011	Yoder 2011	1926	2011	ka-pẽp	ka-pẽp	k a - p ẽ p	ka-pɛ̃p	k a - p ɛ̃ p
-5914	2011	Yoder 2011	1927	2011	ʔudɘx	'udėx	' u d ė x	ʔudəç	ʔ u d ə ç
-5917	2011	Yoder 2011	1928	2011	kit	kit	k i t	kit	k i t
-5919	2011	Yoder 2011	1929	2011	ʔaken	'akEn	' a k E n	ʔakɛn	ʔ a k ɛ n
-5927	2011	Yoder 2011	1930	2011	ka-ʔɘr	ka-'ėr	k a - ' ė r	ka-ʔər	k a - ʔ ə r
-5947	2011	Yoder 2011	1940	2011	baiu	ba:iu	b a:i u	baiu	b ai u
-5951	2011	Yoder 2011	1941	2011	ʔẽk	'ẽk	' ẽ k	ʔɛ̃k	ʔ ɛ̃ k
-5954	2011	Yoder 2011	1942	2011	ki-memek ; mamek	ki-mEmEk ; mamEk	k i - m E m E k # ; # m a m E k	ki-mɛmɛk ; mamɛk	k i - m ɛ m ɛ k # ; # m a m ɛ k
-5964	2011	Yoder 2011	1946	2011	pɘʔɘk ; pɘ̃ʔ	pė'ėk ; pė̃'	p ė ' ė k # ; # p ė ̃ '	pəʔək ; pə̃ʔ	p ə ʔ ə k # ; # p ə ̃ ʔ
-5979	2011	Yoder 2011	1950	2011	ka-kɨɘʔ	ka-ku̇ė'	k a - k u̇ ė '	ka-kɨəʔ	k a - k ɨ ə ʔ
-5986	2011	Yoder 2011	1952	2011	ʔamiʔiam	'ami'iam	' a m i ' i a m	ʔamiʔiam	ʔ a m i ʔ i a m
-5991	2011	Yoder 2011	1954	2011	pa-ʔoaʔ	pa-'oa'	p a - ' o a '	pa-ʔoaʔ	p a - ʔ o a ʔ
-6004	2011	Yoder 2011	1960	2011	pãĩk	pã:ĩk	p ã:ĩ k	pãĩk	p ãĩ k
-6012	2011	Yoder 2011	1964	2011	ka-niʔ	ka-ni'	k a - n i '	ka-niʔ	k a - n i ʔ
-6029	2011	Yoder 2011	1967	2011	ka-pux	ka-pux	k a - p u x	ka-puç	k a - p u ç
-6038	2011	Yoder 2011	1973	2011	pinohoi	pinoho:i	p i n o h o:i	pinohɔi	p i n o h ɔi
-6051	2011	Yoder 2011	1976	2011	iohor	iohor	i o h o r	iohor	i o h o r
-6077	2011	Yoder 2011	1981	2011	ki-hĩẽk	ki-hĩẽk	k i - h ĩ ẽ k	ki-hĩɛ̃k	k i - h ĩ ɛ̃ k
-6097	2011	Yoder 2011	1990	2011	ka-hɘʔ	ka-hė'	k a - h ė '	ka-həʔ	k a - h ə ʔ
-6102	2011	Yoder 2011	1991	2011	ka-pẽʔ	ka-pẽ'	k a - p ẽ '	ka-pɛ̃ʔ	k a - p ɛ̃ ʔ
-6114	2011	Yoder 2011	1992	2011	iuk	iuk	i u k	iuk	i u k
-6116	2011	Yoder 2011	1993	2011	ka-ʔeaʔea	ka-'Ea'Ea	k a - ' E a ' E a	ka-ʔɛaʔɛa	k a - ʔ ɛ a ʔ ɛ a
-6118	2011	Yoder 2011	1994	2011	kuruh	kuruh	k u r u h	kuruh	k u r u h
-6134	2011	Yoder 2011	1997	2011	ʔeaudauoh	'Ea:uda:uoh	' E a:u d a:u o h	ʔɛaudauoh	ʔ ɛ au d au o h
-6144	2011	Yoder 2011	2002	2011	kĩʔ	kĩ'	k ĩ '	kĩʔ	k ĩ ʔ
-6152	2011	Yoder 2011	2006	2011	ba-bip	ba-bip	b a - b i p	ba-bip	b a - b i p
-6171	2011	Yoder 2011	2010	2011	ʔueh	'uEh	' u E h	ʔuɛh	ʔ u ɛ h
-6182	2011	Yoder 2011	2016	2011	karneno	karnEno	k a r n E n o	karnɛno	k a r n ɛ n o
-6207	2011	Yoder 2011	2021	2011	nuʔik ; nuʔik nuʔ	nu'ik ; nu'ik nu'	n u ' i k # ; # n u ' i k # n u '	nuʔik ; nuʔik nuʔ	n u ʔ i k # ; # n u ʔ i k # n u ʔ
-6218	2011	Yoder 2011	2026	2011	minuʔ	minu'	m i n u '	minuʔ	m i n u ʔ
-6232	2011	Yoder 2011	2029	2011	kano	kano	k a n o	kano	k a n o
-6243	2011	Yoder 2011	2035	2011	kãhĩp	kãhĩp	k ã h ĩ p	kãhĩp	k ã h ĩ p
-6253	2011	Yoder 2011	2039	2011	minuʔ	minu'	m i n u '	minuʔ	m i n u ʔ
-6262	2011	Yoder 2011	2043	2011	ka-der	ka-dEr	k a - d E r	ka-dɛr	k a - d ɛ r
-6287	2011	Yoder 2011	2056	2011	kais	ka:is	k a:i s	kais	k ai s
-6312	2011	Yoder 2011	2069	2011	ioʔoʔ	io'o'	i o ' o '	ioʔoʔ	i o ʔ o ʔ
-6323	2011	Yoder 2011	2076	2011	dapah	dapah	d a p a h	dapah	d a p a h
-6329	2011	Yoder 2011	2078	2011	ki-noʔoe	ki-no'oE	k i - n o ' o E	ki-noʔoɛ	k i - n o ʔ o ɛ
-6330	2011	Yoder 2011	2079	2011	noʔoe	no'oE	n o ' o E	noʔoɛ	n o ʔ o ɛ
-6332	2011	Yoder 2011	2080	2011	kɘhɘi	kėhė:i	k ė h ė:i	kəhəi	k ə h əi
-6334	2011	Yoder 2011	2081	2011	ki-kɘhɘi	ki-kėhė:i	k i - k ė h ė:i	ki-kəhəi	k i - k ə h əi
-6347	2011	Yoder 2011	2088	2011	pa-hito	pa-hito	p a - h i t o	pa-hito	p a - h i t o
-6348	2011	Yoder 2011	2089	2011	ʔa-hit	'a-hit	' a - h i t	ʔa-hit	ʔ a - h i t
-6354	2011	Yoder 2011	2091	2011	poraʔ	pora'	p o r a '	poraʔ	p o r a ʔ
-6358	2011	Yoder 2011	2092	2011	pa-lauaʔ	pa-la:ua'	p a - l a:u a '	pa-lauaʔ	p a - l au a ʔ
-6380	2011	Yoder 2011	2104	2011	pĩh	pĩh	p ĩ h	pĩh	p ĩ h
-6384	2011	Yoder 2011	2105	2011	kah-mih	kah-mih	k a h - m i h	kah-mih	k a h - m i h
-6387	2011	Yoder 2011	2107	2011	ki-bibiʔ	ki-bibi'	k i - b i b i '	ki-bibiʔ	k i - b i b i ʔ
-6393	2011	Yoder 2011	2108	2011	ki-tahaʔ	ki-taha'	k i - t a h a '	ki-tahaʔ	k i - t a h a ʔ
-6403	2011	Yoder 2011	2111	2011	hẽ	hẽ	h ẽ	hɛ̃	h ɛ̃
-6434	2011	Yoder 2011	2122	2011	koʔmim	ko'mim	k o ' m i m	koʔmim	k o ʔ m i m
-6442	2011	Yoder 2011	2124	2011	ki-kiar	ki-kiar	k i - k i a r	ki-kiar	k i - k i a r
-6443	2011	Yoder 2011	2125	2011	kiar	kiar	k i a r	kiar	k i a r
-6465	2011	Yoder 2011	2134	2011	ki-kitix	ki-kitix	k i - k i t i x	ki-kitiç	k i - k i t i ç
-6467	2011	Yoder 2011	2135	2011	pa-kikitix	pa-kikitix	p a - k i k i t i x	pa-kikitiç	p a - k i k i t i ç
-6486	2011	Yoder 2011	2145	2011	puah	puah	p u a h	puah	p u a h
-6496	2011	Yoder 2011	2146	2011	kita	kita	k i t a	kita	k i t a
-6511	2011	Yoder 2011	2149	2011	(ka)ʔe	(ka)'E	( k a ) ' E	(ka)ʔɛ	( k a ) ʔ ɛ
-6532	2011	Yoder 2011	2156	2011	ka-ĩõ	ka-ĩõ	k a - ĩ õ	ka-ĩɔ͂	k a - ĩ ɔ͂
-6535	2011	Yoder 2011	2157	2011	pãĩõ	pã:ĩõ	p ã:ĩ õ	pãĩɔ͂	p ãĩ ɔ͂
-6552	2011	Yoder 2011	2165	2011	ka-ʔɨ̃ʔ	ka-'u̇̃'	k a - ' u̇ ̃ '	ka-ʔɨ̃ʔ	k a - ʔ ɨ ̃ ʔ
-6569	2011	Yoder 2011	2172	2011	kopiʔ	kopi'	k o p i '	kopiʔ	k o p i ʔ
-6573	2011	Yoder 2011	2173	2011	ka-ropiʔ	ka-ropi'	k a - r o p i '	ka-ropiʔ	k a - r o p i ʔ
-6597	2011	Yoder 2011	2184	2011	ʔãʔkũhũãʔ	'ã'kũhũã'	' ã ' k ũ h ũ ã '	ʔãʔkũhũãʔ	ʔ ã ʔ k ũ h ũ ã ʔ
-6607	2011	Yoder 2011	2190	2011	kɨʔdɨx	ku̇'du̇x	k u̇ ' d u̇ x	kɨʔdɨç	k ɨ ʔ d ɨ ç
-6609	2011	Yoder 2011	2191	2011	ki-kiʔ	ki-ki'	k i - k i '	ki-kiʔ	k i - k i ʔ
-6615	2011	Yoder 2011	2192	2011	kɘr	kėr	k ė r	kər	k ə r
-6625	2011	Yoder 2011	2197	2011	iɘmɘʔ	iėmė'	i ė m ė '	iəməʔ	i ə m ə ʔ
-6630	2011	Yoder 2011	2199	2011	kup	kup	k u p	kup	k u p
-6644	2011	Yoder 2011	2203	2011	kĩ-ʔĩãk	kĩ-'ĩãk	k ĩ - ' ĩ ã k	kĩ-ʔĩãk	k ĩ - ʔ ĩ ã k
-6650	2011	Yoder 2011	2204	2011	ʔĩʔĩãk	'ĩ'ĩãk	' ĩ ' ĩ ã k	ʔĩʔĩãk	ʔ ĩ ʔ ĩ ã k
-6661	2011	Yoder 2011	2209	2011	beia	be:ia	b e:i a	bɛia	b ɛi a
-6674	2011	Yoder 2011	2212	2011	jiʔ ; iiʔ	yi' ; ii'	y i ' # ; # i i '	jiʔ ; iiʔ	j i ʔ # ; # i i ʔ
-6699	2011	Yoder 2011	2221	2011	ʔudɘp	'udėp	' u d ė p	ʔudəp	ʔ u d ə p
-6708	2011	Yoder 2011	2225	2011	poro	poro	p o r o	poro	p o r o
-6715	2011	Yoder 2011	2227	2011	kĩpãʔãũp	kĩpã'ã:ũp	k ĩ p ã ' ã:ũ p	kĩpãʔãũp	k ĩ p ã ʔ ãũ p
-6734	2011	Yoder 2011	2235	2011	ʔẽõʔ	'ẽõ'	' ẽ õ '	ʔɛ̃ɔ͂ʔ	ʔ ɛ̃ ɔ͂ ʔ
-6743	2011	Yoder 2011	2238	2011	purdu	purdu	p u r d u	purdu	p u r d u
-6758	2011	Yoder 2011	2244	2011	dit	dit	d i t	dit	d i t
-6763	2011	Yoder 2011	2245	2011	ʔi-ʔuoʔ ; ʔi-ʔĩõʔ	'i-'uo' ; 'i-'ĩõ'	' i - ' u o ' # ; # ' i - ' ĩ õ '	ʔi-ʔuoʔ ; ʔi-ʔĩɔ͂ʔ	ʔ i - ʔ u o ʔ # ; # ʔ i - ʔ ĩ ɔ͂ ʔ
-6770	2011	Yoder 2011	2247	2011	keam	kEam	k E a m	kɛam	k ɛ a m
-6778	2011	Yoder 2011	2250	2011	hamɘʔ	hamė'	h a m ė '	haməʔ	h a m ə ʔ
-6784	2011	Yoder 2011	2251	2011	ʔẽãp	'ẽãp	' ẽ ã p	ʔɛ̃ãp	ʔ ɛ̃ ã p
-6806	2011	Yoder 2011	2255	2011	ka-nen	ka-nEn	k a - n E n	ka-nɛn	k a - n ɛ n
-6816	2011	Yoder 2011	2258	2011	ʔa-kitaʔ	'a-kita'	' a - k i t a '	ʔa-kitaʔ	ʔ a - k i t a ʔ
-6825	2011	Yoder 2011	2260	2011	kehiɨ	kEhiu̇	k E h i u̇	kɛhiɨ	k ɛ h i ɨ
-6851	2011	Yoder 2011	2266	2011	ʔẽʔ	'ẽ'	' ẽ '	ʔɛ̃ʔ	ʔ ɛ̃ ʔ
-6856	2011	Yoder 2011	2267	2011	pẽʔẽʔ	pẽ'ẽ'	p ẽ ' ẽ '	pɛ̃ʔɛ̃ʔ	p ɛ̃ ʔ ɛ̃ ʔ
-6862	2011	Yoder 2011	2272	2011	duri	duri	d u r i	duri	d u r i
-6868	2011	Yoder 2011	2275	2011	ʔɘʔ	'ė'	' ė '	ʔəʔ	ʔ ə ʔ
-6872	2011	Yoder 2011	2276	2011	iamakaʔoaʔ	iamaka'oa'	i a m a k a ' o a '	iamakaʔoaʔ	i a m a k a ʔ o a ʔ
-6882	2011	Yoder 2011	2277	2011	kahaiʔ dibu	kaha:i' dibu	k a h a:i ' # d i b u	kahaiʔ dibu	k a h ai ʔ # d i b u
-6901	2011	Yoder 2011	2284	2011	hanuʔ	hanu'	h a n u '	hanuʔ	h a n u ʔ
-6906	2011	Yoder 2011	2285	2011	pa-ʔitɘʔ	pa-'itė'	p a - ' i t ė '	pa-ʔitəʔ	p a - ʔ i t ə ʔ
-6909	2011	Yoder 2011	2286	2011	paiʔ	pa:i'	p a:i '	paiʔ	p ai ʔ
-6911	2011	Yoder 2011	2287	2011	ʔitɘʔ	'itė'	' i t ė '	ʔitəʔ	ʔ i t ə ʔ
-6916	2011	Yoder 2011	2288	2011	pa-tuʔ	pa-tu'	p a - t u '	pa-tuʔ	p a - t u ʔ
-6933	2011	Yoder 2011	2295	2011	kir-koniʔi	kir-koni'i	k i r - k o n i ' i	kir-koniʔi	k i r - k o n i ʔ i
-6934	2011	Yoder 2011	2296	2011	koniʔi	koni'i	k o n i ' i	koniʔi	k o n i ʔ i
-6946	2011	Yoder 2011	2299	2011	ʔɨaʔ	'u̇a'	' u̇ a '	ʔɨaʔ	ʔ ɨ a ʔ
-6955	2011	Yoder 2011	2304	2011	ʔahdih ; kah-dih	'ahdih ; kah-dih	' a h d i h # ; # k a h - d i h	ʔahdih ; kah-dih	ʔ a h d i h # ; # k a h - d i h
-6962	2011	Yoder 2011	2307	2011	piak	piak	p i a k	piak	p i a k
-6996	2011	Yoder 2011	2319	2011	noʔman	no'man	n o ' m a n	noʔman	n o ʔ m a n
-7009	2011	Yoder 2011	2320	2011	di	di	d i	di	d i
-7020	2011	Yoder 2011	2322	2011	ʔekaʔ	'Eka'	' E k a '	ʔɛkaʔ	ʔ ɛ k a ʔ
-7030	2011	Yoder 2011	2325	2011	ka-pik	ka-pik	k a - p i k	ka-pik	k a - p i k
-7037	2011	Yoder 2011	2328	2011	ʔanuʔun	'anu'un	' a n u ' u n	ʔanuʔun	ʔ a n u ʔ u n
-7042	2011	Yoder 2011	2331	2011	ʔaduʔ	'adu'	' a d u '	ʔaduʔ	ʔ a d u ʔ
-7059	2011	Yoder 2011	2338	2011	noh	noh	n o h	noh	n o h
-7069	2011	Yoder 2011	2341	2011	ku	ku	k u	ku	k u
-7086	2011	Yoder 2011	2349	2011	karoa	karoa	k a r o a	karoa	k a r o a
-7090	2011	Yoder 2011	2350	2011	kit	kit	k i t	kit	k i t
-7096	2011	Yoder 2011	2353	2011	kaʔ-riprip	ka'-riprip	k a ' - r i p r i p	kaʔ-riprip	k a ʔ - r i p r i p
-7102	2011	Yoder 2011	2356	2011	pa-hɘdik	pa-hėdik	p a - h ė d i k	pa-hədik	p a - h ə d i k
-7103	2011	Yoder 2011	2357	2011	hɘdik	hėdik	h ė d i k	hədik	h ə d i k
-7107	2011	Yoder 2011	2358	2011	kɨx	ku̇x	k u̇ x	kɨç	k ɨ ç
-7149	2011	Yoder 2011	2372	2011	pãĩũ	pã:ĩũ	p ã:ĩ ũ	pãĩũ	p ãĩ ũ
-7151	2011	Yoder 2011	2373	2011	uaʔ	ua'	u a '	uaʔ	u a ʔ
-7154	2011	Yoder 2011	2374	2011	pik	pik	p i k	pik	p i k
-7156	2011	Yoder 2011	2375	2011	puka	puka	p u k a	puka	p u k a
-7180	2011	Yoder 2011	2388	2011	mamik	mamik	m a m i k	mamik	m a m i k
-7184	2011	Yoder 2011	2390	2011	ʔĩk	'ĩk	' ĩ k	ʔĩk	ʔ ĩ k
-7186	2011	Yoder 2011	2391	2011	kĩhkõʔ	kĩhkõ'	k ĩ h k õ '	kĩhkɔ͂ʔ	k ĩ h k ɔ͂ ʔ
-7196	2011	Yoder 2011	2394	2011	ʔa-buaʔ	'a-bua'	' a - b u a '	ʔa-buaʔ	ʔ a - b u a ʔ
-7199	2011	Yoder 2011	2395	2011	ka-nai	ka-na:i	k a - n a:i	ka-nai	k a - n ai
-7202	2011	Yoder 2011	2397	2011	kũhũẽ	kũhũẽ	k ũ h ũ ẽ	kũhũɛ̃	k ũ h ũ ɛ̃
-7208	2011	Yoder 2011	2401	2011	kũʔũãh	kũ'ũãh	k ũ ' ũ ã h	kũʔũãh	k ũ ʔ ũ ã h
-7216	2011	Yoder 2011	2404	2011	ʔeok	'Eok	' E o k	ʔɛok	ʔ ɛ o k
-7225	2011	Yoder 2011	2406	2011	kaʔudar	ka'udar	k a ' u d a r	kaʔudar	k a ʔ u d a r
-7240	2011	Yoder 2011	2409	2011	iis	iis	i i s	iis	i i s
-7245	2011	Yoder 2011	2411	2011	ke	kE	k E	kɛ	k ɛ
-7248	2011	Yoder 2011	2412	2011	ie	iE	i E	iɛ	i ɛ
-7262	2011	Yoder 2011	2419	2011	ʔɘm	'ėm	' ė m	ʔəm	ʔ ə m
-7271	2011	Yoder 2011	2422	2011	kɘkɘ	kėkė	k ė k ė	kəkə	k ə k ə
-7275	2011	Yoder 2011	2423	2011	ĩũkũʔ	ĩũkũ'	ĩ ũ k ũ '	ĩũkũʔ	ĩ ũ k ũ ʔ
-7292	2011	Yoder 2011	2429	2011	iaʔkaʔaiʔ	ia'ka'a:i'	i a ' k a ' a:i '	iaʔkaʔaiʔ	i a ʔ k a ʔ ai ʔ
-7303	2011	Yoder 2011	2430	2011	kaʔ-tahur	ka'-tahur	k a ' - t a h u r	kaʔ-tahur	k a ʔ - t a h u r
-7308	2011	Yoder 2011	2431	2011	ʔa-nok	'a-nok	' a - n o k	ʔa-nok	ʔ a - n o k
-7314	2011	Yoder 2011	2434	2011	ʔeber	'EbEr	' E b E r	ʔɛbɛr	ʔ ɛ b ɛ r
-7318	2011	Yoder 2011	2436	2011	kãkõ	kãkõ	k ã k õ	kãkɔ͂	k ã k ɔ͂
-7327	2011	Yoder 2011	2438	2011	ʔa	'a	' a	ʔa	ʔ a
-7338	2011	Yoder 2011	2440	2011	ʔik	'ik	' i k	ʔik	ʔ i k
-7342	2011	Yoder 2011	2441	2011	ʔa-buaʔ	'a-bua'	' a - b u a '	ʔa-buaʔ	ʔ a - b u a ʔ
-7343	2011	Yoder 2011	2442	2011	nipɘʔ ; kĩ-pɘ̃ʔ	nipė' ; kĩ-pė̃'	n i p ė ' # ; # k ĩ - p ė ̃ '	nipəʔ ; kĩ-pə̃ʔ	n i p ə ʔ # ; # k ĩ - p ə ̃ ʔ
-7345	2011	Yoder 2011	2444	2011	iapaʔioi	iapa'io:i	i a p a ' i o:i	iapaʔiɔi	i a p a ʔ i ɔi
-7353	2011	Yoder 2011	2448	2011	kumu	kumu	k u m u	kumu	k u m u
-7361	2011	Yoder 2011	2451	2011	kaʔ-be	ka'-bE	k a ' - b E	kaʔ-bɛ	k a ʔ - b ɛ
-7365	2011	Yoder 2011	2452	2011	tuʔiah	tu'iah	t u ' i a h	tuʔiah	t u ʔ i a h
-7373	2011	Yoder 2011	2453	2011	ʔiah	'iah	' i a h	ʔiah	ʔ i a h
-7387	2011	Yoder 2011	2457	2011	kuan	kuan	k u a n	kuan	k u a n
-7398	2011	Yoder 2011	2459	2011	ʔi-ʔiah	'i-'iah	' i - ' i a h	ʔi-ʔiah	ʔ i - ʔ i a h
-7400	2011	Yoder 2011	2460	2011	moʔni	mo'ni	m o ' n i	moʔni	m o ʔ n i
-7409	2011	Yoder 2011	2466	2011	bed	bEd	b E d	bɛd	b ɛ d
-7421	2011	Yoder 2011	2468	2011	hã	hã	h ã	hã	h ã
-7425	2011	Yoder 2011	2470	2011	me	mE	m E	mɛ	m ɛ
-7437	2011	Yoder 2011	2471	2011	ʔamuh nuʔ	'amuh nu'	' a m u h # n u '	ʔamuh nuʔ	ʔ a m u h # n u ʔ
-7463	2011	Yoder 2011	2480	2011	hɨn	hu̇n	h u̇ n	hɨn	h ɨ n
-7467	2011	Yoder 2011	2481	2011	bohoe	bohoE	b o h o E	bohoɛ	b o h o ɛ
-7478	2011	Yoder 2011	2487	2011	deda	dEda	d E d a	dɛda	d ɛ d a
-7486	2011	Yoder 2011	2488	2011	ʔãpẽʔẽãp	'ãpẽ'ẽãp	' ã p ẽ ' ẽ ã p	ʔãpɛ̃ʔɛ̃ãp	ʔ ã p ɛ̃ ʔ ɛ̃ ã p
-7492	2011	Yoder 2011	2492	2011	didu	didu	d i d u	didu	d i d u
-7494	2011	Yoder 2011	2493	2011	didu	didu	d i d u	didu	d i d u
-7496	2011	Yoder 2011	2494	2011	kah-ne	kah-nE	k a h - n E	kah-nɛ	k a h - n ɛ
-7497	2011	Yoder 2011	2495	2011	ʔa-hẽ	'a-hẽ	' a - h ẽ	ʔa-hɛ̃	ʔ a - h ɛ̃
-7505	2011	Yoder 2011	2499	2011	ʔok	'ok	' o k	ʔok	ʔ o k
-7515	2011	Yoder 2011	2504	2011	kaʔhɨɘ	ka'hu̇ė	k a ' h u̇ ė	kaʔhɨə	k a ʔ h ɨ ə
-7532	2011	Yoder 2011	2508	2011	ku	ku	k u	ku	k u
-7543	2011	Yoder 2011	2512	2011	ka-riɘ	ka-riė	k a - r i ė	ka-riə	k a - r i ə
-7568	2011	Yoder 2011	2528	2011	kaʔ-kokohoi	ka'-kokoho:i	k a ' - k o k o h o:i	kaʔ-kokohɔi	k a ʔ - k o k o h ɔi
-7571	2011	Yoder 2011	2529	2011	tahaʔ	taha'	t a h a '	tahaʔ	t a h a ʔ
-7576	2011	Yoder 2011	2531	2011	pa-uap	pa-uap	p a - u a p	pa-uap	p a - u a p
-7583	2011	Yoder 2011	2533	2011	tauud	ta:uud	t a:u u d	tauud	t au u d
-7591	2011	Yoder 2011	2536	2011	ʔɘi	'ė:i	' ė:i	ʔəi	ʔ əi
-7600	2011	Yoder 2011	2538	2011	kaʔikah	ka'ikah	k a ' i k a h	kaʔikah	k a ʔ i k a h
-7617	2011	Yoder 2011	2541	2011	ʔari	'ari	' a r i	ʔari	ʔ a r i
-7627	2011	Yoder 2011	2546	2011	kiʔuɘi	ki'uė:i	k i ' u ė:i	kiʔuəi	k i ʔ u əi
-7655	2011	Yoder 2011	2556	2011	harub	harub	h a r u b	harub	h a r u b
+7	2011	Yoder 2011	1	2011	ʔi-tem	'i-tEm	' i - t E m	ʔi-tɛm	ʔ i - t ɛ m
+10	2011	Yoder 2011	3	2011	ken	kEn	k E n	kɛn	k ɛ n
+30	2011	Yoder 2011	10	2011	kããh	kããh	k ã ã h	kããh	k ã ã h
+57	2011	Yoder 2011	21	2011	kiar	kiar	k i a r	kiar	k i a r
+61	2011	Yoder 2011	24	2011	nahai	naha:i	n a h a:i	nahai	n a h ai
+69	2011	Yoder 2011	27	2011	ki-kãʔũ	ki-kã'ũ	k i - k ã ' ũ	ki-kãʔũ	k i - k ã ʔ ũ
+72	2011	Yoder 2011	29	2011	pahnamik	pahnamik	p a h n a m i k	pahnamik	p a h n a m i k
+81	2011	Yoder 2011	30	2011	ʔabɨx	'abu̇x	' a b u̇ x	ʔabɨç	ʔ a b ɨ ç
+85	2011	Yoder 2011	31	2011	ho	ho	h o	ho	h o
+111	2011	Yoder 2011	42	2011	kiʔaru	ki'aru	k i ' a r u	kiʔaru	k i ʔ a r u
+122	2011	Yoder 2011	46	2011	pahu	pahu	p a h u	pahu	p a h u
+165	2011	Yoder 2011	61	2011	ʔarop	'arop	' a r o p	ʔarop	ʔ a r o p
+186	2011	Yoder 2011	68	2011	naʔau	na'a:u	n a ' a:u	naʔau	n a ʔ au
+203	2011	Yoder 2011	72	2011	paix ; pɨ̃ʔ	pa:ix ; pu̇̃'	p a:i x # ; # p u̇ ̃ '	paiç ; pɨ̃ʔ	p ai ç # ; # p ɨ ̃ ʔ
+257	2011	Yoder 2011	88	2011	kũk	kũk	k ũ k	kũk	k ũ k
+271	2011	Yoder 2011	93	2011	nene	nEnE	n E n E	nɛnɛ	n ɛ n ɛ
+286	2011	Yoder 2011	95	2011	ʔabeh	'abEh	' a b E h	ʔabɛh	ʔ a b ɛ h
+298	2011	Yoder 2011	98	2011	ʔit	'it	' i t	ʔit	ʔ i t
+301	2011	Yoder 2011	100	2011	kapareak	kaparEak	k a p a r E a k	kaparɛak	k a p a r ɛ a k
+310	2011	Yoder 2011	103	2011	kuaʔ	kua'	k u a '	kuaʔ	k u a ʔ
+329	2011	Yoder 2011	108	2011	ʔek	'Ek	' E k	ʔɛk	ʔ ɛ k
+335	2011	Yoder 2011	111	2011	ʔɘmduparauʔ	'ėmdupara:u'	' ė m d u p a r a:u '	ʔəmduparauʔ	ʔ ə m d u p a r au ʔ
+336	2011	Yoder 2011	112	2011	pah-bɘ	pah-bė	p a h - b ė	pah-bə	p a h - b ə
+346	2011	Yoder 2011	115	2011	kiki	kiki	k i k i	kiki	k i k i
+350	2011	Yoder 2011	116	2011	iok	iok	i o k	iok	i o k
+384	2011	Yoder 2011	127	2011	ioʔhoe	io'hoE	i o ' h o E	ioʔhoɛ	i o ʔ h o ɛ
+387	2011	Yoder 2011	128	2011	ʔamahai	'amaha:i	' a m a h a:i	ʔamahai	ʔ a m a h ai
+392	2011	Yoder 2011	130	2011	bix	bix	b i x	biç	b i ç
+402	2011	Yoder 2011	134	2011	hare	harE	h a r E	harɛ	h a r ɛ
+406	2011	Yoder 2011	135	2011	kahenu	kahEnu	k a h E n u	kahɛnu	k a h ɛ n u
+442	2011	Yoder 2011	146	2011	kita	kita	k i t a	kita	k i t a
+454	2011	Yoder 2011	147	2011	ʔi-top	'i-top	' i - t o p	ʔi-top	ʔ i - t o p
+459	2011	Yoder 2011	148	2011	kudiʔ	kudi'	k u d i '	kudiʔ	k u d i ʔ
+462	2011	Yoder 2011	149	2011	bakaʔaur	baka'a:ur	b a k a ' a:u r	bakaʔaur	b a k a ʔ au r
+471	2011	Yoder 2011	153	2011	ʔanɨʔ	'anu̇'	' a n u̇ '	ʔanɨʔ	ʔ a n ɨ ʔ
+480	2011	Yoder 2011	154	2011	ʔamuh	'amuh	' a m u h	ʔamuh	ʔ a m u h
+492	2011	Yoder 2011	157	2011	naua	na:ua	n a:u a	naua	n au a
+505	2011	Yoder 2011	158	2011	keʔep	kE'Ep	k E ' E p	kɛʔɛp	k ɛ ʔ ɛ p
+519	2011	Yoder 2011	161	2011	(ki-)hau	(ki-)ha:u	( k i - ) h a:u	(ki-)hau	( k i - ) h au
+521	2011	Yoder 2011	162	2011	ka-hiken	ka-hikEn	k a - h i k E n	ka-hikɛn	k a - h i k ɛ n
+528	2011	Yoder 2011	163	2011	kaʔ-dɨhɨ̯ai	ka'-du̇hu̯̇a:i	k a ' - d u̇ h u̇ ̯ a:i	kaʔ-dɨhɨai	k a ʔ - d ɨ h ɨ ai
+544	2011	Yoder 2011	165	2011	kaʔ-kɘ̃h	ka'-kė̃h	k a ' - k ė ̃ h	kaʔ-kə̃h	k a ʔ - k ə ̃ h
+572	2011	Yoder 2011	172	2011	kiak	kiak	k i a k	kiak	k i a k
+580	2011	Yoder 2011	173	2011	ʔa-po	'a-po	' a - p o	ʔa-po	ʔ a - p o
+604	2011	Yoder 2011	178	2011	dohoa	dohoa	d o h o a	dohoa	d o h o a
+614	2011	Yoder 2011	181	2011	karah	karah	k a r a h	karah	k a r a h
+624	2011	Yoder 2011	184	2011	ka-dit	ka-dit	k a - d i t	ka-dit	k a - d i t
+625	2011	Yoder 2011	185	2011	iaʔkeʔei	ia'kE'e:i	i a ' k E ' e:i	iaʔkɛʔɛi	i a ʔ k ɛ ʔ ɛi
+629	2011	Yoder 2011	186	2011	ka-rep	ka-rEp	k a - r E p	ka-rɛp	k a - r ɛ p
+634	2011	Yoder 2011	187	2011	pur	pur	p u r	pur	p u r
+648	2011	Yoder 2011	189	2011	(ʔe)ʔea	('E)'Ea	( ' E ) ' E a	(ʔɛ)ʔɛa	( ʔ ɛ ) ʔ ɛ a
+653	2011	Yoder 2011	191	2011	ʔohmeʔ	'ohmE'	' o h m E '	ʔohmɛʔ	ʔ o h m ɛ ʔ
+689	2011	Yoder 2011	206	2011	nanaiaʔ	nana:ia'	n a n a:i a '	nanaiaʔ	n a n ai a ʔ
+700	2011	Yoder 2011	208	2011	ka-kɘi ; ka-kɘ	ka-kė:i ; ka-kė	k a - k ė:i # ; # k a - k ė	ka-kəi ; ka-kə	k a - k əi # ; # k a - k ə
+704	2011	Yoder 2011	209	2011	pa-kanaʔ	pa-kana'	p a - k a n a '	pa-kanaʔ	p a - k a n a ʔ
+715	2011	Yoder 2011	212	2011	kah-ʔapɨaʔ ; ka-puʔ	kah-'apu̇a' ; ka-pu'	k a h - ' a p u̇ a ' # ; # k a - p u '	kah-ʔapɨaʔ ; ka-puʔ	k a h - ʔ a p ɨ a ʔ # ; # k a - p u ʔ
+733	2011	Yoder 2011	217	2011	kok	kok	k o k	kok	k o k
+751	2011	Yoder 2011	222	2011	hãpɘ̃ʔ ; kah-pɘʔ	hãpė̃' ; kah-pė'	h ã p ė ̃ ' # ; # k a h - p ė '	hãpə̃ʔ ; kah-pəʔ	h ã p ə ̃ ʔ # ; # k a h - p ə ʔ
+759	2011	Yoder 2011	224	2011	kome	komE	k o m E	komɛ	k o m ɛ
+766	2011	Yoder 2011	225	2011	ka-nik	ka-nik	k a - n i k	ka-nik	k a - n i k
+774	2011	Yoder 2011	226	2011	naʔ	na'	n a '	naʔ	n a ʔ
+785	2011	Yoder 2011	231	2011	iɨhɨan	iu̇hu̇an	i u̇ h u̇ a n	iɨhɨan	i ɨ h ɨ a n
+798	2011	Yoder 2011	237	2011	ʔũ	'ũ	' ũ	ʔũ	ʔ ũ
+808	2011	Yoder 2011	241	2011	duduk	duduk	d u d u k	duduk	d u d u k
+852	2011	Yoder 2011	255	2011	ʔɘr ; kir-dɘr ; ba-bɘr ; kir-bɘr	'ėr ; kir-dėr ; ba-bėr ; kir-bėr	' ė r # ; # k i r - d ė r # ; # b a - b ė r # ; # k i r - b ė r	ʔər ; kir-dər ; ba-bər ; kir-bər	ʔ ə r # ; # k i r - d ə r # ; # b a - b ə r # ; # k i r - b ə r
+879	2011	Yoder 2011	263	2011	pɨhɨaʔ	pu̇hu̇a'	p u̇ h u̇ a '	pɨhɨaʔ	p ɨ h ɨ a ʔ
+887	2011	Yoder 2011	267	2011	ianome	ianomE	i a n o m E	ianomɛ	i a n o m ɛ
+892	2011	Yoder 2011	270	2011	ki-dadaʔɨɘh	ki-dada'u̇ėh	k i - d a d a ' u̇ ė h	ki-dadaʔɨəh	k i - d a d a ʔ ɨ ə h
+914	2011	Yoder 2011	278	2011	ba	ba	b a	ba	b a
+921	2011	Yoder 2011	279	2011	ki-koh ; kɘ	ki-koh ; kė	k i - k o h # ; # k ė	ki-koh ; kə	k i - k o h # ; # k ə
+924	2011	Yoder 2011	280	2011	ʔa-ioiaʔ	'a-io:ia'	' a - i o:i a '	ʔa-iɔiaʔ	ʔ a - i ɔi a ʔ
+936	2011	Yoder 2011	284	2011	mea	mEa	m E a	mɛa	m ɛ a
+953	2011	Yoder 2011	293	2011	kitaha	kitaha	k i t a h a	kitaha	k i t a h a
+957	2011	Yoder 2011	295	2011	kakeʔep	kakE'Ep	k a k E ' E p	kakɛʔɛp	k a k ɛ ʔ ɛ p
+971	2011	Yoder 2011	299	2011	ka-karai	ka-kara:i	k a - k a r a:i	ka-karai	k a - k a r ai
+982	2011	Yoder 2011	301	2011	pap	pap	p a p	pap	p a p
+996	2011	Yoder 2011	303	2011	mama	mama	m a m a	mama	m a m a
+998	2011	Yoder 2011	304	2011	ki-mama	ki-mama	k i - m a m a	ki-mama	k i - m a m a
+1027	2011	Yoder 2011	307	2011	(ka)pa	(ka)pa	( k a ) p a	(ka)pa	( k a ) p a
+1042	2011	Yoder 2011	310	2011	dadɘ	dadė	d a d ė	dadə	d a d ə
+1050	2011	Yoder 2011	311	2011	kĩʔ	kĩ'	k ĩ '	kĩʔ	k ĩ ʔ
+1063	2011	Yoder 2011	316	2011	ʔa-kenah	'a-kEnah	' a - k E n a h	ʔa-kɛnah	ʔ a - k ɛ n a h
+1064	2011	Yoder 2011	317	2011	kiʔ-kẽʔ	ki'-kẽ'	k i ' - k ẽ '	kiʔ-kɛ̃ʔ	k i ʔ - k ɛ̃ ʔ
+1066	2011	Yoder 2011	318	2011	nukoʔ	nuko'	n u k o '	nukoʔ	n u k o ʔ
+1068	2011	Yoder 2011	319	2011	porpiʔ	porpi'	p o r p i '	porpiʔ	p o r p i ʔ
+1078	2011	Yoder 2011	322	2011	kãp	kãp	k ã p	kãp	k ã p
+1109	2011	Yoder 2011	333	2011	ʔer	'Er	' E r	ʔɛr	ʔ ɛ r
+1112	2011	Yoder 2011	335	2011	buber	bubEr	b u b E r	bubɛr	b u b ɛ r
+1113	2011	Yoder 2011	336	2011	der	dEr	d E r	dɛr	d ɛ r
+1120	2011	Yoder 2011	339	2011	bak kahaʔ	bak kaha'	b a k # k a h a '	bak kahaʔ	b a k # k a h a ʔ
+1123	2011	Yoder 2011	340	2011	ka	ka	k a	ka	k a
+1125	2011	Yoder 2011	341	2011	ka-bak	ka-bak	k a - b a k	ka-bak	k a - b a k
+1128	2011	Yoder 2011	342	2011	ʔeaka	'Eaka	' E a k a	ʔɛaka	ʔ ɛ a k a
+1152	2011	Yoder 2011	351	2011	ki-mɘmɘi	ki-mėmė:i	k i - m ė m ė:i	ki-məməi	k i - m ə m əi
+1154	2011	Yoder 2011	352	2011	teke	tEkE	t E k E	tɛkɛ	t ɛ k ɛ
+1161	2011	Yoder 2011	355	2011	hẽõk	hẽõk	h ẽ õ k	hɛ̃ɔ͂k	h ɛ̃ ɔ͂ k
+1176	2011	Yoder 2011	356	2011	po	po	p o	po	p o
+1205	2011	Yoder 2011	368	2011	ĩɘ̃h	ĩė̃h	ĩ ė ̃ h	ĩə̃h	ĩ ə ̃ h
+1209	2011	Yoder 2011	369	2011	ka-pɨ	ka-pu̇	k a - p u̇	ka-pɨ	k a - p ɨ
+1224	2011	Yoder 2011	379	2011	ba	ba	b a	ba	b a
+1232	2011	Yoder 2011	380	2011	ka	ka	k a	ka	k a
+1235	2011	Yoder 2011	381	2011	ki-baba	ki-baba	k i - b a b a	ki-baba	k i - b a b a
+1236	2011	Yoder 2011	382	2011	ʔa-ba	'a-ba	' a - b a	ʔa-ba	ʔ a - b a
+1249	2011	Yoder 2011	388	2011	ii	ii	i i	ii	i i
+1269	2011	Yoder 2011	393	2011	ka-bɨx	ka-bu̇x	k a - b u̇ x	ka-bɨç	k a - b ɨ ç
+1302	2011	Yoder 2011	409	2011	kabakeʔ	kabakE'	k a b a k E '	kabakɛʔ	k a b a k ɛ ʔ
+1308	2011	Yoder 2011	411	2011	kakabak	kakabak	k a k a b a k	kakabak	k a k a b a k
+1317	2011	Yoder 2011	412	2011	kun	kun	k u n	kun	k u n
+1330	2011	Yoder 2011	415	2011	kẽʔẽh	kẽ'ẽh	k ẽ ' ẽ h	kɛ̃ʔɛ̃h	k ɛ̃ ʔ ɛ̃ h
+1338	2011	Yoder 2011	416	2011	kemahaʔ	kEmaha'	k E m a h a '	kɛmahaʔ	k ɛ m a h a ʔ
+1344	2011	Yoder 2011	417	2011	kũ ; kũãhãʔ	kũ ; kũãhã'	k ũ # ; # k ũ ã h ã '	kũ ; kũãhãʔ	k ũ # ; # k ũ ã h ã ʔ
+1349	2011	Yoder 2011	421	2011	kapi	kapi	k a p i	kapi	k a p i
+1355	2011	Yoder 2011	422	2011	kiɘhɘr	kiėhėr	k i ė h ė r	kiəhər	k i ə h ə r
+1357	2011	Yoder 2011	423	2011	pẽʔẽ	pẽ'ẽ	p ẽ ' ẽ	pɛ̃ʔɛ̃	p ɛ̃ ʔ ɛ̃
+1359	2011	Yoder 2011	424	2011	kahʔuis	kah'uis	k a h ' u i s	kahʔuis	k a h ʔ u i s
+1361	2011	Yoder 2011	425	2011	ʔekoʔanu	'Eko'anu	' E k o ' a n u	ʔɛkoʔanu	ʔ ɛ k o ʔ a n u
+1368	2011	Yoder 2011	428	2011	ʔar	'ar	' a r	ʔar	ʔ a r
+1373	2011	Yoder 2011	429	2011	karnomeaʔ	karnomEa'	k a r n o m E a '	karnomɛaʔ	k a r n o m ɛ a ʔ
+1415	2011	Yoder 2011	443	2011	(ki-)paido	(ki-)pa:ido	( k i - ) p a:i d o	(ki-)paido	( k i - ) p ai d o
+1417	2011	Yoder 2011	444	2011	ʔũẽ	'ũẽ	' ũ ẽ	ʔũɛ̃	ʔ ũ ɛ̃
+1425	2011	Yoder 2011	448	2011	karaix	kara:ix	k a r a:i x	karaiç	k a r ai ç
+1432	2011	Yoder 2011	451	2011	dɘr	dėr	d ė r	dər	d ə r
+1444	2011	Yoder 2011	454	2011	hɨk	hu̇k	h u̇ k	hɨk	h ɨ k
+1447	2011	Yoder 2011	456	2011	ka-diɨʔ ; ʔa-diɨʔ	ka-diu̇' ; 'a-diu̇'	k a - d i u̇ ' # ; # ' a - d i u̇ '	ka-diɨʔ ; ʔa-diɨʔ	k a - d i ɨ ʔ # ; # ʔ a - d i ɨ ʔ
+1453	2011	Yoder 2011	460	2011	kaʔ-noke	ka'-nokE	k a ' - n o k E	kaʔ-nokɛ	k a ʔ - n o k ɛ
+1465	2011	Yoder 2011	463	2011	ka-pɘ̃pɘ	ka-pė̃pė	k a - p ė ̃ p ė	ka-pə̃pə	k a - p ə ̃ p ə
+1468	2011	Yoder 2011	465	2011	pa-hobeʔ	pa-hobE'	p a - h o b E '	pa-hobɛʔ	p a - h o b ɛ ʔ
+1485	2011	Yoder 2011	472	2011	hapɨʔ	hapu̇'	h a p u̇ '	hapɨʔ	h a p ɨ ʔ
+1499	2011	Yoder 2011	475	2011	daʔikah	da'ikah	d a ' i k a h	daʔikah	d a ʔ i k a h
+1504	2011	Yoder 2011	478	2011	ka-kãʔõ	ka-kã'õ	k a - k ã ' õ	ka-kãʔɔ͂	k a - k ã ʔ ɔ͂
+1515	2011	Yoder 2011	480	2011	ki-pehiɘr	ki-pEhiėr	k i - p E h i ė r	ki-pɛhiər	k i - p ɛ h i ə r
+1517	2011	Yoder 2011	481	2011	iabaʔa	iaba'a	i a b a ' a	iabaʔa	i a b a ʔ a
+1531	2011	Yoder 2011	486	2011	kaʔ-nuʔ	ka'-nu'	k a ' - n u '	kaʔ-nuʔ	k a ʔ - n u ʔ
+1541	2011	Yoder 2011	490	2011	rusa	rusa	r u s a	rusa	r u s a
+1549	2011	Yoder 2011	495	2011	kɨdaʔ	ku̇da'	k u̇ d a '	kɨdaʔ	k ɨ d a ʔ
+1559	2011	Yoder 2011	501	2011	ki-pokah	ki-pokah	k i - p o k a h	ki-pokah	k i - p o k a h
+1566	2011	Yoder 2011	506	2011	ʔa-ʔia	'a-'ia	' a - ' i a	ʔa-ʔia	ʔ a - ʔ i a
+1576	2011	Yoder 2011	511	2011	bibi	bibi	b i b i	bibi	b i b i
+1594	2011	Yoder 2011	516	2011	ba-ʔa ; ka-ʔa	ba-'a ; ka-'a	b a - ' a # ; # k a - ' a	ba-ʔa ; ka-ʔa	b a - ʔ a # ; # k a - ʔ a
+1614	2011	Yoder 2011	523	2011	ʔeno	'Eno	' E n o	ʔɛno	ʔ ɛ n o
+1617	2011	Yoder 2011	525	2011	pɘk	pėk	p ė k	pək	p ə k
+1619	2011	Yoder 2011	526	2011	nomeʔ	nomE'	n o m E '	nomɛʔ	n o m ɛ ʔ
+1622	2011	Yoder 2011	527	2011	ki-didik	ki-didik	k i - d i d i k	ki-didik	k i - d i d i k
+1632	2011	Yoder 2011	531	2011	kaʔ-kaluʔ	ka'-kalu'	k a ' - k a l u '	kaʔ-kaluʔ	k a ʔ - k a l u ʔ
+1642	2011	Yoder 2011	535	2011	kahten	kahtEn	k a h t E n	kahtɛn	k a h t ɛ n
+1649	2011	Yoder 2011	538	2011	ki-nok	ki-nok	k i - n o k	ki-nok	k i - n o k
+1670	2011	Yoder 2011	543	2011	pa-riʔ	pa-ri'	p a - r i '	pa-riʔ	p a - r i ʔ
+1673	2011	Yoder 2011	544	2011	ʔɘm	'ėm	' ė m	ʔəm	ʔ ə m
+1690	2011	Yoder 2011	546	2011	be	bE	b E	bɛ	b ɛ
+1703	2011	Yoder 2011	549	2011	(ʔu)maha	('u)maha	( ' u ) m a h a	(ʔu)maha	( ʔ u ) m a h a
+1707	2011	Yoder 2011	550	2011	iar	iar	i a r	iar	i a r
+1718	2011	Yoder 2011	554	2011	kaʔ-niʔi	ka'-ni'i	k a ' - n i ' i	kaʔ-niʔi	k a ʔ - n i ʔ i
+1724	2011	Yoder 2011	558	2011	ʔɘ	'ė	' ė	ʔə	ʔ ə
+1731	2011	Yoder 2011	560	2011	kaʔ-nihia	ka'-nihia	k a ' - n i h i a	kaʔ-nihia	k a ʔ - n i h i a
+1747	2011	Yoder 2011	562	2011	ʔit	'it	' i t	ʔit	ʔ i t
+1751	2011	Yoder 2011	564	2011	ka-hik	ka-hik	k a - h i k	ka-hik	k a - h i k
+1753	2011	Yoder 2011	565	2011	kaʔ-bari	ka'-bari	k a ' - b a r i	kaʔ-bari	k a ʔ - b a r i
+1765	2011	Yoder 2011	568	2011	kaʔ-kĩh	ka'-kĩh	k a ' - k ĩ h	kaʔ-kĩh	k a ʔ - k ĩ h
+1769	2011	Yoder 2011	570	2011	ʔãʔkũhũãʔ	'ã'kũhũã'	' ã ' k ũ h ũ ã '	ʔãʔkũhũãʔ	ʔ ã ʔ k ũ h ũ ã ʔ
+1770	2011	Yoder 2011	571	2011	ka-hõk	ka-hõk	k a - h õ k	ka-hɔ͂k	k a - h ɔ͂ k
+1776	2011	Yoder 2011	573	2011	ka-hũ	ka-hũ	k a - h ũ	ka-hũ	k a - h ũ
+1780	2011	Yoder 2011	576	2011	hiur	hiur	h i u r	hiur	h i u r
+1799	2011	Yoder 2011	579	2011	karix	karix	k a r i x	kariç	k a r i ç
+1827	2011	Yoder 2011	586	2011	dop	dop	d o p	dop	d o p
+1836	2011	Yoder 2011	588	2011	dix	dix	d i x	diç	d i ç
+1841	2011	Yoder 2011	589	2011	hiɘr	hiėr	h i ė r	hiər	h i ə r
+1865	2011	Yoder 2011	594	2011	no ; ka-no	no ; ka-no	n o # ; # k a - n o	no ; ka-no	n o # ; # k a - n o
+1873	2011	Yoder 2011	595	2011	ki-nono	ki-nono	k i - n o n o	ki-nono	k i - n o n o
+1881	2011	Yoder 2011	601	2011	taru	taru	t a r u	taru	t a r u
+1896	2011	Yoder 2011	602	2011	kĩpãʔĩõp	kĩpã'ĩõp	k ĩ p ã ' ĩ õ p	kĩpãʔĩɔ͂p	k ĩ p ã ʔ ĩ ɔ͂ p
+1927	2011	Yoder 2011	612	2011	dɨa	du̇a	d u̇ a	dɨa	d ɨ a
+1928	2011	Yoder 2011	613	2011	ki-dɨa	ki-du̇a	k i - d u̇ a	ki-dɨa	k i - d ɨ a
+1954	2011	Yoder 2011	625	2011	kũʔ	kũ'	k ũ '	kũʔ	k ũ ʔ
+1990	2011	Yoder 2011	644	2011	paʔpɘhɘr	pa'pėhėr	p a ' p ė h ė r	paʔpəhər	p a ʔ p ə h ə r
+1996	2011	Yoder 2011	647	2011	ka-bobohok	ka-bobohok	k a - b o b o h o k	ka-bobohok	k a - b o b o h o k
+2034	2011	Yoder 2011	656	2011	bak	bak	b a k	bak	b a k
+2036	2011	Yoder 2011	657	2011	kaʔken	ka'kEn	k a ' k E n	kaʔkɛn	k a ʔ k ɛ n
+2042	2011	Yoder 2011	661	2011	iakoʔoi	iako'o:i	i a k o ' o:i	iakoʔɔi	i a k o ʔ ɔi
+2043	2011	Yoder 2011	662	2011	pɨah	pu̇ah	p u̇ a h	pɨah	p ɨ a h
+2045	2011	Yoder 2011	663	2011	ki-ʔiop	ki-'iop	k i - ' i o p	ki-ʔiop	k i - ʔ i o p
+2047	2011	Yoder 2011	664	2011	kurdi	kurdi	k u r d i	kurdi	k u r d i
+2053	2011	Yoder 2011	666	2011	dap	dap	d a p	dap	d a p
+2074	2011	Yoder 2011	672	2011	mimi	mimi	m i m i	mimi	m i m i
+2085	2011	Yoder 2011	676	2011	kũk	kũk	k ũ k	kũk	k ũ k
+2098	2011	Yoder 2011	680	2011	ka-ʔãũ	ka-'ã:ũ	k a - ' ã:ũ	ka-ʔãũ	k a - ʔ ãũ
+2117	2011	Yoder 2011	682	2011	ʔam	'am	' a m	ʔam	ʔ a m
+2121	2011	Yoder 2011	683	2011	paʔ	pa'	p a '	paʔ	p a ʔ
+2130	2011	Yoder 2011	685	2011	ka	ka	k a	ka	k a
+2135	2011	Yoder 2011	688	2011	ʔainɘn	'a:inėn	' a:i n ė n	ʔainən	ʔ ai n ə n
+2138	2011	Yoder 2011	689	2011	painɘn	pa:inėn	p a:i n ė n	painən	p ai n ə n
+2146	2011	Yoder 2011	692	2011	ĩũʔpɨ̃ãʔ	ĩũ'pu̇̃ã'	ĩ ũ ' p u̇ ̃ ã '	ĩũʔpɨ̃ãʔ	ĩ ũ ʔ p ɨ ̃ ã ʔ
+2152	2011	Yoder 2011	693	2011	kupar	kupar	k u p a r	kupar	k u p a r
+2154	2011	Yoder 2011	694	2011	iarkɨaʔaɨ	iarku̇a'a:u̇	i a r k u̇ a ' a:u̇	iarkɨaʔaɨ	i a r k ɨ a ʔ aɨ
+2161	2011	Yoder 2011	697	2011	ʔarɘh	'arėh	' a r ė h	ʔarəh	ʔ a r ə h
+2171	2011	Yoder 2011	700	2011	baʔki	ba'ki	b a ' k i	baʔki	b a ʔ k i
+2202	2011	Yoder 2011	709	2011	ʔaru kak he kĩpãʔãũʔ	'aru kak hE kĩpã'ã:ũ'	' a r u # k a k # h E # k ĩ p ã ' ã:ũ '	ʔaru kak hɛ kĩpãʔãũʔ	ʔ a r u # k a k # h ɛ # k ĩ p ã ʔ ãũ ʔ
+2209	2011	Yoder 2011	710	2011	pa-pur	pa-pur	p a - p u r	pa-pur	p a - p u r
+2243	2011	Yoder 2011	723	2011	ʔinu	'inu	' i n u	ʔinu	ʔ i n u
+2252	2011	Yoder 2011	725	2011	kunuʔun	kunu'un	k u n u ' u n	kunuʔun	k u n u ʔ u n
+2278	2011	Yoder 2011	729	2011	iɘb	iėb	i ė b	iəb	i ə b
+2305	2011	Yoder 2011	740	2011	ʔeai	'Ea:i	' E a:i	ʔɛai	ʔ ɛ ai
+2313	2011	Yoder 2011	744	2011	ka-ham	ka-ham	k a - h a m	ka-ham	k a - h a m
+2315	2011	Yoder 2011	745	2011	maham	maham	m a h a m	maham	m a h a m
+2322	2011	Yoder 2011	751	2011	ʔeam	'Eam	' E a m	ʔɛam	ʔ ɛ a m
+2342	2011	Yoder 2011	753	2011	ʔarib	'arib	' a r i b	ʔarib	ʔ a r i b
+2357	2011	Yoder 2011	761	2011	barera	barEra	b a r E r a	barɛra	b a r ɛ r a
+2366	2011	Yoder 2011	764	2011	ki-nanap	ki-nanap	k i - n a n a p	ki-nanap	k i - n a n a p
+2387	2011	Yoder 2011	770	2011	her	hEr	h E r	hɛr	h ɛ r
+2389	2011	Yoder 2011	771	2011	kah-nene	kah-nEnE	k a h - n E n E	kah-nɛnɛ	k a h - n ɛ n ɛ
+2391	2011	Yoder 2011	772	2011	ko(ʔne)ne	ko('nE)nE	k o ( ' n E ) n E	ko(ʔnɛ)nɛ	k o ( ʔ n ɛ ) n ɛ
+2404	2011	Yoder 2011	778	2011	tãpũ	tãpũ	t ã p ũ	tãpũ	t ã p ũ
+2415	2011	Yoder 2011	781	2011	muo	muo	m u o	muo	m u o
+2418	2011	Yoder 2011	783	2011	ne	nE	n E	nɛ	n ɛ
+2420	2011	Yoder 2011	785	2011	ium	ium	i u m	ium	i u m
+2435	2011	Yoder 2011	788	2011	ka-ham	ka-ham	k a - h a m	ka-ham	k a - h a m
+2445	2011	Yoder 2011	791	2011	kũkũ	kũkũ	k ũ k ũ	kũkũ	k ũ k ũ
+2453	2011	Yoder 2011	794	2011	meh	mEh	m E h	mɛh	m ɛ h
+2455	2011	Yoder 2011	795	2011	noh	noh	n o h	noh	n o h
+2470	2011	Yoder 2011	798	2011	ʔea	'Ea	' E a	ʔɛa	ʔ ɛ a
+2506	2011	Yoder 2011	810	2011	haʔku	ha'ku	h a ' k u	haʔku	h a ʔ k u
+2512	2011	Yoder 2011	813	2011	ka-ʔam	ka-'am	k a - ' a m	ka-ʔam	k a - ʔ a m
+2547	2011	Yoder 2011	820	2011	ʔaup	'a:up	' a:u p	ʔaup	ʔ au p
+2563	2011	Yoder 2011	826	2011	kaʔ-man	ka'-man	k a ' - m a n	kaʔ-man	k a ʔ - m a n
+2575	2011	Yoder 2011	828	2011	ʔanɘʔ	'anė'	' a n ė '	ʔanəʔ	ʔ a n ə ʔ
+2579	2011	Yoder 2011	829	2011	kaʔnɘm	ka'nėm	k a ' n ė m	kaʔnəm	k a ʔ n ə m
+2586	2011	Yoder 2011	831	2011	pẽʔ	pẽ'	p ẽ '	pɛ̃ʔ	p ɛ̃ ʔ
+2599	2011	Yoder 2011	837	2011	kaʔ-pix	ka'-pix	k a ' - p i x	kaʔ-piç	k a ʔ - p i ç
+2609	2011	Yoder 2011	838	2011	hĩũ	hĩũ	h ĩ ũ	hĩũ	h ĩ ũ
+2612	2011	Yoder 2011	840	2011	ioʔoʔ	io'o'	i o ' o '	ioʔoʔ	i o ʔ o ʔ
+2622	2011	Yoder 2011	842	2011	ki-pam	ki-pam	k i - p a m	ki-pam	k i - p a m
+2628	2011	Yoder 2011	843	2011	ka-rer	ka-rEr	k a - r E r	ka-rɛr	k a - r ɛ r
+2635	2011	Yoder 2011	846	2011	ka-rer	ka-rEr	k a - r E r	ka-rɛr	k a - r ɛ r
+2640	2011	Yoder 2011	849	2011	ʔau	'a:u	' a:u	ʔau	ʔ au
+2653	2011	Yoder 2011	853	2011	pi	pi	p i	pi	p i
+2658	2011	Yoder 2011	855	2011	parur	parur	p a r u r	parur	p a r u r
+2667	2011	Yoder 2011	858	2011	ʔe	'E	' E	ʔɛ	ʔ ɛ
+2673	2011	Yoder 2011	860	2011	pu	pu	p u	pu	p u
+2693	2011	Yoder 2011	868	2011	koʔoeʔ	ko'oE'	k o ' o E '	koʔoɛʔ	k o ʔ o ɛ ʔ
+2701	2011	Yoder 2011	873	2011	iaheʔ	iahE'	i a h E '	iahɛʔ	i a h ɛ ʔ
+2714	2011	Yoder 2011	876	2011	pe	pE	p E	pɛ	p ɛ
+2722	2011	Yoder 2011	877	2011	pa-pe	pa-pE	p a - p E	pa-pɛ	p a - p ɛ
+2723	2011	Yoder 2011	878	2011	ki-pa-pe	ki-pa-pE	k i - p a - p E	ki-pa-pɛ	k i - p a - p ɛ
+2725	2011	Yoder 2011	879	2011	ki-pe	ki-pE	k i - p E	ki-pɛ	k i - p ɛ
+2729	2011	Yoder 2011	880	2011	ki-mɘ ; mɘ	ki-mė ; mė	k i - m ė # ; # m ė	ki-mə ; mə	k i - m ə # ; # m ə
+2742	2011	Yoder 2011	885	2011	kõʔĩã	kõ'ĩã	k õ ' ĩ ã	kɔ͂ʔĩã	k ɔ͂ ʔ ĩ ã
+2745	2011	Yoder 2011	886	2011	kah	kah	k a h	kah	k a h
+2748	2011	Yoder 2011	887	2011	puak	puak	p u a k	puak	p u a k
+2755	2011	Yoder 2011	888	2011	ʔa-uah	'a-uah	' a - u a h	ʔa-uah	ʔ a - u a h
+2764	2011	Yoder 2011	893	2011	ka-ruaʔ	ka-rua'	k a - r u a '	ka-ruaʔ	k a - r u a ʔ
+2775	2011	Yoder 2011	898	2011	baʔ-he	ba'-hE	b a ' - h E	baʔ-hɛ	b a ʔ - h ɛ
+2776	2011	Yoder 2011	899	2011	kaʔ-he	ka'-hE	k a ' - h E	kaʔ-hɛ	k a ʔ - h ɛ
+2781	2011	Yoder 2011	903	2011	ʔẽ	'ẽ	' ẽ	ʔɛ̃	ʔ ɛ̃
+2783	2011	Yoder 2011	904	2011	ʔoneaʔ	'onEa'	' o n E a '	ʔonɛaʔ	ʔ o n ɛ a ʔ
+2788	2011	Yoder 2011	907	2011	ʔamak	'amak	' a m a k	ʔamak	ʔ a m a k
+2790	2011	Yoder 2011	908	2011	maix	ma:ix	m a:i x	maiç	m ai ç
+2804	2011	Yoder 2011	909	2011	ka-ʔu	ka-'u	k a - ' u	ka-ʔu	k a - ʔ u
+2809	2011	Yoder 2011	911	2011	kaiteʔ	ka:itE'	k a:i t E '	kaitɛʔ	k ai t ɛ ʔ
+2820	2011	Yoder 2011	912	2011	dɘb	dėb	d ė b	dəb	d ə b
+2843	2011	Yoder 2011	918	2011	ʔũp	'ũp	' ũ p	ʔũp	ʔ ũ p
+2854	2011	Yoder 2011	920	2011	dɘr	dėr	d ė r	dər	d ə r
+2860	2011	Yoder 2011	921	2011	ʔadɘhɘr	'adėhėr	' a d ė h ė r	ʔadəhər	ʔ a d ə h ə r
+2868	2011	Yoder 2011	924	2011	kĩʔĩãp	kĩ'ĩãp	k ĩ ' ĩ ã p	kĩʔĩãp	k ĩ ʔ ĩ ã p
+2872	2011	Yoder 2011	925	2011	kõp	kõp	k õ p	kɔ͂p	k ɔ͂ p
+2877	2011	Yoder 2011	928	2011	ʔa-piah	'a-piah	' a - p i a h	ʔa-piah	ʔ a - p i a h
+2881	2011	Yoder 2011	931	2011	kũʔĩ	kũ'ĩ	k ũ ' ĩ	kũʔĩ	k ũ ʔ ĩ
+2883	2011	Yoder 2011	932	2011	karnomeh	karnomEh	k a r n o m E h	karnomɛh	k a r n o m ɛ h
+2894	2011	Yoder 2011	936	2011	kõʔõĩʔ	kõ'õ:ĩ'	k õ ' õ:ĩ '	kɔ͂ʔɔ̃ĩʔ	k ɔ͂ ʔ ɔ̃ĩ ʔ
+2904	2011	Yoder 2011	942	2011	purik	purik	p u r i k	purik	p u r i k
+2913	2011	Yoder 2011	947	2011	ʔanɘk	'anėk	' a n ė k	ʔanək	ʔ a n ə k
+2934	2011	Yoder 2011	950	2011	pururu	pururu	p u r u r u	pururu	p u r u r u
+2943	2011	Yoder 2011	955	2011	kemaha	kEmaha	k E m a h a	kɛmaha	k ɛ m a h a
+2958	2011	Yoder 2011	956	2011	ʔeap	'Eap	' E a p	ʔɛap	ʔ ɛ a p
+2959	2011	Yoder 2011	957	2011	kaʔ-hori	ka'-hori	k a ' - h o r i	kaʔ-hori	k a ʔ - h o r i
+2961	2011	Yoder 2011	958	2011	karpe	karpE	k a r p E	karpɛ	k a r p ɛ
+2963	2011	Yoder 2011	959	2011	ĩũʔ	ĩũ'	ĩ ũ '	ĩũʔ	ĩ ũ ʔ
+2978	2011	Yoder 2011	962	2011	ka-ʔok	ka-'ok	k a - ' o k	ka-ʔok	k a - ʔ o k
+2980	2011	Yoder 2011	963	2011	ʔeok	'Eok	' E o k	ʔɛok	ʔ ɛ o k
+2988	2011	Yoder 2011	969	2011	tokoʔ	toko'	t o k o '	tokoʔ	t o k o ʔ
+2990	2011	Yoder 2011	970	2011	ka-bɨaʔ	ka-bu̇a'	k a - b u̇ a '	ka-bɨaʔ	k a - b ɨ a ʔ
+3001	2011	Yoder 2011	975	2011	ki-pahnauaʔ	ki-pahna:ua'	k i - p a h n a:u a '	ki-pahnauaʔ	k i - p a h n au a ʔ
+3002	2011	Yoder 2011	976	2011	ki-bibi	ki-bibi	k i - b i b i	ki-bibi	k i - b i b i
+3003	2011	Yoder 2011	977	2011	ki-nonon	ki-nonon	k i - n o n o n	ki-nonon	k i - n o n o n
+3006	2011	Yoder 2011	979	2011	ʔapɘh	'apėh	' a p ė h	ʔapəh	ʔ a p ə h
+3020	2011	Yoder 2011	980	2011	ki	ki	k i	ki	k i
+3043	2011	Yoder 2011	984	2011	iur	iur	i u r	iur	i u r
+3046	2011	Yoder 2011	986	2011	kõʔ	kõ'	k õ '	kɔ͂ʔ	k ɔ͂ ʔ
+3058	2011	Yoder 2011	993	2011	ka-ʔuar	ka-'uar	k a - ' u a r	ka-ʔuar	k a - ʔ u a r
+3066	2011	Yoder 2011	994	2011	dɘhɘ ; pa-dɘhɘ	dėhė ; pa-dėhė	d ė h ė # ; # p a - d ė h ė	dəhə ; pa-dəhə	d ə h ə # ; # p a - d ə h ə
+3074	2011	Yoder 2011	995	2011	bah ; bahauʔ	bah ; baha:u'	b a h # ; # b a h a:u '	bah ; bahauʔ	b a h # ; # b a h au ʔ
+3076	2011	Yoder 2011	996	2011	kahaʔ	kaha'	k a h a '	kahaʔ	k a h a ʔ
+3087	2011	Yoder 2011	999	2011	ka-nɨ	ka-nu̇	k a - n u̇	ka-nɨ	k a - n ɨ
+3091	2011	Yoder 2011	1001	2011	ʔanoʔon	'ano'on	' a n o ' o n	ʔanoʔon	ʔ a n o ʔ o n
+3120	2011	Yoder 2011	1009	2011	teʔ	tE'	t E '	tɛʔ	t ɛ ʔ
+3122	2011	Yoder 2011	1010	2011	ʔi-ʔĩẽʔ	'i-'ĩẽ'	' i - ' ĩ ẽ '	ʔi-ʔĩɛ̃ʔ	ʔ i - ʔ ĩ ɛ̃ ʔ
+3128	2011	Yoder 2011	1015	2011	ʔɘi	'ė:i	' ė:i	ʔəi	ʔ əi
+3132	2011	Yoder 2011	1018	2011	keʔem	kE'Em	k E ' E m	kɛʔɛm	k ɛ ʔ ɛ m
+3135	2011	Yoder 2011	1019	2011	pa-keʔem	pa-kE'Em	p a - k E ' E m	pa-kɛʔɛm	p a - k ɛ ʔ ɛ m
+3139	2011	Yoder 2011	1020	2011	paki	paki	p a k i	paki	p a k i
+3147	2011	Yoder 2011	1022	2011	kin	kin	k i n	kin	k i n
+3154	2011	Yoder 2011	1024	2011	kikɨhɨr	kiku̇hu̇r	k i k u̇ h u̇ r	kikɨhɨr	k i k ɨ h ɨ r
+3161	2011	Yoder 2011	1027	2011	kaʔruru	ka'ruru	k a ' r u r u	kaʔruru	k a ʔ r u r u
+3178	2011	Yoder 2011	1031	2011	ʔa-bɘ ; ʔa-be	'a-bė ; 'a-bE	' a - b ė # ; # ' a - b E	ʔa-bə ; ʔa-bɛ	ʔ a - b ə # ; # ʔ a - b ɛ
+3191	2011	Yoder 2011	1037	2011	hop	hop	h o p	hop	h o p
+3193	2011	Yoder 2011	1038	2011	kaʔ-hop	ka'-hop	k a ' - h o p	kaʔ-hop	k a ʔ - h o p
+3196	2011	Yoder 2011	1041	2011	iakuru	iakuru	i a k u r u	iakuru	i a k u r u
+3201	2011	Yoder 2011	1044	2011	pau	pa:u	p a:u	pau	p au
+3207	2011	Yoder 2011	1045	2011	kami	kami	k a m i	kami	k a m i
+3209	2011	Yoder 2011	1046	2011	kud	kud	k u d	kud	k u d
+3231	2011	Yoder 2011	1049	2011	iub	iub	i u b	iub	i u b
+3246	2011	Yoder 2011	1053	2011	ʔapiah	'apiah	' a p i a h	ʔapiah	ʔ a p i a h
+3251	2011	Yoder 2011	1055	2011	ʔarɘ	'arė	' a r ė	ʔarə	ʔ a r ə
+3260	2011	Yoder 2011	1058	2011	pãʔĩõp	pã'ĩõp	p ã ' ĩ õ p	pãʔĩɔ͂p	p ã ʔ ĩ ɔ͂ p
+3280	2011	Yoder 2011	1062	2011	kahaiʔ ratuh	kaha:i' ratuh	k a h a:i ' # r a t u h	kahaiʔ ratuh	k a h ai ʔ # r a t u h
+3290	2011	Yoder 2011	1065	2011	ko	ko	k o	ko	k o
+3299	2011	Yoder 2011	1067	2011	pah-nuaʔ	pah-nua'	p a h - n u a '	pah-nuaʔ	p a h - n u a ʔ
+3310	2011	Yoder 2011	1070	2011	dar	dar	d a r	dar	d a r
+3314	2011	Yoder 2011	1072	2011	ioroi	ioro:i	i o r o:i	iorɔi	i o r ɔi
+3319	2011	Yoder 2011	1073	2011	koheaʔ	kohEa'	k o h E a '	kohɛaʔ	k o h ɛ a ʔ
+3342	2011	Yoder 2011	1076	2011	ʔu	'u	' u	ʔu	ʔ u
+3353	2011	Yoder 2011	1080	2011	iatapux	iatapux	i a t a p u x	iatapuç	i a t a p u ç
+3367	2011	Yoder 2011	1083	2011	pamahaum	pamaha:um	p a m a h a:u m	pamahaum	p a m a h au m
+3381	2011	Yoder 2011	1091	2011	ki-pop	ki-pop	k i - p o p	ki-pop	k i - p o p
+3386	2011	Yoder 2011	1094	2011	tutiʔ	tuti'	t u t i '	tutiʔ	t u t i ʔ
+3394	2011	Yoder 2011	1096	2011	ho	ho	h o	ho	h o
+3402	2011	Yoder 2011	1099	2011	iohom	iohom	i o h o m	iohom	i o h o m
+3405	2011	Yoder 2011	1102	2011	he	hE	h E	hɛ	h ɛ
+3407	2011	Yoder 2011	1103	2011	ioko	ioko	i o k o	ioko	i o k o
+3409	2011	Yoder 2011	1104	2011	ĩĩʔĩ	ĩĩ'ĩ	ĩ ĩ ' ĩ	ĩĩʔĩ	ĩ ĩ ʔ ĩ
+3416	2011	Yoder 2011	1107	2011	kite	kitE	k i t E	kitɛ	k i t ɛ
+3428	2011	Yoder 2011	1108	2011	iaʔa	ia'a	i a ' a	iaʔa	i a ʔ a
+3441	2011	Yoder 2011	1110	2011	kẽp	kẽp	k ẽ p	kɛ̃p	k ɛ̃ p
+3448	2011	Yoder 2011	1111	2011	ki-hiam	ki-hiam	k i - h i a m	ki-hiam	k i - h i a m
+3453	2011	Yoder 2011	1113	2011	tabɨdaʔ	tabu̇da'	t a b u̇ d a '	tabɨdaʔ	t a b ɨ d a ʔ
+3456	2011	Yoder 2011	1115	2011	bakaui	baka:ui	b a k a:u i	bakaui	b a k au i
+3458	2011	Yoder 2011	1116	2011	nipon	nipon	n i p o n	nipon	n i p o n
+3477	2011	Yoder 2011	1125	2011	kãhẽ	kãhẽ	k ã h ẽ	kãhɛ̃	k ã h ɛ̃
+3479	2011	Yoder 2011	1126	2011	kĩʔĩɘ̃kĩʔĩɘ	kĩ'ĩė̃kĩ'ĩė	k ĩ ' ĩ ė ̃ k ĩ ' ĩ ė	kĩʔĩə̃kĩʔĩə	k ĩ ʔ ĩ ə ̃ k ĩ ʔ ĩ ə
+3484	2011	Yoder 2011	1130	2011	nepe	nEpE	n E p E	nɛpɛ	n ɛ p ɛ
+3486	2011	Yoder 2011	1131	2011	ʔanɨkɘ	'anu̇kė	' a n u̇ k ė	ʔanɨkə	ʔ a n ɨ k ə
+3489	2011	Yoder 2011	1133	2011	kinu	kinu	k i n u	kinu	k i n u
+3491	2011	Yoder 2011	1134	2011	iɘ	iė	i ė	iə	i ə
+3497	2011	Yoder 2011	1135	2011	ʔẽĩɘ̃p	'ẽ:ĩė̃p	' ẽ:ĩ ė ̃ p	ʔɛ͂i͂ə̃p	ʔ ɛ͂i͂ ə ̃ p
+3502	2011	Yoder 2011	1138	2011	koar	koar	k o a r	koar	k o a r
+3508	2011	Yoder 2011	1141	2011	iɘnɘn	iėnėn	i ė n ė n	iənən	i ə n ə n
+3511	2011	Yoder 2011	1143	2011	ʔame	'amE	' a m E	ʔamɛ	ʔ a m ɛ
+3514	2011	Yoder 2011	1145	2011	kĩkẽʔ	kĩkẽ'	k ĩ k ẽ '	kĩkɛ̃ʔ	k ĩ k ɛ̃ ʔ
+3516	2011	Yoder 2011	1146	2011	ʔẽõ	'ẽõ	' ẽ õ	ʔɛ̃ɔ͂	ʔ ɛ̃ ɔ͂
+3518	2011	Yoder 2011	1147	2011	pĩ	pĩ	p ĩ	pĩ	p ĩ
+3520	2011	Yoder 2011	1148	2011	ʔubiʔ	'ubi'	' u b i '	ʔubiʔ	ʔ u b i ʔ
+3524	2011	Yoder 2011	1150	2011	karaʔai	kara'a:i	k a r a ' a:i	karaʔai	k a r a ʔ ai
+3528	2011	Yoder 2011	1153	2011	kaʔah	ka'ah	k a ' a h	kaʔah	k a ʔ a h
+3534	2011	Yoder 2011	1158	2011	tereʔ	tErE'	t E r E '	tɛrɛʔ	t ɛ r ɛ ʔ
+3536	2011	Yoder 2011	1159	2011	kuti	kuti	k u t i	kuti	k u t i
+3540	2011	Yoder 2011	1160	2011	tepaʔ	tEpa'	t E p a '	tɛpaʔ	t ɛ p a ʔ
+3552	2011	Yoder 2011	1162	2011	kah-re. pa-hahre	kah-rE. pa-hahrE	k a h - r E . # p a - h a h r E	kah-rɛ. pa-hahrɛ	k a h - r ɛ . # p a - h a h r ɛ
+3562	2011	Yoder 2011	1163	2011	pur	pur	p u r	pur	p u r
+3589	2011	Yoder 2011	1171	2011	iurpuʔ	iurpu'	i u r p u '	iurpuʔ	i u r p u ʔ
+3614	2011	Yoder 2011	1178	2011	pa-kõʔõãʔ	pa-kõ'õã'	p a - k õ ' õ ã '	pa-kɔ͂ʔɔ͂ãʔ	p a - k ɔ͂ ʔ ɔ͂ ã ʔ
+3631	2011	Yoder 2011	1187	2011	nanau	nana:u	n a n a:u	nanau	n a n au
+3639	2011	Yoder 2011	1192	2011	napu	napu	n a p u	napu	n a p u
+3644	2011	Yoder 2011	1194	2011	kãʔẽ	kã'ẽ	k ã ' ẽ	kãʔɛ̃	k ã ʔ ɛ̃
+3652	2011	Yoder 2011	1199	2011	naʔan ; nahʔem	na'an ; nah'Em	n a ' a n # ; # n a h ' E m	naʔan ; nahʔɛm	n a ʔ a n # ; # n a h ʔ ɛ m
+3669	2011	Yoder 2011	1202	2011	kɨʔkah	ku̇'kah	k u̇ ' k a h	kɨʔkah	k ɨ ʔ k a h
+3674	2011	Yoder 2011	1203	2011	ʔɨʔkah	'u̇'kah	' u̇ ' k a h	ʔɨʔkah	ʔ ɨ ʔ k a h
+3683	2011	Yoder 2011	1206	2011	kokoiʔea	koko:i'Ea	k o k o:i ' E a	kokɔiʔɛa	k o k ɔi ʔ ɛ a
+3695	2011	Yoder 2011	1208	2011	dix	dix	d i x	diç	d i ç
+3709	2011	Yoder 2011	1213	2011	dahɨd(-aʔ)	dahu̇d(-a')	d a h u̇ d ( - a ' )	dahɨd(-aʔ)	d a h ɨ d ( - a ʔ )
+3712	2011	Yoder 2011	1215	2011	piar	piar	p i a r	piar	p i a r
+3723	2011	Yoder 2011	1219	2011	ʔẽp	'ẽp	' ẽ p	ʔɛ̃p	ʔ ɛ̃ p
+3744	2011	Yoder 2011	1226	2011	ʔareʔ	'arE'	' a r E '	ʔarɛʔ	ʔ a r ɛ ʔ
+3773	2011	Yoder 2011	1241	2011	iɨdaʔ	iu̇da'	i u̇ d a '	iɨdaʔ	i ɨ d a ʔ
+3775	2011	Yoder 2011	1242	2011	kɨr	ku̇r	k u̇ r	kɨr	k ɨ r
+3778	2011	Yoder 2011	1243	2011	kor	kor	k o r	kor	k o r
+3796	2011	Yoder 2011	1246	2011	doab	doab	d o a b	doab	d o a b
+3808	2011	Yoder 2011	1250	2011	naʔah	na'ah	n a ' a h	naʔah	n a ʔ a h
+3815	2011	Yoder 2011	1252	2011	kinaʔah	kina'ah	k i n a ' a h	kinaʔah	k i n a ʔ a h
+3821	2011	Yoder 2011	1255	2011	keier	ke:iEr	k e:i E r	kɛiɛr	k ɛi ɛ r
+3823	2011	Yoder 2011	1256	2011	kiʔnen	ki'nEn	k i ' n E n	kiʔnɛn	k i ʔ n ɛ n
+3825	2011	Yoder 2011	1257	2011	pãʔõpã	pã'õpã	p ã ' õ p ã	pãʔɔ͂pã	p ã ʔ ɔ͂ p ã
+3831	2011	Yoder 2011	1258	2011	ʔakɨrib	'aku̇rib	' a k u̇ r i b	ʔakɨrib	ʔ a k ɨ r i b
+3853	2011	Yoder 2011	1262	2011	bah	bah	b a h	bah	b a h
+3855	2011	Yoder 2011	1264	2011	ʔi-	'i-	' i -	ʔi-	ʔ i -
+3856	2011	Yoder 2011	1265	2011	ʔaraʔiah	'ara'iah	' a r a ' i a h	ʔaraʔiah	ʔ a r a ʔ i a h
+3862	2011	Yoder 2011	1268	2011	maʔau	ma'a:u	m a ' a:u	maʔau	m a ʔ au
+3879	2011	Yoder 2011	1278	2011	kokon	kokon	k o k o n	kokon	k o k o n
+3881	2011	Yoder 2011	1279	2011	koan	koan	k o a n	koan	k o a n
+3888	2011	Yoder 2011	1281	2011	ki-keor	ki-kEor	k i - k E o r	ki-kɛor	k i - k ɛ o r
+3896	2011	Yoder 2011	1282	2011	hĩũk	hĩũk	h ĩ ũ k	hĩũk	h ĩ ũ k
+3902	2011	Yoder 2011	1287	2011	kokoʔoa	koko'oa	k o k o ' o a	kokoʔoa	k o k o ʔ o a
+3904	2011	Yoder 2011	1288	2011	pah-koʔoa	pah-ko'oa	p a h - k o ' o a	pah-koʔoa	p a h - k o ʔ o a
+3922	2011	Yoder 2011	1293	2011	kaʔɘk	ka'ėk	k a ' ė k	kaʔək	k a ʔ ə k
+3934	2011	Yoder 2011	1301	2011	ʔiʔmɘ ; pa-himɘ	'i'mė ; pa-himė	' i ' m ė # ; # p a - h i m ė	ʔiʔmə ; pa-himə	ʔ i ʔ m ə # ; # p a - h i m ə
+3951	2011	Yoder 2011	1304	2011	pɘix	pė:ix	p ė:i x	pəiç	p əi ç
+3960	2011	Yoder 2011	1309	2011	babu	babu	b a b u	babu	b a b u
+3975	2011	Yoder 2011	1320	2011	hau	ha:u	h a:u	hau	h au
+3991	2011	Yoder 2011	1321	2011	man	man	m a n	man	m a n
+3996	2011	Yoder 2011	1322	2011	ʔɨki	'u̇ki	' u̇ k i	ʔɨki	ʔ ɨ k i
+3998	2011	Yoder 2011	1323	2011	ʔauaʔ	'a:ua'	' a:u a '	ʔauaʔ	ʔ au a ʔ
+4011	2011	Yoder 2011	1324	2011	mɘk	mėk	m ė k	mək	m ə k
+4029	2011	Yoder 2011	1332	2011	piɘh	piėh	p i ė h	piəh	p i ə h
+4042	2011	Yoder 2011	1336	2011	dapiʔ	dapi'	d a p i '	dapiʔ	d a p i ʔ
+4053	2011	Yoder 2011	1342	2011	kɘ̃	kė̃	k ė ̃	kə̃	k ə ̃
+4058	2011	Yoder 2011	1343	2011	ʔubeʔ	'ubE'	' u b E '	ʔubɛʔ	ʔ u b ɛ ʔ
+4064	2011	Yoder 2011	1345	2011	paʔob	pa'ob	p a ' o b	paʔob	p a ʔ o b
+4071	2011	Yoder 2011	1346	2011	pa-nauaʔ	pa-na:ua'	p a - n a:u a '	pa-nauaʔ	p a - n au a ʔ
+4087	2011	Yoder 2011	1353	2011	ĩũʔũ	ĩũ'ũ	ĩ ũ ' ũ	ĩũʔũ	ĩ ũ ʔ ũ
+4112	2011	Yoder 2011	1367	2011	pa-hitɘi	pa-hitė:i	p a - h i t ė:i	pa-hitəi	p a - h i t əi
+4113	2011	Yoder 2011	1368	2011	ʔihtɘi	'ihtė:i	' i h t ė:i	ʔihtəi	ʔ i h t əi
+4118	2011	Yoder 2011	1371	2011	dupi	dupi	d u p i	dupi	d u p i
+4120	2011	Yoder 2011	1372	2011	iuk	iuk	i u k	iuk	i u k
+4139	2011	Yoder 2011	1377	2011	kanɨa	kanu̇a	k a n u̇ a	kanɨa	k a n ɨ a
+4160	2011	Yoder 2011	1384	2011	pahuman	pahuman	p a h u m a n	pahuman	p a h u m a n
+4172	2011	Yoder 2011	1387	2011	kiʔia	ki'ia	k i ' i a	kiʔia	k i ʔ i a
+4193	2011	Yoder 2011	1391	2011	maʔ	ma'	m a '	maʔ	m a ʔ
+4213	2011	Yoder 2011	1394	2011	kɘx	kėx	k ė x	kəç	k ə ç
+4233	2011	Yoder 2011	1399	2011	kaʔ	ka'	k a '	kaʔ	k a ʔ
+4249	2011	Yoder 2011	1407	2011	ʔẽõ	'ẽõ	' ẽ õ	ʔɛ̃ɔ͂	ʔ ɛ̃ ɔ͂
+4253	2011	Yoder 2011	1408	2011	ka-leʔleʔ	ka-lE'lE'	k a - l E ' l E '	ka-lɛʔlɛʔ	k a - l ɛ ʔ l ɛ ʔ
+4255	2011	Yoder 2011	1409	2011	kaʔ-bibik	ka'-bibik	k a ' - b i b i k	kaʔ-bibik	k a ʔ - b i b i k
+4276	2011	Yoder 2011	1419	2011	haruʔ	haru'	h a r u '	haruʔ	h a r u ʔ
+4282	2011	Yoder 2011	1421	2011	tanaia	tana:ia	t a n a:i a	tanaia	t a n ai a
+4297	2011	Yoder 2011	1424	2011	ni	ni	n i	ni	n i
+4309	2011	Yoder 2011	1426	2011	kɨ-ʔɨk	ku̇-'u̇k	k u̇ - ' u̇ k	kɨ-ʔɨk	k ɨ - ʔ ɨ k
+4317	2011	Yoder 2011	1430	2011	paiɘʔoi	pa:iė'o:i	p a:i ė ' o:i	paiəʔɔi	p ai ə ʔ ɔi
+4324	2011	Yoder 2011	1431	2011	puk	puk	p u k	puk	p u k
+4335	2011	Yoder 2011	1432	2011	pane	panE	p a n E	panɛ	p a n ɛ
+4349	2011	Yoder 2011	1436	2011	kĩk	kĩk	k ĩ k	kĩk	k ĩ k
+4357	2011	Yoder 2011	1438	2011	iaru	iaru	i a r u	iaru	i a r u
+4382	2011	Yoder 2011	1448	2011	ka-ʔu	ka-'u	k a - ' u	ka-ʔu	k a - ʔ u
+4388	2011	Yoder 2011	1452	2011	koʔmai	ko'ma:i	k o ' m a:i	koʔmai	k o ʔ m ai
+4408	2011	Yoder 2011	1455	2011	karkoʔoaix	karko'oa:ix	k a r k o ' o a:i x	karkoʔoaiç	k a r k o ʔ o ai ç
+4425	2011	Yoder 2011	1458	2011	kaba kahaiʔ	kaba kaha:i'	k a b a # k a h a:i '	kaba kahaiʔ	k a b a # k a h ai ʔ
+4445	2011	Yoder 2011	1466	2011	keʔpan	kE'pan	k E ' p a n	kɛʔpan	k ɛ ʔ p a n
+4473	2011	Yoder 2011	1471	2011	pan	pan	p a n	pan	p a n
+4487	2011	Yoder 2011	1472	2011	keʔ	kE'	k E '	kɛʔ	k ɛ ʔ
+4493	2011	Yoder 2011	1475	2011	ki-ʔiai	ki-'ia:i	k i - ' i a:i	ki-ʔiai	k i - ʔ i ai
+4495	2011	Yoder 2011	1476	2011	keam	kEam	k E a m	kɛam	k ɛ a m
+4516	2011	Yoder 2011	1483	2011	nɘʔɘn	nė'ėn	n ė ' ė n	nəʔən	n ə ʔ ə n
+4521	2011	Yoder 2011	1484	2011	iuʔuis	iu'uis	i u ' u i s	iuʔuis	i u ʔ u i s
+4544	2011	Yoder 2011	1493	2011	iaʔdɘb	ia'dėb	i a ' d ė b	iaʔdəb	i a ʔ d ə b
+4588	2011	Yoder 2011	1504	2011	kahaiʔ	kaha:i'	k a h a:i '	kahaiʔ	k a h ai ʔ
+4603	2011	Yoder 2011	1515	2011	ka-uaua	ka-ua:ua	k a - u a:u a	ka-uaua	k a - u au a
+4604	2011	Yoder 2011	1516	2011	pik	pik	p i k	pik	p i k
+4609	2011	Yoder 2011	1518	2011	puka	puka	p u k a	puka	p u k a
+4620	2011	Yoder 2011	1523	2011	daʔarah	da'arah	d a ' a r a h	daʔarah	d a ʔ a r a h
+4626	2011	Yoder 2011	1524	2011	kahaiʔ mɘh	kaha:i' mėh	k a h a:i ' # m ė h	kahaiʔ məh	k a h ai ʔ # m ə h
+4630	2011	Yoder 2011	1527	2011	haruk	haruk	h a r u k	haruk	h a r u k
+4644	2011	Yoder 2011	1536	2011	ki-didix	ki-didix	k i - d i d i x	ki-didiç	k i - d i d i ç
+4661	2011	Yoder 2011	1538	2011	iuʔuis	iu'uis	i u ' u i s	iuʔuis	i u ʔ u i s
+4683	2011	Yoder 2011	1549	2011	ʔanima	'anima	' a n i m a	ʔanima	ʔ a n i m a
+4686	2011	Yoder 2011	1550	2011	kaper	kapEr	k a p E r	kapɛr	k a p ɛ r
+4688	2011	Yoder 2011	1551	2011	parna	parna	p a r n a	parna	p a r n a
+4694	2011	Yoder 2011	1553	2011	kĩ-ʔĩɘ	kĩ-'ĩė	k ĩ - ' ĩ ė	kĩ-ʔĩə	k ĩ - ʔ ĩ ə
+4712	2011	Yoder 2011	1561	2011	iakoro	iakoro	i a k o r o	iakoro	i a k o r o
+4719	2011	Yoder 2011	1565	2011	ʔi	'i	' i	ʔi	ʔ i
+4724	2011	Yoder 2011	1568	2011	pitoroʔ	pitoro'	p i t o r o '	pitoroʔ	p i t o r o ʔ
+4749	2011	Yoder 2011	1573	2011	kak	kak	k a k	kak	k a k
+4759	2011	Yoder 2011	1577	2011	dak	dak	d a k	dak	d a k
+4762	2011	Yoder 2011	1578	2011	pãĩx	pã:ĩx	p ã:ĩ x	pãĩç	p ãĩ ç
+4767	2011	Yoder 2011	1580	2011	roro	roro	r o r o	roro	r o r o
+4770	2011	Yoder 2011	1582	2011	kabarar	kabarar	k a b a r a r	kabarar	k a b a r a r
+4792	2011	Yoder 2011	1585	2011	koi	ko:i	k o:i	kɔi	k ɔi
+4809	2011	Yoder 2011	1594	2011	tipiʔ	tipi'	t i p i '	tipiʔ	t i p i ʔ
+4817	2011	Yoder 2011	1599	2011	ki-deok	ki-dEok	k i - d E o k	ki-dɛok	k i - d ɛ o k
+4838	2011	Yoder 2011	1609	2011	naʔinɘ	na'inė	n a ' i n ė	naʔinə	n a ʔ i n ə
+4844	2011	Yoder 2011	1612	2011	kɘʔɘh	kė'ėh	k ė ' ė h	kəʔəh	k ə ʔ ə h
+4849	2011	Yoder 2011	1613	2011	ka-rɘʔ	ka-rė'	k a - r ė '	ka-rəʔ	k a - r ə ʔ
+4853	2011	Yoder 2011	1614	2011	kɘʔ	kė'	k ė '	kəʔ	k ə ʔ
+4862	2011	Yoder 2011	1617	2011	ia-ʔitar	ia-'itar	i a - ' i t a r	ia-ʔitar	i a - ʔ i t a r
+4865	2011	Yoder 2011	1620	2011	iumuh	iumuh	i u m u h	iumuh	i u m u h
+4879	2011	Yoder 2011	1625	2011	iukua	iukua	i u k u a	iukua	i u k u a
+4888	2011	Yoder 2011	1630	2011	koʔma	ko'ma	k o ' m a	koʔma	k o ʔ m a
+4891	2011	Yoder 2011	1632	2011	haru-	haru-	h a r u -	haru-	h a r u -
+4893	2011	Yoder 2011	1633	2011	doioʔ	do:io'	d o:i o '	dɔioʔ	d ɔi o ʔ
+4900	2011	Yoder 2011	1637	2011	kekeʔ	kEkE'	k E k E '	kɛkɛʔ	k ɛ k ɛ ʔ
+4904	2011	Yoder 2011	1638	2011	ʔa-be	'a-bE	' a - b E	ʔa-bɛ	ʔ a - b ɛ
+4909	2011	Yoder 2011	1641	2011	iah-roʔoa	iah-ro'oa	i a h - r o ' o a	iah-roʔoa	i a h - r o ʔ o a
+4911	2011	Yoder 2011	1642	2011	kah-roʔoa	kah-ro'oa	k a h - r o ' o a	kah-roʔoa	k a h - r o ʔ o a
+4923	2011	Yoder 2011	1646	2011	iɘr	iėr	i ė r	iər	i ə r
+4925	2011	Yoder 2011	1647	2011	bui	bui	b u i	bui	b u i
+4927	2011	Yoder 2011	1648	2011	ʔa-ʔiur	'a-'iur	' a - ' i u r	ʔa-ʔiur	ʔ a - ʔ i u r
+4948	2011	Yoder 2011	1656	2011	ʔanɨk	'anu̇k	' a n u̇ k	ʔanɨk	ʔ a n ɨ k
+4950	2011	Yoder 2011	1657	2011	ʔor	'or	' o r	ʔor	ʔ o r
+4961	2011	Yoder 2011	1664	2011	tubuʔ	tubu'	t u b u '	tubuʔ	t u b u ʔ
+4963	2011	Yoder 2011	1665	2011	iahmiʔ ; ʔamiʔ	iahmi' ; 'ami'	i a h m i ' # ; # ' a m i '	iahmiʔ ; ʔamiʔ	i a h m i ʔ # ; # ʔ a m i ʔ
+4978	2011	Yoder 2011	1670	2011	kuʔiaʔ	ku'ia'	k u ' i a '	kuʔiaʔ	k u ʔ i a ʔ
+4989	2011	Yoder 2011	1673	2011	ʔãpũʔ	'ãpũ'	' ã p ũ '	ʔãpũʔ	ʔ ã p ũ ʔ
+4994	2011	Yoder 2011	1676	2011	ka-nih	ka-nih	k a - n i h	ka-nih	k a - n i h
+4998	2011	Yoder 2011	1677	2011	kã-ʔĩ	kã-'ĩ	k ã - ' ĩ	kã-ʔĩ	k ã - ʔ ĩ
+5002	2011	Yoder 2011	1678	2011	pãʔĩ	pã'ĩ	p ã ' ĩ	pãʔĩ	p ã ʔ ĩ
+5011	2011	Yoder 2011	1681	2011	pãʔõ	pã'õ	p ã ' õ	pãʔɔ͂	p ã ʔ ɔ͂
+5016	2011	Yoder 2011	1682	2011	ʔainɘn	'a:inėn	' a:i n ė n	ʔainən	ʔ ai n ə n
+5018	2011	Yoder 2011	1684	2011	rakit	rakit	r a k i t	rakit	r a k i t
+5031	2011	Yoder 2011	1689	2011	namutan	namutan	n a m u t a n	namutan	n a m u t a n
+5045	2011	Yoder 2011	1694	2011	tikus	tikus	t i k u s	tikus	t i k u s
+5056	2011	Yoder 2011	1698	2011	kĩhĩ	kĩhĩ	k ĩ h ĩ	kĩhĩ	k ĩ h ĩ
+5061	2011	Yoder 2011	1699	2011	pɨʔɨaʔ	pu̇'u̇a'	p u̇ ' u̇ a '	pɨʔɨaʔ	p ɨ ʔ ɨ a ʔ
+5111	2011	Yoder 2011	1713	2011	kaʔ-tok	ka'-tok	k a ' - t o k	kaʔ-tok	k a ʔ - t o k
+5133	2011	Yoder 2011	1721	2011	ba-kitaʔ ; ka-kitaʔ ; ia-kitaʔ	ba-kita' ; ka-kita' ; ia-kita'	b a - k i t a ' # ; # k a - k i t a ' # ; # i a - k i t a '	ba-kitaʔ ; ka-kitaʔ ; ia-kitaʔ	b a - k i t a ʔ # ; # k a - k i t a ʔ # ; # i a - k i t a ʔ
+5144	2011	Yoder 2011	1729	2011	bibi	bibi	b i b i	bibi	b i b i
+5169	2011	Yoder 2011	1741	2011	ʔarkix	'arkix	' a r k i x	ʔarkiç	ʔ a r k i ç
+5174	2011	Yoder 2011	1743	2011	padi	padi	p a d i	padi	p a d i
+5175	2011	Yoder 2011	1744	2011	tauah	ta:uah	t a:u a h	tauah	t au a h
+5192	2011	Yoder 2011	1749	2011	dab	dab	d a b	dab	d a b
+5202	2011	Yoder 2011	1753	2011	karah ʔeap	karah 'Eap	k a r a h # ' E a p	karah ʔɛap	k a r a h # ʔ ɛ a p
+5224	2011	Yoder 2011	1759	2011	kare	karE	k a r E	karɛ	k a r ɛ
+5233	2011	Yoder 2011	1760	2011	bero	bEro	b E r o	bɛro	b ɛ r o
+5251	2011	Yoder 2011	1764	2011	ʔeko	'Eko	' E k o	ʔɛko	ʔ ɛ k o
+5297	2011	Yoder 2011	1781	2011	ʔẽãp	'ẽãp	' ẽ ã p	ʔɛ̃ãp	ʔ ɛ̃ ã p
+5310	2011	Yoder 2011	1785	2011	iɨʔɨaʔ	iu̇'u̇a'	i u̇ ' u̇ a '	iɨʔɨaʔ	i ɨ ʔ ɨ a ʔ
+5314	2011	Yoder 2011	1787	2011	bohoi	boho:i	b o h o:i	bohɔi	b o h ɔi
+5320	2011	Yoder 2011	1788	2011	kadi	kadi	k a d i	kadi	k a d i
+5324	2011	Yoder 2011	1790	2011	baʔau	ba'a:u	b a ' a:u	baʔau	b a ʔ au
+5328	2011	Yoder 2011	1791	2011	ka-ro	ka-ro	k a - r o	ka-ro	k a - r o
+5330	2011	Yoder 2011	1792	2011	ka-rahrah	ka-rahrah	k a - r a h r a h	ka-rahrah	k a - r a h r a h
+5338	2011	Yoder 2011	1793	2011	kaʔ-bubu	ka'-bubu	k a ' - b u b u	kaʔ-bubu	k a ʔ - b u b u
+5364	2011	Yoder 2011	1805	2011	ki-pu	ki-pu	k i - p u	ki-pu	k i - p u
+5365	2011	Yoder 2011	1806	2011	pu	pu	p u	pu	p u
+5374	2011	Yoder 2011	1813	2011	kõʔkõʔ	kõ'kõ'	k õ ' k õ '	kɔ͂ʔkɔ͂ʔ	k ɔ͂ ʔ k ɔ͂ ʔ
+5387	2011	Yoder 2011	1819	2011	kanam	kanam	k a n a m	kanam	k a n a m
+5407	2011	Yoder 2011	1825	2011	doʔra	do'ra	d o ' r a	doʔra	d o ʔ r a
+5424	2011	Yoder 2011	1832	2011	kanimuʔ	kanimu'	k a n i m u '	kanimuʔ	k a n i m u ʔ
+5441	2011	Yoder 2011	1836	2011	pa-na	pa-na	p a - n a	pa-na	p a - n a
+5446	2011	Yoder 2011	1837	2011	ʔu(-ar) ; ki(r)-ʔu	'u(-ar) ; ki(r)-'u	' u ( - a r ) # ; # k i ( r ) - ' u	ʔu(-ar) ; ki(r)-ʔu	ʔ u ( - a r ) # ; # k i ( r ) - ʔ u
+5470	2011	Yoder 2011	1846	2011	ki-nenen	ki-nEnEn	k i - n E n E n	ki-nɛnɛn	k i - n ɛ n ɛ n
+5479	2011	Yoder 2011	1850	2011	hion	hion	h i o n	hion	h i o n
+5492	2011	Yoder 2011	1852	2011	iu	iu	i u	iu	i u
+5494	2011	Yoder 2011	1853	2011	haʔau	ha'a:u	h a ' a:u	haʔau	h a ʔ au
+5501	2011	Yoder 2011	1857	2011	korea	korEa	k o r E a	korɛa	k o r ɛ a
+5504	2011	Yoder 2011	1858	2011	hẽkũ	hẽkũ	h ẽ k ũ	hɛ̃kũ	h ɛ̃ k ũ
+5518	2011	Yoder 2011	1861	2011	pɨ	pu̇	p u̇	pɨ	p ɨ
+5521	2011	Yoder 2011	1862	2011	pah-pɨ	pah-pu̇	p a h - p u̇	pah-pɨ	p a h - p ɨ
+5528	2011	Yoder 2011	1863	2011	kaʔ-kũãʔ	ka'-kũã'	k a ' - k ũ ã '	kaʔ-kũãʔ	k a ʔ - k ũ ã ʔ
+5547	2011	Yoder 2011	1869	2011	kah-dɨaʔ ; ʔɨdiaʔ	kah-du̇a' ; 'u̇dia'	k a h - d u̇ a ' # ; # ' u̇ d i a '	kah-dɨaʔ ; ʔɨdiaʔ	k a h - d ɨ a ʔ # ; # ʔ ɨ d i a ʔ
+5555	2011	Yoder 2011	1872	2011	kudaʔai	kuda'a:i	k u d a ' a:i	kudaʔai	k u d a ʔ ai
+5579	2011	Yoder 2011	1876	2011	ʔarib he ʔaru	'arib hE 'aru	' a r i b # h E # ' a r u	ʔarib hɛ ʔaru	ʔ a r i b # h ɛ # ʔ a r u
+5591	2011	Yoder 2011	1880	2011	iaiʔ	ia:i'	i a:i '	iaiʔ	i ai ʔ
+5597	2011	Yoder 2011	1883	2011	pɨnaha(i)	pu̇naha(i)	p u̇ n a h a ( i )	pɨnaha(i)	p ɨ n a h a ( i )
+5602	2011	Yoder 2011	1884	2011	ka-pẽp	ka-pẽp	k a - p ẽ p	ka-pɛ̃p	k a - p ɛ̃ p
+5607	2011	Yoder 2011	1886	2011	ʔudɘx	'udėx	' u d ė x	ʔudəç	ʔ u d ə ç
+5610	2011	Yoder 2011	1887	2011	kit	kit	k i t	kit	k i t
+5612	2011	Yoder 2011	1888	2011	ʔaken	'akEn	' a k E n	ʔakɛn	ʔ a k ɛ n
+5620	2011	Yoder 2011	1889	2011	ka-ʔɘr	ka-'ėr	k a - ' ė r	ka-ʔər	k a - ʔ ə r
+5640	2011	Yoder 2011	1899	2011	baiu	ba:iu	b a:i u	baiu	b ai u
+5643	2011	Yoder 2011	1900	2011	ki-memek ; mamek	ki-mEmEk ; mamEk	k i - m E m E k # ; # m a m E k	ki-mɛmɛk ; mamɛk	k i - m ɛ m ɛ k # ; # m a m ɛ k
+5647	2011	Yoder 2011	1901	2011	ʔẽk	'ẽk	' ẽ k	ʔɛ̃k	ʔ ɛ̃ k
+5657	2011	Yoder 2011	1905	2011	pɘʔɘk ; pɘ̃ʔ	pė'ėk ; pė̃'	p ė ' ė k # ; # p ė ̃ '	pəʔək ; pə̃ʔ	p ə ʔ ə k # ; # p ə ̃ ʔ
+5672	2011	Yoder 2011	1909	2011	ka-kɨɘʔ	ka-ku̇ė'	k a - k u̇ ė '	ka-kɨəʔ	k a - k ɨ ə ʔ
+5679	2011	Yoder 2011	1911	2011	ʔamiʔiam	'ami'iam	' a m i ' i a m	ʔamiʔiam	ʔ a m i ʔ i a m
+5684	2011	Yoder 2011	1913	2011	pa-ʔoaʔ	pa-'oa'	p a - ' o a '	pa-ʔoaʔ	p a - ʔ o a ʔ
+5696	2011	Yoder 2011	1918	2011	pãĩk	pã:ĩk	p ã:ĩ k	pãĩk	p ãĩ k
+5705	2011	Yoder 2011	1923	2011	ka-niʔ	ka-ni'	k a - n i '	ka-niʔ	k a - n i ʔ
+5722	2011	Yoder 2011	1926	2011	ka-pux	ka-pux	k a - p u x	ka-puç	k a - p u ç
+5731	2011	Yoder 2011	1932	2011	pinohoi	pinoho:i	p i n o h o:i	pinohɔi	p i n o h ɔi
+5744	2011	Yoder 2011	1935	2011	iohor	iohor	i o h o r	iohor	i o h o r
+5770	2011	Yoder 2011	1940	2011	ki-hĩẽk	ki-hĩẽk	k i - h ĩ ẽ k	ki-hĩɛ̃k	k i - h ĩ ɛ̃ k
+5788	2011	Yoder 2011	1943	2011	ʔakiʔakin	'aki'akin	' a k i ' a k i n	ʔakiʔakin	ʔ a k i ʔ a k i n
+5806	2011	Yoder 2011	1950	2011	ka-hɘʔ	ka-hė'	k a - h ė '	ka-həʔ	k a - h ə ʔ
+5811	2011	Yoder 2011	1951	2011	ka-pẽʔ	ka-pẽ'	k a - p ẽ '	ka-pɛ̃ʔ	k a - p ɛ̃ ʔ
+5823	2011	Yoder 2011	1952	2011	iuk	iuk	i u k	iuk	i u k
+5825	2011	Yoder 2011	1953	2011	ka-ʔeaʔea	ka-'Ea'Ea	k a - ' E a ' E a	ka-ʔɛaʔɛa	k a - ʔ ɛ a ʔ ɛ a
+5827	2011	Yoder 2011	1954	2011	kuruh	kuruh	k u r u h	kuruh	k u r u h
+5843	2011	Yoder 2011	1957	2011	ʔeaudauoh	'Ea:uda:uoh	' E a:u d a:u o h	ʔɛaudauoh	ʔ ɛ au d au o h
+5853	2011	Yoder 2011	1962	2011	kĩʔ	kĩ'	k ĩ '	kĩʔ	k ĩ ʔ
+5859	2011	Yoder 2011	1965	2011	ba-bip	ba-bip	b a - b i p	ba-bip	b a - b i p
+5876	2011	Yoder 2011	1970	2011	ba-ʔueh	ba-'uEh	b a - ' u E h	ba-ʔuɛh	b a - ʔ u ɛ h
+5886	2011	Yoder 2011	1971	2011	ʔueh	'uEh	' u E h	ʔuɛh	ʔ u ɛ h
+5897	2011	Yoder 2011	1977	2011	karneno	karnEno	k a r n E n o	karnɛno	k a r n ɛ n o
+5922	2011	Yoder 2011	1982	2011	nuʔik ; nuʔik nuʔ	nu'ik ; nu'ik nu'	n u ' i k # ; # n u ' i k # n u '	nuʔik ; nuʔik nuʔ	n u ʔ i k # ; # n u ʔ i k # n u ʔ
+5933	2011	Yoder 2011	1987	2011	minuʔ	minu'	m i n u '	minuʔ	m i n u ʔ
+5944	2011	Yoder 2011	1989	2011	kano	kano	k a n o	kano	k a n o
+5960	2011	Yoder 2011	1997	2011	kãhĩp	kãhĩp	k ã h ĩ p	kãhĩp	k ã h ĩ p
+5978	2011	Yoder 2011	2004	2011	ka-der	ka-dEr	k a - d E r	ka-dɛr	k a - d ɛ r
+6009	2011	Yoder 2011	2018	2011	kais	ka:is	k a:i s	kais	k ai s
+6027	2011	Yoder 2011	2029	2011	ioʔoʔ	io'o'	i o ' o '	ioʔoʔ	i o ʔ o ʔ
+6046	2011	Yoder 2011	2039	2011	dapah	dapah	d a p a h	dapah	d a p a h
+6050	2011	Yoder 2011	2041	2011	kɘhɘi	kėhė:i	k ė h ė:i	kəhəi	k ə h əi
+6052	2011	Yoder 2011	2042	2011	ki-kɘhɘi	ki-kėhė:i	k i - k ė h ė:i	ki-kəhəi	k i - k ə h əi
+6056	2011	Yoder 2011	2043	2011	ki-noʔoe	ki-no'oE	k i - n o ' o E	ki-noʔoɛ	k i - n o ʔ o ɛ
+6057	2011	Yoder 2011	2044	2011	noʔoe	no'oE	n o ' o E	noʔoɛ	n o ʔ o ɛ
+6070	2011	Yoder 2011	2051	2011	pa-hito	pa-hito	p a - h i t o	pa-hito	p a - h i t o
+6071	2011	Yoder 2011	2052	2011	ʔa-hit	'a-hit	' a - h i t	ʔa-hit	ʔ a - h i t
+6077	2011	Yoder 2011	2054	2011	pa-lauaʔ	pa-la:ua'	p a - l a:u a '	pa-lauaʔ	p a - l au a ʔ
+6081	2011	Yoder 2011	2055	2011	poraʔ	pora'	p o r a '	poraʔ	p o r a ʔ
+6103	2011	Yoder 2011	2067	2011	kah-mih	kah-mih	k a h - m i h	kah-mih	k a h - m i h
+6106	2011	Yoder 2011	2068	2011	pĩh	pĩh	p ĩ h	pĩh	p ĩ h
+6110	2011	Yoder 2011	2070	2011	ki-bibiʔ	ki-bibi'	k i - b i b i '	ki-bibiʔ	k i - b i b i ʔ
+6116	2011	Yoder 2011	2071	2011	ki-tahaʔ	ki-taha'	k i - t a h a '	ki-tahaʔ	k i - t a h a ʔ
+6126	2011	Yoder 2011	2074	2011	hẽ	hẽ	h ẽ	hɛ̃	h ɛ̃
+6145	2011	Yoder 2011	2082	2011	ka-beʔ ; ʔa-beʔ	ka-bE' ; 'a-bE'	k a - b E ' # ; # ' a - b E '	ka-bɛʔ ; ʔa-bɛʔ	k a - b ɛ ʔ # ; # ʔ a - b ɛ ʔ
+6166	2011	Yoder 2011	2087	2011	koʔmim	ko'mim	k o ' m i m	koʔmim	k o ʔ m i m
+6174	2011	Yoder 2011	2089	2011	ki-kiar	ki-kiar	k i - k i a r	ki-kiar	k i - k i a r
+6175	2011	Yoder 2011	2090	2011	kiar	kiar	k i a r	kiar	k i a r
+6184	2011	Yoder 2011	2091	2011	ka-beh ; ʔa-beh	ka-bEh ; 'a-bEh	k a - b E h # ; # ' a - b E h	ka-bɛh ; ʔa-bɛh	k a - b ɛ h # ; # ʔ a - b ɛ h
+6206	2011	Yoder 2011	2100	2011	ki-kitix	ki-kitix	k i - k i t i x	ki-kitiç	k i - k i t i ç
+6208	2011	Yoder 2011	2101	2011	pa-kikitix	pa-kikitix	p a - k i k i t i x	pa-kikitiç	p a - k i k i t i ç
+6224	2011	Yoder 2011	2110	2011	puah	puah	p u a h	puah	p u a h
+6249	2011	Yoder 2011	2115	2011	(ka)ʔe	(ka)'E	( k a ) ' E	(ka)ʔɛ	( k a ) ʔ ɛ
+6276	2011	Yoder 2011	2123	2011	ka-ĩõ	ka-ĩõ	k a - ĩ õ	ka-ĩɔ͂	k a - ĩ ɔ͂
+6279	2011	Yoder 2011	2124	2011	pãĩõ	pã:ĩõ	p ã:ĩ õ	pãĩɔ͂	p ãĩ ɔ͂
+6301	2011	Yoder 2011	2133	2011	ka-ʔɨ̃ʔ	ka-'u̇̃'	k a - ' u̇ ̃ '	ka-ʔɨ̃ʔ	k a - ʔ ɨ ̃ ʔ
+6318	2011	Yoder 2011	2140	2011	ka-ropiʔ	ka-ropi'	k a - r o p i '	ka-ropiʔ	k a - r o p i ʔ
+6321	2011	Yoder 2011	2141	2011	kopiʔ	kopi'	k o p i '	kopiʔ	k o p i ʔ
+6370	2011	Yoder 2011	2159	2011	ki-kiʔ	ki-ki'	k i - k i '	ki-kiʔ	k i - k i ʔ
+6372	2011	Yoder 2011	2160	2011	kɨʔdɨx	ku̇'du̇x	k u̇ ' d u̇ x	kɨʔdɨç	k ɨ ʔ d ɨ ç
+6378	2011	Yoder 2011	2161	2011	kɘr	kėr	k ė r	kər	k ə r
+6388	2011	Yoder 2011	2166	2011	iɘmɘʔ	iėmė'	i ė m ė '	iəməʔ	i ə m ə ʔ
+6397	2011	Yoder 2011	2168	2011	ka-mɘn	ka-mėn	k a - m ė n	ka-mən	k a - m ə n
+6409	2011	Yoder 2011	2170	2011	kĩ-ʔĩãk	kĩ-'ĩãk	k ĩ - ' ĩ ã k	kĩ-ʔĩãk	k ĩ - ʔ ĩ ã k
+6415	2011	Yoder 2011	2171	2011	ʔĩʔĩãk	'ĩ'ĩãk	' ĩ ' ĩ ã k	ʔĩʔĩãk	ʔ ĩ ʔ ĩ ã k
+6423	2011	Yoder 2011	2175	2011	kup	kup	k u p	kup	k u p
+6430	2011	Yoder 2011	2178	2011	beia	be:ia	b e:i a	bɛia	b ɛi a
+6443	2011	Yoder 2011	2181	2011	jiʔ ; iiʔ	yi' ; ii'	y i ' # ; # i i '	jiʔ ; iiʔ	j i ʔ # ; # i i ʔ
+6468	2011	Yoder 2011	2190	2011	ʔudɘp	'udėp	' u d ė p	ʔudəp	ʔ u d ə p
+6477	2011	Yoder 2011	2194	2011	poro	poro	p o r o	poro	p o r o
+6495	2011	Yoder 2011	2198	2011	kĩpãʔãũp	kĩpã'ã:ũp	k ĩ p ã ' ã:ũ p	kĩpãʔãũp	k ĩ p ã ʔ ãũ p
+6517	2011	Yoder 2011	2206	2011	ʔẽõʔ	'ẽõ'	' ẽ õ '	ʔɛ̃ɔ͂ʔ	ʔ ɛ̃ ɔ͂ ʔ
+6522	2011	Yoder 2011	2208	2011	purdu	purdu	p u r d u	purdu	p u r d u
+6537	2011	Yoder 2011	2214	2011	dit	dit	d i t	dit	d i t
+6542	2011	Yoder 2011	2215	2011	ʔi-ʔuoʔ ; ʔi-ʔĩõʔ	'i-'uo' ; 'i-'ĩõ'	' i - ' u o ' # ; # ' i - ' ĩ õ '	ʔi-ʔuoʔ ; ʔi-ʔĩɔ͂ʔ	ʔ i - ʔ u o ʔ # ; # ʔ i - ʔ ĩ ɔ͂ ʔ
+6549	2011	Yoder 2011	2217	2011	keam	kEam	k E a m	kɛam	k ɛ a m
+6557	2011	Yoder 2011	2220	2011	hamɘʔ	hamė'	h a m ė '	haməʔ	h a m ə ʔ
+6563	2011	Yoder 2011	2221	2011	ʔẽãp	'ẽãp	' ẽ ã p	ʔɛ̃ãp	ʔ ɛ̃ ã p
+6585	2011	Yoder 2011	2225	2011	ka-nen	ka-nEn	k a - n E n	ka-nɛn	k a - n ɛ n
+6595	2011	Yoder 2011	2228	2011	ʔa-kitaʔ	'a-kita'	' a - k i t a '	ʔa-kitaʔ	ʔ a - k i t a ʔ
+6604	2011	Yoder 2011	2230	2011	kehiɨ	kEhiu̇	k E h i u̇	kɛhiɨ	k ɛ h i ɨ
+6630	2011	Yoder 2011	2236	2011	ʔẽʔ	'ẽ'	' ẽ '	ʔɛ̃ʔ	ʔ ɛ̃ ʔ
+6635	2011	Yoder 2011	2237	2011	pẽʔẽʔ	pẽ'ẽ'	p ẽ ' ẽ '	pɛ̃ʔɛ̃ʔ	p ɛ̃ ʔ ɛ̃ ʔ
+6637	2011	Yoder 2011	2239	2011	duri	duri	d u r i	duri	d u r i
+6648	2011	Yoder 2011	2245	2011	iamakaʔoaʔ	iamaka'oa'	i a m a k a ' o a '	iamakaʔoaʔ	i a m a k a ʔ o a ʔ
+6658	2011	Yoder 2011	2246	2011	kahaiʔ dibu	kaha:i' dibu	k a h a:i ' # d i b u	kahaiʔ dibu	k a h ai ʔ # d i b u
+6677	2011	Yoder 2011	2248	2011	ʔakɘr	'akėr	' a k ė r	ʔakər	ʔ a k ə r
+6694	2011	Yoder 2011	2254	2011	hanuʔ	hanu'	h a n u '	hanuʔ	h a n u ʔ
+6699	2011	Yoder 2011	2255	2011	pa-ʔitɘʔ	pa-'itė'	p a - ' i t ė '	pa-ʔitəʔ	p a - ʔ i t ə ʔ
+6702	2011	Yoder 2011	2256	2011	paiʔ	pa:i'	p a:i '	paiʔ	p ai ʔ
+6704	2011	Yoder 2011	2257	2011	ʔitɘʔ	'itė'	' i t ė '	ʔitəʔ	ʔ i t ə ʔ
+6709	2011	Yoder 2011	2258	2011	pa-tuʔ	pa-tu'	p a - t u '	pa-tuʔ	p a - t u ʔ
+6728	2011	Yoder 2011	2262	2011	dauoh	da:uoh	d a:u o h	dauoh	d au o h
+6735	2011	Yoder 2011	2266	2011	kir-koniʔi	kir-koni'i	k i r - k o n i ' i	kir-koniʔi	k i r - k o n i ʔ i
+6736	2011	Yoder 2011	2267	2011	koniʔi	koni'i	k o n i ' i	koniʔi	k o n i ʔ i
+6748	2011	Yoder 2011	2270	2011	ʔɨaʔ	'u̇a'	' u̇ a '	ʔɨaʔ	ʔ ɨ a ʔ
+6757	2011	Yoder 2011	2275	2011	ʔahdih ; kah-dih	'ahdih ; kah-dih	' a h d i h # ; # k a h - d i h	ʔahdih ; kah-dih	ʔ a h d i h # ; # k a h - d i h
+6762	2011	Yoder 2011	2277	2011	piak	piak	p i a k	piak	p i a k
+6798	2011	Yoder 2011	2290	2011	noʔman	no'man	n o ' m a n	noʔman	n o ʔ m a n
+6811	2011	Yoder 2011	2291	2011	di	di	d i	di	d i
+6822	2011	Yoder 2011	2293	2011	ʔekaʔ	'Eka'	' E k a '	ʔɛkaʔ	ʔ ɛ k a ʔ
+6832	2011	Yoder 2011	2296	2011	ka-pik	ka-pik	k a - p i k	ka-pik	k a - p i k
+6838	2011	Yoder 2011	2298	2011	ʔanuʔun	'anu'un	' a n u ' u n	ʔanuʔun	ʔ a n u ʔ u n
+6844	2011	Yoder 2011	2302	2011	ʔaduʔ	'adu'	' a d u '	ʔaduʔ	ʔ a d u ʔ
+6861	2011	Yoder 2011	2309	2011	noh	noh	n o h	noh	n o h
+6881	2011	Yoder 2011	2320	2011	karoa	karoa	k a r o a	karoa	k a r o a
+6885	2011	Yoder 2011	2321	2011	kit	kit	k i t	kit	k i t
+6891	2011	Yoder 2011	2324	2011	kaʔ-riprip	ka'-riprip	k a ' - r i p r i p	kaʔ-riprip	k a ʔ - r i p r i p
+6897	2011	Yoder 2011	2327	2011	hɘdik	hėdik	h ė d i k	hədik	h ə d i k
+6899	2011	Yoder 2011	2328	2011	pa-hɘdik	pa-hėdik	p a - h ė d i k	pa-hədik	p a - h ə d i k
+6902	2011	Yoder 2011	2329	2011	kɨx	ku̇x	k u̇ x	kɨç	k ɨ ç
+6922	2011	Yoder 2011	2333	2011	kahaiʔ kak	kaha:i' kak	k a h a:i ' # k a k	kahaiʔ kak	k a h ai ʔ # k a k
+6949	2011	Yoder 2011	2338	2011	ʔaru	'aru	' a r u	ʔaru	ʔ a r u
+6975	2011	Yoder 2011	2345	2011	pãĩũ	pã:ĩũ	p ã:ĩ ũ	pãĩũ	p ãĩ ũ
+6977	2011	Yoder 2011	2346	2011	uaʔ	ua'	u a '	uaʔ	u a ʔ
+7002	2011	Yoder 2011	2359	2011	mamik	mamik	m a m i k	mamik	m a m i k
+7005	2011	Yoder 2011	2360	2011	ʔĩk	'ĩk	' ĩ k	ʔĩk	ʔ ĩ k
+7008	2011	Yoder 2011	2362	2011	kĩhkõʔ	kĩhkõ'	k ĩ h k õ '	kĩhkɔ͂ʔ	k ĩ h k ɔ͂ ʔ
+7018	2011	Yoder 2011	2365	2011	ʔa-buaʔ	'a-bua'	' a - b u a '	ʔa-buaʔ	ʔ a - b u a ʔ
+7021	2011	Yoder 2011	2366	2011	ka-nai	ka-na:i	k a - n a:i	ka-nai	k a - n ai
+7024	2011	Yoder 2011	2368	2011	kũhũẽ	kũhũẽ	k ũ h ũ ẽ	kũhũɛ̃	k ũ h ũ ɛ̃
+7030	2011	Yoder 2011	2372	2011	kũʔũãh	kũ'ũãh	k ũ ' ũ ã h	kũʔũãh	k ũ ʔ ũ ã h
+7038	2011	Yoder 2011	2375	2011	ʔeok	'Eok	' E o k	ʔɛok	ʔ ɛ o k
+7047	2011	Yoder 2011	2377	2011	kaʔudar	ka'udar	k a ' u d a r	kaʔudar	k a ʔ u d a r
+7062	2011	Yoder 2011	2380	2011	iis	iis	i i s	iis	i i s
+7066	2011	Yoder 2011	2382	2011	ie	iE	i E	iɛ	i ɛ
+7070	2011	Yoder 2011	2383	2011	ke	kE	k E	kɛ	k ɛ
+7084	2011	Yoder 2011	2390	2011	ʔɘm	'ėm	' ė m	ʔəm	ʔ ə m
+7103	2011	Yoder 2011	2395	2011	kɘkɘ	kėkė	k ė k ė	kəkə	k ə k ə
+7107	2011	Yoder 2011	2396	2011	ĩũkũʔ	ĩũkũ'	ĩ ũ k ũ '	ĩũkũʔ	ĩ ũ k ũ ʔ
+7120	2011	Yoder 2011	2400	2011	iaʔkaʔaiʔ	ia'ka'a:i'	i a ' k a ' a:i '	iaʔkaʔaiʔ	i a ʔ k a ʔ ai ʔ
+7135	2011	Yoder 2011	2403	2011	kaʔ-tahur	ka'-tahur	k a ' - t a h u r	kaʔ-tahur	k a ʔ - t a h u r
+7140	2011	Yoder 2011	2404	2011	ʔa-nok	'a-nok	' a - n o k	ʔa-nok	ʔ a - n o k
+7146	2011	Yoder 2011	2407	2011	ʔeber	'EbEr	' E b E r	ʔɛbɛr	ʔ ɛ b ɛ r
+7150	2011	Yoder 2011	2409	2011	kãkõ	kãkõ	k ã k õ	kãkɔ͂	k ã k ɔ͂
+7168	2011	Yoder 2011	2410	2011	bɘ ; be	bė ; bE	b ė # ; # b E	bə ; bɛ	b ə # ; # b ɛ
+7177	2011	Yoder 2011	2412	2011	ʔa	'a	' a	ʔa	ʔ a
+7188	2011	Yoder 2011	2414	2011	ʔik	'ik	' i k	ʔik	ʔ i k
+7190	2011	Yoder 2011	2415	2011	nipɘʔ ; kĩ-pɘ̃ʔ	nipė' ; kĩ-pė̃'	n i p ė ' # ; # k ĩ - p ė ̃ '	nipəʔ ; kĩ-pə̃ʔ	n i p ə ʔ # ; # k ĩ - p ə ̃ ʔ
+7192	2011	Yoder 2011	2417	2011	iapaʔioi	iapa'io:i	i a p a ' i o:i	iapaʔiɔi	i a p a ʔ i ɔi
+7200	2011	Yoder 2011	2421	2011	kumu	kumu	k u m u	kumu	k u m u
+7204	2011	Yoder 2011	2423	2011	kaʔ-be	ka'-bE	k a ' - b E	kaʔ-bɛ	k a ʔ - b ɛ
+7212	2011	Yoder 2011	2425	2011	tuʔiah	tu'iah	t u ' i a h	tuʔiah	t u ʔ i a h
+7220	2011	Yoder 2011	2426	2011	ʔiah	'iah	' i a h	ʔiah	ʔ i a h
+7234	2011	Yoder 2011	2430	2011	kuan	kuan	k u a n	kuan	k u a n
+7237	2011	Yoder 2011	2432	2011	moʔni	mo'ni	m o ' n i	moʔni	m o ʔ n i
+7247	2011	Yoder 2011	2433	2011	ʔi-ʔiah	'i-'iah	' i - ' i a h	ʔi-ʔiah	ʔ i - ʔ i a h
+7264	2011	Yoder 2011	2437	2011	kaʔ-daix	ka'-da:ix	k a ' - d a:i x	kaʔ-daiç	k a ʔ - d ai ç
+7269	2011	Yoder 2011	2440	2011	bed	bEd	b E d	bɛd	b ɛ d
+7281	2011	Yoder 2011	2442	2011	hã	hã	h ã	hã	h ã
+7284	2011	Yoder 2011	2443	2011	me	mE	m E	mɛ	m ɛ
+7297	2011	Yoder 2011	2445	2011	ʔamuh nuʔ	'amuh nu'	' a m u h # n u '	ʔamuh nuʔ	ʔ a m u h # n u ʔ
+7318	2011	Yoder 2011	2452	2011	hɨn	hu̇n	h u̇ n	hɨn	h ɨ n
+7327	2011	Yoder 2011	2455	2011	bohoe	bohoE	b o h o E	bohoɛ	b o h o ɛ
+7349	2011	Yoder 2011	2459	2011	ki	ki	k i	ki	k i
+7352	2011	Yoder 2011	2461	2011	deda	dEda	d E d a	dɛda	d ɛ d a
+7361	2011	Yoder 2011	2463	2011	ʔãpẽʔẽãp	'ãpẽ'ẽãp	' ã p ẽ ' ẽ ã p	ʔãpɛ̃ʔɛ̃ãp	ʔ ã p ɛ̃ ʔ ɛ̃ ã p
+7367	2011	Yoder 2011	2467	2011	didu	didu	d i d u	didu	d i d u
+7370	2011	Yoder 2011	2469	2011	kah-ne	kah-nE	k a h - n E	kah-nɛ	k a h - n ɛ
+7371	2011	Yoder 2011	2470	2011	ʔa-hẽ	'a-hẽ	' a - h ẽ	ʔa-hɛ̃	ʔ a - h ɛ̃
+7379	2011	Yoder 2011	2474	2011	ʔok	'ok	' o k	ʔok	ʔ o k
+7389	2011	Yoder 2011	2479	2011	kaʔhɨɘ	ka'hu̇ė	k a ' h u̇ ė	kaʔhɨə	k a ʔ h ɨ ə
+7406	2011	Yoder 2011	2481	2011	hiɨr	hiu̇r	h i u̇ r	hiɨr	h i ɨ r
+7425	2011	Yoder 2011	2484	2011	ku	ku	k u	ku	k u
+7436	2011	Yoder 2011	2488	2011	ka-riɘ	ka-riė	k a - r i ė	ka-riə	k a - r i ə
+7461	2011	Yoder 2011	2504	2011	kaʔ-kokohoi	ka'-kokoho:i	k a ' - k o k o h o:i	kaʔ-kokohɔi	k a ʔ - k o k o h ɔi
+7464	2011	Yoder 2011	2505	2011	tahaʔ	taha'	t a h a '	tahaʔ	t a h a ʔ
+7469	2011	Yoder 2011	2507	2011	pa-uap	pa-uap	p a - u a p	pa-uap	p a - u a p
+7476	2011	Yoder 2011	2509	2011	tauud	ta:uud	t a:u u d	tauud	t au u d
+7492	2011	Yoder 2011	2513	2011	ʔõ	'õ	' õ	ʔɔ͂	ʔ ɔ͂
+7494	2011	Yoder 2011	2514	2011	ʔɘi	'ė:i	' ė:i	ʔəi	ʔ əi
+7503	2011	Yoder 2011	2516	2011	kaʔikah	ka'ikah	k a ' i k a h	kaʔikah	k a ʔ i k a h
+7516	2011	Yoder 2011	2517	2011	ʔɘʔ	'ė'	' ė '	ʔəʔ	ʔ ə ʔ
+7525	2011	Yoder 2011	2520	2011	ʔari	'ari	' a r i	ʔari	ʔ a r i
+7535	2011	Yoder 2011	2525	2011	kiʔuɘi	ki'uė:i	k i ' u ė:i	kiʔuəi	k i ʔ u əi
+7563	2011	Yoder 2011	2535	2011	harub	harub	h a r u b	harub	h a r u b

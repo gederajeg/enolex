@@ -5,14 +5,14 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	oo			o o	oː	1
 	ng			ng	ŋ	2
 	'			'	ʔ	22
-	 			 	 	48
-	\;			;	;	15
+	 			 	 	49
+	\;			;	;	16
 	\[			[	[	3
 	\]			]	]	3
-	a			a	a	198
+	a			a	a	195
 	b			b	b	26
-	d			d	d	47
-	e			e	e	134
+	d			d	d	45
+	e			e	e	132
 	g			g	g	0
 	h			h	h	73
 	i			i	i	86
@@ -21,9 +21,9 @@ Left	Grapheme	Right	Class	Replacement	Phoneme	Frequency
 	m			m	m	17
 	n			n	n	26
 	o			o	o	38
-	p			p	p	45
-	r			r	r	44
+	p			p	p	44
+	r			r	r	42
 	t			t	t	9
-	u			u	u	90
+	u			u	u	88
 	w			w	w	8
 	y			y	j	34
