@@ -234,17 +234,17 @@ dialect_info <- elx |>
                              "2019"),
          Collected = replace(Collected,
                              Sources %in% c("Zakaria et al. 2022"),
-                             "2022"))
+                             "2018-2024"))
 
 ## Count the forms by sources =====
-form_count <- elx |> 
-  select(Sources, Original_Form) |> 
-  group_by(Sources) |> 
-  summarise(Count_of_Original_Form = n_distinct(Original_Form))
+# form_count <- elx |> 
+#   select(Sources, Original_Form) |> 
+#   group_by(Sources) |> 
+#   summarise(Count_of_Original_Form = n_distinct(Original_Form))
 
 ### Join the count and dialect info with bibs =====
 bibs <- bibs |> 
-  left_join(form_count) |> 
+  # left_join(form_count) |> 
   left_join(dialect_info)
 
 ### join dialect info into EnoLEX
@@ -271,7 +271,10 @@ bibs1 <- select(bibs,
                                             "<a href='\\1' target='_blank'>URL</a>"),
                             CITATION)) |> 
   rename(YEAR = YEAR_URL) |> 
-  select(Collected, Published = YEAR, Sources, Form_Count = Count_of_Original_Form, Dialect = Dialect_Info, Place, Citation = CITATION)
+  select(Collected, Published = YEAR, Sources, 
+         # Form_Count = Count_of_Original_Form, 
+         Form_Count = LexemesCount,
+         Dialect = Dialect_Info, Place, Citation = CITATION)
 
 english_gloss <- selectizeInput(inputId = "English_Gloss", 
                                 options = list(dropdownParent = "body"),
@@ -332,6 +335,18 @@ link_enggano_web <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Enggano web
                            href="https://enggano.ling-phil.ox.ac.uk/", 
                            target="_blank")
 
+link_contemporary_enggano <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Contemporary Enggano materials",
+                                    href="https://figshare.com/projects/Contemporary_Enggano_Dictionary/230840",
+                                    target="_blank")
+
+link_kahler <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Digitised Enggano-German dictionary",
+                      href="https://figshare.com/projects/Retro-digitisation_of_the_Enggano-German_Dictionary/159842",
+                      target="_blank")
+
+link_holle_list <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Holle List (New Basic List)",
+                          href="https://engganolang.github.io/digitised-holle-list/",
+                          target="_blank")
+
 bibs <- selectizeInput(inputId = "References",
                        label = "Sources",
                        choices = NULL, 
@@ -341,7 +356,7 @@ bibs <- selectizeInput(inputId = "References",
 ## MAIN page ====
 cards <- list(
   background_image = 
-    card(card_image("estuary.JPG", 
+    card(card_image("estuary_new.JPG", 
                     height = "330px",
                     border_radius = "none"),
          card_body(fill = FALSE,
@@ -352,8 +367,9 @@ cards <- list(
   citation = card(#class = "border-0",
                   # height = "200px",
                   card_body(div(h2("How to cite EnoLEX")),
-                            div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zoebel, Charlotte Hemmings, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Available online at", a("https://enggano.shinyapps.io/enolex/", href='https://enggano.shinyapps.io/enolex/', target='_blank')), style="font-size: 0.9em"),
-                            div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://enggano.ling-phil.ox.ac.uk/static/papers/EnoLEX%20-%20A%20Diachronic%20Lexical%20Database%20for%20the%20Enggano%20language%20[Preprint].pdf', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
+                            div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zobel, Charlotte Hemmings, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Available online at", a("https://enggano.shinyapps.io/enolex/", href = 'https://enggano.shinyapps.io/enolex/', target = '_blank')), style="font-size: 0.9em"),
+                            div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, Cokorda Pramartha, Erik Zobel, Charlotte Hemmings, I Wayan Arka, Mary Dalrymple (2024).", em("R codes and curated dataset for “EnoLEX: A Diachronic Lexical Database for the Enggano Language”."), "(Version 0.0.1) [Computer software]. Available at", a('https://github.com/engganolang/enolex', href = 'https://github.com/engganolang/enolex', target = '_blank')), style="font-size: 0.9em"),
+                            div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://doi.org/10.25446/oxford.27013864.v1', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
                   )),
   enolex_description = card(card_body(h1(strong("EnoLEX: A diachronic lexical database for the Enggano language")),
                                       tags$figure(img(src = "file-oxweb-logo.gif", align = "left", width = 80, style = "margin-right: 5px; margin-top: 10px", display = "inline-block"), 
@@ -377,7 +393,7 @@ cards <- list(
                                       #   column(1, div( style = "margin-top: 24px; margin-left: -210px", actionButton("btn", "Search")))),
                                       
                                       h2("Licensing"),
-                                      HTML('<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/"><em>EnoLEX</em></a> edited by <span property="cc:attributionName">Daniel Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zoebel, Charlotte Hemmings, I Wayan Arka, and Mary Dalrymple</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>')
+                                      HTML('<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/">EnoLEX</a> online database edited by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/engganolang/enolex">Daniel Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zobel, Charlotte Hemmings, I Wayan Arka, and Mary Dalrymple</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>')
                                       ),
     
                             textOutput("overview")
@@ -507,7 +523,10 @@ ui <- page_navbar(
             ),
   nav_menu(title = "Links",
            nav_item(link_enolex_github),
-           nav_item(link_enggano_web)) #,
+           nav_item(link_enggano_web),
+           nav_item(link_contemporary_enggano),
+           nav_item(link_kahler),
+           nav_item(link_holle_list)) #,
   # nav_panel(value = "search_panel",
   #           textInput("global_search",
   #                     label = NULL,
@@ -699,7 +718,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -718,7 +737,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(str_c("\\b", input$global_search, "\\b", sep = ""), ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -736,7 +755,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected) |> 
+        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(string = ., pattern = input$global_search))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -754,7 +773,7 @@ server <- function(input, output, session) {
     
     glb |> 
       rename(Standardised_Orthography = Orthography) |> 
-      select(-ID, -Semantic_Field) |> 
+      # select(-ID, -Semantic_Field) |> 
       datatable(escape = FALSE,
                 selection = "single",
                 options = list(paging = FALSE,
