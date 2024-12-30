@@ -3,27 +3,27 @@
 
 cff-version: 1.2.0
 title: >-
-  EnoLEX: A Diachronic Lexical Database for the Enggano
-  Language
+  R codes and dataset for "EnoLEX: A Diachronic Lexical
+  Database for the Enggano Language"
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
 authors:
-  - given-names: Daniel
-    family-names: Krauße
-    affiliation: CNRS-Lattice Paris
-    orcid: 'https://orcid.org/0000-0002-9340-6960'
   - given-names: Gede Primahadi Wijaya
     family-names: Rajeg
     affiliation: University of Oxford & Udayana University
     orcid: 'https://orcid.org/0000-0002-2047-8621'
+  - given-names: Daniel
+    family-names: Krauße
+    affiliation: CNRS-Lattice Paris
+    orcid: 'https://orcid.org/0000-0002-9340-6960'
   - given-names: Cokorda
     family-names: Pramartha
     affiliation: Udayana University
     orcid: 'https://orcid.org/0000-0002-2835-3989'
   - given-names: Erik
-    family-names: Zoebel
+    family-names: Zobel
     affiliation: Independent Researcher
   - family-names: Hemmings
     given-names: Charlotte
@@ -47,13 +47,16 @@ identifiers:
 repository-code: 'https://github.com/engganolang/enolex'
 url: 'https://enggano.shinyapps.io/enolex/'
 abstract: >-
-  EnoLEX collates lexical data from legacy materials and
-  contemporary fieldwork data about the Enggano language,
-  ranging from simple/short and extensive word lists,
-  anthropological and ethnographic writings, a dictionary, a
-  thesis, and contemporary Enggano data. The materials span
-  over 150 years from the middle of the 19th century up to
-  the present. With expert cognate-judgement, EnoLEX offers
+  This repository stored the processed dataset and R codes
+  to build the Shiny app for EnoLEX, a diachronic lexical
+  database for the Enggano languages. EnoLEX collates
+  lexical data from legacy materials and contemporary
+  fieldwork data about the Enggano language, ranging from
+  simple/short and extensive word lists, anthropological and
+  ethnographic writings, a dictionary, a thesis, and
+  contemporary Enggano data. The materials span over 150
+  years from the middle of the 19th century up to the
+  present. With expert cognate-judgement, EnoLEX offers
   historical development of word forms expressing a certain
   concept/meaning.
 keywords:
@@ -68,6 +71,6 @@ keywords:
   - Shiny application
   - Enggano language
   - Indonesia
-license: CC-BY-NC-4.0
-version: 0.0.1
-date-released: '2024-08-04'
+license: CC-BY-NC-SA-4.0
+version: 0.0.2
+date-released: '2024-12-30'

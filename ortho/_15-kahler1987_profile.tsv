@@ -16,7 +16,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	ã́			ã́	8
 	ã̄			ã ã	1
 	á͜			áː	3
-	ã͜			ãː	14
+	ã͜			ãː	15
 	ẽ́			ẽ́	2
 	ẽ̄			ẽ ẽ	2
 	ẽ͜			ẽː	1
@@ -37,7 +37,7 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	\<			<	3
 	á			á	22
 	ā			a a	20
-	ã			ã	291
+	ã			ã	292
 	a͜			aː	41
 	é			é	9
 	è			E	1
@@ -48,55 +48,55 @@ Left	Grapheme	Right	Class	Replacement	Frequency
 	ə̃			u̇̃	6
 	í			í	13
 	ī			i i	7
-	ĩ			ĩ	131
+	ĩ			ĩ	132
 	i͜			iː	1
 	ɨ́			u̇́	1
 	ɨ̃			u̇̃	2
 	ñ			ñ	9
 	ó			ó	6
-	ō			o o	15
-	õ			õ	125
-	o͜			oː	7
+	ō			o o	17
+	õ			õ	126
+	o͜			oː	8
 	ú			ú	18
 	ū			u u	4
 	ũ			ũ	122
 	о̄			o o	2
 	'			'	7
-	-			-	303
+	-			-	300
 	́			́	0
 	̀			̀	0
 	̃			̃	0
 	̄			̄	0
-	ˀ			'	1
-	 			 	334
+	ˀ			'	3
+	 			 	335
 	:			:	3
 	;			;	128
 	~			~	1
 	’			’	1
 	͜			ː	0
 	²			²	1
-	a			a	786
-	b			b	133
+	a			a	787
+	b			b	132
 	c			c	3
 	d			d	221
-	e			e	548
+	e			e	546
 	ə			u̇	48
-	h			h	274
-	i			i	396
+	h			h	275
+	i			i	399
 	ɨ			u̇	12
 	j			j	1
 	k			k	622
 	l			l	9
 	m			m	59
 	n			n	145
-	o			o	341
+	o			o	336
 	о			o	0
-	p			p	270
+	p			p	271
 	r			r	59
-	s			s	1
+	s			s	0
 	t			t	31
 	ʧ			c	3
 	u			u	289
 	x			x	23
 	y			y	18
-	ʔ			'	405
+	ʔ			'	407
