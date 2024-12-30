@@ -23,7 +23,7 @@ authors:
     affiliation: Udayana University
     orcid: 'https://orcid.org/0000-0002-2835-3989'
   - given-names: Erik
-    family-names: Zoebel
+    family-names: Zobel
     affiliation: Independent Researcher
   - family-names: Hemmings
     given-names: Charlotte
@@ -72,5 +72,5 @@ keywords:
   - Enggano language
   - Indonesia
 license: CC-BY-NC-SA-4.0
-version: 0.0.1
-date-released: '2024-08-04'
+version: 0.0.2
+date-released: '2024-12-30'
