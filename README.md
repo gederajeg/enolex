@@ -24,9 +24,9 @@ project](https://enggano.ling-phil.ox.ac.uk/)*.
 <a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/">EnoLEX
 online database</a> edited by
 <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/engganolang/enolex">Daniel
-Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zobel,
-Charlotte Hemmings, I Wayan Arka, and Mary Dalrymple</a> is licensed
-under
+Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zobel, Bernd
+Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, and Mary
+Dalrymple</a> is licensed under
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0
 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
@@ -36,23 +36,28 @@ International<img style="height:22px!important;margin-left:3px;vertical-align:te
 
 ## How to cite
 
-EnoLEX is published as a [Shiny](https://shiny.posit.co) web application
-programmed in R by Gede Primahadi Wijaya Rajeg. Please cite this
-repository of R source codes and curated dataset for EnoLEX as follows:
+[EnoLEX](https://enggano.shinyapps.io/enolex/) is published as a
+[Shiny](https://shiny.posit.co) web
+[application](https://github.com/engganolang/enolex/tree/main/enolex)
+programmed [in
+R](https://github.com/engganolang/enolex/blob/main/enolex/app.R) by Gede
+Primahadi Wijaya Rajeg. Please cite this repository of R source codes
+and curated dataset for EnoLEX as follows:
 
-> Rajeg, G. P. W., Krauße, D., Pramartha, C., Zobel, E., Hemmings, C.,
-> Arka, I. W., & Dalrymple, M. (2024). *R codes and curated dataset for*
-> *“EnoLEX: A Diachronic Lexical Database for the Enggano Language”*
-> (Version 0.0.2) \[Computer software\]. Available at
-> <https://github.com/engganolang/enolex>
+> Rajeg, G. P. W., Krauße, D., Pramartha, C., Zobel, E., Nothofer, B.,
+> Hemmings, C., Ogilvie, S., Arka, I. W., & Dalrymple, M. (2024). *R
+> codes and curated dataset for* *“EnoLEX: A Diachronic Lexical Database
+> for the Enggano Language”* (Version 0.0.2) \[Computer software\].
+> Available at <https://github.com/engganolang/enolex>
 
 Please cite, respectively, the EnoLEX online database and the
 proceedings paper describing it as follows:
 
 > Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik
-> Zobel, Charlotte Hemmings, I Wayan Arka, Mary Dalrymple (2024).
-> *EnoLEX: A Diachronic Lexical Database for the Enggano Language*.
-> Available online at <https://enggano.shinyapps.io/enolex/>
+> Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan
+> Arka, Mary Dalrymple (2024). *EnoLEX: A Diachronic Lexical Database
+> for the Enggano Language*. Available online at
+> <https://enggano.shinyapps.io/enolex/>
 
 > Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi
 > Pramartha (2024). [EnoLEX: A Diachronic Lexical Database for the

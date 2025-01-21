@@ -25,10 +25,18 @@ authors:
   - given-names: Erik
     family-names: Zobel
     affiliation: Independent Researcher
+  - family-names: Nothofer
+    given-names: Bernd
+    affiliation: Goethe-Universität Frankfurt am Main
+    orcid: 'https://orcid.org/0000-0001-9772-6155'
   - family-names: Hemmings
     given-names: Charlotte
     affiliation: University of Oxford
     orcid: 'https://orcid.org/0000-0002-3076-5544'
+  - family-names: Ogilvie
+    given-names: Sarah
+    affiliation: University of Oxford
+    orcid: 'https://orcid.org/0000-0002-9939-1448'
   - given-names: I Wayan
     family-names: Arka
     affiliation: Australian National University & Udayana University
