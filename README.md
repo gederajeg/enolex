@@ -34,6 +34,16 @@ International<img style="height:22px!important;margin-left:3px;vertical-align:te
 </p>
 <!-- badges: end -->
 
+## Overview
+
+EnoLEX collates lexical data from legacy materials and contemporary
+fieldwork data about the Enggano language, ranging from simple/short and
+extensive word lists, anthropological and ethnographic writings, a
+dictionary, thesis, and contemporary Enggano data. The materials span
+over 150 years from the middle of the 19th century up to the present.
+With expert cognate-judgement, EnoLEX offers historical development of
+word forms expressing a certain concept/meaning.
+
 ## How to cite
 
 [EnoLEX](https://enggano.shinyapps.io/enolex/) is published as a
@@ -66,12 +76,15 @@ proceedings paper describing it as follows:
 > 2024 Hybrid Conference)*. Toyo University, Tokyo: Japan.
 > <https://doi.org/10.25446/oxford.27013864.v1>
 
-## Overview
+The
+[`acd.rds`](https://github.com/engganolang/enolex/blob/main/data/acd.rds)
+data is derived from the Austronesian Comparative Dictionary (ACD)
+dataset and needs to be cited independently as follows:
 
-EnoLEX collates lexical data from legacy materials and contemporary
-fieldwork data about the Enggano language, ranging from simple/short and
-extensive word lists, anthropological and ethnographic writings, a
-dictionary, thesis, and contemporary Enggano data. The materials span
-over 150 years from the middle of the 19th century up to the present.
-With expert cognate-judgement, EnoLEX offers historical development of
-word forms expressing a certain concept/meaning.
+> Robert Blust, Stephen Trussel, & Alexander D. Smith. (2023). CLDF
+> dataset derived from Blust’s “Austronesian Comparative Dictionary”
+> (v1.2) \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.7741197>
+
+The ACD dataset is read via the .json metadata file using
+`rcldf::cldf()` function in the [`rcldf` R package by Simon J.
+Greenhill](https://github.com/SimonGreenhill/rcldf).
