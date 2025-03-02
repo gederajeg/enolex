@@ -331,7 +331,7 @@ $(document).on("keyup", function(e) {
 
 # one_search_all <- textInput("searchbar", label = "Search", placeholder = "Type & press Enter")
 
-link_enolex_github <- tags$a(shiny::icon("github"), "GitHub", 
+link_enolex_github <- tags$a(shiny::icon("github"), "EnoLEX app source", 
                              href="https://github.com/engganolang/enolex", 
                              target="_blank")
 
@@ -339,16 +339,16 @@ link_enggano_web <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Enggano web
                            href="https://enggano.ling-phil.ox.ac.uk/", 
                            target="_blank")
 
-link_contemporary_enggano <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Contemporary Enggano materials",
-                                    href="https://figshare.com/projects/Contemporary_Enggano_Dictionary/230840",
+link_contemporary_enggano <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Contemporary Enggano Dictionary",
+                                    href="https://portal.sds.ox.ac.uk/projects/Contemporary_Enggano_Dictionary/238013",
                                     target="_blank")
 
 link_kahler <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Digitised Enggano-German dictionary",
-                      href="https://figshare.com/projects/Retro-digitisation_of_the_Enggano-German_Dictionary/159842",
+                      href="https://portal.sds.ox.ac.uk/projects/Retro-digitisation_of_the_Enggano-German_Dictionary/237998",
                       target="_blank")
 
-link_holle_list <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Holle List (New Basic List)",
-                          href="https://engganolang.github.io/digitised-holle-list/",
+link_holle_list <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Holle List (the New Basic List)",
+                          href="https://doi.org/10.25446/oxford.23205173.v6",
                           target="_blank")
 
 bibs <- selectizeInput(inputId = "References",
@@ -468,6 +468,8 @@ cognate_cards <- list(
 ui <- page_navbar(
   id = "tabs",
   fillable = TRUE,
+  # title = "EnoLEX",
+  window_title = "EnoLEX",
   # footer = "<div>",
   theme = bs_theme(
     version = bslib::version_default(),
@@ -483,6 +485,8 @@ ui <- page_navbar(
   ),
   # collapsible = TRUE,
   underline = TRUE,
+  tags$head(
+    tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "/ox_brand1_rev.png")),
   nav_panel(title = "Main",
             
             layout_columns(
@@ -526,8 +530,8 @@ ui <- page_navbar(
             # dataTableOutput("enolex_materials")
             ),
   nav_menu(title = "Links",
-           nav_item(link_enolex_github),
            nav_item(link_enggano_web),
+           nav_item(link_enolex_github),
            nav_item(link_contemporary_enggano),
            nav_item(link_kahler),
            nav_item(link_holle_list)) #,
