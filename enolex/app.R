@@ -486,7 +486,7 @@ ui <- page_navbar(
   # collapsible = TRUE,
   underline = TRUE,
   tags$head(
-    tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "/ox_brand1_rev.png")),
+    tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "ox_brand1_rev.png")),
   nav_panel(title = "Main",
             
             layout_columns(
