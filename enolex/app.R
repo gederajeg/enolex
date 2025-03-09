@@ -361,7 +361,7 @@ bibs <- selectizeInput(inputId = "References",
 cards <- list(
   background_image = 
     card(card_image("estuary_new.JPG", 
-                    height = "330px",
+                    # height = "330px",
                     border_radius = "none"),
          card_body(fill = FALSE,
                    p("The estuary towards the Indian Ocean from the Bak Blau lake, Enggano Island",
@@ -369,9 +369,9 @@ cards <- list(
          class = "border-0")
   ,
   citation = card(#class = "border-0",
-                  # height = "200px",
+                  min_height = "275px",
                   card_body(div(h2("How to cite EnoLEX")),
-                            div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Available online at", a("https://enggano.shinyapps.io/enolex/", href = 'https://enggano.shinyapps.io/enolex/', target = '_blank')), style="font-size: 0.9em"),
+                            div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Online resource. University of Oxford.", a("http://dx.doi.org/10.25446/oxford.28282946.v1", href = "http://dx.doi.org/10.25446/oxford.28282946.v1", target = "_blank"), ". Available online at", a("https://enggano.shinyapps.io/enolex/", href = 'https://enggano.shinyapps.io/enolex/', target = '_blank')), style="font-size: 0.9em"),
                             div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("R codes and curated dataset for “EnoLEX: A Diachronic Lexical Database for the Enggano Language”."), "(Version 0.0.1) [Computer software]. Available at", a('https://github.com/engganolang/enolex', href = 'https://github.com/engganolang/enolex', target = '_blank')), style="font-size: 0.9em"),
                             div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://doi.org/10.25446/oxford.27013864.v1', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
                   )),
@@ -379,13 +379,13 @@ cards <- list(
                                       tags$figure(img(src = "file-oxweb-logo.gif", align = "left", width = 80, style = "margin-right: 5px; margin-top: 10px", display = "inline-block"), 
                                                   img(src = "file-lingphil.png", align = "left", width = 80, style = "margin-right: 5px; margin-top: 10px", display = "inline-block"),
                                                   img(src = "file-ahrc.png", align = "left", width = 280, style = "margin-right: 5px; margin-top: 10px", display = "inline-block")),
-                                      tags$figcaption(em(a("This research", href="https://enggano.ling-phil.ox.ac.uk", target="_blank"), "is funded by the Arts and Humanities Research Council (AHRC) Grant ID ", a("AH/S011064/1", href="https://gtr.ukri.org/projects?ref=AH%2FS011064%2F1", target="_blank"), " and ", a("AH/W007290/1", href="https://gtr.ukri.org/projects?ref=AH%2FW007290%2F1", target="_blank"), ".")),
+                                      tags$figcaption(em("The", a("Enggano research", href="https://enggano.ling-phil.ox.ac.uk", target="_blank"), "is funded by the Arts and Humanities Research Council (AHRC) Grant IDs ", a("AH/S011064/1", href="https://gtr.ukri.org/projects?ref=AH%2FS011064%2F1", target="_blank"), " and ", a("AH/W007290/1", href="https://gtr.ukri.org/projects?ref=AH%2FW007290%2F1", target="_blank"), ".")),
                                       h2("Overview"),
-                                      p("EnoLEX collates lexical data from", actionLink("SourcesTabLink", "legacy materials and contemporary fieldwork data"), "about the Enggano language, ranging from simple/short and extensive word lists, anthropological and ethnographic writings, a dictionary, thesis, and contemporary Enggano data. The materials span over 150 years from the middle of the 19th century up to the present. With expert cognate-judgement, EnoLEX offers historical development of word forms expressing a certain concept/meaning."),
+                                      p("EnoLEX collates lexical data from", actionLink("SourcesTabLink", HTML("<strong>legacy materials and contemporary fieldwork data</strong>")), "about the Enggano language, ranging from simple/short and extensive word lists, anthropological and ethnographic writings, a dictionary, thesis, and contemporary Enggano data. The materials span over 150 years from the middle of the 19th century up to the present. With expert cognate-judgement, EnoLEX offers historical development of word forms expressing a certain concept/meaning."),
                                       
                                       h2("How to get started"),
-                                      p("The first option is the", actionLink("CognatesTabLink", "Concept Search"), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
-                                      p("The second option is the", actionLink("GlobalSearch", "Global Search"), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
+                                      p("The first option is the", actionLink("CognatesTabLink", HTML("<strong>Concept Search</strong>")), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
+                                      p("The second option is the", actionLink("GlobalSearch", HTML("<strong>Global Search</strong>")), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
                                       # tags$input(type = "search", id = "site_search", name = "q", placeholder = "Type and Enter"),
                                       # tags$script(js_enter_key),
                                       # tags$script(jscode),
@@ -438,7 +438,7 @@ full_db_page <- list(
 
 ## COGNATES page ====
 cognate_cards <- list(
-  cognate_table = card(
+  cognate_table = card(id = "cognate_table",
     layout_sidebar(sidebar = sidebar(english_gloss,
                                      open = list(mobile = "always-above"), 
                                      width = 200),
@@ -465,15 +465,20 @@ cognate_cards <- list(
 
 )
 
+# UI configuration =====
+
 ui <- page_navbar(
   id = "tabs",
-  fillable = TRUE,
+  fillable = FALSE,
   # title = "EnoLEX",
   window_title = "EnoLEX",
   # footer = "<div>",
   theme = bs_theme(
     version = bslib::version_default(),
     bootswatch = "cosmo",
+    base_font = font_google("Noto Serif", local = FALSE),
+    heading_font = font_link(family = "Noto Serif", href = "https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,900;1,900&display=swap"),
+    font_scale = .85,
     bg = "#f9f8f5", 
     fg = "#002147", 
     primary = "#193658",
@@ -487,7 +492,7 @@ ui <- page_navbar(
   underline = TRUE,
   tags$head(
     tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "ox_brand1_rev.png")),
-  nav_panel(title = "Main",
+  nav_panel(title = "Home",
             
             layout_columns(
             
@@ -541,6 +546,7 @@ ui <- page_navbar(
   #                     value = "Search"))
 )
 
+# SERVER configuration =====
 server <- function(input, output, session) {
   
   updateSelectizeInput(session, inputId = "English_Gloss", choices = sem_choices_eng, server = TRUE)
