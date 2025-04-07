@@ -478,7 +478,7 @@ ui <- page_navbar(
     bootswatch = "cosmo",
     base_font = font_google("Noto Serif", local = FALSE),
     heading_font = font_link(family = "Noto Serif", href = "https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,900;1,900&display=swap"),
-    font_scale = .85,
+    font_scale = .90,
     bg = "#f9f8f5", 
     fg = "#002147", 
     primary = "#193658",
