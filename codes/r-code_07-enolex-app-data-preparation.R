@@ -25,7 +25,6 @@ sources_enolex <- sources_all |>
   arrange(YEAR, AUTHOR) |> 
   mutate(Sources = str_replace(Sources, "et al\\. 2023", "et al. 2022")) |> 
   mutate(Sources = replace(Sources, Sources == "vd Straten & S. 1855", "vd Straaten & Severijn 1855"))
-sources_enolex |> write_rds("enolex/sources.rds")
   
 ## EnoLEX data ====
 ### This "EnoLEX data" needs to be re-run every time there is an update from "data/dummy...tsv" file
@@ -94,8 +93,7 @@ enolex <- read_tsv("data/dummy_for_pak_cok_20240903.tsv") |>
                                             "(Mahdi )(1988)",
                                             "\\1<a href='https://books.google.co.id/books/about/Morphophonologische_Besonderheiten_und_h.html?id=RWMOAAAAYAAJ&redir_esc=y' target='_blank'>\\2</a>"))
 
-enolex |>
-  write_rds("enolex/enolex.rds")
+
 
 ## Dialect data =====
 dialect_info <- enolex |> 
@@ -263,6 +261,9 @@ dialect_info <- enolex |>
                              Sources %in% c("Zakaria et al. 2022"),
                              "2018-2024"))
 
+### join dialect info into EnoLEX and save into enolex main data
+write_rds(select(left_join(enolex, dialect_info), -Doculect), "enolex/enolex.rds")
+write_rds(left_join(sources_enolex, dialect_info), "enolex/sources.rds")
 write_rds(dialect_info, "enolex/dialect_info.rds")
 
 ## Count the forms in von Rosenberg (1878), Aron (2019), and Zakaria et al. (2022) ====

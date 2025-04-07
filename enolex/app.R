@@ -9,7 +9,7 @@ library(bslib)
 library(colourvalues)
 
 ## IMPORTANT:
-### regularly check and update codes in `r-code_07-enolex-app-data-preparation`
+### regularly check, update, and re-run (when there is an update) codes in `r-code_07-enolex-app-data-preparation`
 ### before running this app.R since pre-processing and preparation of data
 ### were done in that `...07...` script.
 
@@ -32,16 +32,6 @@ dialect_info <- read_rds("dialect_info.rds")
 #   select(Sources, Original_Form) |> 
 #   group_by(Sources) |> 
 #   summarise(Count_of_Original_Form = n_distinct(Original_Form))
-
-### Join the count and dialect info with bibs =====
-bibs <- bibs |> 
-  # left_join(form_count) |> 
-  left_join(dialect_info)
-
-### join dialect info into EnoLEX
-enolex <- enolex |> 
-  left_join(dialect_info) |> 
-  select(-Doculect)
 
 ## Prepare the choice for the English concept =====
 enolex_eng <- sort(unique(enolex$English), decreasing = FALSE)
