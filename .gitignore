@@ -3,7 +3,11 @@
 .RData
 .Ruserdata
 /.quarto/
+*.docx
 ortho/*missing.tsv
+ortho/_00-notes*
+ortho/READ*.html
+ortho/README_files/*
 ortho/*errors.tsv
 ortho/*_strings.tsv
 ortho/*copy-old.tsv
@@ -13,3 +17,12 @@ ortho/*doubled*
 SIGUL*pressed.pdf
 .pdf
 .xlsx
+test.txt
+wordlist/
+CHECK-TO-DO*
+docs/*
+enolex/rsconnect/*
+notes.txt
+index.qmd
+about.qmd
+
