@@ -40,28 +40,12 @@ sem_choices_eng <- c("(none)", enolex_eng)
 ## Prepare the choice for the Sources =====
 bib_choices <- c("(none)", bibs$Sources)
 
-bibs1 <- select(bibs,
-                # -Sources,
-                -BIBTEXKEY,
-                -YEAR,
-                -URL) |> 
-  mutate(CITATION = str_replace_all(CITATION, "(\\s)_", "\\1<em>"), 
-         CITATION = str_replace_all(CITATION, "_(\\s|[[:punct:]])", "</em>\\1"),
-         CITATION = if_else(str_detect(CITATION, "\\<https"),
-                            str_replace_all(CITATION, "\\<(https[^>]+?)\\>", 
-                                            "<a href='\\1' target='_blank'>URL</a>"),
-                            CITATION)) |> 
-  rename(YEAR = YEAR_URL) |> 
-  select(Collected, Published = YEAR, Sources, 
-         # Form_Count = Count_of_Original_Form, 
-         Form_Count = LexemesCount,
-         Dialect = Dialect_Info, Place, Citation = CITATION)
-
 english_gloss <- selectizeInput(inputId = "English_Gloss", 
-                                options = list(dropdownParent = "body"),
+                                options = list(dropdownParent = "body",
+                                               closeAfterSelect = TRUE),
                                 label = "Concepts",
                                 choices = NULL, 
-                                selected = NULL
+                                selected = "(none)"
 )
 
 jscode <- '
@@ -328,7 +312,7 @@ server <- function(input, output, session) {
   
   updateSelectizeInput(session, inputId = "English_Gloss", choices = sem_choices_eng, server = TRUE)
   
-  updateSelectizeInput(session, inputId = "References", choices = bib_choices, server = TRUE)
+  # updateSelectizeInput(session, inputId = "References", choices = bib_choices, server = TRUE)
   
   
   ### reactive output for COGNATE Table ====
@@ -509,7 +493,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -528,7 +512,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(., regex(str_c("\\b", input$global_search, "\\b", sep = ""), ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -546,7 +530,7 @@ server <- function(input, output, session) {
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -YEAR, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
         filter(if_any(where(is.character), ~str_detect(string = ., pattern = input$global_search))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(

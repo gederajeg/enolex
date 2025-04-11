@@ -262,9 +262,65 @@ dialect_info <- enolex |>
                              "2018-2024"))
 
 ### join dialect info into EnoLEX and save into enolex main data
-write_rds(select(left_join(enolex, dialect_info), -Doculect), "enolex/enolex.rds")
+write_rds(select(left_join(enolex, dialect_info), -Doculect, -YEAR), "enolex/enolex.rds")
 write_rds(left_join(sources_enolex, dialect_info), "enolex/sources.rds")
 write_rds(dialect_info, "enolex/dialect_info.rds")
+bibs <- read_rds("enolex/sources.rds")
+bibs1 <- select(bibs,
+                # -Sources,
+                -BIBTEXKEY,
+                -YEAR,
+                -URL) |> 
+  mutate(CITATION = str_replace_all(CITATION, "(\\s)_", "\\1<em>"), 
+         CITATION = str_replace_all(CITATION, "_(\\s|[[:punct:]])", "</em>\\1"),
+         CITATION = if_else(str_detect(CITATION, "\\<https"),
+                            str_replace_all(CITATION, "\\<(https[^>]+?)\\>", 
+                                            "<a href='\\1' target='_blank'>URL</a>"),
+                            CITATION)) |> 
+  rename(YEAR = YEAR_URL) |> 
+  select(Collected, Published = YEAR, Sources, 
+         # Form_Count = Count_of_Original_Form, 
+         Form_Count = LexemesCount,
+         Dialect = Dialect_Info, Place, Citation = CITATION)
+write_rds(bibs1, "enolex/bibs1.rds")
+
+## Create SQLite version =====
+enolex_db <- DBI::dbConnect(RSQLite::SQLite(), "enolex/enolex.sqlite")
+DBI::dbWriteTable(enolex_db, "enolex", readr::read_rds("enolex/enolex.rds"),
+                  overwrite = TRUE)
+DBI::dbWriteTable(enolex_db, "dialect_info", 
+                  readr::read_rds("enolex/dialect_info.rds"),
+                  overwrite = TRUE)
+DBI::dbWriteTable(enolex_db, "sources", 
+                  readr::read_rds("enolex/sources.rds"),
+                  overwrite = TRUE)
+DBI::dbWriteTable(enolex_db, "bibs1", 
+                  readr::read_rds("enolex/bibs1.rds"),
+                  overwrite = TRUE)
+DBI::dbListTables(enolex_db)
+DBI::dbDisconnect(enolex_db)
+
+
+### Image data =====
+### Run the following line in the terminal git bash without the double quote!
+# "cp '../../Enggano-Fieldwork/2nd-fieldwork-2024-02-01/photos/easter-monday_ibadah-padang/IMG_E3668.JPG' enolex/estuary.JPG"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Count the forms in von Rosenberg (1878), Aron (2019), and Zakaria et al. (2022) ====
 enolex |> 
@@ -284,7 +340,3 @@ enolex |>
   str_count("([^ ;])+") |> 
   sum()
 # [1] 57
-
-### Image data =====
-### Run the following line in the terminal git bash without the double quote!
-# "cp '../../Enggano-Fieldwork/2nd-fieldwork-2024-02-01/photos/easter-monday_ibadah-padang/IMG_E3668.JPG' enolex/estuary.JPG"

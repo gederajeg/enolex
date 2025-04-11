@@ -4,6 +4,7 @@
 .Ruserdata
 /.quarto/
 *.docx
+**.DS_Store
 ortho/*missing.tsv
 ortho/_00-notes*
 ortho/READ*.html
