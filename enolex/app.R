@@ -480,7 +480,8 @@ server <- function(input, output, session) {
           select(Cognate_ID, Year, Sources, Original_Form, 
                  Standardised_Orthography = Orthography,
                  Phonemic_Transcription = IPA) |>
-          collect() # |>
+          collect() # |> 
+          # mutate(Phonemic_Transcription = stri_trans_nfc(Phonemic_Transcription)) # |>
           # select(where(~!all(is.na(.))))
 
         for_checking_notes <- enolex |>
@@ -508,7 +509,8 @@ server <- function(input, output, session) {
                                         'button_', 
                                         label = "More",
                                         onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})')) |> 
-            relocate(Details, .before = Year)
+            relocate(Details, 
+                     .before = Year)
 
         }
 
@@ -540,72 +542,6 @@ server <- function(input, output, session) {
       
     }
     
-    # { if (input_english_gloss() != "(none)") {
-    #   
-    #   tb <- tbl(enolex_db, "enolex") |> 
-    #     filter(English %in% input_english_gloss()) |> 
-    #     select(Cognate_ID, Year, Sources, Original_Form, Standardised_Orthography = Orthography,
-    #            Phonemic_Transcription = IPA) |> 
-    #     collect() # |> 
-    #     # select(where(~!all(is.na(.))))
-    #   
-    #   for_checking_notes <- tbl(enolex_db, "enolex") |>
-    #     filter(English %in% input_english_gloss()) |>
-    #     select(English_Original, Note_for_Year, Note_for_Cognate) |> 
-    #     collect()
-    #   
-    #   for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
-    #                            any(!is.na(for_checking_notes$Note_for_Year)),
-    #                            any(!is.na(for_checking_notes$Note_for_Cognate)))
-    #   
-    #   rows_to_add <- which(!is.na(for_checking_notes$English_Original) | 
-    #                          !is.na(for_checking_notes$Note_for_Year) | 
-    #                          !is.na(for_checking_notes$Note_for_Cognate))
-    #   
-    #   if (any(length(rows_to_add) > 0)) {
-    #     
-    #     tb <- tb |> 
-    #       mutate(Details = shinyInput(actionButton, nrow(tb), rows_to_add = rows_to_add, 'button_', label = "More",
-    #                                   onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})'))
-    #     
-    #   }
-    #   
-    #   
-    #   cog_id_colouring <- unique(tb$Cognate_ID)
-    #   
-    #   DT::datatable(tb,
-    #                 escape = FALSE,
-    #                 selection = "single",
-    #                 options = list(paging = FALSE,
-    #                                scrollY = "500px",
-    #                                scrollX = TRUE,
-    #                                autoWidth = TRUE,
-    #                                language = list(searchPlaceholder = "Search"),
-    #                                columnDefs = list(list(className = "dt-center",
-    #                                                       targets = c(1, 2)),
-    #                                                  list(width = "50px",
-    #                                                       targets = "Cognate_ID"),
-    #                                                  list(width = "50px",
-    #                                                       targets = "Year"))),
-    #                 filter = "top",
-    #                 # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
-    #                 style = "bootstrap4",
-    #                 class = list(stripe = FALSE)) |>
-    #     formatStyle("Cognate_ID",
-    #                 backgroundColor = styleEqual(cog_id_colouring,
-    #                                              colour_values(factor(cog_id_colouring),
-    #                                                            palette = "rdylbu",
-    #                                                            alpha = 65)))
-    #   
-    # } else {
-    #   
-    #   tbl(enolex_db, "enolex") |> 
-    #     filter(English %in% "sadsakdasklaskcmasl") |> 
-    #     DT::datatable()
-    #   
-    # }
-    #   
-    # }
   )
   
   observe({
@@ -617,8 +553,6 @@ server <- function(input, output, session) {
     
   })
   
-  
-  
   observeEvent(input$select_button, {
     
     rownum <- as.numeric(strsplit(input$select_button, "_")[[1]][2])
@@ -627,13 +561,15 @@ server <- function(input, output, session) {
     
     if (is.null(rownum) || rownum == '') {} else{
       
-      showModal(modalDialog(
-        notes_to_show,
-        title = paste0("Note(s) for row: ", rownum),
-        size = "m",
-        easyClose = TRUE,
-        footer = NULL
-      ))
+      showModal(
+        modalDialog(
+          notes_to_show,
+          title = paste0("Note(s) for row: ", rownum),
+          size = "m",
+          easyClose = TRUE,
+          footer = NULL
+        )
+      )
     }
     
   })
