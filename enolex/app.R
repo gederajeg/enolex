@@ -7,6 +7,10 @@ library(tidyverse)
 library(DT)
 library(bslib)
 library(colourvalues)
+library(RSQLite)
+library(DBI)
+library(glue)
+# library(dbplyr)
 
 ## IMPORTANT:
 ### regularly check, update, and re-run (when there is an update) codes in `r-code_07-enolex-app-data-preparation`
@@ -15,13 +19,17 @@ library(colourvalues)
 
 # Data Preparation =====
 
+## Connect to the EnoLEX sqlite ====
+enolex_db <- dbConnect(SQLite(), "enolex.sqlite")
+enolex <- tbl(enolex_db, "enolex")
+
 ## Read in the main data for Sources ====
 ### from output data generated in script `r-code_07-...`
 bibs <- read_rds("sources.rds")
 
 ## Read in the main data for EnoLEX ====
 ### from output data generated in script `r-code_07-...`
-enolex <- read_rds("enolex.rds")
+# enolex <- read_rds("enolex.rds")
 
 ## Dialect by sources ======
 ### from output data generated in script `r-code_07-...`
@@ -34,7 +42,11 @@ dialect_info <- read_rds("dialect_info.rds")
 #   summarise(Count_of_Original_Form = n_distinct(Original_Form))
 
 ## Prepare the choice for the English concept =====
-enolex_eng <- sort(unique(enolex$English), decreasing = FALSE)
+enolex_eng <- tbl(enolex_db, "enolex") |> 
+  pull(English) |> 
+  unique() |> 
+  sort(decreasing = FALSE)
+# enolex_eng <- sort(unique(enolex$English), decreasing = FALSE)
 sem_choices_eng <- c("(none)", enolex_eng)
 
 ## Prepare the choice for the Sources =====
@@ -90,32 +102,37 @@ $(document).on("keyup", function(e) {
 #   });
 #   '
 
-# one_search_all <- textInput("searchbar", label = "Search", placeholder = "Type & press Enter")
+# one_search_all <- textInput("searchbar", label = "Search", 
+#                             placeholder = "Type & press Enter")
 
 link_enolex_github <- tags$a(shiny::icon("github"), "EnoLEX app source", 
                              href="https://github.com/engganolang/enolex", 
                              target="_blank")
 
-link_enggano_web <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Enggano webpage", 
+link_enggano_web <- tags$a(shiny::icon("globe", lib = "glyphicon"), 
+                           "Enggano webpage", 
                            href="https://enggano.ling-phil.ox.ac.uk/", 
                            target="_blank")
 
-link_contemporary_enggano <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Contemporary Enggano Dictionary",
+link_contemporary_enggano <- tags$a(shiny::icon("globe", lib = "glyphicon"), 
+                                    "Contemporary Enggano Dictionary",
                                     href="https://portal.sds.ox.ac.uk/projects/Contemporary_Enggano_Dictionary/238013",
                                     target="_blank")
 
-link_kahler <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Digitised Enggano-German dictionary",
+link_kahler <- tags$a(shiny::icon("globe", lib = "glyphicon"), 
+                      "Digitised Enggano-German dictionary",
                       href="https://portal.sds.ox.ac.uk/projects/Retro-digitisation_of_the_Enggano-German_Dictionary/237998",
                       target="_blank")
 
-link_holle_list <- tags$a(shiny::icon("globe", lib = "glyphicon"), "Holle List (the New Basic List)",
+link_holle_list <- tags$a(shiny::icon("globe", lib = "glyphicon"), 
+                          "Holle List (the New Basic List)",
                           href="https://doi.org/10.25446/oxford.23205173.v6",
                           target="_blank")
 
-bibs <- selectizeInput(inputId = "References",
-                       label = "Sources",
-                       choices = NULL, 
-                       selected = NULL)
+# bibs <- selectizeInput(inputId = "References",
+#                        label = "Sources",
+#                        choices = NULL, 
+#                        selected = NULL)
 
 # Cards =====
 ## MAIN page ====
@@ -171,11 +188,51 @@ cards <- list(
   #)
 )
 
+## COGNATES page ====
+cognate_cards <- list(
+  
+  ## 1 - Cognate table output
+  cognate_table = card(id = "cognate_table",
+                       
+                   ### 1.1 - concept selection
+    layout_sidebar(sidebar = sidebar(english_gloss,
+                                     open = list(mobile = "always-above"), 
+                                     width = 200),
+                   
+                   ### 1.2 - table panel
+                   div(DT::DTOutput(outputId = "cognatesOut"), 
+                       style = "font-size: 96%")
+                   ),
+    fill = TRUE,
+    height = 700),
+  
+  ## 2 - Concept(icon) card (top left)
+  concept_card = card(
+    uiOutput(outputId = "ConceptEnglishIndonesian"),
+    min_height = 100,
+    fill = TRUE,
+    id = "ConceptTranslation",
+    class = "bg-secondary"
+  ),
+  
+  ## 3 - Reconstruction info card (top right)
+  reconstruction = card(
+    card_title("Reconstruction info"),
+    uiOutput(outputId = "PMP_PAN_reconstruction"),
+    min_height = 100,
+    fill = TRUE,
+    id = "PMP_PAN_card",
+    class = "bg-light"
+  )
+
+)
+
 ## GLOBAL search page ====
 full_db_page <- list(
   db_table = card(
     layout_sidebar(
-      sidebar = sidebar(textInput("global_search", label = "Database search", width = 150),
+      sidebar = sidebar(textInput("global_search", 
+                                  label = "Database search", width = 150),
                         radioButtons(inputId = "pattern_matching_options",
                                      label = "Search using:",
                                      choiceNames = list(
@@ -195,35 +252,6 @@ full_db_page <- list(
           style = "font-size: 95%")
     )
   )
-)
-
-## COGNATES page ====
-cognate_cards <- list(
-  cognate_table = card(id = "cognate_table",
-    layout_sidebar(sidebar = sidebar(english_gloss,
-                                     open = list(mobile = "always-above"), 
-                                     width = 200),
-                  div(DT::DTOutput(outputId = "cognatesOut"), 
-                      style = "font-size: 96%")
-                   ),
-    fill = TRUE,
-    height = 700),
-  concept_card = card(
-    uiOutput(outputId = "ConceptEnglishIndonesian"),
-    min_height = 100,
-    fill = TRUE,
-    id = "ConceptTranslation",
-    class = "bg-secondary"
-  ),
-  reconstruction = card(
-    card_title("Reconstruction info"),
-    uiOutput(outputId = "PMP_PAN_reconstruction"),
-    min_height = 100,
-    fill = TRUE,
-    id = "PMP_PAN_card",
-    class = "bg-light"
-  )
-
 )
 
 # UI configuration =====
@@ -314,58 +342,106 @@ server <- function(input, output, session) {
   
   # updateSelectizeInput(session, inputId = "References", choices = bib_choices, server = TRUE)
   
+  # input_english_gloss <- reactive({
+  #   input$English_Gloss
+  # })
   
   ### reactive output for COGNATE Table ====
-  notes <- reactive(
+  notes <- reactive({
     
-    {
-      
-      if (input$English_Gloss != "(none)") {
-        
-        tb_note <- enolex |> 
-          filter(English %in% input$English_Gloss) |> 
-          select(Cognate_ID,
-                 Year,
-                 Sources,
-                 Original_Form,
-                 English_Original,
-                 Note_for_Cognate,
-                 Note_for_Year) |> 
-          # filter(if_any(matches("English_Original|^Note_"), ~!is.na(.))) |> 
-          mutate(across(where(is.character), ~replace_na(., "-"))) |> 
-          mutate(across(matches("^Note_for"), ~str_replace_all(., 
-                                                               "(?<!\\s)'",
-                                                               "’"))) |> 
-          mutate(across(matches("^Note_for"), ~str_replace_all(., 
-                                                               "(?<=\\s)'",
-                                                               "‘"))) |> 
-          mutate(across(matches("^Note_for"), ~str_replace_all(., 
-                                                               "(?<!\\s)\"",
-                                                               "”"))) |> 
-          mutate(across(matches("^Note_for"), ~str_replace_all(., 
-                                                               "(?<=\\s)\"",
-                                                               "“"))) |> 
-          mutate(across(matches("Note_for"), ~str_replace_all(.,
-                                                              "__",
-                                                              " ; "))) |> 
-          mutate(across(matches("Note_for"), ~str_replace_all(.,
-                                                              "\\s{2,}",
-                                                              " "))) |> 
-          mutate(English_Original = if_else(English_Original != "-",
-                                            str_c("<p><strong>Original gloss</strong>: ‘", English_Original, "’</p>", sep = ""),
-                                            str_c("<p><strong>Original gloss</strong>: ", English_Original, "</p>", sep = ""))) |> 
-          mutate(Note_for_Cognate = str_c("<p>Note for <strong>Cognate ID ", Cognate_ID, "</strong>: ", Note_for_Cognate, "</p>", sep = ""),
-                 Note_for_Year = str_c("<p>Note for <strong>", Sources, "</strong>: ", Note_for_Year, "</p>", sep = "")) |> 
-          mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |> 
-          select(notes_all)
-        
-      } else {
-        
-        
-        
-      }
-      
-    }
+    req(input$English_Gloss != "(none)")
+    enolex |>
+      filter(glue::glue_sql(str_c("English = '", 
+                                  !!input$English_Gloss, 
+                                  "'", 
+                                  sep = ""))) |> 
+      select(Cognate_ID,
+             Year,
+             Sources,
+             Original_Form,
+             English_Original,
+             Note_for_Cognate,
+             Note_for_Year) |>
+      # filter(if_any(matches("English_Original|^Note_"), ~!is.na(.))) |>
+      mutate(across(matches("(English_Original|Note_for_Cognate|Note_for_Year)"), 
+                    \(x) if_else(is.na(x), "-", x))) |>
+      collect() |>
+      mutate(across(matches("^Note_for"), ~str_replace_all(.,
+                                                           "(?<!\\s)'",
+                                                           "’"))) |>
+      mutate(across(matches("^Note_for"), ~str_replace_all(.,
+                                                           "(?<=\\s)'",
+                                                           "‘"))) |>
+      mutate(across(matches("^Note_for"), ~str_replace_all(.,
+                                                           "(?<!\\s)\"",
+                                                           "”"))) |>
+      mutate(across(matches("^Note_for"), ~str_replace_all(.,
+                                                           "(?<=\\s)\"",
+                                                           "“"))) |>
+      mutate(across(matches("Note_for"), ~str_replace_all(.,
+                                                          "__",
+                                                          " ; "))) |>
+      mutate(across(matches("Note_for"), ~str_replace_all(.,
+                                                          "\\s{2,}",
+                                                          " "))) |>
+      mutate(English_Original = if_else(English_Original != "-",
+                                        str_c("<p><strong>Original gloss</strong>: ‘", English_Original, "’</p>", sep = ""),
+                                        str_c("<p><strong>Original gloss</strong>: ", English_Original, "</p>", sep = ""))) |>
+      mutate(Note_for_Cognate = str_c("<p>Note for <strong>Cognate ID ", Cognate_ID, "</strong>: ", Note_for_Cognate, "</p>", sep = ""),
+             Note_for_Year = str_c("<p>Note for <strong>", Sources, "</strong>: ", Note_for_Year, "</p>", sep = "")) |>
+      mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |>
+      select(notes_all)
+  }
+    
+    # {
+    #   
+    #   if (input_english_gloss() != "(none)") {
+    #     
+    #     tbl(enolex_db, "enolex") |> 
+    #       filter(English %in% input_english_gloss()) |> 
+    #       select(Cognate_ID,
+    #              Year,
+    #              Sources,
+    #              Original_Form,
+    #              English_Original,
+    #              Note_for_Cognate,
+    #              Note_for_Year) |> 
+    #       # filter(if_any(matches("English_Original|^Note_"), ~!is.na(.))) |> 
+    #       mutate(across(matches("(English_Original|Note_for_Cognate|Note_for_Year)"), \(x) if_else(is.na(x), "-", x))) |> 
+    #       collect() |> 
+    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
+    #                                                            "(?<!\\s)'",
+    #                                                            "’"))) |> 
+    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
+    #                                                            "(?<=\\s)'",
+    #                                                            "‘"))) |> 
+    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
+    #                                                            "(?<!\\s)\"",
+    #                                                            "”"))) |> 
+    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
+    #                                                            "(?<=\\s)\"",
+    #                                                            "“"))) |> 
+    #       mutate(across(matches("Note_for"), ~str_replace_all(.,
+    #                                                           "__",
+    #                                                           " ; "))) |> 
+    #       mutate(across(matches("Note_for"), ~str_replace_all(.,
+    #                                                           "\\s{2,}",
+    #                                                           " "))) |> 
+    #       mutate(English_Original = if_else(English_Original != "-",
+    #                                         str_c("<p><strong>Original gloss</strong>: ‘", English_Original, "’</p>", sep = ""),
+    #                                         str_c("<p><strong>Original gloss</strong>: ", English_Original, "</p>", sep = ""))) |> 
+    #       mutate(Note_for_Cognate = str_c("<p>Note for <strong>Cognate ID ", Cognate_ID, "</strong>: ", Note_for_Cognate, "</p>", sep = ""),
+    #              Note_for_Year = str_c("<p>Note for <strong>", Sources, "</strong>: ", Note_for_Year, "</p>", sep = "")) |> 
+    #       mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |> 
+    #       select(notes_all)
+    #     
+    #   } else {
+    #     
+    #     
+    #     
+    #   }
+    #   
+    # }
     
   )
   
@@ -393,78 +469,155 @@ server <- function(input, output, session) {
   
   english_selected <- reactive(
     
-    { if (input$English_Gloss != "(none)") {
+    {
+      req(input$English_Gloss != "(none)")
       
-      tb <- enolex |> 
-        filter(English %in% input$English_Gloss) |> 
-        select(Cognate_ID, Year, Sources, Original_Form, Standardised_Orthography = Orthography,
-               Phonemic_Transcription = IPA) # |> 
-        # select(where(~!all(is.na(.))))
-      
-      for_checking_notes <- enolex |>
-        filter(English %in% input$English_Gloss) |>
-        select(English_Original, Note_for_Year, Note_for_Cognate)
-      
-      for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
-                               any(!is.na(for_checking_notes$Note_for_Year)),
-                               any(!is.na(for_checking_notes$Note_for_Cognate)))
-      
-      rows_to_add <- which(!is.na(for_checking_notes$English_Original) | 
-                             !is.na(for_checking_notes$Note_for_Year) | 
-                             !is.na(for_checking_notes$Note_for_Cognate))
-      
-      if (any(length(rows_to_add) > 0)) {
-        
-        tb <- tb |> 
-          mutate(Details = shinyInput(actionButton, nrow(tb), rows_to_add = rows_to_add, 'button_', label = "More",
-                                      onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})'))
-        
-      }
-      
-      
-      cog_id_colouring <- unique(tb$Cognate_ID)
-      
-      DT::datatable(tb,
-                    escape = FALSE,
-                    selection = "single",
-                    options = list(paging = FALSE,
-                                   scrollY = "500px",
-                                   scrollX = TRUE,
-                                   autoWidth = TRUE,
-                                   language = list(searchPlaceholder = "Search"),
-                                   columnDefs = list(list(className = "dt-center",
-                                                          targets = c(1, 2)),
-                                                     list(width = "50px",
-                                                          targets = "Cognate_ID"),
-                                                     list(width = "50px",
-                                                          targets = "Year"))),
-                    filter = "top",
-                    # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
-                    style = "bootstrap4",
-                    class = list(stripe = FALSE)) |>
-        formatStyle("Cognate_ID",
-                    backgroundColor = styleEqual(cog_id_colouring,
-                                                 colour_values(factor(cog_id_colouring),
-                                                               palette = "rdylbu",
-                                                               alpha = 65)))
-      
-    } else {
-      
-      enolex |> 
-        filter(English %in% "sadsakdasklaskcmasl") |> 
-        DT::datatable()
+        tb <- enolex |>
+          filter(glue::glue_sql(str_c("English = '", 
+                                      !!input$English_Gloss, 
+                                      "'", 
+                                      sep = ""))) |>
+          select(Cognate_ID, Year, Sources, Original_Form, 
+                 Standardised_Orthography = Orthography,
+                 Phonemic_Transcription = IPA) |>
+          collect() # |>
+          # select(where(~!all(is.na(.))))
+
+        for_checking_notes <- enolex |>
+          filter(glue::glue_sql(str_c("English = '", 
+                                      !!input$English_Gloss, 
+                                      "'", 
+                                      sep = ""))) |>
+          select(English_Original, Note_for_Year, Note_for_Cognate) |>
+          collect()
+
+        for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
+                                 any(!is.na(for_checking_notes$Note_for_Year)),
+                                 any(!is.na(for_checking_notes$Note_for_Cognate)))
+
+        rows_to_add <- which(!is.na(for_checking_notes$English_Original) |
+                               !is.na(for_checking_notes$Note_for_Year) |
+                               !is.na(for_checking_notes$Note_for_Cognate))
+
+        if (any(length(rows_to_add) > 0)) {
+
+          tb <- tb |>
+            mutate(Details = shinyInput(actionButton, 
+                                        nrow(tb), 
+                                        rows_to_add = rows_to_add, 
+                                        'button_', 
+                                        label = "More",
+                                        onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})')) |> 
+            relocate(Details, .before = Year)
+
+        }
+
+        cog_id_colouring <- unique(tb$Cognate_ID)
+
+        DT::datatable(tb,
+                      escape = FALSE,
+                      selection = "single",
+                      options = list(paging = FALSE,
+                                     scrollY = "500px",
+                                     scrollX = TRUE,
+                                     autoWidth = TRUE,
+                                     language = list(searchPlaceholder = "Search"),
+                                     columnDefs = list(list(className = "dt-center",
+                                                            targets = c(1, 2)),
+                                                       list(width = "50px",
+                                                            targets = "Cognate_ID"),
+                                                       list(width = "50px",
+                                                            targets = "Year"))),
+                      filter = "top",
+                      # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
+                      style = "bootstrap4",
+                      class = list(stripe = FALSE)) |>
+          formatStyle("Cognate_ID",
+                      backgroundColor = styleEqual(cog_id_colouring,
+                                                   colour_values(factor(cog_id_colouring),
+                                                                 palette = "rdylbu",
+                                                                 alpha = 65)))
       
     }
-      
-    }
+    
+    # { if (input_english_gloss() != "(none)") {
+    #   
+    #   tb <- tbl(enolex_db, "enolex") |> 
+    #     filter(English %in% input_english_gloss()) |> 
+    #     select(Cognate_ID, Year, Sources, Original_Form, Standardised_Orthography = Orthography,
+    #            Phonemic_Transcription = IPA) |> 
+    #     collect() # |> 
+    #     # select(where(~!all(is.na(.))))
+    #   
+    #   for_checking_notes <- tbl(enolex_db, "enolex") |>
+    #     filter(English %in% input_english_gloss()) |>
+    #     select(English_Original, Note_for_Year, Note_for_Cognate) |> 
+    #     collect()
+    #   
+    #   for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
+    #                            any(!is.na(for_checking_notes$Note_for_Year)),
+    #                            any(!is.na(for_checking_notes$Note_for_Cognate)))
+    #   
+    #   rows_to_add <- which(!is.na(for_checking_notes$English_Original) | 
+    #                          !is.na(for_checking_notes$Note_for_Year) | 
+    #                          !is.na(for_checking_notes$Note_for_Cognate))
+    #   
+    #   if (any(length(rows_to_add) > 0)) {
+    #     
+    #     tb <- tb |> 
+    #       mutate(Details = shinyInput(actionButton, nrow(tb), rows_to_add = rows_to_add, 'button_', label = "More",
+    #                                   onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})'))
+    #     
+    #   }
+    #   
+    #   
+    #   cog_id_colouring <- unique(tb$Cognate_ID)
+    #   
+    #   DT::datatable(tb,
+    #                 escape = FALSE,
+    #                 selection = "single",
+    #                 options = list(paging = FALSE,
+    #                                scrollY = "500px",
+    #                                scrollX = TRUE,
+    #                                autoWidth = TRUE,
+    #                                language = list(searchPlaceholder = "Search"),
+    #                                columnDefs = list(list(className = "dt-center",
+    #                                                       targets = c(1, 2)),
+    #                                                  list(width = "50px",
+    #                                                       targets = "Cognate_ID"),
+    #                                                  list(width = "50px",
+    #                                                       targets = "Year"))),
+    #                 filter = "top",
+    #                 # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
+    #                 style = "bootstrap4",
+    #                 class = list(stripe = FALSE)) |>
+    #     formatStyle("Cognate_ID",
+    #                 backgroundColor = styleEqual(cog_id_colouring,
+    #                                              colour_values(factor(cog_id_colouring),
+    #                                                            palette = "rdylbu",
+    #                                                            alpha = 65)))
+    #   
+    # } else {
+    #   
+    #   tbl(enolex_db, "enolex") |> 
+    #     filter(English %in% "sadsakdasklaskcmasl") |> 
+    #     DT::datatable()
+    #   
+    # }
+    #   
+    # }
   )
   
-  output$cognatesOut <- renderDT(
-    {
-      req(input$English_Gloss != "(none)" & !is.null(input$English_Gloss) & input$English_Gloss != "")
-      english_selected()
-    }
-  )
+  observe({
+    
+    req(input$English_Gloss != "(none)" & 
+          !is.null(input$English_Gloss) & 
+          input$English_Gloss != "")
+    output$cognatesOut <- renderDT({english_selected()})
+    
+  })
+  
+  
   
   observeEvent(input$select_button, {
     
@@ -526,12 +679,13 @@ server <- function(input, output, session) {
       
     } else if (input$pattern_matching_options == "partial_match") {
       
-      glb <- enolex |> 
+      glb <- tbl(enolex_db, "enolex") |> 
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
         select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
-        filter(if_any(where(is.character), ~str_detect(string = ., pattern = input$global_search))) |> 
+        filter(if_any(everything(), ~str_detect(string = ., pattern = fixed(input$global_search)))) |> 
+        collect() |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
           paste(c("(", input$global_search, ")"), collapse = ""),
@@ -615,20 +769,42 @@ server <- function(input, output, session) {
     
     {
       
-      eng <- str_to_sentence(unique(pull(filter(enolex, English %in% input$English_Gloss), English)))
+      eng <- str_to_sentence(unique(pull(filter(enolex, 
+                                                glue::glue_sql(str_c("English = '", 
+                                                                     !!input$English_Gloss, 
+                                                                     "'", 
+                                                                     sep = ""))), 
+                                         English)))
       
-      if (length(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian))) > 1) {
+      if (length(unique(pull(filter(enolex, 
+                                    glue::glue_sql(str_c("English = '", 
+                                                         !!input$English_Gloss, 
+                                                         "'", 
+                                                         sep = ""))), 
+                             Indonesian))) > 1) {
         
         # italics Indonesian gloss
         # idn <- str_c("‘<em>", str_c(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian)), collapse = ", "), "</em>’", sep = "")
         
         # non-italics
-        idn <- str_c("‘", str_c(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian)), collapse = ", "), "’", sep = "")
+        idn <- str_c("‘", str_c(unique(pull(filter(enolex, 
+                                                   glue::glue_sql(str_c("English = '", 
+                                                                        !!input$English_Gloss, 
+                                                                        "'", 
+                                                                        sep = ""))), 
+                                            Indonesian)), 
+                                collapse = ", "), 
+                     "’", 
+                     sep = "")
         
         idn_orth <- enolex |> 
-          filter(English %in% input$English_Gloss) |> 
+          filter(glue::glue_sql(str_c("English = '", 
+                                      !!input$English_Gloss, 
+                                      "'", 
+                                      sep = ""))) |> 
           select(Sources, Indonesian, Standardised_Orthography = Orthography) |> 
-          distinct()
+          distinct() |> 
+          collect()
         
         idn_notes <- idn_orth |> 
           group_by(Indonesian, Sources) |> 
@@ -646,7 +822,8 @@ server <- function(input, output, session) {
           pull(to_print) |> 
           unique()
         
-        idn_notes <- str_c(str_c("<p>", idn_notes, "</p>", sep =""), collapse = "")
+        idn_notes <- str_c(str_c("<p>", idn_notes, "</p>", sep =""), 
+                           collapse = "")
         
       } else {
         
@@ -654,25 +831,63 @@ server <- function(input, output, session) {
         # idn <- str_c("‘<em>", str_c(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian)), collapse = ", "), "</em>’", sep = "")
         
         # non-italics
-        idn <- str_c("‘", str_c(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian)), collapse = ", "), "’", sep = "")
+        idn <- str_c("‘", str_c(unique(pull(filter(enolex, 
+                                                   glue::glue_sql(
+                                                     str_c("English = '", 
+                                                           !!input$English_Gloss, 
+                                                           "'", 
+                                                           sep = ""))
+        ), 
+        Indonesian)), 
+        collapse = ", "), 
+        "’", 
+        sep = "")
         
       }
       
-      concepticon <- unique(pull(filter(enolex, English %in% input$English_Gloss), Concepticon_Gloss))
+      concepticon <- unique(pull(filter(enolex, glue::glue_sql(str_c("English = '", 
+                                                                     !!input$English_Gloss, 
+                                                                     "'", 
+                                                                     sep = ""))
+                                        ), 
+                                 Concepticon_Gloss))
       
-      if (!is.na(concepticon) & length(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian))) == 1) {
+      if (!is.na(concepticon) & length(unique(pull(filter(enolex, 
+                                                          glue::glue_sql(str_c("English = '", 
+                                                                               !!input$English_Gloss, 
+                                                                               "'", 
+                                                                               sep = ""))), 
+                                                   Indonesian))) == 1) {
         
         HTML("<h3>", str_c(eng, " ", idn, "</h3><p>Corresponding concept set in Concepticon: ", concepticon, "</p>", sep = ""))  
         
-      } else if (!is.na(concepticon) & length(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian))) > 1) {
+      } else if (!is.na(concepticon) & length(unique(pull(filter(enolex, 
+                                                                 glue::glue_sql(
+                                                                   str_c("English = '", 
+                                                                         !!input$English_Gloss, 
+                                                                         "'", 
+                                                                         sep = ""))), 
+                                                          Indonesian))) > 1) {
         
         HTML("<h3>", str_c(eng, " ", idn, "</h3><p>Corresponding concept set in Concepticon: ", concepticon, "</p><p>", idn_notes, "</p>", sep = ""))
         
-      } else if (is.na(concepticon) & length(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian))) == 1) {
+      } else if (is.na(concepticon) & length(unique(pull(filter(enolex, 
+                                                                glue::glue_sql(
+                                                                  str_c("English = '", 
+                                                                        !!input$English_Gloss, 
+                                                                        "'", 
+                                                                        sep = ""))), 
+                                                         Indonesian))) == 1) {
         
         HTML("<h3>", str_c(eng, " ", idn, "</h3>", sep = ""))
         
-      } else if (is.na(concepticon) & length(unique(pull(filter(enolex, English %in% input$English_Gloss), Indonesian))) > 1) {
+      } else if (is.na(concepticon) & length(unique(pull(filter(enolex, 
+                                                                glue::glue_sql(
+                                                                  str_c("English = '", 
+                                                                        !!input$English_Gloss, 
+                                                                        "'", 
+                                                                        sep = ""))), 
+                                                         Indonesian))) > 1) {
         
         HTML("<h3>", str_c(eng, " ", idn, "</h3>", "<p>", idn_notes, "</p>", sep = ""))
       }
@@ -685,7 +900,8 @@ server <- function(input, output, session) {
     
     {
       
-      if(all(req(input$English_Gloss) != "(none)" & !is.null(req(input$English_Gloss))))
+      if(all(req(input$English_Gloss) != "(none)" & 
+             !is.null(req(input$English_Gloss))))
       renderUI(concept_idn_translation())
       
     }
@@ -701,10 +917,14 @@ server <- function(input, output, session) {
         
         
         recx <- enolex |> 
-          filter(English %in% input$English_Gloss) |> 
+          filter(glue::glue_sql(str_c("English = '", 
+                                      !!input$English_Gloss, 
+                                      "'", 
+                                      sep = ""))) |> 
           select(Cognate_ID, matches("PMP|PAN|Etymology_Source")) |> 
           filter(if_any(matches("PMP|PAN"), ~!is.na(.))) |> 
           distinct() |> 
+          collect() |> 
           mutate(across(matches("PAN|PMP|Etymology"), ~replace_na(., "-"))) |> 
           mutate(across(matches("PAN|PMP|Etymology"), ~replace(., . %in% c("?", "??", "???"), "?"))) |> 
           mutate(reconstr = str_c("<p><code>Cognate_ID</code> ", 
@@ -742,7 +962,10 @@ server <- function(input, output, session) {
     
     {
       
-      if(all(req(input$English_Gloss) != "(none)" & !is.null(req(input$English_Gloss)) & req(proto_reconstruction() != "") & !is.na(proto_reconstruction())))
+      if(all(req(input$English_Gloss) != "(none)" & 
+             !is.null(req(input$English_Gloss)) & 
+             req(proto_reconstruction() != "") & 
+             !is.na(proto_reconstruction())))
       renderUI(proto_reconstruction())
       
     }
@@ -764,5 +987,9 @@ server <- function(input, output, session) {
   })
   
 }
+
+onStop(function() {
+  dbDisconnect(enolex_db)
+})
 
 shinyApp(ui, server)
