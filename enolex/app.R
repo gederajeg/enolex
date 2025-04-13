@@ -480,7 +480,9 @@ server <- function(input, output, session) {
           select(Cognate_ID, Year, Sources, Original_Form, 
                  Standardised_Orthography = Orthography,
                  Phonemic_Transcription = IPA) |>
-          collect() # |> 
+          collect() |> 
+          distinct()
+          # |> 
           # mutate(Phonemic_Transcription = stri_trans_nfc(Phonemic_Transcription)) # |>
           # select(where(~!all(is.na(.))))
 
@@ -669,31 +671,32 @@ server <- function(input, output, session) {
   
   materials_table <- reactive(
     {
-      DT::datatable(bibs1,
-                    escape = FALSE,
-                    selection = "single",
-                    # rownames = FALSE,
-                    options = list(paging = FALSE,
-                                   scrollY = "500px",
-                                   scrollX = TRUE,
-                                   language = list(searchPlaceholder = "Search"),
-                                   autoWidth = TRUE,
-                                   columnDefs = list(list(className = "dt-center",
-                                                          targets = c(1:4)),
-                                                     list(width = "50px",
-                                                          targets = c("Published", "Collected")),
-                                                     list(width = "60px",
-                                                          targets = "Form_Count"),
-                                                     list(width = "140px",
-                                                          targets = "Dialect"),
-                                                     list(width = "140px",
-                                                          targets = "Place"),
-                                                     list(width = "170px",
-                                                          targets = "Sources"))),
-                    filter = "top",
-                    # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
-                    style = "bootstrap4",
-                    class = list(stripe = FALSE))
+      tbl(enolex_db, "bibs1") |> 
+        collect() |>
+        DT::datatable(escape = FALSE,
+                      selection = "single",
+                      # rownames = FALSE,
+                      options = list(paging = FALSE,
+                                     scrollY = "500px",
+                                     scrollX = TRUE,
+                                     language = list(searchPlaceholder = "Search"),
+                                     autoWidth = TRUE,
+                                     columnDefs = list(list(className = "dt-center",
+                                                            targets = c(1:4)),
+                                                       list(width = "50px",
+                                                            targets = c("Published", "Collected")),
+                                                       list(width = "60px",
+                                                            targets = "Form_Count"),
+                                                       list(width = "140px",
+                                                            targets = "Dialect"),
+                                                       list(width = "140px",
+                                                            targets = "Place"),
+                                                       list(width = "170px",
+                                                            targets = "Sources"))),
+                      filter = "top",
+                      # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
+                      style = "bootstrap4",
+                      class = list(stripe = FALSE))
     }
   )
   
