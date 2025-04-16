@@ -580,15 +580,16 @@ server <- function(input, output, session) {
     
     if (input$pattern_matching_options == "regex") {
       
-      glb <- enolex |> 
+      glb <- tbl(enolex_db, "enolex") |> 
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
         select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+        collect() |> 
         filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
-          paste(c("\\b(", input$global_search, ")\\b"), collapse = ""),
+          paste(c("(", input$global_search, ")"), collapse = ""),
           "<span style='background-color:#D4CDF4;'>\\1</span>",
           .,
           TRUE,
@@ -599,11 +600,12 @@ server <- function(input, output, session) {
       
     } else if (input$pattern_matching_options == "exact_match") {
       
-      glb <- enolex |> 
+      glb <- tbl(enolex_db, "enolex") |> 
         rename(Original_gloss = English_Original,
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
         select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+        collect() |> 
         filter(if_any(where(is.character), ~str_detect(., regex(str_c("\\b", input$global_search, "\\b", sep = ""), ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
@@ -622,8 +624,8 @@ server <- function(input, output, session) {
                # Concepticon = Concepticon_Gloss,
                Dialect = Dialect_Info) |> 
         select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
-        filter(if_any(everything(), ~str_detect(string = ., pattern = fixed(input$global_search)))) |> 
         collect() |> 
+        filter(if_any(where(is.character), ~str_detect(string = ., pattern = fixed(input$global_search)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
           paste(c("(", input$global_search, ")"), collapse = ""),
