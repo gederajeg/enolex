@@ -22,10 +22,18 @@ library(glue)
 ## Connect to the EnoLEX sqlite ====
 enolex_db <- dbConnect(SQLite(), "enolex.sqlite")
 enolex <- tbl(enolex_db, "enolex")
+enolex_glb <- tbl(enolex_db, "enolex_glb")
+RSQLite::initRegExp(enolex_db)
+RSQLite::initExtension(enolex_db, "regexp")
+
+## to be used in the global search so that the searching
+## does not include url
+reconst_concept_df <- enolex |> 
+  select(ID, PAN_Etymon, PMP_Etymon, Etymology_Source, Concepticon_Gloss)
 
 ## Read in the main data for Sources ====
 ### from output data generated in script `r-code_07-...`
-bibs <- read_rds("sources.rds")
+# bibs <- read_rds("sources.rds")
 
 ## Read in the main data for EnoLEX ====
 ### from output data generated in script `r-code_07-...`
@@ -33,7 +41,7 @@ bibs <- read_rds("sources.rds")
 
 ## Dialect by sources ======
 ### from output data generated in script `r-code_07-...`
-dialect_info <- read_rds("dialect_info.rds")
+# dialect_info <- read_rds("dialect_info.rds")
 
 ## Count the forms by sources =====
 # form_count <- enolex |> 
@@ -50,7 +58,7 @@ enolex_eng <- tbl(enolex_db, "enolex") |>
 sem_choices_eng <- c("(none)", enolex_eng)
 
 ## Prepare the choice for the Sources =====
-bib_choices <- c("(none)", bibs$Sources)
+# bib_choices <- c("(none)", bibs$Sources)
 
 english_gloss <- selectizeInput(inputId = "English_Gloss", 
                                 options = list(dropdownParent = "body",
@@ -580,13 +588,11 @@ server <- function(input, output, session) {
     
     if (input$pattern_matching_options == "regex") {
       
-      glb <- tbl(enolex_db, "enolex") |> 
-        rename(Original_gloss = English_Original,
-               # Concepticon = Concepticon_Gloss,
-               Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+      glb <- enolex_glb |> 
         collect() |> 
-        filter(if_any(where(is.character), ~str_detect(., regex(input$global_search, ignore_case = FALSE)))) |> 
+        filter(if_any(where(is.character), 
+                      ~str_detect(., regex(input$global_search, 
+                                           ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
           paste(c("(", input$global_search, ")"), collapse = ""),
@@ -595,18 +601,27 @@ server <- function(input, output, session) {
           TRUE,
           TRUE
         ))) |> 
-        rename(Concepticon = Concepticon_Gloss)
+        rename(Concepticon = Concepticon_Gloss) |> 
+        select(!matches("(PAN_Etymon|PMP_Etymon|Etymology_Source|Concepticon(_Gloss)?)"))
+      
+      reconst_concept_df_filtered <- reconst_concept_df |> 
+        filter(ID %in% !!glb$ID) |> 
+        collect()
+      glb <- glb |> 
+        left_join(reconst_concept_df_filtered)
         
       
     } else if (input$pattern_matching_options == "exact_match") {
       
-      glb <- tbl(enolex_db, "enolex") |> 
-        rename(Original_gloss = English_Original,
-               # Concepticon = Concepticon_Gloss,
-               Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+      glb <- enolex_glb |> 
         collect() |> 
-        filter(if_any(where(is.character), ~str_detect(., regex(str_c("\\b", input$global_search, "\\b", sep = ""), ignore_case = FALSE)))) |> 
+        filter(if_any(where(is.character), 
+                      ~str_detect(., 
+                                  regex(str_c("\\b", 
+                                              input$global_search, 
+                                              "\\b", 
+                                              sep = ""), 
+                                        ignore_case = FALSE)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
           paste(c("\\b(", input$global_search, ")\\b"), collapse = ""),
@@ -615,17 +630,22 @@ server <- function(input, output, session) {
           TRUE,
           TRUE
         ))) |>
-        rename(Concepticon = Concepticon_Gloss)
+        rename(Concepticon = Concepticon_Gloss) |> 
+        select(!matches("(PAN_Etymon|PMP_Etymon|Etymology_Source|Concepticon(_Gloss)?)"))
+      
+      reconst_concept_df_filtered <- reconst_concept_df |> 
+        filter(ID %in% !!glb$ID) |> 
+        collect()
+      glb <- glb |> 
+        left_join(reconst_concept_df_filtered)
       
     } else if (input$pattern_matching_options == "partial_match") {
       
-      glb <- tbl(enolex_db, "enolex") |> 
-        rename(Original_gloss = English_Original,
-               # Concepticon = Concepticon_Gloss,
-               Dialect = Dialect_Info) |> 
-        select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+      glb <- enolex_glb |> 
         collect() |> 
-        filter(if_any(where(is.character), ~str_detect(string = ., pattern = fixed(input$global_search)))) |> 
+        filter(if_any(where(is.character), 
+                      ~str_detect(string = ., 
+                                  pattern = fixed(input$global_search)))) |> 
         select(where(function(x) any(!is.na(x)))) |> 
         mutate(across(where(is.character), ~gsub(
           paste(c("(", input$global_search, ")"), collapse = ""),
@@ -634,7 +654,14 @@ server <- function(input, output, session) {
           TRUE,
           TRUE
         ))) |>
-        rename(Concepticon = Concepticon_Gloss)
+        rename(Concepticon = Concepticon_Gloss) |> 
+        select(!matches("(PAN_Etymon|PMP_Etymon|Etymology_Source|Concepticon(_Gloss)?)"))
+      
+      reconst_concept_df_filtered <- reconst_concept_df |> 
+        filter(ID %in% !!glb$ID) |> 
+        collect()
+      glb <- glb |> 
+        left_join(reconst_concept_df_filtered)
       
     }
     
@@ -841,8 +868,10 @@ server <- function(input, output, session) {
     
     {
       
-      if(all(req(input$English_Gloss) != "(none)" & 
-             !is.null(req(input$English_Gloss))))
+      if(all(req(input$English_Gloss) != "(none)" # & 
+             #!is.null(req(input$English_Gloss))
+             )
+         )
       renderUI(concept_idn_translation())
       
     }

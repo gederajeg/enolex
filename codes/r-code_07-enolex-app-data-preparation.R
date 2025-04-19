@@ -263,6 +263,15 @@ dialect_info <- enolex |>
 
 ### join dialect info into EnoLEX and save into enolex main data
 write_rds(select(left_join(enolex, dialect_info), -Doculect, -YEAR), "enolex/enolex.rds")
+read_rds("enolex/enolex.rds") |> 
+  rename(Original_gloss = English_Original,
+         # Concepticon = Concepticon_Gloss,
+         Dialect = Dialect_Info) |> 
+  select(-CITATION, -URL, -BIBTEXKEY, -Concepticon, -AUTHOR, -TITLE, -YEAR_URL, 
+         -Number_of_Cognates, -matches("Segments"), -Collected, -LexemesCount) |> 
+  mutate(across(matches("^(PAN_Etymon|PMP_Etymon|Etymology_Source|Concepticon_Gloss)"),
+                ~str_replace_all(., "\\<[^>]+?\\>", ""))) |> 
+  write_rds("enolex/enolex_glb.rds")
 write_rds(left_join(sources_enolex, dialect_info), "enolex/sources.rds")
 write_rds(dialect_info, "enolex/dialect_info.rds")
 bibs <- read_rds("enolex/sources.rds")
@@ -287,6 +296,8 @@ write_rds(bibs1, "enolex/bibs1.rds")
 ## Create SQLite version =====
 enolex_db <- DBI::dbConnect(RSQLite::SQLite(), "enolex/enolex.sqlite")
 DBI::dbWriteTable(enolex_db, "enolex", readr::read_rds("enolex/enolex.rds"),
+                  overwrite = TRUE)
+DBI::dbWriteTable(enolex_db, "enolex_glb", readr::read_rds("enolex/enolex_glb.rds"),
                   overwrite = TRUE)
 DBI::dbWriteTable(enolex_db, "dialect_info", 
                   readr::read_rds("enolex/dialect_info.rds"),
