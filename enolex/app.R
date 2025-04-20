@@ -172,7 +172,7 @@ cards <- list(
                                       h2("How to get started"),
                                       p("The first option is the", actionLink("CognatesTabLink", HTML("<strong>Concept Search</strong>")), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
                                       p("The second option is the", actionLink("GlobalSearch", HTML("<strong>Global Search</strong>")), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
-                                      p("The third option is browsing individual word list per author/source. This can be done via clicking an author's name under the", HTML("<code>Sources</code>"), "column within the", actionLink("SourcesTabLink", HTML("<strong>Sources</strong>")), "tab."),
+                                      p("The third option is browsing individual word list per author/source. This can be done via clicking an author's name under the", HTML("<code>Sources</code>"), "column within the", actionLink("SourcesTabLink1", HTML("<strong>Sources</strong>")), "tab."),
                                       # tags$input(type = "search", id = "site_search", name = "q", placeholder = "Type and Enter"),
                                       # tags$script(js_enter_key),
                                       # tags$script(jscode),
@@ -549,7 +549,10 @@ server <- function(input, output, session) {
                       backgroundColor = styleEqual(cog_id_colouring,
                                                    colour_values(factor(cog_id_colouring),
                                                                  palette = "rdylbu",
-                                                                 alpha = 65)))
+                                                                 alpha = 65))) |> 
+          formatStyle("Sources",
+                      color = "#3277ae",
+                      cursor = "pointer")
       
     }
     
@@ -695,7 +698,7 @@ server <- function(input, output, session) {
   })
   
   output$global_search_output <- DT::renderDT({
-    req(input$global_search) 
+    req(input$global_search)
       global_search()
   })
   
@@ -960,6 +963,11 @@ server <- function(input, output, session) {
     updateTabsetPanel(session = session, "tabs", "Sources")
   })
   
+  # the following code run the clicking on Sources hyperlink the main panel/page
+  observeEvent(input$SourcesTabLink1, {
+    updateTabsetPanel(session = session, "tabs", "Sources")
+  })
+  
   # observer to close individual by source word list
   ## inspiration: https://stackoverflow.com/a/58593130
   observeEvent(input$tabs, {
@@ -1014,6 +1022,54 @@ server <- function(input, output, session) {
     
   }
 )
+  
+  # observer in the Concept for revealing individual list by source
+  observeEvent(input$cognatesOut_cell_clicked, {
+    
+    source_info <- input$cognatesOut_cell_clicked
+    
+    if (!is.null(source_info$value) && source_info$col == 4) {
+      indiv_tb <- reactive({
+        enolex |> 
+          filter(glue::glue_sql(str_c("Sources = '",
+                                      source_info$value,
+                                      "'",
+                                      sep = ""))) |> 
+          select(Cognate_ID, Original_Form, 
+                 Standardised_Orthography = Orthography,
+                 Phonemic_Transcription = IPA, 
+                 Concepticon = Concepticon_Gloss) |> 
+          arrange(Original_Form) |> 
+          collect() |> 
+          distinct() |> 
+          DT::datatable(escape = FALSE)
+      })
+      nav_insert(id = "tabs",
+                 target = "Sources",
+                 position = "after",
+                 select = TRUE,
+                 session = session,
+                 nav_panel("Word List by Source",
+                           tags$h1(str_c("Word list from '",
+                                         source_info$value,
+                                         "'",
+                                         sep = "")),
+                           tags$br(),
+                           card_body(DT::DTOutput(outputId = "individualWlist"))
+                 )
+      )
+      
+      output$individualWlist <- DT::renderDataTable({
+        indiv_tb()})
+      
+    } else {
+      
+      return()
+      
+    }
+    
+  }
+  )
   
 }
 
