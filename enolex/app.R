@@ -488,8 +488,7 @@ server <- function(input, output, session) {
           select(Cognate_ID, Year, Sources, Original_Form, 
                  Standardised_Orthography = Orthography,
                  Phonemic_Transcription = IPA) |>
-          collect() |> 
-          distinct()
+          collect()
           # |> 
           # mutate(Phonemic_Transcription = stri_trans_nfc(Phonemic_Transcription)) # |>
           # select(where(~!all(is.na(.))))
@@ -520,7 +519,8 @@ server <- function(input, output, session) {
                                         label = "More",
                                         onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})')) |> 
             relocate(Details, 
-                     .before = Year)
+                     .before = Year) |> 
+            distinct()
 
         }
 
