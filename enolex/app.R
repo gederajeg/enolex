@@ -172,6 +172,7 @@ cards <- list(
                                       h2("How to get started"),
                                       p("The first option is the", actionLink("CognatesTabLink", HTML("<strong>Concept Search</strong>")), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
                                       p("The second option is the", actionLink("GlobalSearch", HTML("<strong>Global Search</strong>")), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
+                                      p("The third option is browsing individual word list per author/source. This can be done via clicking an author's name under the", HTML("<code>Sources</code>"), "column within the", actionLink("SourcesTabLink", HTML("<strong>Sources</strong>")), "tab."),
                                       # tags$input(type = "search", id = "site_search", name = "q", placeholder = "Type and Enter"),
                                       # tags$script(js_enter_key),
                                       # tags$script(jscode),
@@ -985,6 +986,7 @@ server <- function(input, output, session) {
                  Standardised_Orthography = Orthography,
                  Phonemic_Transcription = IPA, 
                  Concepticon = Concepticon_Gloss) |> 
+          arrange(Original_Form) |> 
           collect() |> 
           DT::datatable(escape = FALSE)
       })
