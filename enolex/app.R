@@ -725,7 +725,10 @@ server <- function(input, output, session) {
                       filter = "top",
                       # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
                       style = "bootstrap4",
-                      class = list(stripe = FALSE))
+                      class = list(stripe = FALSE)) |> 
+        formatStyle("Sources",
+                    color = "#3277ae",
+                    cursor = "pointer")
     }
   )
   
@@ -955,6 +958,60 @@ server <- function(input, output, session) {
   observeEvent(input$SourcesTabLink, {
     updateTabsetPanel(session = session, "tabs", "Sources")
   })
+  
+  # observer to close individual by source word list
+  ## inspiration: https://stackoverflow.com/a/58593130
+  observeEvent(input$tabs, {
+    if (input$tabs != "Word List by Source") {
+      nav_remove("tabs", 
+                 target = "Word List by Source",
+                 session)
+    }
+  })
+  
+  # observer in the Sources for revealing individual list by source
+  observeEvent(input$enolex_materials_cell_clicked, {
+    
+    source_info <- input$enolex_materials_cell_clicked
+    
+    if (!is.null(source_info$value) && source_info$col == 3) {
+      indiv_tb <- reactive({
+        enolex |> 
+          filter(glue::glue_sql(str_c("Sources = '",
+                                      source_info$value,
+                                      "'",
+                                      sep = ""))) |> 
+          select(Cognate_ID, Original_Form, 
+                 Standardised_Orthography = Orthography,
+                 Phonemic_Transcription = IPA, 
+                 Concepticon = Concepticon_Gloss) |> 
+          collect() |> 
+          DT::datatable(escape = FALSE)
+      })
+      nav_insert(id = "tabs",
+                 target = "Sources",
+                 position = "after",
+                 select = TRUE,
+                 session = session,
+                 nav_panel("Word List by Source",
+                           tags$h1(str_c("Word list from '",
+                                         source_info$value,
+                                         "'",
+                                         sep = "")),
+                           tags$br(),
+                           card_body(DT::DTOutput(outputId = "individualWlist"))
+                 )
+      )
+      output$individualWlist <- DT::renderDataTable({
+        indiv_tb()})
+    } else {
+      
+      return()
+      
+    }
+    
+  }
+)
   
 }
 
