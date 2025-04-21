@@ -155,12 +155,12 @@ cards <- list(
          class = "border-0")
   ,
   citation = card(#class = "border-0",
-                  min_height = "275px",
-                  card_body(div(h2("How to cite EnoLEX")),
-                            div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Online resource. University of Oxford.", a("http://dx.doi.org/10.25446/oxford.28282946.v1", href = "http://dx.doi.org/10.25446/oxford.28282946.v1", target = "_blank"), ". Available online at", a("https://enggano.shinyapps.io/enolex/", href = 'https://enggano.shinyapps.io/enolex/', target = '_blank')), style="font-size: 0.9em"),
-                            div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("R codes and curated dataset for “EnoLEX: A Diachronic Lexical Database for the Enggano Language”."), "(Version 0.0.1) [Computer software]. Available at", a('https://github.com/engganolang/enolex', href = 'https://github.com/engganolang/enolex', target = '_blank')), style="font-size: 0.9em"),
-                            div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://doi.org/10.25446/oxford.27013864.v1', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
-                  )),
+    min_height = "275px",
+    card_body(div(h2("How to cite EnoLEX")),
+              div(p("Krauße, Daniel, Gede Primahadi Wijaya Rajeg, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("EnoLEX: A Diachronic Lexical Database for the Enggano Language."), "Online resource. University of Oxford.", a("http://dx.doi.org/10.25446/oxford.28282946.v1", href = "http://dx.doi.org/10.25446/oxford.28282946.v1", target = "_blank"), ". Available online at", a("https://enggano.shinyapps.io/enolex/", href = 'https://enggano.shinyapps.io/enolex/', target = '_blank')), style="font-size: 0.9em"),
+              div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, Mary Dalrymple (2024).", em("R codes and curated dataset for “EnoLEX: A Diachronic Lexical Database for the Enggano Language”."), "(Version 0.0.1) [Computer software]. Available at", a('https://github.com/engganolang/enolex', href = 'https://github.com/engganolang/enolex', target = '_blank')), style="font-size: 0.9em"),
+              div(p("Rajeg, Gede Primahadi Wijaya, Daniel Krauße, and Cokorda Rai Adi Pramartha (2024).", a("EnoLEX: A Diachronic Lexical Database for the Enggano language", href='https://doi.org/10.25446/oxford.27013864.v1', target="_blank"), ". In", em("Proceedings of AsiaLex 2024 (The Asian Association for Lexicography 2024 Hybrid Conference)."), "Toyo University, Tokyo: Japan."), style="font-size: 0.9em")
+    )),
   enolex_description = card(card_body(h1(strong("EnoLEX: A diachronic lexical database for the Enggano language")),
                                       tags$figure(img(src = "file-oxweb-logo.gif", align = "left", width = 80, style = "margin-right: 5px; margin-top: 10px", display = "inline-block"), 
                                                   img(src = "file-lingphil.png", align = "left", width = 80, style = "margin-right: 5px; margin-top: 10px", display = "inline-block"),
@@ -172,7 +172,7 @@ cards <- list(
                                       h2("How to get started"),
                                       p("The first option is the", actionLink("CognatesTabLink", HTML("<strong>Concept Search</strong>")), "tab and then, from the left-hand side sidebar, select the concept to filter forms expressing that concept and how they develop across periods."),
                                       p("The second option is the", actionLink("GlobalSearch", HTML("<strong>Global Search</strong>")), "tab to entering any search term (e.g., Indonesian translation, Enggano form, English, etc.) in the search box there. Then, the app will filter from the database any observation whose columns contain the typed value."),
-                                      p("The third option is browsing individual word list per author/source. This can be done via clicking an author's name under the", HTML("<code>Sources</code>"), "column within the", actionLink("SourcesTabLink1", HTML("<strong>Sources</strong>")), "tab."),
+                                      p("The third option is browsing individual word list per author/source. This can be done via clicking an author's name under the", HTML("<code>Sources</code>"), "column within the (i)", actionLink("SourcesTabLink1", HTML("<strong>Sources</strong>")), "tab and (ii) the", actionLink("CognatesTabLink", HTML("<strong>Concept Search</strong>")), "tab."),
                                       # tags$input(type = "search", id = "site_search", name = "q", placeholder = "Type and Enter"),
                                       # tags$script(js_enter_key),
                                       # tags$script(jscode),
@@ -185,9 +185,9 @@ cards <- list(
                                       
                                       h2("Licensing"),
                                       HTML('<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://enggano.shinyapps.io/enolex/">EnoLEX</a> online database edited by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/engganolang/enolex">Daniel Krauße, Gede Primahadi W. Rajeg, Cokorda Pramartha, Erik Zobel, Bernd Nothofer, Charlotte Hemmings, Sarah Ogilvie, I Wayan Arka, and Mary Dalrymple</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>')
-                                      ),
-    
-                            textOutput("overview")
+  ),
+  
+  textOutput("overview")
   ) #,
   #cognate_output <- card(
   #  full_screen = T,
@@ -203,17 +203,17 @@ cognate_cards <- list(
   ## 1 - Cognate table output
   cognate_table = card(id = "cognate_table",
                        
-                   ### 1.1 - concept selection
-    layout_sidebar(sidebar = sidebar(english_gloss,
-                                     open = list(mobile = "always-above"), 
-                                     width = 200),
-                   
-                   ### 1.2 - table panel
-                   div(DT::DTOutput(outputId = "cognatesOut"), 
-                       style = "font-size: 96%")
-                   ),
-    fill = TRUE,
-    height = 700),
+                       ### 1.1 - concept selection
+                       layout_sidebar(sidebar = sidebar(english_gloss,
+                                                        open = list(mobile = "always-above"), 
+                                                        width = 200),
+                                      
+                                      ### 1.2 - table panel
+                                      div(DT::DTOutput(outputId = "cognatesOut"), 
+                                          style = "font-size: 96%")
+                       ),
+                       fill = TRUE,
+                       height = 700),
   
   ## 2 - Concept(icon) card (top left)
   concept_card = card(
@@ -233,7 +233,7 @@ cognate_cards <- list(
     id = "PMP_PAN_card",
     class = "bg-light"
   )
-
+  
 )
 
 ## GLOBAL search page ====
@@ -293,7 +293,7 @@ ui <- page_navbar(
   nav_panel(title = "Home",
             
             layout_columns(
-            
+              
               cards[["enolex_description"]],
               
               layout_columns(
@@ -331,7 +331,7 @@ ui <- page_navbar(
             div(DT::DTOutput(outputId = "enolex_materials"), 
                 style = "font-size: 96%")
             # dataTableOutput("enolex_materials")
-            ),
+  ),
   nav_menu(title = "Links",
            nav_item(link_enggano_web),
            nav_item(link_enolex_github),
@@ -401,57 +401,7 @@ server <- function(input, output, session) {
       mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |>
       select(notes_all)
   }
-    
-    # {
-    #   
-    #   if (input_english_gloss() != "(none)") {
-    #     
-    #     tbl(enolex_db, "enolex") |> 
-    #       filter(English %in% input_english_gloss()) |> 
-    #       select(Cognate_ID,
-    #              Year,
-    #              Sources,
-    #              Original_Form,
-    #              English_Original,
-    #              Note_for_Cognate,
-    #              Note_for_Year) |> 
-    #       # filter(if_any(matches("English_Original|^Note_"), ~!is.na(.))) |> 
-    #       mutate(across(matches("(English_Original|Note_for_Cognate|Note_for_Year)"), \(x) if_else(is.na(x), "-", x))) |> 
-    #       collect() |> 
-    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
-    #                                                            "(?<!\\s)'",
-    #                                                            "’"))) |> 
-    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
-    #                                                            "(?<=\\s)'",
-    #                                                            "‘"))) |> 
-    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
-    #                                                            "(?<!\\s)\"",
-    #                                                            "”"))) |> 
-    #       mutate(across(matches("^Note_for"), ~str_replace_all(., 
-    #                                                            "(?<=\\s)\"",
-    #                                                            "“"))) |> 
-    #       mutate(across(matches("Note_for"), ~str_replace_all(.,
-    #                                                           "__",
-    #                                                           " ; "))) |> 
-    #       mutate(across(matches("Note_for"), ~str_replace_all(.,
-    #                                                           "\\s{2,}",
-    #                                                           " "))) |> 
-    #       mutate(English_Original = if_else(English_Original != "-",
-    #                                         str_c("<p><strong>Original gloss</strong>: ‘", English_Original, "’</p>", sep = ""),
-    #                                         str_c("<p><strong>Original gloss</strong>: ", English_Original, "</p>", sep = ""))) |> 
-    #       mutate(Note_for_Cognate = str_c("<p>Note for <strong>Cognate ID ", Cognate_ID, "</strong>: ", Note_for_Cognate, "</p>", sep = ""),
-    #              Note_for_Year = str_c("<p>Note for <strong>", Sources, "</strong>: ", Note_for_Year, "</p>", sep = "")) |> 
-    #       mutate(notes_all = str_c(English_Original, Note_for_Cognate, Note_for_Year, sep = " ")) |> 
-    #       select(notes_all)
-    #     
-    #   } else {
-    #     
-    #     
-    #     
-    #   }
-    #   
-    # }
-    
+  
   )
   
   shinyInput <- function(FUN, len, rows_to_add, id, ...) {
@@ -481,55 +431,63 @@ server <- function(input, output, session) {
     {
       req(input$English_Gloss != "(none)")
       
-        tb <- enolex |>
-          filter(glue::glue_sql(str_c("English = '", 
-                                      !!input$English_Gloss, 
-                                      "'", 
-                                      sep = ""))) |>
-          select(Cognate_ID, Year, Sources, Original_Form, 
-                 Standardised_Orthography = Orthography,
-                 Phonemic_Transcription = IPA) |>
-          collect()
-          # |> 
-          # mutate(Phonemic_Transcription = stri_trans_nfc(Phonemic_Transcription)) # |>
-          # select(where(~!all(is.na(.))))
-
-        for_checking_notes <- enolex |>
-          filter(glue::glue_sql(str_c("English = '", 
-                                      !!input$English_Gloss, 
-                                      "'", 
-                                      sep = ""))) |>
-          select(English_Original, Note_for_Year, Note_for_Cognate) |>
-          collect()
-
-        for_checking_vector <- c(any(!is.na(for_checking_notes$English_Original)),
-                                 any(!is.na(for_checking_notes$Note_for_Year)),
-                                 any(!is.na(for_checking_notes$Note_for_Cognate)))
-
-        rows_to_add <- which(!is.na(for_checking_notes$English_Original) |
-                               !is.na(for_checking_notes$Note_for_Year) |
-                               !is.na(for_checking_notes$Note_for_Cognate))
-
-        if (any(length(rows_to_add) > 0)) {
-
-          tb <- tb |>
-            mutate(Details = shinyInput(actionButton, 
-                                        nrow(tb), 
-                                        rows_to_add = rows_to_add, 
-                                        'button_', 
-                                        label = "More",
-                                        onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})')) |> 
-            relocate(Details, 
-                     .before = Year) |> 
-            distinct()
-
-        }
-
-        cog_id_colouring <- unique(tb$Cognate_ID)
-
-        DT::datatable(tb,
-                      escape = FALSE,
-                      selection = "single",
+      tb <- enolex |>
+        filter(glue::glue_sql(str_c("English = '", 
+                                    !!input$English_Gloss, 
+                                    "'", 
+                                    sep = ""))) |>
+        select(Cognate_ID, Year, Sources, Original_Form, 
+               Standardised_Orthography = Orthography,
+               Phonemic_Transcription = IPA,
+               English_Original, Note_for_Year, Note_for_Cognate) |>
+        collect() |> 
+        distinct()
+      # |> 
+      # mutate(Phonemic_Transcription = stri_trans_nfc(Phonemic_Transcription)) # |>
+      # select(where(~!all(is.na(.))))
+      
+      # for_checking_notes <- enolex |>
+      #   filter(glue::glue_sql(str_c("English = '", 
+      #                               !!input$English_Gloss, 
+      #                               "'", 
+      #                               sep = ""))) |>
+      #   select(English_Original, Note_for_Year, Note_for_Cognate) |>
+      #   collect()
+      
+      for_checking_vector <- c(any(!is.na(tb$English_Original)),
+                               any(!is.na(tb$Note_for_Year)),
+                               any(!is.na(tb$Note_for_Cognate)))
+      
+      rows_to_add <- which(!is.na(tb$English_Original) |
+                             !is.na(tb$Note_for_Year) |
+                             !is.na(tb$Note_for_Cognate))
+      
+      if (any(length(rows_to_add) > 0)) {
+        
+        tb <- tb |>
+          mutate(Details = shinyInput(actionButton, 
+                                      nrow(tb), 
+                                      rows_to_add = rows_to_add, 
+                                      'button_', 
+                                      label = "More",
+                                      onclick = 'Shiny.setInputValue(\"select_button\", this.id, {priority: \"event\"})')) |> 
+          relocate(Details, 
+                   .before = Year)
+        
+      }
+      
+      cog_id_colouring <- unique(tb$Cognate_ID)
+      
+      tb_out_concept <- tb |> 
+        select(-English_Original,
+               -Note_for_Year,
+               -Note_for_Cognate)
+      rm(tb)
+      selectable_column <- which(colnames(tb_out_concept) %in% 
+                                   c("Sources", "Details"))
+      tb_out_concept |> 
+        DT::datatable(escape = FALSE,
+                      selection = "none",
                       options = list(paging = FALSE,
                                      scrollY = "500px",
                                      scrollX = TRUE,
@@ -545,14 +503,14 @@ server <- function(input, output, session) {
                       # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
                       style = "bootstrap4",
                       class = list(stripe = FALSE)) |>
-          formatStyle("Cognate_ID",
-                      backgroundColor = styleEqual(cog_id_colouring,
-                                                   colour_values(factor(cog_id_colouring),
-                                                                 palette = "rdylbu",
-                                                                 alpha = 65))) |> 
-          formatStyle("Sources",
-                      color = "#3277ae",
-                      cursor = "pointer")
+        formatStyle("Cognate_ID",
+                    backgroundColor = styleEqual(cog_id_colouring,
+                                                 colour_values(factor(cog_id_colouring),
+                                                               palette = "rdylbu",
+                                                               alpha = 65))) |> 
+        formatStyle("Sources",
+                    color = "#3277ae",
+                    cursor = "pointer")
       
     }
     
@@ -613,7 +571,7 @@ server <- function(input, output, session) {
         collect()
       glb <- glb |> 
         left_join(reconst_concept_df_filtered)
-        
+      
       
     } else if (input$pattern_matching_options == "exact_match") {
       
@@ -699,7 +657,7 @@ server <- function(input, output, session) {
   
   output$global_search_output <- DT::renderDT({
     req(input$global_search)
-      global_search()
+    global_search()
   })
   
   materials_table <- reactive(
@@ -707,7 +665,7 @@ server <- function(input, output, session) {
       tbl(enolex_db, "bibs1") |> 
         collect() |>
         DT::datatable(escape = FALSE,
-                      selection = "single",
+                      selection = "none",
                       # rownames = FALSE,
                       options = list(paging = FALSE,
                                      scrollY = "500px",
@@ -824,8 +782,8 @@ server <- function(input, output, session) {
                                                                      !!input$English_Gloss, 
                                                                      "'", 
                                                                      sep = ""))
-                                        ), 
-                                 Concepticon_Gloss))
+      ), 
+      Concepticon_Gloss))
       
       if (!is.na(concepticon) & length(unique(pull(filter(enolex, 
                                                           glue::glue_sql(str_c("English = '", 
@@ -877,9 +835,9 @@ server <- function(input, output, session) {
       
       if(all(req(input$English_Gloss) != "(none)" # & 
              #!is.null(req(input$English_Gloss))
-             )
-         )
-      renderUI(concept_idn_translation())
+      )
+      )
+        renderUI(concept_idn_translation())
       
     }
     
@@ -921,7 +879,7 @@ server <- function(input, output, session) {
                                   Etymology_Source,
                                   ")</p>",
                                   sep = "")
-                 ) |> 
+          ) |> 
           mutate(reconstr = str_c(reconstr, collapse = " ")) |> 
           pull(reconstr) |> 
           unique()
@@ -929,7 +887,6 @@ server <- function(input, output, session) {
         recx <- HTML(recx)
         
       }
-        
       
     }
     
@@ -943,7 +900,7 @@ server <- function(input, output, session) {
              !is.null(req(input$English_Gloss)) & 
              req(proto_reconstruction() != "") & 
              !is.na(proto_reconstruction())))
-      renderUI(proto_reconstruction())
+        renderUI(proto_reconstruction())
       
     }
     
@@ -951,21 +908,25 @@ server <- function(input, output, session) {
   
   # the following code run the clicking on Search hyperlink the main panel/page
   observeEvent(input$CognatesTabLink, {
-    updateTabsetPanel(session = session, "tabs", "Concept Search")
+    updateTabsetPanel(session = session, inputId = "tabs", 
+                      selected = "Concept Search")
   })
   
   observeEvent(input$GlobalSearch, {
-    updateTabsetPanel(session = session, "tabs", "Global Search")
+    updateTabsetPanel(session = session, inputId = "tabs", 
+                      selected = "Global Search")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
   observeEvent(input$SourcesTabLink, {
-    updateTabsetPanel(session = session, "tabs", "Sources")
+    updateTabsetPanel(session = session, inputId = "tabs", 
+                      selected = "Sources")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
   observeEvent(input$SourcesTabLink1, {
-    updateTabsetPanel(session = session, "tabs", "Sources")
+    updateTabsetPanel(session = session, inputId = "tabs", 
+                      selected = "Sources")
   })
   
   # observer to close individual by source word list
@@ -973,8 +934,7 @@ server <- function(input, output, session) {
   observeEvent(input$tabs, {
     if (input$tabs != "Word List by Source") {
       nav_remove("tabs", 
-                 target = "Word List by Source",
-                 session)
+                 target = "Word List by Source")
     }
   })
   
@@ -996,18 +956,36 @@ server <- function(input, output, session) {
                  Concepticon = Concepticon_Gloss) |> 
           arrange(Original_Form) |> 
           collect() |> 
-          DT::datatable(escape = FALSE)
+          distinct() |> 
+          DT::datatable(escape = FALSE,
+                        options = list(scrollY = "500px",
+                                       scrollX = TRUE,
+                                       autoWidth = TRUE,
+                                       language = list(searchPlaceholder = "Search"),
+                                       columnDefs = list(list(className = "dt-center",
+                                                              targets = c(1, 2)),
+                                                         list(width = "50px",
+                                                              targets = "Cognate_ID"))),
+                        filter = "top",
+                        # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
+                        style = "bootstrap4",
+                        class = list(stripe = FALSE))
       })
       nav_insert(id = "tabs",
                  target = "Sources",
                  position = "after",
                  select = TRUE,
-                 session = session,
                  nav_panel("Word List by Source",
                            tags$h1(str_c("Word list from '",
                                          source_info$value,
                                          "'",
                                          sep = "")),
+                           tags$br(),
+                           p(HTML(pull(filter(tbl(enolex_db, "bibs1"),
+                                              glue::glue_sql(str_c("Sources = '",
+                                                                   source_info$value,
+                                                                   "'",
+                                                                   sep = ""))), Citation))),
                            tags$br(),
                            card_body(DT::DTOutput(outputId = "individualWlist"))
                  )
@@ -1019,20 +997,23 @@ server <- function(input, output, session) {
       return()
       
     }
-    
   }
-)
+  )
   
   # observer in the Concept for revealing individual list by source
   observeEvent(input$cognatesOut_cell_clicked, {
     
-    source_info <- input$cognatesOut_cell_clicked
+    source_info_concept <- input$cognatesOut_cell_clicked
     
-    if (!is.null(source_info$value) && source_info$col == 4) {
+    if (!is.null(source_info_concept$value) &&
+        
+        # check if the clicked value is only part of the Sources vector
+        source_info_concept$value %in% pull(enolex, Sources)) {
+      
       indiv_tb <- reactive({
         enolex |> 
           filter(glue::glue_sql(str_c("Sources = '",
-                                      source_info$value,
+                                      source_info_concept$value,
                                       "'",
                                       sep = ""))) |> 
           select(Cognate_ID, Original_Form, 
@@ -1042,18 +1023,35 @@ server <- function(input, output, session) {
           arrange(Original_Form) |> 
           collect() |> 
           distinct() |> 
-          DT::datatable(escape = FALSE)
+          DT::datatable(escape = FALSE,
+                        options = list(scrollY = "500px",
+                                       scrollX = TRUE,
+                                       autoWidth = TRUE,
+                                       language = list(searchPlaceholder = "Search"),
+                                       columnDefs = list(list(className = "dt-center",
+                                                              targets = c(1, 2)),
+                                                         list(width = "50px",
+                                                              targets = "Cognate_ID"))),
+                        filter = "top",
+                        # callback=JS('$(\'div.has-feedback input[type="search"]\').attr( "placeholder", "Search" )'),
+                        style = "bootstrap4",
+                        class = list(stripe = FALSE))
       })
       nav_insert(id = "tabs",
                  target = "Sources",
                  position = "after",
                  select = TRUE,
-                 session = session,
                  nav_panel("Word List by Source",
                            tags$h1(str_c("Word list from '",
-                                         source_info$value,
+                                         source_info_concept$value,
                                          "'",
                                          sep = "")),
+                           tags$br(),
+                           p(HTML(pull(filter(tbl(enolex_db, "bibs1"),
+                                              glue::glue_sql(str_c("Sources = '",
+                                                                   source_info_concept$value,
+                                                                   "'",
+                                                                   sep = ""))), Citation))),
                            tags$br(),
                            card_body(DT::DTOutput(outputId = "individualWlist"))
                  )
@@ -1070,6 +1068,24 @@ server <- function(input, output, session) {
     
   }
   )
+  
+  # bookmarking; source: https://stackoverflow.com/a/71807248
+  observeEvent(getQueryString(session)$page, {
+    currentQueryString <- getQueryString(session)$page # alternative: parseQueryString(session$clientData$url_search)$page
+    if(is.null(input$tabs) || !is.null(currentQueryString) && currentQueryString != input$tabs){
+      freezeReactiveValue(input, "tabs")
+      updateNavbarPage(session, "tabs", selected = currentQueryString)
+    }
+  }, priority = 1)
+  
+  observeEvent(input$tabs, {
+    currentQueryString <- getQueryString(session)$page # alternative: parseQueryString(session$clientData$url_search)$page
+    pushQueryString <- paste0("?page=", input$tabs)
+    if(is.null(currentQueryString) || currentQueryString != input$tabs){
+      freezeReactiveValue(input, "tabs")
+      updateQueryString(pushQueryString, mode = "push", session)
+    }
+  }, priority = 0)
   
 }
 
