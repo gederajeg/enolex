@@ -266,8 +266,9 @@ full_db_page <- list(
 )
 
 # UI configuration =====
-
-ui <- page_navbar(
+ui <- function(request) {
+  page_navbar(
+    
     id = "tabs",
     fillable = FALSE,
     # title = "EnoLEX",
@@ -345,6 +346,10 @@ ui <- page_navbar(
     #                     label = NULL,
     #                     value = "Search"))
   )
+
+}
+# ui <- page_navbar(
+    
 
 
 # SERVER configuration =====
@@ -1103,6 +1108,31 @@ server <- function(input, output, session) {
     }
   }, priority = 0)
   
+  observe({
+    if(input$English_Gloss != "(none)" & input$tabs == "Concept Search") {
+      currentQueryString <- getQueryString(session)$page
+      pushQueryString <- paste0("#", input$English_Gloss)
+      updateQueryString(pushQueryString, mode = "push", session)
+    }
+  
+    
+  })
+  
+  
+  
+  onRestored(function(state) {
+    # This works, because it doesn't use the inputMessageQueue. Should it use a
+    # queue that's flushed on flushOutput?
+    # showNotification('xxxx')
+    
+    # This doesn't, because it uses the inputMessageQueue
+    updateSelectizeInput(session, "English_Gloss",
+                         choices = state$input$English_Gloss, # <- this works to restore the app state by copying the URL
+                         selected = state$input$English_Gloss) # <- this works to restore the app state by copying the URL
+  })
+  
+  
+  
   # observeEvent(input$English_Gloss, {
   #   currentQueryString <- getQueryString(session)$page
   #   pushQueryString <- paste0(currentQueryString, "?=", input$English_Gloss)
@@ -1126,4 +1156,4 @@ onStop(function() {
   dbDisconnect(enolex_db)
 })
 
-shinyApp(ui, server)
+shinyApp(ui, server, enableBookmarking = "url")
