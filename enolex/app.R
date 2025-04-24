@@ -24,8 +24,8 @@ enolex_db <- dbConnect(SQLite(), "enolex.sqlite")
 enolex <- tbl(enolex_db, "enolex")
 enolex_glb <- tbl(enolex_db, "enolex_glb") |> 
   rename(Concepticon = Concepticon_Gloss)
-RSQLite::initRegExp(enolex_db)
-RSQLite::initExtension(enolex_db, "regexp")
+# RSQLite::initRegExp(enolex_db)
+# RSQLite::initExtension(enolex_db, "regexp")
 
 ## to be used in the global search so that the searching
 ## does not include url
@@ -242,7 +242,7 @@ cognate_cards <- list(
 full_db_page <- list(
   db_table = card(
     layout_sidebar(
-      sidebar = sidebar(textInput("global_search", 
+      sidebar = sidebar(textInput(inputId = "global_search", 
                                   label = "Database search", width = 150),
                         radioButtons(inputId = "pattern_matching_options",
                                      label = "Search using:",
@@ -266,8 +266,9 @@ full_db_page <- list(
 )
 
 # UI configuration =====
-
-ui <- page_navbar(
+ui <- function(request) {
+  page_navbar(
+    
     id = "tabs",
     fillable = FALSE,
     # title = "EnoLEX",
@@ -293,6 +294,7 @@ ui <- page_navbar(
     tags$head(
       tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "ox_brand1_rev.png")),
     nav_panel(title = "Home",
+              value = "home",
               
               layout_columns(
                 
@@ -309,6 +311,7 @@ ui <- page_navbar(
               )
     ),
     nav_panel(title = "Concept Search",
+              value = "concept",
               
               layout_columns(
                 
@@ -326,15 +329,18 @@ ui <- page_navbar(
               
     ),
     nav_panel(title = "Global Search",
+              value = "global",
               layout_columns(
                 full_db_page[["db_table"]]
               )),
     nav_panel(title = "Sources",
+              value = "sources",
               div(DT::DTOutput(outputId = "enolex_materials"), 
                   style = "font-size: 96%")
               # dataTableOutput("enolex_materials")
     ),
     nav_menu(title = "Links",
+             value = "links",
              nav_item(link_enggano_web),
              nav_item(link_enolex_github),
              nav_item(link_contemporary_enggano),
@@ -345,6 +351,10 @@ ui <- page_navbar(
     #                     label = NULL,
     #                     value = "Search"))
   )
+
+}
+# ui <- page_navbar(
+    
 
 
 # SERVER configuration =====
@@ -912,37 +922,37 @@ server <- function(input, output, session) {
   # the following code run the clicking on Search hyperlink the main panel/page
   observeEvent(input$CognatesTabLink, {
     updateTabsetPanel(session = session, inputId = "tabs", 
-                      selected = "Concept Search")
+                      selected = "concept")
   })
   
   observeEvent(input$CognatesTabLink1, {
     updateTabsetPanel(session = session, inputId = "tabs", 
-                      selected = "Concept Search")
+                      selected = "concept")
   })
   
   observeEvent(input$GlobalSearch, {
     updateTabsetPanel(session = session, inputId = "tabs", 
-                      selected = "Global Search")
+                      selected = "global")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
   observeEvent(input$SourcesTabLink, {
     updateTabsetPanel(session = session, inputId = "tabs", 
-                      selected = "Sources")
+                      selected = "sources")
   })
   
   # the following code run the clicking on Sources hyperlink the main panel/page
   observeEvent(input$SourcesTabLink1, {
     updateTabsetPanel(session = session, inputId = "tabs", 
-                      selected = "Sources")
+                      selected = "sources")
   })
   
   # observer to close individual by source word list
   ## inspiration: https://stackoverflow.com/a/58593130
   observeEvent(input$tabs, {
-    if (input$tabs != "Word List by Source") {
+    if (input$tabs != "wlist") {
       nav_remove("tabs", 
-                 target = "Word List by Source")
+                 target = "wlist")
     }
   })
   
@@ -984,10 +994,11 @@ server <- function(input, output, session) {
                         class = list(stripe = FALSE))
       })
       nav_insert(id = "tabs",
-                 target = "Sources",
+                 target = "sources",
                  position = "after",
                  select = TRUE,
-                 nav_panel("Word List by Source",
+                 nav_panel(title = "Word List by Source",
+                           value = "wlist",
                            tags$h1(str_c("Word list from ‘",
                                          source_info$value,
                                          "’",
@@ -1054,10 +1065,11 @@ server <- function(input, output, session) {
                         class = list(stripe = FALSE))
       })
       nav_insert(id = "tabs",
-                 target = "Sources",
+                 target = "sources",
                  position = "after",
                  select = TRUE,
-                 nav_panel("Word List by Source",
+                 nav_panel(title = "Word List by Source",
+                           value = "wlist",
                            tags$h1(str_c("Word list from ‘",
                                          source_info_concept$value,
                                          "’",
@@ -1103,6 +1115,17 @@ server <- function(input, output, session) {
     }
   }, priority = 0)
   
+  observe({
+    if(input$English_Gloss != "(none)" & input$tabs == "concept") {
+      currentQueryString <- getQueryString(session)$page
+      pushQueryString <- paste0("#", input$English_Gloss)
+      updateQueryString(pushQueryString, mode = "push", session)
+    }
+
+
+  })
+  
+  
   # observeEvent(input$English_Gloss, {
   #   currentQueryString <- getQueryString(session)$page
   #   pushQueryString <- paste0(currentQueryString, "?=", input$English_Gloss)
@@ -1126,4 +1149,4 @@ onStop(function() {
   dbDisconnect(enolex_db)
 })
 
-shinyApp(ui, server)
+shinyApp(ui, server, enableBookmarking = "url")
