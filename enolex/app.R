@@ -963,17 +963,22 @@ server <- function(input, output, session) {
     
     if (!is.null(source_info$value) && source_info$col == 3) {
       indiv_tb <- reactive({
-        enolex |> 
+        indiv_interim <- enolex |> 
           filter(glue::glue_sql(str_c("Sources = '",
                                       source_info$value,
                                       "'",
                                       sep = ""))) |> 
-          select(Cognate_ID, Original_Form, 
-                 Standardised_Orthography = Orthography,
-                 Phonemic_Transcription = IPA, 
-                 Concepticon = Concepticon_Gloss) |> 
+          # select(Cognate_ID, Original_Form,
+          #        Standardised_Orthography = Orthography,
+          #        Phonemic_Transcription = IPA,
+          #        Concepticon = Concepticon_Gloss) |>
           arrange(Original_Form) |> 
-          collect() |> 
+          collect()
+        indiv_interim |> 
+          select(Cognate_ID, Original_Form,
+                 Standardised_Orthography = Orthography,
+                 Phonemic_Transcription = IPA,
+                 Concepticon = Concepticon_Gloss) |>
           distinct() |> 
           DT::datatable(escape = FALSE,
                         options = list(scrollY = "500px",
@@ -1003,14 +1008,34 @@ server <- function(input, output, session) {
                                          source_info$value,
                                          "’",
                                          sep = "")),
-                           tags$br(),
-                           p(HTML(pull(filter(tbl(enolex_db, "bibs1"),
+                           
+                           # tags$br(),
+                           tags$h4(str_c("Approximate year of data collection: ", pull(filter(tbl(enolex_db, "bibs1"),
+                                                               glue::glue_sql(str_c("Sources = '",
+                                                                                    source_info$value,
+                                                                                    "'",
+                                                                                    sep = ""))), 
+                                                        Collected), "; Location: ",pull(filter(tbl(enolex_db, "bibs1"),
+                                                                                       glue::glue_sql(str_c("Sources = '",
+                                                                                                            source_info$value,
+                                                                                                            "'",
+                                                                                                            sep = ""))), 
+                                                                                Place),
+                                   "; Dialect info: ", pull(filter(tbl(enolex_db, "bibs1"),
+                                                                   glue::glue_sql(str_c("Sources = '",
+                                                                                        source_info$value,
+                                                                                        "'",
+                                                                                        sep = ""))), 
+                                                            Dialect),
+                                   sep = "")),
+                           # tags$br(),
+                           p(HTML(str_c("<strong>Citation</strong>: ", pull(filter(tbl(enolex_db, "bibs1"),
                                               glue::glue_sql(str_c("Sources = '",
                                                                    source_info$value,
                                                                    "'",
-                                                                   sep = ""))), Citation))),
-                           tags$br(),
-                           card_body(DT::DTOutput(outputId = "individualWlist"))
+                                                                   sep = ""))), Citation), sep = ""))),
+                           # tags$br(),
+                           card(card_body(fillable = FALSE, DT::DTOutput(outputId = "individualWlist")))
                  )
       )
       output$individualWlist <- DT::renderDataTable({
@@ -1034,17 +1059,22 @@ server <- function(input, output, session) {
         source_info_concept$value %in% pull(enolex, Sources)) {
       
       indiv_tb <- reactive({
-        enolex |> 
+        indiv_interim <- enolex |> 
           filter(glue::glue_sql(str_c("Sources = '",
                                       source_info_concept$value,
                                       "'",
                                       sep = ""))) |> 
-          select(Cognate_ID, Original_Form, 
-                 Standardised_Orthography = Orthography,
-                 Phonemic_Transcription = IPA, 
-                 Concepticon = Concepticon_Gloss) |> 
+          # select(Cognate_ID, Original_Form,
+          #        Standardised_Orthography = Orthography,
+          #        Phonemic_Transcription = IPA,
+          #        Concepticon = Concepticon_Gloss) |>
           arrange(Original_Form) |> 
-          collect() |> 
+          collect()
+        indiv_interim |> 
+          select(Cognate_ID, Original_Form,
+                 Standardised_Orthography = Orthography,
+                 Phonemic_Transcription = IPA,
+                 Concepticon = Concepticon_Gloss) |>
           distinct() |> 
           DT::datatable(escape = FALSE,
                         options = list(scrollY = "500px",
@@ -1074,14 +1104,33 @@ server <- function(input, output, session) {
                                          source_info_concept$value,
                                          "’",
                                          sep = "")),
-                           tags$br(),
-                           p(HTML(pull(filter(tbl(enolex_db, "bibs1"),
+                           # tags$br(),
+                           tags$h4(str_c("Approximate year of data collection: ", pull(filter(tbl(enolex_db, "bibs1"),
+                                                                            glue::glue_sql(str_c("Sources = '",
+                                                                                                 source_info_concept$value,
+                                                                                                 "'",
+                                                                                                 sep = ""))), 
+                                                                     Collected), "; Location: ", pull(filter(tbl(enolex_db, "bibs1"),
+                                                                                                    glue::glue_sql(str_c("Sources = '",
+                                                                                                                         source_info_concept$value,
+                                                                                                                         "'",
+                                                                                                                         sep = ""))), 
+                                                                                             Place),
+                                         "; Dialect info: ", pull(filter(tbl(enolex_db, "bibs1"),
+                                                                         glue::glue_sql(str_c("Sources = '",
+                                                                                              source_info_concept$value,
+                                                                                              "'",
+                                                                                              sep = ""))), 
+                                                                  Dialect),
+                                   sep = "")),
+                           # tags$br(),
+                           p(HTML(str_c("<strong>Citation</strong>: ",pull(filter(tbl(enolex_db, "bibs1"),
                                               glue::glue_sql(str_c("Sources = '",
                                                                    source_info_concept$value,
                                                                    "'",
-                                                                   sep = ""))), Citation))),
-                           tags$br(),
-                           card_body(DT::DTOutput(outputId = "individualWlist"))
+                                                                   sep = ""))), Citation), sep = ""))),
+                           # tags$br(),
+                           card(card_body(fillable = FALSE, DT::DTOutput(outputId = "individualWlist")))
                  )
       )
       
